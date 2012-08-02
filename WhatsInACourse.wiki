@@ -1,4 +1,4 @@
-#sidebar TableOfContents
+#summary Describes the primary parts of a course created with Course Builder Experimental.
 =What's in a Course=
 
 The primary parts of a course created with Course Builder Experimental are as follows:
