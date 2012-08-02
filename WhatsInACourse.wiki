@@ -1,3 +1,4 @@
+#sidebar TableOfContents
 =What's in a Course=
 
 The primary parts of a course created with Course Builder Experimental are as follows:
