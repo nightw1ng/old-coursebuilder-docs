@@ -1,0 +1,38 @@
+<div>In July, 2012, Google hosted a 2-week online, community-based course called <a href="http://www.google.com/insidesearch/landing/powersearching.html">Power Searching with Google</a>. The course showcased search techniques and how to use them to solve real, everyday problems. We created Power Searching as a MOOC (Massive Online Open Course) by using a variety of Google’s existing products and by writing an App Engine application for the course material and assessments.
+<br />
+We were quite pleased with the success of Power Searching with Google. Over 154,000 students from 190 countries enrolled in the course. Almost 68,000 of the original registrants got started by filling out a pre-course assessment. And over 20,000 earned a certificate of successful completion.
+<br />
+Course Builder Experiment represents our decision to open source the code we used to create Power Searching and to document our use of that code in conjunction with Google products to create the entire experience.
+<br />
+Power Searching is only one instance of a MOOC. Simply put, a MOOC is a course, all of whose materials are online and that has been optimized to work for lots and lots of students. What this actually means can vary quite a bit. Typically, in a MOOC:
+<ul><li>the students are physically distributed.</li>
+<li>the students interact with the instructors and other students primarily or exclusively online, not in person.</li>
+<li>the interactions between students and between students and instructors are "semi-synchronous"; that is, students do some parts on their own time and at  their own pace, but they do other parts at the same time as each other and may have work with attached deadlines.</li></ul>
+Past those simple points, there are significant differences in implementation and philosophy of what constitutes a MOOC. Many people are experimenting with different approaches, using different code and different interaction models between students, instructors, and even casual visitors.
+<br />
+For Power Searching with Google, we chose one approach. It’s not the only approach; it’s not the most innovative approach. This approach is not appropriate for all subjects. But it was relatively easy to create and was extremely successful for this subject matter. We’d like to share that approach and code with you. </div><div>
+<h2><a name="TOC-What-s-in-a-Course-"></a>What's in a Course?</h2>
+</div>
+<div>So what are the characteristics of a course such as Power Searching with Google and what make those characteristics interesting?  The primary parts are as follows:</div><div><ul><li><b>Course content and delivery</b><br />The material that you formally convey to students. Formal content can be lessons recorded or written in advance. It can also be live question and answer sessions with instructors.</li></ul><ul><li><b>Assessments and activities</b><br />Graded assessments with a fixed deadline to track student progress. They also use ungraded assessments, called <b>activities</b>, to provide feedback and hints to students.</li></ul><ul><li><b>Interactions between students and instructors and directly among students</b><br />An important component of any MOOC is the interactions between students and the instructors or teaching assistants (TAs) and those among the students themselves. </li></ul><ul><li><b>Administrivia</b><br />Of course, there are bits and pieces required to register students, to get the course up and running, to track usage, and so on.</li></ul>
+For more information on these aspects, see <a href="https://sites.google.com/a/google.com/coursebuilder-docs/parts">What’s in a Course?</a><br />
+<h2><a name="TOC-How-to-create-a-course-with-Course-Builder-Experiment"></a>How to create a course with Course Builder Experiment</h2>
+<ol><li><a href="https://sites.google.com/a/google.com/coursebuilder-docs/plan">Plan before you start.</a>
+Before you get into the details of creating your course, take 30 minutes to think about the following areas and write down your answers. Use those answers to guide everything else; they can save you a lot of time in the end. For details, see <a href="https://sites.google.com/a/google.com/coursebuilder-docs/plan">Step 1</a>.
+<br />
+</li>
+<li><a href="https://sites.google.com/a/google.com/coursebuilder-docs/dev">Develop content without the technology.</a>
+It’s extremely tempting to just dive in and start recording videos and writing assessments and so on. But if you do that, you will likely end up with a course that doesn’t make sense and doesn’t satisfy your primary goal or any of the supplementary objectives you planned. That said, even though we recommend you do initial development without using the technology, there are aspects the final delivery that should influence your development strategy. For details, see <a href="https://sites.google.com/a/google.com/coursebuilder-docs/dev">Step 2</a>.
+<br />
+</li>
+<li><a href="https://sites.google.com/a/google.com/coursebuilder-docs/implement">Implement your content using your technology.</a>
+Once you have a very clear idea what you want to accomplish, then put it into the format you’ll eventually use. At this point, you can create videos, implement assessments, set up your groups, and do all that other fun stuff. For details, see <a href="https://sites.google.com/a/google.com/coursebuilder-docs/implement">Step 3</a>.
+<br />
+</li>
+<li><a href="https://sites.google.com/a/google.com/coursebuilder-docs/pilot">Pilot with your target audience.</a>
+The experience of teaching a course as a MOOC is quite different from normal classroom teaching. We strongly encourage you to have some people go through your entire course before you release it to actual students. You may find, as we have, that a large percentage of your work comes after the first pilot, when you see how people actually interact with your material. For details, see <a href="https://sites.google.com/a/google.com/coursebuilder-docs/pilot">Step 4</a>.
+<br />
+</li>
+<li>Go live!</li>
+<li>Iterate for your next version.</li>
+</ol>
+</div>
