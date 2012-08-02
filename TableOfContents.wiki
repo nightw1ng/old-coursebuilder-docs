@@ -1,5 +1,4 @@
 http://www.google.com/images/icons/product/labs-64.png
 
-
   * [TestHtml Home]
   * [WhatsInACourse What's in a Course]
