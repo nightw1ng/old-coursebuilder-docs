@@ -112,10 +112,11 @@ The most common avenues are as follows:
 
 In addition to these things that you set up, in a successful MOOC, students may create additional interaction mechanisms, perhaps an email alias for students interested in a particular aspect of the course material or weekly in-person meetings for students living close too each other.
 
+<a name="administrivia"></a>
 == Administrivia ==
 
 Of course, there are bits and pieces required to register students, to get the course up and running, to track usage, and so on.
 
 Web site to bring it all together, analytics to provide usage stats, satisfaction stats, drop-off rates, registration
 
-<font color=red>[TODO gotta write this.]</font>
+<font color=red><<TODO gotta write this.>></font>
