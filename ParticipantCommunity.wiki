@@ -16,3 +16,5 @@ Why do you want to foster community among your students? There are several impor
   * You can use the community to address differences in students' abilities. For example, you can design the primary course materials for the "average" student and then post both background material and advanced material in the forum for students with more or less knowledge. This method lets you reach a wider audience while keeping the primary material focused.
 
 Your goal with a student community is to have your students support each other as much as possible. Try to engage directly only when the students either stray too far in the wrong direction in their discussions or when none of the students can provide assistance.
+
+<font color=red><<TODO There's a very nice [http://courserafantasy.blogspot.com/2012/08/thinking-about-communication.html blog post] about communicating in a mooc. See if I should mention more of that.>></font>
