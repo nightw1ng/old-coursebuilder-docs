@@ -26,8 +26,8 @@ This page lists some reach and engagement metrics you might collect.  The list i
     * Number of emails having at least TA in its "label"
   * *Hangouts on Air* (See <font color=red><<TODO somewhere>></font>)<br>For each Hangout On Air
     * Number of concurrent viewers
-    * Number of playbacks on YouTube
-    * Number of YouTube comments
+    * Number of playbacks on !YouTube
+    * Number of !YouTube comments
     * In Moderator, number of votes on number of questions from number of people
     * Number of Google+ comments on post about the Hangout On Air
   * *Google+ Course Page* (See <font color=red><<TODO somewhere>></font>)
