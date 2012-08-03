@@ -29,4 +29,8 @@
     * [ExampleEmails Example Emails]
     * [ExampleEventTimeline Example Event Timeline & TA Hours]
     * [ExampleTAEssentialsDoc Example TA Essentials Doc]
-  
+
+
+===NOTES===
+  * <font color=red><b>This is a draft! Beware!</b></font>
+  * I haven't figured out how to omit a heading from a TOC yet. That's why the TOCs on individual pages include the title of the page. I'd much prefer they didn't.
