@@ -1,4 +1,7 @@
 #summary Describes the primary parts of a course created with Course Builder Experimental.
+
+=What's in a Course?=
+
 The primary parts of a course created with Course Builder Experimental are as follows:
 
   * *[#Course_content_and_delivery Course content and delivery]*<br>The material that you formally convey to students. Formal content can be lessons recorded or written in advance. It can also be live question and answer sessions with instructors.
