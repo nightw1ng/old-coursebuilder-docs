@@ -1,0 +1,127 @@
+=Example TA Essentials Doc=
+
+If you do nothing else for your TAs to get them prepared, have at least one session in which you introduce them to the course and to what their responsibilities will be throughout. This page is an example template for information you should cover in that session.
+
+<wiki:toc />
+
+==What are we doing? Why?==
+
+_*What's the goal of the course? What will the TAs get out of being TAs?*_
+
+==Who's on the Power Searching Course Project?==
+
+_*Everybody working to get the course ready. Include the TAs themselves!*_
+
+==The Student Experience==
+
+<img src="https://www.google.com/chart?chc=sites&amp;cht=d&amp;chdp=sites&amp;chl=%5B%5BGoogle+drawing'%3D20'f%5Cv'a%5C%3D0'10'%3D399'0'dim'%5Cbox1'b%5CF6F6F6'fC%5CF6F6F6'eC%5C0'sk'%5C%5B%22Untitled+drawing%22'%5D'a%5CV%5C%3D12'f%5C%5DV%5Cta%5C%3D10'%3D0'%3D400'%3D297'dim'%5C%3D10'%3D10'%3D400'%3D297'vdim'%5Cbox1'b%5Cva%5CF6F6F6'fC%5CC8C8C8'eC%5C'a%5C%5Do%5CLauto'f%5C&amp;sig=cshUOserLu80n3K0TEWohdlRM84" data-origsrc="1XruqLHOAjtZuu63BIv4begcxAScpL5Ewb-SoEsaxZEs" data-type="sketchy" data-props="align:left;borderTitle:Untitled drawing;domain:google.com;height:300;objectTitle:Untitled drawing;showBorder:false;showBorderTitle:false;width:400;" width="400" height="300" style="display:block;text-align:left;margin-right:auto;">
+
+<font color=red><<TODO where do I put the image?>></font>
+
+==What distinguishes this course from a traditional online course?==
+
+Sheer number of participants and community
+
+==Goals for the course==
+
+  * Participants improve _*something relevant to your material*._
+  * A significant number of registrants complete the course (aiming for more than _*N thousand*_)
+  * Participants feel well-supported by humans  throughout the course.
+
+==What's in the course?==
+
+  * The course consists of _*N*_ units, each of which should take students _*M*_ minutes to complete.
+  * Each unit contains several lessons and activities.
+  * A lesson consists of a short video and a text version of the same material.
+  * An activity is some number of questions for the students to answer. Activities are not graded.
+  * If you notice problems with the course content or have other feedback, please let us know. _*Course createor: You need to reate a mechanism for this. For example, you can have them send email to a particular address, or you can create a spreadsheet or shared document for them to use.*_
+
+==TA responsibilities for course pilot==
+
+  * On _*some date*_, register for the pilot course.
+  * During the pilot on _*some later dates*_,  learn the content and test the course on different devices and browsers. 
+    * Sit separately from each other.
+    * If your course is being created behind an firewall but will be available outside that firewall, log off of your account behind the firewall. Use an account outside of the firewall to pilot the course. (This lets you be sure you're seeing exactly what students will see.)
+  * On _*some date after the pilot*_, get together with all the pilot participants to provide feedback and talk about issues discovered during the pilot.
+  * As you take the course, get familiar with the terminology we will use with students.
+
+==TA responsibilities for course launch==
+
+  * Be prepared to help students feel well-supported.
+  * Sign up for _*N*_ hours ([https://docs.google.com/a/google.com/spreadsheet/ccc?key=0AuIVQI9HzW0bdHZNcWtTWE1zMERvQWhQLUVvNDNQT1E signup sheet] <font color=red><<TODO correct link when know where to put it>></font>) to support worldwide course launch _*on these dates*._
+  * Before the course starts, skim the TA documentation to get an idea of what questions to expect and how to interact with students. _*Course createor: You need to write those documents. and point to them here.*_
+  * On _*the date the course starts*,_ attend the pre-launch TA meeting to go over your instructions.
+  * As TAs, you'll check in on the three interaction mechanisms we have for students:
+    * Google Groups Forum
+    * Emails sent to help@example.com
+    * Google+ Page Posts
+
+==How to moderate the course forum==
+
+  * Login to the course forum using the account *_help@example.com_* with the password *_somepassword_*.
+  * Note  that many forum links are locked (meaning no one can reply to them) until the associated unit goes live. A course administrator will unlock the posts at the appropriate times.
+  * During your shift:
+    * Click on "Show all topics" to see all of the messages posted to the forum.
+    * Delete any spam posts or comments.
+    * Once you click on a post, it cannot be made unread again.  If it requires action, you must do something with it--reply to it, escalate it, or send the URL to help@ for another TA to pick up.
+  * When you read a new post, do one of the following five things:
+    * For new posts (in bold) showing healthy activity and conversation, offer encouragement that spurs on more sharing:
+      * "That’s a great idea.  If others are reading, please pipe in with more thoughts."
+      * "Wow, what an interesting observation.  What have others discovered?" 
+      * "Interesting!  Has anyone else noticed this?"
+    * For new posts (in bold) where questions are being asked and no participant nor TA has provided response yet:
+      * A Staff badge appears next to your name when you Post reply, showing that the comment is from Course Staff.  
+    * If you know how to answer it, go for it!  Post reply.
+    * If you don’t know the answer and aren’t able to pursue it at the moment for any reason,  send the URL of the forum post to help@example.com and ask for another TA to handle it.  
+    * If you don’t know the answer, but will own and help pursue it, things are a little more complicated?
+      * Reply back "Thanks for your good question.  I’ll research this and get back to you." Add a star to the message, which means "escalation in progress."
+    * Go into the help@ email account and locate the email message that corresponds to the forum post. Every forum post and response gets emailed to help@. They are located under the filter "forum posts." Research or escalate to the appropriate alias: 
+      * *_experts@example.com_* (content or course-related)
+      * *_techhelp@example.com_* (technical or registration issue)
+      * *_prhelp@example.com_* (press, confidential, product-related)
+      * If the answer comes back within your shift, reply to the forum post with the answer and un-star the post.
+      * If the answer does not come back within your shift, the next TA will keep an eye on the starred messages in email. When the response comes back from the alias, copy and paste the response into the thread at the forum. Un-star the post.
+      * Record the question and answer into the TA Answer Guide, if you think it will be helpful to other TA’s.
+  * For old posts marked with a star (indicating that it is in the process of being escalated) 
+    * Check the starred messages in help@ gmail. Reply to the questions if you can.  See step f above.
+  * If you see haters or negative comments on a posting, respond with a brief, positive remark that doesn’t spur on more negativity:
+    * "Thank you for your feedback!" 
+
+==How to moderate the Google+ course page==
+
+  * Login to the course forum using the account *_help@example.com_* with the password *_somepassword_*.
+  * Have a look at the posts. All posts are by course administrators.
+  * Do not respond to comments on posts. Instead, when you notice comments:
+    * If the comment is spam, let *_administrator@example.com_* know so the comment can be removed.
+    * If the comment should be replied to, email *_experts@example.com_*
+
+==How to manage help@example.com email account==
+
+  * Login to the help account with username *_help_* and password *_somepassword_*.
+  * Incoming emails that are bold are unread.  Open an unread email and see if you can help address the question.
+  * If you can handle a particular email, mark that email with your name as a Label. Answer the question if you can.  If you need help to answer the question, escalate by forwarding to the appropriate alias. Do not include the student's address when you escalate.  Here are the aliases:
+    * *_experts@example.com_* (content or course-related)
+    * *_techhelp@example.com_* (technical or registration issue)
+    * *_prhelp@example.com_* (press, confidential, product-related)
+  * Make sure that *_example-announce@example.com_* is not in the to: field.
+  * If you escalate and are waiting for a response, star the email. Any TA can later respond back to the student with the answer, once it’s received.
+  * When replying, sign the email with 
+    * [Your First Name] on behalf of_* Course Name*_ Staff 
+    * OR *_Course Name_* Staff
+  * If you will NOT be able to address a particular email that you’ve clicked open, then "Mark as Unread" for that email, so the next TA will know to have a look.
+
+===Tips===
+
+  * Refresh forum and email inbox every few minutes
+  * Label your email as the first thing you do! Then mark it as unread so everyone can see it’s yours
+  * If someone writes in twice with the same question, take both and label with your name, answer one, and label the other one "Duplicate".
+  * Make sure that *_example-announce@example.com_* is not in the to: field.
+  * If you share a documentation, presentation, or anything else with a student, give them VIEW access ONLY.
+  * If you copy/paste a signature (or anything else) be sure to clear your formatting so it doesn’t look copy/pasted. Many times the font is larger or different.
+  * When a question is asked in another language, respond in English so we don't make errors in translation.
+
+==At the end of your TA office hour shift==
+
+  * Please be sure to keep chat "off"/invisible/signed out at the help@ account.
+  * Add any interesting solutions you discovered to the *_TA Answer Guide_*.
+  * If possible, give the next shift of TAs a briefing on any happenings they should be aware of (such as known issues).
