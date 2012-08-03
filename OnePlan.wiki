@@ -1,33 +1,32 @@
-Before you get into the details of creating your course, take 30 minutes to think about the following areas and write down your answers. Use those answers to guide everything else; they can save you a lot of time in the end. <br>
-<div><img src="https://www.google.com/chart?chc=sites&amp;cht=d&amp;chdp=sites&amp;chl=%5B%5BTable+of+contents'%3D20'f%5Cv'a%5C%3D0'10'%3D499'0'dim'%5Cbox1'b%5CF6F6F6'fC%5CF6F6F6'eC%5C0'sk'%5C%5B'%5D'a%5CV%5C%3D12'f%5C%5DV%5Cta%5C%3D10'%3D0'%3D500'%3D297'dim'%5C%3D10'%3D10'%3D500'%3D297'vdim'%5Cbox1'b%5Cva%5CF6F6F6'fC%5CC8C8C8'eC%5C'a%5C%5Do%5CLauto'f%5C&amp;sig=2Hc_ZY2KYBqeCGfKy9ckIdwqQaI" data-type="toc" data-props="align:left;maxDepth:6;" width="500" height="300" style="display:block;text-align:left;margin-right:auto;"></div>
-<h2>1. Define the problem statement and high-level goal of the course.</h2>
-<p>What are you trying to achieve by creating this course? Be sure you decide both what you <b>are</b> trying to achieve and what you <b>are not</b> trying to achieve. Knowing both of those will make it much easier for you in later stages when you try to decide for any given thing whether or not it belongs in the course.</p>
-<h2>2. Identify your audience and your assumptions.</h2>
-<div>“Everyone” is not a practical audience. At the very least, limit the audience to people interested in your topic. The more specific you can be, the easier the rest is. <br>
-<br>
-Think about what you expect your audience to already know. For example, assume you plan to teach a course on how to knit a sweater. Is your audience people who have never knitted before? Is it people who have learned enough knitting to create a scarf? Depending on your answer, you will cover different material in the course.<br>
-<h2>3. Define course objectives.</h2>
-</div>
-<div>What will your audience do differently at the end of this course? (For example, your audience will be able to knit a sweater using one color of yarn.) <br>
-<br>
-How will you measure the success of your objectives? (Will you compare the results of a pre-course assessment with a post-course assessment?)<br>
-<h2>4. Consider course logistics.</h2>
-<ul><li><b>How long do you want the course to be?<br>
-</b>Presumably, you know a lot about your topic. How much of that do you want to convey? You need to balance that with...</li></ul>
-<ul><li><b>How long is your audience willing to spend on this topic?&nbsp;<br>
-</b>Your audience may be interested, but less interested than you in the topic. What you would be willing to spend weeks on, they may only be willing to spend hours on.</li></ul>
-<ul><li><b>What pacing is appropriate? How many sessions? How many days?<br>
-</b>For example, if you expect your audience to be people with full-time jobs, they may not have much time to spend on your course, even if they are very interested. Spreading the same number of lessons over more days may help those people.</li></ul>
-<ul><li><b>Will you use teaching assistants to help you communicate with your students?<br>
-</b>Coordinating teaching assistants can be a large effort. (See&nbsp;<a href="https://sites.google.com/a/google.com/coursebuilder-docs/implement/c/tas">Teaching Assistants</a>.) On the other hand, the feeling of support your students get from the availability of real knowledgeable people to answer their questions can greatly improve their motivation.</li></ul>
-<ul><li><b>How global are your students? Does your content differ for different cultures?<br>
-</b>For example, if you are teaching a basic knitting course, you might want to consider that people in different communities hold knitting needles differently and consequently do the basic stitches differently. Will you teach only the method you use? Will you teach multiple methods? Will you acknowledge differences, but not teach them? We strongly recommend that you at least acknowledge differences. Otherwise, you may alienate students in those other communities.</li></ul>
-<ul><li><b>How will you handle scheduling releases?<br>
-</b>Will you make all content available at once? Will you release&nbsp;units&nbsp;every day or every few days? We recommend that you release portions over some specified time period, rather than all at once. This encourages a specific pacing for your students and increases the likelihood of meaningful student interactions in the forums.</li></ul>
-<ul><li><b>How will you handle timezones?<br>
-</b>Any time you announce dates relevant to your course, be very clear about them. If the mid-course assessment is due at a particular time, be sure to mention the timezone for that time. 21 July 2012 at 11am is not specific enough. Is that 11am in London or in Sydney? If you have a good idea where your students are, we recommend that you post dates in multiple timezones.</li></ul>
-<ul><li><b>How will you deal with problems?&nbsp;<br>
-</b>For example, if a lesson goes live and the first set of students notice a problem, do you fix it? Send email about it? Ignore it?</li></ul>
-<ul><li><b>After the course is done, what will you do with the content? <br>
-</b>Are you intending a 1-time or recurring offering? How different will different iterations be? Do you want to retain history?&nbsp;</li></ul>
-Once you’ve done initial planning, it’s time to move on to step 2, <a href="https://sites.google.com/a/google.com/coursebuilder-docs/dev">Develop the content without the technology</a>.</div>
+Before you get into the details of creating your course, take 30 minutes to think about the following areas and write down your answers. Use those answers to guide everything else; they can save you a lot of time in the end. 
+<wiki:toc max_depth="1" />
+
+==1. Define the problem statement and high-level goal of the course.==
+
+What are you trying to achieve by creating this course? Be sure you decide both what you *are* trying to achieve and what you *are not* trying to achieve. Knowing both of those will make it much easier for you in later stages when you try to decide for any given thing whether or not it belongs in the course.
+
+==2. Identify your audience and your assumptions.==
+
+“Everyone” is not a practical audience. At the very least, limit the audience to people interested in your topic. The more specific you can be, the easier the rest is. 
+
+Think about what you expect your audience to already know. For example, assume you plan to teach a course on how to knit a sweater. Is your audience people who have never knitted before? Is it people who have learned enough knitting to create a scarf? Depending on your answer, you will cover different material in the course.
+
+==3. Define course objectives.==
+
+What will your audience do differently at the end of this course? (For example, your audience will be able to knit a sweater using one color of yarn.) 
+
+How will you measure the success of your objectives? (Will you compare the results of a pre-course assessment with a post-course assessment?)
+
+==4. Consider course logistics.==
+
+  * *How long do you want the course to be?*<br>Presumably, you know a lot about your topic. How much of that do you want to convey? You need to balance that with...
+  * *How long is your audience willing to spend on this topic?*<br>Your audience may be interested, but less interested than you in the topic. What you would be willing to spend weeks on, they may only be willing to spend hours on.
+  * *What pacing is appropriate? How many sessions? How many days?*<br>For example, if you expect your audience to be people with full-time jobs, they may not have much time to spend on your course, even if they are very interested. Spreading the same number of lessons over more days may help those people.
+  * *Will you use teaching assistants to help you communicate with your students?*<br>Coordinating teaching assistants can be a large effort. (See [TeachingAssistants Teaching Assistants].) On the other hand, the feeling of support your students get from the availability of real knowledgeable people to answer their questions can greatly improve their motivation.
+  * *How global are your students? Does your content differ for different cultures?*<br>For example, if you are teaching a basic knitting course, you might want to consider that people in different communities hold knitting needles differently and consequently do the basic stitches differently. Will you teach only the method you use? Will you teach multiple methods? Will you acknowledge differences, but not teach them? We strongly recommend that you at least acknowledge differences. Otherwise, you may alienate students in those other communities.
+  * *How will you handle scheduling releases?*<br>Will you make all content available at once? Will you release units every day or every few days? We recommend that you release portions over some specified time period, rather than all at once. This encourages a specific pacing for your students and increases the likelihood of meaningful student interactions in the forums.
+  * *How will you handle timezones?*<br>Any time you announce dates relevant to your course, be very clear about them. If the mid-course assessment is due at a particular time, be sure to mention the timezone for that time. 21 July 2012 at 11am is not specific enough. Is that 11am in London or in Sydney? If you have a good idea where your students are, we recommend that you post dates in multiple timezones.
+  * *How will you deal with problems?*<br>For example, if a lesson goes live and the first set of students notice a problem, do you fix it? Send email about it? Ignore it?
+  * *After the course is done, what will you do with the content?*<br>Are you intending a 1-time or recurring offering? How different will different iterations be? Do you want to retain history? 
+
+Once you’ve done initial planning, it’s time to move on to step 2, [TwoDevelop Develop the content without the technology].
