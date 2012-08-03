@@ -1,0 +1,4 @@
+=Implementation Checklist=
+
+<font color=red>
+<<TODO to be written. Checklist of everything you can or must do to create a mooc. [RequiredCodeChangesChecklist Required Code Changes Checklist] is just about the software (and this page will point to that page). This is all that other stuff, too. I'm not going to write this until later.>>
