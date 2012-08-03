@@ -1,3 +1,5 @@
+=From Objectives to Outline=
+
 In [TwoDevelop Develop the Content without the Technology], we discussed the importance of creating strong, measurable objectives. But what next? The transition between creating objectives and outlining can sometimes be a challenge. The following is one technique that can help make this process targeted and easier.
 
 Tying your objectives to specific skills or knowledge pieces is the easiest way to structure your learning material. Look at your course objectives and consider them to be at the top of a hierarchy. Ask yourself what it would take for your students to successfully accomplish that objective. What things do they need to know? What things do they need to be able to do?
