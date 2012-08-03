@@ -98,6 +98,6 @@ You can print out the attached certificate and hang it on your wall.  We hope yo
 Cheers,<br>
 Power Searching with Google course staff
 
-<font color=red><<TODO move image someplace real>></font>
+<img src="https://www.corp.google.com/~vpg/no_crawl/certificate.png" height="246" width="320 />
 
-<img border="0" height="246" src="https://sites.google.com/a/google.com/coursebuilder-docs/implement/c/formal/emails/certificate.png?height=246&amp;width=320" width="320 />
+<font color=red><<TODO move image someplace real. Currently in my nocrawl directory>></font>
