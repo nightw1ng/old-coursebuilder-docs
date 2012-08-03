@@ -4,7 +4,7 @@ The primary parts of a course created with Course Builder Experimental are as fo
   * *[#Course_content_and_delivery Course content and delivery]*<br>The material that you formally convey to students. Formal content can be lessons recorded or written in advance. It can also be live question and answer sessions with instructors.
   * *[#Assessments_and_activities Assessments and activities]*<br>Graded assessments with a fixed deadline to track student progress. They also use ungraded assessments, called *activities*, to provide feedback and hints to students.
   * *[#People_interactions Interactions between students and instructors and directly among students]*<br>An important component of any MOOC is the interactions between students and the instructors or teaching assistants (TAs) and those among the students themselves. 
-  * *[#administrivia Administrivia]*<br>Of course, there are bits and pieces required to register students, to get the course up and running, to track usage, and so on.
+  * *[#Administrivia Administrivia]*<br>Of course, there are bits and pieces required to register students, to get the course up and running, to track usage, and so on.
 
 A single *course* consists of a series of *units* with individual *lessons* and *activities*. The course can have any number of *graded assessments* scattered before, between, and after the units and lessons. It can also have one or more formally-set up avenues for *social interaction* for the students.
 
