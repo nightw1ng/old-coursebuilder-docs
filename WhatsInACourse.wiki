@@ -2,8 +2,8 @@
 The primary parts of a course created with Course Builder Experimental are as follows:
 
   * *[#Course_content_and_delivery Course content and delivery]*<br>The material that you formally convey to students. Formal content can be lessons recorded or written in advance. It can also be live question and answer sessions with instructors.
-  * *[#Assessments_and_deadlines Assessments and activities]*<br>Graded assessments with a fixed deadline to track student progress. They also use ungraded assessments, called *activities*, to provide feedback and hints to students.
-  * *[#Interactions_between_students_and_instructors_and_directly_among_students Interactions between students and instructors and directly among students]*<br>An important component of any MOOC is the interactions between students and the instructors or teaching assistants (TAs) and those among the students themselves. 
+  * *[#Assessments_and_activities Assessments and activities]*<br>Graded assessments with a fixed deadline to track student progress. They also use ungraded assessments, called *activities*, to provide feedback and hints to students.
+  * *[#People_interactions Interactions between students and instructors and directly among students]*<br>An important component of any MOOC is the interactions between students and the instructors or teaching assistants (TAs) and those among the students themselves. 
   * *[#administrivia Administrivia]*<br>Of course, there are bits and pieces required to register students, to get the course up and running, to track usage, and so on.
 
 A single *course* consists of a series of *units* with individual *lessons* and *activities*. The course can have any number of *graded assessments* scattered before, between, and after the units and lessons. It can also have one or more formally-set up avenues for *social interaction* for the students.
@@ -16,7 +16,6 @@ For a quick description of the flow a student typically experiences in a course,
 
 The rest of this page discusses the four main parts of a course in more detail.
 
-[VPGLINK]
 == Course content and delivery ==
 
 To make the content more digestible, consider grouping course material into a number of units. Each unit contains a series of lessons and activities related to a particular topic within the content covered by the entire course. For example, in the Power Searching with Google course, one unit is about interpreting search results; another is about checking the reliability of the content of those search results. Each of those units consists of five lessons and four or five activities.
@@ -58,7 +57,6 @@ But given the “M” in MOOC, your course probably has many more students. In t
 
 *Tip:* If you do a Hangout on Air, consider using a live captioning service to help students who are hearing impaired or whose primary language is not the language used in the Hangout on Air.
 
-[VPGLINK]
 == Assessments and activities ==
 
 An assessment is a test. In Course Builder Experimental, assessments can either be graded or ungraded. Ungraded assessments are also called activities.
@@ -99,7 +97,6 @@ When you create a question for an activity, you can provide the following inform
   * A hint about why incorrect answers are incorrect. The hint should point the student to the correct answer.
   * The correct answer and an explanation the student can read, either instead of answering the question themselves or after answering it, to provide more information.
 
-[VPGLINK]
 == People interactions ==
 
 Another critical component of a successful course is student participation, in a variety of venues that you can set up. The *live units* discussed as part of course content are only way way for students to participate. Asking questions of the experts is, of course, a time-honored technique.
@@ -115,7 +112,6 @@ The most common avenues are as follows:
 
 In addition to these things that you set up, in a successful MOOC, students may create additional interaction mechanisms, perhaps an email alias for students interested in a particular aspect of the course material or weekly in-person meetings for students living close too each other.
 
-[VPGLINK]
 == Administrivia ==
 
 Of course, there are bits and pieces required to register students, to get the course up and running, to track usage, and so on.
@@ -123,4 +119,3 @@ Of course, there are bits and pieces required to register students, to get the c
 Web site to bring it all together, analytics to provide usage stats, satisfaction stats, drop-off rates, registration
 
 <font color=red>[TODO gotta write this.]</font>
-
