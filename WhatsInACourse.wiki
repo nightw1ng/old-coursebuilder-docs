@@ -1,33 +1,34 @@
 #summary Describes the primary parts of a course created with Course Builder Experimental.
-=What's in a Course=
-
 The primary parts of a course created with Course Builder Experimental are as follows:
-  * *Course content and delivery* <br> The material that you formally convey to students. Formal content can be lessons recorded or written in advance. It can also be live question and answer sessions with instructors.
-  * *Assessments and activities* <br> Graded assessments with a fixed deadline to track student progress. They also use ungraded assessments, called activities, to provide feedback and hints to students.
-  * *Interactions between students and instructors and directly among students* <br>An important component of any MOOC is the interactions between students and the instructors or teaching assistants (TAs) and those among the students themselves. 
-  * *Administrivia* <br>Of course, there are bits and pieces required to register students, to get the course up and running, to track usage, and so on.
+
+  * *[#Course_content_and_delivery Course content and delivery]*<br>The material that you formally convey to students. Formal content can be lessons recorded or written in advance. It can also be live question and answer sessions with instructors.
+  * *[#Assessments_and_deadlines Assessments and activities]*<br>Graded assessments with a fixed deadline to track student progress. They also use ungraded assessments, called *activities*, to provide feedback and hints to students.
+  * *[#Interactions_between_students_and_instructors_and_directly_among_students Interactions between students and instructors and directly among students]*<br>An important component of any MOOC is the interactions between students and the instructors or teaching assistants (TAs) and those among the students themselves. 
+  * *[#administrivia Administrivia]*<br>Of course, there are bits and pieces required to register students, to get the course up and running, to track usage, and so on.
 
 A single *course* consists of a series of *units* with individual *lessons* and *activities*. The course can have any number of *graded assessments* scattered before, between, and after the units and lessons. It can also have one or more formally-set up avenues for *social interaction* for the students.
 
-For a quick description of the flow a student typically experiences in a course, see Course Flow. For more details about the parts of a course, continue reading. For detailed information on creating a course, see:
-  * Plan Before You Start
-  * Develop the Content without the Technology
-  * Implement the Entire Course with the Technology
-  * Pilot with Your Target Audience
+For a quick description of the flow a student typically experiences in a course, see [CourseFlow Course Flow]. For more details about the parts of a course, continue reading. For detailed information on creating a course, see:
+  * [OnePlan Plan Before You Start]
+  * [TwoDevelop Develop the Content without the Technology]
+  * [ThreeImplement Implement the Entire Course with the Technology]
+  * [FourPilot Pilot with Your Target Audience]
 
 The rest of this page discusses the four main parts of a course in more detail.
 
-==Course content and delivery==
+[VPGLINK]
+== Course content and delivery ==
 
 To make the content more digestible, consider grouping course material into a number of units. Each unit contains a series of lessons and activities related to a particular topic within the content covered by the entire course. For example, in the Power Searching with Google course, one unit is about interpreting search results; another is about checking the reliability of the content of those search results. Each of those units consists of five lessons and four or five activities.
 
 At present, there are two primary unit types:
-  * *Self-paced units* created in advance and published either as video, text, or both
+
+  * *Self-paced units *created in advance and published either as video, text, or both
   * *Live units* with the course instructors
 
 In both cases, instructors make course content available to students at scheduled intervals throughout the course. Once available the content continues to be available until the course ends. That is, lessons are not available for only a few days; students can go back and redo lessons at any time throughout the course. Soon after a live unit, the instructors post a video of it. So even if students miss the live unit, that material is still available.
 
-Releasing course content at scheduled intervals has one perhaps unanticipated benefit. Many students tend to work on content relatively soon after the content becomes available. For that reason, questions about course material tend to cluster near the release of that material. Because other students are thinking about the same material, they are more likely to be interested in getting involved in discussions about the material or answering questions.
+Releasing course content at scheduled intervals has one perhaps unanticipated benefit. Many students tend to work on content relatively soon after the content becomes available.  For that reason, questions about course material tend to cluster near the release of that material. Because other students are thinking about the same material, they are more likely to be interested in getting involved in discussions about the material or answering questions.
 
 ===Self-paced units===
 
@@ -37,11 +38,13 @@ A *lesson* is a coherent and relatively small chunk of information. A lesson con
 
 An *activity* is an ungraded assessment, used to provide students feedback on how well they understand the lesson. Activities typically contain optional hints. For more information, see Assessments below.
 
-*Tips*:
+Tips:
   * Make short videos, preferably 3-5 minutes.
   * Include closed captions in your videos
   * For the text version of a self-paced unit, take the time to clean up the transcript and make it into a reasonable document.
-  * When deciding what content to put in a self-paced unit, design for the average student, not for either the slow learner or the fast learner. To accomodate those outlier groups, consider putting background or advanced material in forum posts (if you want discussion and maybe answers) or in Google+ posts (if you just want to broadcast the information).
+  * When deciding what content to put in a self-paced unit, design for the average student, not for either the slow learner or the fast learner. 
+
+To accomodate those outlier groups, consider putting background or advanced material in forum posts (if you want discussion and maybe answers) or in Google+ posts (if you just want to broadcast the information).
 
 ===Live units===
 
@@ -49,13 +52,14 @@ A live unit is a fixed date and time when the instructors broadcast a session fo
 
 If you have a very small MOOC (fewer than 10 people), you can use a Google Hangout for your live unit. If you have more than 10 people, instead you can use a combination of Google Hangouts on Air and Google Moderator.
 
-A Google Hangout is a video chat that can have up to 10 participants. In a Google Hangout, all participants can speak to each other, let you share what’s on your screen, collaborate in Google Docs, view presentations and diagram together. If your course is small enough, this is a great way to go. 
+A [http://www.google.com/+/learnmore/hangouts/ Google Hangout] is a video chat that can have up to 10 participants. In a Google Hangout, all participants can speak to each other, let you share what’s on your screen, collaborate in Google Docs, view presentations and diagram together. If your course is small enough, this is a great way to go. 
 
-But given the “M” in MOOC, your course probably has many more students. In this case, instead you can use a combination of Google Hangouts on Air and Google Moderator to create a live experience with your students. With a Hangout on Air, you can post to your YouTube channel and to your Google+ stream, a live session with your instructors and any guests you chose. Students will not be able to talk to you in real-time, but they will be able to ask you questions through the use of a Google Moderator series. You can use a Google Moderator series to collect questions from your students and have them vote those questions up and down; the collecting can either be done in advance, during the Hangout on Air, or both.
+But given the “M” in MOOC, your course probably has many more students. In this case, instead you can use a combination of [http://googleblog.blogspot.com/2012/05/google-hangouts-on-air-broadcast-your.html Google Hangouts on Air] and [https://www.google.com/moderator/ Google Moderator] to create a live experience with your students. With a Hangout on Air, you can post to your YouTube channel and to your Google+ stream, a live session with your instructors and any guests you chose. Students will not be able to talk to you in real-time, but they will be able to ask you questions through the use of a Google Moderator series. You can use a Google Moderator series to collect questions from your students and have them vote those questions up and down; the collecting can either be done in advance, during the Hangout on Air, or both.
 
-Tip: If you do a Hangout on Air, consider using a live captioning service to help students who are hearing impaired or whose primary language is not the language used in the Hangout on Air.
+*Tip:* If you do a Hangout on Air, consider using a live captioning service to help students who are hearing impaired or whose primary language is not the language used in the Hangout on Air.
 
-==Assessments and activities==
+[VPGLINK]
+== Assessments and activities ==
 
 An assessment is a test. In Course Builder Experimental, assessments can either be graded or ungraded. Ungraded assessments are also called activities.
 
@@ -64,17 +68,21 @@ When you create your course using our experimental code, you supply the code wit
 ===Question types===
 
 Graded and ungraded assessments support the same types of questions:
+
   * Multiple-choice where there is one correct answer
   * Multiple-choice where there can be more than one correct answer
   * Fill-in-the blank
   * Go and do something 
+
 Telling the experimental code how to grade either type of multiple-choice question is straightforward. Telling it how to grade fill-in-the-blank questions can be trickier. You need to be very careful both in your wording of the question and in what you include about the correct answer. “Go and do something” questions do not require an answer, so you don’t have to include anything about the answer.
 
 ===Graded assessments===
 
 Graded assessments typically cover material from several units and lessons. They serve multiple purposes:
-  * * Rate performance.* The obvious goal of assessments is to rate students’ performance. Before and after assessments can also help you gauge the effectiveness of the course.
+
+  * *Rate performance.* The obvious goal of assessments is to rate students’ performance. Before and after assessments can also help you gauge the effectiveness of the course.
   * *Motivate students.* Students love certificates. Anticipation of a certificate on successful completion motivates many people to finish. So you need a way to measure success.
+
 With our experimental code, you have control over how many graded assessments you provide and how each of those assessments counts in the final scoring for a student’s grade.
 
 Because you use a graded assessment to rate performance and measure success, your practical choices are either to only let students take a graded assessment once or to let students take them multiple times but not give them feedback on which answers are incorrect. In our experimental code, students can take graded assessments multiple times but they do not get specific feedback on which answers are incorrect.
@@ -86,27 +94,33 @@ Even though you should not tell students exactly which answers are incorrect in 
 An activity is an ungraded assessment. An activity typically covers material only from the lesson that the activity immediately follows. An activity does not affect a student’s final score in the course. For that reason, activities can provide detailed feedback on students’ understanding of the material.
 
 When you create a question for an activity, you can provide the following information:
+
   * The correct answer to the question, so the code knows what to tell the student.
   * A hint about why incorrect answers are incorrect. The hint should point the student to the correct answer.
   * The correct answer and an explanation the student can read, either instead of answering the question themselves or after answering it, to provide more information.
 
-==People interactions==
+[VPGLINK]
+== People interactions ==
 
-Another critical component of a successful course is student participation, in a variety of venues that you can set up. The live units discussed as part of course content are only way way for students to participate. Asking questions of the experts is, of course, a time-honored technique.
+Another critical component of a successful course is student participation, in a variety of venues that you can set up. The *live units* discussed as part of course content are only way way for students to participate. Asking questions of the experts is, of course, a time-honored technique.
 
 But one of the main impetuses behind doing a MOOC is to reach an extremely large audience. The size of a MOOC’s audience means that it is impractical for the instructors and teaching assistants to answer all of the questions and to enter all of the discussions posed by all of the students. Instead, you can set up avenues in which the students can participate more proactively and not just with the instructor but also with themselves.
 
 The most common avenues are as follows:
-  * *Google+ page or a blog.*  Use Google+ or your blog to share information that you want available to not just your course members, but to other people as well. While students can comment on your posts, these formats are still primarily methods for instructors to push information out to the students.
-  * *Google Groups or other email forum.* An email forum is a great way to get your students to talk to each other. To facilitate discussion, you can set up your forum with appropriate categories, to guide students to likely places to read and post questions on particular pieces of your course. When designing the content of your course, consider creating activities that request students post answers to the forum. You can also use a forum to post material that you do not want in the main body of your course, either because it is remedial material for students who need a bit more help or more challenging questions for more advanced students.
-  * *Google Hangout.* You may decide that you want your students to divide into smaller groups to work on projects together. Your students probably live in distributed areas. You can have them meet in a Google Hangout to collaborate on their project.
-  * *Help email alias.* Sometimes students have questions that they are sure are not of interest to anybody else. For example, “I don’t have access to video” or “My dog ate my mid-course assessment. Can I have an extension?” You can provide a help alias to students to use for this primarily administrative questions.
+
+  * *[http://googleblog.blogspot.com/2011/11/google-pages-connect-with-all-things.html Google+ page] or a [http://www.blogger.com/ blog].* <br> Use Google+ or your blog to share information that you want available to not just your course members, but to other people as well. While students can comment on your posts, these formats are still primarily methods for instructors to push information out to the students.
+  * *[https://groups.google.com/ Google Groups] or other email forum.*<br>An email forum is a great way to get your students to talk to each other. To facilitate discussion, you can set up your forum with appropriate categories, to guide students to likely places to read and post questions on particular pieces of your course. When designing the content of your course, consider creating activities that request students post answers to the forum. You can also use a forum to post material that you do not want in the main body of your course, either because it is remedial material for students who need a bit more help or more challenging questions for more advanced students.
+  * *[http://www.google.com/+/learnmore/hangouts/ Google Hangout].*<br>You may decide that you want your students to divide into smaller groups to work on projects together. Your students probably live in distributed areas. You can have them meet in a Google Hangout to collaborate on their project.
+  * *Help email alias.* <br>Sometimes students have questions that they are sure are not of interest to anybody else. For example, “I don’t have access to video” or “My dog ate my mid-course assessment. Can I have an extension?” You can provide a help alias to students to use for this primarily administrative questions.
 
 In addition to these things that you set up, in a successful MOOC, students may create additional interaction mechanisms, perhaps an email alias for students interested in a particular aspect of the course material or weekly in-person meetings for students living close too each other.
 
-==Administrivia==
+[VPGLINK]
+== Administrivia ==
 
 Of course, there are bits and pieces required to register students, to get the course up and running, to track usage, and so on.
+
 Web site to bring it all together, analytics to provide usage stats, satisfaction stats, drop-off rates, registration
 
-<<TODO gotta write this. >>
+<font color=red>[TODO gotta write this.]</font>
+
