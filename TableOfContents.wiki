@@ -16,19 +16,18 @@
       * [HappinessMetrics Happiness Metrics]
       * [ReachAndEngagementMetrics Reach & Engagement Metrics]
     * [ParticipantCommunity Participant Community]
-      * [GooglePlusPage Google+ Page]
+      * [PlusPage Google+ Page]
       * [InstructorLedCommunication Instructor-Led Communication]
       * [OnlineOfficeHours Online Office Hours]
       * [TeachingAssistants Teaching Assistants]
       * [WebForums Web Forums]
   * [FourPilot Pilot with Your Target Audience]
-  
-*Examples*
-    * [ExampleSurvey Example Post-Course Survey]
-    * [ExampleReachEngagementMetrics Example Reach & Engagement Metrics]
-    * [ExampleEmails Example Emails]
-    * [ExampleEventTimeline Example Event Timeline & TA Hours]
-    * [ExampleTAEssentialsDoc Example TA Essentials Doc]
+  * *Examples*
+      * [ExampleSurvey Example Post-Course Survey]
+      * [ExampleReachEngagementMetrics Example Reach & Engagement Metrics]
+      * [ExampleEmails Example Emails]
+      * [ExampleEventTimeline Example Event Timeline & TA Hours]
+      * [ExampleTAEssentialsDoc Example TA Essentials Doc]
 
 
 ===NOTES===
