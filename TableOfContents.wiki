@@ -31,6 +31,11 @@
 
 
 ===NOTES===
-<font color=red>*This is a draft! Beware!*</font>
+
+<font color=red> <b>This is a draft! Beware!</b> </font>
+<br>
+<font color=red>At present, nobody but me ([mailto:vpg@google.com vpg])  has ready any of this.</font>
 
 I haven't figured out how to omit a heading from a TOC yet. That's why the TOCs on individual pages include the title of the page. I'd much prefer they didn't.
+
+I just (3 Aug) moved this content from Sites into this Wiki. As you read, please keep your eye out for translation artifacts (probably weird formatting or random HTML tags or pieces of  tags). I'm willing to bet I missed a few things.
