@@ -1,0 +1,29 @@
+=Reach and Engagement Metrics=
+
+Reach and engagement metrics let you determine how many people you reached with the course and how engaged those people were. Some common questions include:
+
+  * How many students registered? 
+  * How many completed each unit and each lesson? 
+  * What countries did the students come from? 
+  * What were the overall drop-off rates? 
+  * When did students tend to drop-off?
+
+<font color=red><<TODO write this. Is this ALL Analytics? (Email out to Riona for help with existing Analytics docs and to Meg and Saifu about where the metrics come from>></font>
+
+{{{
+<!--
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-32802821-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? '<a href="https://ssl/">https://ssl</a>' : '<a href="http://www/">http://www</a>') + '.<a href="http://google-analytics.com/ga.js">google-analytics.com/ga.js</a>';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+-->
+}}}
+
+For suggestions on metrics you can use to measure reach and engagement, see [ExampleReachEngagementMetrics Example Reach & Engagement Metrics].
