@@ -1,2 +1,2 @@
-  * [TestHtml Home]
+  * [CourseBuilderExperiment Course Builder Experiment]
   * [WhatsInACourse What's in a Course]
