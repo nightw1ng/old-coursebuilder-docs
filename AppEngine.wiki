@@ -1,0 +1,11 @@
+=App Engine=
+
+<font color=red><<TODO to be written>>
+  * [https://developers.google.com/academy/apis/cloud/appengine/intro/gettingstarted Intro to App Engine]
+  * Creating an AE account
+  * Downloading our course code
+  * Testing our code locally&nbsp;
+  * Uploading/Deploying code to App Engine
+  * Setting up robots.txt for your deployment
+  * Write instructions for specifying how to tell Course Builder where your content is (i.e., right now it's the spreadsheet)
+  * Overview of code structure
