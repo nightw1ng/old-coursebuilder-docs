@@ -47,7 +47,7 @@ Additionally, consider using your TAs to pilot and to test the course content be
 
   * Think of the backup staff you will need, in case of sickness or whatever emergency comes up.
 
-  * Create a calendar of TA dates in advance, including the expected commitment in terms of total number of  hours, during what hours you most want coverage, and when events (release of units or assessments, hangouts, ...) will happen. See [ExampleEventTimeline">Example: Event Timeline and TA Hours].
+  * Create a calendar of TA dates in advance, including the expected commitment in terms of total number of  hours, during what hours you most want coverage, and when events (release of units or assessments, hangouts, ...) will happen. See [https://spreadsheets.google.com/spreadsheet/loadredirect?authuser=0&key=0AuIVQI9HzW0bdHZNcWtTWE1zMERvQWhQLUVvNDNQT1E Example Event Timeline & TA Hours].
 
 ==Escalation==
 
