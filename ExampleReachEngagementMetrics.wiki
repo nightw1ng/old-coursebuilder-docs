@@ -1,0 +1,37 @@
+=Example Reach & Engagement Metrics=
+
+This page lists some reach and engagement metrics you might collect.  The list is not exhaustive; it's metrics we found useful for Power Searching with Google.
+
+<font color=red>
+<<TODO make links for each section of how to collect those metrics. Email out to Saifu and Meg for help on this.>>
+</font>
+
+  * *Overall* (See <font color=red> <<TODO somewhere>></font>)
+    * Number of registrants
+    * Number of  countries represented
+    * Number of registrants who complete pre-course assessment
+    * Number of  registrants who complete mid-course assessment
+    * Number of  registrants who complete post-course assessment
+    * Number of  registrants who pass/get certified
+    * Number of  registrants who passed of those who completed the pre-course assessment
+  * *Course Forums* (See <font color=red><<TODO somewhere>></font>)
+    * Number of posts
+    * Number of posts in each category group (See [WebForums Web Forums])
+    * Number of posts in each category
+    * Number who joined the forum 
+    * Number who posted anything on the forum (with duplicates removed)
+  * *Email Help Center *(See <font color=red><<TODO somewhere>></font>)
+    * Number of emails sent to the help email address help@
+    * Number of senders (with duplicates removed)
+    * Number of emails having at least TA in its "label"
+  * *Hangouts on Air* (See <font color=red><<TODO somewhere>></font>)<br>For each Hangout On Air
+    * Number of concurrent viewers
+    * Number of playbacks on YouTube
+    * Number of YouTube comments
+    * In Moderator, number of votes on number of questions from number of people
+    * Number of Google+ comments on post about the Hangout On Air
+  * *Google+ Course Page* (See <font color=red><<TODO somewhere>></font>)
+    * Increase in number of followers since the course announcement
+    * Average number of valid comments on posts to that page as a whole
+    * Average number of likes per post
+    * Average number of "reshares" per post
