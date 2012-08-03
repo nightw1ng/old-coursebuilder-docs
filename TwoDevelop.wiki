@@ -50,6 +50,8 @@ In deciding the objectives for your course, try to design for the middle ground.
 
 ==Decide what you want to test in your assessments, both graded and ungraded.==
 
+<font color=red><<TODO MOOC MOOC design doc has some interesting stuff (in [https://docs.google.com/a/google.com/document/d/14n18oMbxFeJgaS2sajng9EqO0l5SG2gv21Y_KiHw6Vs/edit?pli=1 unit 2]) I should maybe include here.>></font>
+
   * In software development, this idea is known as test-driven development. The idea is to be very concrete about the outcome you want. “Students will know the answers to this set of questions.” You then create the lessons so that they enable that outcome.
 
   * Assessments serve multiple purposes. They let you test students’ knowledge so that you can rate their progress, but also so that you can improve the course content for future versions. 
