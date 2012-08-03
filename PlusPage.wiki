@@ -1,0 +1,16 @@
+=Google+ Page=
+
+<font color=red><<TODO consider changing this page to be about both G+ pages and about blogs in general. Obviously, give it a more descriptive name in that case. What think my reviewers?>></font>
+
+People frequently use Google+ to connect to other people. But they can also use Google+ to connect with other things, such as businesses, sports teams, or even your course. To give your course a Google+ presence, you create a Google+ page for it. Consider [http://support.google.com/plus/bin/answer.py?hl=en&amp;answer=1710691&amp;topic=1710599&amp;ctx=topic creating a Google+ page] for your course before you release the course.
+
+There are several ways you might want to use your Google+ page for your course:
+
+  * Even if you keep the Google Group for your course private to its registered students, you might make the Google+ page available to the entire world. You can use it as a way to let the everyone know what a great course you've created.
+
+  * You should design the primary flow of your course for the middle range of students. You don't want to bore those students with background material and you don't want to intimidate them with too advanced material. You can use your Google+ page to post material that is not appropriate for the primary flow of the course.
+
+  * And, if you use [OnlineOfficeHours Hangouts On Air] in your course, you can post those on your Google+ page as an easy way for your students to access them.
+
+
+<font color=red><<TODO as may be clear, I'm not really certain what to say about this. I never looked at the G+ page for Power Searching, except for the HOA>></font>
