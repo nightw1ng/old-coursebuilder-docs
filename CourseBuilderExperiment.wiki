@@ -25,7 +25,7 @@ So what are the characteristics of a course such as Power Searching with Google 
   * <b>Interactions between students and instructors and directly among students</b> <br>An important component of any MOOC is the interactions between students and the instructors or teaching assistants (TAs) and those among the students themselves.
   * <b>Administrivia</b> <br>Of course, there are bits and pieces required to register students, to get the course up and running, to track usage, and so on.
 
-For more information on these aspects, see [What’s in a Course?]
+For more information on these aspects, see [WhatsInACourse What’s in a Course?]
 
 ==How to create a course with Course Builder Experiment==
 
