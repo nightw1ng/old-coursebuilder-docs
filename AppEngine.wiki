@@ -9,3 +9,30 @@
   * Setting up robots.txt for your deployment
   * Write instructions for specifying how to tell Course Builder where your content is (i.e., right now it's the spreadsheet)
   * Overview of code structure
+
+From the MOOC MOOC design doc
+
+  * Lesson 3. Mechanics of the App on AppEngine
+    * what can it handle
+    * potential pitfalls
+    * customize (edit CSS, branding)
+    * costs of using appengine?
+    * how to implement it
+  * Steps for creating a Coursebuilder app engine application
+    # Download the coursebuilder .zip file
+      * Unzip it and note the root directory
+      * This file includes the coursebuilder app and all files that will replicate the PS course, including javascript activities and assessments
+    # Deploy an AppEngine instance
+      * Go to https://appengine.google.com/domain/apps and click “Create Application”
+      * Generate a unique URL (we may want to give them guidance, like first part of your email-mooc.appspot.com)
+      * Make sure you have Python 2.7 installed on your computer
+      * Download the Python AppEngine SDK from https://developers.google.com/appengine/docs/python/gettingstarted/ 
+        * Download the doc server
+        * Download the appcfg.py file	
+      * Launch the doc server
+      * Launch the appcfg.py file and point it to the unzipped root directory
+      * Deploy the application to AppEngine
+    # Download the spreadsheet we give you as a csv
+      * Upload the csv to the AppEngine data store (both to the local version and deployed version)
+  
+</font>
