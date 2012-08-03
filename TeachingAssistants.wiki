@@ -1,0 +1,144 @@
+=Teaching Assistants=
+
+Whenever you teach a course, you need to decide if you want teaching assistants (TAs) to help you work with your students. This is also true for MOOCs.  The feeling of support your students get from the availability of real, knowledgeable humans to answer their questions can greatly improve their motivation and, ultimately, the success of your course.
+
+On the other hand, the scale of a MOOC suggests having a large pool of TAs. If you do have a pool, coordinating and training your TAs can become a large effort. Whether the rewards are worth that effort is up to you. 
+
+In case you decide to have a pool of TAs, this page provides tips on how to work with and support them.
+
+<wiki:toc max_depth="2" />
+
+Probably the most important tip is simple: take care of the well-being of the TA team. If you make them feel comfortable and supported, they will make your students feel comfortable and supported.
+
+==TA responsibilities==
+
+Will they just answer email and moderate the forum? Will they test or pilot the course for you? Willy they add to the available "canned responses"?
+
+How much you want your TAs to do can vary. The primary responsibilities are typically:
+
+  * Answer the email queue. 
+  * Moderate the forum. Provide encouragement, answer questions, and delete spam.
+  * Moderate comments on Google+ page posts.
+  * Filter questions to send to more qualified folk.
+  * Handle commonly asked questions. 
+
+Additionally, consider using your TAs to pilot and to test the course content before it goes live. This is not a common TA duty for live courses, but can be quite effective for a MOOC.
+
+===Tips when moderating a forum===
+
+  * You'll find that students ask the same question many times. There are a couple of techniques for handling this:
+    * In your forum, choose one instance of the question as the main question. Mark all other instances of that question as duplicates. Point the duplicates to the main questions. If the question is posed in email, point them to the post in the forum.
+    * Create a "canned response" for the question. That is, answer the question once and put that answer somewhere the other TAs will look. Then all TAs can copy and paste the same answer when the question comes back.
+  * Don't try to answer everything.
+  * Encourage students to answer each other.
+  * Step in if nobody else does (wait "a while") or if the information being passed around is problematic.
+  * Be careful not to give away too much in your answers.
+  * Admit mistakes -- you'd be amazed how long people spend trying to justify incorrect course material.
+  * Trust your instincts (TAs tend to be hesitant).
+  * Have only one TA per shift answer email; have the others moderate the forum and Google+ posts.
+
+==Staffing and coverage==
+
+  * A MOOC is live 24 hours of the day, 7 days a week for the entire length of the course. Will you have TAs available at all times? Will you restrict TAs to certain time periods?
+
+  * Where will you get your TAs from? If your course is international or multi-cultural, consider having TAs that the represent multiple groups. At the very least, have TAs in multiple time zones.
+
+  * Consider the breakdown in expertise of your TAs. Will you expect all TAs to know the same amount? Will you have a set of first-line TAs who mainly handle administrative questions? Will you have second-line TAs who are more expert in the course material? We found in Power Searching with Google that the majority of student questions concerned course administration, rather than course content. TAs with little content knowledge could answer those questions, leaving the difficult content questions for TAs or experts with more  familiarity with the content.
+
+  * Think of the backup staff you will need, in case of sickness or whatever emergency comes up.
+
+  * Create a calendar of TA dates in advance, including the expected commitment in terms of total number of  hours, during what hours you most want coverage, and when events (release of units or assessments, hangouts, ...) will happen. See [ExampleEventTimeline">Example: Event Timeline and TA Hours].
+
+==Escalation==
+
+TAs won't be able to handle all questions that they receive. They need to be able to escalate to appropriate people. The easiest way to do this is with multiple email aliases:
+
+  * *help@* for students to send questions to TAs. Make this the *only* email alias available to students. Depending on the specific question, messages may get forwarded to other aliases.
+  * *expert-help@* for TAs to send questions up the line. Only available to folks putting on the course.
+  * *tech-help@* for problems with the technology. Only available to folks putting on the course.
+  * *team@* for project-related email. Only available to folks putting on the course.
+
+==TA community==
+
+Just like your course will be more successful if the students form a support community among themselves, it will be more successful if the TAs form their own support community. The following tips help create that feeling of community:
+  * If you have multiple TAs on duty at the same time:
+    * Have TAs who are on duty at the same time be in constant communication with each other. Questions come in waves; it's common for there to be a common question at a particular time. Sharing information about what they are hearing eases the TA burden.
+    * If most of your TAs are physically near each other, get a single room for them to meet in during their TA shifts.
+    * If your TAs are physically distributed, have all TAs on duty at the same time enter the same [http://support.google.com/chat/bin/answer.py?hl=en&amp;answer=161886 group chat].
+    * Don't force your TAs to participate in these group sessions, but do encourage them to attend at least one, to get a feel for what goes on during a shift.
+
+  * Schedule TAs with overlapping shifts or encourage them to pass on highlights of what happend in the last shift to the new shift.
+
+  * Create a buddy system for your TAs, so the more experienced can help the less experienced. Here, "experience" can be either experience at being a TA or experience in the subject matter. 
+
+  * TAs are frequently more comfortable checking with each other and with their buddies before escalating to more expert advice. New TAs tend to be insecure and need an easy way to make sure they’re starting out appropriately.
+
+==TA training==
+
+Your TAs need to be familiar with both the content of the course and the experience of being a TA for a MOOC. Depending on your TAs, you may choose to provide formal training for them in either or both of those areas. Some tips:
+
+  * Have TAs go through the entire course before it opens to students, preferably with the final version that the students see. 
+  * If you use TAs to pilot early drafts of the course, still make the final material available to them before it is available to students.
+  * Before the course starts, require TAs to attend a hands-on demo of moderating the forum and answering Help emails. What should they do when they don't know the answer to a question? A question has been asked many times? A question is abusive or otherwise spam? And so on.
+  * If your course content works differently for different parts of your audience, make sure your TAs are aware of that fact, so that they don't misrepresent the material. For example, some aspects of Google Search functionality are available in only some countries. If your TAs think their personal experience is the only one, they'll have confused and unhappy students.
+
+==TA documentation==
+
+The more documentation your provide your TAs, the more self-sufficient they can be. Centralize all of the documentation in one searchable place; consider creating a Google Site for TA resources. Make the information editable by the TAs themselves, so that they can add information as the course progresses.
+
+Topics to include:
+
+  * Information about the course itself
+    * Audience
+    * Objectives
+    * Logistical details (How many units? When will they be released? How long is each? ...)
+    * Link to the course so the TAs can go through the material themselves
+
+  * Answers for students
+    * Official messaging to students on various decisions, such as the mid-course assessment due date
+    * Answers to common questions
+    * Add to the answers while the course is ongoing 
+
+  * Roles and responsibilities
+    * Before the course
+      * Learn the TAs team mission
+      * Play a role in testing and development (if applicable)
+      * Prepare to communicate with the public
+        * What tone should they take in answering emails or posts? 
+        * Are there  things to stress or to omit? 
+        * Are there legal issues they should be aware of ?
+      * Prepare for moderating the forum and email help center
+        * If an official message has been sent to students, don't contradict it or add your own messaging
+        * Are there messages that should not be responded to? How will they know?
+        * What indicates that a message should be removed from the forum? (In email, you can indicate this by adding a "DO NOT RESPOND" label to   such messages. In a forum, you can either remove or close a post.)
+        * How do you mark a message as a duplicate?
+        * How do you mark an email message as being handled? (One possibility is to have TAs label the messages they handle, _as soon as they open   them_, with their name.  That indicates to other TAs to ignore labelled messages.)
+    * During the course
+      * Ensure round-the-clock student support
+      * Moderate the forum and email help center
+      * Add to the TA answer guide and anticipated questions documents
+    * After the course
+      * Document how you did what you did
+      * Prepare useful tools to help the next round of TAs
+
+  * Team and support staff
+    * Who is involved in this project?
+    * In what roles?
+    * What are their availabilities for answering TA questions?
+
+  * Hot topics
+    * What are students asking about?
+
+  * Happy topics
+    * What lovely things have students done recently?
+
+==Email==
+
+In addition to the formal documentation or training you do for your TAs, use email to communicate with them both before and during the course. 
+  * Set up an internal email alias for the TA team.
+
+  * Before the course, keep TAs informed on course developments, breaking news, shifts in strategies, and so on. In essence, make sure they feel part of the team delivering the course.
+
+  * Keep emails to TAs concise and don’t send too many small details or too much to read. You want them to feel included, not overwhelmed.
+
+  * During the course, put out a daily summary for TAs on any updates and changes.  Include information such as the questions of the day and what their responses should be. Also include ongoing metrics, such as the number of registrants and their progress. The first type of information helps them assist better; the second type improves their motivation.
