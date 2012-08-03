@@ -14,9 +14,9 @@ _*Everybody working to get the course ready. Include the TAs themselves!*_
 
 ==The Student Experience==
 
-<img src="https://docs.google.com/a/google.com/drawings/d/1XruqLHOAjtZuu63BIv4begcxAScpL5Ewb-SoEsaxZEs/edit">
+<img src="https://www.corp.google.com/~vpg/no_crawl/userflow.png" height="279" width="418">
 
-<font color=red><<TODO where do I put the image?>></font>
+<font color=red><<TODO where do I put the image? It's in my nocrawl directory at present.>></font>
 
 ==What distinguishes this course from a traditional online course?==
 
