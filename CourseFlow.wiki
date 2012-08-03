@@ -1,0 +1,42 @@
+=Course Flow=
+
+This page describes what a student does, in what order, when taking a course created with Course Builder Experimental. That description may give the impression of a simple sequential flow through the material, like any other course. In reality, some of the steps can be done at the student’s own pace; other steps must be  done in synchrony with other students taking the course. The second section describes that flow in a little more detail, because it is unfamiliar to many students and instructors.
+
+For a description of the parts of a course from the course designer’s perspective, see [WhatsInACourse What's in a Course?]
+
+==What students do when==
+
+The flow for a student participating in a course is as follows:
+
+  # *Register* for course.
+  # Take a *pre-course assessment* to benchmark starting familiarity with course material.
+  # *Watch the video*, read the text version, or both for the first lesson in the first unit. Repeat watching and reading as many times as is useful.
+  # *Complete the activity *following that lesson. Repeat the activity as many times as is useful.
+  # *Repeat* steps 3 and 4 for several lessons and units.
+  # *Submit questions* for the live question and answer session.
+  # *Watch the live Q&A session* with the instructors.
+  # *Take the mid-course assessment.*
+  # *Watch more* lessons and complete more activities.
+  # *Submit* questions for and watch the second live Q&A session.
+  # *Take the final assessment*.
+  # Fill out the *post-course survey*.
+  # If earned a passing score, *receive certificate*.
+
+Throughout all of these steps, the student has opportunities to interact with other students and with the course instructors and teaching assistants. Moderated interactions are through email forums, Google+ pages, and regular email; students may set up their own unmoderated interactions by themselves.
+
+==Semi-synchronous flow==
+
+These online courses have a semi-synchronous flow. In conjunction with good material, this model is effective at increasing student motivation, student retention, and student interactions. However, semi-synchronous flow is unfamiliar to many students. Students expect a course to be either completely asynchronous or completely synchronous.
+
+  * With a *synchronous* flow, students do all of their work at the same time everybody else is doing that work.
+    * If they ask questions, they reasonably expect other people to be working in the same area and so the likelihood of getting their questions answered by peers is good.
+    * Students also expect that aspects of the course, such as availability of material and assessments, have inflexible deadlines.
+    * Students must do the coursework at the pace set by the course designers, not at their own pace.
+  * With an *asynchronous* flow, students do everything at their own pace and have no deadlines to consider.
+    * Students get  to work at their own pace.
+    * If students ask questions, there’s an excellent chance that nobody else is working on the same area; there is less likelihood someone answers the question in a timely manner.
+    * The lack of deadlines means students can always finish the course “later”. Procrastination seeming to be a universal human tendency when there are no deadlines, many people do not finish at all.
+  * With a *semi-synchronous* flow, students do some parts of the course at their own pace and do other parts of the course on a fixed schedule.
+    * Instructors release course materials on a fixed schedule; for example, a new unit Monday, Wednesday, and Friday. Students can work on the units any time after their release. We’ve seen that students tend to work on units soon after their release.
+    * Live events, such as a live Q&A session with the instructors, happen at a fixed date and time. After the event, the instructors may post the video for students to watch at their own pace. Live events focus students around particular topics.
+    * Assessments are due by a fixed deadline. Submitting an assessment after the deadline affects a student’s final score. This is the part that confounds students. Because much of the course is at their own pace, having fixed deadlines can be confusing.
