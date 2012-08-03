@@ -1,5 +1,6 @@
 Before you get into the details of creating your course, take 30 minutes to think about the following areas and write down your answers. Use those answers to guide everything else; they can save you a lot of time in the end. 
-<wiki:toc max_depth="1" />
+
+<wiki:toc max_depth="1"></wiki:toc>
 
 ==1. Define the problem statement and high-level goal of the course.==
 
