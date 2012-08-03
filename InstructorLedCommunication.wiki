@@ -1,0 +1,37 @@
+=Instructor-Led Communication=
+
+The official course content you create using our experimental code (see [CourseMaterial Course Material]) is, of course, a major part of the formal communication between you and your students. However, it is not the only communication.
+
+<wiki:toc />
+
+==Sending emails==
+
+You may choose to send periodic emails to students at important points along the way. Be very careful here. Avoid spamming your students by sending too many emails. On the other hand, do send enough emails to keep their interest without annoying them. 
+
+If you decide to send emails, you need to first collect your students email addresses. You do this during the registration process <font color="#ff0000"><<TODO link to description>></font>. Create an email alias containing all of your students' email addresses.
+
+Once you have the email alias,  consider sending these emails:
+
+  * *At course registration*<br>A brief description of the course, the high-level schedule for the course, an introduction to the community features available to them, and so on.
+  * *Whenever you release new content*<br>Link to the new content, any upcoming deadlines.
+  * *Partway through, to students who have registered but not started the course*<br>Sometimes students register and then forget to start a course. Partway through the course, you can collect the addresses <font color="#ff0000"><<TODO link to how>></font> of these people and send them a reminder that they might want to start. 
+  * *Before a special event*<br>For example, if you have a Hangout On Air, send a reminder message about it.
+  * *Upon submission of final assessment<br>*Notification of whether or not the student has passed and when to expect the certificate (if any).
+Whatever emails you decide to send, we recommend that you draft them in advance.  See [ExampleEmails Example Emails] for some samples.
+
+*Tip:* Send less important emails to gour Google+ page or  to your forum, rather than directly to students' email addresses.
+
+==Supporting students==
+
+  * *Online office hours*: Just because you have thousands of students doesn't mean they don't want to hear their questions answered live by an instructor. To enable this interaction, you can use a combination of Hangouts On Air and Google Moderator. See [OnlineOfficeHours Online Office Hours].
+  * *Content-related questions: *Have  students post these to  your Google+ page or to the forum you create for that purpose. See [WebForums Web Forums] and [PlusPage Google+ Page].
+  * *Administrative questions:* Consider creating  a help alias for your students such as help@example.com. If you create a help alias and you have teaching assistants, share that address with all of your assistants, so that they send email from a formal location rather than from their own email addresses.
+
+==Certificates or badges==
+Students love certificates and badges. They provide a nice feeling of accomplishment.
+
+If you plan to provide certificates to students upon successful completion of the coures, you'll need to design the certificate or badge. 
+
+Be sure to use a tool that makes it easy for you to fill in the final certificate with the student's name and whatever other information you want to include, such as the student's scores on the graded assessments or the final score for the course.
+
+<font color="#ff0000"><<TODO anything interesting I can say here?>></font>
