@@ -26,7 +26,7 @@
       * [ExampleSurvey Example Post-Course Survey]
       * [ExampleReachEngagementMetrics Example Reach & Engagement Metrics]
       * [ExampleEmails Example Emails]
-      * [ExampleEventTimeline Example Event Timeline & TA Hours]
+      * [https://spreadsheets.google.com/spreadsheet/loadredirect?authuser=0&key=0AuIVQI9HzW0bdHZNcWtTWE1zMERvQWhQLUVvNDNQT1E Example Event Timeline & TA Hours]
       * [ExampleTAEssentialsDoc Example TA Essentials Doc]
 
 
