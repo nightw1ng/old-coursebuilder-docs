@@ -1,0 +1,85 @@
+=Web Forums=
+
+<wiki:toc />
+
+With Google Groups, you can set up your very own web forum to communicate and collaborate, safely and securely, with others online. You can use Google Groups to post important information such as answers to frequently asked questions or to host online discussions. 
+
+We designed Google Groups to be simple to set up and easy to use, so you can get started using it to share information with students and parents in a hurry. You can set up your group to be pubilshed for all to see, or you set it as a private group and share only with those of your choosing.
+
+Google Groups features like online discussions and real-time editing can make it simple for students to work together when they're not in the same physical location, sharing research findings, collaborating on group projects, and comparing notes on the lessons.
+
+For a longer introduction to Google Groups, see [http://support.google.com/groups/bin/answer.py?hl=en&amp;answer=46601 Welcome to Google Groups]. 
+
+==Create your group==
+
+  * When setting up your group for the first time, follow the instructions at [http://support.google.com/groups/bin/answer.py?hl=en&amp;answer=2464926 Create a group].
+  * In the third step of that procedure, you select a *group type*. Set your group type to *Web forum*.
+  * Once you finish creating your group, you see a Congratulations screen. From that screen, choose *Customize your group's settings*. From that screen
+    * In the left navigation, expand *Settings*.
+      * Choose *Email options* and enter a *Subject prefix* for email messages sent to the group.
+      * Choose *New members* and decide who you want to be able to join the group.
+      * Choose *Categories* and click on *Enable categories*, then set up appropriate categories (described next).
+    * In the left navigation, expand *Permissions*.
+      * Choose *Posting permissions.* 
+      * Consider allowing all members of the group to *Mark Favorite Reply On Own Topic*  and *Me Too Topic*.
+      * Choose *Moderation permissions.* 
+      * Set *Mark Duplicate* to *All Members of the group*.
+      * Set *Mark Favorite Reply on Any Topic *to *All Members of the group*.
+      * Set *Unmark Favorite Reply on Any Topic *to **All Members* of the group*.
+      * These last three are recommended settings that let your students help moderate the forum. If your forum is busy enough, you don't want to be the only one who can do these things. If you decide you want to keep tighter control over these areas, change the permissions to be somewhat more restrictive.
+
+==Create categories to organize posts to your group==
+
+If your forum is effective, your group will get an extremely large number of posts. To make it easier for students to find the specific information in which they're interested, consider using category groups and categories to organize posts.
+
+A *category group* is simply an organizational mechanism within the Google Group. Group members do not post messages directly to a category group. Instead, group members post to a category within a category group. Refer to [http://support.google.com/groups/bin/answer.py?hl=en&amp;answer=186851 Adding and removing categories] for general information on this topic. 
+
+The following hierarchy suggests category groups and categories within those groups that you might use. The top level of the hierarchy contains the category groups. The second level contains the categories.
+
+  * *From Course Staff*<br>Course staff will post here
+    * *Course announcements*<br>Course staff will post announcements here
+    * *Apply, share, and connect*<br>Share how you apply your new skills here
+    * *Extra challenges and bonus material*<br>We will post challenging search questions and bonus videos here
+    * *Tips and tricks*<br>Device-specific and location-specific hints
+
+  * *Need Help?*<br>Post your course-specific questions here
+    * *Unit 1*<br>What it covers
+    * *Unit 2*<br>What it covers
+    * ...
+
+  * *Course Feedback*<br>Share your comments about your experience with the course
+    * *Content feedback*
+    * *Technology feedback*
+
+This is just one set of category groups and categories. You might choose completely different ones. For example, instead of organizing the Need Help section strictly by the unit that covers the material, you might choose more explicitly topic-related categories or even suggest new things for students to think about with your categories. For example, in a knitting course you might have categories such as "The Stitches", "Measuring Garments", and "How Yarn and Needles Interact".
+
+*Tip: *With category groups, you can decide whether choosing a category from each category group is optional or required.  If it is required for a category group, that means all posts must choose a category from that group. If you use a hierarchy such as the one above, clearly the category groups need to be optional.
+
+==Enroll students in your group==
+
+<font color=red><<TODO how do they do this at scale? My understanding is that what we did isn't possible externally>>
+
+<<My understanding is also that we used a separate group for sending emails versus for the forum itself. Can we instead suggest that they use App Engine email for emails and Groups just for the forum? Possibly not. MarkF said:
+
+As Saifu mentioned, App Engine can do emailing so this is medium-ish matter of programming.  Note, though, that using App Engine for this might incur possibly significant costs.  App Engine bills $0.0001 per email sent and additional charges for the actual bytes sent.  They also have limits on number of email recipients per minute: 8/min for free apps and 5100/min for billing enabled apps. See [https://developers.google.com/appengine/docs/billing#Billable_Resource_Unit_Costs here] and [https://developers.google.com/appengine/docs/quotas#Mail here] for more grungy details>>
+</font>
+
+==Mark duplicate posts==
+
+It is very common for people to post essentially the same question many times. Rather than answer the same question over and over again, you can instead mark some posts as duplicates of other posts.
+
+To do so, you first must set the moderation permissions for your group as described in [#creategroup Create your group]. Then, when you encounter a duplicate question, follow this procedure:
+
+  # Identify the main post.
+    # Decide which post is the "main" post; that is, which post you want all the others to point to.
+    # Visit that post in your web browser.
+    # Copy the URL for the post from the address bar in your web browser.
+  # Mark other posts as duplicates.
+    # Visit the topic you want to mark as a duplicate.
+    # From the *Actions* menu near  the top of the window, choose *Set Duplicate*.
+    # In the dialog box that appears, enter the URL of the main topic and click *OK*.
+
+When you do this, a couple of things happen to the duplicate topic.
+
+  * Groups locks the post, so nobody can comment on it.
+  * The title of the post gets a link that says *Another discussion addresses this topic*. That link points to the main post.
