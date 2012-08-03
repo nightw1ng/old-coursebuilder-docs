@@ -1,0 +1,102 @@
+=Example Emails=
+
+The following are the emails used in the Power Searching with Google course. Modify them to be relevant to your own course.
+
+<wiki:toc max_depth="2" />
+
+==Upon registration (welcome!)==
+
+===Subject:=== 
+Welcome to Power Searching with Google!
+
+===From:=== 
+Power Searching with Google Staff <help@example.com>
+
+===Message body:===
+Get started by taking a pre-course assessment and studying the material in the first unit: [http://www.example.com]
+
+  * [http://example.com Unit 1] available now
+  * Unit 2 available July 11 
+  * Unit 3 and mid-course assessment available July 12 
+  * Hangout on Air with search experts July 13 1:00-1:45pm PDT ([http://www.google.com/calendar/event?action=TEMPLATE&amp;text=Hangout%20on%20Air%3A%20YOURCOURSENAME&amp;dates=20120713T200000Z/20120713T204500Z&amp;details=Join%20course%20instructors%20and%20special%20guests%20in%20this%20Hangout%20on%20Air.%20Watch%20the%20Hangout%20on%20Air%20from%20our%20Google%2B%20page%3A%20https%3A%2F%2Fplus.google.com%2FYOURGOOGLEPLUSPAGE%2Fposts%0A%0APost%20your%20questions%20and%20vote%20on%20your%20classmates%27%20questions%20here%3A%20http%3A%2F%2Fwww.google.com%2Fmoderator%2FYOURMODERATORINSTANCE&amp;location=https%3A%2F%2Fplus.google.com%2FYOURGOOGLEPLUSPAGE%2Fposts&amp;trp=false&amp;sprop=www.examplecom&amp;sprop=name:YOUR%20COURSE%20NAME add to calendar])<br> Submit questions for search experts: [http://www.google.com/moderator/YOURMODERATORINSTANCE http://www.google.com/moderator/YOURMODERATORINSTANCE]
+  * Mid-course assessment due July 17 at 7:59am PDT ([http://www.google.com/calendar/event?action=TEMPLATE&amp;text=Hangout%20on%20Air%3A%20YOURCOURSENAME&amp;dates=20120713T200000Z/20120713T204500Z&amp;details=Join%20course%20instructors%20and%20special%20guests%20in%20this%20Hangout%20on%20Air.%20Watch%20the%20Hangout%20on%20Air%20from%20our%20Google%2B%20page%3A%20https%3A%2F%2Fplus.google.com%2FYOURGOOGLEPLUSPAGE%2Fposts%0A%0APost%20your%20questions%20and%20vote%20on%20your%20classmates%27%20questions%20here%3A%20http%3A%2F%2Fwww.google.com%2Fmoderator%2FYOURMODERATORINSTANCE&amp;location=https%3A%2F%2Fplus.google.com%2FYOURGOOGLEPLUSPAGE%2Fposts&amp;trp=false&amp;sprop=www.examplecom&amp;sprop=name:YOUR%20COURSE%20NAME add to calendar]) 
+  * Units 4-6 available July 17-19 
+  * Hangout on Air with search experts July 19 11:00-11:45am PDT ([http://www.google.com/calendar/event?action=TEMPLATE&amp;text=Hangout%20on%20Air%3A%20YOURCOURSENAME&amp;dates=20120713T200000Z/20120713T204500Z&amp;details=Join%20course%20instructors%20and%20special%20guests%20in%20this%20Hangout%20on%20Air.%20Watch%20the%20Hangout%20on%20Air%20from%20our%20Google%2B%20page%3A%20https%3A%2F%2Fplus.google.com%2FYOURGOOGLEPLUSPAGE%2Fposts%0A%0APost%20your%20questions%20and%20vote%20on%20your%20classmates%27%20questions%20here%3A%20http%3A%2F%2Fwww.google.com%2Fmoderator%2FYOURMODERATORINSTANCE&amp;location=https%3A%2F%2Fplus.google.com%2FYOURGOOGLEPLUSPAGE%2Fposts&amp;trp=false&amp;sprop=www.examplecom&amp;sprop=name:YOUR%20COURSE%20NAME add to calendar]) 
+  * Final assessment due July 23 at 4:59pm PDT ([http://www.google.com/calendar/event?action=TEMPLATE&amp;text=Hangout%20on%20Air%3A%20YOURCOURSENAME&amp;dates=20120713T200000Z/20120713T204500Z&amp;details=Join%20course%20instructors%20and%20special%20guests%20in%20this%20Hangout%20on%20Air.%20Watch%20the%20Hangout%20on%20Air%20from%20our%20Google%2B%20page%3A%20https%3A%2F%2Fplus.google.com%2FYOURGOOGLEPLUSPAGE%2Fposts%0A%0APost%20your%20questions%20and%20vote%20on%20your%20classmates%27%20questions%20here%3A%20http%3A%2F%2Fwww.google.com%2Fmoderator%2FYOURMODERATORINSTANCE&amp;location=https%3A%2F%2Fplus.google.com%2FYOURGOOGLEPLUSPAGE%2Fposts&amp;trp=false&amp;sprop=www.examplecom&amp;sprop=name:YOUR%20COURSE%20NAME add to calendar]) 
+
+*Need help?* Please join the course staff in the [http://www.example.com/forum course forum] and follow our [https://plus.google.com/YOURCOURSEGOOGLEPLUSPAGE/posts Google+ page] for additional exercises, tips, and tricks! 
+
+Cheers, <br>
+The Power Searching at Google Course Staff 
+
+*Frequently Asked Questions* 
+
+  * How will I know when new units are available?<br>You will receive an email when new units are available. 
+  * What time are the assessments due and the Hangouts on Air held?<br>Clicking on the "add to calendar" links above opens a Google Calendar entry with the correct time in your time zone. 
+  * What is a Hangout on Air?<br>A Hangout on Air uses Google+ technology to broadcast a live event to the whole world. You can ask questions of our search experts using a website (linked above) called Google Moderator. Our search experts answer the questions live on the air. You can watch the live broadcast on our [https://plus.google.com/YOURCOURSEGOOGLEPLUSPAGE/posts Google+ page.]
+  * How do the certificates work?<br>You can take the mid-course and post-course assessments as many times as you want before the assessments close. You can view your scores immediately, and we direct you to lessons that you should review based on the questions that you missed. We compute a weighted average from scores on your most recently submitted mid-course and post-course assessments (Overall Score = 35% of mid-course assessment + 65% of post-course assessment). At the end of the course, you will receive a certificate via email if your Overall Score exceeds 70%. 
+
+You are receiving this email because you enrolled in Power Searching with Google. To unsubscribe from emails about this course, please [https://groups.google.com/forum/?fromgroups#%21forum/powersearch-announce click here], then click "My Membership." Select "No Email."
+
+==Upon availability of new material==
+
+===Subject:=== 
+Welcome to Unit 2!
+
+===From:=== 
+Power Searching at Google Staff <help@ example.com>
+
+===Message body:===
+Welcome to the second unit of [http://example.com/ Power Searching with Google!]. Today you'll learn about different kinds of content you can search for using Google as well as how to interpret the results you receive.
+
+*Need help?* Please join the course staff in the [http://www.example.com/forum course forum] and follow our [https://plus.google.com/YOURCOURSEGOOGLEPLUSPAGE/posts Google+ page] for additional exercises, tips, and tricks! 
+
+*Upcoming course events *
+
+  * Unit 3 and mid-course assessment available July 12
+  * Hangout on Air with search experts July 13 1:00-1:45pm PDT ([http://www.google.com/calendar/event?action=TEMPLATE&amp;text=Hangout%20on%20Air%3A%20YOURCOURSENAME&amp;dates=20120713T200000Z/20120713T204500Z&amp;details=Join%20course%20instructors%20and%20special%20guests%20in%20this%20Hangout%20on%20Air.%20Watch%20the%20Hangout%20on%20Air%20from%20our%20Google%2B%20page%3A%20https%3A%2F%2Fplus.google.com%2FYOURGOOGLEPLUSPAGE%2Fposts%0A%0APost%20your%20questions%20and%20vote%20on%20your%20classmates%27%20questions%20here%3A%20http%3A%2F%2Fwww.google.com%2Fmoderator%2FYOURMODERATORINSTANCE&amp;location=https%3A%2F%2Fplus.google.com%2FYOURGOOGLEPLUSPAGE%2Fposts&amp;trp=false&amp;sprop=www.examplecom&amp;sprop=name:YOUR%20COURSE%20NAME add to calendar])<br>Submit questions for search experts: [http://www.google.com/moderator/YOURMODERATORURL http://www.google.com/moderator/YOURMODERATORURL]
+  * Mid-course assessment due July 17 at 7:59am PDT ([http://www.google.com/calendar/event?action=TEMPLATE&amp;text=Hangout%20on%20Air%3A%20YOURCOURSENAME&amp;dates=20120713T200000Z/20120713T204500Z&amp;details=Join%20course%20instructors%20and%20special%20guests%20in%20this%20Hangout%20on%20Air.%20Watch%20the%20Hangout%20on%20Air%20from%20our%20Google%2B%20page%3A%20https%3A%2F%2Fplus.google.com%2FYOURGOOGLEPLUSPAGE%2Fposts%0A%0APost%20your%20questions%20and%20vote%20on%20your%20classmates%27%20questions%20here%3A%20http%3A%2F%2Fwww.google.com%2Fmoderator%2FYOURMODERATORINSTANCE&amp;location=https%3A%2F%2Fplus.google.com%2FYOURGOOGLEPLUSPAGE%2Fposts&amp;trp=false&amp;sprop=www.examplecom&amp;sprop=name:YOUR%20COURSE%20NAME add to calendar]) 
+
+Cheers,<br>
+The Power Searching at Google Course Staff 
+
+You are receiving this email because you enrolled in Power Searching with Google. To unsubscribe from emails about this course, please [https://groups.google.com/forum/?fromgroups#%21forum/YOURCOURSENAME-announce click here], then click “My Membership.” Select “No Email.”
+
+==After the course (post-course survey)==
+
+===Subject:=== 
+Power Searching: Please provide feedback
+
+===From:=== 
+Power Searching at Google Staff <help@ example.com>
+
+===Message body:===
+
+We would like your feedback on the Power Searching with Google course for which you registered. Even if you did not complete the course, we are interested in your opinions. Please take a moment to answer a few anonymous questions for us at this link:
+
+[https://docs.google.com/spreadsheet/viewform?formkey=YOURFORMKEY https://docs.google.com/spreadsheet/viewform?formkey=YOURFORMKEY]
+
+Thank you! <br>
+Power Searching with Google Course Staff  
+
+==Upon successful completion (certificate)==
+
+===Subject:=== 
+Power Searching with Google certificate
+
+===From:=== 
+Power Searching at Google Staff <help@example.com>
+
+===Message body:===
+Congratulations! Here is the certificate you earned through your participation in Power Searching with Google. Below are your assessment scores.
+
+Mid-course assessment score:  100%<br>
+Post-course assessment score:  100%
+
+You can print out the attached certificate and hang it on your wall.  We hope you enjoyed the course!
+
+Cheers,<br>
+Power Searching with Google course staff
+
+<font color=red><<TODO move image someplace real>></font>
+<img border="0" height="246" src="https://sites.google.com/a/google.com/coursebuilder-docs/implement/c/formal/emails/certificate.png?height=246&amp;width=320" width="320 />
