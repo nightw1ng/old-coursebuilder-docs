@@ -1,0 +1,16 @@
+==Required Code Changes Checklist=
+
+<font color=red><<TODO Create a checklist of the things that anybody MUST do to change the existing code to create their own mooc. The explanations aren't here; this is just a checklist of things that must be done.>>
+
+From Sean:
+
+I've removed all the Google-specific stuff I could find -- so if you do a code-search within the coursebuilder directory for 'FIXME', you should be able to see all the bits which the content creator needs to fix. The affected files are:
+
+  * controllers/utils.py (for the initial email message)
+  * views/forum.html (the forum link)
+  * views/base.html (lots of stuff)
+  * views/base-registration.html (lots of stuff) (I took the liberty of getting rid of the +1 button on this registration page since that bit of code is not very understandable, but I have kept the +1 button that is on the main course page. We can add the former back later if this becomes an issue.)
+
+In addition, note that the content creator will need to change all the activity files, and all the assessment files, and both bulk-uploaded .csv data files. There is an example of a forum link embedded in one of the activities in assets/js/activity-1.2.js.
+
+</font>
