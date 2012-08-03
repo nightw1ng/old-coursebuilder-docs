@@ -1,0 +1,24 @@
+=Create Lessons=
+
+<font color=red><<TODO to be written>>
+
+Mention putting hooks into the forum: for students sharing answers, for instructors posting advanced or background material
+
+==Video==
+  * Takes a long time to do well
+  * Have a clear edit request process with deadlines for feedback and edits.
+  * Maintain up-to-date documentation of edits requested and completed, including the state of the edits: edited, exported, compressed, uploaded, and other relevant information (perhaps work with the team to consolidate this documentation).
+  * Create text version of all lessons prior to filming
+  * Film the videos once the objectives, assessments, and activities have been solidified.
+  * Send out raw versions of the videos for review (by legal and ID/SME for example) before beginning the editing process.
+  * Collect as many edit requests as possible before beginning the editing process, and only complete the production cycle (through uploading) when absolutely necessary.
+  * Remember that edits may change the captions. Look into having someone clean up the captions.
+  * Record separate feeds of the presenter and computer material.
+  * Run through live demos quickly prior to recording
+  * Have as many content creators present during filming as possible (in order to catch any issues so they can be reshot on the spot).
+  * Have someone committed to going through the final videos and uploads to double-check everything.
+  * Allow ample time for captioning and edits of videos
+
+== !YouTube ==
+Put it on !YouTube
+</font>
