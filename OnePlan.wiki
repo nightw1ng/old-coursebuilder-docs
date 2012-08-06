@@ -4,6 +4,8 @@ Before you get into the details of creating your course, take 30 minutes to thin
 
 <wiki:toc max_depth="2"></wiki:toc>
 
+Eventually you will spend much more than 30 minutes thinking about each of these areas. But the areas are not independent of each other. For right now, the idea is to think about all of the major areas once, quickly, so that when you go into details for each area, you have the start of a global plan in place.
+
 ==Define the problem statement and high-level goal of the course.==
 
 What are you trying to achieve by creating this course? Be sure you decide both what you *are* trying to achieve and what you *are not* trying to achieve. Knowing both of those will make it much easier for you in later stages when you try to decide for any given thing whether or not it belongs in the course.
