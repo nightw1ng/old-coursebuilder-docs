@@ -8,7 +8,7 @@ We were quite pleased with the success of Power Searching with Google. Over 154,
 
 Course Builder Experiment represents our decision to open source the code we used to create Power Searching and to document our use of that code in conjunction with Google products to create the entire experience.
 
-Power Searching is only one instance of a MOOC. Simply put, a MOOC is a course, all of whose materials are online and that has been optimized to work for lots and lots of students. What this actually means can vary quite a bit. Typically, in a MOOC:
+Power Searching is only one instance of a MOOC. Simply put, a MOOC is a course, all of whose materials are online and that has been optimized to work for lots and lots of students. What this actually means can vary quite a bit. Traditionally, in a MOOC:
 
   * the students are physically distributed.
   * the students interact with the instructors and other students primarily or exclusively online, not in person.
