@@ -52,7 +52,7 @@ Tips:
   * Make short videos, preferably 3-5 minutes.
   * Include closed captions in your videos.
   * For the text version of a self-paced unit, take the time to clean up the transcript and make it into a reasonable document.
-  * When deciding what content to put in a self-paced unit, design for the average student, not for either the slow learner or the fast learner.  To accommodate those outlier groups, consider putting background or advanced material in forum posts (if you want discussion and maybe answers) or in Google+ posts (if you just want to broadcast the information).
+  * When deciding what content to put in a self-paced unit, design for the average student.  To accommodate other students, consider putting background or advanced material in forum posts (if you want discussion and maybe answers) or in Google+ posts (if you just want to broadcast the information).
 
 ===Live units===
 
