@@ -1,3 +1,5 @@
+#summary Metrics to gauge how many people you reached and how engaged those people were.
+
 =Reach and Engagement Metrics=
 
 Reach and engagement metrics let you determine how many people you reached with the course and how engaged those people were. Some common questions include:
