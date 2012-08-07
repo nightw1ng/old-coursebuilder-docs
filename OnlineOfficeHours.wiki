@@ -1,3 +1,4 @@
+#summary Use Hangouts On Air and Google Moderator to have office hours for thousands of students.
 =Online Office Hours=
 
 You create most of your course material, the [CreateLessons lessons], [CreateAssessments assessments], and [CreateActivities activities], prior to the start of the course. During the course, you primarily communicate with your students through email and through a web forum.
