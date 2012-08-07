@@ -3,7 +3,7 @@
 The experience of teaching a course as a MOOC is quite different from normal classroom teaching. We strongly encourage you to pilot your course by having people go through the entire course before you release it to actual students. You may find, as we have, that a large percentage of your work comes after the first pilot, when you see how people actually interact with your material.
 
 Some tips:
-  * Schedule at least one pilot before your class goes live.&nbsp;
+  * Schedule at least one pilot before your class goes live.
 
   * If you have [TeachingAssistants teaching assistants] for your course, consider using them as the students in a first pilot for the content.
 
