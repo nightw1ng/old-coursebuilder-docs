@@ -1,4 +1,4 @@
-=Teaching Assistants=
+<h1>Teaching Assistants</h1>
 
 Whenever you teach a course, you need to decide if you want teaching assistants (TAs) to help you work with your students. This is also true for MOOCs.  The feeling of support your students get from the availability of real, knowledgeable humans to answer their questions can greatly improve their motivation and, ultimately, the success of your course.
 
