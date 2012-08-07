@@ -42,3 +42,221 @@ Steps for creating a Coursebuilder app engine application
     * Upload the csv to the AppEngine data store (both to the local version and deployed version)
 
 </font>
+
+
+
+
+
+=Getting Started with Python App Engine=
+
+In this lesson, we will get you started quickly by getting you from zero to a working "Hello World" app running on your PC or Mac. You even have the option to upload your app to Google datacenters to see your app run in production and available to the entire world!
+
+== Download & Installation ==
+
+Make sure you have Python 2.7 on your system. Most other platforms already include Python, so it's likely that you're only going to need to install Python if you're a PC user. If this is the case, just go to the general Python 2.7 [http://python.org/download download page] to get the right version for you. (Python 2.7.3 was the latest at the time of this writing, so if you only need the general PC install file, [http://python.org/ftp/python/2.7.3/python-2.7.3.msi this link] downloads the exact file you need.) Now let's go get Python App Engine.
+
+When developing on Google App Engine, you have a choice of performing administrative tasks using a graphical (GUI) interface or via traditional command-line. The GUI, called "The Launcher" is available for users using PCs or Macs while command-line tools on any POSIX-based system such as Mac OS X or Linux. Both tools are shipped with the Python App Engine SDK, so let's download it now for your platform at [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python this link].
+
+  * PC<br>Run the downloaded installer .msi by doubleclicking, following all on-screen instructions. Once completed, you should find the App Engine Launcher icon on your desktop or be able to find it via Start -> Programs. There is no equivalent set of command-line tools for PCs, so you must use the Launcher.
+  * Mac<br>Open the downloaded .dmg file and drag the App Engine icon into the Applications folder. You can then also open the Applications folder and drag the App Engine icon to your Dock so that you can start the App Engine Launcher more conveniently. The command-line tools will also be installed, and you'll likely get a popup dialog that explains where they're located.
+  * Linux or other POSIX-compliant system<br>After downloading the .zip file, go to the directory which you wish to install App Engine. When you unzip the archive, it will create a subdirectory named google_appengine. Add that directory to your shell's path so that it can find the command-line tools when you need them. You even have the option to upload your app to Google datacenters to see your app run in production and available to the entire world!
+
+== Starting the Launcher (PC, Mac) ==
+
+Activate the Launcher wherever it's available, e.g., from the Desktop, the Dock, the Applications folder, Start -> Programs -> Google App Engine -> GoogleAppEngineLauncher, etc. When the Launcher runs, you should see a small panel as in Figures 1 or 2 (for PC or Mac).
+
+<img alt="Google App Engine Launcher for PCs" src="https://developers.google.com/academy/apis/cloud/appengine/intro/images/image09.png" title="Figure 1: Google App Engine Launcher for PCs" />
+
+*Figure 1*: Google App Engine Launcher for PCs
+
+<img alt="Google App Engine Launcher for Macs" src="https://developers.google.com/academy/apis/cloud/appengine/intro/images/image03.png" title="Figure 2: Google App Engine Launcher for Macs" />
+
+*Figure 2*: Google App Engine Launcher for Macs
+
+== Creating an Application ==
+
+Pick a single word as an application name. You'll also see the docs and App Engine team refer to this as the "app ID" or application identifier. Choose any application name you wish, however, if you want to run it in production, you'll need to choose a name that hasn't already been used. What does it mean for an app to run in production?
+
+So far, you have run the development server on your development machine. In production, your app will be uploaded to Google datacenters. Google runs the production server. By default, your app will automatically get a domain name so that it can be reached from almost anywhere on the internet. That domain is of the form _APP_ID_.appspot.com where _APP_ID_ is the app ID you chose.
+
+Before you can upload this app, you need to register it with Google, and it's at this stage in time where you find out if the name is still available. App ID names can only be used once and can never be returned to the pool of available names. Whether your app is running, not running, or deleted, once a name has been chosen, it can no longer be used by any other application. More details on creating an application can be found in the [https://developers.google.com/appengine/docs/python/gettingstartedpython27/uploading official docs].
+
+As far as application naming best practices go, keep all the letters of the application name in lowercase and select a directory/folder that does not have a space nor upper case characters in it. When you click create, the Launcher will make a new folder and drop in some boilerplate code that makes up the "Hello World" application.
+
+If you're using the Launcher UI, go to the File menu and create a new application. If you're doing things from the command-line, you will create the files (below) manually. They're fairly short, so it's not a big deal to cut-n-paste the code snippets.
+
+== The "Hello World" app files ==
+
+Let's take a look at the most important of these files: {{{app.yaml}}} and {{{main.py}}}. Again, these are automatically generated by the Launcher if using that tool. If you're on a system without a Launcher, you'll need to create these files yourself.
+
+== The {{{app.yaml}}} Configuration File ==
+
+The {{{app.yaml}}} file is the configuration file and looks like this:
+
+{{{application: APP_ID
+    version: 1
+    runtime: python27
+    api_version: 1
+    threadsafe: yes
+    
+    handlers:
+    - url: /favicon\.ico
+    static_files: favicon.ico
+    upload: favicon\.ico
+    
+    - url: .*
+    script: main.app
+    
+    libraries:
+    - name: webapp2
+    version: "2.5.1"
+}}}
+
+The first section is describes the application setup. This includes providing the app ID and its version at the top. The version string can be anything, so while it defaults to "1", you can use "1-2", "2-0-staging", "2-0-alpha", or whatever you desire, so long as the characters are alphanumeric or hyphen. The remaining three lines are about the runtime support. In this case, it's Python 2.7. Finally, to take advantage of concurrency, we include the threadsafe directive which is required of all 2.7 apps. (You can still choose whether it's "yes" or "no" however.)
+
+The next section is for URL handlers. The more specific the URL you wish to process, the higher up in the configuration file they should go. Successive "fallbacks" should follow. In the sample {{{app.yaml}}}, a handler for the /favicon.ico file is given followed by all other URLs that aren't already handled (in this case, any URL not /favicon.ico). The handler for all these other URLs is the main.app Python object... in other words, the callable assigned to the ‘app' variable in the main.py file. For advanced Python developers, you should be made aware that App Engine is flexible and can accept any WSGI-compliant callable object.)
+
+The final section of {{{app.yaml}}} contains a reference to the webapp2 library: this is also not necessary for our simple example. It is here only because the version of webapp2 that App Engine uses by default is 2.3 while 2.5.1 is the latest version. Some bug fixes were made between these releases, but they won't affect our code here.
+
+If you used the Launcher to create your application, there is an autogenerated index.yaml which don't need to be concerned with at this time -- you'll use it later for creating custom indexes if you ever need those. You can find out more about configuration and the {{{app.yaml}}} in the [https://developers.google.com/appengine/docs/python/config/appconfig#Required_Elements official documentation].
+
+== The {{{main.py}}} Application/Controller File ==
+
+The {{{main.py}}} file is our controller where the core application logic goes:
+
+{{{import webapp2
+    
+    class MainHandler(webapp2.RequestHandler):
+    def get(self):
+    self.response.out.write('Hello world!')
+    
+    app = webapp2.WSGIApplication([('/', MainHandler)],
+    debug=True)
+}}}
+
+Similar to the {{{app.yaml}}} file, the {{{main.py}}} file can be broken down into several sections. The first line of the application is a reference to the micro web framework that ships with App Engine, webapp. In fact, this is the 2nd version of webapp, hence its name of webapp2. To bring outside functionality into Python code, users issue import statements, and this is what this line does: gives users access to the framework from within main.py.
+
+The next section is the MainHandler class definition. It extends or subclasses the RequestHandler class found in webapp2, written as webapp2.RequestHandler to emphasize this relationship. Within this class definition is a single method definition.
+
+As many of you know, the web runs using the [http://en.wikipedia.org/wiki/HTTP HTTP] protocol... it would be beneficial to learn more about it if you are new to web programming. Two of the primary ways of making web requests are GET and POST, the former being the simplest. In order to have your App Engine app respond to GET requests, you must write a handler, get() for GET requests and post() for POST.
+
+In this case, we have a single method defined, get(). Instances have access to the response objects ({{{self.response}}}), each response has an output file ({{{self.response.out}}}), and every Python file has a write() method. The {{{self.response.out.write()}}} method is then called with "text/plain" output, our "Hello World!" string. The content can be of any other format, provided the proper MIME headers are sent in advance. Below, we'll show you how easy it is to start customizing your app beyond "Hello World!"
+
+The final section creates the actual application (object). The required components are the URLs and which handler classes respond to requests at the given URLs. The optional debug flag can be used to output debugging information during development. One Python best practice we can impart is to ask you to refactor that call to code that looks like this:
+
+{{{app = webapp2.WSGIApplication([
+    ('/', MainHandler),
+    ], debug=True)
+}}}
+
+The reason for this is to make it easier for you to manage additional handler classes you may add to your application at a later time:
+
+{{{app = webapp2.WSGIApplication([
+    ('/', MainHandler),
+    ('/user', UserHandler),
+    ('/admin', AdminHandler),
+    :
+}}}
+
+One the application object is created, it's assigned to app. Yes, this is the {{{main.app}}} found in your {{{app.yaml}}} file. Going back to the configuration file, you may be wondering how a request gets routed all the way to your app.
+
+When a GET request comes to this app, the system looks at all the handlers to see whether a match can be made. If found, the request is dispatched to the first matching configured handler. The flow for "Hello World" goes like this: HTTP GET request -> {{{app.yaml}}} -> {{{main.app}}} -> {{{main.MainHandler}}}. But enough talk, let's this in action!
+
+== Starting the Development Server ==
+
+A great but "necessary" feature for PaaS systems is a development or staging server, a way for developers to test their applications before uploading them to run in production. Google App Engine's development server comes bundled with the SDK.
+
+The easiest way to start the development server is with the Launcher: just select your application. When it's highlighted, click the Run button to start the server (for that app). (The same is true in Java ; you can start the development server from within Eclipse.) Once the icon on the left-side of the application name is green, your server is ready to accept requests.
+
+You may wish to run the development server from your Unix shell. The syntax looks like this:
+
+{{{$ dev_appserver.py DIR}}}
+
+With the command-line version you have more options, which you can see via the {{{--help}}} option, so you may prefer the command-line over the Launcher.
+
+If you're already in the same directory as your app.yaml and main.py functions, then just use "." as the current working directory: {{{$ dev_appserver.py .}}} Once it's set up, you should see a URL reference to the hostname and port you should use to connect to your application from a web browser. It defaults to {{{http://localhost:8080}}}.
+
+If you use the Launcher and continue to add apps, the tool will automatically assign new port numbers to succeeding apps in ascending order. If using the command-line tool, you can specify the port number directly using the {{{--port=PORT}}} or {{{-p PORT}}} options. (If using Java App Engine from Eclipse, the default port used is 8888. Running using the command-line tool in Python, Java, or Go starts the development server on port 8080.) By default, this only starts the app on the local interface. If you wish to access your development server from another machine on the network, you need to request the app be made available on all interfaces with the {{{-a 0.0.0.0}}} directive.
+
+== Connecting with the Development Server ==
+
+Bring up a web browser and enter http://localhost:8080 if you started up the development server from the command-line with the default port or choose the correct port number if you picked your own. If you used the Launcher, click the "Browse" icon in the Launcher UI. It will start your default browser and point it at the correct URL. You should see something like the "Hello World" screen shown in Figure 3.
+
+<img alt="Hello World app service levels" src="https://developers.google.com/academy/apis/cloud/appengine/intro/images/image07.png" title="Figure 3: 'Hello World' app" />
+
+*Figure 3*: "Hello World" app
+
+To show you how easy it is to work with App Engine, change the "Hello World!" string to something else, whatever you want. Just for fun, let's change it to "The Greatest Blog" and add an HTML tag as well. The modified line of code in main.py looks like this:
+
+{{{self.response.out.write('<h1>The Greatest Blog</h1>')}}}
+
+If you refresh your browser page, you'll see this change reflected immediately, as shown in Figure 4.
+
+<img alt="Modified Hello World app" src="https://developers.google.com/academy/apis/cloud/appengine/intro/images/image04.png" title="Figure 4: Modified 'Hello World' app: changes show up immediately" />
+
+*Figure 4*: Modified "Hello World" app: changes show up immediately
+
+Note that you did not have to restart the server or do anything else to your app's configuration. This further simplifies the developer experience.
+
+From here, you can move onto the next class (App Engine 101 in Java or Python) to build a more useful app from this simple "Hello World" example which you likely got running fairly quickly. However, if you want to upload this to Google to have your app running in production, making it live to (most of) the world, keep reading.
+
+== Uploading your application to Google ==
+
+If you want to see what this app looks like in production, you can upload it to Google. When traffic comes to your app, App Engine servers will start up an instance running your app and enable access to it via its default URL of _APP_ID_.appspot.com to handle requests. To get your app to Google, there are two main options: using the Launcher or command-line tool. (Be sure to have registered your app as we described earlier, otherwise you won't be able to upload your app.)
+
+Using the Launcher is fairly straightforward: click on the "Deploy" button and enter your credentials. Using the command-line is almost as easy. You use the appcfg.py script along with the "update" command and the app's "home" directory (that contains the {{{app.yaml}}}, {{{main.py}}}, etc.). In the example below, we're already at home, so we use "." as the directory to upload. Here is what that experience should look like:
+
+{{{$ appcfg.py update .
+    Application: _APP\_ID_; version: 1.
+    Server: appengine.google.com.
+    Scanning files on local disk.
+    Initiating update.
+    Email: _YOUR\_EMAIL_
+    Password for _YOUR\_EMAIL_: *****
+    Cloning 2 static files.
+    Cloning 3 application files.
+    Uploading 2 files and blobs.
+    Uploaded 2 files and blobs
+    Precompilation starting.
+    Precompilation completed.
+    Deploying new version.
+    Checking if new version is ready to serve.
+    Will check again in 1 seconds.
+    Checking if new version is ready to serve.
+    Will check again in 2 seconds.
+    Checking if new version is ready to serve.
+    Closing update: new version is ready to start serving. Uploading index definitions.
+}}}
+
+== Security ==
+
+The above deployment example was overly-simplified... we left out security. Let's face it, a username-password pair are no longer considered "secure." The App Engine team strongly recommends its users adopt [http://support.google.com/accounts/bin/answer.py?answer=180744 2-factor authentication]. Because App Engine itself is not a single app that can prompt you for your 2-factor special code, you need to create an [http://support.google.com/accounts/bin/answer.py?answer=185833 application-specific password]. Optimally, you only need this special password only once to authenticate an application.
+
+However, when uploading to App Engine, you will be prompted for this application-specific password each time by {{{appcfg.py}}}. To avoid having to enter it every single time, use the {{{--oauth2}}} flag, as outlined in the [https://developers.google.com/appengine/docs/python/tools/uploadinganapp#oauth official docs]. Enter the application-specific password when prompted from the ensuing web page once. Now you no longer need that special password whenever you use the {{{--oauth2}}} flag./p>
+
+== Connecting with the Production Server ==
+
+It can take up to a minute to upload your application (generally it's less than 30 seconds but usually not more than a minute). Once the upload has been completed and confirmed, you (and everyone else on the planet not blocked from Google) should be able to visit http://_APP_ID_.appspot.com (depends on your _APP_ID_) and verify that your "Hello World" app is indeed available to all, just like in the Figure below.
+
+<img alt="Hello World app live in production" src="https://developers.google.com/academy/apis/cloud/appengine/intro/images/image08.png" title="Figure 5: 'Hello World' running in production and live to the world!" />
+
+*Figure 5*: "Hello World" app running in production and live to the world!
+
+That's it! You just "wrote" and upload your first web application for Google App Engine! We can't wait to see what you do next! :-)
+
+== Conclusion & Review ==
+
+*Q: What cloud service level does Google App Engine sit?*<br>
+A: App Engine is a platform (PaaS) service.
+
+*Q: What do you need in order to get started playing with Google App Engine?*<br>
+A: You need to get the SDK from Google. Use [http://developers.google.com/appengine/downloads this downloads link] to get the one for your platform. The SDK comes with client libraries which you'll use to connect to the various App Engine APIs, a set of command-line tools for administration, and a development server. Mac and PC users also get a bonus: a GUI called the "Launcher" that gives a friendly interface to users and provides access to a subset of the command-line tool functionality.
+
+*Q: How do you create your first App Engine application?*<br>
+A: Either use the Launcher to create a new application which generates boilerplate code, or create it by-hand.
+
+*Q: What is the development server and how do you start it?*<br>
+A: The development server gives users a way to test their application during development. It runs locally allowing users to execute their app without being required to upload it to Google. You can start the development server either by pressing the "Run" button in the Launcher or use the {{{dev_appserver.py}}} command-line tool.
+
+*Q: How do you upload your application to Google?*<br>
+A: Similar to the previous question, you can either click the "Deploy" button in the Launcher or use the appcfg.py command-line tool.
