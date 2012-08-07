@@ -1,3 +1,4 @@
+#summary Example metrics to measure how many people you reach and how engaged they are with the material.
 =Example Reach & Engagement Metrics=
 
 This page lists some reach and engagement metrics you might collect.  The list is not exhaustive; it's metrics we found useful for Power Searching with Google.
