@@ -1,3 +1,4 @@
+#summary The role of email and office hours in a MOOC.
 <h1>Instructor-Led Communication</h1>
 
 The official course content you create using our experimental code (see [CourseMaterial Course Material]) is, of course, a major part of the formal communication between you and your students. However, it is not the only communication.
