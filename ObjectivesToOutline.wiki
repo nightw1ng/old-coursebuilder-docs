@@ -1,3 +1,4 @@
+#summary Tips for transitioning high-level objectives to a detailed course outline.
 =From Objectives to Outline=
 
 In [TwoDevelop Develop the Content without the Technology], we discussed the importance of creating strong, measurable objectives. But what next? The transition between creating objectives and outlining can sometimes be a challenge. The following is one technique that can help make this process targeted and easier.
