@@ -1,6 +1,6 @@
 #summary Describes the primary parts of a course created with Course Builder Experimental.
 
-<h2>What's in a Course?</h1>
+<h1>What's in a Course?</h1>
 <wiki:toc />
 
 The primary parts of a course created with Course Builder Experimental are as follows:
