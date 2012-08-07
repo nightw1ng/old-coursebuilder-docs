@@ -1,3 +1,4 @@
+#summary Tips for creating and organizing a web forum for student discussions.
 <h1>Web Forums</h1>
 
 <wiki:toc />
