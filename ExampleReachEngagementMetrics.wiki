@@ -17,7 +17,7 @@ This page lists some reach and engagement metrics you might collect.  The list i
     * Number of  registrants who passed of those who completed the pre-course assessment
   * *Course Forums* (See <font color=red><<TODO somewhere>></font>)
     * Number of posts
-    * Number of posts in each category group (See [WebForums Web Forums])
+    * Number of posts in each category group (See [WebForums Community Discussion: Web Forums])
     * Number of posts in each category
     * Number who joined the forum 
     * Number who posted anything on the forum (with duplicates removed)
