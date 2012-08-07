@@ -22,7 +22,7 @@
       * [InstructorLedCommunication Instructor-Led Communication]
       * [OnlineOfficeHours Online Office Hours]
       * [TeachingAssistants Teaching Assistants]
-      * [WebForums Web Forums]
+      * [WebForums Community Discussion: Web Forums]
       * [CommunityToolsComparison Community Tools Comparison]
   * [FourPilot Pilot with Your Target Audience]
   * *Examples*
