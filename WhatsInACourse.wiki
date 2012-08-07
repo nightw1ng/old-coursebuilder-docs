@@ -12,7 +12,7 @@ The primary parts of a course created with Course Builder Experimental are as fo
 
 A single *course* consists of a series of *units* with individual *lessons* and *activities*. The course can have any number of *graded assessments* scattered before, between, and after the units and lessons. It can also have one or more formally-set up avenues for *social interaction* for the students.
 
-For a quick description of the flow a student typically experiences in a course, see [CourseFlow Course Flow]. For more details about the parts of a course, continue reading. For detailed information on creating a course, see:
+For a quick description of the flow a student typically experiences in a course, see [CourseFlow Course Flow]. For detailed information on creating a course, see:
   * [OnePlan Plan Before You Start]
   * [TwoDevelop Develop the Content without the Technology]
   * [ThreeImplement Implement the Entire Course with the Technology]
@@ -22,12 +22,19 @@ The rest of this page discusses the four main parts of a course in more detail.
 
 == Course content and delivery ==
 
-To make the content more digestible, consider grouping course material into a number of units. Each unit contains a series of lessons and activities related to a particular topic within the content covered by the entire course. For example, in the Power Searching with Google course, one unit is about interpreting search results; another is about checking the reliability of the content of those search results. Each of those units consists of five lessons and four or five activities.
+To make the content more digestible, consider grouping course material into a number of units. Each unit contains a series of lessons and activities related to a particular topic within the content covered by the entire course. For example, in the Power Searching with Google course, one unit is about interpreting search results; another is about checking the reliability of the content of those search results. Each of those units consists of about five lessons and about five activities.
 
 At present, there are two primary unit types:
 
   * *Self-paced units *created in advance and published either as video, text, or both
   * *Live units* with the course instructors
+
+<font color=red><<TODO Question for REVIEWERS!!!! 
+
+Sean is not enamored of the live unit v self-paced unit distinction. He makes an excellent point that what I'm calling live units here are typically optional and not an integral part of the course. While true, I like the parallelism of having the live v self-paced and would rather make a different change. That is, point out the whenever you create a course, you can choose to make some units optional (whether they be live or self-paced). That keeps the parallelism and points out that you can be more flexible in your design.
+
+I'd like others opinions on this. Please either comment on the page or send me email, if you have one.
+>></font>
 
 In both cases, instructors make course content available to students at scheduled intervals throughout the course. Once available the content continues to be available until the course ends. That is, lessons are not available for only a few days; students can go back and redo lessons at any time throughout the course. Soon after a live unit, the instructors post a video of it. So even if students miss the live unit, that material is still available.
 
