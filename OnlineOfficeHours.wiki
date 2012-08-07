@@ -7,7 +7,7 @@ Another way you may choose to communicate with your students is with online offi
 
 A *[http://www.google.com/+/learnmore/hangouts/ Google Hangout]* is a video chat that can take up to 10 video participants (you plus nine others). In a Hangout, you can talk with the other participants and even share your computer screens. If your audience is very small, this is a lovely way to interact. If you're creating a MOOC, however, you probably anticipate a much larger audience. For this, you can use a Hangout On Air instead of a normal Hangout.
 
-A *[http://www.google.com/+/learnmore/hangouts/onair.html Hangout On Air]* lets you broadcast a normal Hangout to the rest of the world, by broadcasting it on your Google+ page and your YouTube channel. During the Hangout, people around the world can watch the Hangout. They will not be able to directly contribute (the 10-person limitation still exists for interaction over video). The hangout is recorded as a public video. You can then edit and share the recorded hangout for posterity.
+A *[http://www.google.com/+/learnmore/hangouts/onair.html Hangout On Air]* lets you broadcast a normal Hangout to the rest of the world, by broadcasting it on your Google+ page and your !YouTube channel. During the Hangout, people around the world can watch the Hangout. They will not be able to directly contribute (the 10-person limitation still exists for interaction over video). The hangout is recorded as a public video. You can then edit and share the recorded hangout for posterity.
 
 Although only 9 people can join you directly in the Hangout, you can still get close to real-time participation from people watching the Hangout On Air. You do this by creating a *[http://www.google.com/moderator/ Google Moderator]* series. Google Moderator is a tool that allows distributed communities to submit and vote on questions for talks, presentations and events. A few days before your Hangout On Air, you open a Moderator series for your students and have them submit questions to the Hangout On Air presenters. Other students then vote on the questions, so that by the time the Hangout On Air starts, the presenters have a prioritized list of questions to start answering. During the Hangout On Air, students continue to submit and vote on questions; the order of questions can therefore change in real-time.
 
@@ -20,9 +20,9 @@ Hangouts On Air are a very effective way of broadcasting a live event to a large
 
 ===Some tips===
 
-  * You must have a Google account and a YouTube channel to organize a Hangout On Air. See [http://www.youtube.com/create_channel Create your YouTube channel].
+  * You must have a Google account and a !YouTube channel to organize a Hangout On Air. See [http://www.youtube.com/create_channel Create your YouTube channel].
   * The URL for a  Hangout On Air becomes available only when you actually start it. That means that you cannot publicize the URL ahead of time.
-  * Instead, publicize either the URL for your YouTube channel or the URL for your Google+ page. When your Hangout On Air starts, it will be visible at the top of those two locations.
+  * Instead, publicize either the URL for your !YouTube channel or the URL for your Google+ page. When your Hangout On Air starts, it will be visible at the top of those two locations.
   * Your audience may include hearing impaired people. Additionally, non-native speakers of the language of your Hangout On Air may be more comfortable reading your language than hearing it spoken. For these reasons, consider having a transcriptionist create captions in real-time for your Hangout On Air. (See [https://hangout-captions.appspot.com/ What is Hangout Captions?] for more information.)
   * [http://support.google.com/plus/bin/answer.py?hl=en&amp;answer=2459411&amp;topic=2553242&amp;ctx=topic Hangouts On Air common questions]
   * Please read [http://support.google.com/plus/bin/answer.py?hl=en&amp;answer=2553248&amp;topic=2553242&amp;ctx=topic An important point about copyright]
@@ -36,7 +36,7 @@ If you organize one or more Hangouts On Air for your course, you should create a
   # Provide a description about your series.
   # Add administrators who can also change the series name, description, and topics.
   # Choose whether or not to allow users to make submissions anonymously.
-  # Choose whether or not to allow users to make submissions containing YouTube videos.
+  # Choose whether or not to allow users to make submissions containing !YouTube videos.
   # When you're done, click *Create Series*.
 
 You can later change this information by using the *Edit Series* button on your series page.
