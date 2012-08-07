@@ -1,4 +1,4 @@
-=Example TA Essentials Doc=
+<h1>Example TA Essentials Doc</h1>
 
 If you do nothing else for your TAs to get them prepared, have at least one session in which you introduce them to the course and to what their responsibilities will be throughout. This page is an example template for information you should cover in that session.
 
