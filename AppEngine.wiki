@@ -18,21 +18,27 @@ From the MOOC MOOC design doc
     * customize (edit CSS, branding)
     * costs of using appengine?
     * how to implement it
-  * Steps for creating a Coursebuilder app engine application
-    # Download the coursebuilder .zip file
-      * Unzip it and note the root directory
-      * This file includes the coursebuilder app and all files that will replicate the PS course, including javascript activities and assessments
-    # Deploy an AppEngine instance
-      * Go to https://appengine.google.com/domain/apps and click “Create Application”
-      * Generate a unique URL (we may want to give them guidance, like first part of your email-mooc.appspot.com)
-      * Make sure you have Python 2.7 installed on your computer
-      * Download the Python AppEngine SDK from https://developers.google.com/appengine/docs/python/gettingstarted/ 
-        * Download the doc server
-        * Download the appcfg.py file	
-      * Launch the doc server
-      * Launch the appcfg.py file and point it to the unzipped root directory
-      * Deploy the application to AppEngine
-    # Download the spreadsheet we give you as a csv
-      * Upload the csv to the AppEngine data store (both to the local version and deployed version)
-  
+
+Steps for creating a Coursebuilder app engine application
+  # Download the coursebuilder .zip file from our site
+    * Unzip it and note the root directory
+    * This file includes the coursebuilder app and all files that will replicate the PS course, including javascript activities and assessments
+    * Change the "Application" in the app.yaml file from "markf-searchedu" to your own app ID
+  # Create an AppEngine instance
+    * Go to https://appengine.google.com/ and click “Create Application”
+    * Generate a unique URL (we may want to give them guidance, like first part of your email-mooc.appspot.com)
+    * Make sure you have Python 2.7 installed on your computer
+    * Download the Python AppEngine SDK from https://developers.google.com/appengine/docs/python/gettingstarted/ 
+      * This file includes both the doc server and the appcfg.py file
+      * Install the GoogleAppEngine application (on a Mac, drag it to the Applications folder)
+    * Open the AppEngine Launcher
+      * File → Add Existing Application
+      * Choose the root directory for the unzipped Coursebuilder file from step 1.
+    * Click run to launch the doc server
+      * If you encounter an error in the log files that says you are not running Python 2.7,  or warnings about using a runtime that is older than the production runtime, then go to the GoogleAppEngineLauncher-->Preferences and manually specify the Python 2.7 path. 
+      * Determine the path by opening a terminal window and typing [which python]. Copy and paste the path (mine looked like this: /Library/Frameworks/Python.framework/Versions/2.7/bin/python) 
+  # In the AppEngine Launcher, click Deploy
+  # Download the spreadsheet we give you as a csv
+    * Upload the csv to the AppEngine data store (both to the local version and deployed version)
+
 </font>
