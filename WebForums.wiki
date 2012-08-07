@@ -1,4 +1,4 @@
-=Web Forums=
+<h1>Web Forums</h1>
 
 <wiki:toc />
 
