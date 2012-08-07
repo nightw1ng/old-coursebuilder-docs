@@ -1,3 +1,4 @@
+#summary Examples of emails to consider sending to participants throughout your course.
 <h1>Example Emails</h1>
 
 The following are the emails used in the Power Searching with Google course. Modify them to be relevant to your own course.
