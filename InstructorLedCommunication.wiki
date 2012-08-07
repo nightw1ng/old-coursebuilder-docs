@@ -25,7 +25,7 @@ Whatever emails you decide to send, we recommend that you draft them in advance.
 ==Supporting students==
 
   * *Online office hours*: Just because you have thousands of students doesn't mean they don't want to hear their questions answered live by an instructor. To enable this interaction, you can use a combination of Hangouts On Air and Google Moderator. See [OnlineOfficeHours Online Office Hours].
-  * *Content-related questions: *Have  students post these to  your Google+ page or to the forum you create for that purpose. See [WebForums Web Forums] and [PlusPage Google+ Page].
+  * *Content-related questions: *Have  students post these to  your Google+ page or to the forum you create for that purpose. See [WebForums Community Discussion: Web Forums] and [PlusPage Google+ Page].
   * *Administrative questions:* Consider creating  a help alias for your students such as help@example.com. If you create a help alias and you have teaching assistants, share that address with all of your assistants, so that they send email from a formal location rather than from their own email addresses.
 
 ==Certificates or badges==
