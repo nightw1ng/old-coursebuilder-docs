@@ -1,7 +1,7 @@
 #summary Use Hangouts On Air and Google Moderator to have office hours for thousands of students.
 =Online Office Hours=
 
-You create most of your course material, the [CreateLessons lessons], [CreateAssessments assessments], and [CreateActivities activities], prior to the start of the course. During the course, you primarily communicate with your students through email and through a web forum.
+You create most of your course material, the [CreateLessons lessons], [CreateAssessments assessments], and [CreateActivities activities], prior to the start of the course. During the course, you primarily communicate with your students asynchronously, through email, web forums, your Google+ page, or your blog.
    
 Another way you may choose to communicate with your students is with online office hours. As with any course, your students appreciate having their questions answered by live instructors. You can enable this with Google Hangouts or Hangouts On Air, possibly in conjunction with Google Moderator.  These mechanisms allow you to interact with your students in real-time.
 
