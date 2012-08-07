@@ -36,7 +36,7 @@ Sean is not enamored of the live unit v self-paced unit distinction. He makes an
 I'd like others opinions on this. Please either comment on the page or send me email, if you have one.
 >></font>
 
-In both cases, instructors make course content available to students at scheduled intervals throughout the course. Once available the content continues to be available until the course ends. That is, lessons are not available for only a few days; students can go back and redo lessons at any time throughout the course. Soon after a live unit, the instructors post a video of it. So even if students miss the live unit, that material is still available.
+In both cases, instructors make course content available to students at scheduled intervals throughout the course. Once available the content continues to be available until the course ends. That is, lessons are not available for only a few days; students can go back and redo lessons at any time throughout the course. Soon after a live unit takes place, the instructors post a video of it. So even if students miss the live unit, that material is still available.
 
 Releasing course content at scheduled intervals has one perhaps unanticipated benefit. Many students tend to work on content relatively soon after the content becomes available.  For that reason, questions about course material tend to cluster near the release of that material. Because other students are thinking about the same material, they are more likely to be interested in getting involved in discussions about the material or answering questions.
 
@@ -44,27 +44,25 @@ Releasing course content at scheduled intervals has one perhaps unanticipated be
 
 A self-paced unit consists of a series of lessons and activities. We found that around five lessons and four activities is a good length for a unit.
 
-A *lesson* is a coherent and relatively small chunk of information. A lesson consists of one video and a text version of the same content.
+A *lesson* is a coherent and relatively small chunk of information. In Power Searching with Google, we chose to create each lesson as one video and a text version of the same content. Your lessons do not have to have both parts.
 
 An *activity* is an ungraded assessment, used to provide students feedback on how well they understand the lesson. Activities typically contain optional hints. For more information, see Assessments below.
 
 Tips:
   * Make short videos, preferably 3-5 minutes.
-  * Include closed captions in your videos
+  * Include closed captions in your videos.
   * For the text version of a self-paced unit, take the time to clean up the transcript and make it into a reasonable document.
-  * When deciding what content to put in a self-paced unit, design for the average student, not for either the slow learner or the fast learner. 
-
-To accomodate those outlier groups, consider putting background or advanced material in forum posts (if you want discussion and maybe answers) or in Google+ posts (if you just want to broadcast the information).
+  * When deciding what content to put in a self-paced unit, design for the average student, not for either the slow learner or the fast learner.  To accommodate those outlier groups, consider putting background or advanced material in forum posts (if you want discussion and maybe answers) or in Google+ posts (if you just want to broadcast the information).
 
 ===Live units===
 
 A live unit is a fixed date and time when the instructors broadcast a session for students to watch. 
 
-If you have a very small MOOC (fewer than 10 people), you can use a Google Hangout for your live unit. If you have more than 10 people, instead you can use a combination of Google Hangouts on Air and Google Moderator.
+If you have a very small MOOC (fewer than 10 people), you can use a Google Hangout for your live unit. If you have more than 10 people, you can use a combination of Google Hangouts on Air and Google Moderator instead.
 
-A [http://www.google.com/+/learnmore/hangouts/ Google Hangout] is a video chat that can have up to 10 participants. In a Google Hangout, all participants can speak to each other, let you share what’s on your screen, collaborate in Google Docs, view presentations and diagram together. If your course is small enough, this is a great way to go. 
+A [http://www.google.com/+/learnmore/hangouts/ Google Hangout] is a video chat that can have up to 10 participants. In a Google Hangout, all participants can share what’s on each person's screen, collaborate in Google Docs, view presentations and diagrams together and speak to each other about all of that. If your course is small enough, this is a great way to go. 
 
-But given the “M” in MOOC, your course probably has many more students. In this case, instead you can use a combination of [http://googleblog.blogspot.com/2012/05/google-hangouts-on-air-broadcast-your.html Google Hangouts on Air] and [https://www.google.com/moderator/ Google Moderator] to create a live experience with your students. With a Hangout on Air, you can post to your YouTube channel and to your Google+ stream, a live session with your instructors and any guests you chose. Students will not be able to talk to you in real-time, but they will be able to ask you questions through the use of a Google Moderator series. You can use a Google Moderator series to collect questions from your students and have them vote those questions up and down; the collecting can either be done in advance, during the Hangout on Air, or both.
+But given the “M” in MOOC, your course probably has many more students. If it does, you can use a combination of [http://googleblog.blogspot.com/2012/05/google-hangouts-on-air-broadcast-your.html Google Hangouts on Air] and [https://www.google.com/moderator/ Google Moderator] to create a live experience with your students. With a Hangout on Air, you can post a live session with your instructors and any guests you chose. You post the Hangout on Air to your YouTube channel and to your Google+ stream. Students will not be able to talk to you in real-time, but they will be able to ask you questions through the use of a Google Moderator series. You can use a Google Moderator series to collect questions from your students and have them vote those questions up and down; the collecting can either be done in advance, during the Hangout on Air, or both.
 
 *Tip:* If you do a Hangout on Air, consider using a live captioning service to help students who are hearing impaired or whose primary language is not the language used in the Hangout on Air.
 
