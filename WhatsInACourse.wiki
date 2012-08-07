@@ -87,14 +87,16 @@ Telling the experimental code how to grade either type of multiple-choice questi
 
 Graded assessments typically cover material from several units and lessons. They serve multiple purposes:
 
-  * *Rate performance.* The obvious goal of assessments is to rate students’ performance. Before and after assessments can also help you gauge the effectiveness of the course.
-  * *Motivate students.* Students love certificates. Anticipation of a certificate on successful completion motivates many people to finish. So you need a way to measure success.
+  * *Rating performance.* The obvious goal of assessments is to rate students’ performance. Before and after assessments can also help you gauge the effectiveness of the course.
+  * *Motivating students.* *Many* students love certificates. For these people, anticipation of a certificate on successful completion motivates them to finish. So you need a way to measure success.
 
 With our experimental code, you have control over how many graded assessments you provide and how each of those assessments counts in the final scoring for a student’s grade.
 
-Because you use a graded assessment to rate performance and measure success, your practical choices are either to only let students take a graded assessment once or to let students take them multiple times but not give them feedback on which answers are incorrect. In our experimental code, students can take graded assessments multiple times but they do not get specific feedback on which answers are incorrect.
+Because you use a graded assessment to rate performance and measure success, your practical choices are: 
+  * only let students take a graded assessment once. In this case, you can tell your students which of their answers are incorrect.
+  * let students take a graded assessment multiple times. In this case, do not tell them which answers are incorrect. (If you do, then they'll have no difficulty getting 100% when retaking the same assessment.)
 
-Even though you should not tell students exactly which answers are incorrect in their assessment, you should give them some feedback. To do this, map each assessment question to corresponding unit and lesson within the course. Then immediately after submission of the assessment, show students the score and list the lessons to review to improve their score. 
+If you choose to allow your students to take the same graded assessment multiple times, consider still giving the students some feedback about what they did wrong. To do this, map each assessment question to the corresponding unit and lesson within the course. Then immediately after submission of the assessment, show students the score and list the lessons to review to improve their score. 
 
 ===Ungraded activities===
 
