@@ -1,3 +1,4 @@
+#summary Before you bog down writing code, flesh out all the details of what you want to create.
 <h1>Develop the Content without the Technology</h1>
 
 After you have taken a few minutes to [OnePlan plan], it’s time to start developing. It’s extremely tempting to just dive in and start recording videos and writing assessments and so on. But if you do that, you can create a course that doesn’t make sense and that doesn’t satisfy your primary goal or any of the supplementary objectives you planned. That said, even though we recommend you do initial development without using the technology, there are aspects of the final delivery method that should influence your development strategy.
