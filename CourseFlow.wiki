@@ -1,3 +1,4 @@
+#summary What a student does, in what order, when taking a course created using our code and techniques.
 =Course Flow=
 
 This page describes what a student does, in what order, when taking a course created with Course Builder Experimental. That description may give the impression of a simple sequential flow through the material, like any other course. In reality, some of the steps can be done at the student’s own pace; other steps must be  done in synchrony with other students taking the course. The second section describes that flow in a little more detail, because it is unfamiliar to many students and instructors.
