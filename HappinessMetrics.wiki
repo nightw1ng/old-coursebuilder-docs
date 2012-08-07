@@ -1,6 +1,7 @@
+#summary Metrics to gauge student attitudes towards the material and their feelings of satisfaction.
 =Happiness Metrics=
 
-Happiness metrics let you gauge student attitudes towards the material and feelings of satisfaction. Some common questions include:
+Happiness metrics let you gauge student attitudes towards the material and their feelings of satisfaction. Some common questions include:
 
   * How satisfied were the students with what they learned?
   * Do they think they will be able to use the material?
