@@ -26,6 +26,7 @@
       * [CommunityToolsComparison Community Tools Comparison]
   * [FourPilot Pilot with Your Target Audience]
   * *Examples*
+      * [ExampleMOOCs Example MOOCs]
       * [ExampleSurvey Example Post-Course Survey]
       * [ExampleReachEngagementMetrics Example Reach & Engagement Metrics]
       * [ExampleEmails Example Emails]
