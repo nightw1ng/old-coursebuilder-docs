@@ -1,4 +1,4 @@
-=Example Emails=
+<h1>Example Emails</h1>
 
 The following are the emails used in the Power Searching with Google course. Modify them to be relevant to your own course.
 
