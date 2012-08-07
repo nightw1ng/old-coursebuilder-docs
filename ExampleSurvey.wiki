@@ -1,3 +1,4 @@
+#summary Example survey questions to send after your course.
 =Example Post-Course Survey=
 
 We used the following survey questions for the Power Searching with Google course. Feel free to use some, all, or none of these questions for your own course.
@@ -14,4 +15,3 @@ Regardless of how much of the course you completed, we'd like to hear about your
   # *How helpful was the HANGOUT ON AIR in supporting your learning?*<br>Select your response... Not helpful, Somewhat helpful, Very helpful, Not applicable. I didn't experience it or can't recall.<br><br>
   # *If you marked "Not helpful" for any questions above, please let us know the reason:*<br>Open text area<br><br>
   # *(Optional) We'd love to hear your impressions about this course. Please share more thoughts below! What did you find most valuable?  What should we improve?*<br>Open text area
-
