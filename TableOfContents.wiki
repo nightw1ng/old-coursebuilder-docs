@@ -11,7 +11,7 @@
     * [ImplementationChecklist Checklist]
     * [CourseMaterial Course Material]
       * [RequiredCodeChangesChecklist Required Code Changes]
-      * [AppEngine Gett the Source Code]
+      * [AppEngine Get the Source Code]
       * [CreateActivities Create Activities]
       * [CreateAssessments Create Assessments]
       * [CreateLessons Create Lessons]
