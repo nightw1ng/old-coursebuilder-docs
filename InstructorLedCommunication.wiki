@@ -47,7 +47,7 @@ Although answering a standard question could be considered a formal announcement
 
 As you can see on [WebForums that page], if you use a forum post for these announcements, you can mark duplicates of the question the post answers and cut down on the noise in your forum.
 
-== Optional course material, in any of a web forum, blog, or Google+ page ==
+== Optional course material, in a web forum, blog, or Google+ page ==
 
 [CreateLessons Lessons], [CreateActivities activities], and [CreateAssessments assessments] contain the primary course material for your MOOC. However, you can have optional material you suggest for some students. For example, you can have background reading for students who need a little extra help getting started. You can have more advanced material for students who want more challenging activities to strengthen their knowledge of the main materials. You can have material about aspects of the topic not covered at all in the main materials for students who want to explore more.
 
