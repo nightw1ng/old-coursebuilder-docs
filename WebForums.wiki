@@ -18,7 +18,10 @@ For a longer introduction to Google Groups, see [http://support.google.com/group
       * Choose *New members* and decide who you want to be able to join the group.
       * Choose *Categories* and click on *Enable categories*, then set up appropriate categories (described next).
     * In the left navigation, expand *Permissions*.
-      * Choose *Posting permissions.* 
+      * Choose *Basic permissions*.
+      * Set *View topics* to *Anyone*.
+      * Set *Join the group* to *Anyone*.
+      * Choose *Posting permissions*. 
       * Consider allowing all members of the group to *Mark Favorite Reply On Own Topic*  and *Me Too Topic*.
       * Choose *Moderation permissions.* 
       * Set *Mark Duplicate* to *All Members of the group*.
