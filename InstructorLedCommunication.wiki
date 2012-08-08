@@ -3,12 +3,14 @@
 
 The official course content you create using our experimental code (see [CourseMaterial Course Material]) is, of course, a major part of the formal communication between you and your students. However, it is not the only communication.
 
-Here, we distinguish between the formal communication, typically initiated by the course staff, from informal web forum communication, frequently initiated by students. All of these efforts are important in creating a successful feeling of community for your students and yoru course staff.
+Here, we distinguish between the formal communication, typically initiated by the course staff, from informal web forum communication, frequently initiated by students. All of these efforts are important in creating a successful feeling of community for your students and your course staff.
 
 The types of formal communication we typically see are:
-  * [#Reminder_announcements Reminder announcements of particular events], such as deadlines for assessments or the release of new units.
-  * [#Informative_announcements Informative announcements], such as a standard answer to a question that came up repeatedly in any student communication. (For example, if the wording of an actitivy question confused a lot of students, you might decide to post a clarification.)
-  * [#Optional_course_material Optional course material], such as background reading for students who might need a little extra help getting started, or anciallary or more advanced material for students who want to explore aspects of the topic not covered in the main materials or who want more challenging activities to strengthen their knowledge of the main materials.
+
+|| *Type* || *Typical implementation* || *Examples* || 
+|| [#Reminder_announcements Reminder announcements for particular events] || Email || Deadlines for assessments; release of new units. ||
+|| [#Informative_announcements Informative announcements] || Web forum post || A standard answer to a question that came up repeatedly in any student communication. (For example, if the wording of an actitivy question confused a lot of students, you might decide to post a clarification.) ||
+|| [#Optional_course_material Optional course material] || Blog or Google+ page || Background reading for students who might need a little extra help getting started. Anciallary or more advanced material for students who want to explore aspects of the topic not covered in the main materials or who want more challenging activities to strengthen their knowledge of the main materials. ||
 
 There are a variety of technologies available to you for each of these types of communication. Which you choose to use depends on your circumstances. What is described below are the choices we made for Power Searching.
 
@@ -22,29 +24,33 @@ If you decide to send emails, you need to first collect your students email addr
 
 Once you have the email alias,  consider sending these emails:
 
-  * *At course registration*<br>A brief description of the course, the high-level schedule for the course, an introduction to the community features available to them, and so on.
-  * *Whenever you release new content*<br>Link to the new content, any upcoming deadlines.
+  * *At course registration*<br>A brief description of the course, the high-level schedule for the course, an introduction to the community features available to students, and so on.
+  * *Whenever you release new content*<br>Link to the new content and mention any upcoming deadlines.
   * *Partway through, to students who have registered but not started the course*<br>Sometimes students register and then forget to start a course. Partway through the course, you can collect the addresses <font color="#ff0000"><<TODO link to how>></font> of these people and send them a reminder that they might want to start. 
   * *Before a special event*<br>For example, if you have a Hangout On Air, send a reminder message about it.
   * *Upon submission of final assessment<br>*Notification of whether or not the student has passed and when to expect the certificate (if any).
 Whatever emails you decide to send, we recommend that you draft them in advance.  See [ExampleEmails Example Emails] for some samples.
 
-*Tip:* Use other mechanisms for less important announcements, suchas your Google+ page or your forum.
+*Tip:* Use other mechanisms, such as your Google+ page or your forum, for less important announcements.
 
 == Informative announcements ==
 
-During the course, there will be times when you want to let your students know some extra information, but the information is optional or you otherwise do not think it worth sending to all of their email accounts. For example, you may receive the same question from any students, over a variety of your communication mechanisms. At first, you probably answer these questions one at a time, in whatever place the question was asked. Once you notice the trend, however, you may want to create a standard answer to that question and post it in one place.
+During the course, there will be times when you want to let your students know some extra information, but the information is optional or you otherwise do not think it worth sending to all of their email accounts. 
 
-Although this is a formal announcement, treating it in a more informal manner is appropriate. For this reason, we suggest using your [WebForums web forum] for this purpose. As you can see on that page, if you use a forum post for these announcements, you can mark duplicates of the question the post answers and cut down on the noise in your forum.
+For example, you may receive the same question from many students, over a variety of your communication mechanisms. At first, you probably answer these questions one at a time, in whatever place the question was asked. Once you notice the trend, however, you may want to create a standard answer to that question, post it in one place, and remove duplicates to minimize confusion.
+
+Although answering a standard question could be considered a formal announcement, treating it in a more informal manner is appropriate. We suggest using your [WebForums web forum] for this purpose.
+
+As you can see on that page, if you use a forum post for these announcements, you can mark duplicates of the question the post answers and cut down on the noise in your forum.
 
 == Optional course material ==
 
-The units and assessments are the primary mainstream course material for your MOOC. However, you can have optional material for some students. For example, you can have background reading for students who need a little extra help getting started. You can have more advanced material for students who want more challenging activities to strengthen their knowledge of the main materials. You can have ancillary material for students who want to explore aspects of the topic not covered at all in the main materials.
+The units and assessments are the primary mainstream course material for your MOOC. However, you can have optional material you suggest for some students. For example, you can have background reading for students who need a little extra help getting started. You can have more advanced material for students who want more challenging activities to strengthen their knowledge of the main materials. You can have material about aspects of the topic not covered at all in the main materials for students who want to explore more.
 
-You have several options for material of this sort, depending on your goals for it.
+You have several options for creating your optional material, depending on your goals for it.
 
 
-<font color=red><<TODO consider changing this page to be about both G+ pages and about blogs in general. Obviously, give it a more descriptive name in that case. What think my reviewers?>></font>
+<font color=red><<TODO WORKING HERE. talk about blogs, G+, and web forum posts. why each.>></font>
 
 People frequently use Google+ to connect to other people. But they can also use Google+ to connect with other things, such as businesses, sports teams, or even your course. To give your course a Google+ presence, you create a Google+ page for it. Consider [http://support.google.com/plus/bin/answer.py?hl=en&amp;answer=1710691&amp;topic=1710599&amp;ctx=topic creating a Google+ page] for your course before you release the course.
 
