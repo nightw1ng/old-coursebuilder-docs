@@ -1,43 +1,4 @@
-= Getting Started with the Course Builder Experiment Code=
-
-<font color=red><<TODO to be written>>
-  * [https://developers.google.com/academy/apis/cloud/appengine/intro/gettingstarted Intro to App Engine]
-  * Creating an AE account
-  * Downloading our course code
-  * Testing our code locally&nbsp;
-  * Uploading/Deploying code to App Engine
-  * Setting up robots.txt for your deployment
-  * Write instructions for specifying how to tell Course Builder where your content is (i.e., right now it's the spreadsheet)
-  * Overview of code structure
-
-From the MOOC MOOC design doc
-
-  * Lesson 3. Mechanics of the App on AppEngine
-    * what can it handle
-    * potential pitfalls
-    * customize (edit CSS, branding)
-    * costs of using appengine?
-    * how to implement it
-
-Steps for creating a Coursebuilder app engine application
-  # Download the coursebuilder .zip file from our site
-    * Unzip it and note the root directory
-    * This file includes the coursebuilder app and all files that will replicate the PS course, including javascript activities and assessments
-    * Change the "Application" in the app.yaml file from "" to your own app ID
-  # Create an AppEngine instance
-    * Go to https://appengine.google.com/ and click “Create Application”
-    * Generate a unique URL (we may want to give them guidance, like first part of your email-mooc.appspot.com)
-    * Open the AppEngine Launcher
-      * File → Add Existing Application
-      * Choose the root directory for the unzipped Coursebuilder file from step 1.
-    * Click run to launch the doc server
-      * If you encounter an error in the log files that says you are not running Python 2.7,  or warnings about using a runtime that is older than the production runtime, then go to the GoogleAppEngineLauncher-->Preferences and manually specify the Python 2.7 path. 
-      * Determine the path by opening a terminal window and typing [which python]. Copy and paste the path (mine looked like this: /Library/Frameworks/Python.framework/Versions/2.7/bin/python) 
-  # In the AppEngine Launcher, click Deploy
-  # Download the spreadsheet we give you as a csv
-    * Upload the csv to the AppEngine data store (both to the local version and deployed version)
-
-</font>
+= Get the Source Code=
 
 <font color=red><<At present, I stole the real AE intro tutorial. I'm in the process of modifying it to apply to getting a copy of CBE working.>>></font>
 
@@ -47,7 +8,7 @@ To get the experimental code:
   # Download the zip file at <font color=red><<TODO some link>></font>.
   # Unzip that file and make a note of the directory to which it downloads. Let's assume that the directory is {{{CBE}}}.
 
-The {{{CBE}}} directory contains all of the files that constituate the Course Builder Experiment App Engine application, including almost everything needed to replicate the Power Searching with Google course. To create your own course, you start with this code and modfiy it for your own course.
+The {{{CBE}}} directory contains all of the files that constitute the Course Builder Experiment App Engine application. This includes almost everything needed to replicate the [http://www.powersearchingwithgoogle.com/ Power Searching with Google] course. To create your own course, you start with this code and modfiy it for your own course.
 
 == 2. Decide on a name for your application ==
 
