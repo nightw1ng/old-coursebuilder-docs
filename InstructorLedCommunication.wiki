@@ -1,8 +1,6 @@
 #summary The role of email, web forums, blogs, and Google+ for announcements, and optional material.
 <h1>Announcements and Optional Material</h1>
 
-<font color=red><<TODO WORKING HERE. deleted g+ page, because moving its content here. make sure to fix all refs throughout the site>></font>
-
 The official course content you create using our experimental code (see [CourseMaterial Course Material]) is, of course, a major part of the formal communication between you and your students. However, it is not the only communication.
 
 Here, we distinguish between formal communication, typically initiated by the course staff, from informal web forum communication, frequently initiated by students. All of these efforts are important in creating a successful feeling of community for your students and your course staff.
@@ -12,26 +10,26 @@ The types of formal communication we typically see are:
 || *Type* || *Typical implementation* || *Examples* || 
 || [#Reminder_announcements Reminder announcements] || Email || Deadlines for assessments. Release of new units. ||
 || [#Informative_announcements Informative announcements] || Web forum post || A standard answer to a question that came up repeatedly in any student communication. (For example, if the wording of an actitivy question confused a lot of students, you might decide to post a clarification.) ||
-|| [#Optional_course_material Optional course material] || Google+ page or Blog || Background reading for students who might need a little extra help getting started. Slightly off-topic or more advanced material for students who want to explore aspects of the topic not covered in the main materials or who want more challenging activities to strengthen their knowledge of the main materials. ||
+|| [#Optional_course_material Optional course material] || Web forum post, Google+ page or Blog post || Background reading for students who might need a little extra help getting started. Slightly off-topic or more advanced material for students who want to explore aspects of the topic not covered in the main materials or who want more challenging activities to strengthen their knowledge of the main materials. ||
 
-There are a variety of technologies available to you for each of these types of communication. Which you choose to use depends on your circumstances. What is described below are the choices we made for Power Searching.
+There are a variety of technologies available to you for each of these types of communication. Which you choose to use depends on your circumstances. What we describe below are the choices we made for Power Searching.
 
 == Reminder announcements, typically in email ==
 
-You may choose to send reminder announcements to students at important points along the way. We chose to use email for these announcements, as students are more guaranteed (though not really guaranteed) to see the emails than to see things posted in other ways.
+You may choose to send reminder announcements to students at important points along the way. Consider sending the following reminder announcements:
+
+  * *At course registration*<br>Let students know their registration has been processed and include a brief description of the course, the high-level schedule for the course, an introduction to the community features available to students, and so on.
+  * *Whenever you release new content*<br>Link to the new content and mention any upcoming deadlines.
+  * *Partway through, to students who have registered but not started the course*<br>Sometimes students register and then forget to start a course. Partway through the course, send just these people a reminder that they might want to start.  (This is only feasible if you use email for reminder announcements.)
+  * *Before a special event*<br>For example, if you have [OnlineOfficeHours online office hours] using a Hangout On Air, send a reminder message shortly before it occurs.
+  * *Upon submission of final assessment*<br>Notification of whether or not the student has passed and when to expect the certificate (if any).
+Whatever reminder announcements you decide to send, we recommend that you draft them in advance.  See [ExampleEmails Example Emails] for some samples.
+
+During [http://www.powersearchingwithgoogle.com/ Power Searching with Google], we noticed a significant spike in student engagement each time we sent out reminder announcements, which we did using email. We chose to use email because students are more likely (though not guaranteed) to see the emails than to see things posted in other ways.
 
 Be very careful here. If you use email, you must avoid spamming your students by sending too many emails. On the other hand, do send enough emails to keep their interest without annoying them. 
 
 If you decide to send emails, you need to first collect your students email addresses. You do this during the registration process <font color=red><<TODO link to description>></font>. Create an email alias containing all of your students' email addresses.
-
-Whether you use email or another mechanism, consider sending the following reminder announcements:
-
-  * *At course registration*<br>A brief description of the course, the high-level schedule for the course, an introduction to the community features available to students, and so on.
-  * *Whenever you release new content*<br>Link to the new content and mention any upcoming deadlines.
-  * *Partway through, to students who have registered but not started the course*<br>Sometimes students register and then forget to start a course. Partway through the course, you can collect the addresses <font color=red><<TODO link to how>></font> of these people and send them a reminder that they might want to start. 
-  * *Before a special event*<br>For example, if you have [OnlineOfficeHours online office hours] using a Hangout On Air, send a reminder message shortly before it occurs.
-  * *Upon submission of final assessment<br>*Notification of whether or not the student has passed and when to expect the certificate (if any).
-Whatever emails you decide to send, we recommend that you draft them in advance.  See [ExampleEmails Example Emails] for some samples.
 
 Note that if you use App Engine [https://developers.google.com/appengine/docs/python/mail/ to send email], you need to know about the [https://developers.google.com/appengine/docs/quotas#Mail quotas] App Engine imposes.
 
@@ -41,6 +39,8 @@ Note that if you use App Engine [https://developers.google.com/appengine/docs/py
 
 During the course, you may want to let your students know some that is optional or that you otherwise do not think it worth sending to all of their email accounts. 
 
+Consider creating a top-level Announcements category in your forum. Use that to post daily updates, FAQs, and so on.
+
 For example, you may receive the same question from many students, over a variety of your communication mechanisms. At first, you probably answer these questions one at a time, in whatever place the question was asked. Once you notice the trend, however, you may want to create a standard answer to that question, post it in one place, and remove duplicates to minimize confusion.
 
 Although answering a standard question could be considered a formal announcement, treating it in a more informal manner is appropriate. We suggest using your [WebForums web forum] for this purpose.
@@ -49,32 +49,17 @@ As you can see on [WebForums that page], if you use a forum post for these annou
 
 == Optional course material, in any of a web forum, blog, or Google+ page ==
 
-The units and assessments are the primary mainstream course material for your MOOC. However, you can have optional material you suggest for some students. For example, you can have background reading for students who need a little extra help getting started. You can have more advanced material for students who want more challenging activities to strengthen their knowledge of the main materials. You can have material about aspects of the topic not covered at all in the main materials for students who want to explore more.
+[CreateLesons Lessons], [CreateActivities activities], and [CreateAssessments assessments] contain the primary course material for your MOOC. However, you can have optional material you suggest for some students. For example, you can have background reading for students who need a little extra help getting started. You can have more advanced material for students who want more challenging activities to strengthen their knowledge of the main materials. You can have material about aspects of the topic not covered at all in the main materials for students who want to explore more.
 
 You have several options for creating your optional material, depending on your goals for it.
 
+For optional, more challenging, activities, you might choose to post these to your web forum. The advantage of this approach is that you can then encourage your students to post their answers and discuss those answers among themselves.
 
-<font color=red><<TODO WORKING HERE. talk about blogs, G+, and web forum posts. why each.>></font>
+For background material or for material on related, but not primary material, you might choose to create blog posts and entries on your Google+ page.  Additionally, if you use [OnlineOfficeHours Hangouts On Air] in your course, you can post those on your Google+ page as an easy way for your students to access them.
 
-People frequently use Google+ to connect to other people. But they can also use Google+ to connect with other things, such as businesses, sports teams, or even your course. To give your course a Google+ presence, you create a Google+ page for it. Consider [http://support.google.com/plus/bin/answer.py?hl=en&amp;answer=1710691&amp;topic=1710599&amp;ctx=topic creating a Google+ page] for your course before you release the course.
+Even if you keep the web forum for your course private to its registered students, you might have a  Google+ page or blog that is available to a wider audience. You can use them as ways to let everyone know what a great course you've created.
 
-There are several ways you might want to use your Google+ page for your course:
-
-  * Even if you keep the Google Group for your course private to its registered students, you might make the Google+ page available to the entire world. You can use it as a way to let the everyone know what a great course you've created.
-
-  * You should design the primary flow of your course for the middle range of students. You don't want to bore those students with background material and you don't want to intimidate them with too advanced material. You can use your Google+ page to post material that is not appropriate for the primary flow of the course.
-
-  * And, if you use [OnlineOfficeHours Hangouts On Air] in your course, you can post those on your Google+ page as an easy way for your students to access them.
-
-
-<font color=red><<TODO as may be clear, I'm not really certain what to say about this. I never looked at the G+ page for Power Searching, except for the HOA>></font>
-
-
-==Supporting students==
-
-  * *Online office hours*: Just because you have thousands of students doesn't mean they don't want to hear their questions answered live by an instructor. To enable this interaction, you can use a combination of Hangouts On Air and Google Moderator. See [OnlineOfficeHours Online Office Hours].
-  * *Content-related questions: *Have  students post these to  your Google+ page or to the forum you create for that purpose. See [WebForums Community Discussion: Web Forums] and [PlusPage Google+ Page].
-  * *Administrative questions:* Consider creating  a help alias for your students such as help@example.com. If you create a help alias and you have teaching assistants, share that address with all of your assistants, so that they send email from a formal location rather than from their own email addresses.
+You can even create a Google+ page explicitly for your course. Consider [http://support.google.com/plus/bin/answer.py?hl=en&amp;answer=1710691&amp;topic=1710599&amp;ctx=topic creating a Google+ page] for your course before you release the course.
 
 ==Certificates or badges==
 Students love certificates and badges. They provide a nice feeling of accomplishment.
