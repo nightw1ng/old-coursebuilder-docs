@@ -38,3 +38,6 @@ For more information on these aspects, see [WhatsInACourse What’s in a Course?
   # [FourPilot Pilot with your target audience].<br>The experience of teaching a course as a MOOC is quite different from normal classroom teaching. We strongly encourage you to have some people go through your entire course before you release it to actual students. You may find, as we have, that a large percentage of your work comes after the first pilot, when you see how people actually interact with your material. For details, see [FourPilot Step 4].
   # Go live!
   # Iterate for your next version.
+
+
+<font color=red><<TOOD add information about requirements for people who can do this>></font>
