@@ -7,25 +7,29 @@ With Google Groups, you can set up your very own web forum to communicate and co
 
 Google Groups features like online discussions and real-time editing can make it simple for students to work together when they're not in the same physical location, sharing research findings, collaborating on group projects, and comparing notes on the lessons.
 
-For a longer introduction to Google Groups, see [http://support.google.com/groups/bin/answer.py?hl=en&amp;answer=46601 Welcome to Google Groups]. 
+For a longer introduction to Google Groups, see [http://support.google.com/groups/bin/answer.py?hl=en&answer=46601 Welcome to Google Groups]. 
 
 ==Create your group==
 
-  * When setting up your group for the first time, follow the instructions at [http://support.google.com/groups/bin/answer.py?hl=en&amp;answer=2464926 Create a group].
-  * In the third step of that procedure, you select a *group type*. Set your group type to *Web forum*.
+  * When setting up your group for the first time, follow the instructions at [http://support.google.com/groups/bin/answer.py?hl=en&answer=2464926 Create a group].
+  * On the *Create Group* screen, set the following:
+    * Set *Group type* to *Web forum*.
+    * Under "Basic permissions", 
+      * Set *View topics* to *Anyone*.
+      * Set *Post* to *All members of the  group*.
+      * Set *Join the group* to *Anyone*.
   * Once you finish creating your group, you see a Congratulations screen. From that screen, choose *Customize your group's settings*. From that screen
+    * In the left navigation, expand *Information*.
+      * Choose *General information*. (It may already be chosen.)
+      * Set *Topic types* to *Questions*.
     * In the left navigation, expand *Settings*.
-      * Choose *New members* and decide who you want to be able to join the group.
       * Choose *Categories* and click on *Enable categories*, then set up appropriate categories (described next).
     * In the left navigation, expand *Permissions*.
-      * Choose *Basic permissions*.
-      * Set *View topics* to *Anyone*.
-      * Set *Join the group* to *Anyone*.
-      * Choose *Posting permissions*. 
-      * Consider allowing all members of the group to *Mark Favorite Reply On Own Topic*  and *Me Too Topic*.
+        * Choose *Posting permissions*. 
+        * Consider allowing all members of the group to *Mark Favorite Reply On Own Topic*  and *Me Too Topic*.
       * Choose *Moderation permissions.* 
       * Set *Mark Duplicate* to *All Members of the group*.
-      * Set *Mark Favorite Reply on Any Topic *to *All Members of the group*.
+      * Set *Mark Favorite Reply on Any Topic* to *All Members of the group*.
       * Set *Unmark Favorite Reply on Any Topic *to **All Members* of the group*.
       * These last three are recommended settings that let your students help moderate the forum. If your forum is busy enough, you don't want to be the only one who can do these things. If you decide you want to keep tighter control over these areas, change the permissions to be somewhat more restrictive.
 
@@ -33,7 +37,7 @@ For a longer introduction to Google Groups, see [http://support.google.com/group
 
 If your forum is effective, your group will get an extremely large number of posts. To make it easier for students to find the specific information in which they're interested, consider using category groups and categories to organize posts.
 
-A *category group* is simply an organizational mechanism within the Google Group. Group members do not post messages directly to a category group. Instead, group members post to a category within a category group. Refer to [http://support.google.com/groups/bin/answer.py?hl=en&amp;answer=186851 Adding and removing categories] for general information on this topic. 
+A *category group* is simply an organizational mechanism within the Google Group. Group members do not post messages directly to a category group. Instead, group members post to a category within a category group. Refer to [http://support.google.com/groups/bin/answer.py?hl=en&answer=186851 Adding and removing categories] for general information on this topic. 
 
 The following hierarchy suggests category groups and categories within those groups that you might use. The top level of the hierarchy contains the category groups. The second level contains the categories.
 
