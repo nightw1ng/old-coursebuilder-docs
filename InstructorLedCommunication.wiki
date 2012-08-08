@@ -1,6 +1,8 @@
 #summary The role of email, office hours, announcements, and optional material in your course.
 <h1>Instructor-Led Communication</h1>
 
+<font color=red><<TODO WORKING HERE. deleted g+ page, because moving its content here. make sure to fix all refs throughout the site>></font>
+
 The official course content you create using our experimental code (see [CourseMaterial Course Material]) is, of course, a major part of the formal communication between you and your students. However, it is not the only communication.
 
 Here, we distinguish between the formal communication, typically initiated by the course staff, from informal web forum communication, frequently initiated by students. All of these efforts are important in creating a successful feeling of community for your students and your course staff.
