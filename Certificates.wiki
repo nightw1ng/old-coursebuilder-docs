@@ -1,0 +1,11 @@
+#summary Do you want to produce a certificate or badge for students who complete your course?
+
+= Course Completion Certificates or Badges =
+
+Some students love certificates and badges. They provide a nice feeling of accomplishment.
+
+If you plan to provide certificates to students upon successful completion of the coures, you'll need to design the certificate or badge. 
+
+Be sure to use a tool that makes it easy for you to fill in the final certificate with the student's name and whatever other information you want to include, such as the student's scores on the graded assessments or the final score for the course.
+
+<font color="#ff0000"><<TODO rewrite this to accommodate the fact that our IDs actually hate certificates, but we do let you create 'em, so...>></font>
