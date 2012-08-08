@@ -88,7 +88,7 @@ Telling the experimental code how to grade either type of multiple-choice questi
 Graded assessments typically cover material from several units and lessons. They serve multiple purposes:
 
   * *Rating performance.* The obvious goal of assessments is to rate students’ performance. Before and after assessments can also help you gauge the effectiveness of the course.
-  * *Motivating students.* Some students are motivated by certificates. For these people, anticipation of a certificate on successful completion motivates them to finish. So you need a way to measure success. (Note that using certificates is a controversial topic. Many instructors believe that they skew students' motivations away from actually learning the material to just getting the certificate. See [certificates Certificates].)
+  * *Motivating students.* Some students are motivated by certificates. For these people, anticipation of a certificate on successful completion motivates them to finish. So you need a way to measure success. (Note that using certificates is a controversial topic. Many instructors believe that they skew students' motivations away from actually learning the material to just getting the certificate. See [Certificates Certificates].)
 
 With our experimental code, you have control over how many graded assessments you provide and how each of those assessments counts in the final scoring for a student’s grade.
 
