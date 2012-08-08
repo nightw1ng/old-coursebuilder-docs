@@ -18,7 +18,6 @@
       * [HappinessMetrics Happiness Metrics]
       * [ReachAndEngagementMetrics Reach & Engagement Metrics]
     * [ParticipantCommunity Participant Community]
-      * [PlusPage Google+ Page]
       * [InstructorLedCommunication Instructor-Led Communication]
       * [OnlineOfficeHours Online Office Hours]
       * [TeachingAssistants Teaching Assistants]
