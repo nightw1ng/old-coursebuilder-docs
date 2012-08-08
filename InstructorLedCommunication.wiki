@@ -49,7 +49,7 @@ As you can see on [WebForums that page], if you use a forum post for these annou
 
 == Optional course material, in any of a web forum, blog, or Google+ page ==
 
-[CreateLesons Lessons], [CreateActivities activities], and [CreateAssessments assessments] contain the primary course material for your MOOC. However, you can have optional material you suggest for some students. For example, you can have background reading for students who need a little extra help getting started. You can have more advanced material for students who want more challenging activities to strengthen their knowledge of the main materials. You can have material about aspects of the topic not covered at all in the main materials for students who want to explore more.
+[CreateLessons Lessons], [CreateActivities activities], and [CreateAssessments assessments] contain the primary course material for your MOOC. However, you can have optional material you suggest for some students. For example, you can have background reading for students who need a little extra help getting started. You can have more advanced material for students who want more challenging activities to strengthen their knowledge of the main materials. You can have material about aspects of the topic not covered at all in the main materials for students who want to explore more.
 
 You have several options for creating your optional material, depending on your goals for it.
 
@@ -60,12 +60,3 @@ For background material or for material on related, but not primary material, yo
 Even if you keep the web forum for your course private to its registered students, you might have a  Google+ page or blog that is available to a wider audience. You can use them as ways to let everyone know what a great course you've created.
 
 You can even create a Google+ page explicitly for your course. Consider [http://support.google.com/plus/bin/answer.py?hl=en&amp;answer=1710691&amp;topic=1710599&amp;ctx=topic creating a Google+ page] for your course before you release the course.
-
-==Certificates or badges==
-Students love certificates and badges. They provide a nice feeling of accomplishment.
-
-If you plan to provide certificates to students upon successful completion of the coures, you'll need to design the certificate or badge. 
-
-Be sure to use a tool that makes it easy for you to fill in the final certificate with the student's name and whatever other information you want to include, such as the student's scores on the graded assessments or the final score for the course.
-
-<font color="#ff0000"><<TODO anything interesting I can say here?>></font>
