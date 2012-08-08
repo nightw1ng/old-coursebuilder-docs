@@ -1,5 +1,5 @@
-#summary The role of email, office hours, announcements, and optional material in your course.
-<h1>Instructor-Led Communication</h1>
+#summary The role of email, web forums, blogs, and Google+ for announcements, and optional material.
+<h1>Announcements and Optional Material</h1>
 
 <font color=red><<TODO WORKING HERE. deleted g+ page, because moving its content here. make sure to fix all refs throughout the site>></font>
 
