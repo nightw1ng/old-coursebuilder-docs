@@ -71,10 +71,10 @@ Before you can run the sample code, you need to upload the data files that repre
 
 To upload the data, open a Unix shell. In that shell:
 
-  # Run<br>{{{cd }}}_*{{{[PATHTOAPPLICATION]}}}*_{{{/data}}}<br>where _*{{{[PATHTOAPPLICATION]}}}*_ is the directory/folder you specified in step 4.
-  # Run<br>{{{appcfg.py upload_data --url=http://localhost:}}}_*{{{[PORT]}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br>where _*{{{[PORT]}}}*_ is the port number you specified in step 4.
+  # Run<br>{{{cd }}}_*{{{PATHTOAPPLICATION}}}*_{{{/data}}}<br>where _*{{{PATHTOAPPLICATION}}}*_ is the directory/folder you specified in step 4.
+  # Run<br>{{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br>where _*{{{PORT}}}*_ is the port number you specified in step 4.
   # The system prompts you to enter your credentials.<br>Your credentials are your Google account name and password.
-  # Run<br>{{{appcfg.py upload_data --url=http://localhost:}}}_*{{{[PORT]}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}}
+  # Run<br>{{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}}
   # The system prompts you to enter your credentials again.
 
 == 6. Start the development server ==
@@ -124,7 +124,7 @@ From the Launcher:
 
 From the command-line:
   # Open a web browser.
-  # In the address bar, enter<br>{{{http://localhost:}}}_*{{{[PORT]}}}*_<br>where _*{{{[PORT]}}}*_ is 8080 by default or whatever port you chose when adding the app in step 4.
+  # In the address bar, enter<br>{{{http://localhost:}}}_*{{{PORT}}}*_<br>where _*{{{PORT}}}*_ is 8080 by default or whatever port you chose when adding the app in step 4.
 
 In either case, you should see the registration page for the sample app. It looks something like this:
 
