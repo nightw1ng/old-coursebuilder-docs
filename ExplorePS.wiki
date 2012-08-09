@@ -1,62 +1,55 @@
+#summary Explore the sample appl directory/folder structure before starting to modify it.
 
-#summary Explore the sample application before starting to modify it.
-
-<h1>Explore the Sample Code and Sample Course</h1>
+<h1>Explore the Sample Code</h1>
 
 <font color=red><<TODO working here>></font>
 
-<wiki:toc max-depth="2" />
-
-== Code directory/folder structure ==
-
 The following table briefly describes the directory/folder structure for the sample code provided with Course Builder Experimental. Much of this code you will leave as is. The last column of the table notes which files you must change to produce your own application.
 
-|| *Pathname* || || *Filename* || *Description* || *Needs changing?* || 
-|| {{{app.yaml}}} || || || App configuration file. In setting up the sample code, you change the app name in this file. || Yes || 
-|| {{{assets}}} || || || || || 
-|| || {{{css}}} || || || || 
-|| || || {{{main.css}}} || CSS file that specifies the look of the HTML pages associated with your course. || || 
-|| || {{{img}}} || || Images that appear throughout your course. || || 
-|| || || {{{[.png files]}}} || Replace these files any that you need for your material.|| Yes || 
-|| || || {{{favicon.ico}}} || A [http://en.wikipedia.org/wiki/Favicon favicon] is a small image representing your course that appears in the address bar of a browser or next to a bookmark for your course. || Yes ||
-|| || {{{js}}} || || || || 
-|| || || {{{[activity-N.M.js files]}}} || These are the files that define the activities associated with your lessons. Used by {{{activity-generic.js}}}. See [CreateActivities Create Activities] || Yes || 
-|| || || {{{Activity-generic}}}.js || The !JavaScript code that defines the logic for running activities and assessments.  || || 
-|| || || {{{assessment-SOMETHING.js}}} || These are the files that define the assessments associated with your lessons. Used by {{{activity-generic.js}}}. See [CreateAssessments Create Assessments] || Yes || 
-|| || || {{{bootstrap.js}}} ||  || || 
-|| || || {{{jquery-1.7.2.min.js}}} || || || 
-|| || || {{{bulkloader.yaml}}} || || || 
-|| {{{controllers}}} || || ||  || || 
-|| || || {{{__init__.py}}} ||  || || 
-|| || || {{{__init__.pyc}}} ||  || || 
-|| || || {{{lessons.py}}} ||  || || 
-|| || || {{{lessons.pyc}}} ||  || || 
-|| || || {{{utils.py}}} ||  || || 
-|| || || {{{utils.pyc}}} ||  || || 
-|| {{{data}}} || || ||  || || 
-|| || || {{{[Maybe: bulkloader-log-SOMETHING]}}} ||  || || 
-|| || || {{{[Maybe: bulkloader-progress-SOMETHING]}}} ||  || || 
-|| || || {{{lesson.csv}}} || desc || Yes || 
-|| || || {{{unit.csv}}} || desc || Yes || 
-|| || || {{{index.yaml}}} ||  || || 
-|| || || {{{main.py}}} ||  || || 
-|| || || {{{main.pyc}}} ||  || || 
-|| {{{models}}} || || ||  || || 
-|| || || {{{__init__.py}}} ||  || || 
-|| || || {{{__init__.pyc}}} ||  || || 
-|| || || {{{models.py}}} ||  || || 
-|| || || {{{models.pyc}}} ||  || || 
-|| {{{views}}} || || ||  || || 
-|| || || {{{activity.html}}} || desc || Yes || 
-|| || || {{{assessment.html}}} || desc || Yes || 
-|| || || {{{base.html}}} || desc || Yes || 
-|| || || {{{registration.html}}} || desc || Yes || 
-|| || || {{{confirmation.html}}} || desc || Yes || 
-|| || || {{{course.html}}} || desc || Yes || 
-|| || || {{{forum.html}}} || desc || Yes || 
-|| || || {{{help.html}}} || desc || Yes || 
-|| || || {{{register.html}}} || desc || Yes || 
-|| || || {{{confirmation.html}}} || desc || Yes || 
-|| || || {{{unit.html}}} || desc || Yes || 
-
-== Walk-though the sample course ==
+|| *Pathname* || *Filename* || *Description* || *Needs changing?* || 
+|| || {{{app.yaml}}} || App configuration file. In setting up the sample code, you change the app name in this file. || Yes || 
+|| {{{assets/}}} || || || || 
+|| {{{assets/css/}}} || || || || 
+|| {{{assets/css/}}}  || {{{main.css}}} || CSS file that specifies the look of the HTML pages associated with your course. || || 
+|| {{{assets/img/}}} || || Images that appear throughout your course. || || 
+|| {{{assets/img/}}} || {{{[.png files]}}} || Replace these files with any that you need for your material.|| Yes || 
+|| {{{assets/img/}}} || {{{favicon.ico}}} || A [http://en.wikipedia.org/wiki/Favicon favicon] is a small image representing your course that appears in the address bar of a browser or next to a bookmark for your course. || Yes ||
+|| {{{assets/js/}}} || || || || 
+|| {{{assets/js/}}} || {{{[activity-N.M.js files]}}} || These are the files that define the activities associated with your lessons. Used by {{{activity-generic.js}}}. See [CreateActivities Create Activities] || Yes || 
+|| {{{assets/js/}}}  || {{{Activity-generic}}}.js || The !JavaScript code that defines the logic for running activities and assessments.  || || 
+|| {{{assets/js/}}}  || {{{assessment-SOMETHING.js}}} || These are the files that define the assessments associated with your lessons. Used by {{{activity-generic.js}}}. See [CreateAssessments Create Assessments] || Yes || 
+|| {{{assets/js/}}} || {{{bootstrap.js}}} ||  || || 
+|| {{{assets/js/}}} || {{{jquery-1.7.2.min.js}}} || || || 
+|| || {{{bulkloader.yaml}}} || || || 
+|| {{{controllers}}} || || ||  ||
+|| {{{controllers/}}} || {{{__init__.py}}} ||  || || 
+|| {{{controllers/}}} || {{{__init__.pyc}}} ||  || || 
+|| {{{controllers/}}} || {{{lessons.py}}} ||  || || 
+|| {{{controllers/}}} || {{{lessons.pyc}}} ||  || || 
+|| {{{controllers/}}} || {{{utils.py}}} || sean || Yes  (for the initial email message) || 
+|| {{{controllers/}}} || {{{utils.pyc}}} ||  || || 
+|| {{{data/}}} || || ||  ||
+|| {{{data/}}} || {{{[Maybe: bulkloader-log-SOMETHING]}}} ||  || || 
+|| {{{data/}}} || {{{[Maybe: bulkloader-progress-SOMETHING]}}} ||  || || 
+|| {{{data/}}} || {{{lesson.csv}}} || desc || Yes || 
+|| {{{data/}}} || {{{unit.csv}}} || desc || Yes || 
+|| {{{data/}}} || {{{index.yaml}}} ||  || || 
+|| {{{data/}}} || {{{main.py}}} ||  || || 
+|| {{{data/}}} || {{{main.pyc}}} ||  || || 
+|| {{{models}}} || || ||  ||
+|| {{{models/}}} || {{{__init__.py}}} ||  || || 
+|| {{{models/}}} || {{{__init__.pyc}}} ||  || || 
+|| {{{models/}}} || {{{models.py}}} ||  || || 
+|| {{{models/}}} || {{{models.pyc}}} ||  || || 
+|| {{{views}}} || || ||  ||
+|| {{{views/}}} || {{{activity.html}}} || desc || Yes || 
+|| {{{views/}}} || {{{assessment.html}}} || desc || Yes || 
+|| {{{views/}}} || {{{base.html}}} || sean || Yes (lots of stuff) || 
+|| {{{views/}}} || {{{registration.html}}} || sean || Yes (lots of stuff) (I took the liberty of getting rid of the +1 button on this registration page since that bit of code is not very understandable, but I have kept the +1 button that is on the main course page. We can add the former back later if this becomes an issue.) || 
+|| {{{views/}}} || {{{confirmation.html}}} || desc || Yes || 
+|| {{{views/}}} || {{{course.html}}} || desc || Yes || 
+|| {{{views/}}} || {{{forum.html}}} || sean|| Yes  (the forum link) || 
+|| {{{views/}}} || {{{help.html}}} || desc || Yes || 
+|| {{{views/}}} || {{{register.html}}} || desc || Yes || 
+|| {{{views/}}} || {{{confirmation.html}}} || desc || Yes || 
+|| {{{views/}}} || {{{unit.html}}} || desc || Yes || 
