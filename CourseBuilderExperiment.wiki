@@ -3,9 +3,9 @@
 
 ==The “Power Searching with Google” Experiment==
 
-For two weeks in July 2012, Google hosted an online, community-based course called [http://www.google.com/insidesearch/landing/powersearching.html Power Searching with Google]. The course showcased search techniques and how to use them to solve real, everyday problems. We created Power Searching as a MOOC (Massive Online Open Course) by using a variety of Google’s existing products to foster a student community and by writing an App Engine application for the course material and assessments. 
+For two weeks in July 2012, Google hosted an online, community-based course called [http://www.google.com/insidesearch/landing/powersearching.html Power Searching with Google]. The course showcased search techniques and how to use them to solve real, everyday problems. We created Power Searching as a MOOC (Massive Online Open Course) by using a variety of Google’s existing products to foster a student community and by writing an App Engine application to create the course material and assessments. 
 
-We were quite pleased with the success of Power Searching with Google. We had 155,000 students register for the course, from 196 countries. Of these, 29% of those who completed the first assessment passed the course and received a certificate.
+We were quite pleased with the success of Power Searching with Google. We had 155,000 students register for the course, from 196 countries. Of these, 29% of those who completed the first assessment passed the course and received a certificate. The discussion forums and Google+ streams were very active with students asking and answering questions, and providing additional ideas and content beyond what’s offered by the instructor.
 
 Course Builder Experiment represents our decision to open source the code we used to create Power Searching and to document our use of that code in conjunction with Google products to create the entire experience.
 
