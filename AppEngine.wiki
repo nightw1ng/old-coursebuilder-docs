@@ -73,9 +73,9 @@ To upload the data, open a Unix shell. In that shell:
 
   # Run<br>{{{cd [PATHTOAPPLICATION]/data}}}
   # Run<br>{{{appcfg.py upload_data --url=http://localhost:[PORT]/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br>where {{{[PATHTOAPPLICATION]}}} is the directory/folder you specified in step 4.
-  # The system prompts you to enter your credentials.<br><font color=red><<TODO which I seem unable to do>></font>
+  # The system prompts you to enter your credentials. Your credentials are your Google account name and password.
   # Run<br>{{{appcfg.py upload_data --url=http://localhost:[PORT]/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}}<br>where {{{[PORT]}}} is the port number you specified in step 4.
-
+  # The system prompts you to enter your credentials again.
 
 == 6. Start the development server ==
 
