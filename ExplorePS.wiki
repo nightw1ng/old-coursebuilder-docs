@@ -7,17 +7,17 @@
 The following table briefly describes the directory/folder structure for the sample code provided with Course Builder Experimental. Much of this code you will leave as is. The last column of the table notes which files you must change to produce your own application.
 
 || *Pathname* || *Filename* || *Description* || *Needs changing?* || 
-|| || {{{app.yaml}}} || App configuration file. In setting up the sample code, you change the app name in this file. || Yes || 
+|| || {{{app.yaml}}} || App configuration file. In setting up the sample code, you change the app name in this file. || Required || 
 || {{{assets/}}} || || || || 
 || {{{assets/css/}}} || || || || 
 || {{{assets/css/}}}  || {{{main.css}}} || CSS file that specifies the look of the HTML pages associated with your course. || || 
 || {{{assets/img/}}} || || Images that appear throughout your course. || || 
-|| {{{assets/img/}}} || _{{{[.png files]}}}_ || Replace these files with any that you need for your material.|| Yes || 
-|| {{{assets/img/}}} || {{{favicon.ico}}} || A [http://en.wikipedia.org/wiki/Favicon favicon] is a small image representing your course that appears in the address bar of a browser or next to a bookmark for your course. || Yes ||
+|| {{{assets/img/}}} || _{{{[.png files]}}}_ || Replace these files with any images you need for your material.|| Required || 
+|| {{{assets/img/}}} || {{{favicon.ico}}} || A [http://en.wikipedia.org/wiki/Favicon favicon] is a small image representing your course that appears in the address bar of a browser or next to a bookmark for your course. || Required ||
 || {{{assets/js/}}} || || || || 
-|| {{{assets/js/}}} || _{{{[activity-N.M.js files]}}}_ || These are the files that define the activities associated with your lessons. Used by {{{activity-generic.js}}}. See [CreateActivities Create Activities] || Yes || 
-|| {{{assets/js/}}}  || {{{Activity-generic}}}.js || The !JavaScript code that defines the logic for running activities and assessments.  || || 
-|| {{{assets/js/}}}  || {{{assessment-SOMETHING.js}}} || These are the files that define the assessments associated with your lessons. Used by {{{activity-generic.js}}}. See [CreateAssessments Create Assessments] || Yes || 
+|| {{{assets/js/}}} || _{{{[activity-N.M.js files]}}}_ || These are sample files. You must replace all of them. These files define the activities associated with your lessons. Used by {{{activity-generic.js}}}. See [CreateActivities Create Activities] || Required || 
+|| {{{assets/js/}}}  || {{{activity-generic}}}.js || The !JavaScript code that defines the logic for running activities and assessments.  || || 
+|| {{{assets/js/}}}  || {{{assessment-}}}_{{{SOMETHING.js}}}_ || These are sample files. You must replace all of them. These files define the assessments associated with your lessons. Used by {{{activity-generic.js}}}. See [CreateAssessments Create Assessments] || Required || 
 || {{{assets/js/}}} || {{{bootstrap.js}}} ||  || || 
 || {{{assets/js/}}} || {{{jquery-1.7.2.min.js}}} || || || 
 || || {{{bulkloader.yaml}}} || || || 
@@ -26,30 +26,30 @@ The following table briefly describes the directory/folder structure for the sam
 || {{{controllers/}}} || {{{__init__.pyc}}} ||  || || 
 || {{{controllers/}}} || {{{lessons.py}}} ||  || || 
 || {{{controllers/}}} || {{{lessons.pyc}}} ||  || || 
-|| {{{controllers/}}} || {{{utils.py}}} || sean || Yes  (for the initial email message) || 
+|| {{{controllers/}}} || {{{utils.py}}} || Utility functions.  There are two changes you can make to this file.  (1) The code tries to send an email when a student registers. You need to change the sender, subject, and text of that email message. (2) Optionally, you can change the maximum student enrollment allowed; that defaults to 250,000. || Required ||
 || {{{controllers/}}} || {{{utils.pyc}}} ||  || || 
 || {{{data/}}} || || ||  ||
 || {{{data/}}} || _{{{[Maybe: bulkloader-log-SOMETHING]}}}_ ||  || || 
 || {{{data/}}} || _{{{[Maybe: bulkloader-progress-SOMETHING]}}}_ ||  || || 
-|| {{{data/}}} || {{{lesson.csv}}} || desc || Yes || 
-|| {{{data/}}} || {{{unit.csv}}} || desc || Yes || 
-|| {{{data/}}} || {{{index.yaml}}} ||  || || 
-|| {{{data/}}} || {{{main.py}}} ||  || || 
-|| {{{data/}}} || {{{main.pyc}}} ||  || || 
+|| {{{data/}}} || {{{lesson.csv}}} || This CSV file contains information about all of the lessons in your course. See [CreateLessons Create Lessons]. || Required || 
+|| {{{data/}}} || {{{unit.csv}}} || This CSV file contains information about the units in your course, to post to your home page. See [CreateUnits Create Units]. || Required || 
+|| || {{{index.yaml}}} ||  || || 
+|| || {{{main.py}}} ||  || || 
+|| || {{{main.pyc}}} ||  || || 
 || {{{models}}} || || ||  ||
 || {{{models/}}} || {{{__init__.py}}} ||  || || 
 || {{{models/}}} || {{{__init__.pyc}}} ||  || || 
 || {{{models/}}} || {{{models.py}}} ||  || || 
 || {{{models/}}} || {{{models.pyc}}} ||  || || 
-|| {{{views}}} || || ||  ||
-|| {{{views/}}} || {{{activity.html}}} || desc || Yes || 
-|| {{{views/}}} || {{{assessment.html}}} || desc || Yes || 
-|| {{{views/}}} || {{{base.html}}} || sean || Yes (lots of stuff) || 
-|| {{{views/}}} || {{{registration.html}}} || sean || Yes (lots of stuff) (I took the liberty of getting rid of the +1 button on this registration page since that bit of code is not very understandable, but I have kept the +1 button that is on the main course page. We can add the former back later if this becomes an issue.) || 
-|| {{{views/}}} || {{{confirmation.html}}} || desc || Yes || 
-|| {{{views/}}} || {{{course.html}}} || desc || Yes || 
-|| {{{views/}}} || {{{forum.html}}} || sean|| Yes  (the forum link) || 
-|| {{{views/}}} || {{{help.html}}} || desc || Yes || 
-|| {{{views/}}} || {{{register.html}}} || desc || Yes || 
-|| {{{views/}}} || {{{confirmation.html}}} || desc || Yes || 
-|| {{{views/}}} || {{{unit.html}}} || desc || Yes || 
+|| {{{views}}} || || These HTML files define the basic structure of the pages of your course. Other data files fill in some details. || You *must* change a few of these files. You *can* change any of them. <font color=red><<TODO Is this Django? I'd like to point to documentation that explains how views fit together, rather than rewrite that.>></font> ||
+|| {{{views/}}} || {{{activity.html}}} ||  || The structure of an activity page. See [CreateActivities Create Activities]. || 
+|| {{{views/}}} || {{{assessment.html}}} ||  || The structure of an assessment page. See [CreateAssessments Create Assessments]. || 
+|| {{{views/}}} || {{{base.html}}} ||  The base look (sometimes called the "chrome") for any page, once a student is registered. TODO (lots of stuff) See [ModifyTemplate Modify Course Template]. || Required || 
+|| {{{views/}}} || {{{base_registration.html}}} || The base look for the registration page. TODO (lots of stuff) (I took the liberty of getting rid of the +1 button on this registration page since that bit of code is not very understandable, but I have kept the +1 button that is on the main course page. We can add the former back later if this becomes an issue.) || Required || 
+|| {{{views/}}} || {{{confirmation.html}}} || The page that appears after a student enrolls. || Required || 
+|| {{{views/}}} || {{{course.html}}} || The home page for the course itself. Contains a short blurb and a list of units and assessments. See [CreateCourse Create Course]. || Required || 
+|| {{{views/}}} || {{{forum.html}}} || The tab that contains your [[WebForums discussion forum]. You must include a link to your forum. || Required || 
+|| {{{views/}}} || {{{help.html}}} || <font color=red><<TODO I notice this file isn't referre to anywhere. What is it?>></font> ||  || 
+|| {{{views/}}} || {{{register.html}}} || The content of the registration form an unenrolled person sees when visiting your course.  || Likely ||
+|| {{{views/}}} || {{{test_confirmation.html}}} || The set of messages a student can see after completing each assessment. See [CreateAssessments Create Assessments]. || Required|| 
+|| {{{views/}}} || {{{unit.html}}} ||  ||  || 
