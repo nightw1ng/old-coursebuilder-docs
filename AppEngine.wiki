@@ -49,6 +49,13 @@ Python App Engine SDK includes both tools. Follow [https://developers.google.com
 
 Activate the Launcher wherever it's available, that is, from the Desktop, the Dock, the Applications folder, Start -> Programs -> Google App Engine -> !GoogleAppEngineLauncher, and so on. 
 
+The first time you start the Launcher, you may see a dialog box asking you about symlinks
+
+<img src="https://www.corp.google.com/~vpg/no_crawl/symlinks.png" />
+
+For App Engine to work, you must agree to set up symlinks.
+
+
 == 4. Add the app to App Engine ==
 
   # In the App Engine Launcher, from the *File* menu, choose *Add Existing Application*. 
@@ -66,7 +73,7 @@ To upload the data, open a Unix shell. In that shell:
 
   # Run<br>{{{cd [PATHTOAPPLICATION]/data}}}
   # Run<br>{{{appcfg.py upload_data --url=http://localhost:[PORT]/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br>where {{{[PATHTOAPPLICATION]}}} is the directory/folder you specified in step 4.
-  # You are prompted to enter your credentials.<br><font color=red><<TODO which I seem unable to do>></font>
+  # The system prompts you to enter your credentials.<br><font color=red><<TODO which I seem unable to do>></font>
   # Run<br>{{{appcfg.py upload_data --url=http://localhost:[PORT]/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}}<br>where {{{[PORT]}}} is the port number you specified in step 4.
 
 
