@@ -92,12 +92,9 @@ Because the command-line version has more options, you may wish to run the devel
 
 By default, your app is only available from the machine on which you start it. To get access to your development server from another machine on the network, you need to request this through the command-line. To do so, do not run the server using the launcher. Instead, run your development server with this command
 
-{{{
-cd [PATHTOAPPLICATION]
-dev_appserver.py . -a 0.0.0.0
-}}}
+  {{{cd }}}_*{{{[PATHTOAPPLICATION]}}}*_<br>{{{dev_appserver.py . -a 0.0.0.0}}}
 
-where _{{{[PATHTOAPPLICATION]}}}_ is the directory/folder containing your app.
+where _*{{{[PATHTOAPPLICATION]}}}*_ is the directory/folder containing your app.
 
 === Troubleshooting ===
 
