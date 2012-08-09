@@ -78,25 +78,6 @@ cd _PathToApplication_
 $ dev_appserver.py . -a 0.0.0.0
 }}}
 
-== 6. Connect to the development server ==
-
-Once your development servier is running, you access it through a web browser.
-
-From the Launcher:
-  # Click *Browser*.<br>A login window appears.
-  # Accept the test email address and check *Sign in as Administrator*.
-  # Click on *Login*.
-
-From the command-line:
-  # Open a web browser.
-  # In the address bar, enter<br>{{{http://localhost:_port_}}}<br>where {{{_port_}}} is 8080 by default or whatever port you chose when adding the app in step 4.
-
-In either case, you should see the registration page for the sample app. It looks something like this:
-
-<img src="https://www.corp.google.com/~vpg/no_crawl/regscreen.png" />
-
-<font color=red><<TODO fix image and then fix path>></font>
-
 
 === Troubleshooting ===
 
@@ -109,5 +90,24 @@ In this situation, you need to manually specify the path for Python 2.7. To do s
     # Open a Unix shell.
     # Run the command {{{which python}}}
     # Copy the path that appears (for example, {{{/Library/Frameworks/Python.framework/Versions/2.7/bin/python}}})
-  # From the *GoogleAppEngineLauncher* menu, choose *Preferences*.<br>A dialog box appears.
+  # From the *!GoogleAppEngineLauncher* menu, choose *Preferences*.<br>A dialog box appears.
   # On the *Python Path* line, enter the path you found above.
+
+== 6. Connect to the development server ==
+
+Once your development servier is running, you access it through a web browser.
+
+From the Launcher:
+  # Click *Browser*.<br>A login window appears.
+  # Accept the test email address and check *Sign in as Administrator*.
+  # Click on *Login*.
+
+From the command-line:
+  # Open a web browser.
+  # In the address bar, enter<br>{{{http://localhost:PORT}}}<br>where {{{PORT}}} is 8080 by default or whatever port you chose when adding the app in step 4.
+
+In either case, you should see the registration page for the sample app. It looks something like this:
+
+<img src="https://www.corp.google.com/~vpg/no_crawl/regscreen.png" />
+
+<font color=red><<TODO fix image and then fix path>></font>
