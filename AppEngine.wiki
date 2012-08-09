@@ -112,3 +112,5 @@ In either case, you should see the registration page for the sample app. It look
 <img src="https://www.corp.google.com/~vpg/no_crawl/regscreen.png" />
 
 <font color=red><<TODO fix image and then fix path>></font>
+
+*Next step:* [ExplorePS Explore the Sample Code]
