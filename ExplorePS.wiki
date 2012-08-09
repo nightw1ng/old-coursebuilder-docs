@@ -12,10 +12,10 @@ The following table briefly describes the directory/folder structure for the sam
 || {{{assets/css/}}} || || || || 
 || {{{assets/css/}}}  || {{{main.css}}} || CSS file that specifies the look of the HTML pages associated with your course. || || 
 || {{{assets/img/}}} || || Images that appear throughout your course. || || 
-|| {{{assets/img/}}} || {{{[.png files]}}} || Replace these files with any that you need for your material.|| Yes || 
+|| {{{assets/img/}}} || _{{{[.png files]}}}_ || Replace these files with any that you need for your material.|| Yes || 
 || {{{assets/img/}}} || {{{favicon.ico}}} || A [http://en.wikipedia.org/wiki/Favicon favicon] is a small image representing your course that appears in the address bar of a browser or next to a bookmark for your course. || Yes ||
 || {{{assets/js/}}} || || || || 
-|| {{{assets/js/}}} || {{{[activity-N.M.js files]}}} || These are the files that define the activities associated with your lessons. Used by {{{activity-generic.js}}}. See [CreateActivities Create Activities] || Yes || 
+|| {{{assets/js/}}} || _{{{[activity-N.M.js files]}}}_ || These are the files that define the activities associated with your lessons. Used by {{{activity-generic.js}}}. See [CreateActivities Create Activities] || Yes || 
 || {{{assets/js/}}}  || {{{Activity-generic}}}.js || The !JavaScript code that defines the logic for running activities and assessments.  || || 
 || {{{assets/js/}}}  || {{{assessment-SOMETHING.js}}} || These are the files that define the assessments associated with your lessons. Used by {{{activity-generic.js}}}. See [CreateAssessments Create Assessments] || Yes || 
 || {{{assets/js/}}} || {{{bootstrap.js}}} ||  || || 
@@ -29,8 +29,8 @@ The following table briefly describes the directory/folder structure for the sam
 || {{{controllers/}}} || {{{utils.py}}} || sean || Yes  (for the initial email message) || 
 || {{{controllers/}}} || {{{utils.pyc}}} ||  || || 
 || {{{data/}}} || || ||  ||
-|| {{{data/}}} || {{{[Maybe: bulkloader-log-SOMETHING]}}} ||  || || 
-|| {{{data/}}} || {{{[Maybe: bulkloader-progress-SOMETHING]}}} ||  || || 
+|| {{{data/}}} || _{{{[Maybe: bulkloader-log-SOMETHING]}}}_ ||  || || 
+|| {{{data/}}} || _{{{[Maybe: bulkloader-progress-SOMETHING]}}}_ ||  || || 
 || {{{data/}}} || {{{lesson.csv}}} || desc || Yes || 
 || {{{data/}}} || {{{unit.csv}}} || desc || Yes || 
 || {{{data/}}} || {{{index.yaml}}} ||  || || 
