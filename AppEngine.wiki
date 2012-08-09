@@ -58,7 +58,19 @@ Activate the Launcher wherever it's available, that is, from the Desktop, the Do
 
 A new line appears in the launcher. Its name is the name you put in the {{{app.yaml}}} file. Its path is the path you specified here.
 
-== 5. Start the development server ==
+== 5. Upload the unit and lesson data ==
+
+Before you can run the sample code, you need to upload the data files that represent that units and lessons of the course. (Don't worry too much about what this means right now; we'll explain in  [ExplorePS Explore the Sample Code].)
+
+To upload the data, open a Unix shell. In that shell:
+
+  # Run<br>{{{cd [PATHTOAPPLICATION]/data}}}
+  # Run<br>{{{appcfg.py upload_data --url=http://localhost:[PORT]/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br>where {{{[PATHTOAPPLICATION]}}} is the directory/folder you specified in step 4.
+  # You are prompted to enter your credentials.<br><font color=red><<TODO which I seem unable to do>></font>
+  # Run<br>{{{appcfg.py upload_data --url=http://localhost:[PORT]/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}}<br>where {{{[PORT]}}} is the port number you specified in step 4.
+
+
+== 6. Start the development server ==
 
 Before you can upload your app to run in production and be available to your audience, you need to develop and debug it in a more private setting. That more private setting is called either a *development server* or a *staging server*.
 
@@ -74,11 +86,11 @@ Because the command-line version has more options, you may wish to run the devel
 By default, your app is only available from the machine on which you start it. To get access to your development server from another machine on the network, you need to request this through the command-line. To do so, do not run the server using the launcher. Instead, run your development server with this command
 
 {{{
-cd _PathToApplication_
+cd [PATHTOAPPLICATION]
 dev_appserver.py . -a 0.0.0.0
 }}}
 
-where {{{_PathToApplication_}}} is the directory/folder containing your app.
+where {{{[PATHTOAPPLICATION]}}} is the directory/folder containing your app.
 
 === Troubleshooting ===
 
@@ -94,7 +106,7 @@ In this situation, you need to manually specify the path for Python 2.7. To do s
   # From the *!GoogleAppEngineLauncher* menu, choose *Preferences*.<br>A dialog box appears.
   # On the *Python Path* line, enter the path you found above.
 
-== 6. Connect to the development server ==
+== 7. Connect to the development server ==
 
 Once your development servier is running, you access it through a web browser.
 
@@ -105,7 +117,7 @@ From the Launcher:
 
 From the command-line:
   # Open a web browser.
-  # In the address bar, enter<br>{{{http://localhost:_PORT_}}}<br>where {{{_PORT_}}} is 8080 by default or whatever port you chose when adding the app in step 4.
+  # In the address bar, enter<br>{{{http://localhost:[PORT]}}}<br>where {{{[PORT]}}} is 8080 by default or whatever port you chose when adding the app in step 4.
 
 In either case, you should see the registration page for the sample app. It looks something like this:
 
