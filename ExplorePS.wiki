@@ -1,7 +1,58 @@
+
 #summary Explore the sample application before starting to modify it.
 
-= Explore the Sample Code =
+<h1>Explore the Sample Code and Sample Course</h1>
 
-<font color=red><<TODO working here.>></font>
+<font color=red><<TODO working here>></font>
 
-writing this would be a good idea.
+The following table briefly describes the directory/folder structure for the sample code provided with Course Builder Experimental. Much of this code you will leave as is. The last column of the table notes which files you must change to produce your own application.
+
+|| *Pathname* || || *Filename* || *Description* || *Needs changing?* || 
+|| {{{app.yaml}}} || || || desc || Yes || 
+|| {{{assets}}} || || || desc || || 
+|| || {{{css}}} || || desc || || 
+|| || || {{{main.css}}} || desc || || 
+|| || {{{img}}} || || desc || || 
+|| || || {{{[.png files]}}} || desc || Yes || 
+|| || || {{{favicon.ico}}} || desc || Yes || 
+|| || {{{js}}} || || desc || || 
+|| || || {{{[activity-N.M.js files]}}} || desc || Yes || 
+|| || || {{{activity-generic}}}.js || desc || || 
+|| || || {{{assessment-Fin.js}}} || desc || Yes || 
+|| || || assessment-Mid.js || desc || Yes || 
+|| || || assessment-Pre.js || desc || Yes || 
+|| || || {{{bootstrap.js}}} || desc || || 
+|| || || {{{jquery-1.7.2.min.js}}} || desc || || 
+|| || || {{{bulkloader.yaml}}} || desc || || 
+|| {{{controllers}}} || || || desc || || 
+|| || || {{{__init__.py}}} || desc || || 
+|| || || {{{__init__.pyc}}} || desc || || 
+|| || || {{{lessons.py}}} || desc || || 
+|| || || {{{lessons.pyc}}} || desc || || 
+|| || || {{{utils.py}}} || desc || || 
+|| || || {{{utils.pyc}}} || desc || || 
+|| {{{data}}} || || || desc || || 
+|| || || {{{[Maybe: bulkloader-log-SOMETHING]}}} || desc || || 
+|| || || {{{[Maybe: bulkloader-progress-SOMETHING]}}} || desc || || 
+|| || || {{{lesson.csv}}} || desc || Yes || 
+|| || || {{{unit.csv}}} || desc || Yes || 
+|| || || {{{index.yaml}}} || desc || || 
+|| || || {{{main.py}}} || desc || || 
+|| || || {{{main.pyc}}} || desc || || 
+|| {{{models}}} || || || desc || || 
+|| || || {{{__init__.py}}} || desc || || 
+|| || || {{{__init__.pyc}}} || desc || || 
+|| || || {{{models.py}}} || desc || || 
+|| || || {{{models.pyc}}} || desc || || 
+|| {{{views}}} || || || desc || || 
+|| || || {{{activity.html}}} || desc || Yes || 
+|| || || {{{assessment.html}}} || desc || Yes || 
+|| || || {{{base.html}}} || desc || Yes || 
+|| || || {{{registration.html}}} || desc || Yes || 
+|| || || {{{confirmation.html}}} || desc || Yes || 
+|| || || {{{course.html}}} || desc || Yes || 
+|| || || {{{forum.html}}} || desc || Yes || 
+|| || || {{{help.html}}} || desc || Yes || 
+|| || || {{{register.html}}} || desc || Yes || 
+|| || || {{{confirmation.html}}} || desc || Yes || 
+|| || || {{{unit.html}}} || desc || Yes || 
