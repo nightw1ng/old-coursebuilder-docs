@@ -1,16 +1,14 @@
-<h1>Get the Source Code</h1>
+#summary How to download the sample code and get started with App Engine.
 
-<font color=red><<At present, I stole the real AE intro tutorial. I'm in the process of modifying it to apply to getting a copy of CBE working.>>></font>
+<h1>Get the Source Code</h1>
 
 To create your own course, you download a zip file from Google Code that contains all of the files that constitute the Course Builder Experiment App Engine application. These files include almost everything needed to replicate the [http://www.powersearchingwithgoogle.com/ Power Searching with Google] course. You then load that code into a new App Engine app and modify it as needed.
 
-This page describes how to download the source code and get it running as an app in App Engine.
-
-If you are not familiar with App Engine, read [https://developers.google.com/appengine/docs/whatisgoogleappengine What is Google App Engine?]. You can also read [https://developers.google.com/academy/apis/cloud/appengine/intro/gettingstarted Getting Started] for more App Engine-related details about the process below.
-
-In summary, the steps are:
+This page describes how to download the source code and get it running as an app in App Engine. The basic steps are:
 
 <wiki:toc max_depth="2" />
+
+If you are not familiar with App Engine, read [https://developers.google.com/appengine/docs/whatisgoogleappengine What is Google App Engine?]. You can also read [https://developers.google.com/academy/apis/cloud/appengine/intro/gettingstarted Getting Started] for more App Engine-related details about the process below.
 
 == 1. Get the Course Builder Experiment code ==
 
@@ -69,7 +67,7 @@ To start the development server from the Launcher:
   # When it's highlighted, click the Run button to start the server (for that app). <br><br>Once the icon to the left of the app name is green, your server is ready to accept requests.
 
 Because the command-line version has more options, you may wish to run the development server from your Unix shell. To do so:
-  # Open a Unix shell.
+  # Open a Unix shell (command line).
   # Change directory to the one you specified as the path for your app
   # Run the server with the command<br>{{{dev_appserver.py .}}} <br>As the command runs, you may see some warnings you can ignore and questions you must answer.<br><br> Once the app is set up, you see a URL reference to the hostname and port you use to connect to your app from a web browser. It defaults to {{{http://localhost:8080}}}.<br><br>Notice that while the server is running, the command does not complete. To stop the server, exit the command.
 
@@ -99,61 +97,17 @@ In either case, you should see the registration page for the sample app. It look
 
 <font color=red><<TODO fix image and then fix path>></font>
 
-As you work on your app and modify the code, your changes are immediately reflected in the browser. You do not have to restart the server or do anything else to your app's configuration.
 
-<font color=red><<TODO  this part probably will get broken off into its own page>></font>
+=== Troubleshooting ===
 
-== 7. (When you're ready) Upload your app to Google ==
+If you do not see the registration page, there may be an error somewhere. If you start your app from the command line, errors messages appear on the console. If you start your app from the launcher, error messages appear in the logs. To see the logs, click on *Logs* in the launcher's task bar.
 
-*Do not do this step* until you are ready for your code to go live in production; that is, until you are ready for your audience to see your course.
+One common problem is that, even though you downloaded Python 2.7, App Engine may not notice. In this case, the log says either that you are not runing Python 2.7 or has warnings about using a runtime older that is than the production runtime.
 
-If you want to see what this app looks like in production, you can upload it to Google. When traffic comes to your app, App Engine servers will start up an instance running your app and enable access to it via its default URL of _APP_ID_.appspot.com to handle requests. To get your app to Google, there are two main options: using the Launcher or command-line tool. (Be sure to have registered your app as we described earlier, otherwise you won't be able to upload your app.)
-
-Using the Launcher is fairly straightforward: click on the "Deploy" button and enter your credentials. Using the command-line is almost as easy. You use the appcfg.py script along with the "update" command and the app's "home" directory (that contains the {{{app.yaml}}}, {{{main.py}}}, etc.). In the example below, we're already at home, so we use "." as the directory to upload. Here is what that experience should look like:
-
-{{{
-$ appcfg.py update .
-    Application: _APP\_ID_; version: 1.
-    Server: appengine.google.com.
-    Scanning files on local disk.
-    Initiating update.
-    Email: _YOUR\_EMAIL_
-    Password for _YOUR\_EMAIL_: *****
-    Cloning 2 static files.
-    Cloning 3 application files.
-    Uploading 2 files and blobs.
-    Uploaded 2 files and blobs
-    Precompilation starting.
-    Precompilation completed.
-    Deploying new version.
-    Checking if new version is ready to serve.
-    Will check again in 1 seconds.
-    Checking if new version is ready to serve.
-    Will check again in 2 seconds.
-    Checking if new version is ready to serve.
-    Closing update: new version is ready to start serving. Uploading index definitions.
-}}}
-
-== Connect with the production server ==
-
-It can take up to a minute to upload your app (generally it's less than 30 seconds but usually not more than a minute). Once the upload has been completed and confirmed, you (and everyone else on the planet not blocked from Google) should be able to visit http://_APP_ID_.appspot.com (depends on your _APP_ID_) and verify that your "Hello World" app is indeed available to all, just like in the Figure below.
-
-<img alt="Hello World app live in production" src="https://developers.google.com/academy/apis/cloud/appengine/intro/images/image08.png" title="Figure 5: 'Hello World' running in production and live to the world!" />
-
-*Figure 5*: "Hello World" app running in production and live to the world!
-
-That's it! You just "wrote" and upload your first web app for Google App Engine! We can't wait to see what you do next! :-)
-
-== Conclusion and review ==
-
-*Q: What do you need in order to get started playing with Google App Engine?*<br>
-A: You need to get the SDK from Google. Use [http://developers.google.com/appengine/downloads this downloads link] to get the one for your platform. The SDK comes with client libraries which you'll use to connect to the various App Engine APIs, a set of command-line tools for administration, and a development server. Mac and PC users also get a bonus: a GUI called the "Launcher" that gives a friendly interface to users and provides access to a subset of the command-line tool functionality.
-
-*Q: How do you create your first App Engine app?*<br>
-A: Either use the Launcher to create a new app which generates boilerplate code, or create it by-hand.
-
-*Q: What is the development server and how do you start it?*<br>
-A: The development server gives users a way to test their app during development. It runs locally allowing users to execute their app without being required to upload it to Google. You can start the development server either by pressing the "Run" button in the Launcher or use the {{{dev_appserver.py}}} command-line tool.
-
-*Q: How do you upload your app to Google?*<br>
-A: Similar to the previous question, you can either click the "Deploy" button in the Launcher or use the appcfg.py command-line tool.
+In this situation, you need to manually specify the path for Python 2.7. To do so:
+  # First, find out what that path is:
+    # Open a Unix shell.
+    # Run the command {{{which python}}}
+    # Copy the path that appears (for example, {{{/Library/Frameworks/Python.framework/Versions/2.7/bin/python}}})
+  # From the *GoogleAppEngineLauncher* menu, choose *Preferences*.<br>A dialog box appears.
+  # On the *Python Path* line, enter the path you found above.
