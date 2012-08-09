@@ -1,0 +1,7 @@
+#summary Explore the sample application before starting to modify it.
+
+= Explore the Sample Code =
+
+<font color=red><<TODO working here.>></font>
+
+writing this would be a good idea.
