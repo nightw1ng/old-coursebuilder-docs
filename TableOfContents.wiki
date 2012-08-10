@@ -12,7 +12,7 @@
     * [CourseMaterial Course Material]
       * [RequiredCodeChangesChecklist Required Code Changes]
       * [AppEngine Get the Source Code]
-      * [ExplorePS Explore the Sample Application]
+      * [ExplorePS Explore the Sample App]
       * [ExploreCode Explore the Sample Code]
       * [CreateRegistration Create Registration]
       * [CreateHomePage Create Home Page]
