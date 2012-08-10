@@ -3,3 +3,15 @@
 <h1>Explore the Sample Application</h1>
 
 <font color=red><<TODO working here>></font>
+
+https://www.corp.google.com/~vpg/no_crawl/cb/registration-parts.png
+
+https://www.corp.google.com/~vpg/no_crawl/cb/registrationconfirmation-parts.png
+
+https://www.corp.google.com/~vpg/no_crawl/cb/homepage-parts.png
+
+https://www.corp.google.com/~vpg/no_crawl/cb/activity-parts.png
+
+https://www.corp.google.com/~vpg/no_crawl/cb/assessment-parts.png
+
+https://www.corp.google.com/~vpg/no_crawl/cb/forum-parts.png
