@@ -129,9 +129,9 @@ From the command-line:
   # Open a web browser.
   # In the address bar, enter<br>{{{http://localhost:}}}_*{{{PORT}}}*_<br>where _*{{{PORT}}}*_ is 8080 by default or whatever port you chose when adding the app in step 4.
 
-In either case, you should see the registration page for the sample app. It looks something like this:
+In either case, you should see the registration page for the sample app:
 
-https://www.corp.google.com/~vpg/no_crawl/regscreen.png"
+https://www.corp.google.com/~vpg/no_crawl/cb/registration.png"
 
 <font color=red><<TODO fix images and image paths>></font>
 
