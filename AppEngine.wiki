@@ -131,7 +131,7 @@ From the command-line:
 
 In either case, you should see the registration page for the sample app:
 
-https://www.corp.google.com/~vpg/no_crawl/cb/registration.png"
+https://www.corp.google.com/~vpg/no_crawl/cb/registration.png
 
 <font color=red><<TODO fix images and image paths>></font>
 
