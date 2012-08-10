@@ -1,4 +1,3 @@
-
 #summary Explore the sample appl directory/folder structure before starting to modify it.
 
 <h1>Explore the Sample Code</h1>
@@ -42,15 +41,15 @@ The following table briefly describes the directory/folder structure for the sam
 || {{{models/}}} || {{{__init__.pyc}}} ||  || || 
 || {{{models/}}} || {{{models.py}}} ||  || || 
 || {{{models/}}} || {{{models.pyc}}} ||  || || 
-|| {{{views}}} || || These HTML files define the basic structure of the pages of your course. Other data files fill in some details. You *must* change a few of these files. You *can* change any of them. <font color=red><<TODO Is this Django? I'd like to point to documentation that explains how views fit together, rather than rewrite that.>></font> || ||
+|| {{{views}}} || || These HTML files define the basic structure of the pages of your course. Other data files fill in some details. You _must_ change a few of these files. You _can_ change any of them. <font color=red><<TODO Is this Django? I'd like to point to documentation that explains how views fit together, rather than rewrite that.>></font> || ||
 || {{{views/}}} || {{{activity.html}}} || The structure of an activity page. See [CreateActivities Create Activities]. || ||
 || {{{views/}}} || {{{assessment.html}}} || The structure of an assessment page. See [CreateAssessments Create Assessments]. || ||
-|| {{{views/}}} || {{{base.html}}} ||  The base look (sometimes called the "chrome") for any page, once a student is registered. TODO (lots of stuff) See [ModifyTemplate Modify Course Template]. || Required || 
-|| {{{views/}}} || {{{base_registration.html}}} || The base look for the registration page. TODO (lots of stuff) (I took the liberty of getting rid of the +1 button on this registration page since that bit of code is not very understandable, but I have kept the +1 button that is on the main course page. We can add the former back later if this becomes an issue.) || Required || 
+|| {{{views/}}} || {{{base.html}}} ||  The base look for any page, once a student is registered. It includes the footer, header, and left-hand navigation. See [ModifyTemplate Modify Course Template]. || Required || 
+|| {{{views/}}} || {{{base_registration.html}}} || The base look for the registration and registration confirmation pages. It includes the footer, header, and left-hand navigation.  See [ModifyTemplate Modify Course Template]. || Required || 
 || {{{views/}}} || {{{confirmation.html}}} || The page that appears after a student enrolls. || Required || 
 || {{{views/}}} || {{{course.html}}} || The home page for the course itself. Contains a short blurb and a list of units and assessments. See [CreateCourse Create Course]. || Required || 
-|| {{{views/}}} || {{{forum.html}}} || The tab that contains your [WebForums discussion forum]. You must include a link to your forum. || Required || 
-|| {{{views/}}} || {{{help.html}}} || <font color=red><<TODO I notice this file isn't referre to anywhere. What is it?>></font> ||  || 
+|| {{{views/}}} || {{{forum.html}}} || The content of the page that contains your [WebForums discussion forum]. You must include a link to your forum. || Required || 
+|| {{{views/}}} || {{{help.html}}} || <font color=red><<TODO I notice this file isn't referred to anywhere. What is it?>></font> ||  || 
 || {{{views/}}} || {{{register.html}}} || The content of the registration form an unenrolled person sees when visiting your course.  || Likely ||
 || {{{views/}}} || {{{test_confirmation.html}}} || The set of messages a student can see after completing each assessment. See [CreateAssessments Create Assessments]. || Required|| 
-|| {{{views/}}} || {{{unit.html}}} ||  ||  || 
+|| {{{views/}}} || {{{unit.html}}} || The base look for the first lesson in a unit.  It includes the footer, header, and left-hand navigation. <font color=red><<TODO I made that up. This is the view that's rendered for a /unit URL. AFAICT, that URL is for the first lesson in any unit. And the only difference I notice (at least by looking at a rendered page) is that the footer doesn't have a back button. Does it really need that complex a view for that special case? Or am I missing something?>></font> ||  || 
