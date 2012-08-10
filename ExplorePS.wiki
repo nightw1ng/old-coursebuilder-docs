@@ -1,4 +1,3 @@
-
 #summary Explore the sample appl directory/folder structure before starting to modify it.
 
 <h1>Explore the Sample Code</h1>
@@ -42,10 +41,10 @@ The following table briefly describes the directory/folder structure for the sam
 || {{{models/}}} || {{{__init__.pyc}}} ||  || || 
 || {{{models/}}} || {{{models.py}}} ||  || || 
 || {{{models/}}} || {{{models.pyc}}} ||  || || 
-|| {{{views}}} || || These HTML files define what the pages of your course look like. Other data files fill in some details. You _must_ change a few of these files. You _can_ change any of them. <font color=red><<TODO Is this Django? I'd like to point to documentation that explains how views fit together, rather than rewrite that.>></font> || ||
+|| {{{views}}} || || These HTML files comprise templates that define what the pages of your course look like. The templates work together hierarchically. Every page displayed for your course starts from either the base_registration.html (for unenrolled people) or base.html (for enrolled people) template. Those templates define the overall HTML structure of a page. The other views, such as activity.html, fill in more structure for a specific type of page. Finally, files outside of views may fill in the content for a particular page, such as lesson 1.1.  <br>You _must_ change a few of these files. You _can_ change any of them. <font color=red><<TODO Is this Django? I'd like to point to documentation that explains how views fit together, rather than rewrite that.>></font> || ||
 || {{{views/}}} || {{{activity.html}}} || The structure of an activity page. See [CreateActivities Create Activities]. || ||
 || {{{views/}}} || {{{assessment.html}}} || The structure of an assessment page. See [CreateAssessments Create Assessments]. || ||
-|| {{{views/}}} || {{{base.html}}} ||  The base look for any page, once a student is registered. It includes the footer, header, and left-hand navigation. See [ModifyTemplate Modify Course Template]. || Required || 
+|| {{{views/}}} || {{{base.html}}} ||  The base template for any page, once a student is registered. It includes the footer, header, and left-hand navigation. See [ModifyTemplate Modify Course Template]. || Required || 
 || {{{views/}}} || {{{base_registration.html}}} || The base look for the registration and registration confirmation pages. It includes the footer, header, and left-hand navigation.  See [ModifyTemplate Modify Course Template]. || Required || 
 || {{{views/}}} || {{{confirmation.html}}} || The page that appears after a student enrolls. || Required || 
 || {{{views/}}} || {{{course.html}}} || The home page for the course itself. Contains a short blurb and a list of units and assessments. See [CreateCourse Create Course]. || Required || 
@@ -55,5 +54,23 @@ The following table briefly describes the directory/folder structure for the sam
 || {{{views/}}} || {{{test_confirmation.html}}} || The set of messages a student can see after completing each assessment. See [CreateAssessments Create Assessments]. || Required|| 
 || {{{views/}}} || {{{unit.html}}} || The base look for a lesson, activity, or assessment.  It includes the footer, header, and left-hand navigation.  ||  || 
 
+<font color=red><<TODO notes to me
 
-VPVPGP unit.html  contains left nav. It builds on base.html. What's in base?
+{{{
+base.html 
+unit.html (/unit, UnitHandler)
+course.html (/, CourseHandler)
+activity.html (/activity, ActivityHandler)
+assessment.html (/assessment, AssessmentHandler)
+test_confirmation.html (/answer, AnswerHandler)
+
+forum.html (/forum, ForumHandler)
+
+base_registration.html 
+register.html (/register or anything if not registered, RegisterHandler)
+confirmation.html
+
+help.html
+}}}
+
+</font>
