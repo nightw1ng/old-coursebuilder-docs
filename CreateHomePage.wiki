@@ -1,6 +1,6 @@
 = Create Home Page =
 
-<font color=red><<TODO write this>></font>
+<font color=red><<TODO fix image url and create image>></font>
 
 https://www.corp.google.com/~vpg/no_crawl/homepage.png
 
