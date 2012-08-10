@@ -2,13 +2,29 @@
 
 = Create Registration =
 
-<font color=red><<TODO working here>></font>
+<font color=red><<TODO working here; currently just what ExplorePS says.>></font>
 
-Before your students can start working on your course, they must register for it:
+When prospective students first visit your course, the app displays a registration page:
 
-https://www.corp.google.com/~vpg/no_crawl/cb/registration.png
+https://www.corp.google.com/~vpg/no_crawl/cb/registration-parts.png
 
+This page consists of three areas:
+  * The *header* contains 
+    * Course icon and name of your course.
+    * Horizontal navigation bar, with two tabs on the left (Home and Registration) and an area with the person's address and a Logout link.
+  * The *content area* contains a form for the prospective student to fill out.
+  * The *footer* contains two links -- one to your website and one to the privacy conditions and terms for your course.
 
-Once they do, they'll see this confirmation screen:
+The app uses two files to render this page:
+  * {{{views/base_registration.html}}} defines the header and footer areas.
+  * {{{views/register.html}}} defines the content of the registration form.
 
-https://www.corp.google.com/~vpg/no_crawl/cb/registrationconfirmation.png
+Once a prospective student submits the registration form, the app displays the registration confirmation page:
+
+https://www.corp.google.com/~vpg/no_crawl/cb/registrationconfirmation-parts.png
+
+This page consists of the same three areas as the previous page and uses these files to render the page:
+  * {{{views/base_registration.html}}} defines the header and footer areas. Note this is the same file the registration form uses, guaranteeing that these two pages have the same general look and feel.
+  * {{{views/confirmation.html}}} defines the content of the registration form.
+
+You need change these files to customize the app for your material. For details, see [CreateRegistration Create Registration].
