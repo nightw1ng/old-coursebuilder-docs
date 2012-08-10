@@ -30,7 +30,7 @@ The following table briefly describes the directory/folder structure for the sam
 || {{{data/}}} || _{{{[bulkloader-log-SUFFIX]}}}_ || These files appear when you upload data (such as CSV files) to the course.  || || 
 || {{{data/}}} || _{{{[bulkloader-progress-SUFFIX]}}}_ || These files appear when you upload data to the course. || || 
 || {{{data/}}} || {{{lesson.csv}}} || This CSV file contains information about all of the lessons in your course. See [CreateLessons Create Lessons]. || Required || 
-|| {{{data/}}} || {{{unit.csv}}} || This CSV file contains information about the units in your course, to post to your home page. See [CreateUnits Create Units]. || Required || 
+|| {{{data/}}} || {{{unit.csv}}} || This CSV file contains information about the units in your course, to post to your home page. See [CreateHomePage Create Home Page]. || Required || 
 || || {{{index.yaml}}} ||  || || 
 || || {{{main.py}}} ||  || || 
 || {{{models}}} || || ||  ||
@@ -42,7 +42,7 @@ The following table briefly describes the directory/folder structure for the sam
 || {{{views/}}} || {{{base.html}}} ||  The base template for any page, once a student is registered. It defines the footer, the top header, and the top navigation. See [ModifyTemplate Modify Course Template]. || Required || 
 || {{{views/}}} || {{{base_registration.html}}} || The base template for the registration and registration confirmation pages. These are the only pages people  can see before they finish registering. The template defines the footer, the top header, and the top navigation.  See [ModifyTemplate Modify Course Template]. || Required || 
 || {{{views/}}} || {{{confirmation.html}}} || The page that appears after a student enrolls. || Required || 
-|| {{{views/}}} || {{{course.html}}} || The structure of the content for the home page for the course. Contains a short blurb and a list of units and assessments. See [CreateCourse Create Course]. || Required || 
+|| {{{views/}}} || {{{course.html}}} || The structure of the content for the home page for the course. Contains a short blurb and a list of units and assessments. See [CreateHomePage Create Home Page]. || Required || 
 || {{{views/}}} || {{{forum.html}}} || The structure of the page that contains your [WebForums discussion forum]. You must include a link to your forum. || Required || 
 || {{{views/}}} || {{{help.html}}} || <font color=red><<TODO I notice this file isn't referred to anywhere. What is it?>></font> ||  || 
 || {{{views/}}} || {{{register.html}}} || The content of the registration form an unenrolled person sees when visiting your course.  || Likely ||
