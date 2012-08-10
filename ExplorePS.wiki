@@ -1,7 +1,6 @@
-
 #summary Explore the sample app to see what it looks like to students.
 
-<h1>Explore the Sample Application</h1>
+<h1>Explore the Sample App</h1>
 
 <font color=red><<TODO working here>></font>
 
@@ -38,7 +37,7 @@ This page consists of the same three areas as the previous page and uses these f
   * {{{views/base_registration.html}}} defines the header and footer areas. Note this is the same file the registration form uses, guaranteeing that these two pages have the same general look and feel.
   * {{{views/confirmation.html}}} defines the content of the registration form.
 
-You need to make changes in all three files to customize the app for your material. For details, see [CreateRegistration Create Registration].
+You need change these files to customize the app for your material. For details, see [CreateRegistration Create Registration].
 
 == Course home page ==
 
@@ -58,7 +57,7 @@ The app uses three files to render this page:
   * {{{views/course.html}}} defines the structure of the content area.
   * {{{data/unit.csv}}} defines the actual content of the content area. 
 
-You need to make changes in all three files to customize the app for your material. For details, see [CreateHomePage Create Home Page].
+You need to change these files to customize the app for your material. For details, see [CreateHomePage Create Home Page].
 
 == A lesson ==
 
@@ -72,7 +71,7 @@ This page consists of four areas:
     * Horizontal navigation bar, with two tabs on the left (Course and Forum) and an area with the person's address and a Logout link.
     * A breadcrumb indicating where in the course hierarchy this page exists, such as<br>{{{Course > Unit 1 > Lesson 1}}}.
     * The name and number of the unit.
-  * A vertical navigation bar, consisting of a list of all lessons and activities in the current unit.
+  * A *vertical navigation bar*, consisting of a list of all lessons and activities in the current unit.
   * The *content area* is more complex than for previous pages. It contains:
     * The name of this lesson.
     * A button to access a text version of the lesson.
@@ -86,14 +85,52 @@ The app uses three files to render this page:
   * {{{views/unit.html}}} defines the second two lines of the header, the vertical navigation, and the content area.
   * {{{data/lesson.csv}}} contains the content of the content area for all lessons in your course.
 
+You need to change these files to customize the app for your material. For details, see [CreateLessons Create Lessons].
+
 == An activity ==
+
+Each unit may have  some number of activities. An activity page shares almost the same structure as a lesson page:
 
 https://www.corp.google.com/~vpg/no_crawl/cb/activity-parts.png
 
+The only difference between a lesson page and an activity page (at least in look and feel) is that instead of a video for the main content, an activity has a summary of important points from the preceding lesson and has a set of questions, with places to answer the questions and to check your answers or get hints.
+
+The app uses four files to render this page:
+  * {{{views/base.html}}} is the same as for lessons.
+  * {{{views/activity.html}}} defines the same parts as does {{{views/unit.html}}} for lessons. You probably want to be consistent in these files.
+  * {{{assets/js/activity-}}}_*{{{N.M}}}*_{{{.js}}} contains a !JavaScript array that fills in the actual question and answer areas for the activity. Each activity section has its own file.
+
+You need to change these files to customize the app for your material. For details, see [CreateActivities Create Activities].
+
 == An assessment ==
+
+At certain parts throughout the course, students take assessments to see how they're doing. An assessment page has the simplest form of all:
 
 https://www.corp.google.com/~vpg/no_crawl/cb/assessment-parts.png
 
+This page consists of three areas:
+  * The *header* is the same as for the home page.
+  * The *content area* contains the questions and answer areas and a submit button.
+  * The *footer* is the same as for the home page.
+
+The app uses three files to render this page:
+  * {{{views/base.html}}} defines the header and footer areas.
+  * {{{views/assessment.html}}} defines the structure of the content area.
+  * {{{assets/js/assessment-}}}_*{{SUFFIX}}}*_{{{.js}}} contains a !JavaScript array that fills in the actual question and answer areas for the assessment. Each assessment has its own file.
+
+You need to change these files to customize the app for your material. For details, see [CreateAssessments Create Assessments].
+
 == The discussion forum ==
 
+At any time, the student may decide to visit your discussion forum for the course. The sample application does not contain a link to a valid forum, so its forum page looks as follows:
+
 https://www.corp.google.com/~vpg/no_crawl/cb/forum404-parts.png
+
+This page consists of three areas:
+  * The *header* is the same as for the home page.
+  * The *content area* contains the discussion forum.
+  * The *footer* is the same as for the home page.
+
+The app uses two files to render this page:
+  * {{{views/base.html}}} defines the header and footer areas.
+  * {{{views/forum.html}}} defines the structure of the content area. It also has a link to the discussion forum. You need to change that to the link you create for your forum. See [WebForums Community Discussion].
