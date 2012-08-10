@@ -61,13 +61,46 @@ For App Engine to work, you must agree to set up symlinks.
   # For the Port, the default value is typically fine. If you have other apps running locally, you may need to change the port number.
   # Click on *Add*.
 
-A new line appears in the launcher. Its name is the name you put in the {{{app.yaml}}} file. Its path is the path you specified here.
+A new line appears in the Launcher. Its name is the name you put in the {{{app.yaml}}} file. Its path is the path you specified here.
 
-== 5. Upload the unit and lesson data ==
+== 5. Start the development server ==
+
+Before you can upload your app to run in production and be available to your audience, you need to develop and debug it in a more private setting. That more private setting is called either a *development server* or a *staging server*.
+
+To start the development server from the Launcher:
+  # Select your app. 
+  # When it's highlighted, click the Run button to start the server (for that app). <br><br>Once the icon to the left of the app name is green, your server is ready to accept requests.
+
+Because the command-line version has more options, you may wish to run the development server from your Unix shell. To do so:
+  # Open a Unix shell (command line).
+  # Change directory to the one you specified as the path for your app
+  # Run the server with the command<br>{{{dev_appserver.py .}}} <br>As the command runs, you may see some warnings you can ignore and questions you must answer.<br><br> Once the app is set up, you see a URL reference to the hostname and port you use to connect to your app from a web browser. It defaults to {{{http://localhost:8080}}}.<br><br>Notice that while the server is running, the command does not complete. To stop the server, exit the command.
+
+By default, your app is only available from the machine on which you start it. To get access to your development server from another machine on the network, you need to request this through the command line. To do so, do not run the server using the Launcher. Instead, run your development server with this command
+
+  {{{cd }}}_*{{{[PATHTOAPPLICATION]}}}*_<br>{{{dev_appserver.py . -a 0.0.0.0}}}
+
+where _*{{{[PATHTOAPPLICATION]}}}*_ is the directory/folder containing your app.
+
+=== Troubleshooting ===
+
+If you do not see the registration page, there may be an error somewhere. If you start your app from the command line, errors messages appear on the console. If you start your app from the Launcher, error messages appear in the logs. To see the logs, click on *Logs* in the Launcher's task bar.
+
+One common problem is that, even though you downloaded Python 2.7, App Engine may not notice. In this case, the log says either that you are not runing Python 2.7 or has warnings about using a runtime older that is than the production runtime.
+
+In this situation, you need to manually specify the path for Python 2.7. To do so:
+  # First, find out what that path is:
+    # Open a Unix shell.
+    # Run the command {{{which python}}}
+    # Copy the path that appears (for example, {{{/Library/Frameworks/Python.framework/Versions/2.7/bin/python}}})
+  # From the *!GoogleAppEngineLauncher* menu, choose *Preferences*.<br>A dialog box appears.
+  # On the *Python Path* line, enter the path you found above.
+
+== 6. Upload the unit and lesson data ==
 
 Before you can run the sample code, you need to upload the data files that represent that units and lessons of the course. (Don't worry too much about what this means right now; we'll explain in  [ExplorePS Explore the Sample Code].)
 
-To upload the data, open a Unix shell. In that shell:
+To upload the data, first make sure that your development server is running (as described in step 5). Then, open a Unix shell. In that shell:
 
   # Run<br>{{{cd }}}_*{{{PATHTOAPPLICATION}}}*_{{{/data}}}<br>where _*{{{PATHTOAPPLICATION}}}*_ is the directory/folder you specified in step 4.
   # Run<br>{{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br>where _*{{{PORT}}}*_ is the port number you specified in step 4.
@@ -82,39 +115,6 @@ When you enter your credentials, you may get the following error:
   {{{urllib2.URLError: <urlopen error [Errno 61] Connection refused>}}}
 
 If you do, wait a few minutes and try again.
-
-== 6. Start the development server ==
-
-Before you can upload your app to run in production and be available to your audience, you need to develop and debug it in a more private setting. That more private setting is called either a *development server* or a *staging server*.
-
-To start the development server from the Launcher:
-  # Select your app. 
-  # When it's highlighted, click the Run button to start the server (for that app). <br><br>Once the icon to the left of the app name is green, your server is ready to accept requests.
-
-Because the command-line version has more options, you may wish to run the development server from your Unix shell. To do so:
-  # Open a Unix shell (command line).
-  # Change directory to the one you specified as the path for your app
-  # Run the server with the command<br>{{{dev_appserver.py .}}} <br>As the command runs, you may see some warnings you can ignore and questions you must answer.<br><br> Once the app is set up, you see a URL reference to the hostname and port you use to connect to your app from a web browser. It defaults to {{{http://localhost:8080}}}.<br><br>Notice that while the server is running, the command does not complete. To stop the server, exit the command.
-
-By default, your app is only available from the machine on which you start it. To get access to your development server from another machine on the network, you need to request this through the command-line. To do so, do not run the server using the launcher. Instead, run your development server with this command
-
-  {{{cd }}}_*{{{[PATHTOAPPLICATION]}}}*_<br>{{{dev_appserver.py . -a 0.0.0.0}}}
-
-where _*{{{[PATHTOAPPLICATION]}}}*_ is the directory/folder containing your app.
-
-=== Troubleshooting ===
-
-If you do not see the registration page, there may be an error somewhere. If you start your app from the command line, errors messages appear on the console. If you start your app from the launcher, error messages appear in the logs. To see the logs, click on *Logs* in the launcher's task bar.
-
-One common problem is that, even though you downloaded Python 2.7, App Engine may not notice. In this case, the log says either that you are not runing Python 2.7 or has warnings about using a runtime older that is than the production runtime.
-
-In this situation, you need to manually specify the path for Python 2.7. To do so:
-  # First, find out what that path is:
-    # Open a Unix shell.
-    # Run the command {{{which python}}}
-    # Copy the path that appears (for example, {{{/Library/Frameworks/Python.framework/Versions/2.7/bin/python}}})
-  # From the *!GoogleAppEngineLauncher* menu, choose *Preferences*.<br>A dialog box appears.
-  # On the *Python Path* line, enter the path you found above.
 
 == 7. Connect to the development server ==
 
