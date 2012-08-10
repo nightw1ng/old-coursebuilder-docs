@@ -1,4 +1,3 @@
-
 #summary Explore the sample appl directory/folder structure before starting to modify it.
 
 <h1>Explore the Sample Code</h1>
