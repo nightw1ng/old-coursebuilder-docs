@@ -1,4 +1,9 @@
-
 = Create Home Page =
 
 <font color=red><<TODO write this>></font>
+
+https://www.corp.google.com/~vpg/no_crawl/homepage.png
+
+{{{views/course.html}}} contains the structure of the home page. That file contains a short blurb and a list of units and assessments. You should change the blurb to be relevant to your course.
+
+{{{data/unit.csv}}} contains the list of lessons and assessments to appear on the home page. You _must_ change this file to be relevant to your course.
