@@ -1,17 +1,99 @@
+
 #summary Explore the sample app to see what it looks like to students.
 
 <h1>Explore the Sample Application</h1>
 
 <font color=red><<TODO working here>></font>
 
+In [AppEngine Get the Source Code], you downloaded the sample application and got it running on your development server. Before you start modifying the application for your own course material, let's look at the various pages that a student can see and briefly mention what you'll need to do to modify them for your course. 
+
+[ExploreCode Explore the Sample Code] lists all the files that make up the sample app and briefly describes the ones you'll have to change. This page shows you how the files work together to create the results of those changes.
+
+The different pages a student can see are as follows:
+
+<wiki:toc max-depth="2" /> 
+
+== Registration ==
+
+When prospective students first visit your course, the app displays a registration page:
+
 https://www.corp.google.com/~vpg/no_crawl/cb/registration-parts.png
+
+This page consists of three areas:
+  * The *header* contains 
+    * Course icon and name of your course.
+    * Horizontal navigation bar, with two tabs on the left (Home and Registration) and an area with the person's address and a Logout link.
+  * The *content area* contains a form for the prospective student to fill out.
+  * The *footer* contains two links -- one to your website and one to the privacy conditions and terms for your course.
+
+The app uses two files to render this page:
+  * {{{views/base_registration.html}}} defines the header and footer areas.
+  * {{{views/register.html}}} defines the content of the registration form.
+
+Once a prospective student submits the registration form, the app displays the registration confirmation page:
 
 https://www.corp.google.com/~vpg/no_crawl/cb/registrationconfirmation-parts.png
 
+This page consists of the same three areas as the previous page and uses these files to render the page:
+  * {{{views/base_registration.html}}} defines the header and footer areas. Note this is the same file the registration form uses, guaranteeing that these two pages have the same general look and feel.
+  * {{{views/confirmation.html}}} defines the content of the registration form.
+
+You need to make changes in all three files to customize the app for your material. For details, see [CreateRegistration Create Registration].
+
+== Course home page ==
+
+After successul registration, the student can click on *Home* in the navigation bar of the confirmation page to be taken to the home page for your course.
+
 https://www.corp.google.com/~vpg/no_crawl/cb/homepage-parts.png
+
+This page consists of three areas:
+  * The *header* contains 
+    * Course icon and name of your course.
+    * Horizontal navigation bar, with two tabs on the left (Course and Forum) and an area with the person's address and a Logout link. Notice that the horizontal navigation is different once the student completes registration.
+  * The *content area* contains links to the first lesson in each unit and to each assessment and also information about the availability of each of those links.
+  * The *footer* contains the same two links as for the registration pages. 
+
+The app uses three files to render this page:
+  * {{{views/base.html}}} defines the header and footer areas.
+  * {{{views/course.html}}} defines the structure of the content area.
+  * {{{data/unit.csv}}} defines the actual content of the content area. 
+
+You need to make changes in all three files to customize the app for your material. For details, see [CreateHomePage Create Home Page].
+
+== A lesson ==
+
+When students click on a unit from the home page, they go to the page for the first lesson of the unit they chose. From there, they can go to any other lesson or activity in that unit:
+
+https://www.corp.google.com/~vpg/no_crawl/cb/lesson-parts.png
+
+This page consists of four areas:
+  * The *header* contains 
+    * Course icon and name of your course.
+    * Horizontal navigation bar, with two tabs on the left (Course and Forum) and an area with the person's address and a Logout link.
+    * A breadcrumb indicating where in the course hierarchy this page exists, such as<br>{{{Course > Unit 1 > Lesson 1}}}.
+    * The name and number of the unit.
+  * A vertical navigation bar, consisting of a list of all lessons and activities in the current unit.
+  * The *content area* is more complex than for previous pages. It contains:
+    * The name of this lesson.
+    * A button to access a text version of the lesson.
+    * A list of the lesson objectives.
+    * The lesson video.
+    * *Back* and *Next* buttons to navigate through the unit. (The first lesson of a unit does not include the *Back* button.)
+  * The *footer* contains the same two links as for the registration pages. 
+
+The app uses three files to render this page:
+  * {{{views/base.html}}} defines the first two parts of the header and defines the footer.
+  * {{{views/unit.html}}} defines the second two lines of the header, the vertical navigation, and the content area.
+  * {{{data/lesson.csv}}} contains the content of the content area for all lessons in your course.
+
+== An activity ==
 
 https://www.corp.google.com/~vpg/no_crawl/cb/activity-parts.png
 
+== An assessment ==
+
 https://www.corp.google.com/~vpg/no_crawl/cb/assessment-parts.png
 
-https://www.corp.google.com/~vpg/no_crawl/cb/forum-parts.png
+== The discussion forum ==
+
+https://www.corp.google.com/~vpg/no_crawl/cb/forum404-parts.png
