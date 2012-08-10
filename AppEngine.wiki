@@ -129,4 +129,4 @@ In either case, you should see the registration page for the sample app. It look
 
 <font color=red><<TODO fix image and then fix path>></font>
 
-*Next step:* [ExplorePS Explore the Sample Code]
+*Next step:* [ExplorePS Explore the Sample Application]
