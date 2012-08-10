@@ -20,9 +20,8 @@ To get the experimental code:
 
 The file {{{CBE/app.yaml}}} is the configuration file for your App Engine app. Before you get started, you need to choose a new name for the app. To do so:
 
-  # Edit {{{CBE/app.yaml}}}.
-  # Find the line that says {{{application: markf-searchedu}}} <font color=red><<TODO bet that's not the name they'll see>></font>
-  # Change {{{markf-searchedu}}} to the name you choose for your app. 
+  # Edit {{{CBE/app.yaml}}}.<br>The first line is:<br>{{{application: # FIXME: Put your application id here}}}
+  # Replace {{{# FIXME: Put your application id here}}} with the name you choose for your app. 
 
 Pick a single word as an app name. It's best if you keep all the letters of the app name in lowercase and select a directory/folder that does not have a space and does not have upper case characters in it. 
 
@@ -76,6 +75,14 @@ To upload the data, open a Unix shell. In that shell:
   # The system prompts you to enter your credentials.<br>Your credentials are your Google account name and password.
   # Run<br>{{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}}
   # The system prompts you to enter your credentials again.
+
+=== Troubleshooting ===
+
+When you enter your credentials, you may get the following error:
+
+  {{{urllib2.URLError: <urlopen error [Errno 61] Connection refused>}}}
+
+If you do, wait a few minutes and try again.
 
 == 6. Start the development server ==
 
