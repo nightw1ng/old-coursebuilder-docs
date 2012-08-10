@@ -4,4 +4,11 @@
 
 <font color=red><<TODO working here>></font>
 
-Before your students can start working on your course, they must register for it.
+Before your students can start working on your course, they must register for it:
+
+https://www.corp.google.com/~vpg/no_crawl/cb/registration.png
+
+
+Once they do, they'll see this confirmation screen:
+
+https://www.corp.google.com/~vpg/no_crawl/cb/registrationconfirmation.png
