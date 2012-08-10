@@ -1,0 +1,7 @@
+#summary How to modify the registration pages for your course.
+
+= Create Registration =
+
+<font color=red><<TODO working here>></font>
+
+Before your students can start working on your course, they must register for it.
