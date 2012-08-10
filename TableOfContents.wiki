@@ -14,7 +14,7 @@
       * [AppEngine Get the Source Code]
       * [ExplorePS Explore the Sample Application]
       * [ExploreCode Explore the Sample Code]
-      * [CreateUnits Create Units]
+      * [CreateHomePage Create Home Page]
       * [CreateLessons Create Lessons]
       * [CreateActivities Create Activities]
       * [CreateAssessments Create Assessments]
