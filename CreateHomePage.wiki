@@ -4,6 +4,42 @@
 
 https://www.corp.google.com/~vpg/no_crawl/homepage.png
 
-{{{views/course.html}}} contains the structure of the home page. That file contains a short blurb and a list of units and assessments. You should change the blurb to be relevant to your course.
+You create the home page with these two files:
+  * {{{views/course.html}}} contains the structure of the home page.
+  * {{{data/unit.csv}}} contains the list of units to appear on the home page.
 
-{{{data/unit.csv}}} contains the list of lessons and assessments to appear on the home page. You _must_ change this file to be relevant to your course.
+You _must_ change this file to be relevant to your course.
+
+== Structure of home page ==
+
+{{{views/course.html}}} contains the structure of the home page. It consists of a short blurb and a list of units and assessments. For the list, this file contains the structure of how they are laid out {{{data/unit.csv}}} contains the actual text for the units to display in the list.
+
+You must change the blurb to be relevant to your course. 
+
+The general format of the course as defined in this file is 
+  * pre-course assessment
+  * three units
+  * pre-course assessment
+  * three units
+  * final assessment
+
+If that matches your content, you don't need to make any more changes to {{{views/course.html}}}. 
+
+If you have different assessments, a different number of units, or the ordering is different, you must change this file to reflect that.
+
+<font color=red><<TODO which I'm really not keen on explaining how to do.>></font>
+
+== List of units and assessments ==
+
+{{{data/unit.csv}}} contains the list of units to appear on the home page. The first line describes the content of the other lines:
+
+  {{{unit_id,unit_title,release_date,now_available}}}
+
+Each line after that contains the information for an individual unit, such as: 
+  {{{3,Advanced techniques,available July 12,True}}}
+
+When you edit the file, leave the first line as is. Replace all of the other lines with the information relevant to your course. Each line consists of:
+  * {{{unit_id}}}: An integer representing which unit this is.
+  * {{{unit_title}}}: The name of the unit.
+  * {{{release_date}}}: When this release will be available to students.
+  * {{{now_available}}}: Whether or not students should currently be able to access this unit.
