@@ -2,7 +2,7 @@
 
 <font color=red><<TODO fix image url and create image>></font>
 
-https://www.corp.google.com/~vpg/no_crawl/homepage.png
+https://www.corp.google.com/~vpg/no_crawl/cb/homepage.png
 
 You create the home page with these two files:
   * {{{views/course.html}}} contains the structure of the home page.
