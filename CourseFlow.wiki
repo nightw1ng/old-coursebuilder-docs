@@ -25,6 +25,8 @@ The flow for a student participating in a course is as follows:
 
 Throughout all of these steps, the student has opportunities to interact with other students and with the course instructors and teaching assistants. Moderated interactions are through email forums, Google+ pages, and regular email; students may set up their own unmoderated interactions by themselves.
 
+To see what the course looks like to the student during some of these steps, see [ExplorePS Explore the Sample Application]. 
+
 ==Semi-synchronous flow==
 
 These online courses have a semi-synchronous flow. In conjunction with good material, this model is effective at increasing student motivation, student retention, and student interactions. However, semi-synchronous flow is unfamiliar to many students. Students expect a course to be either completely asynchronous or completely synchronous.
