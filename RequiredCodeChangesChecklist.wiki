@@ -1,6 +1,6 @@
 ==Required Code Changes Checklist=
 
-This page is just a checklist of all of the changes that you *must* make to the sample code for your application. Details of how and why are left to other pages.
+This page is just a checklist of all of the changes that you make to the sample code for your application. Details of how and why are left to other pages.
 
 == Files you change partially ==
 
