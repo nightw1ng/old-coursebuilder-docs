@@ -35,10 +35,10 @@ This page is just a checklist of all of the changes that you make to the sample 
 
 == Files you completely replace ==
 
-The files included with the sample code are examples for you to work from. You should eventually delete
+The files included with the sample code are examples for you to work from.
 
-|| {{{assets/img/*}}} || Images for your course material. ||
-|| {{{assets/js/activity-}}}_*{{{N.M.js}}}*_ || Each file defines the activities associated with one lesson. _*{{{N}}}*_ is the unit number; _*{{{M}}}*_ is the lesson number. See [CreateActivities Create Activities]. ||
-|| {{{assets/js/assessment-}}}_*{{{SUFFIX}}}*_{{{.js}}} || Each file defines an assessment. _*{{{SUFFIX}}}*_ is one of {{{Fin}}}, {{{Mid}}}, or {{{Pre}}}. See [CreateAssessments Create Assessments]. ||
-|| {{{data/lesson.csv}}} || This CSV file contains information about all of the lessons in your course. See [CreateLessons Create Lessons]. ||
-|| {{{data/unit.csv}}} || This CSV file contains information about the units in your course, to post to your home page. See [CreateHomePage Create Home Page]. ||
+|| {{{assets/img/*}}} || Images for your course material.  ||
+|| {{{assets/js/activity-}}}_*{{{N.M}}}*_{{{.js}}} || Each file defines the activities associated with one lesson. _*{{{N}}}*_ is the unit number; _*{{{M}}}*_ is the lesson number. You'll replace these files with the appropriate files for the number of units and lessons you have. Delete any extras. See [CreateActivities Create Activities]. ||
+|| {{{assets/js/assessment-}}}_*{{{SUFFIX}}}*_{{{.js}}} || Each file defines an assessment. _*{{{SUFFIX}}}*_ is one of {{{Fin}}}, {{{Mid}}}, or {{{Pre}}}. You'll replace these files with the appropriate files for your course. Delete any extras. See [CreateAssessments Create Assessments]. ||
+|| {{{data/lesson.csv}}} || Information about all of the lessons in your course. Replace all lines other than the first one with your content. See [CreateLessons Create Lessons]. ||
+|| {{{data/unit.csv}}} || Information about the units in your course, to post to your home page.  Replace all lines other than the first one with your content. See [CreateHomePage Create Home Page]. ||
