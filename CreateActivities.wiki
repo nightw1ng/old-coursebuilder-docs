@@ -2,6 +2,17 @@
 
 <font color=red><<TODO to be written>>
 
+Each unit may have  some number of activities. An activity page shares almost the same structure as a lesson page:
+
+https://www.corp.google.com/~vpg/no_crawl/cb/activity.png
+
+The only difference between a lesson page and an activity page (at least in look and feel) is that instead of a video for the main content, an activity has a summary of important points from the preceding lesson and has a set of questions, with places to answer the questions and to check your answers or get hints.
+
+The app uses four files to render this page:
+  * {{{views/base.html}}} is the same as for lessons.
+  * {{{views/activity.html}}} defines the same parts as does {{{views/unit.html}}} for lessons. You probably want to be consistent in these files.
+  * {{{assets/js/activity-}}}_*{{{N.M}}}*_{{{.js}}} contains a !JavaScript array that fills in the actual question and answer areas for the activity. Each activity section has its own file.
+
 
 {{{
 // An activity represents explanatory text and one or more questions to present
