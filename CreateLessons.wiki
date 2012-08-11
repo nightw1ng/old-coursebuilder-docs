@@ -2,6 +2,34 @@
 
 <font color=red><<TODO to be written>>
 
+When students click on a unit from the home page, they go to the page for the first lesson of the unit they chose. From there, they can go to any other lesson or activity in that unit:
+
+https://www.corp.google.com/~vpg/no_crawl/cb/lesson.png
+
+
+This page consists of four areas:
+  * The *header* contains 
+    * Course icon and name of your course.
+    * Horizontal navigation bar, with two tabs on the left (Course and Forum) and an area with the person's address and a Logout link.
+    * A breadcrumb indicating where in the course hierarchy this page exists, such as<br>{{{Course > Unit 1 > Lesson 1}}}.
+    * The name and number of the unit.
+  * A *vertical navigation bar*, consisting of a list of all lessons and activities in the current unit.
+  * The *content area* is more complex than for previous pages. It contains:
+    * The name of this lesson.
+    * A button to access a text version of the lesson.
+    * A list of the lesson objectives.
+    * The lesson video.
+    * *Back* and *Next* buttons to navigate through the unit. (The first lesson of a unit does not include the *Back* button.)
+  * The *footer* contains the same two links as for the registration pages. 
+
+The app uses three files to render this page:
+  * {{{views/base.html}}} defines the first two parts of the header and defines the footer.
+  * {{{views/unit.html}}} defines the second two lines of the header, the vertical navigation, and the content area.
+  * {{{data/lesson.csv}}} contains the content of the content area for all lessons in your course.
+
+
+== More stuff to write == 
+
 Mention putting hooks into the forum: for students sharing answers, for instructors posting advanced or background material
 
 ==Video==
@@ -21,4 +49,5 @@ Mention putting hooks into the forum: for students sharing answers, for instruct
 
 == !YouTube ==
 Put it on !YouTube
+
 </font>
