@@ -1,14 +1,28 @@
 = Create Home Page =
 
-<font color=red><<TODO fix image url and create image>></font>
+<font color=red><<TODO fix image url>></font>
+
+After successul registration, the student can click on *Home* in the navigation bar of the confirmation page to be taken to the home page for your course.
 
 https://www.corp.google.com/~vpg/no_crawl/cb/homepage.png
 
-You create the home page with these two files:
-  * {{{views/course.html}}} contains the structure of the home page.
-  * {{{data/unit.csv}}} contains the list of units to appear on the home page.
+You create the home page with these files:
+  * {{{views/base.html}}} defines the header and footer areas.
+  * {{{views/course.html}}} defines the structure of the content area.
+  * {{{data/unit.csv}}} defines the actual content of the content area. 
 
-You _must_ change this file to be relevant to your course.
+You _must_ change these files to be relevant to your course.
+
+== Structure of any registered page ==
+
+All pages that a registered student sees start from the same template, {{{views/base.html}}}. This template defines the overall HTML for a page and includes definitions for the header and footer areas.
+
+  * The *header* contains 
+    * Course icon and name of your course.
+    * Horizontal navigation bar, with two tabs on the left (Course and Forum) and an area with the person's address and a Logout link.
+  * The *footer* contains the same two links as for the registration pages. 
+
+You change this header and footer once for all registered pages. See [ModifyTemplate Modify Course Template].
 
 == Structure of home page ==
 
@@ -29,7 +43,7 @@ If you have different assessments, a different number of units, or the ordering 
 
 <font color=red><<TODO which I'm really not keen on explaining how to do.>></font>
 
-== List of units and assessments ==
+== List of units ==
 
 {{{data/unit.csv}}} contains the list of units to appear on the home page. The first line describes the content of the other lines:
 
