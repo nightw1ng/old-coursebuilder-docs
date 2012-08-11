@@ -2,10 +2,6 @@
 
 <font color=red><<TODO to be written>>
 
-Write documentation describing the activity code and how to change it for your own use.
-  * Code structure
-  * !JavaScript functions for exercise creation
-  * Examples
 
 {{{
 // An activity represents explanatory text and one or more questions to present
