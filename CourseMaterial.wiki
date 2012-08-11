@@ -1,5 +1,10 @@
 =Course Material=
 
 <font color="#ff0000"><<TODO to be written.
-Introduction to the rest of this section>>
+
+Introduction to the rest of this section
+
+When/do users need to restart the server? Are all the changes they can make immediately live? I know changes to the views are immediate; what about to the JS files?
+
+>>
 </font>
