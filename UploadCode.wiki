@@ -2,7 +2,10 @@
 
 <h1>(When you're ready) Upload your app to Google</h1>
 
-<font color=red><<TODO  Write this. Currently just stolen from the app engine docs.>></font>
+<font color=red><<TODO  Write this. Currently just stolen from the app engine docs.
+
+Some more AE docs: https://developers.google.com/appengine/docs/python/gettingstarted/uploading
+>></font>
 
 == Upload ==
 *Do not do this step* until you are ready for your code to go live in production; that is, until you are ready for your audience to see your course.
