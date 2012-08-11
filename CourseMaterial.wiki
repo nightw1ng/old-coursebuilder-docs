@@ -1,18 +1,5 @@
 =Course Material=
 
-<font color="#ff0000"><<TODO to be written>>
-
-Should this page talk about:
-  * Think about the entire user flow (course administration flow) -- what order are students encountering what?
-    * If they don’t have a google account, what do they do?
-    * When do they get which email?
-    * etc.
-    * (remember that flow is not all about the content)
-    * Be clear to the students what the course flow will be (perhaps talk about it in the very first video)
-    * Event timeline spreadsheet was great, but people missed some of the information in it
-  * Advanced and background material as forum posts or as separate mini-courses. (We haven't done the latter.) Alternatively, use G+ or blog posts to introduce material you won't test on.
-  * Do you care about accessibility? Consider video captioning. Consider live captioning for HOAs. Think about the effect of using a screen reader for accessing text and assessments.
-  * Consistency of lessons.  Make the first few minutes of every lesson deeply compelling so they'll want to stay.
-
-If not, where do they fit?
+<font color="#ff0000"><<TODO to be written.
+Introduction to the rest of this section>>
 </font>
