@@ -9,7 +9,7 @@ For a description of the parts of a course from the course designer’s perspect
 
 The flow for a student participating in a course is as follows:
 
-  # *Register* for course.
+  # *Register* for course. <br>Note that a student mus have a Google account to register for the course.
   # Take a *pre-course assessment* to benchmark starting familiarity with course material.
   # *Watch the video*, read the text version, or both for the first lesson in the first unit. Repeat watching and reading as many times as is useful.
   # *Complete the activity *following that lesson. Repeat the activity as many times as is useful.
@@ -26,6 +26,8 @@ The flow for a student participating in a course is as follows:
 Throughout all of these steps, the student has opportunities to interact with other students and with the course instructors and teaching assistants. Moderated interactions are through email forums, Google+ pages, and regular email; students may set up their own unmoderated interactions by themselves.
 
 To see what the course looks like to the student during some of these steps, see [ExplorePS Explore the Sample Application]. 
+
+<font color=red><<TODO add some stuff about timing of other things that happen. When do emails get sent? When should HOAs happen?>></font>
 
 ==Semi-synchronous flow==
 
