@@ -13,6 +13,7 @@ The following table briefly describes the directory/folder structure for the sam
 || {{{assets/css/}}}  || {{{main.css}}} || CSS file that specifies the look of the HTML pages associated with your course. || || 
 || {{{assets/img/}}} || || || || 
 || {{{assets/img/}}} || _{{{[.png files]}}}_ || Images that appear throughout your course. Replace these files with any images you need for your material.|| Required || 
+|| {{{assets/img/}}} || {{{favicon.ico}}} || A favicon is a small image that appears next to your application in the browser address bar and in bookmarks. You may want to change this to an icon for your course. || Likely || 
 || {{{assets/js/}}} || || || || 
 || {{{assets/js/}}} || _{{{[activity-N.M.js]}}}_ || These are sample files. You must replace all of them. These files define the activities associated with your lessons. See [CreateActivities Create Activities]. || Required || 
 || {{{assets/js/}}}  || {{{activity-generic}}}.js || The !JavaScript code that defines the logic for running activities and assessments. You define the content of the activities and assessmens in the _{{{[activity-N.M.js]}}}_ and _{{{[assessment-SUFFIX.js]}}}_ files. || || 
