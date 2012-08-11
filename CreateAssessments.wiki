@@ -1,3 +1,39 @@
 =Create Assessments=
 
-<font color=red><<TODO write this>></font>
+<font color=red><<TODO write this>>
+
+At certain parts throughout the course, students take assessments to see how they're doing. An assessment page has the simplest form of all:
+
+https://www.corp.google.com/~vpg/no_crawl/cb/assessment.png
+
+This page consists of three areas:
+  * The *header* is the same as for the home page.
+  * The *content area* contains the questions and answer areas and a submit button.
+  * The *footer* is the same as for the home page.
+
+The app uses three files to render this page:
+  * {{{views/base.html}}} defines the header and footer areas.
+  * {{{views/assessment.html}}} defines the structure of the content area.
+  * {{{assets/js/assessment-}}}_*{{SUFFIX}}}*_{{{.js}}} contains a !JavaScript array that fills in the actual question and answer areas for the assessment. Each assessment has its own file.
+
+
+{{{
+
+// Usage instructions: Create a single variable named 'activity' consisting
+// of a list of complete HTML elements (e.g., no opening tag without a closing
+// tag) and JavaScript objects representing custom questions to render.
+//
+// When the activity page loads, activity-generic.js will render the contents
+// of 'activity' into the enclosing HTML webpage.
+
+var activity = [
+  '<b>This assessment addresses content in units 1-6. You can try it as many times as you like. When you click "Check Answers," we will give you your score and give you a list of lessons to review. Please note that some of the assessment questions address functionality that does not work well on tablet computers.</b><br><br>',
+
+  '1. Where will the Summer Olympics of 2016 be held? <p>',
+  ' <input type="radio" name="fin1" > Chicago <br>',
+  ' <input type="radio" name="fin1" > Tokyo <br>',
+  ' <input type="radio" name="fin1"  value="correct"> Rio de Janeiro <br>',
+  ' <input type="radio" name="fin1" > Madrid <br>',
+  ' <input type="radio" name="fin1" > I don\'t know <br><br>',
+}}}
+</font>
