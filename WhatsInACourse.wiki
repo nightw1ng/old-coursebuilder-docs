@@ -46,7 +46,7 @@ A self-paced unit consists of a series of lessons and activities. We found that 
 
 A *lesson* is a coherent and relatively small chunk of information. In Power Searching with Google, we chose to create each lesson as one video and a text version of the same content. Your lessons do not have to have both parts.
 
-An *activity* is an ungraded assessment, used to provide students feedback on how well they understand the lesson. Activities typically contain optional hints. For more information, see Assessments below.
+An *activity* is an ungraded assessment, used to provide students feedback on how well they understand the lesson. Activities typically contain optional hints. For more information, see [#Assessments_and_activities Assessments and activities].
 
 Tips:
   * Make short videos, preferably 3-5 minutes.
