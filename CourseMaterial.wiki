@@ -4,7 +4,7 @@ This section is about understanding and modifying the Course Builder Experimenta
 
 The pages in this section include:
 
-  * [RequiredCodeChangesChecklist Required Code Changes]<br>Lists all of the places that you *must* change something in the code to make it appropriate for your material.
+  * [RequiredCodeChangesChecklist Required Code Changes]<br>Lists all of the places that you change something in the code to make it appropriate for your material.
 
   * [AppEngine Get the Source Code]<br>Describes how to download the code, install the required development environment (Python and App Engine), and how to get the sample application running for the first time.
 
