@@ -5,7 +5,7 @@ This page is just a checklist of all of the changes that you *must* make to the 
 == Files you change partially ==
 
 || *File* || *What the file is for* || *What you must do to it*||
-|| {{{app.yaml}}} || App configuration file. || In setting up the sample code, you change the app name in this file. ||
+|| {{{app.yaml}}} || App configuration file. || Application name. ([AppEngine#2._Decide_on_a_name_for_your_app Details]) ||
 || {{{assets/img/}}}_{{{[.png files]}}}_ || Images that appear throughout your course. || Replace these files with any images you need for your material.||
 || {{{assets/img/favicon.ico}}} || A favicon is a small image that appears next to your application in the browser address bar and in bookmarks. || You may want to change this to an icon for your course. ||
 || {{{controllers/utils.py}}} || Utility functions. || You can make two changes to this file.  (1) The code tries to send an email when a student registers. You need to change the sender, subject, and text of that email message. (2) Optionally, you can change the maximum student enrollment allowed; taht value defaults to 250,000. ||
