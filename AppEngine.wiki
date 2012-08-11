@@ -44,7 +44,8 @@ Python App Engine SDK includes both tools. Follow [https://developers.google.com
 
 *Note:* Most of the rest of this page assumes that you use the Launcher to work with your app. If you decide to use the command-line tools, consult the official [https://developers.google.com/appengine/docs/python/overview App Engine documentation].
 
-<font color=red><<TODO consider adding a bit of info about AE, such as potential pitfalls and the costs of using it (especially email?)>></font>
+<font color=red><<TODO consider adding a bit of info about AE, such as potential pitfalls and the costs of using it (especially email?) When/do users need to restart the server? Are all the changes they can make immediately live? I know changes to the views are immediate; what about to the JS files?
+>></font>
 
 == 4. Start the App Engine Launcher (PC, Mac) ==
 
