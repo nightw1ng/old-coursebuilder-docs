@@ -4,25 +4,113 @@ This page is just a checklist of all of the changes that you make to the sample 
 
 == Files you change partially ==
 
-|| *File* || *What the file is for* || *What you must do to it*||
-|| {{{app.yaml}}} || App configuration file. || Application name. ([AppEngine#2._Decide_on_a_name_for_your_app Details]) ||
-|| {{{assets/img/}}}_{{{[.png files]}}}_ || Images that appear throughout your course. || Replace these files with any images you need for your material.||
-|| {{{assets/img/favicon.ico}}} || A favicon is a small image that appears next to your application in the browser address bar and in bookmarks. || You may want to change this to an icon for your course. ||
-|| {{{controllers/utils.py}}} || Utility functions. || You can make two changes to this file.  (1) The code tries to send an email when a student registers. You need to change the sender, subject, and text of that email message. (2) Optionally, you can change the maximum student enrollment allowed; taht value defaults to 250,000. ||
-|| {{{views/base.html}}} ||  The base template for any page, once a student is registered. It defines the footer, the top header, and the top navigation. See [ModifyTemplate Modify Course Template]. || TODO || 
-|| {{{views/base_registration.html}}} || The base template for the registration and registration confirmation pages. These are the only pages people  can see before they finish registering. The template defines the footer, the top header, and the top navigation.  See [ModifyTemplate Modify Course Template]. || TODO || 
-|| {{{views/confirmation.html}}} || The page that appears after a student enrolls. || TODO || 
-|| {{{views/course.html}}} || The structure of the content for the home page for the course. Contains a short blurb and a list of units and assessments. See [CreateHomePage Create Home Page]. || TODO || 
-|| {{{views/forum.html}}} || The structure of the page that contains your [WebForums discussion forum]. || You must include a link to your forum. ||
-|| {{{views/register.html}}} || The content of the registration form an unenrolled person sees when visiting your course.  || You may want to ask different questions when your students enroll. ||
-|| {{{views/test_confirmation.html}}} || The set of messages a student can see after completing an assessment. See [CreateAssessments Create Assessments]. || TODO ||
+<table class="wikitable">
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 5px"> *File* </td>
+    <td style="border: 1px solid #ccc; padding: 5px"> *What the file is for* </td>
+    <td style="border: 1px solid #ccc; padding: 5px"> *What you must do to it*</td>
+  </tr>
+  
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 5px"> {{{app.yaml}}} </td>
+    <td style="border: 1px solid #ccc; padding: 5px"> App configuration file. </td>
+    <td style="border: 1px solid #ccc; padding: 5px"> Application name. ([AppEngine#2._Decide_on_a_name_for_your_app Details]) </td>
+  </tr>
+  
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 5px"> {{{assets/img/}}}_{{{[.png files]}}}_ </td>
+    <td style="border: 1px solid #ccc; padding: 5px"> Images that appear throughout your course. </td>
+    <td style="border: 1px solid #ccc; padding: 5px"> Replace these files with any images you need for your material.</td>
+  </tr>
+  
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 5px"> {{{assets/img/favicon.ico}}} </td>
+    <td style="border: 1px solid #ccc; padding: 5px"> A favicon is a small image that appears next to your application in the browser address bar and in bookmarks. </td>
+    <td style="border: 1px solid #ccc; padding: 5px"> You may want to change this to an icon for your course. </td>
+  </tr>
+  
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 5px"> {{{controllers/utils.py}}} </td>
+    <td style="border: 1px solid #ccc; padding: 5px"> Utility functions. </td>
+    <td style="border: 1px solid #ccc; padding: 5px"> You can make two changes to this file.  (1) The code tries to send an email when a student registers. You need to change the sender, subject, and text of that email message. (2) Optionally, you can change the maximum student enrollment allowed; taht value defaults to 250,000. </td>
+  </tr>
+  
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 5px"> {{{views/base.html}}} </td>
+    <td style="border: 1px solid #ccc; padding: 5px">  The base template for any page, once a student is registered. It defines the footer, the top header, and the top navigation. See [ModifyTemplate Modify Course Template]. </td>
+    <td style="border: 1px solid #ccc; padding: 5px"> TODO </td>
+  </tr>
+  
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 5px"> {{{views/base_registration.html}}} </td>
+    <td style="border: 1px solid #ccc; padding: 5px"> The base template for the registration and registration confirmation pages. These are the only pages people  can see before they finish registering. The template defines the footer, the top header, and the top navigation.  See [ModifyTemplate Modify Course Template]. </td>
+    <td style="border: 1px solid #ccc; padding: 5px"> TODO </td>
+  </tr>
+  
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 5px"> {{{views/confirmation.html}}} </td>
+    <td style="border: 1px solid #ccc; padding: 5px"> The page that appears after a student enrolls. </td>
+    <td style="border: 1px solid #ccc; padding: 5px"> TODO </td>
+  </tr>
+  
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 5px"> {{{views/course.html}}} </td>
+    <td style="border: 1px solid #ccc; padding: 5px"> The structure of the content for the home page for the course. Contains a short blurb and a list of units and assessments. See [CreateHomePage Create Home Page]. </td>
+    <td style="border: 1px solid #ccc; padding: 5px"> TODO </td>
+  </tr>
+  
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 5px"> {{{views/forum.html}}} </td>
+    <td style="border: 1px solid #ccc; padding: 5px"> The structure of the page that contains your [WebForums discussion forum]. </td>
+    <td style="border: 1px solid #ccc; padding: 5px"> You must include a link to your forum. </td>
+  </tr>
+  
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 5px"> {{{views/register.html}}} </td>
+    <td style="border: 1px solid #ccc; padding: 5px"> The content of the registration form an unenrolled person sees when visiting your course.  </td>
+    <td style="border: 1px solid #ccc; padding: 5px"> You may want to ask different questions when your students enroll. </td>
+  </tr>
+  
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 5px"> {{{views/test_confirmation.html}}} </td>
+    <td style="border: 1px solid #ccc; padding: 5px"> The set of messages a student can see after completing an assessment. See [CreateAssessments Create Assessments]. </td>
+    <td style="border: 1px solid #ccc; padding: 5px"> TODO </td>
+  </tr>
+</table>
+
 
 == Files you completely replace ==
 
 The files included with the sample code are examples for you to work from.
 
-|| *File* || *What the file is for* || *What you must do to it*||
-|| {{{assets/js/}}}_{{{[activity-N.M.js]}}}_ || These files define the activities associated with your lessons. See [CreateActivities Create Activities]. || TODO || 
-|| {{{assets/js/}}}_{{{[assessment-SUFFIX.js]}}}_ || These files define the assessments associated with your lessons. See [CreateAssessments Create Assessments]. || TODO || 
-|| {{{data/lesson.csv}}} || This CSV file contains information about all of the lessons in your course. See [CreateLessons Create Lessons]. || TODO || 
-|| {{{data/unit.csv}}} || This CSV file contains information about the units in your course, to post to your home page. See [CreateHomePage Create Home Page]. || TODO || 
+<table class="wikitable">
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 5px"> *File* </td>
+    <td style="border: 1px solid #ccc; padding: 5px"> *What the file is for* </td>
+    <td style="border: 1px solid #ccc; padding: 5px"> *What you must do to it*</td>
+  </tr>
+  
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 5px"> {{{assets/js/}}}_{{{[activity-N.M.js]}}}_ </td>
+    <td style="border: 1px solid #ccc; padding: 5px"> These files define the activities associated with your lessons. See [CreateActivities Create Activities]. </td>
+    <td style="border: 1px solid #ccc; padding: 5px"> TODO </td>
+  </tr>
+
+  <tr>
+	<td style="border: 1px solid #ccc; padding: 5px"> {{{assets/js/}}}_{{{[assessment-SUFFIX.js]}}}_ </td>
+	<td style="border: 1px solid #ccc; padding: 5px"> These files define the assessments associated with your lessons. See [CreateAssessments Create Assessments]. </td>
+	<td style="border: 1px solid #ccc; padding: 5px"> TODO </td>
+  </tr>
+  
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 5px"> {{{data/lesson.csv}}} </td>
+    <td style="border: 1px solid #ccc; padding: 5px"> This CSV file contains information about all of the lessons in your course. See [CreateLessons Create Lessons]. </td>
+    <td style="border: 1px solid #ccc; padding: 5px"> TODO </td>
+  </tr>
+  
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 5px"> {{{data/unit.csv}}} </td>
+    <td style="border: 1px solid #ccc; padding: 5px"> This CSV file contains information about the units in your course, to post to your home page. See [CreateHomePage Create Home Page]. </td>
+    <td style="border: 1px solid #ccc; padding: 5px"> TODO </td>
+  </tr>
+</table>
