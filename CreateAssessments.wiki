@@ -4,7 +4,7 @@
 
 At certain parts throughout the course, students take assessments to see how they're doing. An assessment page has the simplest form of all:
 
-https://www.corp.google.com/~vpg/no_crawl/cb/assessment.png
+https://www.corp.google.com/~vpg/no_crawl/cb/assessment-zig.png
 
 This page consists of three areas:
   * The *header* is the same as for the home page.
