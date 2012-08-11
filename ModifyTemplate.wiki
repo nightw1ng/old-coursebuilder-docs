@@ -1,0 +1,22 @@
+#summary How to modify the two base template that all other pages in your app use.
+
+= Modify Course Template =
+
+<font color=red><<TODO finish writing this. So far, doesn't actually say what needs to be done. Fix all the FIXMEs.>></font>
+
+== Structure of any registered page ==
+
+All pages that a registered student sees start from the same template, {{{views/base.html}}}. This template defines the overall HTML for a page and includes definitions for the header and footer areas.
+
+  * The *header* contains 
+    * Course icon and name of your course.
+    * Horizontal navigation bar, with two tabs on the left (Course and Forum) and an area with the person's address and a Logout link.
+  * The *footer* contains the same two links as for the registration pages. 
+
+You change this header and footer once for all registered pages. 
+
+== Structure of an unregistered page ==
+
+The two pages an unregistered person can see use a different base template, {{{views/base_registration.html}}}, than do all of the other pages.  As with {{{views/base.html}}}, this template defines the overall HTML for these pages and includes definitions for the header and footer areas.
+
+Much of this page starts out the same as {{{views/base.html}}}. The only difference is the tabs in the horizontal navigation in the header.
