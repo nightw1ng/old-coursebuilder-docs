@@ -32,6 +32,12 @@ The app uses three files to render this page:
 
 Mention putting hooks into the forum: for students sharing answers, for instructors posting advanced or background material
 
+    * Be clear to the students what the course flow will be (perhaps talk about it in the very first video)
+   * Advanced and background material as forum posts or as separate mini-courses. (We haven't done the latter.) Alternatively, use G+ or blog posts to introduce material you won't test on.
+  * Do you care about accessibility? Consider video captioning. Consider live captioning for HOAs. Think about the effect of using a screen reader for accessing text and assessments.
+  * Consistency of lessons.  Make the first few minutes of every lesson deeply compelling so they'll want to stay.
+
+
 ==Video==
   * Takes a long time to do well
   * Have a clear edit request process with deadlines for feedback and edits.
