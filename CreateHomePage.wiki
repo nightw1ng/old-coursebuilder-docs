@@ -46,4 +46,4 @@ When you edit the file, leave the first line as is. Replace all of the other lin
   * {{{unit_id}}}: An integer representing which unit this is.
   * {{{unit_title}}}: The name of the unit.
   * {{{release_date}}}: When this release will be available to students.
-  * {{{now_available}}}: Whether or not students should currently be able to access this unit.
+  * {{{now_available}}}: Whether or not students can currently access this unit.
