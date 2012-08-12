@@ -6,7 +6,7 @@ The pages in this section include:
 
   * [RequiredCodeChangesChecklist Required Code Changes]<br>Lists all of the places that you change something in the code to make it appropriate for your material.
 
-  * [AppEngine Get the Source Code]<br>Describes how to download the code, install the required development environment (Python and App Engine), and how to get the sample application running for the first time.
+  * [GetCode Get the Source Code]<br>Describes how to download the code, install the required development environment (Python and App Engine), and how to get the sample application running for the first time.
 
   * [ExplorePS Explore the Sample App]<br>Walks through the pages students see when they take the course. This is about what the course looks like. Consider reading [WhatsInACourse What's in a Course?] at the same time; it goes into more detail about the parts of content.
 
@@ -25,3 +25,5 @@ The pages in this section include:
   * [Certificates Certificates]<br>All about creating certificates to bestow upon your students and a bit of philosophy about whether or not you want to do this.
 
   * [UploadCode Upload Your Code]<br>How to upload your course to Google's production servers, to make it available to the world.
+
+  * [AppEngine About App Engine]<br>Some details you might want to know about App Engine.
