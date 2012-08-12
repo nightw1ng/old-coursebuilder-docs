@@ -1,12 +1,28 @@
 #summary How to modify the registration pages for your course.
 
-= Create Registration =
+<h1>Create Registration</h1>
 
-<font color=red><<TODO working here; currently just what ExplorePS says.>></font>
+<wiki:toc max-depth="2" />
+
+== Registration page ==
 
 When prospective students first visit your course, the app displays a registration page:
 
 https://www.corp.google.com/~vpg/no_crawl/cb/registration-parts.png
+
+=== What happens from this page ===
+
+This registration page asks two questions:
+  * student name. The [Certificates certificate] generation process uses this to customize the completion certificate.
+  * where they heard about the course. You can use this to decide which venue brought the most traffic to your course.
+
+The {{{RegisterHandler}}} class is defined in {{{controllers/utils.py}}}. This class defines what happens when a person registers for the course. The class creates a student object and stores the student's name and their answer to the marketing question.
+
+You can change the file {{{views/register.html}}} (described in the next section) to ask different questions. If you do, you must change the RegisterHandler code to store the answers to your questions.
+
+<font color=red><<<TODO which I aint explaining, so you probably don't want to. Also, does anything actually do something with the marketing question at present?>>></font>
+
+=== Page layout ===
 
 This page consists of three areas:
   * The *header* contains 
@@ -16,15 +32,19 @@ This page consists of three areas:
   * The *footer* contains two links -- one to your website and one to the privacy conditions and terms for your course.
 
 The app uses two files to render this page:
-  * {{{views/base_registration.html}}} defines the header and footer areas.
-  * {{{views/register.html}}} defines the content of the registration form.
+  * {{{views/base_registration.html}}} defines the header and footer areas.  See [ModifyTemplate ModifyCourseTemplate].
+  * {{{views/register.html}}} defines the content of the registration form. If you change the questions asked, you'll have to change the code that handles the answers.
+
+== Registration confirmation page ==
+
+=== Page layout ===
 
 Once a prospective student submits the registration form, the app displays the registration confirmation page:
 
 https://www.corp.google.com/~vpg/no_crawl/cb/registrationconfirmation-parts.png
 
-This page consists of the same three areas as the previous page and uses these files to render the page:
-  * {{{views/base_registration.html}}} defines the header and footer areas. Note this is the same file the registration form uses, guaranteeing that these two pages have the same general look and feel.
-  * {{{views/confirmation.html}}} defines the content of the registration form.
+This page displays one message if the student is registered. It displays another message if the class is full. You can change either of these messages.
 
-You need change these files to customize the app for your material. For details, see [CreateRegistration Create Registration].
+This page consists of the same three areas as the registration page and uses these files to render the page:
+  * {{{views/base_registration.html}}} defines the header and footer areas. Note this is the same file the registration form uses, guaranteeing that these two pages have the same general look and feel.  See [ModifyTemplate ModifyCourseTemplate].
+  * {{{views/confirmation.html}}} defines the content of the registration form.
