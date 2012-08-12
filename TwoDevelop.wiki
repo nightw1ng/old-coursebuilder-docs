@@ -47,7 +47,7 @@ Objectives narrow down the information and keep it specific to the students' nee
   * At the end of this course, students will be able to choose the right needle size for the yarn, so that they will know how to gauge the size of a garment.
   * Students will be able to increase and decrease the number of stitches on a row, so that they can make shaped garments.
 
-In deciding the objectives for your course, try to design for the middle ground. Don’t make the primary objectives either too easy or too hard. If there is advanced material you think would be great for some of your students, design so that that information is optional. If there is remedial information that you think some students may need, again make it optional. See [ThreeImplement step 3] for tips on how to make optional material unobtrusive but readily available to those who want it.
+In deciding the objectives for your course, try to design for the middle ground. Don’t make the primary objectives either too easy or too hard. If there is advanced material you think would be great for some of your students, design so that that information is optional. If there is background information that you think some students may need, again make it optional.
 
 ==Decide what you want to test in your assessments, both graded and ungraded.==
 
@@ -83,6 +83,8 @@ Deciding on the metrics early on makes it more likely that as you continue to th
 
 Some things to consider during this step:
 
+  * During your first lesson, consider making it clear to students what the course flow will be. Tell them when units will be released, what deadlines exist, during what ours course staff will be monitoring the discussion forum, and so on.
+
   * Is there an overall flow to the material that makes logical sense? What dependencies are there in your content? Are there steps that students must learn before other steps? Are there concepts that they must understand?
 
   * Even though you think your content has a logical flow from beginning to end, remember that people are used to jumping around online material. As much as possible, make each of your lessons standalone so that students can successfully access them in a different order than you anticipated.
@@ -92,6 +94,11 @@ Some things to consider during this step:
   * Try not to address either too much or too little in each lesson. Consider having most lessons be of approximately the same size so your students know what to expect. For online consumption, your material should be in smaller chunks than for live classes. Keep videos 3-5 minutes in length. 
 
   * Your videos can talk about fairly complex notions. If they do, be sure to back them up in other ways. For example, add tips before the activities and have multiple activities that point out the differences that cause the complexity.
+
+  * Because community is such an important part of a MOOC, consider putting hooks into your discussion forum from your lessons. For example, have students do an open activity and post the results to the forum, to discuss with other students.
+
+  * As discussed above, you should design the primary objectives for your course for the "average" student. You may still want to have optional material available for students who require extra background material and for students who would like extra challenging material. Do not put this optional material in the course lessons. Instead, consider putting this material in other formats; see [InstructorLedCommunication#Optional_course_material_in_a_web_forum_blog_or_Google+_page Announcements and Optional Material].
+
 A lot of your development time is spent in this step. For more details on one process for this step, see [ObjectivesToOutline From Objectives to Outline].
 
 ==Verify your content with others.==
