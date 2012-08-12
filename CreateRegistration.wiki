@@ -16,9 +16,9 @@ This registration page asks two questions:
   * student name. The [Certificates certificate] generation process uses this to customize the completion certificate.
   * where they heard about the course. You can use this to decide which venue brought the most traffic to your course.
 
-The {{{RegisterHandler}}} class is defined in {{{controllers/utils.py}}}. This class defines what happens when a person registers for the course. The class creates a student object and stores the student's name and their answer to the marketing question.
+The !RegisterHandler class is defined in {{{controllers/utils.py}}}. This class defines what happens when a person registers for the course. The class creates a student object and stores the student's name and their answer to the marketing question.
 
-You can change the file {{{views/register.html}}} (described in the next section) to ask different questions. If you do, you must change the RegisterHandler code to store the answers to your questions.
+You can change the file {{{views/register.html}}} (described in the next section) to ask different questions. If you do, you must change the !RegisterHandler code to store the answers to your questions.
 
 <font color=red><<<TODO which I aint explaining, so you probably don't want to. Also, does anything actually do something with the marketing question at present?>>></font>
 
