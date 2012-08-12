@@ -97,7 +97,7 @@ Some things to consider during this step:
 
   * Because community is such an important part of a MOOC, consider putting hooks into your discussion forum from your lessons. For example, have students do an open activity and post the results to the forum, to discuss with other students.
 
-  * As discussed above, you should design the primary objectives for your course for the "average" student. You may still want to have optional material available for students who require extra background material and for students who would like extra challenging material. Do not put this optional material in the course lessons. Instead, consider putting this material in other formats; see [InstructorLedCommunication#Optional_course_material_in_a_web_forum_blog_or_Google+_page Announcements and Optional Material].
+  * As discussed above, you should design the primary objectives for your course for the "average" student. You may still want to have optional material available for students who require extra background material and for students who would like extra challenging material. Do not put this optional material in the course lessons. Instead, consider putting this material in other formats; see [InstructorLedCommunication#Optional_course_material,_in_a_web_forum,_blog,_or_Google+_page Announcements and Optional Material].
 
 A lot of your development time is spent in this step. For more details on one process for this step, see [ObjectivesToOutline From Objectives to Outline].
 
