@@ -46,7 +46,7 @@ The second two lines of the header, the vertical navigation, and the content are
 
 === Lesson content ===
 
-{{{data/lesson.csv}}} contains the TODO. The first line describes the content of the other lines:
+{{{data/lesson.csv}}} contains information about each lesson, such as where the video lives and what its title is. The first line describes the content of the other lines:
   {{{unit_id,unit_title,unit_exercise,lesson_id,lesson_title,lesson_activity,lesson_activity_name,lesson_notes,lesson_video_id,lesson_slide_url,lesson_objectives,lesson_times}}}
 
 Each line after that contains the information for an individual lesson, such as: 
@@ -72,7 +72,7 @@ The following image shows where this information appears on the screen:
 
 https://www.corp.google.com/~vpg/no_crawl/cb/annotatedlesson.png
 
-<font color=red><<TODO create the image>></font>
+<font color=red><<TODO fix link>></font>
 
 == Working with Video ==
 
