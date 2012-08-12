@@ -1,32 +1,22 @@
 = Create Home Page =
 
+
+After successul registration, the student can click on *Home* in the navigation bar of the confirmation page to be taken to the home page for your course. Once registered, any time the student leaves your course and returns to its main URL, this is the page that appears.
+
+<img src="https://www.corp.google.com/~vpg/no_crawl/cb/homepage.png" height=529 width=420 />
+
 <font color=red><<TODO fix image url>></font>
 
-After successul registration, the student can click on *Home* in the navigation bar of the confirmation page to be taken to the home page for your course.
-
-https://www.corp.google.com/~vpg/no_crawl/cb/homepage.png
-
 You create the home page with these files:
-  * {{{views/base.html}}} defines the header and footer areas.
-  * {{{views/course.html}}} defines the structure of the content area.
+  * {{{views/base.html}}} defines the header and footer areas. See [ModifyTemplate Modify Course Template] for information about this file.
+  * {{{views/course.html}}} defines the structure of the content area (the part that contains the schedule).
   * {{{data/unit.csv}}} defines the actual content of the content area. 
 
-You _must_ change these files to be relevant to your course.
-
-== Structure of any registered page ==
-
-All pages that a registered student sees start from the same template, {{{views/base.html}}}. This template defines the overall HTML for a page and includes definitions for the header and footer areas.
-
-  * The *header* contains 
-    * Course icon and name of your course.
-    * Horizontal navigation bar, with two tabs on the left (Course and Forum) and an area with the person's address and a Logout link.
-  * The *footer* contains the same two links as for the registration pages. 
-
-You change this header and footer once for all registered pages. See [ModifyTemplate Modify Course Template].
+You _must_ change these files to be relevant to your course. 
 
 == Structure of home page ==
 
-{{{views/course.html}}} contains the structure of the home page. It consists of a short blurb and a list of units and assessments. For the list, this file contains the structure of how they are laid out {{{data/unit.csv}}} contains the actual text for the units to display in the list.
+{{{views/course.html}}} contains the structure of the home page. It consists of a short blurb and a list of units and assessments. For the list, this file contains the structure of how they are laid out. You specify the actual text to display for the units in the list in {{{data/unit.csv}}}.
 
 You must change the blurb to be relevant to your course. 
 
