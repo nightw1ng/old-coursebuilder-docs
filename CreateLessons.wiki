@@ -51,7 +51,7 @@ The second two lines of the header, the vertical navigation, and the content are
 
 Each line after that contains the information for an individual lesson, such as: 
 
-  2,Interpreting results,,5,Different kinds of content,checkquiz25(),Lesson 2.5 Activity,https://docs.google.com/document/d/1yURF6jwcH0fJCup4m28bh2oPl-ApZwvr_GL-ndyLWKA/edit,hNrzmvPA1Zo,https://docs.google.com/a/powersearchingwithgoogle.com/presentation/d/1lCvpukwgsAjwDYc2md_qdnF4R9FFIetIoTgMMKO22bU/edit#slide=id.p35,"- Find different kinds of content efficiently: blogs, discussions, recipes, patents, books, 3D models, scholarly sources, and legal documents.",10 minutes
+  2,Interpreting results,,5,Different kinds of content,checkquiz25(),Lesson 2.5 Activity,https://docs.google.com/SOMETHING,https://docs.google.com/SOMETHING,"- Find different kinds of content efficiently: blogs, discussions, recipes, patents, books, 3D models, scholarly sources, and legal documents.",10 minutes
 
 When you edit the file, leave the first line as is. Replace all of the other lines with the information relevant to your course. Each line consists of:
 
