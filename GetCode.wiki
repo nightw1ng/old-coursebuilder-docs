@@ -1,0 +1,141 @@
+#summary How to download the sample code and get started with App Engine.
+
+<h1>Get the Source Code</h1>
+
+To create your own course, you download a zip file from Google Code that contains all of the files that constitute the Course Builder Experiment App Engine application. These files include almost everything needed to replicate the [http://www.powersearchingwithgoogle.com/ Power Searching with Google] course. You then load that code into a new App Engine app and modify it as needed.
+
+This page describes how to download the source code and get it running as an app in App Engine. The basic steps are:
+
+<wiki:toc max_depth="2" />
+
+If you are not familiar with App Engine, read [https://developers.google.com/appengine/docs/whatisgoogleappengine What is Google App Engine?]. You can also read [https://developers.google.com/academy/apis/cloud/appengine/intro/gettingstarted Getting Started] for more App Engine-related details about the process below.
+
+== 1. Get the Course Builder Experiment code ==
+
+To get the experimental code:
+  # Download the zip file at <font color=red><<TODO some link>></font>.
+  # Unzip that file and make a note of the directory to which it downloads. Let's assume that the directory is {{{CBE}}}.
+
+== 2. Decide on a name for your app ==
+
+The file {{{CBE/app.yaml}}} is the configuration file for your App Engine app. Before you get started, you need to choose a new name for the app. To do so:
+
+  # Edit {{{CBE/app.yaml}}}.<br>The first line is:<br>{{{application: # FIXME: Put your application id here}}}
+  # Replace {{{# FIXME: Put your application id here}}} with the name you choose for your app. 
+
+Pick a single word as an app name. It's best if you keep all the letters of the app name in lowercase and select a directory/folder that does not have a space and does not have upper case characters in it. 
+
+*Note:* Because your app will run in production<sup>1</sup>, you must choose a name that hasn't already been used by anybody else. Unfortunately, you only find out if the name you choose is available when you register the app with Google. You must register it before you can upload it. For more information, see [UploadCode Upload Your Code].
+
+  <sup>1</sup> What does it mean for an app to run in production? In production, your app lives in Google datacenters. Google runs the production server. By default, your app automatically gets a domain name so that it can be reached from almost anywhere on the internet. That domain is of the form _{{{APP_ID}}}_{{{.appspot.com}}} where _{{{APP_ID}}}_ is the app ID you chose. App ID names can only be used once and can never be returned to the pool of available names. Whether your app is running, not running, or deleted, once a name has been chosen, it can no longer be used by any other app. More details on creating an app can be found in the [https://developers.google.com/appengine/docs/python/gettingstartedpython27/uploading official docs]. 
+  
+Later, if you decide to customize your course, you may need more information on configuration. If you do, see the [https://developers.google.com/appengine/docs/python/config/appconfig#Required_Elements official documentation].
+
+== 3. Download and install Python and App Engine ==
+
+Make sure you have Python 2.7 on your system. Visit the general Python 2.7 [http://python.org/download download page] to get the right version for you. (Python 2.7.3 was the latest at the time of this writing.)
+
+When developing on Google App Engine, you have a choice of performing administrative tasks using a graphical interface (GUI) or a traditional command-line interface. The GUI, called The Launcher, is available for users of PCs or Macs while command-line tools are available on any POSIX-based system such as Mac OS X or Linux. The 
+Python App Engine SDK includes both tools. Follow [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python this link] to download the SDK for your platform.
+
+  * *PC:* Run the downloaded installer .msi by doubleclicking. Follow all on-screen instructions. Once completed, you should find the App Engine Launcher icon on your desktop or be able to find it via Start -> Programs. There is no equivalent set of command-line tools for PCs, so there you must use the Launcher.
+  * *Mac:* Open the downloaded .dmg file and drag the App Engine icon into the Applications folder. Optionally,  open the Applications folder and drag the App Engine icon to your Dock so that you can start the App Engine Launcher more conveniently. Putting App Engine int he Applications folder also installs the command-line tools.
+  * *Linux or other POSIX-compliant system:* After downloading the .zip file, go to the directory where you want to install App Engine. When you unzip the archive, it creates a subdirectory named google_appengine. Add that directory to your shell's path so that it can find the command-line tools when you need them.
+
+*Note:* Most of the rest of this page assumes that you use the Launcher to work with your app. If you decide to use the command-line tools, consult the official [https://developers.google.com/appengine/docs/python/overview App Engine documentation].
+
+<font color=red><<TODO consider adding a bit of info about AE, such as potential pitfalls and the costs of using it (especially email?) When/do users need to restart the server? Are all the changes they can make immediately live? I know changes to the views are immediate; what about to the JS files?
+>></font>
+
+== 4. Start the App Engine Launcher (PC, Mac) ==
+
+Activate the Launcher wherever it's available, that is, from the Desktop, the Dock, the Applications folder, Start -> Programs -> Google App Engine -> !GoogleAppEngineLauncher, and so on. 
+
+The first time you start the Launcher, you may see a dialog box asking you about symlinks
+
+https://www.corp.google.com/~vpg/no_crawl/symlinks.png"
+
+For App Engine to work, you must agree to set up symlinks.
+
+== 5. Add the app to App Engine ==
+
+  # In the App Engine Launcher, from the *File* menu, choose *Add Existing Application*. 
+  # For the Path, navigate to the directory containing the source code you downloaded earlier.<br>Note that you choose a directory/folder for the path, not a particular file in the directory/folder.
+  # For the Port, the default value is typically fine. If you have other apps running locally, you may need to change the port number.
+  # Click on *Add*.
+
+A new line appears in the Launcher. Its name is the name you put in the {{{app.yaml}}} file. Its path is the path you specified here.
+
+== 6. Start the development server ==
+
+Before you can upload your app to run in production and be available to your audience, you need to develop and debug it in a more private setting. That more private setting is called either a *development server* or a *staging server*.
+
+To start the development server from the Launcher:
+  # Select your app. 
+  # When it's highlighted, click the Run button to start the server (for that app). <br><br>Once the icon to the left of the app name is green, your server is ready to accept requests.
+
+Because the command-line version has more options, you may wish to run the development server from your Unix shell. To do so:
+  # Open a Unix shell (command line).
+  # Change directory to the one you specified as the path for your app
+  # Run the server with the command<br>{{{dev_appserver.py .}}} <br>As the command runs, you may see some warnings you can ignore and questions you must answer.<br><br> Once the app is set up, you see a URL reference to the hostname and port you use to connect to your app from a web browser. It defaults to {{{http://localhost:8080}}}.<br><br>Notice that while the server is running, the command does not complete. To stop the server, exit the command.
+
+By default, your app is only available from the machine on which you start it. To get access to your development server from another machine on the network, you need to request this through the command line. To do so, do not run the server using the Launcher. Instead, run your development server with this command
+
+  {{{cd }}}_*{{{[PATHTOAPPLICATION]}}}*_<br>{{{dev_appserver.py . -a 0.0.0.0}}}
+
+where _*{{{[PATHTOAPPLICATION]}}}*_ is the directory/folder containing your app.
+
+=== Troubleshooting ===
+
+If you do not see the registration page, there may be an error somewhere. If you start your app from the command line, errors messages appear on the console. If you start your app from the Launcher, error messages appear in the logs. To see the logs, click on *Logs* in the Launcher's task bar.
+
+One common problem is that, even though you downloaded Python 2.7, App Engine may not notice. In this case, the log says either that you are not runing Python 2.7 or has warnings about using a runtime older that is than the production runtime.
+
+In this situation, you need to manually specify the path for Python 2.7. To do so:
+  # First, find out what that path is:
+    # Open a Unix shell.
+    # Run the command {{{which python}}}
+    # Copy the path that appears (for example, {{{/Library/Frameworks/Python.framework/Versions/2.7/bin/python}}})
+  # From the *!GoogleAppEngineLauncher* menu, choose *Preferences*.<br>A dialog box appears.
+  # On the *Python Path* line, enter the path you found above.
+
+== 7. Upload the unit and lesson data ==
+
+Before you can run the sample code, you need to upload the data files that represent that units and lessons of the course. (Don't worry too much about what this means right now; we'll explain in  [ExplorePS Explore the Sample Code].)
+
+To upload the data, first make sure that your development server is running (as described in step 6). Then, open a Unix shell. In that shell:
+
+  # Run<br>{{{cd }}}_*{{{PATHTOAPPLICATION}}}*_{{{/data}}}<br>where _*{{{PATHTOAPPLICATION}}}*_ is the directory/folder you specified in step 4.
+  # Run<br>{{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br>where _*{{{PORT}}}*_ is the port number you specified in step 4.
+  # The system prompts you to enter your credentials.<br>Your credentials are your Google account name and password.
+  # Run<br>{{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}}
+  # The system prompts you to enter your credentials again.
+
+=== Troubleshooting ===
+
+When you enter your credentials, you may get the following error:
+
+  {{{urllib2.URLError: <urlopen error [Errno 61] Connection refused>}}}
+
+If you do, then you have forgotten to start your development server. Go back to step 6.
+
+== 8. Connect to the development server ==
+
+Once your development servier is running, you access it through a web browser.
+
+From the Launcher:
+  # Click *Browser*.<br>A login window appears.
+  # Accept the test email address and check *Sign in as Administrator*.
+  # Click on *Login*.
+
+From the command-line:
+  # Open a web browser.
+  # In the address bar, enter<br>{{{http://localhost:}}}_*{{{PORT}}}*_<br>where _*{{{PORT}}}*_ is 8080 by default or whatever port you chose when adding the app in step 4.
+
+In either case, you should see the registration page for the sample app:
+
+https://www.corp.google.com/~vpg/no_crawl/cb/registration.png
+
+<font color=red><<TODO fix images and image paths>></font>
+
+*Next step:* [ExplorePS Explore the Sample Application]
