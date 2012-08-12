@@ -2,8 +2,6 @@
 
 = Modify Course Template =
 
-<font color=red><<TODO finish writing this. So far, doesn't actually say what needs to be done. Fix all the FIXMEs.>></font>
-
 This code uses _view_ files as templates to determine the look and feel of all of the pages in your app. The view files are HTML files defined in the {{{views/}}} directory.
 
 The templates work together hierarchically. Every page displayed for your course starts from either the {{{base_registration.html}}} template (for unenrolled people) or the {{{base.html}}} template (for enrolled people). The two base templates define the overall HTML structure of a page. 
@@ -23,13 +21,17 @@ All pages that a registered student sees start from the same template, {{{views/
 
 You change this header and footer once for all registered pages.  In the file, every place you must make a change is marked with the string {{{FIXME}}}. The changes are:
 
-  * Course name, for the title element. This string appears in your browser, as the name of the window or tab containing your course.
-  * Code to collect analytics data for your course. See [ReachAndEngagementMetrics Reach and Engagement Metrics] for information on setting this up.
-  * Logo image for the header.
-  * Link to go with the logo.
-  * Course name or description for the header.
-  * Link and name of entity responsible for the course, for the footer.
-  * Link to a relevant privacy policy and terms of service.
+  # Course name, for the title element. This string appears in your browser, as the name of the window or tab containing your course.
+  # Code to collect analytics data for your course. See [ReachAndEngagementMetrics Reach and Engagement Metrics] for information on setting this up.
+  # Logo image for the header.
+  # Link to go with the logo.
+  # Course name or description for the header.
+  # Link and name of entity responsible for the course, for the footer.
+  # Link to a relevant privacy policy and terms of service.
+
+The numbers in the image show where this image appears on the screen. (The analytics code has no visible effect.)
+
+https://www.corp.google.com/~vpg/no_crawl/cb/base.png
 
 == Structure of an unregistered page ==
 
