@@ -17,7 +17,12 @@ More details on creating an app can be found in the [https://developers.google.c
 
 == App Engine costs ==
 
-<font color=red><<TODO  costs of using it (especially email?) >></font>
+<font color=red><<TODO  costs of using it (especially email?) 
+
+Note that the number of emails you can send may be limited by certain AppEngine quotas: please see https://developers.google.com/appengine/docs/quotas#Mail for more details.
+
+
+>></font>
 
 == Testing on your server == 
 
