@@ -1,4 +1,3 @@
-
 #summary Mechanics of creating a lesson.
 
 <h1>Create Lessons</h1>
@@ -79,12 +78,14 @@ https://www.corp.google.com/~vpg/no_crawl/cb/annotatedlesson.png
 
 Any time you make changes to the {{{data/lessons.csv}}} file, you need to remove the old lesson information and then load the new information. To do so, from a Unix shell:
 
-<font color=red><<TODO This ain't it. With these calls, you just *add* records, you don't override the existing ones, so you get multiple copies of things. Until I find out the right way, remove the app completely and readd it as described in GetCode. >></font>
+<font color=red><<TODO This ain't it. With these calls, you just *add* records, you don't override the existing ones, so you get multiple copies of things. I haven't figured out what you are supposed to do yet. >></font>
 
-  {{{cd }}}_*{{{PATHTOAPPLICATION}}}*_{{{/data    # }}}_*{{{PATHTOAPPLICATION}}}*_{{{ is the directory containing your app.}}}<br>
+  {{{cd }}}_*{{{PATHTOAPPLICATION}}}*_{{{/data }}}<br>
   {{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml --filename=lesson.csv --kind=Lesson}}}
 
-The system prompts you to enter your credentials.<br>Your credentials are your Google account name and password.
+_*{{{PATHTOAPPLICATION}}}*_{{{ is the directory containing your app.
+
+The system prompts you to enter your credentials. Your credentials are your Google account name and password.
 
 
 == Working with Video ==
