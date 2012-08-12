@@ -11,7 +11,7 @@
     * [ImplementationChecklist Checklist]
     * [CourseMaterial Course Material]
       * [RequiredCodeChangesChecklist Required Code Changes]
-      * [AppEngine Get the Source Code]
+      * [GetCode Get the Source Code]
       * [ExplorePS Explore the Sample App]
       * [ExploreCode Explore the Sample Code]
       * [CreateRegistration Create Registration]
