@@ -1,36 +1,69 @@
-=Create Activities=
+#summary How to create a JavaScript activity file.
 
-<font color=red><<TODO to be written>>
+<h1>Create Activities</h1>
 
-Each unit may have  some number of activities. An activity page shares almost the same structure as a lesson page:
+<font color=red><<TODO working here>></font>
 
-https://www.corp.google.com/~vpg/no_crawl/cb/activity.png
+<wiki:toc />
 
-The only difference between a lesson page and an activity page (at least in look and feel) is that instead of a video for the main content, an activity has a summary of important points from the preceding lesson and has a set of questions, with places to answer the questions and to check your answers or get hints.
+Each unit may have  some number of activities. An activity is a set of questions related to a particular lesson within a unit:
 
-The app uses four files to render this page:
-  * {{{views/base.html}}} is the same as for lessons.
-  * {{{views/activity.html}}} defines the same parts as does {{{views/unit.html}}} for lessons. You probably want to be consistent in these files.
-  * {{{assets/js/activity-}}}_*{{{N.M}}}*_{{{.js}}} contains a !JavaScript array that fills in the actual question and answer areas for the activity. Each activity section has its own file.
+<img src="https://www.corp.google.com/~vpg/no_crawl/cb/activity.png" height=529 width=420 />
 
+== What happens on an activity page ==
+
+An activity page lets students explore their understanding of the lesson content. Students answer questions on the activity page. For each question, clicking on *Check Answer* lets them know if their answer is correct. If the answer is incorrect, the response may contain guidance towards the correct answer. Optionally, the question can include a *Skip & Show Answer* button. If students click on that button, the correct answer appears, possibly with some explanation of why it's the correct answer.
+
+== Page layout ==
+
+Primarily an activity page contains the list of questions with text boxes for the course to display responses when the student submits an answer or requests a hint. Because of how you create an activity, you can include arbitrary HTML. For example, activities in the sample course always start with a box containing tips summarizing the main points of the corresponding lesson. 
+
+An activity page has the same general look and feel as a [CreateLessons lesson] page. The app uses four files to render this page:
+  * {{{views/base.html}}} is the same as for lessons. See [ModifyTemplate Modify Course Template] for information about this file.
+  * {{{views/activity.html}}} defines the second two lines of the header, the vertical navigation, and the content area. Note that these are the same parts {{{views/unit.html}}} defines for lessons. You probably want to be consistent in these files.
+  * {{{assets/js/activity-}}}_*{{{N.M}}}*_{{{.js}}} contains a !JavaScript array that fills in the actual content for the activity. Each activity section has its own file.
+
+== Writing activities ==
+
+An activity represents explanatory text and one or more questions to present to the student.
+
+Create a single array variable named 'activity'. Each element in the array should itself be either explanatory text, a question, or an answer.
+
+=== Explanatory text ===
+
+Such as 
+{{{
+'<table border="2"><tr><td><b>Search Tips:</b><p><ul><li>In the last video, you learned how to use color filtering within image search to narrow your image results to images made up primarily of a certain color. You do this by clicking on the appropriate colored box in the left panel. <li>Please note that you can’t filter by color on iPad or Android tablets, but you can answer the questions below as if you were using a laptop or desktop computer.</ul><p></tr></td></table><br/>',
+}}}
+
+=== Questions ===
+
+A question is a string containing a set of complete HTML elements. That is, if the string contains an open HTML tag (such as <em>), it must also have the corresponding close tag (such as </em>). You put the actual question text in a string.
+
+Such as 
+{{{
+"<img src='assets/img/Image1.1a.png' height=450 width=785><p/>",
+ '<b>1.</b> You want to re-read an introductory accounting textbook from school, but you cannot remember the exact title. You recall that the cover is yellow and has puzzle pieces on it. In the image above, where would you click to filter the results in order to locate the book?',
+}}}
+
+=== Answers ===
+
+An answer is  a JavaScript object representing the answer information for a question. That is, the object contains properties such as the type of question, a regular expression indicating the correct answer, a string to show in case of either correct or incorrect answers or to show when the student asks for help.
+
+Such as
+{{{
+{ questionType: 'multiple choice',
+    choices: [['A', false, 'Please try again'],
+              ['B', false, 'Please try again'],
+              ['C', false, 'Please try again'],
+              ['D', true,  'Correct! Filtering by color would help you view all the books with yellow covers.']]},
+}}}
+
+Types of questions include...
+
+=== Complete example ===
 
 {{{
-// An activity represents explanatory text and one or more questions to present
-// to the student.
-//
-// Usage instructions: Create a single array variable named 'activity'. Each
-// element in the array should itself be either
-//
-// -- a string containing a set of complete HTML elements. That is, if the
-//      string contains an open HTML tag (such as <em>), it must also have the
-//      corresponding close tag (such as </em>). You put the actual question
-//      text in a string.
-//
-// -- a JavaScript object representing the answer information for a question.
-//      That is, the object contains properties such as the type of question, a
-//      regular expression indicating the correct answer, a string to show in
-//      case of either correct or incorrect answers or to show when the student
-//      asks for help.
 var quiz = [
 
 '<table border="2"><tr><td><b>Search Tips:</b><p><ul><li>In the last video, you learned how to use color filtering within image search to narrow your image results to images made up primarily of a certain color. You do this by clicking on the appropriate colored box in the left panel. <li>Please note that you can’t filter by color on iPad or Android tablets, but you can answer the questions below as if you were using a laptop or desktop computer.</ul><p></tr></td></table><br/>',
@@ -45,7 +78,8 @@ var quiz = [
               ['D', true,  'Correct! Filtering by color would help you view all the books with yellow covers.']]},
 
  "<br/><br/><br/><img src='assets/img/Image1.3.png' height=450 width=785><p/>",
- '<br/><b>2.</b> You want statistics on college loans. If you search using [college loans statistics], you get the image results above. What color would you click to see just the charts and graphs? ',
+ '<br/><b>2.</b> You want statistics on college loans. If you search using [college loans statistics], you get the image  Create a single array variable named 'activity'. Each
+// element in the array should itself be eitherresults above. What color would you click to see just the charts and graphs? ',
 
   { questionType: 'freetext',
     correctAnswerRegex: /white?/i,
@@ -57,4 +91,9 @@ var quiz = [
 ]
 }}}
 
-</font>
+
+== Debugging changes ==
+
+Changes you make to any file in the {{{views}}} directory or to any file in the {{{assets/js}}} directory appear automatically in your running development server.
+
+That is, after you make a change to one of these HTML or !JavaScript files, simply load (or reload) a page that uses that page and the change appears. 
