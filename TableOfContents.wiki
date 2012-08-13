@@ -1,6 +1,6 @@
 <font color=red> <b>This is an early draft! Beware!</b> </font>
 
-  * [CourseBuilderExperiment Course Builder Experiment]
+  * [CourseBuilder Course Builder]
   * [OnePager Course Builder in a Nutshell]
   * [WhatsInACourse What's in a Course?]
     * [CourseFlow Course Flow]
