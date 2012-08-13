@@ -1,3 +1,4 @@
+
 #summary How to create a JavaScript activity file.
 
 <h1>Create Activities</h1>
@@ -85,46 +86,100 @@ The line breaks in this string are for readability. You *cannot* have line break
 
 === Answer information ===
 
-The final possibility for an entry in the {{{activity}}} array is a !JavaScript object that represents answer information. Depending on the answer type, this information can have a variety of forms. The object contains properties such as the type of question, a regular expression indicating the correct answer, a string to show in case of either correct or incorrect answers or to show when the student asks for help. For example, if you have the following information about a multiple-choice question:
+The final possibility for an entry in the {{{activity}}} array is a !JavaScript object that represents answer information. Depending on the answer type, this information can have a variety of forms. The object contains properties such as the type of question, a regular expression indicating the correct answer, a string to show in case of either correct or incorrect answers or to show when the student asks for help.
 
-{{{
-  { questionType: 'multiple choice',
-    choices: [
-        ['[yarnbombing news article]', false, 
-         'Try again. This is a risky approach, since many news articles do not call themselves \'news articles\' on the page.'],
-        ['[yarnbombing] then click News in the left menu', true,
-          'Correct! Using a collection of a specific type of media, like News, can help you get to the best pages faster.'],
-        ['[i would like to find news articles about yarnbombing]', false,
-         'Try again. We want to avoid including a lot of extra, confusing words into a query.'],
-        ['[what are some recent publications about yarnbombing]', false,
-         'Try again. Stating what you want in this way, introduces a lot of extra words into a query.']]},
-}}}
-
-The code displays the following:
-
-https://www.corp.google.com/~vpg/no_crawl/cb/answer.png
-
-Student see a list of possible answers, a button labelled *Check Answer*, and an empty text box. When they choose one of the answers and click on *Check Answer*, the code displays the string associated with that answer. In this example, if the user submits the answer [yarnbombing news article], the code displays "Try again. This is a risky approach, since many news articles do not call themselves \'news articles\' on the page.".
-
-
-Types of questions include:
-  * [#Multiple-choice Multiple-choice]
+A question can be one of three types:
+  * [#Single_multiple-choice_question A single multiple-choice question]
+  * [#Group_of_multiple-choice_questions A group of multiple-choice questions]
   * [#Free_text Free text]
 
-==== Multiple-choice ====
+==== Single multiple-choice question ====
 
-A multiple-choice question
+The code for a single multiple-choice question looks like the following example:
 
 {{{
-
-  { questionType: 'multiple choice',
-    choices: [['A', false, 'Please try again'],
-              ['B', false, 'Please try again'],
-              ['C', false, 'Please try again'],
-              ['D', true,  'Correct! Filtering by color would help you view all the books with yellow covers.']]},
+{questionType: 'multiple choice',
+ choices: [
+    ['[yarnbombing news article]', false, 
+      'Try again. This is a risky approach, since many news articles do not call themselves \'news articles\' on the page.'],
+     ['[yarnbombing] then click News in the left menu', true,
+       'Correct! Using a collection of a specific type of media, like News, can help you get to the best pages faster.'],
+     ['[i would like to find news articles about yarnbombing]', false,
+      'Try again. We want to avoid including a lot of extra, confusing words into a query.'],
+     ['[what are some recent publications about yarnbombing]', false,
+      'Try again. Stating what you want in this way, introduces a lot of extra words into a query.']
+ ]
+}
 }}}
 
+This code represents a single !JavaScript object with two attributes. The first attribute is {{{questionType}}}. The value {{{'multiple choice'}}} indicates that this is answer is for one multiple-choice question. The second attribute is {{{choices}}}. The value of this attribute is an array of the possible answers to the question and what to do with each.
+
+Each element of the {{{choices}}} array is itself a 3-element array whose values are:
+   * The text to display for this answer.
+   * A boolean indicating whether or not this is the correct answer.
+   * The text to display if this choice is submitted.
+
+For this question, students see the following:
+
+https://www.corp.google.com/~vpg/no_crawl/cb/answer-multiple.png
+
+Students see a list of possible answers, a button labelled *Check Answer*, and an empty text box. When they choose one of the answers and click on *Check Answer*, the code displays the string associated with that answer. In this example, if the user submits the answer [yarnbombing news article], the code displays "Try again. This is a risky approach, since many news articles do not call themselves 'news articles' on the page.".
+
+If students choose the correct answer, the code also highlights the line containing that answer.
+
+==== A group of multiple-choice questions ====
+
+Sometimes you want to provide information about student answer only after they have answered a group of multiple-choice questions. The code for a group of multiple-choice questions looks as follows:
+
+{{{
+{questionType: 'multiple choice group',
+ questionsList: [ 
+    {
+     questionHTML: '<b>1.</b> In the United States, the state of California is known for its earthquakes. Have there been earthquakes in Iowa?<br/>',
+     choices: ['Yes', 'No'],
+     correctIndex: 0
+    },
+
+    {
+     questionHTML: '<b>2.</b> Has there ever been an earthquake in Maine?<br/>',
+     choices: ['Yes', 'No'],
+     correctIndex: 0
+    },
+
+    {
+     questionHTML: '<b>3.</b>Which state (Iowa or Maine) had an earthquake more recently?<br/>',
+     choices: ['Iowa', 'Maine'],
+     correctIndex: 1
+    }
+ ],
+ allCorrectOutput: 'Hopefully you used Control-F to find the information quickly.',
+ someIncorrectOutput: 'Remember, you can use Control-F to find information like this more quickly. Please try again.'
+}
+}}}
+
+This code represents a single !JavaScript object with four attributes:
+
+  * {{{questionType}}}. The value {{{'multiple choice group'}}} indicates that this is answer is a group of multiple-choice question. 
+
+  * {{{questionsList}}}. The value of this attribute is an ordered array of the related questions. Each element of the {{{questionsList}}} array is a !JavasScript object representing one question. Each object has 3 attributes:
+     * {{{questionHTML:}}} HTML representing the text to display for this question.
+     * {{{choices:}}} An array of the possible answers to this question.
+     * {{{correctIndex:}}} The index of the correct answer in the {{{choices}}} array. (Remember that !JavaScript arrays are 0-based.)
+
+  * {{{allCorrectOutput}}} is the text to display when the student correctly answers all questions in the group.
+
+  * {{{someIncorrectOutput}}} is the text to display when the student incorrectly answers at least one of the questions. In addition to this text, students see how many of their answers were incorrect.
+
+For this example, if students answer one question correctly, they see the following:
+
+https://www.corp.google.com/~vpg/no_crawl/cb/answer-group.png
+
+
+
+
 ==== Free text ====
+
+<font color=red><<TODO write this>></font>
 
 {{{
   { questionType: 'freetext',
@@ -134,6 +189,12 @@ A multiple-choice question
     showAnswerOutput: "Our search expert says: I would click on white in the color grid, since many charts, tables, and graphs have white backgrounds." },
 }}}
 
+Options
+{{{
+'correctAnswerRegex' is a regular expression that matches the correct answer
+'correctAnswerOutput' and 'incorrectAnswerOutput' are what to display when the checked answer is correct or not. If those are both null, then don't generate a 'Check Answer' button.
+'showAnswerOutput' is what to display when the user clicks the 'Skip & Show Answer' button (if null, then don't display that option).
+}}}
 
 == Debugging changes ==
 
