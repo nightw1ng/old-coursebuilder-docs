@@ -1,4 +1,3 @@
-
 #summary How to create a JavaScript activity file.
 
 <h1>Create Activities</h1>
@@ -179,7 +178,9 @@ https://www.corp.google.com/~vpg/no_crawl/cb/answer-group.png
 
 ==== Free text ====
 
-<font color=red><<TODO write this>></font>
+The final type of answer is a free text area. Use this answer type when your question is somewhat open ended. 
+
+You need to be very careful with the wording of your question. 
 
 {{{
   { questionType: 'freetext',
@@ -195,6 +196,11 @@ Options
 'correctAnswerOutput' and 'incorrectAnswerOutput' are what to display when the checked answer is correct or not. If those are both null, then don't generate a 'Check Answer' button.
 'showAnswerOutput' is what to display when the user clicks the 'Skip & Show Answer' button (if null, then don't display that option).
 }}}
+
+Lookee:
+
+https://www.corp.google.com/~vpg/no_crawl/cb/answer-free.png
+
 
 == Debugging changes ==
 
