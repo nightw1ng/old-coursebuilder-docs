@@ -4,7 +4,7 @@
 
 <font color=red><<TODO working here>></font>
 
-<wiki:toc max_depth="3" />
+<wiki:toc />
 
 Each unit may have  some number of activities. An activity is a set of questions related to a particular lesson within a unit:
 
