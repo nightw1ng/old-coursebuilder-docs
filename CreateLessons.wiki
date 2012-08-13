@@ -67,7 +67,7 @@ When you edit the file, leave the first line as is. Replace all of the other lin
   # {{{lesson_notes:}}} URL of the text version of the lesson.
   # {{{lesson_video_id:}}} URL of the video version of the lesson.
   # {{{lesson_slide_url:}}} URL of a presentation containing the slides that appear in the video. <font color=red><<TODO which doesn't appear anywhere I can find.>></font>
-  # {{{lesson_objectives:}}} Lesson objectives, to appear after the title of the lesson.
+  # {{{lesson_objectives:}}} A string containing lesson objectives, to appear after the title of the lesson.
   # {{{lesson_times:}}} Approximately how long this lesson should take. <font color=red><<TODO which doesn't appear anywhere I can find.>></font>
 
 The following image shows where this information appears on the screen:
@@ -85,7 +85,7 @@ Any time you make changes to the {{{data/lessons.csv}}} file, you need to remove
   {{{cd }}}_*{{{PATHTOAPPLICATION}}}*_{{{/data }}}<br>
   {{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml --filename=lesson.csv --kind=Lesson}}}
 
-_*{{{PATHTOAPPLICATION}}}*_{{{ is the directory containing your app.
+_*{{{PATHTOAPPLICATION}}}*_ is the directory containing your app.
 
 The system prompts you to enter your credentials. Your credentials are your Google account name and password.
 
