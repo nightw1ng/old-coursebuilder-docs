@@ -76,7 +76,7 @@ https://www.corp.google.com/~vpg/no_crawl/cb/annotatedlesson.png
 
 <font color=red><<TODO fix link>></font>
 
-== Debugging changes ==
+=== Debugging changes ===
 
 Changes you make to any file in the {{{views}}} directory appear automatically in your running development server.
 
