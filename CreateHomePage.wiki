@@ -47,3 +47,13 @@ When you edit the file, leave the first line as is. Replace all of the other lin
   * {{{unit_title}}}: The name of the unit.
   * {{{release_date}}}: When this release will be available to students.
   * {{{now_available}}}: Whether or not students can currently access this unit.
+
+== Debugging changes ==
+
+Changes you make to any file in the {{{views}}} directory appear automatically in your running development server.
+
+That is, after you make a change to one of these files, simply load (or reload) a page that uses that view and the change appears. 
+
+On the other hand, if you change the content of the {{{data/unit.csv}}} file, you must load the changed data into your development server. To do so:
+
+<font color=red><<TODO Emailed Sean to find out how>></font>
