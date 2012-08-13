@@ -48,3 +48,9 @@ This page displays one message if the student is registered. It displays another
 This page consists of the same three areas as the registration page and uses these files to render the page:
   * {{{views/base_registration.html}}} defines the header and footer areas. Note this is the same file the registration form uses, guaranteeing that these two pages have the same general look and feel.  See [ModifyTemplate ModifyCourseTemplate].
   * {{{views/confirmation.html}}} defines the content of the registration form.
+
+== Debugging changes ==
+
+Changes you make to any file in the {{{views}}} directory appear automatically in your running development server.
+
+That is, after you make a change to one of these files, simply load (or reload) a page that uses that view and the change appears. 
