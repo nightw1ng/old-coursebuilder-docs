@@ -1,4 +1,6 @@
-==Required Code Changes Checklist=
+#summary A simple list of every change you must make to code for your course material.
+
+=Required Code Changes Checklist=
 
 This page is just a checklist of all of the changes that you make to the sample code for your application. Details of how and why are left to other pages.
 
