@@ -14,13 +14,13 @@ If you are not familiar with App Engine, read [https://developers.google.com/app
 
 To get the experimental code:
   # Download the zip file at <font color=red><<TODO some link>></font>.
-  # Unzip that file and make a note of the directory to which it downloads. Let's assume that the directory is {{{CBE}}}.
+  # Unzip that file and make a note of the directory to which it downloads. Let's assume that the directory is {{{CB}}}.
 
 == 2. Decide on a name for your app ==
 
-The file {{{CBE/app.yaml}}} is the configuration file for your App Engine app. Before you get started, you need to choose a new name for the app. To do so:
+The file {{{CB/app.yaml}}} is the configuration file for your App Engine app. Before you get started, you need to choose a new name for the app. To do so:
 
-  # Edit {{{CBE/app.yaml}}}.<br>The first line is:<br>{{{application: # FIXME: Put your application id here}}}
+  # Edit {{{CB/app.yaml}}}.<br>The first line is:<br>{{{application: # FIXME: Put your application id here}}}
   # Replace {{{# FIXME: Put your application id here}}} with the name you choose for your app. 
 
 Pick a single word as an app name. It's best if you keep all the letters of the app name in lowercase and select a directory/folder that does not have a space and does not have upper case characters in it. 
