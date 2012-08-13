@@ -1,4 +1,3 @@
-
 #summary How to create a JavaScript activity file.
 
 <h1>Create Activities</h1>
@@ -82,7 +81,7 @@ The code displays the following:
 
 === Answer information ===
 
-The final possibility for an entry in the {{{activity}}} array is a !JavaScript object that represents answer information. Depending on the answer type, this information can have several forms. The object contains properties such as the type of question, a regular expression indicating the correct answer, or a string to show in case of either correct or incorrect answers or to show when the student asks for help.
+The final possibility for an entry in the {{{activity}}} array is a !JavaScript object that represents answer information. Depending on the answer type, this information can have several forms. The object contains properties such as the type of question, a [https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions regular expression] indicating the correct answer, or a string to show in case of either correct or incorrect answers or to show when the student asks for help.
 
 A question can be one of three types:
   * [#Single_multiple-choice_question A single multiple-choice question]
@@ -174,7 +173,7 @@ https://www.corp.google.com/~vpg/no_crawl/cb/answer-group.png
 
 The final type of answer is a free text area. Use this answer type when your question is somewhat open ended. Students type their answer into a text box of a size you specify. 
 
-The code uses a [SomewhereThatTalksAboutREs regular expression] to verify the answer. Regular expressions can be notoriously difficult for a programmer to get right. For this reason, you need to be very careful with the wording of any question that takes a free text answer. Your regular expression needs to account for reasonable variations in student responses. The code for a simple free text answer looks as follows:
+The code uses a [https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions regular expression] to verify the answer. Regular expressions can be notoriously difficult for a programmer to get right. For this reason, you need to be very careful with the wording of any question that takes a free text answer. Your regular expression needs to account for reasonable variations in student responses. The code for a simple free text answer looks as follows:
 
 {{{
   { questionType: 'freetext',
