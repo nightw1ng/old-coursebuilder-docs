@@ -10,6 +10,7 @@ The other views, such as {{{activity.html}}}, fill in more structure for a speci
 
 For more information on the structure of these pages, see <font color=red><<TODO if I knew what framework this is, I might be able to point to some actual documentation that I certainly don't want to write if I can possibly help it.>></font>
 
+
 == Structure of a registered page ==
 
 All pages that a registered student sees start from the same template, {{{views/base.html}}}. This template defines the overall HTML for a page and includes definitions for the header and footer areas.
@@ -44,3 +45,9 @@ In the sample code, much of this template starts out the same as {{{views/base.h
 You change this header and footer once for both registration pages.  In the file, every place you must make a change is marked with the string {{{FIXME}}}. The changes are the same as in {{{views/base.html}}} with one exception. There is no place to collect Analytics data about people visiting the registration pages.
 
 You can, of course, make these pages look more different.
+
+== Debugging changes ==
+
+Changes you make to any file in the {{{views}}} directory appear automatically in your running development server.
+
+That is, after you make a change to one of these files, simply load (or reload) a page that uses that view and the change appears. 
