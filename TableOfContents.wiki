@@ -8,7 +8,6 @@
   * [TwoDevelop Develop the Content without the Technology]
     * [ObjectivesToOutline From Objectives to Outline]
   * [ThreeImplement Implement the Entire Course with the Technology]
-    * [ImplementationChecklist Checklist]
     * [CourseMaterial Course Material]
       * [RequiredCodeChangesChecklist Required Code Changes]
       * [GetCode Get the Source Code]
