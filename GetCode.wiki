@@ -2,7 +2,7 @@
 
 <h1>Get the Source Code</h1>
 
-To create your own course, you download a zip file from Google Code that contains all of the files that constitute the Course Builder Experiment App Engine application. These files include almost everything needed to replicate the [http://www.powersearchingwithgoogle.com/ Power Searching with Google] course. You then load that code into a new App Engine app and modify it as needed.
+To create your own course, you download a zip file from Google Code that contains all of the files that constitute the Course Builder App Engine application. These files include almost everything needed to replicate the [http://www.powersearchingwithgoogle.com/ Power Searching with Google] course. You then load that code into a new App Engine app and modify it as needed.
 
 This page describes how to download the source code and get it running as an app in App Engine. The basic steps are:
 
@@ -10,7 +10,7 @@ This page describes how to download the source code and get it running as an app
 
 If you are not familiar with App Engine, read [https://developers.google.com/appengine/docs/whatisgoogleappengine What is Google App Engine?]. You can also read [https://developers.google.com/academy/apis/cloud/appengine/intro/gettingstarted Getting Started] for more App Engine-related details about the process below.
 
-== 1. Get the Course Builder Experiment code ==
+== 1. Get the Course Builder code ==
 
 To get the experimental code:
   # Download the zip file at <font color=red><<TODO some link>></font>.
