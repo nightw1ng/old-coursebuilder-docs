@@ -12,6 +12,8 @@ The pages in this section include:
 
   * [ExploreCode Explore the Sample Code]<br>Lists all of the files included with the sample code and notes which ones you must change.
 
+  * [ModifyTemplate Modify Course Template]<br>How to modify the basic look and feel of all of the course pages.
+
   * [CreateRegistration Create Registration]<br>How to modify the student registration code.
 
   * [CreateHomePage Create Home Page]<br>How to modify the code that creates the home page for your course. 
