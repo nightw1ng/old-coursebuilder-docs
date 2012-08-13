@@ -1,3 +1,5 @@
+#summary How to create the home page for your course.
+
 = Create Home Page =
 
 
