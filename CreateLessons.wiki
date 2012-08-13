@@ -38,7 +38,7 @@ This page consists of four areas:
   * The *footer* contains the same two links as for the registration pages. 
 
 The app uses three files to render this page:
-  * {{{views/base.html}}} defines the first two parts of the header and defines the footer.  See [ModifyTemplate Modify Course Template] for information about this file.
+  * {{{views/base.html}}} defines the first two parts of the header and defines the footer; it is the same file as for activities.  See [ModifyTemplate Modify Course Template] for information about this file.
   * {{{views/unit.html}}} defines the second two lines of the header, the vertical navigation, and the content area. Note that these are the same parts {{{views/activity.html}}} defines for activities. You probably want to be consistent in these files.
   * {{{data/lesson.csv}}} contains the content of the content area for all lessons in your course.
 
