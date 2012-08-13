@@ -2,6 +2,8 @@
 
 <h1>Create Lessons</h1>
 
+<wiki:toc />
+
 When students click on a unit from the home page, they go to the page for the first lesson of the unit they chose. From there, they can go to any other lesson or activity in that unit:
 
 <img src="https://www.corp.google.com/~vpg/no_crawl/cb/lesson.png" height=529 width=420 />
@@ -10,7 +12,7 @@ When students click on a unit from the home page, they go to the page for the fi
 
 This page talks about the mechanics of creating a lesson page and its content. For information on what to put in your lesson, see [TwoDevelop Develop the Content without the Technology].
 
-== What happens from this page ==
+== What happens on a lesson page ==
 
 A lesson page is where you teach your prepared material. Typically, each lesson consists of a short video and text version of the content. You embed the video in the lesson page. You put the text version in a file at some other URL. 
 
