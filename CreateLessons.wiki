@@ -76,19 +76,15 @@ https://www.corp.google.com/~vpg/no_crawl/cb/annotatedlesson.png
 
 <font color=red><<TODO fix link>></font>
 
-=== Uploading lesson changes ===
+== Debugging changes ==
 
-Any time you make changes to the {{{data/lessons.csv}}} file, you need to remove the old lesson information and then load the new information. To do so, from a Unix shell:
+Changes you make to any file in the {{{views}}} directory appear automatically in your running development server.
 
-<font color=red><<TODO This ain't it. With these calls, you just *add* records, you don't override the existing ones, so you get multiple copies of things. I haven't figured out what you are supposed to do yet. >></font>
+That is, after you make a change to one of these files, simply load (or reload) a page that uses that view and the change appears. 
 
-  {{{cd }}}_*{{{PATHTOAPPLICATION}}}*_{{{/data }}}<br>
-  {{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml --filename=lesson.csv --kind=Lesson}}}
+On the other hand, if you change the content of the {{{data/unit.csv}}} file, you must load the changed data into your development server. To do so, from a Unix shell:
 
-_*{{{PATHTOAPPLICATION}}}*_ is the directory containing your app.
-
-The system prompts you to enter your credentials. Your credentials are your Google account name and password.
-
+<font color=red><<TODO Emailed Sean to find out how>></font>
 
 == Working with Video ==
 
