@@ -3,8 +3,6 @@
 
 <h1>Create Activities</h1>
 
-<font color=red><<TODO working here>></font>
-
 <wiki:toc />
 
 Each unit may have  some number of activities. An activity is a set of questions related to a particular lesson within a unit:
@@ -84,7 +82,7 @@ The code displays the following:
 
 === Answer information ===
 
-The final possibility for an entry in the {{{activity}}} array is a !JavaScript object that represents answer information. Depending on the answer type, this information can have several forms. The object contains properties such as the type of question, a regular expression indicating the correct answer, a string to show in case of either correct or incorrect answers or to show when the student asks for help.
+The final possibility for an entry in the {{{activity}}} array is a !JavaScript object that represents answer information. Depending on the answer type, this information can have several forms. The object contains properties such as the type of question, a regular expression indicating the correct answer, or a string to show in case of either correct or incorrect answers or to show when the student asks for help.
 
 A question can be one of three types:
   * [#Single_multiple-choice_question A single multiple-choice question]
@@ -121,13 +119,13 @@ For this question, students see the following:
 
 https://www.corp.google.com/~vpg/no_crawl/cb/answer-multiple.png
 
-Students see a list of possible answers, a button labelled *Check Answer*, and an empty text box. When they choose one of the answers and click on *Check Answer*, the code displays the string associated with that answer. In this example, if the user submits the answer [yarnbombing news article], the code displays "Try again. This is a risky approach, since many news articles do not call themselves 'news articles' on the page.".
+Students see a list of possible answers, a button labelled *Check Answer*, and an empty text box. When they choose one of the answers and click on *Check Answer*, the code displays the string associated with that answer. In this example, if the user submits the answer {{{[yarnbombing news article]}}}, the code displays {{{Try again. This is a risky approach, since many news articles do not call themselves 'news articles' on the page.}}}
 
 If students choose the correct answer, the code also highlights the line containing that answer.
 
 ==== A group of multiple-choice questions ====
 
-Sometimes you want to provide information about student answer only after they have answered a group of multiple-choice questions. The code for a group of multiple-choice questions looks as follows:
+Sometimes you want to group a set of multiple-choice questions so that students can only check their answers after answering all of the questions in the group. You can do this with code that looks like the following example:
 
 {{{
 {questionType: 'multiple choice group',
@@ -155,18 +153,18 @@ Sometimes you want to provide information about student answer only after they h
 }
 }}}
 
-This code represents a single !JavaScript object with four attributes:
+This code represents a single !JavaScript object with four required attributes:
 
   * {{{questionType}}}. The value {{{'multiple choice group'}}} indicates that this answer is a group of multiple-choice questions. 
 
-  * {{{questionsList}}}. The value of this attribute is an ordered array of the related questions. Each element of the {{{questionsList}}} array is a !JavasScript object representing one question. Each object has 3 attributes:
+  * {{{questionsList}}}. The value of this attribute is an ordered array of the related questions. Each element of the {{{questionsList}}} array is a !JavasScript object representing one question and answer. Each of those objects has 3 attributes:
      * {{{questionHTML:}}} HTML representing the text to display for this question.
      * {{{choices:}}} An array of the possible answers to this question.
-     * {{{correctIndex:}}} The index of the correct answer in the {{{choices}}} array. (Remember that !JavaScript arrays are 0-based.)
+     * {{{correctIndex:}}} The index in the {{{choices}}} array of the correct answer. (Remember that !JavaScript arrays are 0-based.)
 
-  * {{{allCorrectOutput}}} is the text to display when the student correctly answers all questions in the group.
+  * {{{allCorrectOutput.}}} The text to display when the student correctly answers all questions in the group. Before this text, the code includes the string "All your answers are correct!"
 
-  * {{{someIncorrectOutput}}} is the text to display when the student incorrectly answers at least one of the questions. In addition to this text, students see how many of their answers were incorrect.
+  * {{{someIncorrectOutput.}}} The text to display when the student incorrectly answers at least one of the questions. In addition to this text, students see how many of their answers were incorrect.
 
 For this example, if students answer one question correctly, they see the following:
 
@@ -186,18 +184,18 @@ The code uses a [SomewhereThatTalksAboutREs regular expression] to verify the an
     showAnswerOutput: "Our search expert says: I would click on white in the color grid, since many charts, tables, and graphs have white backgrounds." },
 }}}
 
-This code represents a single !JavaScript object with the following attributes:
+This code represents a single !JavaScript object with several attributes. The first two are required; the others are optional.
 
-  * {{{questionType}}}. The value {{{'freetext'}}} indicates that this answer expects a string from the student. Required.
+  * {{{questionType}}}. The value {{{'freetext'}}} indicates that this answer expects a string from the student.
 
-  * {{{correctAnswerRegex}}} is a regular expression to use to check whether or not the student's answer is correct. Required.
+  * {{{correctAnswerRegex}}} is a regular expression to use to check whether or not the student's answer is correct.
 
   * {{{correctAnswerOutput}}} is the text to display when the student's answer is correct. Optional.
-  * {{{incorrectAnswerOutput}}} is the text to display when the student's answer is not correct. Optional.<br>If you do not supply both {{{correctAnswerOutput}}} and {{{incorrectAnswerOutput}}}, then the code does not display the *Check Answer* button.
+  * {{{incorrectAnswerOutput}}} is the text to display when the student's answer is not correct. Optional.<br>If you do not supply both {{{correctAnswerOutput}}} and {{{incorrectAnswerOutput}}}, then the code does not display the *Check Answer* button. If you supply one of these, you must supply both of them.
 
   * {{{showAnswerOutput}}} is the hint to display if the user clicks on *Skip & Show Answer*. Optional. If you do not supply this attribute, then the code does not display the *Skip & Show Answer* button.
 
-  * {{{showAnswerPrompt}}} is the text to display on the  *Skip & Show Answer* button. Optional. If you do not supply this attribute, the text is (unsurprisingly) *Skip & Show Answer*.
+  * {{{showAnswerPrompt}}} is the text to display on the *Skip & Show Answer* button. Optional. If you do not supply this attribute, the text is (unsurprisingly) *Skip & Show Answer*.
 
   * {{{outputHeight}}} is the height of the text box to display. Optional; defaults to 50px (a single line of text).
 
