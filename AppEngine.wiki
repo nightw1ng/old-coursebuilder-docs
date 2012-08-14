@@ -1,5 +1,4 @@
 
-
 #summary Things you need to know App Engine.
 
 <h1>About App Engine</h1>
@@ -90,40 +89,51 @@ If you started your server from the Launcher, you can stop it there:
 === From a shell ===
 If you started your server from the command line, you can stop it there:
 
-  # Using the {{{ps}}} command, find out the process number associated with your server. You'll see something like the following<br><br>{{{    PID TTY TIME CMD}}}<br>{{{    25603 ttys000    0:00.07 -bash}}}<br>{{{    25993 ttys000    0:00.71 /Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python /usr/local/bin/dev_appserver.py .}}}<br><br>The line that includes {{{dev_appserver.py}}} is the server process.<br>
-  # Note the number of the process. In this example, {{{25993}}}.<br>
-  # Kill that process with the following command:{{{  kill 25993}}}
+  # Using the {{{ps}}} command, find out the process number associated with your server. You'll see something like the following<br><br>{{{    PID TTY TIME CMD}}}<br>{{{    25603 ttys000    0:00.07 -bash}}}<br>{{{    25993 ttys000    0:00.71 /Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python /usr/local/bin/dev_appserver.py .}}}<br><br>The line that includes {{{dev_appserver.py}}} is the server process.<br><br>
+  # Note the number of the process. In this example, {{{25993}}}.<br><br>
+  # Kill that process with the following command:<br>{{{    kill 25993}}}
 
-== Test on your server == 
+== Modify your app and see the effects ==
 
+While working on your app, there are several places you can change information. Depending on the type and location of the information, either the changes you make take effect immediately, or you need to do something special to make them take effect. Common changes include:
 
-== Change the data in your server == 
-<font color=red><<TODO When/do users need to restart the server? Are all the changes they can make immediately live? I know changes to the views are immediate; what about to the JS files? >></font>
+  * Change HTML view files in the {{{views}}} directory.
+  * Change !JavaScript activity or assessment files in the {{{assets/js}}} directory.
+  * Change image files in the {{{assets/img}}} directory.
+  * Change unit or lesson information in the files {{{data/unit.csv}}} or {{{data/lesson.csv}}}.
 
+Changes you make to the {{{views}}} directory or to either subdirectory under {{{assets}}} appear immediately in your development server. You do not have to stop or reload anything. Simply change the files and load (or reload) the corresponding page on your server.
 
-On the other hand, if you change the content of the {{{data/unit.csv}}} file, you must load the changed data into your development server. To do so:
+Changes you make to either file in the {{{data}}} directory requires that you empty all of the data from the app's data store and reenter it. So, even if you only change something in {{{data/lesson.csv}}}, you must also reoload {{{data/unit.csv}}}.
 
-1. Stop your development server.
-    * If you're using the Launcher to run your server, exit the Launcher.
-    * If you're using the command line, kill the {{{dev_appserver}}} process.
+To make these changes,  you need to stop your development server, restart it clearing out the old data, and then reload the new data. You can do this whole process from a shell. (In the following, new command lines start with {{{$}}}. You do not type the {{{$}}}.)
 
-2. Start your development server from the command line, clearing out the old data:
+1a. If you're running your server from the Launcher:
+
+  {{{$ ps x | grep Launcher       # Find the Launcher's process number}}}<br>
+  {{{25677   ??  S      0:00.50 /Applications/GoogleAppEngineLauncher.app/Contents/MacOS/GoogleAppEngineLauncher -psn_0_499834}}}<br>
+  {{{28161 s000  U+     0:00.00 grep Launcher}}}<br>
+  <br>
+  {{{$ kill 25677}}}
+
+1b. If you're running your  server from the shell:
+
+  {{{$ ps x | grep dev_appserver   # Find the process number}}}<br>
+  {{{30849 s000  S      0:00.85 /Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python /usr/local/bin/dev_appserver.py .}}}<br>
+  {{{30856 s000  R+     0:00.01 grep dev_appserver}}}<br>
+  <br>
+  {{{$ kill 30849}}}
+
+2. Start your development server from the command line, clearing out the old data and reloading the changed data:
 
   {{{cd }}}_*{{{APPPATH}}}*_<br>
-  {{{dev_appserver.py . --clear_datastore .}}}
-where _*{{{APPPATH}}}*_ is the directory containing your app.
-
-3. Stop running the development server by killing the dev_appserver.py command.
-
-4. Restart the development server, either from the Launcher or from the command line.
-
-5. In another Unix shell:
-
-  {{{cd }}}_*{{{APPPATH/data}}}*_<br>
+  {{{dev_appserver.py . --clear_datastore . &}}}<br>
+  <br>
+  {{{cd data}}}<br>
   {{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br>
   {{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}}
 
-where _*{{{APPPATH}}}*_ is the directory containing your app and _*{{{PORT}}}*_ is your app's port number.
+where _*{{{APPPATH}}}*_ is the directory containing your app and _*{{{PORT}}}*_ is your app's port number. You will be asked for your credentials (Google user name and password) twice, once for loading each data file.
 
 
 == Troubleshooting ==
