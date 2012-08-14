@@ -1,5 +1,4 @@
-
-#summary Things you need to know App Engine.
+#summary Hints for using App Engine
 
 <h1>About App Engine</h1>
 
@@ -8,6 +7,8 @@ If you are not familiar with App Engine, read [https://developers.google.com/app
 Youo do not need to be an App Engine expert to work with Course Builder. There are just a few things you should be familiar with. Much of this is discussed on other pages. We summarizes them here.
 
 <wiki:toc />
+
+*Note:* In the following, you'll see input and output from workin in a shell. In these areas, new command lines start with {{{$}}}. You do not type the {{{$}}}. Lines that do not start with {{{$}}} are output from an earlier command.
 
 == Download and install Python 2.7 ==
 
@@ -41,7 +42,9 @@ Your development server is where you modify and test your application before rel
 
 To start the development server from the Launcher:
   # Select your app. 
-  # When it's highlighted, click the *Run* button to start the server (for that app). <br><br>Once the icon to the left of the app name is green, your server is ready to accept requests.
+  # When it's highlighted, click the *Run* button to start the server (for that app).
+
+Once the icon to the left of the app name is green, your server is ready to accept requests.
 
 Alternatively, because the command-line version has more options, you may wish to run the development server from your Unix command-line shell. 
 
@@ -49,23 +52,23 @@ Alternatively, because the command-line version has more options, you may wish t
 
 Open a Unix command-line shell. In the shell:
 
-  {{{cd }}}_*{{{APPPATH}}}*_<br>
-  {{{dev_appserver.py . &}}}
+  {{{$ cd }}}_*{{{APPPATH}}}*_<br>
+  {{{$ dev_appserver.py . &}}}
 
-where _*{{{APPPATH}}}*_ is the directory/folder containing your app. As the command runs, you may see some warnings you can ignore and questions you must answer.
+where _*{{{APPPATH}}}*_ is the directory containing your app. As the command runs, you may see some warnings you can ignore and questions you must answer.
 
 Once the app is set up, you see a URL reference to the hostname and port you use to connect to your app from a web browser. It defaults to {{{http://localhost:8080}}}.
 
-The {{{&}}} at the end of the {{{dev_appserver.py}}} command tells Unix to run this command in the background. That means that while your server runs you can continue to use that shell for other operations.
+The {{{&}}} at the end of the {{{dev_appserver.py}}} command tells Unix to run this command in the background. That means that while your server runs you can continue to use that shell for other operations. If you do not see the shell prompt, press enter.
 
 === From a shell, to enable remote access ===
 
 By default, your app is only available from the machine on which you start it. To get access to your development server from another machine on the network, you need to request this through the command line. Start your development server with this command:
 
-  {{{cd }}}_*{{{APPPATH}}}*_<br>
-  {{{dev_appserver.py . -a 0.0.0.0 &}}}
+  {{{$ cd }}}_*{{{APPPATH}}}*_<br>
+  {{{$ dev_appserver.py . -a 0.0.0.0 &}}}
 
-where _*{{{APPPATH}}}*_ is the directory/folder containing your app. (The {{{&}}} has this comand run in the background.)
+where _*{{{APPPATH}}}*_ is the directory containing your app. (The {{{&}}} has this comand run in the background.)
 
 === From a shell, to clear lesson and unit data ===
 
@@ -73,8 +76,8 @@ Before you can put new or changed data into your data store, you must clear out 
 
 From a Unix shell simply start your development server with an extra argument:
 
-  {{{cd }}}_*{{{APPPATH}}}*_<br>
-  {{{dev_appserver.py --clear_datastore . &}}}
+  {{{$ cd }}}_*{{{APPPATH}}}*_<br>
+  {{{$ dev_appserver.py --clear_datastore . &}}}
 
 where _*{{{APPPATH}}}*_ is the directory containing your app.  (The {{{&}}} has this comand run in the background.)
 
@@ -84,29 +87,40 @@ where _*{{{APPPATH}}}*_ is the directory containing your app.  (The {{{&}}} has 
 If you started your server from the Launcher, you can stop it there:
 
   # Select your app. 
-  # When it's highlighted, click the *Stop* button to start the server (for that app). <br><br>Once the icon to the left of the app name is gray, your server is stopped.
+  # When it's highlighted, click the *Stop* button to start the server (for that app). 
+
+Once the icon to the left of the app name is gray, your server is stopped.
 
 === From a shell ===
 If you started your server from the command line, you can stop it there:
 
-  # Using the {{{ps}}} command, find out the process number associated with your server. You'll see something like the following<br><br>{{{    PID TTY TIME CMD}}}<br>{{{    25603 ttys000    0:00.07 -bash}}}<br>{{{    25993 ttys000    0:00.71 /Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python /usr/local/bin/dev_appserver.py .}}}<br><br>The line that includes {{{dev_appserver.py}}} is the server process.<br><br>
-  # Note the number of the process. In this example, {{{25993}}}.<br><br>
-  # Kill that process with the following command:<br>{{{    kill 25993}}}
+Use the {{{ps}}} command to find the process number associated with your server and then to kill that server. 
+
+  {{{$ ps x | grep dev_appserver}}}<br>
+  {{{PID TTY TIME CMD}}}<br>
+  {{{25603 ttys000    0:00.07 -bash}}}<br>
+  {{{25993 ttys000    0:00.71 /Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python /usr/local/bin/dev_appserver.py .}}}<br>
+  <br>
+  {{{$ kill 25993}}}
 
 == Modify your app and see the effects ==
 
 While working on your app, there are several places you can change information. Depending on the type and location of the information, either the changes you make take effect immediately, or you need to do something special to make them take effect. Common changes include:
 
-  * Change HTML view files in the {{{views}}} directory.
-  * Change !JavaScript activity or assessment files in the {{{assets/js}}} directory.
-  * Change image files in the {{{assets/img}}} directory.
-  * Change unit or lesson information in the files {{{data/unit.csv}}} or {{{data/lesson.csv}}}.
+  * *HTML:* Change HTML view files in the {{{views}}} directory.
+  * *!JavaScript:* Change !JavaScript activity or assessment files in the {{{assets/js}}} directory.
+  * *Image:* Change image files in the {{{assets/img}}} directory.
+  * *CSV:* Change unit or lesson information in the files {{{data/unit.csv}}} or {{{data/lesson.csv}}}.
+
+=== Changes to non-data files ===
 
 Changes you make to the {{{views}}} directory or to either subdirectory under {{{assets}}} appear immediately in your development server. You do not have to stop or reload anything. Simply change the files and load (or reload) the corresponding page on your server.
 
-Changes you make to either file in the {{{data}}} directory requires that you empty all of the data from the app's data store and reenter it. So, even if you only change something in {{{data/lesson.csv}}}, you must also reoload {{{data/unit.csv}}}.
+=== Change to data files ===
 
-To make these changes,  you need to stop your development server, restart it clearing out the old data, and then reload the new data. You can do this whole process from a shell. (In the following, new command lines start with {{{$}}}. You do not type the {{{$}}}.)
+Changes you make to either file in the {{{data}}} directory require that you clear all of the data from the app's data store and reenter it. So, even if you only change something in {{{data/lesson.csv}}}, you must also reoload {{{data/unit.csv}}}.
+
+To make these changes,  you need to stop your development server, restart it clearing out the old data, and then reload the new data. You can do this whole process from a shell.
 
 1a. If you're running your server from the Launcher:
 
@@ -126,12 +140,12 @@ To make these changes,  you need to stop your development server, restart it cle
 
 2. Start your development server from the command line, clearing out the old data and reloading the changed data:
 
-  {{{cd }}}_*{{{APPPATH}}}*_<br>
-  {{{dev_appserver.py . --clear_datastore . &}}}<br>
+  {{{$ cd }}}_*{{{APPPATH}}}*_<br>
+  {{{$ dev_appserver.py . --clear_datastore . &}}}<br>
   <br>
-  {{{cd data}}}<br>
-  {{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br>
-  {{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}}
+  {{{$ cd data}}}<br>
+  {{{$ appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br>
+  {{{$ appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}}
 
 where _*{{{APPPATH}}}*_ is the directory containing your app and _*{{{PORT}}}*_ is your app's port number. You will be asked for your credentials (Google user name and password) twice, once for loading each data file.
 
