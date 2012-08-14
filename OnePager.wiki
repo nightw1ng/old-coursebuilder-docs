@@ -1,5 +1,46 @@
-#summary One-sentence summary of this page.
+#summary Checklist of all steps to create a MOOC using Course Builder.
 
-= Course Builder in a Nutshell =
+<h1>Course Builder in a Nutshell</h1>
 
-<font color=red><<TODO write this at the end. This is the 1-page summary of the whole shebang. It may subsume or point to ImplementationChecklist and RequiredCodeChangesChecklist.>></font>
+<font color=red><<TODO working here>></font>
+
+This is just a checklist of steps. All details are in the links.
+
+  # [OnePlan Plan for 30 minutes.]
+    # Define the problem statement and high-level goal of the course.
+    # Identify your audience and your assumptions.
+    # Define course objectives.
+    # Consider course logistics.
+  # [TwoDevelop Develop content without the technology.]
+    # Clarify your goals and non-goals for the course.
+    # Clarify your assumptions about your students.
+    # Write clear, specific objectives.
+    # Decide what you want to test in your assessments, both graded and ungraded.
+    # Decide what other metrics to collect for your course.
+    # Sequence and organize your content into digestible chunks.
+    # Verify your content with others.
+  # [ThreeImplement Implement your content using your technology.]
+    # [CourseMaterial Implement the course material.]
+      # [GetCode Get the sample code and run it with your name.]
+        # Download and install Python.
+        # Download and install App Engine.
+        # Pick a name for your app.
+        # Load the app.
+        # Upload sample data to the app.
+      # [ModifyTemplate Modify the basic look and feel of course pages.]
+      # [CreateRegistration Modify the registration page.]
+      # [CreateHomePage Modify the course home page.]
+      # [CreateLessons Implement course lessons.]
+      # [CreateActivities Implement Activities.]
+      # [CreateAssessments Implememnt Assessments.]
+      # [Certificates Create a Certificate.]
+      # [Upload Your App to production.]
+    # [Metrics Implement metrics.]
+      # [HappinessMetrics Create happiness metrics.]
+      # [ReachAndEngagementMetrics Create reach & engagement metrics.]
+    # [ParticipantCommunity Implement the participant community.]
+      # [TeachingAssistants Engage and train teaching assistants.]
+      # [WebForums Setup a community discussion forum.]
+      # [OnlineOfficeHours Schedule online office hours.]
+      # [Announcements Prepare announcements and optional material.]
+  # [FourPilot Pilot with your target audience.]
