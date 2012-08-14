@@ -27,7 +27,7 @@
       * [ReachAndEngagementMetrics Reach & Engagement Metrics]
     * [ParticipantCommunity Participant Community]
       * [WebForums Community Discussion]
-      * [InstructorLedCommunication Announcements & Optional Material]
+      * [Announcements Announcements & Optional Material]
       * [OnlineOfficeHours Online Office Hours]
       * [TeachingAssistants Teaching Assistants]
       * [CommunityToolsComparison Tools Comparison]
