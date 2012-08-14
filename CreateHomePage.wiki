@@ -56,4 +56,16 @@ That is, after you make a change to one of these files, simply load (or reload) 
 
 On the other hand, if you change the content of the {{{data/unit.csv}}} file, you must load the changed data into your development server. To do so:
 
-<font color=red><<TODO Emailed Sean to find out how. What I've been doing, horrific as it is, is to start over completely, with a new directory and an new port.  That cannot be right.>></font>
+1. Stop your development server.
+    * If you're using the Launcher to run your server, exit the Launcher.
+    * If you're using the command line, kill the {{{dev_appserver}}} process.
+
+2. Start your development server from the command line, clearing out the old data and adding the changed data:
+
+  {{{cd }}}_*{{{PATHTOAPPLICATION}}}*_<br>
+  {{{dev_appserver.py . --clear_datastore .}}}<br>
+  {{{cd data}}}<br>
+  {{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br>
+  {{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}}
+
+where _*{{{PATHTOAPPLICATION}}}*_ is the directory containing your app and _*{{{PORT}}}*_ is your app's port number.
