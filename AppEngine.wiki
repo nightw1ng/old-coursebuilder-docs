@@ -1,6 +1,6 @@
 #summary Hints for using App Engine
 
-<h1>About App Engine</h1>
+<h1>Working with App Engine</h1>
 
 If you are not familiar with App Engine, read [https://developers.google.com/appengine/docs/whatisgoogleappengine What is Google App Engine?].
 
@@ -141,7 +141,7 @@ To make these changes,  you need to stop your development server, restart it cle
 2. Start your development server from the command line, clearing out the old data and reloading the changed data:
 
   {{{$ cd }}}_*{{{APPPATH}}}*_<br>
-  {{{$ dev_appserver.py . --clear_datastore . &}}}<br>
+  {{{$ dev_appserver.py --clear_datastore . &}}}<br>
   <br>
   {{{$ cd data}}}<br>
   {{{$ appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br>
