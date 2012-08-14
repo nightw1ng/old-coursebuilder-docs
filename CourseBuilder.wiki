@@ -1,5 +1,9 @@
 #summary Home page.
-=Course Builder=
+<h1>Course Builder</h1>
+
+Welcome to Course Builder, Google's experiment with creating MOOCs!
+
+<wiki:toc max_depth="2" />
 
 ==The “Power Searching with Google” Experiment==
 
@@ -49,4 +53,4 @@ Course Builder is an experiment. As such, we have not spent much time making it 
 
   * *!JavaScript familiarity.* You need to be comfortable with !JavaScript arrays, simple objects, and regular expressions. Of these, regular expressions tend to be the biggest stumbling block.The [https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions Mozilla Developer Network] has an introduction to regular expressions. To create assessments, you need familiarity with writing !JavaScript functions.
 
-  * *App Engine familiarity is a plus.*
+  * *App Engine familiarity is a plus.* This documentation covers what you need to know about App Engine. Previous familiarity would make your life easier.
