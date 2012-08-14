@@ -26,8 +26,8 @@ This page doesn't go into any explanations. It simply lists all of the steps inv
       # [GetCode Get the sample code and run it with your name.]
         # Download and install  [http://python.org/download Python].
         # Download and install [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python App Engine].
-        # Pick a name for your app. Make it the value of {{{application}}} in {{{/app.yaml}}}.
-        # Load the app.
+        # Pick a name for your app. Make it the value of {{{application}}} in {{{app.yaml}}}.
+        # [GetCode5._Add_the_app_to_App_Engine Load the app].
         # [GetCode#7._Upload_the_unit_and_lesson_data Upload sample data] to the app.
       # [ModifyTemplate Modify the basic look and feel of course pages]<br>by changing {{{/views/base.html}}} and {{{/views/base_registration.html}}}. Things you must change include:
         # The course name, for the title element.
