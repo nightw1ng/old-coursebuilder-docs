@@ -29,12 +29,22 @@ The app uses three files to render this page:
 
 == Writing assessments ==
 
-<font color=red><<TODO put on your thinking cap. this is the hardes thing you need to do. >></font>
+<font color=red><<TODO put on your thinking cap. this is the hardest thing you need to do. >></font>
 
 {{{
 
 function saveAnswersMid(submitAnswers) {
   $('#answerOutput').val('');
+
+  // FIXME: scoreArray is an ordered array each of whose elements is 0 or 1,
+  // depending on whether the answer to the corresponding question is correct.
+  // Your array must have the same number of elements as you have questions.
+  //
+  // Use checkQuestionRadioSimple (defined in activity-generic.js) to determine
+  // the correctness of a multiple-choice question.
+  // 
+  // Use checkText (defined in activity-generic.js) to determine the correctness
+  // of a free-text question.
 
   var scoreArray = [];
 
@@ -53,9 +63,16 @@ function saveAnswersMid(submitAnswers) {
 
   scoreArray[4] = checkQuestionRadioSimple(document.assessment.mid9);
 
+  // FIXME: lessonArray is an ordered array of strings. Each string is the
+  // number of the lesson whose content tells the student how to answer that
+  // question. This presumes that each question only tests information from one
+  // lesson. If the student doesn't answer all questions correctly, the code
+  // displays which lessons the student should review to improve their score.
+
   var lessonArray = ["3.1", "1.5", "3.3", "2.2", "2.3"];
 
-  // only do following if checking answers
+  // Only do the following if checking answers instead of submitting them.
+  // This code figures out which lessons the student should review.
   studylessons = "";
   if (!submitAnswers) {
     for (var i in scoreArray) {
@@ -84,6 +101,8 @@ function saveAnswersMid(submitAnswers) {
     numCorrect += scoreArray[i];
   }
 
+  // FIXME: Compute the student's score on this test. Assumes 5 questions.
+  // Change for a different number.
   score = numCorrect / 5;
   score = roundNumber(score, 1) * 100;
 
@@ -119,6 +138,7 @@ function saveAnswersMid(submitAnswers) {
     document.body.removeChild(myForm);
   }
 }
+
 
 }}}
 
