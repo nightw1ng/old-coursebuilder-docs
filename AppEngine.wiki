@@ -1,6 +1,6 @@
 #summary Hints for using App Engine
 
-<h1>Working with App Engine</h1>
+<h1>Work with App Engine</h1>
 
 If you are not familiar with App Engine, read [https://developers.google.com/appengine/docs/whatisgoogleappengine What is Google App Engine?].
 
