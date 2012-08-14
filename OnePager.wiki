@@ -44,12 +44,18 @@ This page doesn't go into any explanations. It simply lists all of the steps inv
       # [CreateHomePage Modify the course home page].
         # In {{{views/course.html}}}, change the course name and description.
         # (Optional) If your course has a different number of units or assessments than the example course, you must change the code in {{{views/course.html}}}. See [CreateHomePage Create HomePage].
-        # In {{{data/unit.csv}}}, change information about the units. 
+        # In {{{data/unit.csv}}}, [CreateHomePage#List_of_units change information about the units]. 
         # When you change {{{unit.csv}}}, you must also [AppEngine#Modify_your_app_and_see_the_effects reload all data].
-      # [CreateLessons Implement course lessons.]<br>Change the look of lesson pages at {{{views/unit.html}}}; change the lessons themselves in {{{data/lesson.csv}}}. (Changing {{{lesson.csv}}} requires [AppEngine#Modify_your_app_and_see_the_effects reloading all data].)
-      # [CreateActivities Implement Activities.]<br>Change the look of activity pages at {{{views/activity.html}}}; define the activities themselves in files named {{{activity-}}}_*{{{N.M}}}*_{{{.js}}}, where _*{{{N}}}*_ is the unit number and _*{{{M}}}*_ is the lesson number. See [CreateActivities#Writing_activities Writing activities] for the format of activities.
-      # [CreateAssessments Implememnt Assessments.]<br>Change the look of assessment pages at  {{{views/assessment.html}}}; define the assessments themselves in files named {{{activity-}}}_*{{{SUFFIX}}}*_{{{.js}}}, where _*{{{SUFFIX}}}*_ is one of {{{Pre}}}, {{{Mid}}}, or {{{Fin}}}. See [CreateAssessments#Writing_assessments Writing assessments] for the format of assessments.
-      # [CreateAssessments#Sending_email_after_assessments Fix the messages] sent to students after they take assessments in {{{views/test_confirmation.html}}}.
+      # [CreateLessons Implement course lessons.]
+        # Change the look of lesson pages at {{{views/unit.html}}}.
+        # Change the [CreateLessons#Lesson_content lesson content] in {{{data/lesson.csv}}}. (Changing {{{lesson.csv}}} requires [AppEngine#Modify_your_app_and_see_the_effects reloading all data].)
+      # [CreateActivities Implement Activities.]
+        # Change the look of activity pages at {{{views/activity.html}}}.
+        # [CreateActivities#Writing_activities Define the activity content] in files named {{{activity-}}}_*{{{N.M}}}*_{{{.js}}}, where _*{{{N}}}*_ is the unit number and _*{{{M}}}*_ is the lesson number.
+      # [CreateAssessments Implememnt Assessments.]
+        # Change the look of assessment pages at  {{{views/assessment.html}}}.
+        # [CreateAssessments#Writing_assessments  Define the assessments] in files named {{{activity-}}}_*{{{SUFFIX}}}*_{{{.js}}}, where _*{{{SUFFIX}}}*_ is one of {{{Pre}}}, {{{Mid}}}, or {{{Fin}}}. 
+        # [CreateAssessments#Sending_email_after_assessments Fix the messages] sent to students after they take assessments in {{{views/test_confirmation.html}}}.
       # [Certificates Create a Certificate.]
       # [UploadCode Upload Your App to production.]
     # [Metrics Implement metrics.]
