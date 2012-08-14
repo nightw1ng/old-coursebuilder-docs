@@ -8,8 +8,6 @@ When students click on a unit from the home page, they go to the page for the fi
 
 <img src="https://www.corp.google.com/~vpg/no_crawl/cb/lesson.png" height=529 width=420 />
 
-<font color=red><<TODO fix link>></font>
-
 This page talks about the mechanics of creating a lesson page and its content. For information on what to put in your lesson, see [TwoDevelop Develop the Content without the Technology].
 
 == What happens on a lesson page ==
@@ -73,8 +71,6 @@ When you edit the file, leave the first line as is. Replace all of the other lin
 The following image shows where this information appears on the screen:
 
 https://www.corp.google.com/~vpg/no_crawl/cb/annotatedlesson.png
-
-<font color=red><<TODO fix link>></font>
 
 === Debugging changes ===
 
