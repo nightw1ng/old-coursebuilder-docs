@@ -34,7 +34,7 @@ This is just a checklist of steps. All details are in the links. Below,  _*{{{AP
       # [CreateActivities Implement Activities.]<br>Change the look of activity pages at _*{{{APPPATH}}}*_{{{/views/activity.html}}}; define the activities themselves in files named {{{activity-}}}_*{{{N.M}}}*_{{{.js}}}, where _*{{{N}}}*_ is the unit number and _*{{{M}}}*_ is the lesson number. See [CreateActivities#Writing_activities Writing activities] for the format of activities.
       # [CreateAssessments Implememnt Assessments.]<br>Change the look of assessment pages at _*{{{APPPATH}}}*_{{{/views/assessment.html}}}; define the assessments themselves in files named {{{activity-}}}_*{{{SUFFIX}}}*_{{{.js}}}, where _*{{{SUFFIX}}}*_ is one of {{{Pre}}}, {{{Mid}}}, or {{{Fin}}}. See [CreateAssessments#Writing_assessments Writing assessments] for the format of assessments.
       # [Certificates Create a Certificate.]
-      # [UploadApp Upload Your App to production.]
+      # [UploadCode Upload Your App to production.]
     # [Metrics Implement metrics.]
       # [HappinessMetrics Create happiness metrics.]
       # [ReachAndEngagementMetrics Create reach & engagement metrics.]
