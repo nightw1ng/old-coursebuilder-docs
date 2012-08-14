@@ -23,11 +23,7 @@ The file {{{CB/app.yaml}}} is the configuration file for your App Engine app. Be
   # Edit {{{CB/app.yaml}}}.<br>The first line is:<br>{{{application: # FIXME: Put your application id here}}}
   # Replace {{{# FIXME: Put your application id here}}} with the name you choose for your app. 
 
-Pick a single word as an app name. It's best if you keep all the letters of the app name in lowercase and select a directory/folder that does not have a space and does not have upper case characters in it. 
-
-*Note:* Because your app will run in production<sup>1</sup>, you must choose a name that hasn't already been used by anybody else. Unfortunately, you only find out if the name you choose is available when you register the app with Google. You must register it before you can upload it. For more information, see [UploadCode Upload Your Code].
-
-  <sup>1</sup> What does it mean for an app to run in production? In production, your app lives in Google datacenters. Google runs the production server. By default, your app automatically gets a domain name so that it can be reached from almost anywhere on the internet. That domain is of the form _{{{APP_ID}}}_{{{.appspot.com}}} where _{{{APP_ID}}}_ is the app ID you chose. App ID names can only be used once and can never be returned to the pool of available names. Whether your app is running, not running, or deleted, once a name has been chosen, it can no longer be used by any other app. More details on creating an app can be found in the [https://developers.google.com/appengine/docs/python/gettingstartedpython27/uploading official docs]. 
+Pick a single word as an app name. It's best if you keep all the letters of the app name in lowercase and select a directory/folder that does not have a space and does not have upper case characters in it. See [AppEngine#Naming_your_app_for_production Naming your app for production] for restrictions on naming.
   
 Later, if you decide to customize your course, you may need more information on configuration. If you do, see the [https://developers.google.com/appengine/docs/python/config/appconfig#Required_Elements official documentation].
 
