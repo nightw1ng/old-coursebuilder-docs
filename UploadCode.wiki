@@ -1,48 +1,17 @@
+
 #summary How to upload your course code to Google production servers.
 
 <h1>(When you're ready) Upload your app to Google</h1>
 
-<font color=red><<TODO  Write this. Currently just stolen from the app engine docs.
-
-Some more AE docs: https://developers.google.com/appengine/docs/python/gettingstarted/uploading
->></font>
-
-== Upload ==
 *Do not do this step* until you are ready for your code to go live in production; that is, until you are ready for your audience to see your course.
 
-If you want to see what this app looks like in production, you can upload it to Google. When traffic comes to your app, App Engine servers will start up an instance running your app and enable access to it via its default URL of _APP_ID_.appspot.com to handle requests. To get your app to Google, there are two main options: using the Launcher or command-line tool. (Be sure to have registered your app as we described earlier, otherwise you won't be able to upload your app.)
+If you want to see what your app looks like in production, you can upload it to Google. When traffic comes to your app, App Engine servers start up an instance running your app and enable access to it from its default URL of _{{{APP_ID}}}_{{{.appspot.com}}} to handle requests. To get your app to Google, there are two main options: use the Launcher or the command-line tool. (Be sure to have registered your app as described in [GetCode Get the Source Code], otherwise you won't be able to upload your app.)
 
-Using the Launcher is fairly straightforward: click on the "Deploy" button and enter your credentials. Using the command-line is almost as easy. You use the appcfg.py script along with the "update" command and the app's "home" directory (that contains the {{{app.yaml}}}, {{{main.py}}}, etc.). In the example below, we're already at home, so we use "." as the directory to upload. Here is what that experience should look like:
+Using the Launcher is fairly straightforward: click on the *Deploy* button and enter your credentials. Using the command-line is almost as easy.  
 
-{{{
-$ appcfg.py update .
-    Application: _APP\_ID_; version: 1.
-    Server: appengine.google.com.
-    Scanning files on local disk.
-    Initiating update.
-    Email: _YOUR\_EMAIL_
-    Password for _YOUR\_EMAIL_: *****
-    Cloning 2 static files.
-    Cloning 3 application files.
-    Uploading 2 files and blobs.
-    Uploaded 2 files and blobs
-    Precompilation starting.
-    Precompilation completed.
-    Deploying new version.
-    Checking if new version is ready to serve.
-    Will check again in 1 seconds.
-    Checking if new version is ready to serve.
-    Will check again in 2 seconds.
-    Checking if new version is ready to serve.
-    Closing update: new version is ready to start serving. Uploading index definitions.
-}}}
+  {{{cd }}}_*{{{PATHTOAPPLICATION}}}*_<br>
+  {{{appcfg.py update .}}}
 
-== Connect with the production server ==
+where _*{{{PATHTOAPPLICATION}}}*_ is the directory/folder containing your app.
 
-It can take up to a minute to upload your app (generally it's less than 30 seconds but usually not more than a minute). Once the upload has been completed and confirmed, you (and everyone else on the planet not blocked from Google) should be able to visit http://_APP_ID_.appspot.com (depends on your _APP_ID_) and verify that your "Hello World" app is indeed available to all, just like in the Figure below.
-
-<img alt="Hello World app live in production" src="https://developers.google.com/academy/apis/cloud/appengine/intro/images/image08.png" title="Figure 5: 'Hello World' running in production and live to the world!" />
-
-*Figure 5*: "Hello World" app running in production and live to the world!
-
-That's it! You just "wrote" and upload your first web app for Google App Engine! We can't wait to see what you do next! :-)
+It can take up to a minute to upload your app; generally it's less than 30 seconds but usually not more than a minute. Once the upload complete and confirm, you (and everyone else on the planet not blocked from Google) can visit {{{http://}}}_*{{{APP_ID}}}*_{{{.appspot.com}}} (with your_*{{{APP_ID}}}*_) and verify that your app is indeed available to all.
