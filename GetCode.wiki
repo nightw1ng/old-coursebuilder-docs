@@ -23,7 +23,7 @@ The file {{{CB/app.yaml}}} is the configuration file for your App Engine app. Be
   # Edit {{{CB/app.yaml}}}.<br>The first line is:<br>{{{application: # FIXME: Put your application id here}}}
   # Replace {{{# FIXME: Put your application id here}}} with the name you choose for your app. 
 
-Pick a single word as an app name. It's best if you keep all the letters of the app name in lowercase and select a directory/folder that does not have a space and does not have upper case characters in it. See [AppEngine#Naming_your_app_for_production Naming your app for production] for restrictions on naming.
+Pick a single word as an app name. It's best if you keep all the letters of the app name in lowercase and select a directory/folder that does not have a space and does not have upper case characters in it. See [AppEngine#Name_your_app_for_production Name your app for production] for restrictions on naming.
   
 Later, if you decide to customize your course, you may need more information on configuration. If you do, see the [https://developers.google.com/appengine/docs/python/config/appconfig#Required_Elements official documentation].
 
@@ -78,19 +78,7 @@ By default, your app is only available from the machine on which you start it. T
 
 where _*{{{APPPATH}}}*_ is the directory/folder containing your app.
 
-=== Troubleshooting ===
-
-If you do not see the registration page, there may be an error somewhere. If you start your app from the command line, errors messages appear on the console. If you start your app from the Launcher, error messages appear in the logs. To see the logs, click on *Logs* in the Launcher's task bar.
-
-One common problem is that, even though you downloaded Python 2.7, App Engine may not notice. In this case, the log says either that you are not runing Python 2.7 or has warnings about using a runtime older that is than the production runtime.
-
-In this situation, you need to manually specify the path for Python 2.7. To do so:
-  # First, find out what that path is:
-    # Open a Unix shell.
-    # Run the command {{{which python}}}
-    # Copy the path that appears (for example, {{{/Library/Frameworks/Python.framework/Versions/2.7/bin/python}}})
-  # From the *!GoogleAppEngineLauncher* menu, choose *Preferences*.<br>A dialog box appears.
-  # On the *Python Path* line, enter the path you found above.
+If you do not see the registration page, read [AppEngine#Troubleshooting Troubleshooting].
 
 == 7. Upload the unit and lesson data ==
 
