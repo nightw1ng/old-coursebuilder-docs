@@ -74,9 +74,9 @@ Because the command-line version has more options, you may wish to run the devel
 
 By default, your app is only available from the machine on which you start it. To get access to your development server from another machine on the network, you need to request this through the command line. To do so, do not run the server using the Launcher. Instead, run your development server with this command
 
-  {{{cd }}}_*{{{[PATHTOAPPLICATION]}}}*_<br>{{{dev_appserver.py . -a 0.0.0.0}}}
+  {{{cd }}}_*{{{APPPATH}}}*_<br>{{{dev_appserver.py . -a 0.0.0.0}}}
 
-where _*{{{[PATHTOAPPLICATION]}}}*_ is the directory/folder containing your app.
+where _*{{{APPPATH}}}*_ is the directory/folder containing your app.
 
 === Troubleshooting ===
 
@@ -98,7 +98,7 @@ Before you can run the sample code, you need to upload the data files that repre
 
 To upload the data, first make sure that your development server is running (as described in step 6). Then, open a Unix shell. In that shell:
 
-  # Run<br>{{{cd }}}_*{{{PATHTOAPPLICATION}}}*_{{{/data}}}<br>where _*{{{PATHTOAPPLICATION}}}*_ is the directory/folder you specified in step 4.
+  # Run<br>{{{cd }}}_*{{{APPPATH}}}*_{{{/data}}}<br>where _*{{{APPPATH}}}*_ is the directory/folder you specified in step 4.
   # Run<br>{{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br>where _*{{{PORT}}}*_ is the port number you specified in step 4.
   # The system prompts you to enter your credentials.<br>Your credentials are your Google account name and password.
   # Run<br>{{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}}
