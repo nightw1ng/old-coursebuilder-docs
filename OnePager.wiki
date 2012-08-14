@@ -2,7 +2,7 @@
 
 <h1>Course Builder in a Nutshell</h1>
 
-<font color=red><<TODO working here>></font>
+<font color=red><<TODO working here. Add details of what MUST change in each file.>></font>
 
 This is just a checklist of steps. All details are in the links. Below,  _*{{{APPPATH}}}*_ is the path to the directory/folder containing your application.
 
