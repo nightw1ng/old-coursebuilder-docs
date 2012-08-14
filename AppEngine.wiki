@@ -1,19 +1,156 @@
+
+
 #summary Things you need to know App Engine.
 
 <h1>About App Engine</h1>
 
-<wiki:toc max_depth="2" />
-
 If you are not familiar with App Engine, read [https://developers.google.com/appengine/docs/whatisgoogleappengine What is Google App Engine?].
 
-== Naming your app ==
+Youo do not need to be an App Engine expert to work with Course Builder. There are just a few things you should be familiar with. Much of this is discussed on other pages. We summarizes them here.
 
-What does it mean for an app to run in production? In production, your app lives in Google datacenters. Google runs the production server. 
+<wiki:toc />
 
-By default, your app automatically gets a domain name so that it can be reached from almost anywhere on the internet. That domain is of the form _{{{APP_ID}}}_{{{.appspot.com}}} where _{{{APP_ID}}}_ is the app ID you chose. App ID names can only be used once and can never be returned to the pool of available names. Whether your app is running, not running, or deleted, once a name has been chosen, it can no longer be used by any other app. 
+== Download and install Python 2.7 ==
 
-More details on creating an app can be found in the [https://developers.google.com/appengine/docs/python/gettingstartedpython27/uploading official docs]. 
- 
+Make sure you have Python 2.7 on your system. Visit the general Python 2.7 [http://python.org/download download page] to get the right version for you. (Python 2.7.3 was the latest at the time of this writing.)
+
+== Download and install App Engine ==
+
+Follow [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python this link] to download the Python App Engine SDK for your platform.
+
+  * *PC:* Run the downloaded installer .msi by doubleclicking. Follow all on-screen instructions. Once completed, you should find the App Engine Launcher icon on your desktop or be able to find it via Start -> Programs. There is no equivalent set of command-line tools for PCs, so there you must use the Launcher.
+  * *Mac:* Open the downloaded .dmg file and drag the App Engine icon into the Applications folder. Optionally,  open the Applications folder and drag the App Engine icon to your Dock so that you can start the App Engine Launcher more conveniently. Putting App Engine int he Applications folder also installs the command-line tools.
+  * *Linux or other POSIX-compliant system:* After downloading the .zip file, go to the directory where you want to install App Engine. When you unzip the archive, it creates a subdirectory named google_appengine. Add that directory to your shell's path so that it can find the command-line tools when you need them.
+
+When developing on Google App Engine, you have a choice of performing administrative tasks using a graphical interface (GUI) or a traditional command-line interface. The GUI, called The Launcher, is available for users of PCs or Macs. Command-line tools are available on any POSIX-based system such as Mac OS X or Linux. The Python App Engine SDK includes both tools. 
+
+== Name your app for production ==
+
+When you're ready to make your course available to students, you'll run your app in production. In production, your app lives in Google datacenters. Google runs the production server. Google must be able to provide a URL for people to use to reach your application.
+
+By default, Google gives your app a domain name so that it can be reached from almost anywhere on the internet. That domain is of the form _*{{{APP_ID}}}*_{{{.appspot.com}}} where _*{{{APP_ID}}}*_ is the app ID you chose to record in the {{{app.yaml}}} file. You must choose a name that hasn't already been used by anybody else.
+
+App ID names can only be used once and can never be returned to the pool of available names. Whether your app is running, not running, or deleted, once a name has been chosen, it can no longer be used by any other app. More details on creating an app can be found in the [https://developers.google.com/appengine/docs/python/gettingstartedpython27/uploading official docs]. 
+
+ Unfortunately, you only find out if the name you choose is available when you register the app with Google. You must register it before you can upload it. For more information, see [UploadCode Upload Your App].
+
+== Start your server ==
+
+Your development server is where you modify and test your application before releasing it to production.
+
+=== From the Launcher ===
+
+To start the development server from the Launcher:
+  # Select your app. 
+  # When it's highlighted, click the *Run* button to start the server (for that app). <br><br>Once the icon to the left of the app name is green, your server is ready to accept requests.
+
+Alternatively, because the command-line version has more options, you may wish to run the development server from your Unix command-line shell. 
+
+=== From a shell ===
+
+Open a Unix command-line shell. In the shell:
+
+  {{{cd }}}_*{{{APPPATH}}}*_<br>
+  {{{dev_appserver.py . &}}}
+
+where _*{{{APPPATH}}}*_ is the directory/folder containing your app. As the command runs, you may see some warnings you can ignore and questions you must answer.
+
+Once the app is set up, you see a URL reference to the hostname and port you use to connect to your app from a web browser. It defaults to {{{http://localhost:8080}}}.
+
+The {{{&}}} at the end of the {{{dev_appserver.py}}} command tells Unix to run this command in the background. That means that while your server runs you can continue to use that shell for other operations.
+
+=== From a shell, to enable remote access ===
+
+By default, your app is only available from the machine on which you start it. To get access to your development server from another machine on the network, you need to request this through the command line. Start your development server with this command:
+
+  {{{cd }}}_*{{{APPPATH}}}*_<br>
+  {{{dev_appserver.py . -a 0.0.0.0 &}}}
+
+where _*{{{APPPATH}}}*_ is the directory/folder containing your app. (The {{{&}}} has this comand run in the background.)
+
+=== From a shell, to clear lesson and unit data ===
+
+Before you can put new or changed data into your data store, you must clear out the data that is already there. This is only necessary when you change either {{{data/lesson.csv}}} or {{{data/unit.csv}}}.
+
+From a Unix shell simply start your development server with an extra argument:
+
+  {{{cd }}}_*{{{APPPATH}}}*_<br>
+  {{{dev_appserver.py --clear_datastore . &}}}
+
+where _*{{{APPPATH}}}*_ is the directory containing your app.  (The {{{&}}} has this comand run in the background.)
+
+== Stop your server ==
+
+=== From the Launcher ===
+If you started your server from the Launcher, you can stop it there:
+
+  # Select your app. 
+  # When it's highlighted, click the *Stop* button to start the server (for that app). <br><br>Once the icon to the left of the app name is gray, your server is stopped.
+
+=== From a shell ===
+If you started your server from the command line, you can stop it there:
+
+  # Using the {{{ps}}} command, find out the process number associated with your server. You'll see something like the following<br><br>{{{    PID TTY TIME CMD}}}<br>{{{    25603 ttys000    0:00.07 -bash}}}<br>{{{    25993 ttys000    0:00.71 /Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python /usr/local/bin/dev_appserver.py .}}}<br><br>The line that includes {{{dev_appserver.py}}} is the server process.<br>
+  # Note the number of the process. In this example, {{{25993}}}.<br>
+  # Kill that process with the following command:{{{  kill 25993}}}
+
+== Test on your server == 
+
+
+== Change the data in your server == 
+<font color=red><<TODO When/do users need to restart the server? Are all the changes they can make immediately live? I know changes to the views are immediate; what about to the JS files? >></font>
+
+
+On the other hand, if you change the content of the {{{data/unit.csv}}} file, you must load the changed data into your development server. To do so:
+
+1. Stop your development server.
+    * If you're using the Launcher to run your server, exit the Launcher.
+    * If you're using the command line, kill the {{{dev_appserver}}} process.
+
+2. Start your development server from the command line, clearing out the old data:
+
+  {{{cd }}}_*{{{APPPATH}}}*_<br>
+  {{{dev_appserver.py . --clear_datastore .}}}
+where _*{{{APPPATH}}}*_ is the directory containing your app.
+
+3. Stop running the development server by killing the dev_appserver.py command.
+
+4. Restart the development server, either from the Launcher or from the command line.
+
+5. In another Unix shell:
+
+  {{{cd }}}_*{{{APPPATH/data}}}*_<br>
+  {{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br>
+  {{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}}
+
+where _*{{{APPPATH}}}*_ is the directory containing your app and _*{{{PORT}}}*_ is your app's port number.
+
+
+== Troubleshooting ==
+
+=== Development server won't start ===
+
+If you do not see the registration page when you start your server for the first time, there may be an error somewhere.
+
+If you start your app from the command line, errors messages appear on the console. If you start your app from the Launcher, error messages appear in the logs. To see the logs, click on *Logs* in the Launcher's task bar.
+
+One common problem is that, even though you downloaded Python 2.7, App Engine may not notice. In this case, the log says either that you are not runing Python 2.7 or has warnings about using a runtime older that is than the production runtime.
+
+In this situation, you need to manually specify the path for Python 2.7. To do so:
+  # First, find out what that path is:
+    # Open a Unix shell.
+    # Run the command {{{which python}}}
+    # Copy the path that appears (for example, {{{/Library/Frameworks/Python.framework/Versions/2.7/bin/python}}})
+  # From the *!GoogleAppEngineLauncher* menu, choose *Preferences*.<br>A dialog box appears.
+  # On the *Python Path* line, enter the path you found above.
+
+=== Cannot connect to upload data ===
+
+When you enter your credentials, you may get the following error:
+
+  {{{urllib2.URLError: <urlopen error [Errno 61] Connection refused>}}}
+
+If you do, then you have forgotten to start your development server. Go back to step 6.
 
 == App Engine costs ==
 
@@ -21,13 +158,7 @@ More details on creating an app can be found in the [https://developers.google.c
 
 Note that the number of emails you can send may be limited by certain AppEngine quotas: please see https://developers.google.com/appengine/docs/quotas#Mail for more details.
 
-
 >></font>
-
-== Testing on your server == 
-
-<font color=red><<TODO When/do users need to restart the server? Are all the changes they can make immediately live? I know changes to the views are immediate; what about to the JS files? >></font>
-
 
 == Official App Engine documentation ==
 
