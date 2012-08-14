@@ -1,8 +1,8 @@
-# How to create assessments (graded tests) for your course.
+#summary How to create assessments (graded tests) for your course.
 
 =Create Assessments=
 
-<font color=red><<TODO working here>></font>
+<font color=red><<TODO working here. How this will actually work is under discussion. The current situation is a tad grim.>></font>
 
 At certain parts throughout the course, students take assessments to see how they're doing:
 
