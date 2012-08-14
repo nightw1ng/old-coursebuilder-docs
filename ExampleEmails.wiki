@@ -99,6 +99,4 @@ You can print out the attached certificate and hang it on your wall.  We hope yo
 Cheers,<br>
 Power Searching with Google course staff
 
-<img src="https://www.corp.google.com/~vpg/no_crawl/certificate.png" height="246" width="320 />
-
-<font color=red><<TODO move image someplace real. Currently in my nocrawl directory>></font>
+<img src="https://www.corp.google.com/~vpg/no_crawl/cb/certificate.png" height="246" width="320 />
