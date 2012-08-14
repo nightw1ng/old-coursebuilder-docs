@@ -20,7 +20,7 @@
       * [CreateActivities Create Activities]
       * [CreateAssessments Create Assessments]
       * [Certificates Certificates]
-      * [UploadCode Upload Your Code]
+      * [UploadCode Upload Your App to Google]
       * [AppEngine About App Engine]
     * [Metrics Metrics]
       * [HappinessMetrics Happiness Metrics]
