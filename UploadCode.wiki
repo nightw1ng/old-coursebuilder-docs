@@ -8,9 +8,9 @@ If you want to see what your app looks like in production, you can upload it to 
 
 Using the Launcher is fairly straightforward: click on the *Deploy* button and enter your credentials. Using the command-line is almost as easy.  
 
-  {{{cd }}}_*{{{PATHTOAPPLICATION}}}*_<br>
+  {{{cd }}}_*{{{APPPATH}}}*_<br>
   {{{appcfg.py update .}}}
 
-where _*{{{PATHTOAPPLICATION}}}*_ is the directory/folder containing your app.
+where _*{{{APPPATH}}}*_ is the directory/folder containing your app.
 
 It can take up to a minute to upload your app; generally it's less than 30 seconds but usually not more than a minute. Once the upload complete and confirm, you (and everyone else on the planet not blocked from Google) can visit {{{http://}}}_*{{{APP_ID}}}*_{{{.appspot.com}}} (with your_*{{{APP_ID}}}*_) and verify that your app is indeed available to all.
