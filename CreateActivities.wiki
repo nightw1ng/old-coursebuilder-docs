@@ -201,7 +201,7 @@ This code represents a single !JavaScript object with several attributes. The fi
 https://www.corp.google.com/~vpg/no_crawl/cb/answer-free.png
 
 
-== Debugging changes ==
+== Testing changes ==
 
 Changes you make to any file in the {{{views}}} directory or to any file in the {{{assets/js}}} directory appear automatically in your running development server.
 
