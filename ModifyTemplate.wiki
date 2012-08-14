@@ -46,8 +46,8 @@ You change this header and footer once for both registration pages.  In the file
 
 You can, of course, make these pages look more different.
 
-== Debugging changes ==
+== Testing changes ==
 
 Changes you make to any file in the {{{views}}} directory appear automatically in your running development server.
 
-That is, after you make a change to one of these files, simply load (or reload) a page that uses that view and the change appears. 
+That is, after you make a change to one of these files, simply load (or reload) a page that uses that view and the change appears.
