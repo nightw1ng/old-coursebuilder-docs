@@ -78,7 +78,7 @@ Changes you make to any file in the {{{views}}} directory appear automatically i
 
 That is, after you make a change to one of these files, simply load (or reload) a page that uses that view and the change appears. 
 
-On the other hand, if you change the content of the {{{data/unit.csv}}} file, you must load the changed data into your development server, as described in [AppEngine_Testing_on_your_server].
+On the other hand, if you change the content of the {{{data/lesson.csv}}} file, you must load the changed data into your development server as described in [AppEngine#Modify_your_app_and_see_the_effects Modify your app and see the effects].
 
 == Working with Video ==
 
