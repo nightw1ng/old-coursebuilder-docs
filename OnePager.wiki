@@ -1,10 +1,11 @@
+
 #summary Checklist of all steps to create a MOOC using Course Builder.
 
 <h1>Course Builder in a Nutshell</h1>
 
 <font color=red><<TODO working here>></font>
 
-This is just a checklist of steps. All details are in the links.
+This is just a checklist of steps. All details are in the links. Below,  _*{{{APPPATH}}}*_ is the path to the directory/folder containing your application.
 
   # [OnePlan Plan for 30 minutes.]
     # Define the problem statement and high-level goal of the course.
@@ -22,17 +23,17 @@ This is just a checklist of steps. All details are in the links.
   # [ThreeImplement Implement your content using your technology.]
     # [CourseMaterial Implement the course material.]
       # [GetCode Get the sample code and run it with your name.]
-        # Download and install Python.
-        # Download and install App Engine.
-        # Pick a name for your app.
+        # Download and install  [http://python.org/download Python].
+        # Download and install [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python App Engine].
+        # Pick a name for your app and edit _*{{{APPPATH}}}*_{{{/app.yaml}}}.
         # Load the app.
-        # Upload sample data to the app.
-      # [ModifyTemplate Modify the basic look and feel of course pages.]
-      # [CreateRegistration Modify the registration page.]
-      # [CreateHomePage Modify the course home page.]
-      # [CreateLessons Implement course lessons.]
-      # [CreateActivities Implement Activities.]
-      # [CreateAssessments Implememnt Assessments.]
+        # [GetCode#7._Upload_the_unit_and_lesson_data Upload sample data] to the app.
+      # [ModifyTemplate Modify the basic look and feel of course pages]<br>by changing _*{{{APPPATH}}}*_{{{/views/base.html}}} and _*{{{APPPATH}}}*_{{{/views/base_registration.html}}}.
+      # [CreateRegistration Modify the registration pages]<br>at _*{{{APPPATH}}}*_{{{/views/register.html}}} and  _*{{{APPPATH}}}*_{{{/views/confirmation.html}}}.
+      # [CreateHomePage Modify the course home page]<br>at  _*{{{APPPATH}}}*_{{{/views/course.html}}} and   _*{{{APPPATH}}}*_{{{/data/unit.csv}}}. (Changing {{{unit.csv}}} requires [AppEngine#Modify_your_app_and_see_the_effects reloading all data].)
+      # [CreateLessons Implement course lessons.]<br>Change the look of lesson pages at _*{{{APPPATH}}}*_{{{/views/unit.html}}}; change the lessons themselves in _*{{{APPPATH}}}*_{{{/data/lesson.csv}}}. (Changing {{{lesson.csv}}} requires [AppEngine#Modify_your_app_and_see_the_effects reloading all data].)
+      # [CreateActivities Implement Activities.]<br>Change the look of activity pages at _*{{{APPPATH}}}*_{{{/views/activity.html}}}; define the activities themselves in files named {{{activity-}}}_*{{{N.M}}}*_{{{.js}}}, where _*{{{N}}}*_ is the unit number and _*{{{M}}}*_ is the lesson number. See [CreateActivities#Writing_activities Writing activities] for the format of activities.
+      # [CreateAssessments Implememnt Assessments.]<br>Change the look of assessment pages at _*{{{APPPATH}}}*_{{{/views/assessment.html}}}; define the assessments themselves in files named {{{activity-}}}_*{{{SUFFIX}}}*_{{{.js}}}, where _*{{{SUFFIX}}}*_ is one of {{{Pre}}}, {{{Mid}}}, or {{{Fin}}}. See [CreateAssessments#Writing_assessments Writing assessments] for the format of assessments.
       # [Certificates Create a Certificate.]
       # [Upload Your App to production.]
     # [Metrics Implement metrics.]
