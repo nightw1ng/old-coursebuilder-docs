@@ -92,13 +92,7 @@ To upload the data, first make sure that your development server is running (as 
   # Run<br>{{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}}
   # The system prompts you to enter your credentials again.
 
-=== Troubleshooting ===
-
-When you enter your credentials, you may get the following error:
-
-  {{{urllib2.URLError: <urlopen error [Errno 61] Connection refused>}}}
-
-If you do, then you have forgotten to start your development server. Go back to step 6.
+If you have trouble with this command, see [AppEngine#Troubleshooting Troubleshooting].
 
 == 8. Connect to the development server ==
 
