@@ -29,7 +29,7 @@ During [http://www.powersearchingwithgoogle.com/ Power Searching with Google], w
 
 Be very careful here. If you use email, you must avoid spamming your students by sending too many emails. On the other hand, do send enough emails to keep their interest without annoying them. 
 
-If you decide to send emails, you need to first collect your students email addresses. You do this during the registration process <font color=red><<TODO link to description>></font>. Create an email alias containing all of your students' email addresses.
+If you decide to send emails, you need to first collect your students email addresses. You do this during the [CreateRegistration registration process]. Create an email alias containing all of your students' email addresses.
 
 Note that if you use App Engine [https://developers.google.com/appengine/docs/python/mail/ to send email], you need to know about the [https://developers.google.com/appengine/docs/quotas#Mail quotas] App Engine imposes.
 
