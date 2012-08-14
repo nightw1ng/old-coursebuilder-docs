@@ -1,15 +1,25 @@
+# How to create assessments (graded tests) for your course.
+
 =Create Assessments=
 
-<font color=red><<TODO write this>>
+<font color=red><<TODO working here>></font>
 
-At certain parts throughout the course, students take assessments to see how they're doing. An assessment page has the simplest form of all:
+At certain parts throughout the course, students take assessments to see how they're doing:
 
-https://www.corp.google.com/~vpg/no_crawl/cb/assessment-zig.png
+<img src="https://www.corp.google.com/~vpg/no_crawl/cb/assessment-zig.png" height=529 width=420 />
+
+== What happens on an assessment page ==
+
+An assessment is a graded test, typically covering material from several units and lessons. With ourexperimental code, you have control over how many graded assessments you provide and how each of those assessments counts in the final scoring for a student’s grade.
+
+When students submit an assessment, the code determines how they did on the assessment and provides the feedback you specify. It also stores the student score for later retrieval.
+
+== Page layout ==
 
 This page consists of three areas:
-  * The *header* is the same as for the home page.
+  * The *header* is the same as for the home page. See [ModifyTemplate Modify Course Template] for information about this file.
   * The *content area* contains the questions and answer areas and a submit button.
-  * The *footer* is the same as for the home page.
+  * The *footer* is the same as for the home page. See [ModifyTemplate Modify Course Template] for information about this file.
 
 The app uses three files to render this page:
   * {{{views/base.html}}} defines the header and footer areas.
@@ -17,23 +27,103 @@ The app uses three files to render this page:
   * {{{assets/js/assessment-}}}_*{{SUFFIX}}}*_{{{.js}}} contains a !JavaScript array that fills in the actual question and answer areas for the assessment. Each assessment has its own file.
 
 
+== Writing assessments ==
+
+<font color=red><<TODO put on your thinking cap. this is the hardes thing you need to do. >></font>
+
 {{{
 
-// Usage instructions: Create a single variable named 'activity' consisting
-// of a list of complete HTML elements (e.g., no opening tag without a closing
-// tag) and JavaScript objects representing custom questions to render.
-//
-// When the activity page loads, activity-generic.js will render the contents
-// of 'activity' into the enclosing HTML webpage.
+function saveAnswersMid(submitAnswers) {
+  $('#answerOutput').val('');
 
-var activity = [
-  '<b>This assessment addresses content in units 1-6. You can try it as many times as you like. When you click "Check Answers," we will give you your score and give you a list of lessons to review. Please note that some of the assessment questions address functionality that does not work well on tablet computers.</b><br><br>',
+  var scoreArray = [];
 
-  '1. Where will the Summer Olympics of 2016 be held? <p>',
-  ' <input type="radio" name="fin1" > Chicago <br>',
-  ' <input type="radio" name="fin1" > Tokyo <br>',
-  ' <input type="radio" name="fin1"  value="correct"> Rio de Janeiro <br>',
-  ' <input type="radio" name="fin1" > Madrid <br>',
-  ' <input type="radio" name="fin1" > I don\'t know <br><br>',
+  scoreArray[0] = checkQuestionRadioSimple(document.assessment.mid1);
+  scoreArray[1] = checkQuestionRadioSimple(document.assessment.mid2);
+
+  scoreArray[2] = 0;
+  if (checkText('mid7text', /\-kennel/i)) {
+    scoreArray[2] = 1;
+  }
+
+  scoreArray[3] = 0;
+  if (checkText('mid8text', /define(:| )brindle/i)) {
+    scoreArray[3] = 1;
+  }
+
+  scoreArray[4] = checkQuestionRadioSimple(document.assessment.mid9);
+
+  var lessonArray = ["3.1", "1.5", "3.3", "2.2", "2.3"];
+
+  // only do following if checking answers
+  studylessons = "";
+  if (!submitAnswers) {
+    for (var i in scoreArray) {
+      if (scoreArray[i] == 0) {
+        studylessons += lessonArray[i]+"   ";
+      }
+    }
+  }
+
+  var myForm = document.createElement("form");
+  myForm.method="post";
+  myForm.action = "/answer";
+
+  var type = 'midcourse';
+  var myInput = document.createElement("input");
+  myInput.setAttribute("name", "type");
+  myInput.setAttribute("value", type);
+  myForm.appendChild(myInput);
+
+  var numCorrect = 0;
+  for (var i in scoreArray) {
+    myInput = document.createElement("input") ;
+    myInput.setAttribute("name", i) ;
+    myInput.setAttribute("value", scoreArray[i]);
+    myForm.appendChild(myInput) ;
+    numCorrect += scoreArray[i];
+  }
+
+  score = numCorrect / 5;
+  score = roundNumber(score, 1) * 100;
+
+  if (!submitAnswers) {
+    var outtext="You received "+score+"%.\n\n";
+
+    if (studylessons != "") {
+      outtext+="Here are lessons you could review to improve your score: "+studylessons+"\n\n";
+    }
+    if (score < 100) {
+      outtext+="Press Submit below to save your scores or Return to Course to study the recommended lessons. You can also edit your answers above before clicking Submit.";
+    }
+    else {
+      outtext+="Congratulations! Please submit your grade.";
+    }
+
+    $('#answerOutput').val(outtext);
+  }
+  else {
+    myInput = document.createElement("input");
+    myInput.setAttribute("name", "Number Correct");
+    myInput.setAttribute("value", numCorrect);
+    myForm.appendChild(myInput);
+    document.body.appendChild(myForm);
+
+    myInput = document.createElement("input");
+    myInput.setAttribute("name", "Score");
+    myInput.setAttribute("value", score);
+    myForm.appendChild(myInput);
+
+    document.body.appendChild(myForm);
+    myForm.submit();
+    document.body.removeChild(myForm);
+  }
+}
+
 }}}
-</font>
+
+== Debugging changes ==
+
+Changes you make to any file in the {{{views}}} directory or to any file in the {{{assets/js}}} directory appear automatically in your running development server.
+
+That is, after you make a change to one of these HTML or JavaScript files, simply load (or reload) a page that uses that page and the change appears.
