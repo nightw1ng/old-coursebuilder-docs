@@ -70,7 +70,7 @@ To start the development server from the Launcher:
 Because the command-line version has more options, you may wish to run the development server from your Unix shell. To do so:
   # Open a Unix shell (command line).
   # Change directory to the one you specified as the path for your app
-  # Run the server with the command<br>{{{dev_appserver.py .}}} <br>As the command runs, you may see some warnings you can ignore and questions you must answer.<br><br> Once the app is set up, you see a URL reference to the hostname and port you use to connect to your app from a web browser. It defaults to {{{http://localhost:8080}}}.<br><br>Notice that while the server is running, the command does not complete. To stop the server, exit the command.
+  # Run the server with the command<br><br>{{{dev_appserver.py .}}} <br><br>As the command runs, you may see some warnings you can ignore and questions you must answer.<br> Once the app is set up, you see a URL reference to the hostname and port you use to connect to your app from a web browser. It defaults to {{{http://localhost:8080}}}.<br><br>Notice that while the server is running, the command does not complete. To stop the server, exit the command.
 
 By default, your app is only available from the machine on which you start it. To get access to your development server from another machine on the network, you need to request this through the command line. To do so, do not run the server using the Launcher. Instead, run your development server with this command
 
@@ -86,11 +86,12 @@ Before you can run the sample code, you need to upload the data files that repre
 
 To upload the data, first make sure that your development server is running (as described in step 6). Then, open a Unix shell. In that shell:
 
-  # Run<br>{{{cd }}}_*{{{APPPATH}}}*_{{{/data}}}<br>where _*{{{APPPATH}}}*_ is the directory/folder you specified in step 4.
-  # Run<br>{{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br>where _*{{{PORT}}}*_ is the port number you specified in step 4.
-  # The system prompts you to enter your credentials.<br>Your credentials are your Google account name and password.
-  # Run<br>{{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}}
-  # The system prompts you to enter your credentials again.
+  {{{cd }}}_*{{{APPPATH}}}*_{{{/data}}}<br>
+  {{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br>
+  {{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}}
+
+where _*{{{APPPATH}}}*_ is the directory/folder and _*{{{PORT}}}*_ is the port number you specified in step 4.
+Before running each {{{appcfg.py}}} command, the system prompts you to enter your credentials. Your credentials are your Google account name and password. 
 
 If you have trouble with this command, see [AppEngine#Troubleshooting Troubleshooting].
 
