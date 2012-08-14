@@ -7,8 +7,6 @@ After successul registration, the student can click on *Home* in the navigation 
 
 <img src="https://www.corp.google.com/~vpg/no_crawl/cb/homepage.png" height=529 width=420 />
 
-<font color=red><<TODO fix image url>></font>
-
 You create the home page with these files:
   * {{{views/base.html}}} defines the header and footer areas. See [ModifyTemplate Modify Course Template] for information about this file.
   * {{{views/course.html}}} defines the structure of the content area (the part that contains the schedule).
@@ -58,4 +56,4 @@ That is, after you make a change to one of these files, simply load (or reload) 
 
 On the other hand, if you change the content of the {{{data/unit.csv}}} file, you must load the changed data into your development server. To do so:
 
-<font color=red><<TODO Emailed Sean to find out how>></font>
+<font color=red><<TODO Emailed Sean to find out how. What I've been doing, horrific as it is, is to start over completely, with a new directory and an new port.  That cannot be right.>></font>
