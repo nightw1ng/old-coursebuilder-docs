@@ -29,26 +29,26 @@ This page doesn't go into any explanations. It simply lists all of the steps inv
         # Pick a name for your app. Make it the value of {{{application}}} in {{{app.yaml}}}.
         # [GetCode#5._Add_the_app_to_App_Engine Load the app].
         # [GetCode#7._Upload_the_unit_and_lesson_data Upload sample data] to the app.
-      # [ModifyTemplate Modify the basic look and feel of course pages]<br>by changing {{{/views/base.html}}} and {{{/views/base_registration.html}}}. Things you must change include:
+      # [ModifyTemplate Modify the basic look and feel of course pages]<br>by changing {{{views/base.html}}} and {{{views/base_registration.html}}}. Things you must change include:
         # The course name, for the title element.
-        # Code to collect Analytics data. (This change is only in {{{/views/base.html}}}.)
+        # Code to collect Analytics data. (This change is only in {{{views/base.html}}}.)
         # Logo image for the header.
         # Link to go with the logo.
         # Course name or description for the header.
         # Link and name of entity responsible for the course, for the footer.
         # Link to a relevant privacy policy and terms of service, for the footer.
       # [CreateRegistration Modify the registration pages.]
-        # Change the content at {{{/views/register.html}}} and  {{{/views/confirmation.html}}}. 
+        # Change the content at {{{views/register.html}}} and  {{{views/confirmation.html}}}. 
         # Change the registration confirmation email in {{{controllers/utils.py}}}.
         # (Optionally) Change the maximum number of students who can enroll in {{{controllers/utils.py}}}.
       # [CreateHomePage Modify the course home page].
-        # In {{{/views/course.html}}}, change the course name and description.
-        # (Optional) If your course has a different number of units or assessments than the example course, you must change the code in {{{/views/course.html}}}. See [CreateHomePage Create HomePage].
-        # In {{{/data/unit.csv}}}, change information about the units. 
+        # In {{{views/course.html}}}, change the course name and description.
+        # (Optional) If your course has a different number of units or assessments than the example course, you must change the code in {{{views/course.html}}}. See [CreateHomePage Create HomePage].
+        # In {{{data/unit.csv}}}, change information about the units. 
         # When you change {{{unit.csv}}}, you must also [AppEngine#Modify_your_app_and_see_the_effects reload all data].
-      # [CreateLessons Implement course lessons.]<br>Change the look of lesson pages at {{{/views/unit.html}}}; change the lessons themselves in {{{/data/lesson.csv}}}. (Changing {{{lesson.csv}}} requires [AppEngine#Modify_your_app_and_see_the_effects reloading all data].)
-      # [CreateActivities Implement Activities.]<br>Change the look of activity pages at {{{/views/activity.html}}}; define the activities themselves in files named {{{activity-}}}_*{{{N.M}}}*_{{{.js}}}, where _*{{{N}}}*_ is the unit number and _*{{{M}}}*_ is the lesson number. See [CreateActivities#Writing_activities Writing activities] for the format of activities.
-      # [CreateAssessments Implememnt Assessments.]<br>Change the look of assessment pages at  {{{/views/assessment.html}}}; define the assessments themselves in files named {{{activity-}}}_*{{{SUFFIX}}}*_{{{.js}}}, where _*{{{SUFFIX}}}*_ is one of {{{Pre}}}, {{{Mid}}}, or {{{Fin}}}. See [CreateAssessments#Writing_assessments Writing assessments] for the format of assessments.
+      # [CreateLessons Implement course lessons.]<br>Change the look of lesson pages at {{{views/unit.html}}}; change the lessons themselves in {{{data/lesson.csv}}}. (Changing {{{lesson.csv}}} requires [AppEngine#Modify_your_app_and_see_the_effects reloading all data].)
+      # [CreateActivities Implement Activities.]<br>Change the look of activity pages at {{{views/activity.html}}}; define the activities themselves in files named {{{activity-}}}_*{{{N.M}}}*_{{{.js}}}, where _*{{{N}}}*_ is the unit number and _*{{{M}}}*_ is the lesson number. See [CreateActivities#Writing_activities Writing activities] for the format of activities.
+      # [CreateAssessments Implememnt Assessments.]<br>Change the look of assessment pages at  {{{views/assessment.html}}}; define the assessments themselves in files named {{{activity-}}}_*{{{SUFFIX}}}*_{{{.js}}}, where _*{{{SUFFIX}}}*_ is one of {{{Pre}}}, {{{Mid}}}, or {{{Fin}}}. See [CreateAssessments#Writing_assessments Writing assessments] for the format of assessments.
       # [CreateAssessments#Sending_email_after_assessments Fix the messages] sent to students after they take assessments in {{{views/test_confirmation.html}}}.
       # [Certificates Create a Certificate.]
       # [UploadCode Upload Your App to production.]
