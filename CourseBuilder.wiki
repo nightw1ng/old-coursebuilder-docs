@@ -16,7 +16,7 @@ Course Builder represents our decision to open source the code we used to create
 Power Searching is only one instance of a MOOC. Simply put, a MOOC is a course, all of whose materials are online and that has been optimized to work for lots and lots of students. What this actually means can vary quite a bit. Traditionally, in a MOOC:
 
   * the students are physically distributed.
-  * the students interact with the instructors and other students primarily or exclusively online, not in person.
+  * the students interact with the course staff and other students primarily or exclusively online, not in person.
   * the interactions between students and between students and instructors are "semi-synchronous"; that is, students do some parts on their own time and at  their own pace, but they do other parts at the same time as each other and may have work with attached deadlines.
 
 Past those simple points, there are significant differences in implementation and philosophy of what constitutes a MOOC. Many people are experimenting with different approaches, using different code and different interaction models between students, instructors, and even casual visitors. 
