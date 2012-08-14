@@ -34,8 +34,6 @@ The numbers in the image show where this image appears on the screen. (The analy
 
 https://www.corp.google.com/~vpg/no_crawl/cb/base.png
 
-<font color=red><<TODO fix image link>></font>
-
 == Structure of an unregistered page ==
 
 The two pages an unregistered person can see start from a different base template, {{{views/base_registration.html}}}.  As with {{{views/base.html}}}, this template defines the overall HTML for these pages and includes definitions for the header and footer areas.
