@@ -60,11 +60,19 @@ On the other hand, if you change the content of the {{{data/unit.csv}}} file, yo
     * If you're using the Launcher to run your server, exit the Launcher.
     * If you're using the command line, kill the {{{dev_appserver}}} process.
 
-2. Start your development server from the command line, clearing out the old data and adding the changed data:
+2. Start your development server from the command line, clearing out the old data:
 
   {{{cd }}}_*{{{PATHTOAPPLICATION}}}*_<br>
-  {{{dev_appserver.py . --clear_datastore .}}}<br>
-  {{{cd data}}}<br>
+  {{{dev_appserver.py . --clear_datastore .}}}
+where _*{{{PATHTOAPPLICATION}}}*_ is the directory containing your app.
+
+3. Stop running the development server by killing the dev_appserver.py command.
+
+4. Restart the development server, either from the Launcher or from the command line.
+
+5. In another Unix shell:
+
+  {{{cd }}}_*{{{PATHTOAPPLICATION/data}}}*_<br>
   {{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br>
   {{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}}
 
