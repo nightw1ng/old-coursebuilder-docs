@@ -33,6 +33,27 @@ The app uses three files to render this page:
 
 {{{
 
+// FIXME: Activity is an array of strings containing HTML code. Note that you
+// must include the form elements for your questions. Also note that those
+// elements must include name and id attributes, to be used by the scoring
+// code.
+
+var activity = [
+  '<b>This assessment addresses content in units 1, 2, and 3. You can try it as many times as you like. When you click "Check Answers," we will give you your score and give you a list of lessons to review. Please note that some of the assessment questions address functionality that does not work well on tablet computers.</b><br><br>',
+
+  '<p>You are getting a new puppy! Of course, you will have questions, and you\'ll probably turn to the web to look for answers. <br><br>',
+
+  '1. You want to search exclusively within the Humane Society website (humanesociety.org) to find pages about puppy training.  <p>',
+  '<img src="/assets/img/Image8.7.png" height="300" width="450" alt="search results for test question" title="search results for test question"><p>What would be the best query to type into the search box to see results like these? <p>',
+  ' <input type="radio" name="mid1" id="mid11"  value="correct"> [site:humanesociety.org puppy training] <br>',
+  ' <input type="radio" name="mid1" id="mid12"> [humane society puppy training] <br>',
+  ' <input type="radio" name="mid1" id="mid13"> [puppy training pages in humansociety.org website] <br>',
+  ' <input type="radio" name="mid1" id="mid14"> [i need info about puppy training from humanesociety.org] <br>',
+  ' <input type="radio" name="mid1" id="mid18"> I don\'t know <br><br>',
+
+ '... more questions and possible answers...'
+];
+
 function saveAnswersMid(submitAnswers) {
   $('#answerOutput').val('');
 
@@ -142,7 +163,7 @@ function saveAnswersMid(submitAnswers) {
 
 }}}
 
-== Debugging changes ==
+== Testing changes ==
 
 Changes you make to any file in the {{{views}}} directory or to any file in the {{{assets/js}}} directory appear automatically in your running development server.
 
