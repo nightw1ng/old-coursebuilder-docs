@@ -39,5 +39,14 @@ For more information on these aspects, see [WhatsInACourse What’s in a Course?
   # Go live!
   # Iterate for your next version.
 
+== What do you need to know to use Course Builder? ==
 
-<font color=red><<TOOD add information about requirements for people who can do this>></font>
+Course Builder is an experiment. As such, we have not spent much time making it easy to use. If you want to use Course Builder to create a MOOC, you should have the following qualifications: 
+
+  * *Experience creating course material.* We expect that you have already created courses of your own, either for a traditional live classroom or for a more traditional online class. We do not cover instructional design principles in general, only a bit as it applies to using Course Builder effectively.
+
+  * *HTML familiarity.* You need to be comfortable writing simple HTML. To create activities and assessments, you'll need to encode the HTML for paragraphs, lists, and images. To create assessments, you'll also need to understand HTML forms. 
+
+  * *!JavaScript familiarity.* You need to be comfortable with !JavaScript arrays, simple objects, and regular expressions. Of these, regular expressions tend to be the biggest stumbling block.The [https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions Mozilla Developer Network] has an introduction to regular expressions. To create assessments, you need familiarity with writing !JavaScript functions.
+
+  * *App Engine familiarity is a plus.*
