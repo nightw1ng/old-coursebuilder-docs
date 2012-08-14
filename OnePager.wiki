@@ -2,9 +2,11 @@
 
 <h1>Course Builder in a Nutshell</h1>
 
-<font color=red><<TODO working here. Add details of what MUST change in each file.>></font>
+<font color=red><<TODO working here.>></font>
 
-This is just a checklist of steps. All details are in the links. Below,  _*{{{APPPATH}}}*_ is the path to the directory/folder containing your application.
+Welcome to Course Builder! The rest of these Wiki pages go into a lot of detail about how to build your own MOOC using the Course Builder software and the other tools and processes that we used when we created [http://www.google.com/insidesearch/landing/powersearching.html Power Searching with Google].
+
+This page doesn't go into any explanations. It simply lists all of the steps involved -- everything from your beginning planning stages, to downloading and changing the Course Builder code to setting up online office hours -- and provides links to other places with more information.
 
   # [OnePlan Plan for 30 minutes.]
     # Define the problem statement and high-level goal of the course.
@@ -19,20 +21,35 @@ This is just a checklist of steps. All details are in the links. Below,  _*{{{AP
     # Decide what other metrics to collect for your course.
     # Sequence and organize your content into digestible chunks.
     # Verify your content with others.
-  # [ThreeImplement Implement your content using your technology.]
+  # [ThreeImplement Implement your content using your technology.]<br>In these steps, all pathnames are relative to the directory containing your application. Every place in the source tree that you must make changes to a file (other than when you replace entire files), a string {{{FIXME}}} is nearby, briefly describing the change.
     # [CourseMaterial Implement the course material.]
       # [GetCode Get the sample code and run it with your name.]
         # Download and install  [http://python.org/download Python].
         # Download and install [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python App Engine].
-        # Pick a name for your app and edit _*{{{APPPATH}}}*_{{{/app.yaml}}}.
+        # Pick a name for your app. Make it the value of {{{application}}} in {{{/app.yaml}}}.
         # Load the app.
         # [GetCode#7._Upload_the_unit_and_lesson_data Upload sample data] to the app.
-      # [ModifyTemplate Modify the basic look and feel of course pages]<br>by changing _*{{{APPPATH}}}*_{{{/views/base.html}}} and _*{{{APPPATH}}}*_{{{/views/base_registration.html}}}.
-      # [CreateRegistration Modify the registration pages]<br>at _*{{{APPPATH}}}*_{{{/views/register.html}}} and  _*{{{APPPATH}}}*_{{{/views/confirmation.html}}}.
-      # [CreateHomePage Modify the course home page]<br>at  _*{{{APPPATH}}}*_{{{/views/course.html}}} and   _*{{{APPPATH}}}*_{{{/data/unit.csv}}}. (Changing {{{unit.csv}}} requires [AppEngine#Modify_your_app_and_see_the_effects reloading all data].)
-      # [CreateLessons Implement course lessons.]<br>Change the look of lesson pages at _*{{{APPPATH}}}*_{{{/views/unit.html}}}; change the lessons themselves in _*{{{APPPATH}}}*_{{{/data/lesson.csv}}}. (Changing {{{lesson.csv}}} requires [AppEngine#Modify_your_app_and_see_the_effects reloading all data].)
-      # [CreateActivities Implement Activities.]<br>Change the look of activity pages at _*{{{APPPATH}}}*_{{{/views/activity.html}}}; define the activities themselves in files named {{{activity-}}}_*{{{N.M}}}*_{{{.js}}}, where _*{{{N}}}*_ is the unit number and _*{{{M}}}*_ is the lesson number. See [CreateActivities#Writing_activities Writing activities] for the format of activities.
-      # [CreateAssessments Implememnt Assessments.]<br>Change the look of assessment pages at _*{{{APPPATH}}}*_{{{/views/assessment.html}}}; define the assessments themselves in files named {{{activity-}}}_*{{{SUFFIX}}}*_{{{.js}}}, where _*{{{SUFFIX}}}*_ is one of {{{Pre}}}, {{{Mid}}}, or {{{Fin}}}. See [CreateAssessments#Writing_assessments Writing assessments] for the format of assessments.
+      # [ModifyTemplate Modify the basic look and feel of course pages]<br>by changing {{{/views/base.html}}} and {{{/views/base_registration.html}}}. Things you must change include:
+        # The course name, for the title element.
+        # Code to collect Analytics data. (This change is only in {{{/views/base.html}}}.)
+        # Logo image for the header.
+        # Link to go with the logo.
+        # Course name or description for the header.
+        # Link and name of entity responsible for the course, for the footer.
+        # Link to a relevant privacy policy and terms of service, for the footer.
+      # [CreateRegistration Modify the registration pages.]
+        # Change the content at {{{/views/register.html}}} and  {{{/views/confirmation.html}}}. 
+        # Change the registration confirmation email in {{{controllers/utils.py}}}.
+        # (Optionally) Change the maximum number of students who can enroll in {{{controllers/utils.py}}}.
+      # [CreateHomePage Modify the course home page].
+        # In {{{/views/course.html}}}, change the course name and description.
+        # (Optional) If your course has a different number of units or assessments than the example course, you must change the code in {{{/views/course.html}}}. See [CreateHomePage Create HomePage].
+        # In {{{/data/unit.csv}}}, change information about the units. 
+        # When you change {{{unit.csv}}}, you must also [AppEngine#Modify_your_app_and_see_the_effects reload all data].
+      # [CreateLessons Implement course lessons.]<br>Change the look of lesson pages at {{{/views/unit.html}}}; change the lessons themselves in {{{/data/lesson.csv}}}. (Changing {{{lesson.csv}}} requires [AppEngine#Modify_your_app_and_see_the_effects reloading all data].)
+      # [CreateActivities Implement Activities.]<br>Change the look of activity pages at {{{/views/activity.html}}}; define the activities themselves in files named {{{activity-}}}_*{{{N.M}}}*_{{{.js}}}, where _*{{{N}}}*_ is the unit number and _*{{{M}}}*_ is the lesson number. See [CreateActivities#Writing_activities Writing activities] for the format of activities.
+      # [CreateAssessments Implememnt Assessments.]<br>Change the look of assessment pages at  {{{/views/assessment.html}}}; define the assessments themselves in files named {{{activity-}}}_*{{{SUFFIX}}}*_{{{.js}}}, where _*{{{SUFFIX}}}*_ is one of {{{Pre}}}, {{{Mid}}}, or {{{Fin}}}. See [CreateAssessments#Writing_assessments Writing assessments] for the format of assessments.
+      # [CreateAssessments#Sending_email_after_assessments Fix the messages] sent to students after they take assessments in {{{views/test_confirmation.html}}}.
       # [Certificates Create a Certificate.]
       # [UploadCode Upload Your App to production.]
     # [Metrics Implement metrics.]
@@ -41,6 +58,7 @@ This is just a checklist of steps. All details are in the links. Below,  _*{{{AP
     # [ParticipantCommunity Implement the participant community.]
       # [TeachingAssistants Engage and train teaching assistants.]
       # [WebForums Setup a community discussion forum.]
+      # Add the link to your forum to the file {{{views/forum.html}}}.
       # [OnlineOfficeHours Schedule online office hours.]
       # [Announcements Prepare announcements and optional material.]
   # [FourPilot Pilot with your target audience.]
