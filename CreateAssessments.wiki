@@ -168,3 +168,8 @@ function saveAnswersMid(submitAnswers) {
 Changes you make to any file in the {{{views}}} directory or to any file in the {{{assets/js}}} directory appear automatically in your running development server.
 
 That is, after you make a change to one of these HTML or JavaScript files, simply load (or reload) a page that uses that page and the change appears.
+
+
+== Sending email after assessments ==
+
+<font color=red><<TODO write this. After a student submits an assessment, the app sends the appropriate email from {{{views/test_confirmation.html}}}. You probably want to reword those.>></font>
