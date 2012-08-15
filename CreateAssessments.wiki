@@ -1,16 +1,19 @@
+
 #summary How to create assessments (graded tests) for your course.
 
-=Create Assessments=
+<h1>Create Assessments</h1>
 
 <font color=red><<TODO to be written. DO NOT WRITE ASSESSMENTS USING THIS AS GUIDANCE. This code is being rewritten as I write this. Pay no attention to this page until this message changes.>></font>
 
+<wiki:toc />
+
 At certain parts throughout the course, students take assessments to see how they're doing:
 
-<img src="https://www.corp.google.com/~vpg/no_crawl/cb/assessment-zig.png" height=529 width=420 />
+<img src="https://www.corp.google.com/~vpg/no_crawl/cb/assessment-zig.png" height=386 width=420 />
 
 == What happens on an assessment page ==
 
-An assessment is a graded test, typically covering material from several units and lessons. With ourexperimental code, you have control over how many graded assessments you provide and how each of those assessments counts in the final scoring for a student’s grade.
+An assessment is a graded test, typically covering material from several units and lessons. With our experimental code, you have control over how many graded assessments you provide and how each of those assessments counts in the final scoring for a student’s grade.
 
 When students submit an assessment, the code determines how they did on the assessment and provides the feedback you specify. It also stores the student score for later retrieval.
 
@@ -29,139 +32,6 @@ The app uses three files to render this page:
 
 == Writing assessments ==
 
-<font color=red><<TODO put on your thinking cap. this is the hardest thing you need to do. >></font>
-
-{{{
-
-// FIXME: Activity is an array of strings containing HTML code. Note that you
-// must include the form elements for your questions. Also note that those
-// elements must include name and id attributes, to be used by the scoring
-// code.
-
-var activity = [
-  '<b>This assessment addresses content in units 1, 2, and 3. You can try it as many times as you like. When you click "Check Answers," we will give you your score and give you a list of lessons to review. Please note that some of the assessment questions address functionality that does not work well on tablet computers.</b><br><br>',
-
-  '<p>You are getting a new puppy! Of course, you will have questions, and you\'ll probably turn to the web to look for answers. <br><br>',
-
-  '1. You want to search exclusively within the Humane Society website (humanesociety.org) to find pages about puppy training.  <p>',
-  '<img src="/assets/img/Image8.7.png" height="300" width="450" alt="search results for test question" title="search results for test question"><p>What would be the best query to type into the search box to see results like these? <p>',
-  ' <input type="radio" name="mid1" id="mid11"  value="correct"> [site:humanesociety.org puppy training] <br>',
-  ' <input type="radio" name="mid1" id="mid12"> [humane society puppy training] <br>',
-  ' <input type="radio" name="mid1" id="mid13"> [puppy training pages in humansociety.org website] <br>',
-  ' <input type="radio" name="mid1" id="mid14"> [i need info about puppy training from humanesociety.org] <br>',
-  ' <input type="radio" name="mid1" id="mid18"> I don\'t know <br><br>',
-
- '... more questions and possible answers...'
-];
-
-function saveAnswersMid(submitAnswers) {
-  $('#answerOutput').val('');
-
-  // FIXME: scoreArray is an ordered array each of whose elements is 0 or 1,
-  // depending on whether the answer to the corresponding question is correct.
-  // Your array must have the same number of elements as you have questions.
-  //
-  // Use checkQuestionRadioSimple (defined in activity-generic.js) to determine
-  // the correctness of a multiple-choice question.
-  // 
-  // Use checkText (defined in activity-generic.js) to determine the correctness
-  // of a free-text question.
-
-  var scoreArray = [];
-
-  scoreArray[0] = checkQuestionRadioSimple(document.assessment.mid1);
-  scoreArray[1] = checkQuestionRadioSimple(document.assessment.mid2);
-
-  scoreArray[2] = 0;
-  if (checkText('mid7text', /\-kennel/i)) {
-    scoreArray[2] = 1;
-  }
-
-  scoreArray[3] = 0;
-  if (checkText('mid8text', /define(:| )brindle/i)) {
-    scoreArray[3] = 1;
-  }
-
-  scoreArray[4] = checkQuestionRadioSimple(document.assessment.mid9);
-
-  // FIXME: lessonArray is an ordered array of strings. Each string is the
-  // number of the lesson whose content tells the student how to answer that
-  // question. This presumes that each question only tests information from one
-  // lesson. If the student doesn't answer all questions correctly, the code
-  // displays which lessons the student should review to improve their score.
-
-  var lessonArray = ["3.1", "1.5", "3.3", "2.2", "2.3"];
-
-  // Only do the following if checking answers instead of submitting them.
-  // This code figures out which lessons the student should review.
-  studylessons = "";
-  if (!submitAnswers) {
-    for (var i in scoreArray) {
-      if (scoreArray[i] == 0) {
-        studylessons += lessonArray[i]+"   ";
-      }
-    }
-  }
-
-  var myForm = document.createElement("form");
-  myForm.method="post";
-  myForm.action = "/answer";
-
-  var type = 'midcourse';
-  var myInput = document.createElement("input");
-  myInput.setAttribute("name", "type");
-  myInput.setAttribute("value", type);
-  myForm.appendChild(myInput);
-
-  var numCorrect = 0;
-  for (var i in scoreArray) {
-    myInput = document.createElement("input") ;
-    myInput.setAttribute("name", i) ;
-    myInput.setAttribute("value", scoreArray[i]);
-    myForm.appendChild(myInput) ;
-    numCorrect += scoreArray[i];
-  }
-
-  // FIXME: Compute the student's score on this test. Assumes 5 questions.
-  // Change for a different number.
-  score = numCorrect / 5;
-  score = roundNumber(score, 1) * 100;
-
-  if (!submitAnswers) {
-    var outtext="You received "+score+"%.\n\n";
-
-    if (studylessons != "") {
-      outtext+="Here are lessons you could review to improve your score: "+studylessons+"\n\n";
-    }
-    if (score < 100) {
-      outtext+="Press Submit below to save your scores or Return to Course to study the recommended lessons. You can also edit your answers above before clicking Submit.";
-    }
-    else {
-      outtext+="Congratulations! Please submit your grade.";
-    }
-
-    $('#answerOutput').val(outtext);
-  }
-  else {
-    myInput = document.createElement("input");
-    myInput.setAttribute("name", "Number Correct");
-    myInput.setAttribute("value", numCorrect);
-    myForm.appendChild(myInput);
-    document.body.appendChild(myForm);
-
-    myInput = document.createElement("input");
-    myInput.setAttribute("name", "Score");
-    myInput.setAttribute("value", score);
-    myForm.appendChild(myInput);
-
-    document.body.appendChild(myForm);
-    myForm.submit();
-    document.body.removeChild(myForm);
-  }
-}
-
-
-}}}
 
 == Testing changes ==
 
