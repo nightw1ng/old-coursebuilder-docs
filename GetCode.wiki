@@ -47,7 +47,8 @@ Activate the Launcher wherever it's available, that is, from the Desktop, the Do
 
 The first time you start the Launcher, you may see a dialog box asking you about symlinks
 
-https://www.corp.google.com/~vpg/no_crawl/symlinks.png"
+<img src="images/symlinks.png" />
+
 
 For App Engine to work, you must agree to set up symlinks.
 
@@ -120,6 +121,6 @@ From the command-line:
 
 In either case, you should see the registration page for the sample app:
 
-https://www.corp.google.com/~vpg/no_crawl/cb/registration.png
+<img src="images/registration.png" />
 
 *Next step:* [ExplorePS Explore the Sample Application]
