@@ -1,56 +1,76 @@
-#summary Home page.
-<h1>Course Builder</h1>
+#summary Checklist of all steps to create a MOOC using Course Builder.
 
-Welcome to Course Builder, Google's experiment with creating MOOCs!
+<h1>Course Builder in a Nutshell</h1>
 
-<wiki:toc max_depth="2" />
+Welcome to Course Builder! The rest of these Wiki pages go into a lot of detail about how to build your own MOOC using the Course Builder software and the other tools and processes that we used when we created [http://www.google.com/insidesearch/landing/powersearching.html Power Searching with Google].
 
-==The “Power Searching with Google” Experiment==
+This page doesn't go into any explanations. It simply lists all of the steps involved -- everything from your beginning planning stages, to downloading and changing the Course Builder code to setting up online office hours -- and provides links to other places with more information.
 
-For two weeks in July 2012, Google hosted an online, community-based course called [http://www.google.com/insidesearch/landing/powersearching.html Power Searching with Google]. The course showcased search techniques and how to use them to solve real, everyday problems. We created Power Searching as a MOOC (Massive Online Open Course) by using a variety of Google’s existing products to foster a student community and by writing an App Engine application to create the course material and assessments. 
+== A. [OnePlan Plan for 30 minutes.] ==
+  # Define the problem statement and high-level goal of the course.
+  # Identify your audience and your assumptions.
+  # Define course objectives.
+  # Consider course logistics.
 
-We were quite pleased with the success of Power Searching with Google. We had 155,000 students register for the course, from 196 countries. Of these, 29% of those who completed the first assessment passed the course and received a certificate. The discussion forums and Google+ streams were very active with students asking and answering questions, and providing additional ideas and content beyond what’s offered by the instructor.
+== B. [TwoDevelop Develop content without the technology.] ==
+  # Clarify your goals and non-goals for the course.
+  # Clarify your assumptions about your students.
+  # Write clear, specific objectives.
+  # Decide what you want to test in your assessments, both graded and ungraded.
+  # Decide what other metrics to collect for your course.
+  # Sequence and organize your content into digestible chunks.
+  # Verify your content with others.
 
-Course Builder represents our decision to open source the code we used to create Power Searching and to document our use of that code in conjunction with Google products to create the entire experience.
+== C. [ThreeImplement Implement your content using your technology.] ==
+In these steps, all pathnames are relative to the directory containing your application. Every place in the source tree that you must make changes to a file (other than when you replace entire files), a string {{{FIXME}}} is nearby, briefly describing the change.
 
-Power Searching is only one instance of a MOOC. Simply put, a MOOC is a course, all of whose materials are online and that has been optimized to work for lots and lots of students. What this actually means can vary quite a bit. Traditionally, in a MOOC:
+=== C.1. [CourseMaterial Implement the course material.] ===
+  # [GetCode Get the sample code and run it with your name.]
+    # Download and install  [http://python.org/download Python].
+    # Download and install [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python App Engine].
+    # Pick a name for your app. Make it the value of {{{application}}} in {{{app.yaml}}}.
+    # [GetCode#5._Add_the_app_to_App_Engine Load the app].
+    # [GetCode#7._Upload_the_unit_and_lesson_data Upload sample data] to the app.
+  # [ModifyTemplate Modify the basic look and feel of course pages]<br>by changing {{{views/base.html}}} and {{{views/base_registration.html}}}. Things you must change include:
+    # The course name, for the title element.
+    # Code to collect Analytics data. (This change is only in {{{views/base.html}}}.)
+    # Logo image for the header.
+    # Link to go with the logo.
+    # Course name or description for the header.
+    # Link and name of entity responsible for the course, for the footer.
+    # Link to a relevant privacy policy and terms of service, for the footer.
+  # [CreateRegistration Modify the registration pages.]
+    # Change the content at {{{views/register.html}}} and  {{{views/confirmation.html}}}. 
+    # Change the registration confirmation email in {{{controllers/utils.py}}}.
+    # (Optionally) Change the maximum number of students who can enroll in {{{controllers/utils.py}}}.
+  # [CreateHomePage Modify the course home page].
+    # In {{{views/course.html}}}, change the course name and description.
+    # (Optional) If your course has a different number of units or assessments than the example course, you must change the code in {{{views/course.html}}}. See [CreateHomePage Create HomePage].
+    # In {{{data/unit.csv}}}, [CreateHomePage#List_of_units change information about the units]. 
+    # When you change {{{unit.csv}}}, you must also [AppEngine#Modify_your_app_and_see_the_effects reload all data].
+  # [CreateLessons Implement course lessons.]
+    # Change the look of lesson pages at {{{views/unit.html}}}.
+    # Change the [CreateLessons#Lesson_content lesson content] in {{{data/lesson.csv}}}. 
+    # When you change {{{lesson.csv}}}, you must also [AppEngine#Modify_your_app_and_see_the_effects reload all data].
+  # [CreateActivities Implement Activities.]
+    # Change the look of activity pages at {{{views/activity.html}}}.
+    # [CreateActivities#Writing_activities Define the activity content] in files named {{{activity-}}}_*{{{N.M}}}*_{{{.js}}}, where _*{{{N}}}*_ is the unit number and _*{{{M}}}*_ is the lesson number.
+  # [CreateAssessments Implememnt Assessments.]
+    # Change the look of assessment pages at  {{{views/assessment.html}}}.
+    # [CreateAssessments#Writing_assessments  Define the assessments] in files named {{{activity-}}}_*{{{SUFFIX}}}*_{{{.js}}}, where _*{{{SUFFIX}}}*_ is one of {{{Pre}}}, {{{Mid}}}, or {{{Fin}}}. 
+    # [CreateAssessments#Sending_email_after_assessments Fix the messages] sent to students after they take assessments in {{{views/test_confirmation.html}}}.
+  # [Certificates Create a Certificate.]
+  # [UploadCode Upload Your App to production.]
 
-  * the students are physically distributed.
-  * the students interact with the course staff and other students primarily or exclusively online, not in person.
-  * the interactions between students and between students and instructors are "semi-synchronous"; that is, students do some parts on their own time and at  their own pace, but they do other parts at the same time as each other and may have work with attached deadlines.
+=== C.2. [Metrics Implement metrics.] ===
+  # [HappinessMetrics Create happiness metrics.]
+  # [ReachAndEngagementMetrics Create reach & engagement metrics.]
 
-Past those simple points, there are significant differences in implementation and philosophy of what constitutes a MOOC. Many people are experimenting with different approaches, using different code and different interaction models between students, instructors, and even casual visitors. 
+=== C.3. [ParticipantCommunity Implement the participant community.] ===
+  # [TeachingAssistants Engage and train teaching assistants.]
+  # [WebForums Setup a community discussion forum.]
+  # Add the link to your forum to the file {{{views/forum.html}}}.
+  # [OnlineOfficeHours Schedule online office hours.]
+  # [Announcements Prepare announcements and optional material.]
 
-For Power Searching with Google, we chose one approach. It’s not the only approach; it’s not the most innovative approach. This approach is not appropriate for all subjects. But it was relatively easy to create and was extremely successful for this subject matter. We’d like to share that approach and code with you. 
-
-==What's in a Course?==
-
-The primary characteristics of a course such as Power Searching with Google are as follows:
-
-  * *Course content and delivery*<br>The material that you formally convey to students. Formal content can be lessons recorded or written in advance. It can also be live question and answer sessions with instructors.
-  * *Assessments and activities* <br>Graded assessments with a fixed deadline to track student progress. Ungraded assessments, called *activities*, to provide feedback and hints to students.
-  * *Social interactions* <br>An important component of any MOOC is the interactions among the students themselves and the interactions between students and the instructors or teaching assistants (TAs).
-  * *Administrivia* <br>Of course, there are bits and pieces required to register students, to get the course up and running, to track usage, and so on.
-
-For more information on these aspects, see [WhatsInACourse What’s in a Course?]
-
-== How to create a course with Course Builder ==
-
-  # [OnePlan Plan before you start]. <br>Before you get into the details of creating your course, take 30 minutes to think about the following areas and write down your answers. Use those answers to guide everything else; they can save you a lot of time in the end. For details, see [OnePlan Step 1].
-  # [TwoDevelop Develop content without the technology].<br>It’s extremely tempting to just dive in and start recording videos and writing assessments and so on. But if you do that, you will likely end up with a course that doesn’t make sense and doesn’t satisfy your primary goal or any of the supplementary objectives you planned. That said, even though we recommend you do initial development without using the technology, there are aspects of the final delivery that should influence your development strategy. For details, see [TwoDevelop Step 2].
-  # [ThreeImplement Implement your content using your technology].<br>Once you have a very clear idea of what you want to accomplish, then put it into the format you’ll eventually use. At this point, you can create videos, implement assessments, set up your groups, and do all that other fun stuff. For details, see [ThreeImplement Step 3].
-  # [FourPilot Pilot with your target audience].<br>The experience of teaching a course as a MOOC is quite different from normal classroom teaching. We strongly encourage you to have some people go through your entire course before you release it to actual students. You may find, as we have, that a large percentage of your work comes after the first pilot, when you see how people actually interact with your material. For details, see [FourPilot Step 4].
-  # Go live!
-  # Iterate for your next version.
-
-== What do you need to know to use Course Builder? ==
-
-Course Builder is an experiment. As such, we have not spent much time making it easy to use. If you want to use Course Builder to create a MOOC, you should have the following qualifications: 
-
-  * *Experience creating course material.* We expect that you have already created courses of your own, either for a traditional live classroom or for a more traditional online class. We do not cover instructional design principles in general, only a bit as it applies to using Course Builder effectively.
-
-  * *HTML familiarity.* You need to be comfortable writing simple HTML. To create activities and assessments, you'll need to encode the HTML for paragraphs, lists, and images. To create assessments, you'll also need to understand HTML forms. 
-
-  * *!JavaScript familiarity.* You need to be comfortable with !JavaScript arrays, simple objects, and regular expressions. Of these, regular expressions tend to be the biggest stumbling block.The [https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions Mozilla Developer Network] has an introduction to regular expressions. To create assessments, you need familiarity with writing !JavaScript functions.
-
-  * *App Engine familiarity is a plus.* This documentation covers what you need to know about App Engine. Previous familiarity would make your life easier.
+== D. [FourPilot Pilot with your target audience.] ==
