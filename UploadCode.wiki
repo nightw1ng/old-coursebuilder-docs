@@ -1,5 +1,9 @@
 #summary How to upload your course code to Google production servers.
 
+<font color=red><<TODO Currently, this says to not do this until you want to go live.
+
+Perhaps this is where I should add information about setting up robots.txt  to keep it secret while live but piloting? Or is there something else I'm supposed to talk about robots.txt?>></font>
+
 <h1>(When you're ready) Upload your app to Google</h1>
 
 *Do not do this step* until you are ready for your code to go live in production; that is, until you are ready for your audience to see your course.
@@ -14,6 +18,8 @@ Using the Launcher is fairly straightforward: click on the *Deploy* button and e
 where _*{{{APPPATH}}}*_ is the directory/folder containing your app.
 
 It can take up to a minute to upload your app; generally it's less than 30 seconds but usually not more than a minute. Once the upload complete and confirm, you (and everyone else on the planet not blocked from Google) can visit {{{http://}}}_*{{{APP_ID}}}*_{{{.appspot.com}}} (with your_*{{{APP_ID}}}*_) and verify that your app is indeed available to all.
+
+
 
 <font color=red><<TODO more to add?
 According to Sean, production doesn't have clear_datastore, so if you want to change the data store (ie, lesson.csv and unit.csv) after loading an app to production, it's tricky.
