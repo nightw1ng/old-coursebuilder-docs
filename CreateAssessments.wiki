@@ -31,7 +31,7 @@ The app uses three files to render this page:
 
 == Writing assessments ==
 
-<font color=red><<TODO REALLY IGNORE THIS. At present, it's the text for writing activities. I just thought I'd start from there and modify it for assessments. Until this message goes away, assume this section is complete gobbledygook.>></font>
+<font color=red><<TODO *REALLY IGNORE THIS SECTION.* At present, it's the text for writing activities. I just thought I'd start from there and modify it for assessments. Until this message goes away, assume this section is complete gobbledygook.>></font>
 
 
 An assessment contains explanatory text and one or more questions for the student.
