@@ -2,7 +2,7 @@
 
 <h1>Create Assessments</h1>
 
-<font color=red><<TODO to be written. DO NOT WRITE ASSESSMENTS USING THIS AS GUIDANCE. This code is being rewritten as I write this. Pay no attention to this page until this message changes.>></font>
+<font color=red><<TODO This page describes how the code *will* work. I don't think it works this way yet.>></font>
 
 <wiki:toc />
 
@@ -28,11 +28,7 @@ The app uses three files to render this page:
   * {{{views/assessment.html}}} defines the structure of the content area.
   * {{{assets/js/assessment-}}}_*{{SUFFIX}}}*_{{{.js}}} contains a !JavaScript array that fills in the actual question and answer areas for the assessment. Each assessment has its own file.
 
-
 == Writing assessments ==
-
-<font color=red><<TODO *REALLY IGNORE THIS SECTION.* At present, it's the text for writing activities. I just thought I'd start from there and modify it for assessments. Until this message goes away, assume this section is complete gobbledygook.>></font>
-
 
 An assessment contains explanatory text and one or more questions for the student.
 
@@ -41,152 +37,68 @@ You define each assessment in its own !JavaScript file. The filenames have the f
 The format of the file is
 {{{
 var assessment = {
-  preamble: preambleString,
-  questionsList: questionsArray,
   assessmentName: nameString,
-  formScript: scriptString     // Optional
-  disableCheckAnswers: Boolean  // Optional
+  preamble: preambleString,
+  disableCheckAnswers: Boolean,  // Optional
+  questionsList: questionsArray
 }
 }}}
 
-The file contains a single object named {{{assessment}}}. This object describes everything the code needs to know about an assessment.
+The file contains a single object named {{{assessment}}}. This object describes everything the code needs to know about an assessment. The attributes of the {{{assessment}}} object are as follows:
 
-=== Arbitrary HTML ===
+  * {{{assessmentName.}}} A string containing a unique name for this assessment. The code uses the assessment name <font color=red><<TODO somehow. Does it have anything to do with filenames? >></font> 
+  * {{{preamble.}}} A string containing text and complete HTML elements. The preamble appears as the first thing on the assessment page.  See [#Preamble Preamble].
+  * {{{disableCheckAnswers.}}} An optional Boolean. If false, then students can check their answers before submission. Defaults to {{{FALSE}}}. See [#Submitting_and_checking_answers Submitting and checking answers].
+  * {{{questionsList.}}} An ordered array, each of whose elements describes a question in the assessment. The questions appear after the preamble. See [[#Question Questions]. 
 
-The first choice for an array element is a string that contains a set of complete HTML elements.  That is, if the string contains an open HTML tag (such as {{{<em>}}}), it must also have the corresponding close tag (such as {{{</em>}}}). 
+=== Preamble ===
 
-The code simply renders the HTML you enter. For example, the sample activities all start with a 1-cell table that summarizes the major points of the associated lesson. With this HTML:
+The value of the {{{preamble}}} attribute is a string that contains a set of complete HTML elements.  
 
-{{{
-'<table border="2"><tr><td><b>Search Tips:</b><p><ul><li>In the last video, you
-learned how to use color filtering within image search to narrow your image results to
-images made up primarily of a certain color. You do this by clicking on the
-appropriate colored box in the left panel. <li>Please note that you can’t filter
-by color on iPad or Android tablets, but you can answer the questions below as
-if you were using a laptop or desktop computer.</ul><p></tr></td></table><br/>',
-}}}
+That is, if the string contains an open HTML tag (such as {{{<em>}}}), it must also have the corresponding close tag (such as {{{</em>}}}).  
 
-The code displays the following:
+Also note that the entire string must be on a single line. If you want it to render as multiple lines, you must include the appropriate HTML markup.
 
-  || *Search Tips:*<br><ul><li>In the last video, you learned how to use color filtering within image search to narrow your image results to images made up primarily of a certain color. You do this by clicking on the appropriate colored box in the left panel.</li><li>Please note that you can’t filter by color on iPad or Android tablets, but you can answer the questions below as if you were using a laptop or desktop computer.</li></ul> ||
+The code simply renders the HTML you enter as the first thing on the assessment page. 
 
-*Note:* This and other example code contains line breaks inside a !JavaScript string for readability. You cannot do that in your code. Each string must be on a single line.
+=== Submitting and checking answers ===
+
+The bottom of an assessment page always includes a *Save Answers* button. When students submit an assessment by clicking on this button, they see a page such as the following:
+
+https://www.corp.google.com/~vpg/no_crawl/cb/assessment-submit.png
+
+By default, this page acknowledges that they submitted the assessment and gives them information about next steps. You can change the messages for different assessments by changing the file at {{{views/test_confirmation.html}}}.
+
+Notice that this page does not tell students how they did on the assessment or give any feedback about what they might want to study some more. You can give students the option of checking their answers before submitting an assessment. If you set the {{{disableCheckAnswers}}} attribute of the {{{assessment}}} object to {{{FALSE}}}, then the assessment page has an additional *Check your Answers* button and an area for feedback, as shown here:
+
+https://www.corp.google.com/~vpg/no_crawl/cb/assessment-check.png 
+
+The feedback contains the student's score. If the student doesn't answer all questions correctly, the code displays which lessons the student should review to improve their score. How you specify this information is discussed in the next section.
 
 === Questions ===
 
-As far as the code is concerned, there is no difference between a question and any other arbitrary HTML string. The difference is only in that you follow a question with [#Answer_information answer information].
+The {{{questionsList}}} attribute is an ordered array of !JavaScript objects, each of which describes a question in the assessment.
 
-If you want to number your questions, you must include the numbers in your HTML. For example, with the following two HTML strings:
+Each question object has three attributes. Two of these are the same for all question types. Which third attribute you include determines what type of question this is.
 
-{{{
-"<p><img src='assets/img/Image1.1a.png' height=450 width=785></p>", 
-'<p><b>1.</b> You want to reread an introductory accounting textbook from
-school, but you cannot remember the exact title. You recall that the cover is
-yellow and has puzzle pieces on it. In the image above, where would you click to
-filter the results in order to locate the book?</p>',
-}}}
+The common attributes are:
 
-The code displays the following:
+  * {{{questionHTML.}}} A string containing text and complete HTML elements. This sring is the text to display for this question. As with a preamble string, if this string contains an open HTML tag (such as {{{<em>}}}), it must also have the corresponding close tag (such as {{{</em>}}}). Also note that the entire string must be on a single line. If you want it to render as multiple lines, you must include the appropriate HTML markup.
 
-  <b><em>...the image...</em></b><br><b>1.</b> You want to reread an introductory accounting textbook from school, but you cannot remember the exact title. You recall that the cover is yellow and has puzzle pieces on it. In the image above, where would you click to filter the results in order to locate the book?
+  * {{{lesson.}}} A string representing the lesson (or lessons) that cover the material this question is about. The app displays this string if the student incorrectly answers the question and has requested the app to [#Submitting_and_checking_answers check answers].
 
-=== Answer information ===
+A question can be one of four types, depending on the third attribute:
 
-The final possibility for an entry in the {{{activity}}} array is a !JavaScript object that represents answer information. Depending on the answer type, this information can have several forms. The object contains properties such as the type of question, a [https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions regular expression] indicating the correct answer, or a string to show in case of either correct or incorrect answers or to show when the student asks for help.
+  * {{{choices.}}}  A multiple-choice question. The value of the {{{choices}}} attribute is an array of strings and one function call.  Each string represents a possible wrong answer to the question. You specify the correct answer by with a function call of the form {{{correct(}}}_*{{{string}}}*_{{{)}}}, where _*{{{string}}}*_ is a string containing the correct answer. Students see a set of radio buttons to choose from as with multiple-choice questions in [CreateActivities#Single_multiple-choice_question activities]. 
 
-A question can be one of three types:
-  * [#Single_multiple-choice_question A single multiple-choice question]
-  * [#Group_of_multiple-choice_questions A group of multiple-choice questions]
-  * [#Free_text Free text]
+  * {{{correctAnswerNumeric.}}}   A number. For questions with a numeric answer. The value of the attribute is the correct answer.
 
+  * {{{correctAnswerString.}}} A case-insensitive substring match. The value of the attribute is a string that must occur as a substring in the answer for the answer to be correct. Use this attribute when your question is somewhat open ended, but constrained enough that all you need is for the correct answer to occur somewhere in a larger string. 
 
-==== A group of multiple-choice questions ====
-
-Sometimes you want to group a set of multiple-choice questions so that students can only check their answers after answering all of the questions in the group. You can do this with code that looks like the following example:
-
-{{{
-{questionType: 'multiple choice group',
- questionsList: [ 
-    {
-     questionHTML: '<b>1.</b> In the United States, the state of California is known for its earthquakes. Have there been earthquakes in Iowa?<br/>',
-     choices: ['Yes', 'No'],
-     correctIndex: 0
-    },
-
-    {
-     questionHTML: '<b>2.</b> Has there ever been an earthquake in Maine?<br/>',
-     choices: ['Yes', 'No'],
-     correctIndex: 0
-    },
-
-    {
-     questionHTML: '<b>3.</b>Which state (Iowa or Maine) had an earthquake more recently?<br/>',
-     choices: ['Iowa', 'Maine'],
-     correctIndex: 1
-    }
- ],
- allCorrectOutput: 'Hopefully you used Control-F to find the information quickly.',
- someIncorrectOutput: 'Remember, you can use Control-F to find information like this more quickly. Please try again.'
-}
-}}}
-
-This code represents a single !JavaScript object with four required attributes:
-
-  * {{{questionType}}}. The value {{{'multiple choice group'}}} indicates that this answer is a group of multiple-choice questions. 
-
-  * {{{questionsList}}}. The value of this attribute is an ordered array of the related questions. Each element of the {{{questionsList}}} array is a !JavasScript object representing one question and answer. Each of those objects has 3 attributes:
-     * {{{questionHTML:}}} HTML representing the text to display for this question.
-     * {{{choices:}}} An array of the possible answers to this question.
-     * {{{correctIndex:}}} The index in the {{{choices}}} array of the correct answer. (Remember that !JavaScript arrays are 0-based.)
-
-  * {{{allCorrectOutput.}}} The text to display when the student correctly answers all questions in the group. Before this text, the code includes the string "All your answers are correct!"
-
-  * {{{someIncorrectOutput.}}} The text to display when the student incorrectly answers at least one of the questions. In addition to this text, students see how many of their answers were incorrect.
-
-For this example, if students answer one question correctly, they see the following:
-
-https://www.corp.google.com/~vpg/no_crawl/cb/answer-group.png
-
-==== Free text ====
-
-The final type of answer is a free text area. Use this answer type when your question is somewhat open ended. Students type their answer into a text box of a size you specify. 
-
-The code uses a [https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions regular expression] to verify the answer. Regular expressions can be notoriously difficult for a programmer to get right. For this reason, you need to be very careful with the wording of any question that takes a free text answer. Your regular expression needs to account for reasonable variations in student responses. The code for a simple free text answer looks as follows:
-
-{{{
-  { questionType: 'freetext',
-    correctAnswerRegex: /white?/i,
-    correctAnswerOutput: "Correct--Many charts, tables, and graphs have white backgrounds, so filtering for white images helps you find them faster.",
-    incorrectAnswerOutput: "Try again. Consider what color would be dominant in images of charts, tables, and graphs. Look at the results above. Each of those sources is traditionally printed on paper.",
-    showAnswerOutput: "Our search expert says: I would click on white in the color grid, since many charts, tables, and graphs have white backgrounds." },
-}}}
-
-This code represents a single !JavaScript object with several attributes. The first two are required; the others are optional.
-
-  * {{{questionType}}}. The value {{{'freetext'}}} indicates that this answer expects a string from the student.
-
-  * {{{correctAnswerRegex}}} is a regular expression to use to check whether or not the student's answer is correct.
-
-  * {{{correctAnswerOutput}}} is the text to display when the student's answer is correct. Optional.
-  * {{{incorrectAnswerOutput}}} is the text to display when the student's answer is not correct. Optional.<br>If you do not supply both {{{correctAnswerOutput}}} and {{{incorrectAnswerOutput}}}, then the code does not display the *Check Answer* button. If you supply one of these, you must supply both of them.
-
-  * {{{showAnswerOutput}}} is the hint to display if the user clicks on *Skip & Show Answer*. Optional. If you do not supply this attribute, then the code does not display the *Skip & Show Answer* button.
-
-  * {{{showAnswerPrompt}}} is the text to display on the *Skip & Show Answer* button. Optional. If you do not supply this attribute, the text is (unsurprisingly) *Skip & Show Answer*.
-
-  * {{{outputHeight}}} is the height of the text box to display. Optional; defaults to 50px (a single line of text).
-
-https://www.corp.google.com/~vpg/no_crawl/cb/answer-free.png
-
-
+  * {{{correctAnswerRegex.}}}  Free text. The value of this attribute is a regular expression capturing the correct answer. Use this attribute when your question is more open ended than a substring match can handle. In this case, the code uses a [https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions regular expression] to verify the answer. Regular expressions can be notoriously difficult for a programmer to get right. For this reason, you need to be very careful with the wording of any question that takes a free text answer. Your regular expression needs to account for reasonable variations in student responses.  
 
 == Testing changes ==
 
 Changes you make to any file in the {{{views}}} directory or to any file in the {{{assets/js}}} directory appear automatically in your running development server.
 
 That is, after you make a change to one of these HTML or JavaScript files, simply load (or reload) a page that uses that page and the change appears.
-
-
-== Sending email after assessments ==
-
-<font color=red><<TODO write this. After a student submits an assessment, the app sends the appropriate email from {{{views/test_confirmation.html}}}. You probably want to reword those.>></font>
