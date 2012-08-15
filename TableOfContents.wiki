@@ -1,7 +1,7 @@
 <font color=red> <b>This is an early draft! Beware!</b> </font>
 
-  * [CourseBuilder Course Builder]
-  * [OnePager Course Builder in a Nutshell]
+  * [CourseBuilder Course Builder in a Nutshell]
+  * [PSHistory About the Power Searching Experiment]
   * [WhatsInACourse What's in a Course?]
     * [CourseFlow Course Flow]
   * [OnePlan Plan Before You Start]
