@@ -2,7 +2,7 @@
 
 =Create Assessments=
 
-<font color=red><<TODO working here. How this will actually work is under discussion. The current situation is a tad grim.>></font>
+<font color=red><<TODO to be written. DO NOT WRITE ASSESSMENTS USING THIS AS GUIDANCE. This code is being rewritten as I write this. Pay no attention to this page until this message changes.>></font>
 
 At certain parts throughout the course, students take assessments to see how they're doing:
 
