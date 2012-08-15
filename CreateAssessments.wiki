@@ -88,29 +88,14 @@ The common attributes are:
   * {{{lesson.}}} A string representing the lesson (or lessons) that cover the material this question is about. The app displays this string if the student incorrectly answers the question and has requested the app to [#Submitting_and_checking_answers check answers].
 
 A question can be one of four types, depending on the third attribute:
-|| *For this question type...* || *Supply a value for this attribute...*||
-|| [#Multiple-choice_question A multiple-choice question] || {{{choices}} ||
-|| [#Substring_match A case-insensitive subsring match] || {{{correctAnswerString}}} ||
-|| [#Numeric_match A numeric match] ||  {{{correctAnswerNumeric}}}  ||
-|| [#Free_text Free text] ||  {{{correctAnswerRegex}}}  ||
 
-==== Multiple-choice question ====
+  * {{{choices.}}}  A multiple-choice question. The value of the {{{choices}}} attribute is an array of strings and one function call.  Each string represents a possible wrong answer to the question. You specify the correct answer by with a function call of the form {{{correct(}}}_*{{{string}}}*_{{{)}}}, where _*{{{string}}}*_ is a string containing the correct answer. Students see a set of radio buttons to choose from as with multiple-choice questions in [[CreateActivities#Single_multiple-choice_question activities]. 
 
-==== Substring match ====
- A case-insensitive subsring match
+  * {{{correctAnswerNumeric.}}}   A number. For questions with a numeric answer. The value of the attribute is the correct answer.
 
-==== Numeric match ====
-A numeric match
+  * {{{correctAnswerString.}}} A case-insensitive substring match. The value of the attribute is a string that must occur as a substring in the answer for the answer to be correct. Use this attribute when your question is somewhat open ended, but constrained enough that all you need is for the correct answer to occur somewhere in a larger string. 
 
-==== Free text ====
-
-<font color=red><<TODO *REALLY IGNORE THIS SECTION.* At present, it's the text for writing activities. I just thought I'd start from there and modify it for assessments. Until this message goes away, assume this section is complete gobbledygook.>></font>
-
-The final type of answer is a free text area. Use this answer type when your question is somewhat open ended. Students type their answer into a text box of a size you specify. 
-
-The code uses a [https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions regular expression] to verify the answer. Regular expressions can be notoriously difficult for a programmer to get right. For this reason, you need to be very careful with the wording of any question that takes a free text answer. Your regular expression needs to account for reasonable variations in student responses. The code for a simple free text answer looks as follows:
-
-The final possibility for an entry in the {{{activity}}} array is a !JavaScript object that represents answer information. Depending on the answer type, this information can have several forms. The object contains properties such as the type of question, a [https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions regular expression] indicating the correct answer, or a string to show in case of either correct or incorrect answers or to show when the student asks for help.
+  * {{{correctAnswerRegex.}}}  Free text. The value of this attribute is a regular expression capturing the correct answer. Use this attribute when your question is more open ended than a substring match can handle. In this case, the code uses a [https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions regular expression] to verify the answer. Regular expressions can be notoriously difficult for a programmer to get right. For this reason, you need to be very careful with the wording of any question that takes a free text answer. Your regular expression needs to account for reasonable variations in student responses.  
 
 == Testing changes ==
 
