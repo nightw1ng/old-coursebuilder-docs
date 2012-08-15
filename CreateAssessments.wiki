@@ -2,7 +2,7 @@
 
 <h1>Create Assessments</h1>
 
-<font color=red><<TODO to be written. DO NOT WRITE ASSESSMENTS USING THIS AS GUIDANCE. This code is being rewritten as I write this. Pay no attention to this page until this message changes.>></font>
+<font color=red><<TODO This page describes how the code *will* work. I don't think it works this way yet.>></font>
 
 <wiki:toc />
 
@@ -89,7 +89,7 @@ The common attributes are:
 
 A question can be one of four types, depending on the third attribute:
 
-  * {{{choices.}}}  A multiple-choice question. The value of the {{{choices}}} attribute is an array of strings and one function call.  Each string represents a possible wrong answer to the question. You specify the correct answer by with a function call of the form {{{correct(}}}_*{{{string}}}*_{{{)}}}, where _*{{{string}}}*_ is a string containing the correct answer. Students see a set of radio buttons to choose from as with multiple-choice questions in [[CreateActivities#Single_multiple-choice_question activities]. 
+  * {{{choices.}}}  A multiple-choice question. The value of the {{{choices}}} attribute is an array of strings and one function call.  Each string represents a possible wrong answer to the question. You specify the correct answer by with a function call of the form {{{correct(}}}_*{{{string}}}*_{{{)}}}, where _*{{{string}}}*_ is a string containing the correct answer. Students see a set of radio buttons to choose from as with multiple-choice questions in [CreateActivities#Single_multiple-choice_question activities]. 
 
   * {{{correctAnswerNumeric.}}}   A number. For questions with a numeric answer. The value of the attribute is the correct answer.
 
