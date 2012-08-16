@@ -24,8 +24,8 @@ Hangouts On Air are a very effective way of broadcasting a live event to a large
   * Instead, publicize either the URL for your !YouTube channel or the URL for your Google+ page. When your Hangout On Air starts, it will be visible at the top of those two locations.
   * In a live session, if you show your Moderator series on screen, be sure to put the series in presentation mode. To do that, go to the Questions page for your series and click on *Presentation view*, right under the blue box with the question to vote on. Presentation view does not show the "blue boxed" question and lets you move through the questions in order of popularity, marking the ones you've answered as you go.
   * Your audience may include hearing impaired people. Additionally, non-native speakers of the language of your Hangout On Air may be more comfortable reading your language than hearing it spoken. For these reasons, consider having a transcriptionist create captions in real-time for your Hangout On Air. (See [https://hangout-captions.appspot.com/ What is Hangout Captions?] for more information.)
-  * [http://support.google.com/plus/bin/answer.py?hl=en&amp;answer=2459411&amp;topic=2553242&amp;ctx=topic Hangouts On Air common questions].
-  * Please read [http://support.google.com/plus/bin/answer.py?hl=en&amp;answer=2553248&amp;topic=2553242&amp;ctx=topic An important point about copyright].
+  * [http://support.google.com/plus/bin/answer.py?hl=en&answer=2459411 Hangouts On Air common questions].
+  * Please read [http://support.google.com/plus/bin/answer.py?hl=en&answer=2553248 An important point about copyright].
 
 ==Setting up a Google Moderator series==
 
