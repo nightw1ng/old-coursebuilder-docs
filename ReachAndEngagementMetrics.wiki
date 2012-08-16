@@ -10,26 +10,6 @@ Reach and engagement metrics let you determine how many people you reached with 
   * What were the overall drop-off rates? 
   * When did students tend to drop-off?
 
-<font color=red><<TODO write this. Is this ALL Analytics? (Email out to Riona for help with existing Analytics docs and to Meg and Saifu about where the metrics come from>></font>
-
 For suggestions on metrics you can use to measure reach and engagement, see [ExampleReachEngagementMetrics Example Reach & Engagement Metrics].
 
-== Adding Analytics tracking ==
-
-If you decide to add Analytics tracking to your course, you need to put the following code in {{{views/base.html}}}:
-
-{{{
-<script type="text/javascript">
-  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-  try{
-    var pageTracker = _gat._getTracker("UA-xxxxxx-x");
-    pageTracker._trackPageview();
-  } catch(err) {}
-</script>
-}}}
-
-
-In this code, replace _*{{{UA-xxxxxx-x}}}*_ on the seventh line with the property ID you got when registering with Analytics.
+Google Analytics is our tool for collecting and analyzing reach and engagement metrics. The [http://www.google.com/analytics/learn/index.html Analytics site] contains a lot of useful information. Start with [http://support.google.com/analytics/bin/answer.py?hl=en&answer=1008015&topic=1726909&ctx=topic Get started with Google Analytics.] This step-by-step guide describes how to get an Analytics account to use with your course. From there, you'll learn how to get the !JavaScript snippet you must add to {{{views/base.html}}} to collect Analytics data.
