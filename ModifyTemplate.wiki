@@ -8,8 +8,7 @@ The templates work together hierarchically. Every page displayed for your course
 
 The other views, such as {{{activity.html}}}, fill in more structure for a specific type of page. Finally, files outside of {{{views}}} may fill in the content for a particular page, such as {{{activity-1.1.js}}}.
 
-For more information on the structure of these pages, see <font color=red><<TODO if I knew what framework this is, I might be able to point to some actual documentation that I certainly don't want to write if I can possibly help it.>></font>
-
+For more information on the structure of these pages, see the [http://jinja.pocoo.org/docs Jinja2 documentation].
 
 == Structure of a registered page ==
 
