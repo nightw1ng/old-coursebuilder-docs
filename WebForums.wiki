@@ -13,7 +13,7 @@ For a longer introduction to Google Groups, see [http://support.google.com/group
 
   * When setting up your group for the first time, follow the instructions at [http://support.google.com/groups/bin/answer.py?hl=en&answer=2464926 Create a group].
   * On the *Create Group* screen, set the following:
-    * Set *Group type* to *Web forum*.
+    * Set *Group type* to *Questions*.
     * Under "Basic permissions", 
       * Set *View topics* to *Anyone*.
       * Set *Post* to *All members of the  group*.
