@@ -74,7 +74,7 @@ When you create your course using our experimental code, you supply the code wit
 
 ===Question types===
 
-Graded and ungraded assessments support the same types of questions:
+Graded and ungraded assessments essentially support the same types of questions:
 
   * Multiple-choice where there is one correct answer
   * Multiple-choice where there can be more than one correct answer
@@ -83,27 +83,27 @@ Graded and ungraded assessments support the same types of questions:
 
 Telling the experimental code how to grade either type of multiple-choice question is straightforward. Telling it how to grade fill-in-the-blank questions can be trickier. You need to be very careful both in your wording of the question and in what you include about the correct answer. “Go and do something” questions do not require an answer, so you don’t have to include anything about the answer.
 
+===Ungraded activities===
+
+An activity typically covers material only from the lesson that the activity immediately follows. You use them to let the students assess their own understanding of the material in that lesson. An activity does not affect a student’s final score in the course.
+
+When you create a question for an activity, you can provide the following information:
+
+  * The correct answer to the question, so the code knows what to tell the student.
+  * A hint about why incorrect answers are incorrect. The hint should point the student to the correct answer.
+  * The correct answer and explanatory information.
+
 ===Graded assessments===
 
-Graded assessments typically cover material from several units and lessons.  You use them to rate students’ performance. Before and after assessments can also help you gauge the effectiveness of the course.
+Graded assessments typically cover material from several units and lessons. You use them to rate students’ performance. Before and after assessments can also help you gauge the effectiveness of the course.
 
-With our experimental code, you have control over how many graded assessments you provide and how each of those assessments counts in the final scoring for a student’s grade.
+With Course Builder's experimental code, you have control over how many graded assessments you provide and how each of those assessments counts in the final scoring for a student’s grade.
 
 Because you use a graded assessment to rate performance and measure success, your practical choices are: 
   * only let students take a graded assessment once. In this case, you can tell your students which of their answers are incorrect.
   * let students take a graded assessment multiple times. In this case, do not tell them which answers are incorrect. (If you do, then they'll have no difficulty getting 100% when retaking the same assessment.)
 
 If you choose to allow your students to take the same graded assessment multiple times, consider still giving the students some feedback about what they did wrong. To do this, map each assessment question to the corresponding unit and lesson within the course. Then immediately after submission of the assessment, show students the score and list the lessons to review to improve their score. 
-
-===Ungraded activities===
-
-An activity is an ungraded assessment. An activity typically covers material only from the lesson that the activity immediately follows. An activity does not affect a student’s final score in the course. For that reason, activities can provide detailed feedback on students’ understanding of the material.
-
-When you create a question for an activity, you can provide the following information:
-
-  * The correct answer to the question, so the code knows what to tell the student.
-  * A hint about why incorrect answers are incorrect. The hint should point the student to the correct answer.
-  * The correct answer and an explanation the student can read, either instead of answering the question themselves or after answering it, to provide more information.
 
 == Social interactions ==
 
@@ -114,11 +114,11 @@ But one of the main impetuses behind doing a MOOC is to reach an extremely large
 The most common avenues are as follows:
 
   * *[WebForums Google Groups or other web forum].*<br>A web forum is a great way to get your students to talk to each other. To facilitate discussion, you can set up your forum with appropriate categories, to guide students to likely places to read and to post questions on particular topics within your course. When designing the content of your course, consider creating activities requesting that students post answers to the forum. You can also use a forum to post material that you do not want in the main body of your course, either because it is background material for students who need a bit more help or more challenging questions for more advanced students.
-  * *[Announcements Google+ page or blog].* <br> Use Google+ or your blog to share information that you want available to not just your course members, but to other people as well. While students can comment on your posts, these formats are still primarily methods for instructors to push information out to the students.
+  * *[Announcements Google+ page or blog].* <br> Use Google+ or your blog to share information that you want available to not just your students, but to other people as well. While students can comment on your posts, these formats are still primarily methods for instructors to push information out to the students.
   * *[http://www.google.com/+/learnmore/hangouts/ Google Hangout].*<br>You may decide that you want your students to divide into smaller groups to work on projects together. Your students probably live in distributed areas. You can have them meet in a Google Hangout to collaborate on their project.
-  * *Help email alias.* <br>Sometimes students have questions that they are certain are not of interest to anybody else. For example, “I don’t have access to the videos. What do I do?” or “My dog ate my mid-course assessment. Can I have an extension?” You can provide a help alias to students to use for these primarily administrative questions.
+  * *Help email alias.* <br>Sometimes students have questions that they know are not of interest to anybody else. For example, “I don’t have access to the videos. What do I do?” or “My dog ate my mid-course assessment. Can I have an extension?” You can provide a help alias for them to use for such primarily administrative questions.
 
-In addition to these things that you set up, in a successful MOOC, students may create additional interaction mechanisms, perhaps an email alias for students interested in a particular aspect of the course material or weekly in-person meetings for students living close too each other.
+In addition to these things that you set up, students may create additional interaction mechanisms, perhaps an email alias for students interested in a particular aspect of the course material or weekly in-person meetings for students living close too each other.
 
 <a name="administrivia"></a>
 == Administrivia ==
