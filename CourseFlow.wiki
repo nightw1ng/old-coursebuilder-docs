@@ -1,7 +1,7 @@
 #summary What a student does, in what order, when taking a course created using our code and techniques.
 =Course Flow=
 
-This page describes what a student does, in what order, when taking a course created with Course Builder Experimental. That description may give the impression of a simple sequential flow through the material, like any other course. In reality, some of the steps can be done at the student’s own pace; other steps must be  done in synchrony with other students taking the course. The second section describes that flow in a little more detail, because it is unfamiliar to many students and instructors.
+This page describes what a student does, in what order, when taking a course created with Course Builder. The description may give the impression of a simple sequential flow through the material, like any other course. In reality, some of the steps can be done at the student’s own pace; other steps must be  done in synchrony with other students taking the course. The second section describes the flow in a little more detail, because it is unfamiliar to many students and instructors.
 
 For a description of the parts of a course from the course designer’s perspective, see [WhatsInACourse What's in a Course?]
 
@@ -11,7 +11,7 @@ The flow for a student participating in a course is as follows:
 
   # *Register* for course. <br>Note that a student must have a Google account to register for the course.
   # *Get welcome email* from the staff.
-  # Take a *pre-course assessment* to benchmark starting familiarity with course material.
+  # Take a *pre-course assessment* to see how much familiarity the student has with the course material at the outset.
   # *Get email* announcing availability of first unit.
   # *Watch the video*, read the text version, or both for the first lesson in the first unit. Repeat watching and reading as many times as is useful.
   # *Complete the activity *following that lesson. Repeat the activity as many times as is useful.
