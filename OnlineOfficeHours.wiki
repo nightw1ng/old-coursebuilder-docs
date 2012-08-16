@@ -42,9 +42,11 @@ If you organize one or more Hangouts On Air for your course, you should create a
 You can later change this information by using the *Edit Series* button on your series page.
 
 ===Common questions===
+
   * *How can I add a question / idea / suggestion to a series?*<br>You can either submit a question or vote on a question that's already been asked. All you need is a Google Account to sign in. At the bottom of the topic page, just click the *Suggest a question* button.
   * *How do I vote to get an existing question asked?*<br>If you see a question that's been submitted, you can vote to recommend that it's asked. To do so, simply click the *checkmark* button. If you'd like to vote against an existing question, you click the *X* button. When you mouse over the bars, you see the number of submitted votes.
   * *How do I comment on an existing question?*<br>In addition to voting in favor of or against a question, if you own a series you can post comments on questions. Click *Post a response* and you can share your thoughts on the question with other participants.
   * *How are the most popular submissions ranked? *<br>Moderator ranks questions based on a simple statistical algorithm, with the goal of discovering the most popular questions. That algorithm is the ratio of positive votes to total votes for a submission, which is scaled by the total number of votes for the submission.
-  * *How can I get other people to vote on my idea or an idea that I really like?*
-The *Share* button allows you to copy a direct URL link to your idea, or share your idea directly through Gmail, Facebook, and Twitter. To use any of these services, you will need to sign-in to them and allow Google Moderator to access them. You can do this for any idea in a Moderator series.
+  * *How can I get other people to vote on my idea or an idea that I really like?*<br>The *Share* button allows you to copy a direct URL link to your idea, or share your idea directly through Gmail, Facebook, and Twitter. To use any of these services, you will need to sign-in to them and allow Google Moderator to access them. If you do so, perhaps people will notice your idea and vote on it.
+
+Many of these questions your students may also have. Consider sharing this information with them.
