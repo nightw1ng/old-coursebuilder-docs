@@ -7,7 +7,7 @@ For a description of the parts of a course from the course designer’s perspect
 
 ==What students do when==
 
-The flow for a student participating in a course is as follows:
+The flow for a student participating in the sample course is as follows (your course may have different pieces, but this should give you the idea):
 
   # *Register* for course. <br>Note that a student must have a Google account to register for the course.
   # *Get welcome email* from the staff.
