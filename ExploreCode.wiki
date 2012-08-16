@@ -29,7 +29,7 @@ The following table briefly describes the directory/folder structure for the sam
 || {{{data/}}} || _{{{[bulkloader-log-SUFFIX]}}}_ || These files appear when you upload data (such as CSV files) to the course.  || || 
 || {{{data/}}} || _{{{[bulkloader-progress-SUFFIX]}}}_ || These files appear when you upload data to the course. || || 
 || {{{data/}}} || {{{lesson.csv}}} || This CSV file contains information about all of the lessons in your course. See [CreateLessons Create Lessons]. || Required || 
-|| {{{data/}}} || {{{unit.csv}}} || This CSV file contains information about the units in your course, to post to your home page. See [CreateHomePage Create Home Page]. || Required || 
+|| {{{data/}}} || {{{unit.csv}}} || This CSV file contains information to include on your home page. See [CreateHomePage Create Home Page]. || Required || 
 || || {{{index.yaml}}} ||  || || 
 || || {{{main.py}}} ||  || || 
 || {{{models}}} || || ||  ||
