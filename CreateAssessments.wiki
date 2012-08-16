@@ -26,7 +26,7 @@ This page consists of three areas:
 The app uses three files to render this page:
   * {{{views/base.html}}} defines the header and footer areas.
   * {{{views/assessment.html}}} defines the structure of the content area.
-  * {{{assets/js/assessment-}}}_*{{SUFFIX}}}*_{{{.js}}} contains a !JavaScript array that fills in the actual question and answer areas for the assessment. Each assessment has its own file.
+  * {{{assets/js/assessment-}}}_*{{SUFFIX}}}*_{{{.js}}} contains a !JavaScript object that fills in the actual question and answer areas for the assessment. Each assessment has its own file.
 
 == Writing assessments ==
 
@@ -55,7 +55,7 @@ The file contains a single object named {{{assessment}}}. This object describes 
 
 The value of the {{{assessmentName}}} attribute is one of  {{{"precourse"}}}, {{{"midcourse"}}}, or {{{"postcourse"}}}.
 
-When students complete an assessment, they see a message about how they did. You can change the contain of these messages in {{{views/test_confirmation.html}}}. (See [#Submitting_and_checking_answers Submitting and checking answers].)
+When students complete an assessment, they see a message about how they did. You can change the contents of these messages in {{{views/test_confirmation.html}}}. (See [#Submitting_and_checking_answers Submitting and checking answers].)
 
 The sample code is hardcoded to have these three assessments. If you want different types of assessments or different score weights/thresholds, you must edit the code in {{{assets/js/activity-generic.js}}} and in {{{controllers/lessons.py}}}.
 
@@ -77,7 +77,7 @@ https://www.corp.google.com/~vpg/no_crawl/cb/assessment-submit.png
 
 By default, this page acknowledges that they submitted the assessment and gives them information about next steps. You can change the messages for different assessments by changing the file at {{{views/test_confirmation.html}}}.
 
-Notice that this page does not tell students how they did on the assessment or give any feedback about what they might want to study some more. You can give students the option of checking their answers before submitting an assessment. If you set the {{{disableCheckAnswers}}} attribute of the {{{assessment}}} object to {{{FALSE}}}, then the assessment page has an additional *Check your Answers* button and an area for feedback, as shown here:
+Notice that this page does not tell students how they did on the assessment or give any feedback about what they might want to study some more. You can give students the option of checking their answers before submitting an assessment. If you set the {{{disableCheckAnswers}}} attribute of the {{{assessment}}} object to {{{FALSE}}} (or omit this attribute), then the assessment page has an additional *Check your Answers* button and an area for feedback, as shown here:
 
 https://www.corp.google.com/~vpg/no_crawl/cb/assessment-check.png 
 
