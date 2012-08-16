@@ -43,7 +43,6 @@ The following table briefly describes the directory/folder structure for the sam
 || {{{views/}}} || {{{confirmation.html}}} || The page that appears after a student enrolls. || Required || 
 || {{{views/}}} || {{{course.html}}} || The structure of the content for the home page for the course. Contains a short blurb and a list of units and assessments. See [CreateHomePage Create Home Page]. || Required || 
 || {{{views/}}} || {{{forum.html}}} || The structure of the page that contains your [WebForums discussion forum]. You must include a link to your forum. || Required || 
-|| {{{views/}}} || {{{help.html}}} || <font color=red><<TODO I notice this file isn't referred to anywhere. What is it?>></font> ||  || 
 || {{{views/}}} || {{{register.html}}} || The content of the registration form an unenrolled person sees when visiting your course.  || Likely ||
 || {{{views/}}} || {{{test_confirmation.html}}} || The set of messages a student can see after completing an assessment. See [CreateAssessments Create Assessments]. || Required|| 
 || {{{views/}}} || {{{unit.html}}} || The structure for a lesson, activity, or assessment.  It includes additional footer and header regions and the left-hand navigation.  ||  || 
