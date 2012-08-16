@@ -1,3 +1,4 @@
+
 #summary Mechanics of creating a lesson.
 
 <h1>Create Lessons</h1>
@@ -12,9 +13,9 @@ This page talks about the mechanics of creating a lesson page and its content. F
 
 == What happens on a lesson page ==
 
-A lesson page is where you teach your prepared material. Typically, each lesson consists of a short video and text version of the content. You embed the video in the lesson page. You put the text version in a file at some other URL. 
+A lesson page is where you teach your prepared material. Typically, each lesson consists of a short video and text version of the content. You embed the video in the lesson page, hosting the video on !YouTube. (See [#Working_with_video Working with video].) You put the text version in a file at some other URL; for Power Searching, we hosted the text versions as [http://support.google.com/docs/bin/answer.py?hl=en&answer=49008 Google Docs]. 
 
-Students can watch the video as many times as they like. If the click on *Text version*, a separate browser window appears with that content.
+Students can watch the video as many times as they like. If they click on *Text version*, a separate browser window appears with that content.
 
 Everything else on the page is context and navigation.
 
@@ -27,7 +28,7 @@ This page consists of four areas:
     * A breadcrumb indicating where in the course hierarchy this page exists, such as<br>{{{Course > Unit 1 > Lesson 1}}}.
     * The name and number of the unit.
   * A *vertical navigation bar*, consisting of a list of all lessons and activities in the current unit.
-  * The *content area* is more complex than for previous pages. It contains:
+  * The *content area* contains:
     * The name of this lesson.
     * A button to access a text version of the lesson.
     * A list of the lesson objectives.
@@ -46,27 +47,26 @@ The second two lines of the header, the vertical navigation, and the content are
 
 === Lesson content ===
 
-{{{data/lesson.csv}}} contains information about each lesson, such as where the video lives and what its title is. The first line describes the content of the other lines:
-  {{{unit_id,unit_title,unit_exercise,lesson_id,lesson_title,lesson_activity,lesson_activity_name,lesson_notes,lesson_video_id,lesson_slide_url,lesson_objectives,lesson_times}}}
+{{{data/lesson.csv}}} contains information about each lesson, such as the video's URL and the lesson's title. The first line describes the content of the other lines:
+  {{{unit_id,unit_title,lesson_id,lesson_title,lesson_activity,lesson_activity_name,lesson_notes,lesson_video_id,lesson_objectives}}}
 
 Each line after that contains the information for an individual lesson, such as: 
 
-  2,Interpreting results,,5,Different kinds of content,checkquiz25(),Lesson 2.5 Activity,https://docs.google.com/SOMETHING,https://docs.google.com/SOMETHING,"- Find different kinds of content efficiently: blogs, discussions, recipes, patents, books, 3D models, scholarly sources, and legal documents.",10 minutes
+  2,Interpreting results,2,Thinking more deeply about your search,checkquiz22(),Lesson 2.2 Activity,https://docs.google.com/SOMETHING,"- Recognize when search results are offering information that suggests a better/additional search. <br>
+  - Use ""define"" to identify the meaning of words.<br>
+  - Use dictionary mode to define words that do not appear in traditional dictionaries."
 
 When you edit the file, leave the first line as is. Replace all of the other lines with the information relevant to your course. Each line consists of:
 
   # {{{unit_id:}}} An integer indicating which unit this lesson is part of.  (You must number units consecutively starting with 1.)
   # {{{unit_title:}}} The name of the unit.
-  # {{{unit_exercise:}}} *Unused* <font color=red><<TODO is it really unused? I couldn't decide what it was for.>></font>
   # {{{lesson_id:}}} An integer indicating which lesson this is.  (You must number lessons in each unit consecutively starting with 1.)
   # {{{lesson_title:}}} The name of the lesson.
-  # {{{lesson_activity:}}} The !JavaScript function to run to make the activity associated with this lesson appear. This function is always named {{{checkquiz}}}_*{{{NM}}}*_, where _*{{{N}}}*_ is the unit number and _*{{{M}}}*_ is the lesson number. <font color=red><<TODO This guess makes me queasy. I didn't actually find the code that does this; it just seemed logical.>></font>
+  # {{{lesson_activity:}}} This value is always {{{checkquiz}}}_*{{{NM}}}*_, where _*{{{N}}}*_ is the unit number and _*{{{M}}}*_ is the lesson number.
   # {{{lesson_activity_name:}}} The name of the associated activity, to appear as the title of the activity page.
   # {{{lesson_notes:}}} URL of the text version of the lesson.
   # {{{lesson_video_id:}}} URL of the video version of the lesson.
-  # {{{lesson_slide_url:}}} URL of a presentation containing the slides that appear in the video. <font color=red><<TODO which doesn't appear anywhere I can find.>></font>
   # {{{lesson_objectives:}}} A string containing lesson objectives, to appear after the title of the lesson.
-  # {{{lesson_times:}}} Approximately how long this lesson should take. <font color=red><<TODO which doesn't appear anywhere I can find.>></font>
 
 The following image shows where this information appears on the screen:
 
