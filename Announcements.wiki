@@ -20,7 +20,7 @@ You may choose to send reminder announcements to students at important points al
 
   * *At course registration*<br>Let students know their registration has been processed and include a brief description of the course, the high-level schedule for the course, an introduction to the community features available to students, and so on.
   * *Whenever you release new content*<br>Link to the new content and mention any upcoming deadlines.
-  * *Partway through, to students who have registered but not started the course*<br>Sometimes students register and then forget to start a course. Partway through the course, send just these people a reminder that they might want to start.  (This is only feasible if you use email for reminder announcements.)
+  * *Partway through, to students who have registered but not started the course*<br>This is in addition to the regular emails announcing the release of new content. Sometimes students register and then forget to start a course. Partway through the course, send just these people a reminder that they might want to start. 
   * *Before a special event*<br>For example, if you have [OnlineOfficeHours online office hours] using a Hangout On Air, send a reminder message shortly before it occurs.
   * *Upon submission of final assessment*<br>Notification of whether or not the student has passed and when to expect the certificate (if any).
 Whatever reminder announcements you decide to send, we recommend that you draft them in advance.  See [ExampleEmails Example Emails] for some samples.
