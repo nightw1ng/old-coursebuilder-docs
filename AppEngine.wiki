@@ -110,7 +110,7 @@ While working on your app, there are several places you can change information. 
   * *HTML:* Change HTML view files in the {{{views}}} directory.
   * *!JavaScript:* Change !JavaScript activity or assessment files in the {{{assets/js}}} directory.
   * *Image:* Change image files in the {{{assets/img}}} directory.
-  * *CSV:* Change unit or lesson information in the files {{{data/unit.csv}}} or {{{data/lesson.csv}}}.
+  * *CSV:* Change home page or lesson information in the files {{{data/unit.csv}}} or {{{data/lesson.csv}}}.
 
 === Changes to non-data files ===
 
