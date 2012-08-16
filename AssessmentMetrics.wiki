@@ -1,0 +1,11 @@
+#summary Metrics derived from student assessments.
+
+= Assessment Metrics =
+
+Assessments measure student skill level and improvement in ability	. The app stores information about students' assessment scores, allowing you to answer questions such as:
+
+  * What were the average scores on the different assessments?
+  * Did they improve? 
+  * What percentage of students had a score higher than 70% on questions around a particular topic?
+
+To get the assessment information, <font color=red><<TODO Kevin, bless his heart, said he'd write up this part>></font>
