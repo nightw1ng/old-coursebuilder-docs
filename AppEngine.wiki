@@ -174,7 +174,7 @@ When you enter your credentials, you may get the following error:
 
   {{{urllib2.URLError: <urlopen error [Errno 61] Connection refused>}}}
 
-If you do, then you have forgotten to start your development server. Go back to step 6.
+If you do, then you have forgotten to start your development server. 
 
 == Official App Engine documentation ==
 
