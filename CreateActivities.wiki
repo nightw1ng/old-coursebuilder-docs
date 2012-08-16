@@ -8,6 +8,8 @@ Each unit may have  some number of activities. An activity is a set of questions
 
 <img src="https://www.corp.google.com/~vpg/no_crawl/cb/activity.png" height=529 width=420 />
 
+This page talks about the mechanics of creating an activity. For information on what to put in your activities, see [TwoDevelop#Decide_what_you_want_to_test_in_your_assessments,_both_graded_an Develop the Content without the Technology].
+
 == What happens on an activity page ==
 
 An activity page lets students explore their understanding of the lesson content. Students answer questions on the activity page. For each question, clicking on *Check Answer* lets them know if their answer is correct. If the answer is incorrect, the response may contain guidance towards the correct answer. For answers that have a student enter a string, the question can include an extra button to give a hint. If students click on that button, the correct answer appears, possibly with some explanation of why it's the correct answer.
