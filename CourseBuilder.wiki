@@ -41,7 +41,6 @@ In these steps, all pathnames are relative to the directory containing your appl
     # Link to a relevant privacy policy and terms of service, for the footer.
   # [CreateRegistration Modify the registration pages.]
     # Change the content at {{{views/register.html}}} and  {{{views/confirmation.html}}}. 
-    # Change the registration confirmation email in {{{controllers/utils.py}}}.
     # (Optionally) Change the maximum number of students who can enroll in {{{controllers/utils.py}}}.
   # [CreateHomePage Modify the course home page].
     # In {{{views/course.html}}}, change the course name and description.
