@@ -1,9 +1,10 @@
 #summary Before you bog down writing code, flesh out all the details of what you want to create.
+
 <h1>Develop the Content without the Technology</h1>
 
 After you have taken a few minutes to [OnePlan plan], it’s time to start developing. It’s extremely tempting to just dive in and start recording videos and writing assessments and so on. But if you do that, you can create a course that doesn’t make sense and that doesn’t satisfy your primary goal or any of the supplementary objectives you planned. That said, even though we recommend you do initial development without using the technology, there are aspects of the final delivery method that should influence your development strategy.
 
-The first parts of development consist of expanding on the information you determined during the planning phase. After that, get down to deciding precisely what you want students to learn and how you’ll get them to do that:
+In the first parts of development you expand on the information you determined during the planning phase. After that, you get down to deciding precisely what you want students to learn and how you’ll get them to do that:
 
 <wiki:toc />
 
@@ -24,9 +25,11 @@ Again, this is an expansion of what you did in the planning step. For example:
   * Students will already know how to knit a scarf.
   * They will know how to cast yarn on and off needles and will know how to do both a knit stitch and a purl stitch.
 
-If your course truly is “massive”, the number of students guarantees an audience diversity that you do not expect. It can be difficult to balance how much allowance to make for that diversity. If you expect an international audience, you need to clarify any differences in the content for audiences from different cultures. 
+If your course truly is “massive”, the number of students guarantees an audience diversity that you may not expect. It can be difficult to balance how much allowance to make for that diversity. If you expect an international audience, you need to clarify any differences in the content for audiences from different cultures. 
 
 For example, people in different communities hold knitting needles differently and consequently do the basic stitches differently. Will you teach only the method you use? Will you teach multiple methods?
+
+Whatever you decide, in a situation like this you shouldconsider explicitly telling your students that what you will teach is only one way (or a few ways) to do whatever it is, and that there are other ways. Include links so you can read more, and even suggest taht students discuss these alternative approaches in the forum.
 
 Another aspect of audience diversity is that while you will design primarily for your average student, still think about the others. Some simple things that help:
 
@@ -57,7 +60,7 @@ In deciding the objectives for your course, try to design for the middle ground.
 
   * Make your assessments compelling and challenging but not daunting or frustrating. You want the assessment to test students’ progress, not to scare them away from the rest of the course.
 
-  * Remember that your audience may have a wide range of familiarity with the online world. <br>Make sure that the mechanics of doing the assessments does not interfere with the content of the assessments. You want to test the content, not how facile a student is with opening browser windows or using different types of user interface.
+  * Remember that your audience may have a wide range of familiarity with the online world. <br>Make sure that the mechanics of doing the assessments does not interfere with the content of the assessments. You want to test the content, not how facile a student is with opening browser windows or using different types of user interface. 
 
   * Decide whether or not you want graded assessments at all. <br>If you do want them, keep in mind that grading matters to students. Once you’ve said you will grade them, students want to know how the grading works and they will care passionately about getting a high grade. Once a deadline passes, you will hear from students who missed that deadline. 
 
@@ -67,13 +70,13 @@ In deciding the objectives for your course, try to design for the middle ground.
 
 ==Decide what other metrics to collect for your course.==
 
-Metrics are simply anything your measure so you can see the difference you have made with your course and so you can have concrete information to guide future improvement of your course. We collect three categories of metrics:
+Metrics are simply anything you measure so you can see the difference you have made with your course and so you can have concrete information to guide future improvement of your course. We collect three categories of metrics:
 
-  * *Assessments*, as discussed above, measure skill level and improvement in ability. <br><br>You collect this information by creating the pre-, mid-, and post-course assessments and comparing students' scores on them.
+  * *Assessments*, as discussed above, measure skill level and improvement in ability. <br><br>You collect this information by creating the pre-, mid-, and post-course assessments and comparing students' scores on them. See [AssessmentMetrics Assessment Metrics].
 
-  * *Reach and engagement* metrics measure how many people you reached with the course and how engaged those people were. <br><br>Common reach and engagement metrics include: How many students registered? How many completed each unit and each lesson?  What countries did the students come from? Was there a difference in course performance based on location? <br><br>You can collect these metrics by using Google Analytics to track visitors to your course.
+  * *Reach and engagement* metrics measure how many people you reached with the course and how engaged those people were. <br><br>Common reach and engagement metrics include: How many students registered? How many completed each unit and each lesson?  What countries did the students come from? Was there a difference in course performance based on location? <br><br>You can collect these metrics by using [ReachAndEngagementMetrics Google Analytics] to track visitors to your course.
 
-  * *Happiness metrics* measure student attitudes towards the material and feelings of satisfaction. They answer questions such as how satisfied were the students with what they learned and do they think they will be able to use the material.<br><br>While not objective, happiness metrics are an important indicator of the success of your course. Even if a course was objectively effective, if your students hated it, they are not likely to recommend it to their friends. <br><br>You can collect happiness metrics by sending a post-course survey to everyone who registered for your course.  Consider sending different surveys to people who registered but didn't finish the course from those who did finish it.
+  * *Happiness metrics* measure student attitudes towards the material and feelings of satisfaction. They answer questions such as how satisfied the students were with what they learned and whether they think they will be able to use the material.<br><br>While not objective, happiness metrics are an important indicator of the success of your course. Even if a course was objectively effective, if your students hated it, they are not likely to recommend it to their friends. <br><br>You can collect happiness metrics by sending a post-course survey to everyone who registered for your course.  Consider sending different surveys to people who registered but didn't finish the course from those who did finish it. See [HappinessMetrics Happiness Metrics].
 
 Deciding on the metrics early on makes it more likely that as you continue to the develop the course, you will remember to collect the information necessary to compute those metrics. Do not wait until after the course has launched; it may well be too late by then. For more information, see [Metrics Metrics].
 
@@ -85,11 +88,11 @@ Some things to consider during this step:
 
   * Is there an overall flow to the material that makes logical sense? What dependencies are there in your content? Are there steps that students must learn before other steps? Are there concepts that they must understand?
 
-  * Even though you think your content has a logical flow from beginning to end, remember that people are used to jumping around online material. As much as possible, make each of your lessons standalone so that students can successfully access them in a different order than you anticipated.
+  * Even though you think your content has a logical flow from beginning to end, remember that people typically jump around online material. As much as possible, make each of your lessons standalone so that students can successfully access them in a different order than you anticipated.
 
-  * To help with the last point, be consistent in lesson format. For example, first define the topic of the lesson, then say why it's important, give a demo of the topic, talk about it some, and finish with another demo and a short conclusion 
+  * To help with the last point, be consistent in lesson format. For example, first define the topic of the lesson, then say why it's important, give a demonstration of the topic, talk about it a bit, and finish with another demostration and a short conclusion.
 
-  * Try not to address either too much or too little in each lesson. Consider having most lessons be of approximately the same size so your students know what to expect. For online consumption, your material should be in smaller chunks than for live classes. Keep videos 3-5 minutes in length. 
+  * Consider having most lessons be of approximately the same size so your students know what to expect. For online consumption, your material should be in smaller chunks than for live classes. Keep videos 3-5 minutes in length. 
 
   * Your videos can talk about fairly complex notions. If they do, be sure to back them up in other ways. For example, add tips before the activities and have multiple activities that point out the differences that cause the complexity.
 
@@ -97,15 +100,15 @@ Some things to consider during this step:
 
   * As discussed above, you should design the primary objectives for your course for the "average" student. You may still want to have optional material available for students who require extra background material and for students who would like extra challenging material. Do not put this optional material in the course lessons. Instead, consider putting this material in other formats; see [Announcements#Optional_course_material,_in_a_web_forum,_blog,_or_Google+_page Announcements and Optional Material].
 
-A lot of your development time is spent in this step. For more details on one process for this step, see [ObjectivesToOutline From Objectives to Outline].
+A lot of your development time is spent in this step. For details on one way to create a detailed outline, see [ObjectivesToOutline From Objectives to Outline].
 
 ==Verify your content with others.==
 
   * Before you go to the effort of writing text, recording video, and coding activities and assessments, check with others that what you plan to teach will accomplish your goals. 
 
-  * It’s best if you can check with both experts in the area (to make sure you don’t have any mistakes) and with representatives of your audience (to make sure what you have makes sense to them). 
+  * It’s best if you can check both with experts in the area (to make sure you don’t have any mistakes) and with representatives of your audience (to make sure what you have makes sense to them). 
 
-  * Remember that it’s hard to know what you don’t remember not knowing. This is why it’s so important to verify your content with representatives of your audience. You and the people who help you create a course know too much about it.
+  * It can be hard to remember what not knowing something feels like, especially if you are an expert on the topic. This is why it’s so important to verify your content with representatives of your audience. You and the people who help you create a course know too much about it.
 
   * Keep your content legal. This may sound obvious, but laws for what you can do in a live classroom can be different from what you can do online. Also, laws regarding what you can show in a video or talk about in an online forum vary from country to country.
 Once you’ve developed your content, it’s time to move on to step 3, [ThreeImplement Implement the entire  course with the technology].
