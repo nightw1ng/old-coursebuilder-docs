@@ -13,7 +13,7 @@ To collect this information, you need to ask the students directly. Send a post-
 
 For an example of a survey you can use to gauge student satisfaction, see [ExampleSurvey Example Post-Course Survey].
 
-Google Forms provides a [http://support.google.com/docs/bin/answer.py?hl=en&amp;answer=87809 simple way to create a survey]. You can easily [http://support.google.com/docs/bin/answer.py?hl=en&amp;answer=139706&amp;topic=1360904&amp;ctx=topic view a summary of the results]. 
+Google Forms provides a [http://support.google.com/docs/bin/answer.py?hl=en&answer=87809 simple way to create a survey]. You can easily [http://support.google.com/docs/bin/answer.py?hl=en&answer=139706 view a summary of the results]. 
 
 *Note: possible limitation*
 Google forms are restricted to a total of 400,000 cells. For many courses, that is more than enough. However, with 8 questions this limits you to responses from 50,000 students. 
