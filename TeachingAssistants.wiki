@@ -9,11 +9,9 @@ In case you decide to have a pool of TAs, this page provides tips on how to work
 
 <wiki:toc max_depth="2" />
 
-Probably the most important tip is simple: take care of the well-being of the TA team. If you make them feel comfortable and supported, they will make your students feel comfortable and supported.
+Probably the most important tip is to take care of the well-being of the TA team. If you make them feel comfortable and supported, they will make your students feel comfortable and supported.
 
 ==TA responsibilities==
-
-Will they just answer email and moderate the forum? Will they test or pilot the course for you? Will they add to the available "canned responses"?
 
 How much you want your TAs to do can vary. The primary responsibilities are typically:
 
@@ -30,15 +28,17 @@ Additionally, consider using your TAs to pilot and to test the course content be
   * You'll find that students ask the same question many times. There are a couple of techniques for handling this:
     * In your forum, choose one instance of the question as the main question. Mark all other instances of that question as duplicates. Point the duplicates to the main questions. If the question is posed in email, point them to the post in the forum.
     * Create a "canned response" for the question. That is, answer the question once and put that answer somewhere the other TAs will look. Then all TAs can copy and paste the same answer when the question comes back.
-  * Don't try to answer everything.
+  * Prioritize the questions you respond to; you don't have to respond to everything.
   * Encourage students to answer each other.
-  * Step in if nobody else does (wait "a while") or if the information being passed around is problematic.
-  * Be careful not to give away too much in your answers.
+  * Consider waiting a while before posting, to give students an opportunity to answer their peers, but do respond if the information being passed around is problematic.
+  * Try and give hints rather than full answers, so that the questioner has a chance to learn in the process.
   * Admit mistakes -- you'd be amazed how long people spend trying to justify incorrect course material.
   * Trust your instincts (TAs tend to be hesitant).
   * Have only one TA per shift answer email; have the others moderate the forum and Google+ posts.
 
 ==Staffing and coverage==
+
+  * Consider being a TA for your own course. Being available to answer students questions both gives you first-hand knowledge of those questions and provides extra support to your other TAs. 
 
   * A MOOC is live 24 hours of the day, 7 days a week for the entire length of the course. Will you have TAs available at all times? Will you restrict TAs to certain time periods?
 
@@ -80,12 +80,12 @@ Your TAs need to be familiar with both the content of the course and the experie
 
   * Have TAs go through the entire course before it opens to students, preferably with the final version that the students see. 
   * If you use TAs to pilot early drafts of the course, still make the final material available to them before it is available to students.
-  * Before the course starts, require TAs to attend a hands-on demo of moderating the forum and answering Help emails. What should they do when they don't know the answer to a question? A question has been asked many times? A question is abusive or otherwise spam? And so on.
+  * Before the course starts, require TAs to attend a hands-on demo of moderating the forum and answering Help emails. What should they do when they don't know the answer to a question? When a question has been asked many times? When a question is abusive or otherwise spam? And so on.
   * If your course content works differently for different parts of your audience, make sure your TAs are aware of that fact, so that they don't misrepresent the material. For example, some aspects of Google Search functionality are available in only some countries. If your TAs think their personal experience is the only one, they'll have confused and unhappy students.
 
 ==TA documentation==
 
-The more documentation your provide your TAs, the more self-sufficient they can be. Centralize all of the documentation in one searchable place; consider creating a Google Site for TA resources. Make the information editable by the TAs themselves, so that they can add information as the course progresses.
+The more documentation you provide your TAs, the more self-sufficient they can be. Centralize all of the documentation in one searchable place; consider creating a Google Site for TA resources. Make the information editable by the TAs themselves, so that they can add information as the course progresses.
 
 Topics to include:
 
@@ -97,12 +97,11 @@ Topics to include:
 
   * Answers for students
     * Official messaging to students on various decisions, such as the mid-course assessment due date
-    * Answers to common questions
-    * Add to the answers while the course is ongoing 
+    * Answers to common questions (and add to these answers while the course is ongoing)
 
   * Roles and responsibilities
     * Before the course
-      * Learn the TAs team mission
+      * Learn what the TAs need to do
       * Play a role in testing and development (if applicable)
       * Prepare to communicate with the public
         * What tone should they take in answering emails or posts? 
@@ -115,12 +114,13 @@ Topics to include:
         * How do you mark a message as a duplicate?
         * How do you mark an email message as being handled? (One possibility is to have TAs label the messages they handle, _as soon as they open   them_, with their name.  That indicates to other TAs to ignore labelled messages.)
     * During the course
-      * Ensure round-the-clock student support
+      * Ensure round-the-clock student support (or whatever coverage you decide is appropriate)
       * Moderate the forum and email help center
-      * Add to the TA answer guide and anticipated questions documents
+      * Add further responses and anticipated questions to the TA answer guide
     * After the course
       * Document how you did what you did
       * Prepare useful tools to help the next round of TAs
+      * Add documentation about what students saw that needs fixing or can be improved for the next time around
 
   * Team and support staff
     * Who is involved in this project?
@@ -142,4 +142,4 @@ In addition to the formal documentation or training you do for your TAs, use ema
 
   * Keep emails to TAs concise and don’t send too many small details or too much to read. You want them to feel included, not overwhelmed.
 
-  * During the course, put out a daily summary for TAs on any updates and changes.  Include information such as the questions of the day and what their responses should be. Also include ongoing metrics, such as the number of registrants and their progress. The first type of information helps them assist better; the second type improves their motivation.
+  * During the course, put out a daily summary for TAs on any updates and changes.  Include information such as the most popular questions asked by students that day and what their responses should be. Also include ongoing metrics, such as the number of registrants and their progress. The first type of information helps them assist better; the second type improves their motivation.
