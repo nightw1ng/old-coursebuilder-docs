@@ -19,7 +19,5 @@ Google forms are restricted to a total of 400,000 cells. For many courses, that 
 
 If you want to send surveys to more than 50,000 people, you have some options.
 
-  * *Create multiple copies of the same survey using Google Forms.*
-This is easy to do, but makes it harder to analyze the full set of results. The forms tools will only work on one survey at a time. You can export the survey data to a different tool for analysis.
-  * *Use a different tool for creating your survey and analyzing the results.*
-For Power Searching with Google, we used an internal tool for creating much larger surveys. Unfortunately, this tool is not available to the general public.
+  * *Create multiple copies of the same survey using Google Forms.*<br>This is easy to do, but makes it harder to analyze the full set of results. The forms tools will only work on one survey at a time. You can export the survey data to a different tool for analysis.
+  * *Use a different tool for creating your survey and analyzing the results.*<br>For Power Searching with Google, we used an internal tool for creating much larger surveys. Unfortunately, this tool is not available to the general public.
