@@ -10,9 +10,9 @@ You may be asking yourself, “What is the difference between knowledge and skil
   * Knowledge: Describe an object oriented language system.
   * Skill: Build a working feature in Java.
 
-Think about what level each of your objectives takes and annotate them as either a knowledge objective or a skill objective. You use this annotation in what follows to organize your objectives into a coherent learning flow.
+Think about what level each of your objectives takes and annotate them as either a knowledge objective or a skill objective. You use this annotation in what follows to organize your objectives into a coherent learning flow. The process looks somewhat like this:
 
-
+https://www.corp.google.com/~vpg/no_crawl/cb/objectives-outline.png
 
 If you have multiple objectives, break them up and perform these steps separately for each:
 
