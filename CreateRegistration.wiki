@@ -12,12 +12,12 @@ https://www.corp.google.com/~vpg/no_crawl/cb/registration-parts.png
 
 === What happens from this page ===
 
-The sample registration page asks one question, the student's name.
+The sample registration page asks one question, the student's name. This is just to show you that you can ask questions on this page and store the information:
 
+  * The registration page {{{views/register.html}}} stores the name in a variable named {{{form01}}}.
+  * The  {{{RegisterHandler.post()}}} class, defined in {{{controllers/utils.py}}}, uses {{{form01}}} to define the variable {{{name}}} and store it with the {{{Student}}} instance in the datastore.
 
-The !RegisterHandler class is defined in {{{controllers/utils.py}}}. This class defines what happens when a person registers for the course. The class creates a student object and stores the student's name and their answer to the marketing question.
-
-You can change the file {{{views/register.html}}} (described in the next section) to ask different questions. If you do, you must change the !RegisterHandler code to store the answers to your questions.
+If you want to ask different questions, you must change these two files.
 
 === Page layout ===
 
