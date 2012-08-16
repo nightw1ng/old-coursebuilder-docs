@@ -30,7 +30,7 @@ The app uses three files to render this page:
 
 An assessment contains explanatory text and one or more questions for the student.
 
-You define each assessment in its own !JavaScript file. The filenames have the form {{{assessment-}}}_*{{{SUFFIX}}}*_{{{.js}}}, where _*{{{SUFFIX}}}*_ is <font color=red><<TODO what? >></font>
+You define each assessment in its own !JavaScript file. The filenames have the form {{{assessment-}}}_*{{{SUFFIX}}}*_{{{.js}}}, where _*{{{SUFFIX}}}*_ is one of {{{Pre}}}, {{{Mid}}}, or {{{Fin}}}.
 
 The format of the file is
 {{{
@@ -44,10 +44,18 @@ var assessment = {
 
 The file contains a single object named {{{assessment}}}. This object describes everything the code needs to know about an assessment. The attributes of the {{{assessment}}} object are as follows:
 
-  * {{{assessmentName.}}} A string containing a unique name for this assessment. The code uses the assessment name <font color=red><<TODO somehow. Does it have anything to do with filenames? >></font> 
+  * {{{assessmentName.}}} A string containing a unique name for this assessment. The code uses the assessment name to determine what special processing to do for an assessment. The possible values are {{{"precourse"}}}, {{{"midcourse"}}}, and {{{"postcourse"}}}. See [#Assessment_name Assessment name].
   * {{{preamble.}}} A string containing text and complete HTML elements. The preamble appears as the first thing on the assessment page.  See [#Preamble Preamble].
   * {{{disableCheckAnswers.}}} An optional Boolean. If false, then students can check their answers before submission. Defaults to {{{FALSE}}}. See [#Submitting_and_checking_answers Submitting and checking answers].
-  * {{{questionsList.}}} An ordered array, each of whose elements describes a question in the assessment. The questions appear after the preamble. See [[#Question Questions]. 
+  * {{{questionsList.}}} An ordered array, each of whose elements describes a question in the assessment. The questions appear after the preamble. See [#Question Questions]. 
+
+=== Assessment name ===
+
+The value of the {{{assessmentName}}} attribute is one of  {{{"precourse"}}}, {{{"midcourse"}}}, or {{{"postcourse"}}}.
+
+When students complete an assessment, they see a message about how they did. You can change the contain of these messages in {{{views/test_confirmation.html}}}. (See [#Submitting_and_checking_answers Submitting and checking answers].)
+
+The sample code is hardcoded to have these three assessments. If you want different types of assessments or different score weights/thresholds, you must edit the code in {{{assets/js/activity-generic.js}}} and in {{{controllers/lessons.py}}}.
 
 === Preamble ===
 
@@ -91,12 +99,18 @@ A question can be one of four types, depending on the third attribute:
 
   * {{{correctAnswerNumeric.}}}   A number. For questions with a numeric answer. The value of the attribute is the correct answer.
 
-  * {{{correctAnswerString.}}} A case-insensitive substring match. The value of the attribute is a string that must occur as a substring in the answer for the answer to be correct. Use this attribute when your question is somewhat open ended, but constrained enough that all you need is for the correct answer to occur somewhere in a larger string. 
+  * {{{correctAnswerString.}}} A case-insensitive exact string match. For example, if the value is {{{"hello"}}}, then {{{Hello}}} and {{{hello}}} are both correct, but {{{HelloWorld}}} is incorrect. Use this attribute when your question requires a specific string answer.
 
-  * {{{correctAnswerRegex.}}}  Free text. The value of this attribute is a regular expression capturing the correct answer. Use this attribute when your question is more open ended than a substring match can handle. In this case, the code uses a [https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions regular expression] to verify the answer. Regular expressions can be notoriously difficult for a programmer to get right. For this reason, you need to be very careful with the wording of any question that takes a free text answer. Your regular expression needs to account for reasonable variations in student responses.  
+  * {{{correctAnswerRegex.}}}  Free text. The value of this attribute is a regular expression capturing the correct answer. Use this attribute when your question is more open ended than a string match can handle. In this case, the code uses a [https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions regular expression] to verify the answer. Regular expressions can be notoriously difficult for a programmer to get right. For this reason, you need to be very careful with the wording of any question that takes a free text answer. Your regular expression needs to account for reasonable variations in student responses.  
 
 == Testing changes ==
 
 Changes you make to any file in the {{{views}}} directory or to any file in the {{{assets/js}}} directory appear automatically in your running development server.
 
 That is, after you make a change to one of these HTML or JavaScript files, simply load (or reload) a page that uses that page and the change appears.
+
+A couple of hints for !JavaScript debugging:
+
+  * Consider using a !JavaScript editor or IDE that highlights errors. 
+
+  * If you use Google Chrome to test your app, consider using the !JavaScript console. (See [https://developers.google.com/chrome-developer-tools/docs/console Chrome Developer Tools: Console].) The console shows fairly detailed information about !JavaScript parse errors.
