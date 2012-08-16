@@ -39,8 +39,3 @@
       * [ExampleTAEssentialsDoc Example TA Essentials Doc]
 
 [https://code.google.com/p/course-builder/w/list Wiki Site Map]
-
-<br><br>
-<font color=red>
-== This is an early draft! None of the pages about changing code have been reviewed! Beware! ==
-</font>
