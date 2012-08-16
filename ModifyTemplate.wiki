@@ -8,7 +8,7 @@ The templates work together hierarchically. Every page displayed for your course
 
 The other views, such as {{{activity.html}}}, fill in more structure for a specific type of page. Finally, files outside of {{{views}}} may fill in the content for a particular page, such as {{{activity-1.1.js}}}.
 
-For more information on the structure of these pages, see the [http://jinja.pocoo.org/docs Jinja2 documentation].
+For more information on the structure of these pages, see [https://developers.google.com/appengine/docs/python/gettingstartedpython27/templates Using templates] for an introduction and then check out the [http://jinja.pocoo.org/docs Jinja2 documentation].
 
 == Structure of a registered page ==
 
