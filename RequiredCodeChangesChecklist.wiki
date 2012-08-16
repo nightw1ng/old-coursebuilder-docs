@@ -10,7 +10,6 @@ This page is just a checklist of all of the changes that you make to the sample 
 
 || {{{app.yaml}}} || Application name. [GetCode#2._Decide_on_a_name_for_your_app Details] ||
 || {{{assets/img/favicon.ico}}} || (Optional) A favicon is a small image that appears next to your application in the browser address bar and in bookmarks. You may want to change this to an icon for your course. ||
-|| {{{controllers/utils.py}}} || The code tries to send an email when a student registers. You need to change the sender, subject, and text of that email message. ||
 || {{{controllers/utils.py}}} || (Optional) Maximum student enrollment; defaults to 250,000. ||
 || {{{views/base.html}}} || This file needs a bunch of changes. [ModifyTemplate Details]. ||
 || {{{views/base.html}}} || Course name, for the title element. ||
