@@ -206,3 +206,11 @@ https://www.corp.google.com/~vpg/no_crawl/cb/answer-free.png
 Changes you make to any file in the {{{views}}} directory or to any file in the {{{assets/js}}} directory appear automatically in your running development server.
 
 That is, after you make a change to one of these HTML or !JavaScript files, simply load (or reload) a page that uses that page and the change appears. 
+
+
+
+A couple of hints for !JavaScript debugging:
+
+  * Consider using a !JavaScript editor or IDE that highlights errors. 
+
+  * If you use Google Chrome to test your app, consider using the !JavaScript console. (See [https://developers.google.com/chrome-developer-tools/docs/console Chrome Developer Tools: Console].) The console shows fairly detailed information about !JavaScript parse errors.
