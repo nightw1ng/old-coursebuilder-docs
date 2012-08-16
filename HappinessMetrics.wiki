@@ -6,7 +6,8 @@ Happiness metrics let you gauge student attitudes towards the material and their
   * How satisfied were the students with what they learned?
   * Do they think they will be able to use the material?
   * Did they enjoy the course?
-  * Did they feel well supported, by their peers or by the instructors?
+  * Did they feel well supported by their peers?
+  * Did they feel well supported by the instructors?
 
 To collect this information, you need to ask the students directly. Send a post-course survey to everyone who registered for your course. Consider sending different surveys to people who registered but didn't finish the course from those who did finish it.
 
