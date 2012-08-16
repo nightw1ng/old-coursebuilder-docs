@@ -10,7 +10,7 @@ The following table briefly describes the directory/folder structure for the sam
 || || {{{app.yaml}}} || App configuration file. In setting up the sample code, you change the app name in this file. || Required || 
 || {{{assets/}}} || || || || 
 || {{{assets/css/}}} || || || || 
-|| {{{assets/css/}}}  || {{{main.css}}} || CSS file that specifies the look of the HTML pages associated with your course. || || 
+|| {{{assets/css/}}}  || {{{main.css}}} || CSS file that specifies the look of the HTML pages associated with your course. || Likely || 
 || {{{assets/img/}}} || || || || 
 || {{{assets/img/}}} || _{{{[.png files]}}}_ || Images that appear throughout your course. Replace these files with any images you need for your material.|| Required || 
 || {{{assets/img/}}} || {{{favicon.ico}}} || A favicon is a small image that appears next to your application in the browser address bar and in bookmarks. You may want to change this to an icon for your course. || Likely || 
@@ -35,7 +35,7 @@ The following table briefly describes the directory/folder structure for the sam
 || {{{models}}} || || ||  ||
 || {{{models/}}} || {{{__init__.py}}} ||  || || 
 || {{{models/}}} || {{{models.py}}} ||  || || 
-|| {{{views}}} || || These HTML files comprise templates that define what the pages of your course look like to students.<br>The templates work together hierarchically. Every page displayed for your course starts from either the {{{base_registration.html}}} template (for unenrolled people) or {{{base.html}}} template (for enrolled people). Those templates define the overall HTML structure of a page. The other views, such as {{{activity.html}}}, fill in more structure for a specific type of page. Finally, files outside of views may fill in the content for a particular page, such as {{{activity-1.1.js}}}.  <br>You _must_ change a few of these files. You _can_ change any of them. <font color=red><<TODO Is this Django? I'd like to point to documentation that explains how views fit together, rather than rewrite that.>></font> || ||
+|| {{{views}}} || || These HTML files comprise templates that define what the pages of your course look like to students.<br>Course Builder uses [http://jinja.pocoo.org/docs/ Jinja2 templating]. The templates work together hierarchically. Every page displayed for your course starts from either the {{{base_registration.html}}} template (for unenrolled people) or {{{base.html}}} template (for enrolled people). Those templates define the overall HTML structure of a page. The other views, such as {{{activity.html}}}, fill in more structure for a specific type of page. Finally, files outside of views may fill in the content for a particular page, such as {{{activity-1.1.js}}}.  <br>You _must_ change a few of these files. You _can_ change any of them. || ||
 || {{{views/}}} || {{{activity.html}}} || The structure of the main content of an activity page. See [CreateActivities Create Activities]. || ||
 || {{{views/}}} || {{{assessment.html}}} || The structure of the main content of an assessment page. See [CreateAssessments Create Assessments]. || ||
 || {{{views/}}} || {{{base.html}}} ||  The base template for any page, once a student is registered. It defines the footer, the top header, and the top navigation. See [ModifyTemplate Modify Course Template]. || Required || 
