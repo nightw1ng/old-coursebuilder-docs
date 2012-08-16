@@ -2,8 +2,6 @@
 
 <h1>Create Assessments</h1>
 
-<font color=red><<TODO This page describes how the code *will* work. I don't think it works this way yet.>></font>
-
 <wiki:toc />
 
 At certain parts throughout the course, students take assessments to see how they're doing:
