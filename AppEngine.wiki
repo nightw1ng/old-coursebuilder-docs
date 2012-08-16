@@ -176,14 +176,6 @@ When you enter your credentials, you may get the following error:
 
 If you do, then you have forgotten to start your development server. Go back to step 6.
 
-== App Engine costs ==
-
-<font color=red><<TODO  costs of using it (especially email?) 
-
-Note that the number of emails you can send may be limited by certain AppEngine quotas: please see https://developers.google.com/appengine/docs/quotas#Mail for more details.
-
->></font>
-
 == Official App Engine documentation ==
 
 There's a lot of [https://developers.google.com/appengine/docs/python/config/appconfig#Required_Elements official documentation] for App Engine.
