@@ -24,7 +24,7 @@ The following table briefly describes the directory/folder structure for the sam
 || {{{controllers}}} || || ||  ||
 || {{{controllers/}}} || {{{__init__.py}}} ||  || || 
 || {{{controllers/}}} || {{{lessons.py}}} ||  || || 
-|| {{{controllers/}}} || {{{utils.py}}} || Utility functions.  You can make two changes to this file.  (1) The code tries to send an email when a student registers. You need to change the sender, subject, and text of that email message. (2) Optionally, you can change the maximum student enrollment allowed; that value defaults to 250,000. || Required ||
+|| {{{controllers/}}} || {{{utils.py}}} || Utility functions. Optionally, you can change the maximum student enrollment allowed; that value defaults to 250,000. || Required ||
 || {{{data/}}} || || ||  ||
 || {{{data/}}} || _{{{[bulkloader-log-SUFFIX]}}}_ || These files appear when you upload data (such as CSV files) to the course.  || || 
 || {{{data/}}} || _{{{[bulkloader-progress-SUFFIX]}}}_ || These files appear when you upload data to the course. || || 
