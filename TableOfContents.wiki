@@ -17,7 +17,6 @@
       * [CreateLessons Create Lessons]
       * [CreateActivities Create Activities]
       * [CreateAssessments Create Assessments]
-      * [Certificates Certificates]
       * [UploadCode Upload Your App]
       * [AppEngine Work with App Engine]
     * [Metrics Metrics]
