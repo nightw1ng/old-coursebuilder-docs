@@ -32,7 +32,7 @@ By default, Google gives your app a domain name so that it can be reached from a
 
 App ID names can only be used once and can never be returned to the pool of available names. Whether your app is running, not running, or deleted, once a name has been chosen, it can no longer be used by any other app. More details on creating an app can be found in the [https://developers.google.com/appengine/docs/python/gettingstartedpython27/uploading official docs]. 
 
- Unfortunately, you only find out if the name you choose is available when you register the app with Google. You must register it before you can upload it. For more information, see [UploadCode Upload Your App].
+Unfortunately, you only find out if the name you choose is available when you register the app with Google. You must register it before you can upload it. For more information, see [UploadCode Upload Your App].
 
 == Start your server ==
 
