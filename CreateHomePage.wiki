@@ -16,37 +16,31 @@ You _must_ change these files to be relevant to your course.
 
 == Structure of home page ==
 
-{{{views/course.html}}} contains the structure of the home page. It consists of a short blurb and a list of units and assessments. For the list, this file contains the structure of how they are laid out. You specify the actual text to display for the units in the list in {{{data/unit.csv}}}.
+{{{views/course.html}}} contains the structure of the home page. It consists of a short blurb and a list of units and assessments. For the list, this file contains the structure of how they are laid out. You specify the actual text to display in {{{data/unit.csv}}}.
 
-You must change the blurb to be relevant to your course. 
+You must change the title, course blurb, and a logo for your course.
 
-The general format of the course as defined in this file is 
-  * pre-course assessment
-  * three units
-  * pre-course assessment
-  * three units
-  * final assessment
+== Home page content ==
 
-If that matches your content, you don't need to make any more changes to {{{views/course.html}}}. 
+<font color=red><<TODO actually, Sean's still deciding on the format of this file. This is the most recent proposal. >></font>
 
-If you have different assessments, a different number of units, or the ordering is different, you must change this file to reflect that.
+{{{data/unit.csv}}} contains the list of information to appear on the home page. The first line describes the content of the other lines:
 
-<font color=red><<TODO which I'm really not keen on explaining how to do.>></font>
+  {{{id,type,unit_id,title,release_date,now_available}}}
 
-== List of units ==
-
-{{{data/unit.csv}}} contains the list of units to appear on the home page. The first line describes the content of the other lines:
-
-  {{{unit_id,unit_title,release_date,now_available}}}
-
-Each line after that contains the information for an individual unit, such as: 
-  {{{3,Advanced techniques,available July 12,True}}}
+Each line after that contains the information for an individual part of the course, such as: 
+  {{{1,A,Pre,Pre-course assessment,,True}}}
 
 When you edit the file, leave the first line as is. Replace all of the other lines with the information relevant to your course. Each line consists of:
-  * {{{unit_id}}}: An integer representing which unit this is.
-  * {{{unit_title}}}: The name of the unit.
-  * {{{release_date}}}: When this release will be available to students.
-  * {{{now_available}}}: Whether or not students can currently access this unit.
+  * {{{id:}}} An integer representing this item. These integers must start at 1 and be in order.
+  * {{{type:}}} One of A, U, or O, depending on whether this line represents an assessment, a unit, or something else (such as a link to a video or to an upcoming Hangout On Air).
+  * {{{unit_id:}}} An id for this item. It's value depends on the type:
+    * For an assessment: one of {{{Pre}}}, {{{Mid}}}, or {{{Fin}}}.
+    * For a unit: an integer representing the unit number. 
+    * For something else: a URL pointing to that thing.
+  * {{{title:}}} The text to describe this item.
+  * {{{release_date:}}} When this release will be available to students. Optional.
+  * {{{now_available:}}} A Boolean representing whether or not students can currently access this item. If False, the title is not a link.
 
 == Testing changes ==
 
