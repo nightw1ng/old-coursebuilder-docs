@@ -12,6 +12,8 @@ This is the only part of the process that is really specific to MOOCs.
   * For tips on measuring aspects of your course, see [Metrics Metrics].
   * For details of creating community mechanisms, see [ParticipantCommunity Participant Community].
 
+For a complete step-by-step checklist, see [CourseBuilder Course Builder in a Nutshell].
+
 Once you’ve implemented your content, it’s time to move on to step 4, [FourPilot Pilot with your target audience].
 
 == Implementation advice ==
