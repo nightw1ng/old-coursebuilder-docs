@@ -51,10 +51,10 @@ The second two lines of the header, the vertical navigation, and the content are
 
 Each line after that contains the information for an individual lesson, such as: 
 
-  3,Advanced techniques,1,Web organization,checkquiz31(),Lesson 3.1 Activity,https://docs.google.com/SOMETHING,"- Describe how operators filter results.<br>
-  - Use the site: operator at the top-level domain and website levels.<br>
-  - Use a word you expect to appear on the target page to refine results.<br>
-  - Use the site: operator within images and news results."
+  {{{3,Advanced techniques,1,Web organization,checkquiz31(),Lesson 3.1 Activity,https://docs.google.com/SOMETHING,DndOoEVCWfI,"- Describe how operators filter results.}}}<br>
+  {{{- Use the site: operator at the top-level domain and website levels.}}}<br>
+  {{{- Use a word you expect to appear on the target page to refine results.}}}<br>
+  {{{- Use the site: operator within images and news results."}}}
 
 When you edit the file, leave the first line as is. Replace all of the other lines with the information relevant to your course. Each line consists of:
 
@@ -65,7 +65,7 @@ When you edit the file, leave the first line as is. Replace all of the other lin
   # {{{lesson_activity:}}} This value is always {{{checkquiz}}}_*{{{NM}}}*_, where _*{{{N}}}*_ is the unit number and _*{{{M}}}*_ is the lesson number.
   # {{{lesson_activity_name:}}} The name of the associated activity, to appear as the title of the activity page.
   # {{{lesson_notes:}}} URL of the text version of the lesson.
-  # {{{lesson_video_id:}}} URL of the video version of the lesson.
+  # {{{lesson_video_id:}}} The id of the !YouTube video associated with the lesson. For example, if the URL of the video is [http://www.youtube.com/watch?v=DndOoEVCWfI], then the id is {{{DndOoEVCWfI}}}.
   # {{{lesson_objectives:}}} A string containing lesson objectives, to appear after the title of the lesson.
 
 The following image shows where this information appears on the screen:
