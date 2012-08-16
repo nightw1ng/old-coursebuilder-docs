@@ -1,4 +1,3 @@
-
 #summary Mechanics of creating a lesson.
 
 <h1>Create Lessons</h1>
@@ -52,9 +51,10 @@ The second two lines of the header, the vertical navigation, and the content are
 
 Each line after that contains the information for an individual lesson, such as: 
 
-  2,Interpreting results,2,Thinking more deeply about your search,checkquiz22(),Lesson 2.2 Activity,https://docs.google.com/SOMETHING,"- Recognize when search results are offering information that suggests a better/additional search. <br>
-  - Use ""define"" to identify the meaning of words.<br>
-  - Use dictionary mode to define words that do not appear in traditional dictionaries."
+  3,Advanced techniques,1,Web organization,checkquiz31(),Lesson 3.1 Activity,https://docs.google.com/SOMETHING,"- Describe how operators filter results.<br>
+  - Use the site: operator at the top-level domain and website levels.<br>
+  - Use a word you expect to appear on the target page to refine results.<br>
+  - Use the site: operator within images and news results."
 
 When you edit the file, leave the first line as is. Replace all of the other lines with the information relevant to your course. Each line consists of:
 
