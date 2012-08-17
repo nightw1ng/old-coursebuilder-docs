@@ -8,9 +8,9 @@ In [TwoDevelop step 2], you did most of the theoretical course development. Once
 
 This is the only part of the process that is really specific to MOOCs. 
 
-  * For details of using the experimental code, see [CourseMaterial Course Material].
-  * For tips on measuring aspects of your course, see [Metrics Metrics].
-  * For details of creating community mechanisms, see [ParticipantCommunity Participant Community].
+  * For details of using the experimental code, see [CourseMaterial Implement Course Topics in Software].
+  * For tips on measuring aspects of your course, see [Metrics Collect and Analyze Metrics].
+  * For details of creating community mechanisms, see [ParticipantCommunity Set up and Manage the Participant Community].
 
 For a complete step-by-step checklist, see [CourseBuilder Course Builder in a Nutshell].
 
