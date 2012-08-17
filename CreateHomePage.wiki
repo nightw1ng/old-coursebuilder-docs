@@ -2,7 +2,7 @@
 
 = Create Home Page =
 
-After successul registration, the student can click on *Home* in the navigation bar of the confirmation page to be taken to the home page for your course. Once registered, any time the student leaves your course and returns to its main URL, this is the page that appears.
+After successful registration, the student can click on *Home* in the navigation bar of the confirmation page to be taken to the home page for your course. Once registered, any time the student leaves your course and returns to its main URL, this is the page that appears.
 
 <img src="https://www.corp.google.com/~vpg/no_crawl/cb/homepage.png" height=529 width=420 />
 
