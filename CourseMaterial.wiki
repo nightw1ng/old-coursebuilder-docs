@@ -5,7 +5,7 @@ This section is about understanding and modifying the Course Builder code to mak
 
 The pages in this section include:
 
-  * [DevEnvironment Set Up Your Development Environment]<br>Describes how to download Python and Google App Engine.
+  * [DevEnvironment Set Up for Development]<br>Describes how to download Python and Google App Engine.
 
   * [GetCode Get Started with the Sample App]<br>Describes how to download the code and get the sample application running for the first time.
 
