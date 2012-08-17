@@ -61,6 +61,7 @@ In these steps, all pathnames are relative to the directory containing your appl
   # [UploadCode Upload Your App to production.]
 
 === C.2. [Metrics Implement metrics.] ===
+  # [AssessmentMetrics Analyze assessment metrics.]
   # [HappinessMetrics Create happiness metrics.]
   # [ReachAndEngagementMetrics Create reach & engagement metrics.]
 
