@@ -7,6 +7,7 @@
     * [ObjectivesToOutline From Objectives to Outline]
   * [ThreeImplement Implement the Entire Course with the Technology]
     * [CourseMaterial Course Material]
+      * [DevEnvironment Set Up Your Development Environment]
       * [RequiredCodeChangesChecklist Required Code Changes]
       * [GetCode Get the Source Code]
       * [ExplorePS Explore the Sample App]
