@@ -1,0 +1,31 @@
+#summary Get Python, App Engine, and the sample code
+
+<h1>Download Software </h1>
+
+Before you can start working on your own course, you need to download Python and Google App Engine. You also need to download the Course Builder sample application.
+
+<wiki:toc max_depth="2" />
+
+== Download Python 2.7 ==
+
+Make sure you have Python 2.7 on your system. Visit the general Python 2.7 [http://python.org/download download page] to get the right version for you. You probably want to simply download the current production version for your platform. (Python 2.7.3 was the latest at the time of this writing.) 
+
+== Download App Engine ==
+
+If you are not familiar with App Engine, read [https://developers.google.com/appengine/docs/whatisgoogleappengine What is Google App Engine?]. 
+
+Follow [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python this link] to download the Python App Engine SDK for your platform.
+
+  * *PC:* Run the downloaded installer .msi by doubleclicking. Follow all on-screen instructions. Once completed, you should find the App Engine Launcher icon on your desktop or be able to find it via Start -> Programs. There is no equivalent set of command-line tools for PCs, so there you must use the Launcher.
+  * *Mac:* Open the downloaded .dmg file and drag the App Engine icon into the Applications folder. Optionally,  open the Applications folder and drag the App Engine icon to your Dock so that you can start the App Engine Launcher more conveniently. Putting App Engine in the Applications folder also installs the command-line tools.
+  * *Linux or other POSIX-compliant system:* After downloading the .zip file, go to the directory where you want to install App Engine. When you unzip the archive, it creates a subdirectory named google_appengine. Add that directory to your shell's path so that it can find the command-line tools when you need them.
+
+When developing on Google App Engine, you have a choice of performing administrative tasks using a graphical interface (GUI) or a traditional command-line interface. The GUI, called The Launcher, is available for users of PCs or Macs while command-line tools are available on any POSIX-based system such as Mac OS X or Linux. The Python App Engine SDK includes both tools. 
+
+*Note:* If you decide to use the command-line tools, consult the official [https://developers.google.com/appengine/docs/python/overview App Engine documentation].
+
+== Download Course Builder sample application ==
+
+To get the experimental code:
+  # Download the zip file at <font color=red><<TODO some link>></font>.
+  # Unzip that file and make a note of the directory to which it downloads.  
