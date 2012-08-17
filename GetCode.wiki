@@ -1,3 +1,4 @@
+
 #summary How to download the sample code and get started with App Engine.
 
 <h1>Get Started with the Sample App</h1>
@@ -19,14 +20,16 @@ All pathnames in this page are relative to that directory.
 
 The file {{{app.yaml}}} is the configuration file for your App Engine app. Before you get started, you need to choose a new name for the app. To do so:
 
-  # Edit {{{app.yaml}}}.<br>The first line is:<br>{{{application: # FIXME: Put your application id here}}}
-  # Replace {{{# FIXME: Put your application id here}}} with the name you choose for your app. 
+  # Edit {{{app.yaml}}}. The first line is:<br>{{{  application: mycourse # FIXME: Put your application id here}}}
+  # Replace {{{mycourse}}} with the name you choose for your app. 
 
 Pick a single word as an app name. It's best if you keep all the letters of the app name in lowercase and select a directory that does not have a space and does not have upper case characters in it. See [AppEngine#Name_your_app_for_production Name your app for production] for restrictions on naming.
   
 Later, if you decide to customize your course, you may need more information on configuration. If you do, see the [https://developers.google.com/appengine/docs/python/config/appconfig#Required_Elements official documentation].
 
 == 3. Start the App Engine Launcher == 
+
+Download App Engine as described in [DevEnvironment Set Up Your Development Environment]. Then...
 
 Activate the Launcher wherever it's available, that is, from the Desktop, the Dock, the Applications folder, Start -> Programs -> Google App Engine -> !GoogleAppEngineLauncher, and so on. 
 
@@ -41,11 +44,11 @@ A new line appears in the Launcher. Its name is the name you put in the {{{app.y
 
 == 5. Start the development server ==
 
-Before you can upload your app to run in production and be available to your audience, you need to develop and debug it in a more private setting. That more private setting is called either a *development server* or a *staging server*.
+Before you can upload your app to run in production and be available to your audience, you need to develop and debug it in a more private setting. That more private setting is called a *development server*.
 
 To start the development server from the Launcher:
   # Select your app. 
-  # When it's highlighted, click the Run button to start the server (for that app). <br><br>Once the icon to the left of the app name is green, your server is ready to accept requests.
+  # When it's highlighted, click the Run button to start the server (for that app). <br>Once the icon to the left of the app name is green, your server is ready to accept requests.
 
 Because the command-line version has more options, you may wish to run the development server from your Unix shell. To do so:
   # Open a Unix shell (command line).
@@ -65,7 +68,7 @@ where _*{{{APPPATH}}}*_ is the directory containing your app.
 
 If you do not see the registration page, read [AppEngine#Troubleshooting Troubleshooting].
 
-To learn how to stop the server, see [AppEngine#Stop_your_server].
+To learn how to stop the server, see [AppEngine#Stop_your_server Stop your server].
 
 == 6. Upload the unit and lesson data ==
 
@@ -77,16 +80,16 @@ To upload the data, first make sure that your development server is running (as 
   {{{$ appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br>
   {{{$ appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}}
 
-where _*{{{APPPATH}}}*_ is the directory and _*{{{PORT}}}*_ is the port number you specified in step 3.
+where _*{{{APPPATH}}}*_ is the directory and _*{{{PORT}}}*_ is the port number you specified in step 4.
 Before running each {{{appcfg.py}}} command, the system prompts you to enter your credentials. Your credentials are your Google account name and password. 
 
-If you have trouble with this command, see [AppEngine#Troubleshooting Troubleshooting].
+If you have trouble with these commands, see [AppEngine#Troubleshooting Troubleshooting].
 
 To learn how to reupload data after making changes, see [AppEngine#Modify_your_app_and_see_the_effects Modify your app and see the effects].
 
 == 7. Connect to the development server ==
 
-Once your development servier is running, you access it through a web browser.
+Once your development server is running, you access it through a web browser.
 
 From the Launcher:
   # Click *Browser*.<br>A login window appears.
@@ -95,7 +98,7 @@ From the Launcher:
 
 From the command-line:
   # Open a web browser.
-  # In the address bar, enter<br>{{{http://localhost:}}}_*{{{PORT}}}*_<br>where _*{{{PORT}}}*_ is 8080 by default or whatever port you chose when adding the app in step 3.
+  # In the address bar, enter<br>{{{http://localhost:}}}_*{{{PORT}}}*_<br>where _*{{{PORT}}}*_ is 8080 by default or whatever port you chose when adding the app in step 4.
 
 In either case, you should see the registration page for the sample app:
 
