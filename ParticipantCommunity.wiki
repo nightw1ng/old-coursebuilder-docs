@@ -1,5 +1,5 @@
 #summary Introduction to community aspects of a MOOC.
-=Participant Community=
+=Set up and Manage the Participant Community=
 
 Fostering a community between instructors and students and among the students is an integral part of creating an successful MOOC. There are several aspects of the community, each of which is covered in a separate page:
 
