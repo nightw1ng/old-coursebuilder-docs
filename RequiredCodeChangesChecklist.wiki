@@ -1,6 +1,6 @@
 #summary A simple list of every change you must make to code for your course material.
 
-=Required Code Changes Checklist=
+=Checklist: Code Changes=
 
 This page is just a checklist of all of the changes that you make to the sample code for your application. Details of how and why are left to other pages. For a complete step-by-step checklist of all steps for creating a course (not just software changes), see [CourseBuilder Course Builder in a Nutshell].
 
