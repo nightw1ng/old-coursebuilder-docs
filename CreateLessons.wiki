@@ -62,7 +62,7 @@ When you edit the file, leave the first line as is. Replace all of the other lin
   # {{{unit_title:}}} The name of the unit.
   # {{{lesson_id:}}} An integer indicating which lesson this is.  (You must number lessons in each unit consecutively starting with 1.)
   # {{{lesson_title:}}} The name of the lesson.
-  # {{{lesson_activity:}}} Set this value to Yes if there is an associated activity. Left it blank if there is not.
+  # {{{lesson_activity:}}} Set this value to {{{Yes}}} if there is an associated activity. Leave it blank if there is not.
   # {{{lesson_activity_name:}}} The name of the associated activity, to appear as the title of the activity page.
   # {{{lesson_notes:}}} URL of the text version of the lesson.
   # {{{lesson_video_id:}}} The id of the !YouTube video associated with the lesson. For example, if the URL of the video is [http://www.youtube.com/watch?v=DndOoEVCWfI], then the id is {{{DndOoEVCWfI}}}.
