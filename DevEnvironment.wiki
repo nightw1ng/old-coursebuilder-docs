@@ -1,6 +1,6 @@
 #summary Get Python and App Engine running
 
-= Set Up Your Development Environment =
+= Set Up for Development =
 
 == Download Python 2.7 ==
 
