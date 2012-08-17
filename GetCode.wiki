@@ -20,8 +20,8 @@ To get the experimental code:
 
 The file {{{CB/app.yaml}}} is the configuration file for your App Engine app. Before you get started, you need to choose a new name for the app. To do so:
 
-  # Edit {{{CB/app.yaml}}}.<br>The first line is:<br>{{{application: # FIXME: Put your application id here}}}
-  # Replace {{{# FIXME: Put your application id here}}} with the name you choose for your app. 
+  # Edit {{{CB/app.yaml}}}.<br>The first line is:<br>{{{application: mycourse  # FIXME: Replace this with your application id}}}
+  # Replace {{{mycourse}}} with the name you choose for your app. 
 
 Pick a single word as an app name. It's best if you keep all the letters of the app name in lowercase and select a directory/folder that does not have a space and does not have upper case characters in it. See [AppEngine#Name_your_app_for_production Name your app for production] for restrictions on naming.
   
