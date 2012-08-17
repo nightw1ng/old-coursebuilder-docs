@@ -1,4 +1,3 @@
-
 #summary How to download the sample code and get started with App Engine.
 
 <h1>Get Started with the Sample App</h1>
