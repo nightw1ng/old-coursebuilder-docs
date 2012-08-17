@@ -2,7 +2,7 @@
 
 <h1>Explore the Sample Code</h1>
 
-The following table briefly describes the directory/folder structure for the sample code provided with Course Builder Experimental. Much of this code you will leave as is. The last column of the table notes which files you must change to produce your own application.
+The following table briefly describes the directory/folder structure for the sample code provided with Course Builder. Much of this code you will leave as is. The last column of the table notes which files you must change to produce your own application.
 
 || *Pathname* || *Filename* || *Description* || *Needs changing?* || 
 || || {{{COPYING}}} || || ||
