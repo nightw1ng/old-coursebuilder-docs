@@ -51,7 +51,7 @@ The second two lines of the header, the vertical navigation, and the content are
 
 Each line after that contains the information for an individual lesson, such as: 
 
-  {{{3,Advanced techniques,1,Web organization,checkquiz31(),Lesson 3.1 Activity,https://docs.google.com/SOMETHING,DndOoEVCWfI,"- Describe how operators filter results.}}}<br>
+  {{{3,Advanced techniques,1,Web organization,Yes,Lesson 3.1 Activity,https://docs.google.com/SOMETHING,DndOoEVCWfI,"- Describe how operators filter results.}}}<br>
   {{{- Use the site: operator at the top-level domain and website levels.}}}<br>
   {{{- Use a word you expect to appear on the target page to refine results.}}}<br>
   {{{- Use the site: operator within images and news results."}}}
@@ -62,7 +62,7 @@ When you edit the file, leave the first line as is. Replace all of the other lin
   # {{{unit_title:}}} The name of the unit.
   # {{{lesson_id:}}} An integer indicating which lesson this is.  (You must number lessons in each unit consecutively starting with 1.)
   # {{{lesson_title:}}} The name of the lesson.
-  # {{{lesson_activity:}}} This value is always {{{checkquiz}}}_*{{{NM}}}*_, where _*{{{N}}}*_ is the unit number and _*{{{M}}}*_ is the lesson number.
+  # {{{lesson_activity:}}} Set this value to Yes if there is an associated activity. Left it blank if there is not.
   # {{{lesson_activity_name:}}} The name of the associated activity, to appear as the title of the activity page.
   # {{{lesson_notes:}}} URL of the text version of the lesson.
   # {{{lesson_video_id:}}} The id of the !YouTube video associated with the lesson. For example, if the URL of the video is [http://www.youtube.com/watch?v=DndOoEVCWfI], then the id is {{{DndOoEVCWfI}}}.
@@ -105,7 +105,7 @@ It is outside the scope of this documentation to tell you how to create video. W
     * Have a clear edit request process with deadlines for feedback and edits.
     * Maintain up-to-date documentation of edits requested and completed, including the state of the edits: edited, exported, compressed, uploaded, and other relevant information.
     * Collect as many edit requests as possible before beginning the editing process, and only complete the production cycle (through uploading) when absolutely necessary.
-    * Have someone committed to going through the final videos and uploads to double-check everything.
+    * Have someone committed to going through the final videos and uploads to double check everything.
 
 Once you have created your videos, you need to post them to the internet to make them available to students. If you decide to post your videos on !YouTube, you may be interested in the following information:
   * [http://www.google.com/url?q=http%3A//www.youtube.com/create_channel&usg=AFQjCNHi_jsXh0k5m9xQXOWbwJzt7ojKTA Create your YouTube channel].
