@@ -7,7 +7,7 @@ The pages in this section include:
 
   * [DevEnvironment Set Up Your Development Environment]<br>Describes how to download Python and Google App Engine.
 
-  * [GetCode Get the Source Code]<br>Describes how to download the code and get the sample application running for the first time.
+  * [GetCode Get Started with the Sample App]<br>Describes how to download the code and get the sample application running for the first time.
 
   * [ExplorePS Explore the Sample App]<br>Walks through the pages students see when they take the course. This is about what the course looks like. Consider reading [WhatsInACourse What's in a Course?] at the same time; it goes into more detail about the parts of content.
 
