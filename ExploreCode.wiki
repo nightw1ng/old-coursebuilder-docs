@@ -18,7 +18,6 @@ The following table briefly describes the directory/folder structure for the sam
 || {{{assets/js/}}} || _{{{[activity-N.M.js]}}}_ || These are sample files. You must replace all of them. These files define the activities associated with your lessons. See [CreateActivities Create Activities]. || Required || 
 || {{{assets/js/}}}  || {{{activity-generic}}}.js || The !JavaScript code that defines the logic for running activities and assessments. You define the content of the activities and assessmens in the _{{{[activity-N.M.js]}}}_ and _{{{[assessment-SUFFIX.js]}}}_ files. || || 
 || {{{assets/js/}}}  || _{{{[assessment-SUFFIX.js]}}}_ || These are sample files. You must replace all of them. These files define the assessments associated with your lessons. See [CreateAssessments Create Assessments]. || Required || 
-|| {{{assets/js/}}} || {{{bootstrap.js}}} ||  || || 
 || {{{assets/js/}}} || {{{jquery-1.7.2.min.js}}} || || || 
 || || {{{bulkloader.yaml}}} || || || 
 || {{{controllers}}} || || ||  ||
