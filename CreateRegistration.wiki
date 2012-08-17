@@ -32,6 +32,8 @@ The app uses two files to render this page:
   * {{{views/base_registration.html}}} defines the header and footer areas.  See [ModifyTemplate ModifyCourseTemplate].
   * {{{views/register.html}}} defines the content of the registration form. If you change the questions asked, you'll have to change the code that handles the answers.
 
+If you create a [WebForums discussion forum] for your course, we strongly encourage you to include text on the registration page, providing the URL to your forum and suggesting that students enroll in the forum. Also, if you want to use another email alias to send announcements to your students, you should also add a link to that address and a request that students sign up. See  <font color=red><<TODO somewhere>></font>.
+
 == Registration confirmation page ==
 
 === Page layout ===
