@@ -25,9 +25,10 @@ This page doesn't go into any explanations. It simply lists all of the steps inv
 In these steps, all pathnames are relative to the directory containing your application. Every place in the source tree that you must make changes to a file (other than when you replace entire files), a string {{{FIXME}}} is nearby, briefly describing the change.
 
 === C.1. [CourseMaterial Implement the course material.] ===
-  # [GetCode Get the sample code and run it with your name.]
+  # [DevEnvironment Set up your development environment.]
     # Download and install  [http://python.org/download Python].
     # Download and install [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python App Engine].
+  # [GetCode Get the sample code and run it with your name.]
     # Pick a name for your app. Make it the value of {{{application}}} in {{{app.yaml}}}.
     # [GetCode#5._Add_the_app_to_App_Engine Load the app].
     # [GetCode#7._Upload_the_unit_and_lesson_data Upload sample data] to the app.
