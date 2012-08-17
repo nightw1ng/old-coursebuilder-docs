@@ -23,6 +23,8 @@ The file {{{app.yaml}}} is the configuration file for your App Engine app. Befor
   # Replace {{{mycourse}}} with the name you choose for your app. 
 
 Pick a single word as an app name. It's best if you keep all the letters of the app name in lowercase and select a directory that does not have a space and does not have upper case characters in it. See [AppEngine#Name_your_app_for_production Name your app for production] for restrictions on naming.
+
+*Note:* During development, you can give your app any name you want. However, when you release your app to production, as described in [AppEngine#Name_your_app_for_production Name your app for production], you name your production app once and can never reuse that name. Consider picking the right name up fron t and sticking with it.
   
 Later, if you decide to customize your course, you may need more information on configuration. If you do, see the [https://developers.google.com/appengine/docs/python/config/appconfig#Required_Elements official documentation].
 
@@ -54,7 +56,7 @@ Because the command-line version has more options, you may wish to run the devel
   # Change directory to the one you specified as the path for your app
   # Run the server with the command<br><br>{{{$ dev_appserver.py . &}}}
 
-(Do not type the {{{$}}}; this is the prompt at the start of a command line.) The {{{&}}} tells Unix to run this command in the background, so you can continue to use that shell while the command runs.
+(Do not type the {{{$}}} because it is the prompt at the start of a command line.) The {{{&}}} tells Unix to run this command in the background, so you can continue to use that shell while the command runs.
 
 As the command starts running, you may see some warnings you can ignore and questions you must answer. Once the app is set up, you see a URL reference to the hostname and port you use to connect to your app from a web browser. It defaults to {{{http://localhost:8080}}}. 
 
@@ -67,7 +69,7 @@ where _*{{{APPPATH}}}*_ is the directory containing your app.
 
 If you do not see the registration page, read [AppEngine#Troubleshooting Troubleshooting].
 
-To learn how to stop the server, see [AppEngine#Stop_your_server Stop your server].
+From the Launcher, you stop your server by clicking on the *Stop* button. For more information, see [AppEngine#Stop_your_server Stop your server].
 
 == 6. Upload the unit and lesson data ==
 
@@ -92,7 +94,7 @@ Once your development server is running, you access it through a web browser.
 
 From the Launcher:
   # Click *Browser*.<br>A login window appears.
-  # Accept the test email address and check *Sign in as Administrator*.
+  # Accept the test email address.
   # Click on *Login*.
 
 From the command-line:
