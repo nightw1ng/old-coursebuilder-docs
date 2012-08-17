@@ -26,7 +26,7 @@ If you have multiple objectives, break them up and perform these steps separatel
     * Are there skill dependencies?<br>
   # Rearrange your list so that the dependencies are listed in order.<br>
   # Review your assumptions from the planning phase. 
-    * Does your list contain things that a student should know before taking your course? Cross those off.
+    * Does your list contain knowledge that a student should know before taking your course? Cross those off.
     * Does your list contain skills that a student should have before taking your course? Cross those off as well.<br>
   # You should now have a list of chunked knowledge and skill pieces that a student needs to successfully complete your objective.<br>
   # Repeat for each objective.<br>
