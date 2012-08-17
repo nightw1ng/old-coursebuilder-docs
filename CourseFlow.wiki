@@ -13,7 +13,7 @@ The flow for a student participating in the sample course is as follows (your co
   # *Get welcome email* from the staff.
   # Take a *pre-course assessment* to see how much familiarity the student has with the course material at the outset.
   # *Get email* announcing availability of first unit.
-  # Work on th first unit in any order:
+  # Work on the first unit in any order:
     * *Watch the video*, read the text version, or both for the first lesson in the first unit. Repeat watching and reading as many times as is useful.
     * *Complete the activity* following that lesson. Repeat the activity as many times as is useful.
   # *Repeat* steps 4 and 5 for several lessons and units.
