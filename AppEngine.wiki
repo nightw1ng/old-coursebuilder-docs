@@ -8,7 +8,7 @@ Youo do not need to be an App Engine expert to work with Course Builder. There a
 
 <wiki:toc />
 
-*Note:* In the following, you'll see input and output from workin in a shell. In these areas, new command lines start with {{{$}}}. You do not type the {{{$}}}. Lines that do not start with {{{$}}} are output from an earlier command.
+*Note:* In the following, you'll see input and output from workin in a shell. In these areas, new command lines start with {{{$}}} which you do not type. Lines that do not start with {{{$}}} are output from an earlier command.
 
 == Download and install Python 2.7 ==
 
@@ -103,6 +103,14 @@ Use the {{{ps}}} command to find the process number associated with your server 
   <br>
   {{{$ kill 25993}}}
 
+== View the App Engine Admin Console ==
+
+When App Engine starts your app, it also starts an associated Admin Console. If your app is available at {{{http://localhost:/8080}}}, its Admin Console is at {{{http://localhost:8080/_ah/admin}}}.
+
+From the console, you can see and modify the content of your data store.
+
+<img src="https://www.corp.google.com/~vpg/no_crawl/cb/admin-console.png" height=231 width=327 />
+
 == Modify your app and see the effects ==
 
 While working on your app, there are several places you can change information. Depending on the type and location of the information, either the changes you make take effect immediately, or you need to do something special to make them take effect. Common changes include:
@@ -118,9 +126,16 @@ Changes you make to the {{{views}}} directory or to either subdirectory under {{
 
 === Change to data files ===
 
-Changes you make to either file in the {{{data}}} directory require that you clear all of the data from the app's data store and reenter it. So, even if you only change something in {{{data/lesson.csv}}}, you must also reoload {{{data/unit.csv}}}.
+When you  make changes to either file in the {{{data}}} directory, you have two choices:
 
-To make these changes,  you need to stop your development server, restart it clearing out the old data, and then reload the new data. You can do this whole process from a shell.
+  * Clear out all of the existing data and start afresh with your changes.<br>While this sounds drastic, in it is the safer option. You only make your changes in the source code and then you reload those files. This way you're certain your code is in sync with your server.
+
+  * Manually change only the parts of the data store that you changed in the data files.<br>You can use the Admin Console to remove or add individual records in either the Lesson or Unit store. This feels like a smaller change, but it requires you to enter the same information in two places, which can be error prone.
+
+
+==== Reload all data ====
+
+To clear and reload all data,  you need to stop your development server, restart it clearing out the old data, and then reload the new data. You can do this whole process from a shell.
 
 1a. If you're running your server from the Launcher:
 
@@ -149,6 +164,15 @@ To make these changes,  you need to stop your development server, restart it cle
 
 where _*{{{APPPATH}}}*_ is the directory containing your app and _*{{{PORT}}}*_ is your app's port number. You will be asked for your credentials (Google user name and password) twice, once for loading each data file.
 
+==== Change some data ====
+
+To change only some of the lesson or unit data, there are two steps:
+
+  # Make the appropriate changes in the {{{data/lesson.csv}}} or  {{{data/unit.csv}}} file.
+  # Visit the Admin Console.
+  # From the *Entity Kind* drop down, choose whichever type of data you changed (Lesson or Unit).<br>A list of data appears.
+  # (Optional) If you changed an existing piece of data, select the row containing that data and click on *Delete*.
+  # Click on *Create New Entity* to add a new piece of data. Notice that you have to add the entire row over again, even if you're changing existing information.
 
 == Troubleshooting ==
 
