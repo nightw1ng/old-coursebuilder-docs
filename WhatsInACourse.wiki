@@ -1,9 +1,9 @@
-#summary Describes the primary parts of a course created with Course Builder Experimental.
+#summary Describes the primary parts of a course created with Course Builder.
 
 <h1>What's in a Course?</h1>
 <wiki:toc />
 
-The primary parts of a course created with Course Builder Experimental are as follows:
+The primary parts of a course created with Course Builder are as follows:
 
   * *[#Course_content_and_delivery Course content and delivery]*<br>The material that you formally convey to students. Formal content can be lessons recorded or written in advance. It can also be live question and answer sessions with instructors.
   * *[#Assessments_and_activities Assessments and activities]*<br>Graded assessments with a fixed deadline to track student progress. They also use ungraded assessments, called *activities*, to provide feedback and hints to students.
@@ -62,7 +62,7 @@ Given the “M” in MOOC, your course probably has many more students. If it do
 
 == Assessments and activities ==
 
-An assessment is a test. In Course Builder Experimental, assessments can either be graded or ungraded. Ungraded assessments are also called activities.
+An assessment is a test. In Course Builder, assessments can either be graded or ungraded. Ungraded assessments are also called activities.
 
 When you create your course using our experimental code, you supply the code with the information needed to grade assessments.
 
