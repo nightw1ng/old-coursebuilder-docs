@@ -16,7 +16,7 @@ If Python 2.7 is installed, you should see something similar to
 
   {{{/Library/Frameworks/Python.framework/Versions/2.7/bin/python}}}
 
-Visit the general Python 2.7 [http://python.org/download download page] to get the right version for you. You probably want to simply download the current production version for your platform. (Python 2.7.3 was the latest at the time of this writing.) 
+If you don't have it, visit the general Python 2.7 [http://python.org/download download page] to get the right version for you. You probably want to simply download the current production version for your platform. (Python 2.7.3 was the latest at the time of this writing.) 
 
 == Download App Engine ==
 
