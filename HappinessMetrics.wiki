@@ -15,8 +15,7 @@ For an example of a survey you can use to gauge student satisfaction, see [Examp
 
 Google Forms provides a [http://support.google.com/docs/bin/answer.py?hl=en&answer=87809 simple way to create a survey]. You can easily [http://support.google.com/docs/bin/answer.py?hl=en&answer=139706 view a summary of the results]. 
 
-*Note: possible limitation*
-Google forms are restricted to a total of 400,000 cells. For many courses, that is more than enough. However, with 8 questions this limits you to responses from 50,000 students. 
+*Note: A possible limitation* is that Google forms are restricted to a total of 400,000 cells. For many courses, that is more than enough. However, with 8 questions this limits you to responses from 50,000 students. 
 
 If you want to send surveys to more than 50,000 people, you have some options.
 
