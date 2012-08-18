@@ -49,12 +49,12 @@ Recruit willing and enthusiastic helpers for these support email aliases. For es
 
 ==TA training==
 
-Your TAs need to be familiar with both the content of the course and the experience of being a TA for a MOOC. Depending on your TAs, you may choose to provide formal training for them in either or both of those areas. Some tips:
+Your TAs need to be familiar with both the content of the course and how to be a TA for a MOOC. Depending on their level of experience, you may choose to provide training for them in either or both of those areas. Some tips:
 
   * Have TAs go through the entire course before it opens to students, preferably with the final version that the students see. 
   * If you use TAs to pilot early drafts of the course, still make the final material available to them before it is available to students.
-  * Before the course starts, require TAs to attend a hands-on demo of moderating the forum and answering Help emails. What should they do when they don't know the answer to a question? When a question has been asked many times? When a question is abusive or otherwise spam? And so on.
-  * If your course content works differently for different parts of your audience, make sure your TAs are aware of that fact, so that they don't misrepresent the material. For example, some aspects of Google Search functionality are available in only some countries. If your TAs think their personal experience is the only one, they'll have confused and unhappy students.
+  * Before the course starts, require TAs to attend a hands-on demo of moderating the forum and answering Help emails. What should they do when they encounter a question they don't know how to answer? When a question has been asked many times? When a question is abusive or otherwise spam? And so on.
+  * If your course content works differently for different parts of your audience, make sure your TAs are aware of that fact, so that they don't misrepresent the material. For example, some aspects of Google Search functionality are available in only some countries. If your TAs think their personal experience is the only one, they may confuse students with inaccurate explanations.
 
 ==TA documentation==
 
@@ -120,18 +120,20 @@ In addition to the formal documentation or training you do for your TAs, use ema
 
 ==TA community==
 
-Just like your course will be more successful if the students form a support community among themselves, it will be more successful if the TAs form their own support community. The following tips help create that feeling of community:
+Just like your course will be more successful if the students form a support community among themselves, it will be more successful if the TAs can also form a community. The following tips help create that feeling of community:
   * If you have multiple TAs on duty at the same time:
-    * Have TAs who are on duty at the same time be in constant communication with each other. Questions come in waves; it's common for there to be a common question at a particular time. Sharing information about what they are hearing eases the TA burden.
+    * Encourage them to be in close communication with each other. Questions come in waves; it's common for there to be a frequently-asked question at a particular time. Sharing information about problems and solutions eases the TA work.
     * If most of your TAs are physically near each other, get a single room for them to meet in during their TA shifts.
     * If your TAs are physically distributed, have all TAs on duty at the same time enter the same [http://support.google.com/chat/bin/answer.py?hl=en&amp;answer=161886 group chat].
     * Don't force your TAs to participate in these group sessions, but do encourage them to attend at least one, to get a feel for what goes on during a shift.
 
   * Schedule TAs with overlapping shifts or encourage them to pass on highlights of what happend in the last shift to the new shift.
 
+  * TAs often feel more comfortable checking with each other before escalating questions to more expert advice. New TAs tend to be less confident and may need help to getting started.
+
   * Create a buddy system for your TAs, so the more experienced can help the less experienced. Here, "experience" can be either experience at being a TA or experience in the subject matter. 
 
-  * TAs are frequently more comfortable checking with each other and with their buddies before escalating to more expert advice. New TAs tend to be insecure and need an easy way to make sure they’re starting out appropriately.
+  * Consider sending out “Daily Highlights” or starting a blog to keep TAs informed about the latest course happenings, and call out success stories regularly to keep everyone motivated.
 
 
 ==Tips when moderating a forum==
