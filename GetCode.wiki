@@ -53,7 +53,7 @@ Before you can upload your app to run in production and be available to your aud
 
 To start the development server from the Launcher:
   # Select your app. 
-  # When it's highlighted, click the Run button to start the server (for that app). <br>Once the icon to the left of the app name is green, your server is ready to accept requests.
+  # When it's highlighted, click the *Run* button to start the server (for that app). <br>Once the round icon to the left of the app name is green, your server is ready to accept requests.
 
 Because the command-line version has more options, you may wish to run the development server from your Unix shell. To do so:
   # Open a Unix shell (command line).
