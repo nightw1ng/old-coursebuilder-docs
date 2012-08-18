@@ -56,68 +56,6 @@ Your TAs need to be familiar with both the content of the course and how to be a
   * Before the course starts, require TAs to attend a hands-on demo of moderating the forum and answering Help emails. What should they do when they encounter a question they don't know how to answer? When a question has been asked many times? When a question is abusive or otherwise spam? And so on.
   * If your course content works differently for different parts of your audience, make sure your TAs are aware of that fact, so that they don't misrepresent the material. For example, some aspects of Google Search functionality are available in only some countries. If your TAs think their personal experience is the only one, they may confuse students with inaccurate explanations.
 
-==TA documentation==
-
-The more documentation you provide your TAs, the more self-sufficient they can be. Centralize all of the documentation in one searchable place; consider creating a Google Site for TA resources. Make the information editable by the TAs themselves, so that they can add information as the course progresses.
-
-Topics to include:
-
-  * Information about the course itself
-    * Audience
-    * Objectives
-    * Logistical details (How many units? When will they be released? How long is each? ...)
-    * Link to the course so the TAs can go through the material themselves
-
-  * Answers for students
-    * Official messaging to students on various decisions, such as the mid-course assessment due date
-    * Answers to common questions (and add to these answers while the course is ongoing)
-
-  * Roles and responsibilities
-    * Before the course
-      * Learn what the TAs need to do
-      * Play a role in testing and development (if applicable)
-      * Prepare to communicate with the public
-        * What tone should they take in answering emails or posts? 
-        * Are there  things to stress or to omit? 
-        * Are there legal issues they should be aware of ?
-      * Prepare for moderating the forum and email help center
-        * If an official message has been sent to students, don't contradict it or add your own messaging
-        * Are there messages that should not be responded to? How will they know?
-        * What indicates that a message should be removed from the forum? (In email, you can indicate this by adding a "DO NOT RESPOND" label to   such messages. In a forum, you can either remove or close a post.)
-        * How do you mark a message as a duplicate?
-        * How do you mark an email message as being handled? (One possibility is to have TAs label the messages they handle, _as soon as they open   them_, with their name.  That indicates to other TAs to ignore labelled messages.)
-    * During the course
-      * Ensure round-the-clock student support (or whatever coverage you decide is appropriate)
-      * Moderate the forum and email help center
-      * Add further responses and anticipated questions to the TA answer guide
-    * After the course
-      * When do you plan to stop communicating with your students and stop providing support? That is, when will you turn off the course forums and email addresses?
-      * Document how you did what you did
-      * Prepare useful tools to help the next round of TAs
-      * Add documentation about what students saw that needs fixing or can be improved for the next time around
-
-  * Team and support staff
-    * Who is involved in this project?
-    * In what roles?
-    * What are their availabilities for answering TA questions?
-
-  * Hot topics
-    * What are students asking about?
-
-  * Happy topics
-    * What lovely things have students done recently?
-
-==Email==
-
-In addition to the formal documentation or training you do for your TAs, use email to communicate with them both before and during the course. 
-  * Set up an internal email alias for the TA team.
-
-  * Before the course, keep TAs informed on course developments, breaking news, shifts in strategies, and so on. In essence, make sure they feel part of the team delivering the course.
-
-  * Keep emails to TAs concise and don’t send too many small details or too much to read. You want them to feel included, not overwhelmed.
-
-  * During the course, put out a daily summary for TAs on any updates and changes.  Include information such as the most popular questions asked by students that day and what their responses should be. Also include ongoing metrics, such as the number of registrants and their progress. The first type of information helps them assist better; the second type improves their motivation.
-
 ==TA community==
 
 Just like your course will be more successful if the students form a support community among themselves, it will be more successful if the TAs can also form a community. The following tips help create that feeling of community:
@@ -135,6 +73,76 @@ Just like your course will be more successful if the students form a support com
 
   * Consider sending out “Daily Highlights” or starting a blog to keep TAs informed about the latest course happenings, and call out success stories regularly to keep everyone motivated.
 
+==TA documentation==
+
+The more documentation you provide your TAs, the more self-sufficient they can be. Centralize all of the documentation in one searchable place; consider creating a Google Site for TA resources. Make the information editable by the TAs themselves, so that they can add information as the course progresses.
+
+Topics to include:
+
+  * Information about the course itself
+    * Audience
+    * Objectives
+    * Logistical details (How many units? When will they be released? How long is each? ...)
+    * Link to the course so the TAs can go through the material themselves
+
+  * Announcements to students
+    * Official messaging to students on various decisions, such as the mid-course assessment due date
+    * Answers to commonly-asked questions (and add to these answers while the course is ongoing)
+
+  * TA Roles and responsibilities
+    * Before the course
+      * Learn what the TAs need to do
+      * Play a role in testing and development (if applicable)
+      * Prepare to communicate with the public
+        * What tone should they take in answering emails or posts? 
+        * Are there  things to stress or to omit? 
+        * Are there legal issues they should be aware of ?
+      * Prepare for moderating the forum and email help center
+        * If an official message has been sent to students, don't contradict it or add your own messaging
+        * Are there messages that should not be responded to? How will they know?
+        * What indicates that a message should be removed from the forum? (In email, you can indicate this by adding a "DO NOT RESPOND" label to   such messages. In a forum, you can either remove or close a post.)
+        * How do you mark a message as a duplicate?
+        * How do you mark an email message as being handled? (One possibility is to have TAs label the messages they handle, _as soon as they open   them_, with their name.  That indicates to other TAs to ignore labelled messages.)
+    * During the course
+      * Ensure round-the-clock student support (or whatever coverage you decide is appropriate)
+      * Moderate the forum and email help center by following communication protocols agreed upon by all TAs
+      * Add further responses and anticipated questions to the TA answer guide
+    * After the course
+      * Debrief as a group
+      * When do you plan to stop communicating with your students and stop providing support? That is, when will you turn off the course forums and email addresses?
+      * Document how you did what you did
+      * Prepare useful tools to help the next round of TAs
+      * Add documentation about what students saw that needs fixing or can be improved for the next time around
+
+  * Team and support staff
+    * Who is involved in this project?
+    * What are their roles?
+    * How do TAs contact them for answering questions?
+
+  * Hot topics
+    * What are students asking about?
+
+  * Happy topics
+    * What great things are students accomplishing in the course?
+    * What positive comments have been received?
+    * TA success stories
+    * News or publicity mentions
+
+== Close communication ==
+
+In addition to the formal documentation or training you do for your TAs, strive for close communication with them both before and during the course. 
+
+  * Set up an internal email alias for the TA team.
+
+  * Througout the course, keep TAs informed on course developments, breaking news, shifts in strategies, and so on. In essence, make sure they feel part of the team delivering the course.
+
+  * Keep emails to TAs concise and don’t send too many small details or too much to read. You want them to feel included, not overwhelmed.
+
+  * As described in [#TA_community TA community] put out a daily summary for TAs on any updates and changes.  Include information such as the most popular questions asked by students that day and what their responses should be. Also include ongoing metrics, such as the number of registrants and their progress. The first type of information helps them assist better; the second type improves their motivation.
+
+  * Be open to your TAs’ insights on how to improve the course.  As the active interface between the course and your students, TAs have firsthand experience with the students and can often provide you with important feedback.
+
+  * At the end of the course, conduct a debrief with your TAs to gather information you can use to improve the experience next time.
 
 ==Tips when moderating a forum==
 
