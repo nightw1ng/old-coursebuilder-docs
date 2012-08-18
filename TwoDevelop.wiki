@@ -52,15 +52,15 @@ Objectives narrow down the information and keep it specific to the students' nee
 
 In deciding the objectives for your course, try to design for the middle ground. Don’t make the primary objectives either too easy or too hard. If there is advanced material you think would be great for some of your students, design so that that information is optional. If there is background information that you think some students may need, again make it optional.
 
-==Decide what you want to test in your assessments, both graded and ungraded.==
+==Decide what you want to assess in your assessments, both graded and ungraded.==
 
   * In software development, this idea is known as test-driven development. The idea is to be very concrete about the outcome you want. “Students will know the answers to this set of questions.” You then create the lessons so that they enable that outcome.
 
-  * Assessments serve multiple purposes. They let you test students’ knowledge so that you can rate their progress, but also so that you can improve the course content for future versions. 
+  * Assessments serve multiple purposes. They let you assess students’ knowledge so that you can rate their progress, but also so that you can improve the course content for future versions. 
 
-  * Make your assessments compelling and challenging but not daunting or frustrating. You want the assessment to test students’ progress, not to scare them away from the rest of the course.
+  * Make your assessments compelling and challenging but not daunting or frustrating. You want the assessment to assess students’ progress, not to scare them away from the rest of the course.
 
-  * Remember that your audience may have a wide range of familiarity with the online world. <br>Make sure that the mechanics of doing the assessments does not interfere with the content of the assessments. You want to test the content, not how facile a student is with opening browser windows or using different types of user interface. 
+  * Remember that your audience may have a wide range of familiarity with the online world. <br>Make sure that the mechanics of doing the assessments does not interfere with the content of the assessments. You want to assess the content, not how facile a student is with opening browser windows or using different types of user interface. 
 
   * Decide whether or not you want graded assessments at all. <br>If you do want them, keep in mind that grading matters to students. Once you’ve said you will grade them, students want to know how the grading works and they will care passionately about getting a high grade. Once a deadline passes, you will hear from students who missed that deadline. 
 
