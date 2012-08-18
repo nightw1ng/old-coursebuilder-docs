@@ -33,7 +33,7 @@ To see what the course looks like to the student during some of these steps, see
 
 ==Semi-synchronous flow==
 
-These online courses have a semi-synchronous flow. In conjunction with good material, this model is effective at increasing student motivation, student retention, and student interactions. However, semi-synchronous flow is unfamiliar to many students. Students expect a course to be either completely asynchronous or completely synchronous.
+These online courses have a semi-synchronous flow. In conjunction with good material, this model can be effective at increasing student motivation, student retention, and student interactions. However, semi-synchronous flow is unfamiliar to many students. Students expect a course to be either completely asynchronous or completely synchronous.
 
   * With a *synchronous* flow, students do all of their work at the same time everybody else is doing that work.
     * If they ask questions, they reasonably expect other people to be working in the same area and so the likelihood of getting their questions answered by peers is good.
