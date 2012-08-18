@@ -37,6 +37,8 @@ Additionally, consider using your TAs to pilot and to test the course content be
 
   * Create a calendar of TA dates in advance, including the expected commitment in terms of total number of  hours, during what hours you most want coverage, and when events (release of units or assessments, hangouts, ...) will happen. See [https://spreadsheets.google.com/spreadsheet/loadredirect?authuser=0&key=0AuIVQI9HzW0bdHZNcWtTWE1zMERvQWhQLUVvNDNQT1E Example Event Timeline & TA Hours]. <font color=red><<TODO That's a link to a spreadsheet. Where can I put one?>></font>
 
+  * For a large audience that requires significant TA support, consider having someone dedicated to taking care of all things related to TA setup.  In that case, pass them a checklist of to-do’s as a starting point, covering the things described here.
+
 ==Escalation==
 
 TAs won't be able to handle all questions that they receive. They need to be able to escalate to appropriate people. The easiest way to do this is with multiple email aliases:
