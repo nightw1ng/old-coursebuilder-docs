@@ -8,7 +8,15 @@ Before you can start working on your own course, you need to download Python and
 
 == Download Python 2.7 ==
 
-Make sure you have Python 2.7 on your system. Visit the general Python 2.7 [http://python.org/download download page] to get the right version for you. You probably want to simply download the current production version for your platform. (Python 2.7.3 was the latest at the time of this writing.) 
+Make sure you have Python 2.7 on your system. To find out if you do, open a Unix shell window and type
+
+  {{{which python}}}
+
+You should see something similar to
+
+  {{{/Library/Frameworks/Python.framework/Versions/2.7/bin/python}}}
+
+Visit the general Python 2.7 [http://python.org/download download page] to get the right version for you. You probably want to simply download the current production version for your platform. (Python 2.7.3 was the latest at the time of this writing.) 
 
 == Download App Engine ==
 
