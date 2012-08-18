@@ -20,5 +20,5 @@ There are three basic categories of metrics that we suggest using. Not all of th
   * If time is limited (and it will be), prioritize which metrics you need immediately, and which ones can wait.
   * Is a pre- and post-course assessment comparison needed? 
 
-  * Assuming you have a team of people working on your course, split the metrics work among several people. If possible, have a different person be responsible for each category of metrics. If you can't do that, consider having someone work on the metrics full time.
-  * If you have not worked with metrics before, keep in mind that working with and analyzing metrics is not a very easy task. The amount of data you collect will seem overwhelming and you won't know what to do with it. If you know people who are comfortable in this area, reach out to them. There are a lot of people who can help you.
+  * Assuming you have a team of people working on your course, split the metrics work among several people. If possible, have a different person be responsible for each category of metrics. Data collection and analysis takes time, and it helps to have the many team members think through what’s needed and how you analyze it.
+  * If you have not worked with metrics before, keep in mind that working with and analyzing metrics takes time and practice. The amount of data you collect may seem overwhelming and requires time for analysis. If you know people who are comfortable in this area, reach out to them. In general, you’ll find that people are very eager to share their expertise!
