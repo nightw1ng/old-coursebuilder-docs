@@ -12,8 +12,8 @@ This page describes the course data stored by Course Builder and how to export y
 The following table describes the data Course Builder stores for your course. Course Builder stores five kinds of data: Student, Class, Email List, Lesson, and Page Cache. TODO: Verify kinds to document and add to bulkloader.yaml example.
 
 || Name || Type || Description ||
-|| midterm_score || INTEGER	The student’s midterm score. A numeric value or empty for no score. || 
-|| final_answer || TEXT || The selection of answers for each of the final exam questions. It is stored as a 2- || || dimensional array of strings. || 
+|| midterm_score || INTEGER || The student’s midterm score. A numeric value or empty for no score. || 
+|| final_answer || TEXT || The selection of answers for each of the final exam questions. It is stored as a 2 dimensional array of strings. || 
 || enrolled_date || DATETIME || The date and timestamp when student enrolled for the class. || 
 || final_score || INTEGER || The student’s final score. A numeric value or empty for no score. || 
 || precourse_answer ||  || TEXT	The selection of answers for each of the precourse survey questions. It is stored as a 2-dimensional array of strings. || 
@@ -28,10 +28,7 @@ The following table describes the data Course Builder stores for your course. Co
 || unit_id || STRING || A string id for this unit. Its value depends on whether this item is assessment, unit or something else. || 
 || title || STRING || A string value containing the title of the unit. || 
 || release_date || STRING || The date when this unit will be made available. A string value containing the date. || 
-|| now_available || STRING	A Boolean value of True or False representing whether or no students can access this unit. || 
-
-
-
+|| now_available || STRING || A Boolean value of True or False representing whether or no students can access this unit. || 
 
 Lesson - Data on the lessons offered in each unit
 || Name || Type || Description || 
@@ -39,7 +36,7 @@ Lesson - Data on the lessons offered in each unit
 || id || INTEGER || An integer indicating which lesson this is. Lessons in each unit start with 1 and go in order. || 
 || title || STRING || A string value representing the name of the lesson. || 
 || objectives || TEXT || A string containing lesson objectives, that appears after the title of the lesson. || 
-|| video || TEXT	The id of the YouTube video associated with the lesson. || 
+|| video || TEXT	 || The id of the YouTube video associated with the lesson. || 
 || notes || TEXT || URL of the text version of the lesson. || 
 || activity || STRING || A string value of Yes or No representing whether there is an activity associated with this lesson. || 
 || activity_title || STRING || The title of the activity. || 
