@@ -27,6 +27,7 @@
     * [ParticipantCommunity Set up and Manage the Participant Community]
       * [WebForums Community Discussion]
       * [Announcements Announcements & Optional Material]
+      * [CreateEmailList Announcements-only Email List]
       * [OnlineOfficeHours Online Office Hours]
       * [TeachingAssistants Teaching Assistants]
       * [CommunityToolsComparison Tools Comparison]
