@@ -48,7 +48,7 @@ Sheer number of participants and community
 ==TA responsibilities for course launch==
 
   * Be prepared to help students feel well-supported.
-  * Sign up for _*N*_ hours ([https://docs.google.com/a/google.com/spreadsheet/ccc?key=0AuIVQI9HzW0bdHZNcWtTWE1zMERvQWhQLUVvNDNQT1E signup sheet] <font color=red><<TODO correct link when know where to put it>></font>) to support worldwide course launch _*on these dates*._
+  * Sign up for _*N*_ hours ([https://docs.google.com/a/google.com/spreadsheet/ccc?key=0Arvsi5kPl6d8dGZkZDNCbEVNT1BGQ2dzWnlNczNsdEE#gid=0 signup sheet]) to support worldwide course launch _*on these dates*._
   * Before the course starts, skim the TA documentation to get an idea of what questions to expect and how to interact with students. _*Course createor: You need to write those documents. and point to them here.*_
   * On _*the date the course starts*,_ attend the pre-launch TA meeting to go over your instructions.
   * As TAs, you'll check in on the three interaction mechanisms we have for students:
