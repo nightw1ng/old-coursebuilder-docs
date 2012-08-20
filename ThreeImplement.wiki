@@ -2,7 +2,7 @@
 
 =Implement the Entire Course with the Technology= 
 
-In [TwoDevelop step 2], you did most of the theoretical course development. Once you have a clear idea what you want to accomplish, it’s time to put it into the format you’ll use. At this point, you can create videos, implement assessments, set up your groups, and do all that other fun stuff. 
+In [TwoDevelop Develop the Content without the Technology], you did most of the theoretical course development. Once you have a clear idea what you want to accomplish, it’s time to put it into the format you’ll use. At this point, you can create videos, implement assessments, set up your groups, and do all that other fun stuff. 
 
 == Implementation parts ==
 
@@ -14,7 +14,7 @@ This is the only part of the process that is really specific to MOOCs.
 
 For a complete step-by-step checklist, see [CourseBuilder Course Builder in a Nutshell].
 
-Once you’ve implemented your content, it’s time to move on to step 4, [FourPilot Pilot with your target audience].
+Once you’ve implemented your content, it’s time to move on to [FourPilot piloting with your target audience].
 
 == Implementation advice ==
 
