@@ -23,7 +23,7 @@
       * [AssessmentMetrics Assessment Metrics]
       * [HappinessMetrics Happiness Metrics]
       * [ReachAndEngagementMetrics Reach & Engagement Metrics]
-      * [ExportingCourseData & Exporting Course Data]
+      * [ExportingCourseData Exporting Course Data]
    * [ParticipantCommunity Set up and Manage the Participant Community]
       * [WebForums Community Discussion]
       * [Announcements Announcements & Optional Material]
