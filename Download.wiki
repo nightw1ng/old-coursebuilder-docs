@@ -34,6 +34,8 @@ When developing on Google App Engine, you have a choice of performing administra
 
 == Download Course Builder sample application ==
 
-To get the experimental code:
-  # Download the zip file at <font color=red><<TODO some link>></font>.
-  # Unzip that file and make a note of the directory to which it downloads.  
+To download Course Builder's sample application, you have two choices:
+
+  * *Download the zip file from* <font color=red><<TODO somewhere>></font>. Unzip that file into a working directory.<br><br>This is the simplest route and is suitable for most people. At present, we restrict who can make changes to the open source Course Builder code.
+
+  * *Visit the [https://code.google.com/p/course-builder/source/checkout Source > Checkout] tab for the Course Builder project.*<br><br>From there, follow the instructions to get a local copy of the repository using Git. Use this approach if you have explicitly partnered with Google to make changes to Course Builder itself.
