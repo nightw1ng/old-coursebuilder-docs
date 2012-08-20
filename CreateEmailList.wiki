@@ -5,11 +5,17 @@
 
 <wiki:toc />
 
-Throughout your course, you may want to send email to all of your registered students. To do so, you need an email alias that includes those registered students.
+Throughout your course, you may want to send email to all of your registered students. To do so, you need an email alias that includes those registered students. Course Builder does not provide a way to automatically enroll students in an email list.
 
-To get a list of registered students,  see [ExportingCourseData Export Course Data].
+Instead, you have several options:
 
-If you already have a way to manage a large email alias, use that mechanism. If you do not, you can use Google Groups to create an announcement email alias. If you have a small list of students, you can add them automatically to your list. For a larger course, however, with Google Groups your best option is to include a subscription link on the page you display when a student successfully [CreateRegistration registers].
+  * If you already have a way to manage a large email alias, use that mechanism. To get a list of registered students,  see [ExportingCourseData Export Course Data].
+
+  * If your course has fewer than 100 students, you can send mail from your Course Builder App Engine application. See the official [https://developers.google.com/appengine/docs/python/mail/sendingmail App Engine documentation].
+
+  * In other situations, you can use Google Groups to create an announcement email alias. Include a subscription link to your group on the page you display when a student successfully [CreateRegistration registers].
+
+This page discusses how to create an announcement alias using Google Groups.
 
 <font color=red><<TODO figure this out >></font> For example, if your email alias is FOO, then include something like the following in {{{views/confirmation.html}}}:
 
