@@ -29,7 +29,7 @@ If your course truly is “massive”, the number of students guarantees an audi
 
 For example, people in different communities hold knitting needles differently and consequently do the basic stitches differently. Will you teach only the method you use? Will you teach multiple methods?
 
-Whatever you decide, in a situation like this you shouldconsider explicitly telling your students that what you will teach is only one way (or a few ways) to do whatever it is, and that there are other ways. Include links so you can read more, and even suggest taht students discuss these alternative approaches in the forum.
+Whatever you decide, in a situation like this you shouldconsider explicitly telling your students that what you will teach is only one way (or a few ways) to do whatever it is, and that there are other ways. Include links so you can read more, and even suggest that students discuss these alternative approaches in the forum.
 
 Another aspect of audience diversity is that while you will design primarily for your average student, still think about the others. Some simple things that help:
 
@@ -84,7 +84,7 @@ Deciding on the metrics early on makes it more likely that as you continue to th
 
 Some things to consider during this step:
 
-  * During your first lesson, consider making it clear to students what the course flow will be. Tell them when units will be released, what deadlines exist, during what ours course staff will be monitoring the discussion forum, and so on.
+  * During your first lesson, consider making it clear to students what the course flow will be. Tell them when units will be released, what deadlines exist, during what hours course staff will be monitoring the discussion forum, and so on.
 
   * Is there an overall flow to the material that makes logical sense? What dependencies are there in your content? Are there steps that students must learn before other steps? Are there concepts that they must understand?
 
