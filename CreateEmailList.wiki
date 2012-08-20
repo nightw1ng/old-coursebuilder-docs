@@ -7,7 +7,7 @@
 
 Throughout your course, you may want to send email to all of your registered students. To do so, you need an email alias that includes those registered students.
 
-To get a list of registered students, <font color=red><<TODO use the script someone's going to write.>></font>
+To get a list of registered students,  see [ExportingCourseData Export Course Data].
 
 If you already have a way to manage a large email alias, use that mechanism. If you do not, you can use Google Groups to create an announcement email alias. If you have a small list of students, you can add them automatically to your list. For a larger course, however, with Google Groups your best option is to include a subscription link on the page you display when a student successfully [CreateRegistration registers].
 
