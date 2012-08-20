@@ -9,8 +9,9 @@ This page describes the course data stored by Course Builder and how to export y
 
 == Data from Course Builder ==
 
-The following table describes the data Course Builder stores for your course. Course Builder stores five kinds of data: Student, Class, Email List, Lesson, and Page Cache. TODO: Verify kinds to document and add to bulkloader.yaml example.
+The following table describes the data Course Builder stores for your course. Course Builder stores three  kinds of data: Student, Unit, and Lesson. 
 
+*Student* - Data on the student’s work on the class.
 || Name || Type || Description ||
 || midterm_score || INTEGER || The student’s midterm score. A numeric value or empty for no score. || 
 || final_answer || TEXT || The selection of answers for each of the final exam questions. It is stored as a 2 dimensional array of strings. || 
@@ -21,7 +22,7 @@ The following table describes the data Course Builder stores for your course. Co
 || midterm_answer || TEXT || The selection of answers for each of the midclass exam questions. It is a 2-dimensional array of strings. || 
 || cert_name || STRING || The name as it will appear on the certificate. || 
 
-*Unit* - Data on the units offered in the course
+*Unit* - Data on the units offered in the course.
 || Name || Type || Description || 
 || id	INTEGER || An integer representing this unit. These start at 1 and go in order. || 
 || type || STRING || The type of unit being offered. A string value containing the type ‘A’, ‘U’ or ‘O’ for assessment, Unit or Other. || 
@@ -30,7 +31,7 @@ The following table describes the data Course Builder stores for your course. Co
 || release_date || STRING || The date when this unit will be made available. A string value containing the date. || 
 || now_available || STRING || A Boolean value of True or False representing whether or no students can access this unit. || 
 
-Lesson - Data on the lessons offered in each unit
+*Lesson* - Data on the lessons offered in each unit.
 || Name || Type || Description || 
 || unit_id || INTEGER || An integer indicating which unit this lesson is part of. || 
 || id || INTEGER || An integer indicating which lesson this is. Lessons in each unit start with 1 and go in order. || 
