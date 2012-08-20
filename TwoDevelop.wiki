@@ -29,14 +29,15 @@ If your course truly is “massive”, the number of students guarantees an audi
 
 For example, people in different communities hold knitting needles differently and consequently do the basic stitches differently. Will you teach only the method you use? Will you teach multiple methods?
 
-Whatever you decide, in a situation like this you shouldconsider explicitly telling your students that what you will teach is only one way (or a few ways) to do whatever it is, and that there are other ways. Include links so you can read more, and even suggest that students discuss these alternative approaches in the forum.
+Whatever you decide, in a situation like this you should consider explicitly telling your students that what you will teach is only one way (or a few ways) to do whatever it is, and that there are other ways. Include links so you can read more, and even suggest that students discuss these alternative approaches in the forum.
 
-Another aspect of audience diversity is that while you will design primarily for your average student, still think about the others. Some simple things that help:
+Obviously, it is up to you what you expect students to know ahead of time and how you design your course based on those expectations. Some people design for the least knowledgeable students; others for the most knowledgeable. Or, given the almost guaranteed diversity of your students, you may design for that average. No matter who you design for, consider the following things that can help different students:
 
   * Remind students that they can replay the videos or even skip them.
   * Remind students that they can repeat activities as many times as they like.
-  * Having text versions of the lessons is key, especially when many of your students are not native speakers of your language.
-  * For the superstars, find a way to provide extra, more challenging questions for them. Placing optional questions in the forum is a good approach.
+  * Have text versions of the lessons. This is key, especially when many of your students are not native speakers of your language.
+  * Find a way to provide extra, more challenging questions for advanced students. Placing optional questions in the forum is one approach.
+  * Find a way to provide background material for students who might need a little extra help getting started. Putting background material in a Google+ post is one approach.
 
 ==Write clear, specific objectives.==
 
