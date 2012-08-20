@@ -22,13 +22,4 @@ It can take up to a minute to upload your app; generally it's less than 30 secon
 
 
 <font color=red><<TODO more to add?
-According to Sean, production doesn't have clear_datastore, so if you want to change the data store (ie, lesson.csv and unit.csv) after loading an app to production, it's tricky.
-
-Apparently, the answer is:
-
-  it would be necessary to go to the appengine.google.com console and delete the entries one page at a time, which is really tedious (I've had to do that before).
-
-  Are we worried about people running into this obstacle? We may not need to document it, but I imagine that it may come up on the forums. Perhaps in that case we could point them to [http://stackoverflow.com/questions/1062540/how-to-delete-all-datastore-in-google-app-engine this].
-
-
->></font>
+production doesn't have clear_datastore, so if you want to change the data store, you can use the console as described in [AppEngine Work with App Engine] or you can do one of the things talked about [http://stackoverflow.com/questions/1062540/how-to-delete-all-datastore-in-google-app-engine here] to get rid of everything. I'll get back to this in a bit...>></font>
