@@ -1,5 +1,5 @@
 #summary Tips for creating and organizing an email list just for sending announcements
-<h1>Create an Announcements Email List</h1>
+<h1>Announcements-only Email List</h1>
 
 <font color=red><<TODO working. Not sure how this stuff works. Find someone when on site and play around.>></font>
 
