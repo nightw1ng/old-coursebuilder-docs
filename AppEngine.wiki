@@ -109,7 +109,7 @@ When App Engine starts your app, it also starts an associated Admin Console. If 
 
 From the console, you can see and modify the content of your data store.
 
-<img src="https://www.corp.google.com/~vpg/no_crawl/cb/admin-console.png" height=231 width=327 />
+<img src="https://docs.google.com/open?id=0B7vsi5kPl6d8NGU2R19RbjBZX0U" height=231 width=327 />
 
 == Modify your app and see the effects ==
 
