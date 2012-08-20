@@ -7,7 +7,7 @@ The primary parts of a course created with Course Builder are as follows:
   * *[#Course_content_and_delivery Course content and delivery]*<br>The material that you formally convey to students. Formal content can be lessons recorded or written in advance. It can also be live question and answer sessions with course staff.
   * *[#Assessments_and_activities Assessments and activities]*<br>Graded assessments with a fixed deadline to track student progress. You can also use ungraded assessments, called *activities*, to provide feedback and hints to students.
   * *[#People_interactions Social interactions]*<br>An important component of any MOOC is the interactions among the students themselves and the interactions between students and the course staff -- the instructors or teaching assistants (TAs).
-  * *[#Administrivia Administrivia]*<br>Of course, there are bits and pieces required to register students, to get the course up and running, to track usage, and so on.
+  * *[#Administrivia Administrative tasks]*<br>Of course, there are bits and pieces required to register students, to get the course up and running, to track usage, and so on.
 
 A single *course* consists of a series of *units* with individual *lessons* and *activities*. The course can have any number of *graded assessments* scattered before, between, and after the units and lessons. It can also have one or more formally-set up avenues for *social interaction* for the students.
 
@@ -27,7 +27,7 @@ For example, in the Power Searching with Google course, one unit is about interp
 
 As a very different example, a third unit is [OnlineOfficeHours online office hours] where the students presubmit questions and the course staff answers those questions in real-time using a [http://www.google.com/+/learnmore/hangouts/onair.html Hangout On Air]. Depending on your course, you may have some students interacting with the course staff over video for the Hangout On Air or you may have students submit all of their questions using Google Moderator.
 
-For all of these unit types, instructors make course content available to students at scheduled intervals throughout the course. Once available the content continues to be available until the course ends. That is, lessons are not available for only a few days; students can go back and redo lessons at any time throughout the course. Soon after online office hours take place, the course staff posts a video of it. So even if students miss the office hours, that material is still available.
+For all of these unit types, instructors make course content available to students at scheduled intervals throughout the course. Once available, the content continues to be available until the course ends. That is, lessons are not available for only a few days; students can go back and redo lessons at any time throughout the course. Soon after online office hours take place, the course staff posts a video of it. So even if students miss the office hours, that material is still available.
 
 Releasing course content at scheduled intervals has one perhaps unanticipated benefit. Many students tend to work on content relatively soon after the content becomes available.  For that reason, questions about course material tend to cluster near the release of that material. Because other students are thinking about the same material, they are more likely to be interested in getting involved in discussions about the material or in answering questions.
 
@@ -113,10 +113,8 @@ The most common avenues are as follows:
 In addition to these things that you set up, students may create additional interaction mechanisms, perhaps an email alias for students interested in a particular aspect of the course material or weekly in-person meetings for students living close to each other.
 
 <a name="administrivia"></a>
-== Administrivia ==
+== Administrative tasks ==
 
-Of course, there are bits and pieces required to register students, to get the course up and running, to track usage, and so on.
+Of course, as with any class there are various administrative aspects to creating a MOOC. Two of the major ones are  [CreateRegistration managing student registration] and [Metrics collecting an analyzing information to see how well your course does].
 
-Web site to bring it all together, analytics to provide usage stats, satisfaction stats, drop-off rates, registration
-
-<font color=red><<TODO gotta write this.>></font>
+For a full list of tasks needed to create a course, see [CourseBuilder Course Builder in a Nutshell].
