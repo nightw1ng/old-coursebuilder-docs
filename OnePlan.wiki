@@ -10,7 +10,10 @@ Eventually you will spend much more than 30 minutes planning and thinking about 
 
 ==Define the problem statement and high-level goal of the course.==
 
-What are you trying to achieve by creating this course? Be sure you decide both what you *are* trying to achieve and what you *are not* trying to achieve. Knowing both of those will make it much easier for you in later stages when you try to decide whether or not a given thing belongs in the course.
+Think about what problem your course addresses. How will taking this course overcome that problem? Rather than thinking about what you wish your students knew, think about what problem those people have that taking this course will alleviate. Approaching the high-level problem statement and goals from this perspective helps you define a scope that is of interest to your students.
+
+Be sure you decide both what you *are* trying to achieve and what you *are not* trying to achieve. Knowing both of those will make it much easier for you in later stages when you try to decide whether or not a given thing belongs in the course.
+
 
 ==Identify your audience and your assumptions.==
 
@@ -20,11 +23,13 @@ Think about what you expect your audience to already know. For example, assume y
 
 ==Define course objectives.==
 
-Course objectives may sound like the same thing as the problem statement and high-level goal. Actually, they are quite different. The problem statement and high-level goal are at most a 1-paragraph description of what you're doing and why. Objectives are the specifics of how you want your students to change based on having taken your course.
+Course objectives may sound like the same thing as the problem statement and high-level goal. Actually, they are quite different. The problem statement and high-level goal are at most a 1-paragraph description of what you're doing and why. Objectives are the specifics of how you want your students to change based on having taken your course. The objectives are subservient to your problem statement and should tactically solve the larger problem statement in a measurable and observable manner.
 
-What will your students do differently at the end of this course? (For example, your students will be able to knit a sweater using one color of yarn.) 
+Good objectives accomplish several things:
 
-How will you measure the success of your objectives? (Will you compare the results of a pre-course assessment with a post-course assessment?)
+  * *Tell your students what they are going to learn.* <br>Clear objectives answer the “What’s in it for me?” question.
+  * *Keep the content concise and specific.* <br>Avoid overwhelming your students with too much information. Objectives narrow down the information covered and keep it specific to your students' needs.
+  * *Change student behavior after the course.* <br>What will your students do differently at the end of this course? (For example, your students will be able to knit a sweater using one color of yarn.) 
 
 ==Consider course logistics.==
 
