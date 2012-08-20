@@ -53,7 +53,6 @@ Sheer number of participants and community
   * On _*the date the course starts*,_ attend the pre-launch TA meeting to go over your instructions.
   * As TAs, you'll check in on the three interaction mechanisms we have for students:
     * Google Groups Forum
-    * Emails sent to help@example.com
     * Google+ Page Posts
 
 ==How to moderate the course forum==
@@ -75,10 +74,10 @@ Sheer number of participants and community
     * If you don’t know the answer and aren’t able to pursue it at the moment for any reason,  send the URL of the forum post to help@example.com and ask for another TA to handle it.  
     * If you don’t know the answer, but will own and help pursue it, things are a little more complicated?
       * Reply back "Thanks for your good question.  I’ll research this and get back to you." Add a star to the message, which means "escalation in progress."
-    * Go into the help@ email account and locate the email message that corresponds to the forum post. Every forum post and response gets emailed to help@. They are located under the filter "forum posts." Research or escalate to the appropriate alias: 
-      * *_experts@example.com_* (content or course-related)
-      * *_techhelp@example.com_* (technical or registration issue)
-      * *_prhelp@example.com_* (press, confidential, product-related)
+      * Go into the help@ email account and locate the email message that corresponds to the forum post. Every forum post and response gets emailed to help@. They are located under the filter "forum posts." Research or escalate to the appropriate alias: 
+        * *_experts@example.com_* (content or course-related)
+        * *_techhelp@example.com_* (technical or registration issue)
+        * *_prhelp@example.com_* (press, confidential, product-related)
       * If the answer comes back within your shift, reply to the forum post with the answer and un-star the post.
       * If the answer does not come back within your shift, the next TA will keep an eye on the starred messages in email. When the response comes back from the alias, copy and paste the response into the thread at the forum. Un-star the post.
       * Record the question and answer into the TA Answer Guide, if you think it will be helpful to other TA’s.
@@ -94,31 +93,6 @@ Sheer number of participants and community
   * Do not respond to comments on posts. Instead, when you notice comments:
     * If the comment is spam, let *_administrator@example.com_* know so the comment can be removed.
     * If the comment should be replied to, email *_experts@example.com_*
-
-==How to manage help@example.com email account==
-
-  * Login to the help account with username *_help_* and password *_somepassword_*.
-  * Incoming emails that are bold are unread.  Open an unread email and see if you can help address the question.
-  * If you can handle a particular email, mark that email with your name as a Label. Answer the question if you can.  If you need help to answer the question, escalate by forwarding to the appropriate alias. Do not include the student's address when you escalate.  Here are the aliases:
-    * *_experts@example.com_* (content or course-related)
-    * *_techhelp@example.com_* (technical or registration issue)
-    * *_prhelp@example.com_* (press, confidential, product-related)
-  * Make sure that *_example-announce@example.com_* is not in the to: field.
-  * If you escalate and are waiting for a response, star the email. Any TA can later respond back to the student with the answer, once it’s received.
-  * When replying, sign the email with 
-    * [Your First Name] on behalf of_* Course Name*_ Staff 
-    * OR *_Course Name_* Staff
-  * If you will NOT be able to address a particular email that you’ve clicked open, then "Mark as Unread" for that email, so the next TA will know to have a look.
-
-===Tips===
-
-  * Refresh forum and email inbox every few minutes
-  * Label your email as the first thing you do! Then mark it as unread so everyone can see it’s yours
-  * If someone writes in twice with the same question, take both and label with your name, answer one, and label the other one "Duplicate".
-  * Make sure that *_example-announce@example.com_* is not in the to: field.
-  * If you share a documentation, presentation, or anything else with a student, give them VIEW access ONLY.
-  * If you copy/paste a signature (or anything else) be sure to clear your formatting so it doesn’t look copy/pasted. Many times the font is larger or different.
-  * When a question is asked in another language, respond in English so we don't make errors in translation.
 
 ==At the end of your TA office hour shift==
 
