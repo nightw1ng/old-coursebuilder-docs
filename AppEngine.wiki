@@ -4,11 +4,11 @@
 
 If you are not familiar with App Engine, read [https://developers.google.com/appengine/docs/whatisgoogleappengine What is Google App Engine?].
 
-Youo do not need to be an App Engine expert to work with Course Builder. There are just a few things you should be familiar with. Much of this is discussed on other pages. We summarizes them here.
+Youo do not need to be an App Engine expert to work with Course Builder. There are just a few things you should be familiar with. Much of this is discussed on other pages. We summarize them here.
 
 <wiki:toc />
 
-*Note:* In the following, you'll see input and output from workin in a shell. In these areas, new command lines start with {{{$}}} which you do not type. Lines that do not start with {{{$}}} are output from an earlier command.
+*Note:* In the following, you'll see input and output from working in a shell. In these areas, new command lines start with {{{$}}} which you do not type. Lines that do not start with {{{$}}} are output from an earlier command.
 
 == Download and install Python 2.7 ==
 
