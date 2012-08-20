@@ -1,0 +1,52 @@
+#summary Tips for creating and organizing an email list just for sending announcements
+<h1>Create an Announcements Email List</h1>
+
+<font color=red><<TODO working here>></font>
+
+<wiki:toc />
+
+Throughout your course, you may want to send email to all of your registered students. To do so, you need an email alias that includes those registered students.
+
+To get a list of registered students, <font color=red><<TODO use the script someone's going to write.>></font>
+
+If you already have a way to manage a large email alias, use that mechanism. If you do not, you can use Google Groups to create an email alias. If you have a small list of students, you can add them automatically to your list. For a larger course, however, with Google Groups your best option is to include a subscription link on the page you display when a student successfully [CreateRegistration registers].
+
+<font color=red><<TODO figure this out >></font> For example, if your email alias is FOO, then include something like the following in {{{views/confirmation.html}}}:
+
+  {{{<p class="top_content">Thank you for registering. To receive announcements }}}
+  {{{about this course, register for the announcements only email list at}}}
+  {{{SOMETHING}}}
+
+To create an announcements only Google Groups list, follow the instructions at [http://support.google.com/groups/bin/answer.py?hl=en&answer=2464926 Create a group].
+
+  * On the *Create Group* screen, set the following:
+    * Set *Group type* to *Email list*.
+    * Under "Basic permissions", 
+      * Set *View topics* to *All members of the group*.
+      * Set *Post* to *Managers of the  group*. (This includes owners of the group.)
+      * Set *Join the group* to *Anyone*.
+
+  * Once you finish creating your group, you see a Congratulations screen. From that screen, choose *Customize your group's settings*. From that screen:
+
+    * In the left navigation, expand *Information*.
+      * Choose *General information*. (It may already be chosen.)
+      * Set *Topic types* to *Questions*.
+
+    * In the left navigation, expand *Settings*.
+      * Choose *Email options*.
+      * (Optional) Add a subject prefix, so students can easily identify messages sent to from this group.
+      * (Optional) In *Email footer*, choose *Display how to unsubscribe from this group by email.*
+      * In *Post replies*, choose *To the managers of the group*. This restricts members of the alias from sending email to anybody other than the group managers.
+      * Choose *Moderation*.
+        * In *Moderate messages*, choose *Moderate all messages to the group.*
+      * Choose *New members*.
+        * In *New member permissions*, turn off *New members can post*.
+
+    * In the left navigation, expand *Permissions*.
+      * Choose *Posting permissions*.
+        * Set all of these permissions to only all managers of the group. 
+      * Choose *Moderation permissions.* 
+      * Set *Mark Duplicate* to *All Members of the group*.
+      * Set *Mark Favorite Reply on Any Topic* to *All Members of the group*.
+      * Set *Unmark Favorite Reply on Any Topic *to **All Members* of the group*.
+      * These last three are recommended settings that let your students help moderate the forum. If your forum is busy enough, you don't want to be the only one who can do these things. If you decide you want to keep tighter control over these areas, change the permissions to be somewhat more restrictive.
