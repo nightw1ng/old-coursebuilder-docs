@@ -4,7 +4,7 @@
 
 = Introduction =
 
-This page describes the course data stored by Course Builder and how to export your data into text files in CSV format, which you can upload into a spreadsheet or into Google Fusion Tables. We’ll start with an overview of the Course Builder data, followed by the steps for exporting the data. Before getting started, make sure you’ve downloaded and installed the Python App Engine SDK and that you have Python 2.7 on your system. (For information on downloading and installing the Python App Engine SDK, see [https://code.google.com/p/course-builder/wiki/AppEngine Work with App Engine].)
+This page describes the course data stored by Course Builder and how to export your data into text files in CSV format. We’ll start with an overview of the Course Builder data, followed by the steps for exporting the data. Before getting started, make sure you’ve downloaded and installed the Python App Engine SDK and that you have Python 2.7 on your system. (For information on downloading and installing the Python App Engine SDK, see [https://code.google.com/p/course-builder/wiki/AppEngine Work with App Engine].)
 
 == Data from Course Builder ==
 
