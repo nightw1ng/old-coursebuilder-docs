@@ -10,7 +10,6 @@ For a description of the parts of a course from the course designer’s perspect
 The flow for a student participating in the sample course is as follows (your course may have different pieces, but this should give you the idea):
 
   # *Register* for course. <br>Note that a student must have a Google account to register for the course.
-  # *Get welcome email* from the staff.
   # Take a *pre-course assessment* to see how much familiarity the student has with the course material at the outset.
   # *Get email* announcing availability of first unit.
   # Work on the first unit in any order:
