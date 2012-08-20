@@ -1,8 +1,9 @@
-#Describes course data and how to export your course data.
+#summary Describes course data and how to export your course data.
 
+<h1>Export Course Data</h1>
 * This page is an early working draft.*
 
-= Introduction =
+== Introduction ==
 
 This page describes the course data stored by Course Builder and how to export your data into text files in CSV format. We’ll start with an overview of the Course Builder data, followed by the steps for exporting the data. Before getting started, make sure you’ve downloaded and installed the Python App Engine SDK and that you have Python 2.7 on your system. (For information on downloading and installing the Python App Engine SDK, see [https://code.google.com/p/course-builder/wiki/AppEngine Work with App Engine].)
 
@@ -42,7 +43,7 @@ The following table describes the data Course Builder stores for your course. Co
 || *Name* || *Type* || *Description* ||
 || {{{}}} || STRING  ||  ||
 
-= Exporting your class data =
+== Export your class data ==
 
 The Course Builder application stores data in App Engine’s High Replication datastore. You download course data use the App Engine bulk loader tool, which is included with the Python App Engine SDK for your platform. (For information on downloading and installing the Python App Engine SDK, see [https://code.google.com/p/course-builder/wiki/AppEngine Work with App Engine].) We’ll use CSV format for this example so you can upload data into a spreadsheet or into Fusion Tables for viewing and analysis.
 
