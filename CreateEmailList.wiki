@@ -1,7 +1,7 @@
 #summary Tips for creating and organizing an email list just for sending announcements
 <h1>Create an Announcements Email List</h1>
 
-<font color=red><<TODO working here>></font>
+<font color=red><<TODO working. Not sure how this stuff works. Find someone when on site and play around.>></font>
 
 <wiki:toc />
 
@@ -9,7 +9,7 @@ Throughout your course, you may want to send email to all of your registered stu
 
 To get a list of registered students, <font color=red><<TODO use the script someone's going to write.>></font>
 
-If you already have a way to manage a large email alias, use that mechanism. If you do not, you can use Google Groups to create an email alias. If you have a small list of students, you can add them automatically to your list. For a larger course, however, with Google Groups your best option is to include a subscription link on the page you display when a student successfully [CreateRegistration registers].
+If you already have a way to manage a large email alias, use that mechanism. If you do not, you can use Google Groups to create an announcement email alias. If you have a small list of students, you can add them automatically to your list. For a larger course, however, with Google Groups your best option is to include a subscription link on the page you display when a student successfully [CreateRegistration registers].
 
 <font color=red><<TODO figure this out >></font> For example, if your email alias is FOO, then include something like the following in {{{views/confirmation.html}}}:
 
@@ -17,7 +17,7 @@ If you already have a way to manage a large email alias, use that mechanism. If 
   {{{about this course, register for the announcements only email list at}}}
   {{{SOMETHING}}}
 
-To create an announcements only Google Groups list, follow the instructions at [http://support.google.com/groups/bin/answer.py?hl=en&answer=2464926 Create a group].
+To create an announcements only Google Groups list, follow the instructions at [http://support.google.com/groups/bin/answer.py?hl=en&answer=2464926 Create a group]. To create a group that only lets owners or managers post (that is, one that you use for announcements but not for interacting with your students), follow these extra instructions:
 
   * On the *Create Group* screen, set the following:
     * Set *Group type* to *Email list*.
@@ -30,23 +30,26 @@ To create an announcements only Google Groups list, follow the instructions at [
 
     * In the left navigation, expand *Information*.
       * Choose *General information*. (It may already be chosen.)
-      * Set *Topic types* to *Questions*.
+      * In *Posting options*, turn off *Allow posting  by email*.
+      * Save these settings.
 
     * In the left navigation, expand *Settings*.
       * Choose *Email options*.
-      * (Optional) Add a subject prefix, so students can easily identify messages sent to from this group.
+      * (Optional) Add a subject prefix, so students can easily identify messages sent from this group.
       * (Optional) In *Email footer*, choose *Display how to unsubscribe from this group by email.*
       * In *Post replies*, choose *To the managers of the group*. This restricts members of the alias from sending email to anybody other than the group managers.
+      * Save these settings.
       * Choose *Moderation*.
         * In *Moderate messages*, choose *Moderate all messages to the group.*
+        * Save these settings.
       * Choose *New members*.
         * In *New member permissions*, turn off *New members can post*.
+        * Save these settings.
 
     * In the left navigation, expand *Permissions*.
-      * Choose *Posting permissions*.
-        * Set all of these permissions to only all managers of the group. 
-      * Choose *Moderation permissions.* 
-      * Set *Mark Duplicate* to *All Members of the group*.
-      * Set *Mark Favorite Reply on Any Topic* to *All Members of the group*.
-      * Set *Unmark Favorite Reply on Any Topic *to **All Members* of the group*.
-      * These last three are recommended settings that let your students help moderate the forum. If your forum is busy enough, you don't want to be the only one who can do these things. If you decide you want to keep tighter control over these areas, change the permissions to be somewhat more restrictive.
+      * Choose *Basic permissions*.
+        * Set *Post* to *Managers of the group, Onwers for the group*, to restrict posting to the managers and owners.
+        * Save these settings.
+      * Choose *Access permissions*.
+        * Set *Contact the Owner of a Group* to *Managers of the group, Onwers for the group*, to restrict posting to the managers and owners.
+        * Save these settings.
