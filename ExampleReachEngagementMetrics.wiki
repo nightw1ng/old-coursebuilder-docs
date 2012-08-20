@@ -12,22 +12,21 @@ This page lists some reach and engagement metrics you might collect.  The list i
     * Number of  registrants who complete post-course assessment
     * Number of  registrants who pass/get certified
     * Number of  registrants who passed of those who completed the pre-course assessment
+
   * *Course Forums* 
     * Number of posts
     * Number of posts in each category group (See [WebForums Community Discussion])
     * Number of posts in each category
     * Number who joined the forum 
     * Number who posted anything on the forum (with duplicates removed)
-  * *Email Help Center* 
-    * Number of emails sent to the help email address help@
-    * Number of senders (with duplicates removed)
-    * Number of emails having at least TA in its "label"
+
   * *Hangouts on Air* <br>For each Hangout On Air
     * Number of concurrent viewers
     * Number of playbacks on !YouTube
     * Number of !YouTube comments
     * In Moderator, number of votes on number of questions from number of people
     * Number of Google+ comments on post about the Hangout On Air
+
   * *Google+ Course Page* 
     * Increase in number of followers since the course announcement
     * Average number of valid comments on posts to that page as a whole
