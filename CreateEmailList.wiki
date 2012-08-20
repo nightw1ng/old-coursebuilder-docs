@@ -5,7 +5,7 @@
 
 <wiki:toc />
 
-Throughout your course, you may want to send email to all of your registered students. To do so, you need an email alias that includes those registered students. Course Builder does not provide a way to automatically enroll students in an email list.
+Throughout your course, you may want to send email to all of your registered students. (See [Announcements#Reminder_announcements,_typically_in_email Announcements and Optional Matierial] for suggested emails). To do so, you need an email alias that includes those registered students. Course Builder does not provide a way to automatically enroll students in an email list.
 
 Instead, you have several options:
 
