@@ -110,7 +110,7 @@ The most common avenues are as follows:
   * *[http://www.google.com/+/learnmore/hangouts/ Google Hangout].*<br>You may decide that you want your students to divide into smaller groups to work on projects together. Your students probably live in distributed areas. You can have them meet in a Google Hangout to collaborate on their project.
   * *Help email alias.* <br>Sometimes students have questions that they know are not of interest to anybody else. For example, “I don’t have access to the videos. What do I do?” or “My dog ate my mid-course assessment. Can I have an extension?” You can provide a help alias for them to use for such primarily administrative questions.
 
-In addition to these things that you set up, students may create additional interaction mechanisms, perhaps an email alias for students interested in a particular aspect of the course material or weekly in-person meetings for students living close too each other.
+In addition to these things that you set up, students may create additional interaction mechanisms, perhaps an email alias for students interested in a particular aspect of the course material or weekly in-person meetings for students living close to each other.
 
 <a name="administrivia"></a>
 == Administrivia ==
