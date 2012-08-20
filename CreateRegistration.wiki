@@ -12,10 +12,10 @@ https://www.corp.google.com/~vpg/no_crawl/cb/registration-parts.png
 
 === What happens from this page ===
 
-The sample registration page asks one question, the student's name. This is just to show you that you can ask questions on this page and store the information:
+The sample registration page asks one question, the student's name. This is just to show you that you _can_ ask questions on this page and store the information:
 
   * The registration page {{{views/register.html}}} stores the name in a variable named {{{form01}}}.
-  * The  {{{RegisterHandler.post()}}} class, defined in {{{controllers/utils.py}}}, uses {{{form01}}} to define the variable {{{name}}} and store it with the {{{Student}}} instance in the datastore.
+  * The  {{{RegisterHandler.post()}}} method, defined in {{{controllers/utils.py}}}, uses {{{form01}}} to define the variable {{{name}}} and store it with the {{{Student}}} instance in the datastore.
 
 If you want to ask different questions, you must change these two files.
 
@@ -46,8 +46,7 @@ This page consists of the same three areas as the registration page and uses the
   * {{{views/base_registration.html}}} defines the header and footer areas. Note this is the same file the registration form uses, guaranteeing that these two pages have the same general look and feel.  See [ModifyTemplate ModifyCourseTemplate].
   * {{{views/confirmation.html}}} defines the content of the registration form.
 
-If you create a [WebForums discussion forum] for your course, we strongly encourage you to include text on the registration confirmation page, providing the URL to your forum and suggesting that students enroll in the forum. Also, if you want to use another email alias to send announcements to your students, you should also add a link to that address and a request that students sign up. See  <font color=red><<TODO somewhere>></font>.
-
+If you create a [WebForums discussion forum] for your course, we strongly encourage you to include text on the registration confirmation page, providing the URL to your forum and suggesting that students enroll in the forum. Also, if you want to use another email alias to send announcements to your students, you should also add a link to that address and a request that students sign up. See [CreateEmailList Create an Announcements Email List].
 
 == Testing changes ==
 
