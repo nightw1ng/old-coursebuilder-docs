@@ -79,3 +79,18 @@ When you do this, a couple of things happen to the duplicate topic.
 
   * Groups locks the post, so nobody can comment on it.
   * The title of the post gets a link that says *Another discussion addresses this topic*. That link points to the main post.
+
+
+== Include subscription link ==
+
+When a student registers for your course, you should include information about how to subscribe to the discussion forum you created.
+
+See [CreateRegistration Create Registration] for information about modifying registration.
+
+Include information about your group on the page the student sees upon successful registration. To do so, modify the file at {{{views/confirmation.html}}}. If your group is named _*{{{My-Course}}}*_, include something like the following:
+
+  {{{<p class="top_content">Thank you for registering.</p>}}}<br>
+  <br>
+  {{{<p>To participate in community discussions about this course, register for the web forum at}}}<br>
+  {{{<a href="http://groups.google.com/group/}}}_*{{{My-Course}}}*_{{{">http://groups.google.com/group/}}}_*{{{My-Course}}}*_{{{</a>.}}}<br>
+  {{{On that page, click on <b>Join Group</b>.</p>}}}
