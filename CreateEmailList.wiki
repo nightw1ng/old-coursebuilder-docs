@@ -71,6 +71,6 @@ Include information about your group on the page the student sees upon successfu
   <br>
   {{{<p>To receive announcements about this course, register for the}}}<br>
   {{{announcements-only email list at}}}<br>
-  {{{<a href="http://groups.google.com/group/}}}_*{{{My-Course-Announce}}}*_{{{">http://groups.google.com/group/}}}_*{{{My-Course-Announce}}}*_{{{</a>.<br>}}}<br>
-  {{{On that page, click on <b>Join Group</b>.<br>}}}<br>
+  {{{<a href="http://groups.google.com/group/}}}_*{{{My-Course-Announce}}}*_{{{">http://groups.google.com/group/}}}_*{{{My-Course-Announce}}}*_{{{</a>.}}}<br>
+  {{{On that page, click on <b>Join Group</b>.}}}<br>
   {{{In the dialog box that appears, under <b>How do you want to read this group?</b>, choose <b>Email</b>.</p>}}}
