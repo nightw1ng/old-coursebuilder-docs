@@ -4,8 +4,8 @@
 
 Fostering a community between instructors and students and among the students is an integral part of creating an successful MOOC. There are several aspects of the community, each of which is covered in a separate page:
 
+  * [Announcements Announcements and optional material] for course staff to communicate things such as reminders of upcoming events, deadlines, or the location of extra course material,  
   * [WebForums Community discussion] mechanisms, such as a web forum, for students to interact with each other, asking and answering their questions,
-  * [Announcements Announcements and optional material] for course staff communicate things such as reminders of upcoming events, deadlines, or the location of extra course material,  
   * [OnlineOfficeHours Online office hours], to allow course staff and students to interact in real time,
   * The [TeachingAssistants people] you have talking to your students.
 
