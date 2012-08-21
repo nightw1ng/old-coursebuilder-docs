@@ -13,34 +13,34 @@ The following table describes the data Course Builder stores for your course. Co
 
 *Student* - Data on the student’s work on the class.
 || Name || Type || Description ||
-|| midterm_score || INTEGER || The student’s midterm score. A numeric value or empty for no score. || 
-|| final_answer || TEXT || The selection of answers for each of the final exam questions. It is stored as a 2 dimensional array of strings. || 
-|| enrolled_date || DATETIME || The date and timestamp when student enrolled for the class. || 
-|| final_score || INTEGER || The student’s final score. A numeric value or empty for no score. || 
-|| precourse_answer ||  || TEXT	The selection of answers for each of the precourse survey questions. It is stored as a 2-dimensional array of strings. || 
-|| overall_score || INTEGER || The student’s overall score. A numeric value or empty for no score. || 
-|| midterm_answer || TEXT || The selection of answers for each of the midclass exam questions. It is a 2-dimensional array of strings. || 
-|| cert_name || STRING || The name as it will appear on the certificate. || 
+|| {{{midterm_score}}} || INTEGER || The student’s midterm score. A numeric value or empty for no score. || 
+|| {{{final_answer}}} || TEXT || The selection of answers for each of the final exam questions. It is stored as a 2 dimensional array of strings. || 
+|| {{{enrolled_date}}} || DATETIME || The date and timestamp when student enrolled for the class. || 
+|| {{{final_score}}} || INTEGER || The student’s final score. A numeric value or empty for no score. || 
+|| {{{precourse_answer}}} ||  || TEXT	The selection of answers for each of the precourse survey questions. It is stored as a 2-dimensional array of strings. || 
+|| {{{overall_score}}} || INTEGER || The student’s overall score. A numeric value or empty for no score. || 
+|| {{{midterm_answer}}} || TEXT || The selection of answers for each of the midclass exam questions. It is a 2-dimensional array of strings. || 
+|| {{{cert_name}}} || STRING || The name as it will appear on the certificate. || 
 
 *Unit* - Data on the units offered in the course.
 || Name || Type || Description || 
-|| id	INTEGER || An integer representing this unit. These start at 1 and go in order. || 
-|| type || STRING || The type of unit being offered. A string value containing the type ‘A’, ‘U’ or ‘O’ for assessment, Unit or Other. || 
-|| unit_id || STRING || A string id for this unit. Its value depends on whether this item is assessment, unit or something else. || 
-|| title || STRING || A string value containing the title of the unit. || 
-|| release_date || STRING || The date when this unit will be made available. A string value containing the date. || 
-|| now_available || STRING || A Boolean value of True or False representing whether or no students can access this unit. || 
+|| {{{id}}} || INTEGER || An integer representing this unit. These start at 1 and go in order. || 
+|| {{{type}}} || STRING || The type of unit being offered. A string value containing the type ‘A’, ‘U’ or ‘O’ for assessment, Unit or Other. || 
+|| {{{unit_id}}} || STRING || A string id for this unit. Its value depends on whether this item is assessment, unit or something else. || 
+|| {{{title}}} || STRING || A string value containing the title of the unit. || 
+|| {{{release_date}}} || STRING || The date when this unit will be made available. A string value containing the date. || 
+|| {{{now_available}}} || STRING || A Boolean value of True or False representing whether or no students can access this unit. || 
 
 *Lesson* - Data on the lessons offered in each unit.
 || Name || Type || Description || 
-|| unit_id || INTEGER || An integer indicating which unit this lesson is part of. || 
-|| id || INTEGER || An integer indicating which lesson this is. Lessons in each unit start with 1 and go in order. || 
-|| title || STRING || A string value representing the name of the lesson. || 
-|| objectives || TEXT || A string containing lesson objectives, that appears after the title of the lesson. || 
-|| video || TEXT	 || The id of the YouTube video associated with the lesson. || 
-|| notes || TEXT || URL of the text version of the lesson. || 
-|| activity || STRING || A string value of Yes or No representing whether there is an activity associated with this lesson. || 
-|| activity_title || STRING || The title of the activity. || 
+|| {{{unit_id}}} || INTEGER || An integer indicating which unit this lesson is part of. || 
+|| {{{id}}} || INTEGER || An integer indicating which lesson this is. Lessons in each unit start with 1 and go in order. || 
+|| {{{title}}} || STRING || A string value representing the name of the lesson. || 
+|| {{{objectives}}} || TEXT || A string containing lesson objectives, that appears after the title of the lesson. || 
+|| {{{video}}} || TEXT	 || The id of the YouTube video associated with the lesson. || 
+|| {{{notes}}} || TEXT || URL of the text version of the lesson. || 
+|| {{{activity}}} || STRING || A string value of Yes or No representing whether there is an activity associated with this lesson. || 
+|| {{{activity_title}}} || STRING || The title of the activity. || 
 
 == Export your class data ==
 
@@ -147,22 +147,25 @@ transformers:
 }}}
 
  # Create an application-specific password for your class (save/remember the password). For help, see [http://support.google.com/accounts/bin/answer.py?hl=en&answer=185833 Signing in using application-specific passwords].
- # Run the following command and type your application-specific password at the prompt:
+ # Run the following command and type your application-specific password at the prompt.
 {{{
 # email = Your Google email address.
 # config_file = Your Google email address.
 # filename = The name of your exported data file.
 # kind = The name of the model to export.
 # url = The URL for the server, followed with /remote_api. 
-$ appcfg.py download_data --email=<email> --config_file=<config-file> --filename=<data_filename> --kind=<what to export> --url=<url>
-
 # Example.
-$ appcfg.py download_data --email=molson@google.com --config_file=bulkloader.yaml --filename=student.csv --kind=Student --url=http://myclass.google.com/remote_api
+# $ appcfg.py download_data --email=molson@google.com --config_file=bulkloader.yaml --filename=student.csv --kind=Student --url=http://myclass.google.com/remote_api
+
+$ appcfg.py download_data --email=<email> --config_file=<config-file> --filename=<data_filename> --kind=<what to export> --url=<url>
 }}}
 
+The command will generate the following files:
 
 || *File* || *Description* ||
 || {{{bulkloader-log-<timestamp>}}} || A log file showing the processing steps. Use the --db_filename=skip flag to skip generating this file.|| 
 || {{{bulkloader-progress-<timestamp>.sql3}}} || A SQL3 database file showing progress. Use the --db_filename=skip flag to skip generating this file. || 
 || {{{bulkloader-results-<timestamp>.sql3}}} || The exported class data in SQL3 format. Use the --db_filename=skip flag to skip generating this file. || 
-|| {{{<data_filename>.csv}}} || The exported class data in CSV format. || 
+|| {{{<filename>.csv}}} || The exported class data in CSV format. || 
+
+You can now import your CSV files into a spreadsheet or into [[Fusion Tables http://www.google.com/fusiontables/Home/]] for viewing and analysis. For help with Fusion Tables, see [[Import data http://support.google.com/fusiontables/bin/answer.py?hl=en&answer=181717&topic=27017&ctx=topic]].
