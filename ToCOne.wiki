@@ -1,13 +1,11 @@
   * [CourseBuilder Course Builder in a Nutshell]
     * [WhatsInACourse What's in a Course?]
     * [CourseFlow Course Flow]
-
   * [GetStarted Get Started]
     * [Download Download the Software]
     * [GetCode Start up the Sample App]
     * [ExplorePS Explore the Sample App]
     * [ExploreCode Explore the Sample Code]
-
   * [CourseMaterial Customize the Code]
     * [ModifyTemplate Modify Course Template]
     * [CreateRegistration Create Registration]
@@ -17,7 +15,6 @@
     * [CreateAssessments Create Assessments]
     * [UploadCode Upload Your App]
     * [AppEngine Work with App Engine]
-
   * [ParticipantCommunity Set up & Manage Community]
     * [Announcements Announcements & Optional Material]
     * [WebForums Community Discussion]
@@ -28,7 +25,6 @@
     * [https://docs.google.com/spreadsheet/ccc?key=0Arvsi5kPl6d8dGZkZDNCbEVNT1BGQ2dzWnlNczNsdEE Example Event Timeline & TA Hours]
     * [ExampleTAEssentialsDoc Example TA Essentials Doc]
     * [CommunityToolsComparison Tools Comparison]
-
   * [Metrics Collect and Analyze Metrics]
     * [AssessmentMetrics Assessment Metrics]
     * [HappinessMetrics Happiness Metrics]
@@ -36,7 +32,6 @@
     * [ReachAndEngagementMetrics Reach & Engagement Metrics]
     * [ExampleReachEngagementMetrics Example Reach & Engagement Metrics]
     * [ExportingCourseData Export Course Data]
-
   * [CreationMethodology Creation Methodology]
     * [PSHistory About the Power Searching Experiment]
     * [OnePlan Plan Before You Start]
@@ -44,5 +39,4 @@
       * [ObjectivesToOutline From Objectives to Outline]
     * [ThreeImplement Implement the Entire Course with the Technology]
     * [FourPilot Pilot with Your Target Audience]
-
-    * [ExampleMOOCs MOOC Showcase]
+  * [ExampleMOOCs MOOC Showcase]
