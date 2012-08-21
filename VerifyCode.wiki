@@ -1,0 +1,95 @@
+#summary How to run code that checks whether unit.csv and lesson.csv are well-formed.
+
+= Verify Your Code =
+
+As discussed on other pages, creating the [CreateHomePage home page], [CreateLessons lessons], [CreateActivities activities], and [CreateAssessments assessments] requires you to create CSV files (for the home page and for lessons) and a set of !JavaScript files (for activities and for assessments). Course Builder contains a tool that lets you scan these files for broken references and other errors. 
+
+Note that this verifier may not catch all errors. It is a first step, to find certain anticipated problems. You should still test your app by visiting the course pages on your local development server and checking that links and input fields work as expected.
+
+== Run the verification tool ==
+
+To run this tool, open a Unix command-line shell. In the shell:
+
+  {{{$ cd }}}_*{{{APPPATH}}}*_<br>
+  {{{$ python tools/verify.py .}}}
+
+where _*{{{APPPATH}}}*_ is the directory containing your app. 
+
+
+== What it verifies ==
+
+The verification tool outputs a list of warnings and errors that indicate possible invalid data in the CSV files and incorrectly-formatted activities and assessments. For example, in CSV files it catches incorrectly numbered units or a row containing too many or too few elements. 
+
+If the tool runs with no errors, you see output similiar to the following:
+
+  {{{INFO: Started verification in: /oy/coursebuilder/tools/verify.py}}}<br>
+  {{{INFO: Loading units from: /oy/coursebuilder/tools/../data/unit.csv}}}<br>
+  {{{INFO: Loading lessons from: /oy/coursebuilder/tools/../data/lesson.csv}}}<br>
+  {{{INFO: Unit 1: Pre-course assessment}}}<br>
+  {{{INFO: Unit 2: Introduction}}}<br>
+  {{{INFO:   Lesson 1: Introduction}}}<br>
+  {{{INFO:   Lesson 2: Filter image results by color}}}<br>
+  {{{...}}}<br>
+  {{{INFO: Unit 9: Post-course assessment}}}<br>
+  {{{INFO: Unit 10: Power Searching with Search Experts Video}}}<br>
+  {{{INFO: Unit 11: Hang Out with Search Experts Video}}}<br>
+  {{{INFO: Loading activities:}}}<br>
+  {{{INFO:   Verified activity: /oy/coursebuilder/tools/../assets/js/activity-1.2.js}}}<br>
+  {{{INFO:   Verified activity: /oy/coursebuilder/tools/../assets/js/activity-1.3.js}}}<br>
+  {{{...}}}<br>
+  {{{INFO:   Verified activity: /oy/coursebuilder/tools/../assets/js/activity-6.3.js}}}<br>
+  {{{INFO: Read 26 activity files}}}<br>
+  {{{INFO: Loading assessment:}}}<br>
+  {{{INFO:   Verified assessment /oy/coursebuilder/tools/../assets/js/assessment-Pre.js}}}<br>
+  {{{INFO:   Verified assessment /oy/coursebuilder/tools/../assets/js/assessment-Mid.js}}}<br>
+  {{{INFO:   Verified assessment /oy/coursebuilder/tools/../assets/js/assessment-Fin.js}}}<br>
+  {{{INFO: Read 3 assessment files}}}<br>
+  {{{INFO: Read 11 units}}}<br>
+  {{{INFO: Read 29 lessons}}}<br>
+  <font color="green"> {{{INFO: Completed verification: 0 warnings, 0 errors.}}} </font>
+
+If the tool encounters errors, instead you see output similiar to the following:
+
+  {{{INFO: Started verification in: /oy/coursebuilder/tools/verify.py}}}<br>
+  {{{INFO: Loading units from: /oy/coursebuilder/tools/../data/unit.csv}}}<br>
+  {{{INFO: Loading lessons from: /oy/coursebuilder/tools/../data/lesson.csv}}}<br>
+  {{{INFO: Unit 1: Pre-course assessment}}}<br>
+  {{{INFO: Unit 2: Introduction}}}<br>
+  {{{INFO:   Lesson 1: Introduction}}}<br>
+  {{{INFO:   Lesson 2: Filter image results by color}}}<br>
+  {{{...}}}<br>
+  {{{INFO: Unit 9: Post-course assessment}}}<br>
+  {{{INFO: Unit 10: Power Searching with Search Experts Video}}}<br>
+  {{{INFO: Unit 11: Hang Out with Search Experts Video}}}<br>
+  {{{WARNING: Unused lesson_id 777 (9.777.Summary)}}}<br>
+  {{{ERROR: Lesson has unknown unit_id 9 (9.777.Summary)}}}<br>
+  {{{INFO: Loading activities:}}}<br>
+  {{{INFO:   Verified activity: /oy/coursebuilder/tools/../assets/js/activity-1.2.js}}}<br>
+  {{{INFO:   Verified activity: /oy/coursebuilder/tools/../assets/js/activity-1.3.js}}}<br>
+  {{{...}}}<br>
+  {{{INFO:   Verified activity: /oy/coursebuilder/tools/../assets/js/activity-6.2.js}}}<br>
+  {{{ERROR:   Missing activity: /oy/coursebuilder/tools/../assets/js/activity-9.777.js}}}<br>
+  {{{INFO: Read 26 activity files}}}<br>
+  {{{INFO: Loading assessment:}}}<br>
+  {{{INFO:   Verified assessment /oy/coursebuilder/tools/../assets/js/assessment-Pre.js}}}<br>
+  {{{ERROR: Unable to parse assessment in file /oy/coursebuilder/tools/../assets/js/assessment-Mid.js}}}<br>
+  {{{  1: }}}<br>
+  {{{  2: }}}<br>
+  {{{  ... }}}<br>
+  {{{  20: blah blah blah}}}<br>
+  {{{  21: }}}<br>
+  {{{  22: assessment = {}}}<br>
+  {{{...}}}<br>
+  {{{  64:   assessmentName: 'midcourse',}}}<br>
+  {{{...}}}<br>
+  <font color="red">{{{ERROR: <type 'exceptions.SyntaxError'>}}}</font><br>
+  <font color="red">{{{ERROR: invalid syntax (<string>, line 20)}}}</font><br>
+  <font color="red">{{{ERROR: <traceback object at 0x1ef5680>}}}</font><br>
+  {{{INFO:   Verified assessment /oy/coursebuilder/tools/../assets/js/assessment-Fin.js}}}<br>
+  {{{INFO: Read 3 assessment files}}}<br>
+  {{{INFO: Read 11 units}}}<br>
+  {{{INFO: Read 29 lessons}}}<br>
+  <font color="red">{{{INFO: Completed verification: 1 warnings, 7 errors.}}}</font>
+
+
+You can go back and fix the errors, and run the verifier again after you finish.
