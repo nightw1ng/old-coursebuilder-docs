@@ -8,7 +8,7 @@ The pages in this section include:
 
   * [Download Download the Software]<br>Describes how to download Python, Google App Engine, and the Course Builder sample application.
 
-  * [GetCode Initialize the Sample App]<br>Describes how to get the sample application running for the first time.
+  * [GetCode Run the Sample App]<br>Describes how to get the sample application running for the first time.
 
   * [ExplorePS Explore the Sample App]<br>Walks through the pages students see when they take the course. This is about what the course looks like. Consider reading [WhatsInACourse What's in a Course?] at the same time; it goes into more detail about the parts of content.
 
