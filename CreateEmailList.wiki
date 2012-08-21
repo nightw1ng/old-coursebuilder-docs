@@ -49,5 +49,13 @@ To create an announcements only Google Groups list, follow the instructions at [
 
     * In the left navigation, expand *Permissions*.
       * In the left navigation, choose *Access permissions*.
-        * Set *Contact the Owner of a Group* to *Managers of the group, Onwers for the group*, to restrict posting to the managers and owners.
+        * Set *Contact the Owner of a Group* to *Owners for the group*, to restrict posting to the owners.
         * Save these settings.
+
+    * In the left navigation, expand *Members*.
+      * In the left navigation, choose *All members*. You should be the only listed member.
+      * Click on the row representing you.
+      * On the new page, under *Posting permission*, choose *Override: member is allowed to post*.
+      * Save these settings.
+
+You (and only you) can now post messages to your new group, either from the Google Groups interface or by sending email to _*{{{GROUPNAME}}}*_{{{@googlegroups.com}}}.
