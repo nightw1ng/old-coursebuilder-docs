@@ -1,6 +1,6 @@
 #summary Get Python, App Engine, and the sample code
 
-<h1>Download Software </h1>
+<h1>Download the Software </h1>
 
 Before you can start working on your own course, you need to download Python and Google App Engine. You also need to download the Course Builder sample application.
 
