@@ -168,4 +168,4 @@ The command will generate the following files:
 || {{{bulkloader-results-<timestamp>.sql3}}} || The exported class data in SQL3 format. Use the --db_filename=skip flag to skip generating this file. || 
 || {{{<filename>.csv}}} || The exported class data in CSV format. || 
 
-You can now import your CSV files into a spreadsheet or into [Fusion Tables http://www.google.com/fusiontables/Home/] for viewing and analysis. For help with Fusion Tables, see [Import data http://support.google.com/fusiontables/bin/answer.py?hl=en&answer=181717&topic=27017&ctx=topic].
+You can now import your CSV files into a spreadsheet or into [ http://www.google.com/fusiontables/Home Fusion Tables] for viewing and analysis. For help with Fusion Tables, see [http://support.google.com/fusiontables/bin/answer.py?hl=en&answer=181717&topic=27017&ctx=topic Import data].
