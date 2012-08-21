@@ -1,0 +1,5 @@
+#summary How to go about creating a course.
+
+= Creation Methodology =
+
+<font color=red><<TODO write this>></font>
