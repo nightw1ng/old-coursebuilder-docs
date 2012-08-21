@@ -19,7 +19,7 @@
       * [CreateAssessments Create Assessments]
       * [UploadCode Upload Your App]
       * [AppEngine Work with App Engine]
-    * [Metrics Collect and Analyze Metrics]
+    * [Metrics Measure How You Did]
       * [AssessmentMetrics Assessment Metrics]
       * [HappinessMetrics Happiness Metrics]
       * [ReachAndEngagementMetrics Reach & Engagement Metrics]
