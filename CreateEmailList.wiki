@@ -1,9 +1,5 @@
-#summary Tips for creating and organizing an email list just for sending announcements
+#summary Tips for creating and organizing an email list just for sending announcements.
 <h1>Announcements-only Email List</h1>
-
-<font color=red><<TODO working. Not sure how this stuff works. Find someone when on site and play around.>></font>
-
-<wiki:toc />
 
 Throughout your course, you may want to send email to all of your registered students. (See [Announcements#Reminder_announcements,_typically_in_email Announcements and Optional Matierial] for suggested emails). To do so, you need an email alias that includes those registered students. Course Builder does not provide a way to automatically enroll students in an email list.
 
@@ -11,23 +7,24 @@ Instead, you have several options:
 
   * If you already have a way to manage a large email alias, use that mechanism. To get a list of registered students,  see [ExportingCourseData Export Course Data].
 
-  * If your course has fewer than 100 students, you can send mail from your Course Builder App Engine application. See the official [https://developers.google.com/appengine/docs/python/mail/sendingmail App Engine documentation].
+  * If your course has fewer than 100 students, you can send mail from your Course Builder App Engine application for free. If you want to send more than 100 emails in a single day, you would have to upgrade to a paid App Engine account. See the official [https://developers.google.com/appengine/docs/python/mail/sendingmail App Engine documentation].
 
-  * In other situations, you can use Google Groups to create an announcement email alias. Include a subscription link to your group on the page you display when a student successfully [CreateRegistration registers].
+  * Alternatively, you can use Google Groups to create an announcement email alias. [#Include_subscription_link Include a subscription link] to your group on the page you display when a student successfully [CreateRegistration registers].
 
-This page discusses how to create an announcement alias using Google Groups.
+This page discusses how to create an announcement alias using Google Groups and how to suggest to your students that they subscribe to that alias.
 
-<font color=red><<TODO figure this out >></font> For example, if your email alias is FOO, then include something like the following in {{{views/confirmation.html}}}:
+== Create an announcements-only Google Group ==
 
-  {{{<p class="top_content">Thank you for registering. To receive announcements }}}
-  {{{about this course, register for the announcements only email list at}}}
-  {{{SOMETHING}}}
+To create a Google Groups list that only lets owners post (that is, one that you use for announcements but not for interacting with your students):
 
-To create an announcements only Google Groups list, follow the instructions at [http://support.google.com/groups/bin/answer.py?hl=en&answer=2464926 Create a group]. To create a group that only lets owners or managers post (that is, one that you use for announcements but not for interacting with your students), follow these extra instructions:
+  * Visit [http://groups.google.com].
+  * Click on the *New group* button.
 
-  * On the *Create Group* screen, set the following:
+  * On the *Create Group* screen:
+    * Enter a *Group name* such as *_{{{My Course}}}_ {{{Announce}}}*, where  _*{{{My Course}}}*_ is the name of your course.<br>Note that the system automatically sets *Group email address* to _*{{{my-course}}}*_*{{{-announce}}}*{{{@googlegroups.com}}}.
+    * Enter a *Group description*.
     * Set *Group type* to *Email list*.
-    * Under *Basic permissions*, 
+    * In *Basic permissions*, 
       * Set *View topics* to *Anyone*.
       * Set *Post* to *Owners of the group*.
       * Set *Join the group* to *Anyone*.
@@ -59,3 +56,21 @@ To create an announcements only Google Groups list, follow the instructions at [
       * Save these settings.
 
 You (and only you) can now post messages to your new group, either from the Google Groups interface or by sending email to _*{{{GROUPNAME}}}*_{{{@googlegroups.com}}}.
+
+For more information about these and other settings, see [http://support.google.com/groups/bin/answer.py?hl=en&answer=2464926 Create a group]. 
+
+== Include subscription link ==
+
+When a student registers for your course, you should include information about how to subscribe to the announcements-only group you created in the previous section.
+
+See [CreateRegistration Create Registration] for information about modifying registration.
+
+Include information about your group on the page the student sees upon successful registration. To do so, modify the file at {{{views/confirmation.html}}}. If your group is named _*{{{My-Course-Announce}}}*_, include something like the following:
+
+  {{{<p class="top_content">Thank you for registering.</p>}}}<br>
+  <br>
+  {{{<p>To receive announcements about this course, register for the}}}<br>
+  {{{announcements-only email list at}}}<br>
+  {{{<a href="http://groups.google.com/group/}}}_*{{{My-Course-Announce}}}*_{{{">http://groups.google.com/group/}}}_*{{{My-Course-Announce}}}*_{{{</a>.<br>}}}<br>
+  {{{On that page, click on <b>Join Group</b>.<br>}}}<br>
+  {{{In the dialog box that appears, under <b>How do you want to read this group?</b>, choose <b>Email</b>.</p>}}}
