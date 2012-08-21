@@ -2,7 +2,7 @@
 
 <h1>Explore the Sample App</h1>
 
-In [GetCode Get Started with the Sample App], you downloaded the sample application and got it running on your development server. Before you start modifying the application for your own course material, let's look at the various pages that a student can see and briefly mention what you'll need to do to modify them for your course. 
+In [GetCode Start up the Sample App], you downloaded the sample application and got it running on your development server. Before you start modifying the application for your own course material, let's look at the various pages that a student can see and briefly mention what you'll need to do to modify them for your course. 
 
 [ExploreCode Explore the Sample Code] lists all the files that make up the sample app and briefly describes the ones you'll have to change. This page shows you how the files work together to create the results of those changes.
 
