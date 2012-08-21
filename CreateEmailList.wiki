@@ -27,35 +27,27 @@ To create an announcements only Google Groups list, follow the instructions at [
 
   * On the *Create Group* screen, set the following:
     * Set *Group type* to *Email list*.
-    * Under "Basic permissions", 
-      * Set *View topics* to *All members of the group*.
-      * Set *Post* to *Managers of the  group*. (This includes owners of the group.)
+    * Under *Basic permissions*, 
+      * Set *View topics* to *Anyone*.
+      * Set *Post* to *Owners of the group*.
       * Set *Join the group* to *Anyone*.
 
-  * Once you finish creating your group, you see a Congratulations screen. From that screen, choose *Customize your group's settings*. From that screen:
-
-    * In the left navigation, expand *Information*.
-      * Choose *General information*. (It may already be chosen.)
-      * In *Posting options*, turn off *Allow posting  by email*.
-      * Save these settings.
+  * Once you finish creating your group, you see a Congratulations screen. From that screen, choose *Customize your group's settings*.
 
     * In the left navigation, expand *Settings*.
-      * Choose *Email options*.
-      * (Optional) Add a subject prefix, so students can easily identify messages sent from this group.
-      * (Optional) In *Email footer*, choose *Display how to unsubscribe from this group by email.*
-      * In *Post replies*, choose *To the managers of the group*. This restricts members of the alias from sending email to anybody other than the group managers.
-      * Save these settings.
-      * Choose *Moderation*.
+      * In the left navigation, choose *Email options*.
+        * (Optional) Add a subject prefix, so students can easily identify messages sent from this group.
+        * (Optional) In *Email footer*, choose *Display how to unsubscribe from this group by email.*
+        * In *Post replies*, choose *To the owners of the group*. This restricts members of the alias from sending email to anybody other than the group owners.
+        * Save these settings.
+      * In the left navigation, choose *Moderation*.
         * In *Moderate messages*, choose *Moderate all messages to the group.*
         * Save these settings.
-      * Choose *New members*.
+      * In the left navigation, choose *New members*.
         * In *New member permissions*, turn off *New members can post*.
         * Save these settings.
 
     * In the left navigation, expand *Permissions*.
-      * Choose *Basic permissions*.
-        * Set *Post* to *Managers of the group, Onwers for the group*, to restrict posting to the managers and owners.
-        * Save these settings.
-      * Choose *Access permissions*.
+      * In the left navigation, choose *Access permissions*.
         * Set *Contact the Owner of a Group* to *Managers of the group, Onwers for the group*, to restrict posting to the managers and owners.
         * Save these settings.
