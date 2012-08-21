@@ -6,9 +6,9 @@ This section is about understanding and modifying the Course Builder code to mak
 
 The pages in this section include:
 
-  * [Download Download Software]<br>Describes how to download Python, Google App Engine, and the Course Builder sample application.
+  * [Download Download the Software]<br>Describes how to download Python, Google App Engine, and the Course Builder sample application.
 
-  * [GetCode Start up the Sample App]<br>Describes how to get the sample application running for the first time.
+  * [GetCode Initialize the Sample App]<br>Describes how to get the sample application running for the first time.
 
   * [ExplorePS Explore the Sample App]<br>Walks through the pages students see when they take the course. This is about what the course looks like. Consider reading [WhatsInACourse What's in a Course?] at the same time; it goes into more detail about the parts of content.
 
@@ -25,8 +25,6 @@ The pages in this section include:
   * [CreateActivities Create Activities]<br>How to modify the code to create the activities that go into the course units; that is, ungraded assessments.
 
   * [CreateAssessments Create Assessments]<br>How to modify the code to create the graded assessments for your course.
-
-  * [Certificates Certificates]<br>All about creating certificates to bestow upon your students and a bit of philosophy about whether or not you want to do this.
 
   * [UploadCode Upload Your Code]<br>How to upload your course to Google's production servers, to make it available to the world.
 
