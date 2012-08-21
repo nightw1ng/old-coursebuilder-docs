@@ -8,7 +8,7 @@
   * [ThreeImplement Implement the Entire Course with the Technology]
     * [CourseMaterial Implement Course Topics in Software]
       * [Download Download Software]
-      * [GetCode Start the Sample App]
+      * [GetCode Start up the Sample App]
       * [ExplorePS Explore the Sample App]
       * [ExploreCode Explore the Sample Code]
       * [ModifyTemplate Modify Course Template]
