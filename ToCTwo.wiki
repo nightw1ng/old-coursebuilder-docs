@@ -3,7 +3,7 @@
     * [CourseFlow Course Flow]
   * [GetStarted Get Started]
     * [Download Download the Software]
-    * [GetCode Start up the Sample App]
+    * [GetCode Run the Sample App]
     * [ExplorePS Explore the Sample App]
     * [ExploreCode Explore the Sample Code]
     * [AppEngine Work with App Engine]
