@@ -8,7 +8,7 @@ Perhaps this is where I should add information about setting up robots.txt  to k
 
 *Do not do this step* until you are ready for your code to go live in production; that is, until you are ready for your audience to see your course.
 
-If you want to see what your app looks like in production, you can upload it to Google. When traffic comes to your app, App Engine servers start up an instance running your app and enable access to it from its default URL of _{{{APP_ID}}}_{{{.appspot.com}}} to handle requests. To get your app to Google, there are two main options: use the Launcher or the command-line tool. (Be sure to have registered your app as described in [GetCode Start up the Sample App], otherwise you won't be able to upload your app.)
+If you want to see what your app looks like in production, you can upload it to Google. When traffic comes to your app, App Engine servers start up an instance running your app and enable access to it from its default URL of _{{{APP_ID}}}_{{{.appspot.com}}} to handle requests. To get your app to Google, there are two main options: use the Launcher or the command-line tool. (Be sure to have registered your app as described in [GetCode Run the Sample App], otherwise you won't be able to upload your app.)
 
 Using the Launcher is fairly straightforward: click on the *Deploy* button and enter your credentials. Using the command-line is almost as easy.  
 
