@@ -2,12 +2,9 @@
   * [PSHistory About the Power Searching Experiment]
   * [WhatsInACourse What's in a Course?]
     * [CourseFlow Course Flow]
-
   * [OnePlan Plan Before You Start]
-
   * [TwoDevelop Develop the Content without the Technology]
     * [ObjectivesToOutline From Objectives to Outline]
-
   * [ThreeImplement Implement the Entire Course with the Technology]
     * [CourseMaterial Implement Course Topics in Software]
       * [Download Download the Software]
@@ -34,9 +31,7 @@
       * [OnlineOfficeHours Online Office Hours]
       * [TeachingAssistants Teaching Assistants]
       * [CommunityToolsComparison Tools Comparison]
- 
   * [FourPilot Pilot with Your Target Audience]
-
   * *Examples*
       * [ExampleMOOCs Example MOOCs]
       * [ExampleSurvey Example Post-Course Survey]
