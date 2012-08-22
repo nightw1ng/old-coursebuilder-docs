@@ -9,7 +9,7 @@ In [TwoDevelop Develop the Content without the Technology], you did most of the 
 This is the only part of the process that is really specific to MOOCs. 
 
   * For details of using the experimental code, see [CourseMaterial Implement Course Topics in Software].
-  * For tips on measuring aspects of your course, see [Metrics Collect and Analyze Metrics].
+  * For tips on measuring aspects of your course, see [Metrics Evaluate Course Efficacy].
   * For details of creating community mechanisms, see [ParticipantCommunity Set up and Manage the Participant Community].
 
 For a complete step-by-step checklist, see [CourseBuilder Course Builder in a Nutshell].
@@ -23,6 +23,6 @@ Some overall tips:
 
   * *Separate basic from advanced material.*<br>Design the primary flow of your material for the middle ground of students -- not too easy and not too hard. You may decide that there is extra material that you want available to students at either end of the spectrum. You can put extra material in a variety of places, as discussed in  [Announcements Announcements and Optional Material].
 
-  * *Online students don’t give you the feedback you’re used to.*<br>When you can see your students, as in a live class, you have a huge amount of input to guide what you do. You can see where they’re interested, where they get bored, and where they’re confused. However, for a MOOC, you create all of the course material and decide on the exact delivery before you deliver it; you cannot change it on the fly. You get no feedback from your students to allow you to adjust the content. The most you can do is interact with your students using the mechanisms discussed in [WebForums Community Discusion] and [Announcements Announcements and Optional Material]. You can also collect [Metrics metrics] to help improve future versions of the course.
+  * *Online students don’t give you the feedback you’re used to.*<br>When you can see your students, as in a live class, you have a huge amount of input to guide what you do. You can see where they’re interested, where they get bored, and where they’re confused. However, for a MOOC, you create all of the course material and decide on the exact delivery before you deliver it; you cannot change it on the fly. You get no feedback from your students to allow you to adjust the content. The most you can do is interact with your students using the mechanisms discussed in [WebForums Community Discusion] and [Announcements Announcements and Optional Material]. You can also collect [Metrics data] to help improve future versions of the course.
 
   * *Take heart.*<br>If you’re an experienced classroom teacher, you know that in a class of 30, there’s usually one troublemaker, one student who progresses slowly, and one student who progresses quickly. If your MOOC reaches 30,000 students, that one troublemaker becomes 1,000 troublemakers, and so on. Keep your perspective. It’s still the same phenomenon.
