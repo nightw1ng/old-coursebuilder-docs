@@ -10,7 +10,7 @@ The pages in this section include:
 
   * [GetCode Run the Sample App]<br>Describes how to get the sample application running for the first time.
 
-  * [ExplorePS Explore the Sample App]<br>Walks through the pages students see when they take the course. This is about what the course looks like. Consider reading [WhatsInACourse What's in a Course?] at the same time; it goes into more detail about the parts of content.
+  * [ExplorePS Explore the Sample App]<br>Walks through the pages students see when they take the course. This is about what the course looks like. Consider reading [WhatsInACourse Parts of a Course Builder Course] at the same time; it goes into more detail about the parts of content.
 
   * [ExploreCode Explore the Sample Code]<br>Lists all of the files included with the sample code and notes which ones you must change.
 
