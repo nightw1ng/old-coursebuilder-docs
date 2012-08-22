@@ -1,9 +1,30 @@
 #summary What a student does, in what order, when taking a course created using our code and techniques.
-=Course Flow=
+=Course Flow for Students=
 
-This page describes what a student does, in what order, when taking a course created with Course Builder. The description may give the impression of a simple sequential flow through the material, like any other course. In reality, some of the steps can be done at the student’s own pace; other steps must be  done in synchrony with other students taking the course. The second section describes the flow in a little more detail, because it is unfamiliar to many students and instructors.
+The first section of this page describes different types of course flow, because the one we use with the Course Builder sample app is unfamiliar to many students and instructors.
+
+The second section describes  what a student does, in what order, when taking a course created with Course Builder. The description may give the impression of a simple sequential flow through the material, like any other course. In reality, some of the steps can be done at the student’s own pace; other steps must be  done in synchrony with other students taking the course. 
 
 For a description of the parts of a course from the course designer’s perspective, see [WhatsInACourse Parts of a Course Builder Course].
+
+==Semi-synchronous flow==
+
+These online courses have a semi-synchronous flow. In conjunction with good material, this model can be effective at increasing student motivation, student retention, and student interactions. However, semi-synchronous flow is unfamiliar to many students. Students expect a course to be either completely asynchronous or completely synchronous.
+
+  * With a *synchronous* flow, students do all of their work at the same time everybody else is doing that work.
+    * If they ask questions, they reasonably expect other people to be working in the same area and so the likelihood of getting their questions answered by peers is good.
+    * Students also expect that aspects of the course, such as availability of material and assessments, have inflexible deadlines.
+    * Students must do the coursework at the pace set by the course designers, not at their own pace.
+  * With an *asynchronous* flow, students do everything at their own pace and have no deadlines to consider.
+    * Students can work at their own pace.
+    * If students ask questions, there’s an excellent chance that nobody else is working on the same area; there is less likelihood of someone answering the question in a timely manner.
+    * The lack of deadlines means students can always finish the course “later”. Procrastination seeming to be a universal human tendency when there are no deadlines, many people do not finish at all.
+  * With a *semi-synchronous* flow, students do some parts of the course at their own pace and do other parts of the course on a fixed schedule.
+    * Instructors release course materials on a fixed schedule; for example, a new unit on each Monday, Wednesday, and Friday of the course. Students can work on the units any time after their release. We’ve seen that students tend to work on units soon after receiving email about their release.
+    * Live events, such as live Q&A sessions with the instructors, happen at a fixed date and time. After the event, the instructors may post the video for students to watch at their own pace. Live events focus students around particular topics.
+    * Assessments are due by a fixed deadline. Submitting an assessment after the deadline affects a student’s final score. This is the part that confounds students. Because much of the course is at their own pace, having fixed deadlines can be confusing unless you are crystal clear in what you tell students.
+
+
 
 ==What students do when==
 
@@ -29,20 +50,3 @@ The flow for a student participating in the sample course is as follows (your co
 Throughout all of these steps, the student has opportunities to interact with other students and with the course instructors and teaching assistants. Moderated interactions are through email forums, Google+ pages, and regular email; students may set up their own unmoderated interactions by themselves.
 
 To see what the course looks like to the student during some of these steps, see [ExplorePS Explore the Sample Application]. 
-
-==Semi-synchronous flow==
-
-These online courses have a semi-synchronous flow. In conjunction with good material, this model can be effective at increasing student motivation, student retention, and student interactions. However, semi-synchronous flow is unfamiliar to many students. Students expect a course to be either completely asynchronous or completely synchronous.
-
-  * With a *synchronous* flow, students do all of their work at the same time everybody else is doing that work.
-    * If they ask questions, they reasonably expect other people to be working in the same area and so the likelihood of getting their questions answered by peers is good.
-    * Students also expect that aspects of the course, such as availability of material and assessments, have inflexible deadlines.
-    * Students must do the coursework at the pace set by the course designers, not at their own pace.
-  * With an *asynchronous* flow, students do everything at their own pace and have no deadlines to consider.
-    * Students can work at their own pace.
-    * If students ask questions, there’s an excellent chance that nobody else is working on the same area; there is less likelihood of someone answering the question in a timely manner.
-    * The lack of deadlines means students can always finish the course “later”. Procrastination seeming to be a universal human tendency when there are no deadlines, many people do not finish at all.
-  * With a *semi-synchronous* flow, students do some parts of the course at their own pace and do other parts of the course on a fixed schedule.
-    * Instructors release course materials on a fixed schedule; for example, a new unit on each Monday, Wednesday, and Friday of the course. Students can work on the units any time after their release. We’ve seen that students tend to work on units soon after receiving email about their release.
-    * Live events, such as live Q&A sessions with the instructors, happen at a fixed date and time. After the event, the instructors may post the video for students to watch at their own pace. Live events focus students around particular topics.
-    * Assessments are due by a fixed deadline. Submitting an assessment after the deadline affects a student’s final score. This is the part that confounds students. Because much of the course is at their own pace, having fixed deadlines can be confusing unless you are crystal clear in what you tell students.
