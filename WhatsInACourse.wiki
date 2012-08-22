@@ -11,7 +11,7 @@ The primary parts of a course created with Course Builder are as follows:
 
 A single *course* consists of a series of *units* with individual *lessons* and *activities*. The course can have any number of *graded assessments* scattered before, between, and after the units and lessons. It can also have one or more formally-set up avenues for *social interaction* for the students.
 
-For a quick description of the flow a student typically experiences in a course, see [CourseFlow Course Flow]. For detailed information on creating a course, see:
+For a quick description of the flow a student typically experiences in a course, see [CourseFlow Course Flow for Students]. For detailed information on creating a course, see:
   * [OnePlan Plan Before You Start]
   * [TwoDevelop Develop the Content without the Technology]
   * [ThreeImplement Implement the Entire Course with the Technology]
