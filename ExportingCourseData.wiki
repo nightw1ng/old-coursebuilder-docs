@@ -125,7 +125,7 @@ transformers:
  # Open the your platforms terminal application, change to your data directory, and run the following command; type your application-specific password at the prompt.
 {{{
 # email = Your Google email address.
-# config_file = Your Google email address.
+# config_file = The bulkloader.yaml file, with the relative location from the current directory.
 # filename = The name of your exported data file.
 # kind = The name of the model to export.
 # url = The URL for the server, followed with /remote_api. 
