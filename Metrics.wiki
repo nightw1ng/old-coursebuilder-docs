@@ -1,8 +1,8 @@
 #summary Categories of measurements to consider collecting and general tips for doing so.
 
-= Evaluate How Your Course Did =
+= Evaluate Course Efficacy =
 
-Metrics are simply anything you measure so you can see the difference you have made with your course and so you can have concrete information to guide future improvement of your course. 
+Metrics are simply anything you measure so you can evaluate the difference you have made with your course and so you can have concrete information to guide future improvement of your course. 
 
 Deciding early on which metrics to collect makes it more likely that as you continue to the develop the course, you remember to collect the information necessary to compute those metrics. Do not wait until after the course has launched; it may well be too late by then. 
 
