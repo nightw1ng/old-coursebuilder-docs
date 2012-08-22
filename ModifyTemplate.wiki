@@ -22,7 +22,7 @@ All pages that a registered student sees start from the same template, {{{views/
 You change this header and footer once for all registered pages.  In the file, every place you must make a change is marked with the string {{{FIXME}}}. The changes are:
 
   # Course name, for the title element. This string appears in your browser, as the name of the window or tab containing your course.
-  # Code to collect analytics data for your course. See [ReachAndEngagementMetrics Reach and Engagement Metrics] for information on setting this up.
+  # Code to collect analytics data for your course. See [ReachAndEngagementMetrics Reach and Engagement] for information on setting this up.
   # Logo image for the header.
   # Link to go with the logo.
   # Course name or description for the header.
