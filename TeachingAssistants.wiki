@@ -140,7 +140,7 @@ In addition to the formal documentation or training you do for your TAs, strive 
 
   * Keep emails to TAs concise and don’t send too many small details or too much to read. You want them to feel included, not overwhelmed.
 
-  * As described in [#TA_community TA community] put out a daily summary for TAs on any updates and changes.  Include information such as the most popular questions asked by students that day and what their responses should be. Also include ongoing metrics, such as the number of registrants and their progress. The first type of information helps them assist better; the second type improves their motivation.
+  * As described in [#TA_community TA community] put out a daily summary for TAs on any updates and changes.  Include information such as the most popular questions asked by students that day and what their responses should be. Also include ongoing data, such as the number of registrants and their progress. The first type of information helps them assist better; the second type improves their motivation.
 
   * Be open to your TAs’ insights on how to improve the course.  As the active interface between the course and your students, TAs have firsthand experience with the students and can often provide you with important feedback.
 
