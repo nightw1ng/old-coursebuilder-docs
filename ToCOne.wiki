@@ -1,6 +1,6 @@
   * [CourseBuilder Course Builder in a Nutshell]
     * [WhatsInACourse Parts of a Course Builder Course]
-    * [CourseFlow Course Flow]
+    * [CourseFlow Course Flow for Students]
   * [GetStarted Get Started]
     * [Download Download the Software]
     * [GetCode Run the Sample App]
