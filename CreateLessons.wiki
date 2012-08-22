@@ -66,7 +66,7 @@ When you edit the file, leave the first line as is. Replace all of the other lin
   # {{{lesson_activity_name:}}} The name of the associated activity, to appear as the title of the activity page.
   # {{{lesson_notes:}}} URL of the text version of the lesson.
   # {{{lesson_video_id:}}} The id of the !YouTube video associated with the lesson. For example, if the URL of the video is [http://www.youtube.com/watch?v=DndOoEVCWfI], then the id is {{{DndOoEVCWfI}}}.
-  # {{{lesson_objectives:}}} A string containing lesson objectives, to appear after the title of the lesson.
+  # {{{lesson_objectives:}}} A string containing lesson objectives, to appear after the title of the lesson. The string can contain HTML elements.
 
 The following image shows where this information appears on the screen:
 
