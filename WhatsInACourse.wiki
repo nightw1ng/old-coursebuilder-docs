@@ -115,6 +115,6 @@ In addition to these things that you set up, students may create additional inte
 <a name="administrivia"></a>
 == Administrative tasks ==
 
-Of course, as with any class there are various administrative aspects to creating a MOOC. Two of the major ones are  [CreateRegistration managing student registration] and [Metrics collecting an analyzing information to see how well your course does].
+Of course, as with any class there are various administrative aspects to creating a MOOC. Two of the major ones are [CreateRegistration managing student registration] and [Metrics collecting and analyzing data to see how well your course does].
 
 For a full list of tasks needed to create a course, see [CourseBuilder Course Builder in a Nutshell].
