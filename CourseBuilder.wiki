@@ -19,7 +19,7 @@ This page doesn't go into any explanations. It simply lists all of the steps inv
   # Clarify your assumptions about your students.
   # Write clear, specific objectives.
   # Decide what you want to test in your assessments, both graded and ungraded.
-  # Decide what other metrics to collect for your course.
+  # Decide what other data to collect to evaluate the efficacy of your course.
   # Sequence and organize your content into digestible chunks.
   # Verify your content with others.
 
@@ -62,10 +62,10 @@ In these steps, all pathnames are relative to the directory containing your appl
     # [CreateAssessments#Sending_email_after_assessments Fix the messages] sent to students after they take assessments in {{{views/test_confirmation.html}}}.
   # [UploadCode Upload Your App to production.]
 
-=== C.2. [Metrics Implement metrics.] ===
-  # [AssessmentMetrics Analyze assessment metrics.]
-  # [HappinessMetrics Create happiness metrics.]
-  # [ReachAndEngagementMetrics Create reach & engagement metrics.]
+=== C.2. [Metrics Prepare to evaluate the efficacy of your course] ===
+  # [AssessmentMetrics Analyze assessment data.]
+  # [HappinessMetrics Create a survey to analyze student happiness.]
+  # [ReachAndEngagementMetrics Capture reach & engagement data.]
 
 === C.3. [ParticipantCommunity Implement the participant community.] ===
   # [TeachingAssistants Engage and train teaching assistants.]
