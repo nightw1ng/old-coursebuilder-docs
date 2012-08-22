@@ -1,5 +1,5 @@
   * [CourseBuilder Course Builder in a Nutshell]
-    * [WhatsInACourse What's in a Course?]
+    * [WhatsInACourse What's in a Course Builder Course?]
     * [CourseFlow Course Flow]
   * [GetStarted Get Started]
     * [Download Download the Software]
