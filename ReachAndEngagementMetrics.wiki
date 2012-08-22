@@ -1,8 +1,8 @@
-#summary Metrics to gauge how many people you reached and how engaged those people were.
+#summary Evaluate how many people you reached and how engaged those people were.
 
-=Reach and Engagement Metrics=
+=Reach and Engagement=
 
-Reach and engagement metrics let you determine how many people you reached with the course and how engaged those people were. Some common questions include:
+Evaluating the reach and engagement of your course lets you determine how many people you reached with the course and how engaged those people were. Some common questions include:
 
   * How many students registered? 
   * How many completed each unit and each lesson? 
@@ -10,6 +10,6 @@ Reach and engagement metrics let you determine how many people you reached with 
   * What were the overall drop-off rates? 
   * When did students tend to drop-off?
 
-For suggestions on metrics you can use to measure reach and engagement, see [ExampleReachEngagementMetrics Example Reach & Engagement Metrics].
+For suggestions on data you can use to measure reach and engagement, see [ExampleReachEngagementMetrics Example Reach & Engagement].
 
-Google Analytics is our tool for collecting and analyzing reach and engagement metrics. The [http://www.google.com/analytics/learn/index.html Analytics site] contains a lot of useful information. Start with [http://support.google.com/analytics/bin/answer.py?hl=en&answer=1008015&topic=1726909&ctx=topic Get started with Google Analytics.] This step-by-step guide describes how to get an Analytics account to use with your course. From there, you'll learn how to get the !JavaScript snippet you must add to {{{views/base.html}}} to collect Analytics data.
+Google Analytics is our tool for collecting and analyzing reach and engagement data. The [http://www.google.com/analytics/learn/index.html Analytics site] contains a lot of useful information. Start with [http://support.google.com/analytics/bin/answer.py?hl=en&answer=1008015&topic=1726909&ctx=topic Get started with Google Analytics.] This step-by-step guide describes how to get an Analytics account to use with your course. From there, you'll learn how to get the !JavaScript snippet you must add to {{{views/base.html}}} to collect Analytics data.
