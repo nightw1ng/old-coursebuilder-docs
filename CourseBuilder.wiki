@@ -2,6 +2,8 @@
 
 <h1>Course Builder in a Nutshell</h1>
 
+<font color=red><<TODO redo this to match the new site organization.>></font>
+
 Welcome to Course Builder! The rest of these Wiki pages go into a lot of detail about how to build your own MOOC using the Course Builder software and the other tools and processes that we used when we created [http://www.google.com/insidesearch/landing/powersearching.html Power Searching with Google].
 
 This page doesn't go into any explanations. It simply lists all of the steps involved -- everything from your beginning planning stages, to downloading and changing the Course Builder code to setting up online office hours -- and provides links to other places with more information.
