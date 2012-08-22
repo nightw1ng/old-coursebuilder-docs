@@ -1,7 +1,7 @@
-#summary Metrics to gauge student attitudes towards the material and their feelings of satisfaction.
-=Happiness Metrics=
+#summary Data to evaluate student attitudes towards the material and their feelings of satisfaction.
+=Student Happiness=
 
-Happiness metrics let you gauge student attitudes towards the material and their feelings of satisfaction. Some common questions include:
+Collecting happiness data lets you evaluate student attitudes towards the material and their feelings of satisfaction. Some common questions include:
 
   * How satisfied were the students with what they learned?
   * Do they think they will be able to use the material?
@@ -9,9 +9,9 @@ Happiness metrics let you gauge student attitudes towards the material and their
   * Did they feel well supported by their peers?
   * Did they feel well supported by the instructors?
 
-To collect this information, you need to ask the students directly. Send a post-course survey to everyone who registered for your course. Consider sending different surveys to people who registered but didn't finish the course from those who did finish it.
+To collect this data, you need to ask the students directly. Send a post-course survey to everyone who registered for your course. Consider sending different surveys to people who registered but didn't finish the course from those who did finish it.
 
-For an example of a survey you can use to gauge student satisfaction, see [ExampleSurvey Example Post-Course Survey].
+For an example of a survey you can use to evaluate student satisfaction, see [ExampleSurvey Example Post-Course Survey].
 
 Google Forms provides a [http://support.google.com/docs/bin/answer.py?hl=en&answer=87809 simple way to create a survey]. You can easily [http://support.google.com/docs/bin/answer.py?hl=en&answer=139706 view a summary of the results]. 
 
