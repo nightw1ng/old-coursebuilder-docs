@@ -26,7 +26,7 @@
     * [https://docs.google.com/spreadsheet/ccc?key=0Arvsi5kPl6d8dGZkZDNCbEVNT1BGQ2dzWnlNczNsdEE Example Event Timeline & TA Hours]
     * [ExampleTAEssentialsDoc Example TA Essentials Doc]
     * [CommunityToolsComparison Tools Comparison]
-  * [Metrics Measure How You Did]
+  * [Metrics Evaluate How Your Course Did]
     * [AssessmentMetrics Assessment Metrics]
     * [HappinessMetrics Happiness Metrics]
     * [ExampleSurvey Example Post-Course Survey]
