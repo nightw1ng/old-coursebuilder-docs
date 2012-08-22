@@ -1,8 +1,8 @@
-#summary Metrics derived from student assessments.
+#summary Evaluations derived from student assessments.
 
-= Assessment Metrics =
+= Student Assessments =
 
-Assessments measure student skill level and improvement in ability	. The app stores information about students' assessment scores, allowing you to answer questions such as:
+Student assessments measure student skill level and improvement in ability	. The app stores information about students' assessment scores, allowing you to answer questions such as:
 
   * What were the average scores on the different assessments?
   * Did they improve? 
