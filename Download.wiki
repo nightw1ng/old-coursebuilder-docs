@@ -6,6 +6,12 @@ Before you can start working on your own course, you need to download Python and
 
 <wiki:toc max_depth="2" />
 
+== Summary ==
+
+  # [http://python.org/download Download Python 2.7.]
+  # [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python Download the Python App Engine SDK.]
+  # [TODO Download the Course Builder sample application.]
+
 == Download Python 2.7 ==
 
 Make sure you have Python 2.7 on your system. To find out if you do, open a Unix shell window and type
