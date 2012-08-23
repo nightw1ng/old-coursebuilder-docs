@@ -10,7 +10,7 @@ Before you can start working on your own course, you need to download Python and
 
   # [http://python.org/download Download Python 2.7.]
   # [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python Download the Python App Engine SDK.]
-  # [TODO Download the Course Builder sample application.]
+  # [TODO Download the Course Builder sample application.] <font color=red><<TODO fix>></font>
 
 == Download Python 2.7 ==
 
