@@ -1,6 +1,6 @@
 #summary Overview of the pages that discuss changing the code.
 
-= Implement Course Topics in Software=
+= Implement Course Material =
 
 This section is about understanding and modifying the Course Builder code to make it appropriate for your course material. These pages discuss changes you can make to have different course material but essentially the same course layout and the same types of questions and interactions with your students. You are welcome to make more extensive changes to the software, if you find it does not meet all of your needs.
 
