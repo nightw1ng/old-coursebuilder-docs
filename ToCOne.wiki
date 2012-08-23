@@ -22,7 +22,7 @@
     * [CreateActivities Create Activities]
     * [CreateAssessments Create Assessments]
     * [VerifyCode Verify Your Code]
-    * [UploadCode Upload Your App]
+    * [UploadCode Deploy Your App]
   * [ParticipantCommunity Set up & Manage Community]
     * [Announcements Announcements & Optional Material]
     * [WebForums Community Discussion]
