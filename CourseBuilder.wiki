@@ -1,6 +1,6 @@
 #summary Checklist of all steps to create a course using Course Builder.
 
-<h1>Course Builder in a Nutshell</h1>
+<h1>Course Builder Checklist</h1>
 
 The rest of these Wiki pages go into a lot of detail about how to build your own online course using the Course Builder software and the other tools and processes that we used when we created [http://www.google.com/insidesearch/landing/powersearching.html Power Searching with Google].
 
