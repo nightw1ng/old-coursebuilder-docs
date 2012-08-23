@@ -1,6 +1,6 @@
 #summary How to modify the two base template that all other pages in your app use.
 
-<table><tr><td>[CourseBuilder Link to related forum]</td></tr></table>
+|| [CourseBuilder Link to related forum] ||
 
 = Modify Course Template =
 
