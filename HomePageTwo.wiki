@@ -38,5 +38,5 @@ Welcome to Course Builder! In it, we packaged the software and technology we use
   </tr>
 </table>
 
-== <img src="https://www.corp.google.com/~vpg/no_crawl/cb/announce.png" height="24" width="24" />  Course Builder Announcements ==
+== <img src="https://www.corp.google.com/~vpg/no_crawl/cb/announce.png" height="24" width="24" /> Announcements ==
 <wiki:gadget url="http://google-code-feed-gadget.googlecode.com/svn/trunk/gadget.xml" up_feeds="https://groups.google.com/group/powersearch-announce/feed/rss_v2_0_msgs.xml"  width="100%"  height="500px" border="0"/>
