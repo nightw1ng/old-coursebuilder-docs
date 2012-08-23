@@ -25,6 +25,9 @@ Course Builder is our experimental first step in the world of online education. 
   * 19 Sept 10:00am - 10:45am PDT
   * 26 Sept 10:00am - 10:45am PDT
   * 3 Oct 10:00am - 11:00am PDT
+
+Visit the most recent [OnlineOfficeHours Hangout On Air].
+<font color=red><<TODO need a real link>></font>
     </td>
   </tr>
 </table>
