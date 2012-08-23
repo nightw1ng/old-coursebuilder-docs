@@ -1,12 +1,8 @@
 #summary How to upload your course code to Google production servers.
 
-<font color=red><<TODO Currently, this says to not do this until you want to go live.
-
-Perhaps this is where I should add information about setting up robots.txt  to keep it secret while live but piloting? Or is there something else I'm supposed to talk about robots.txt?>></font>
-
 <h1>(When you're ready) Upload your app to Google</h1>
 
-*Do not do this step* until you are ready for your code to go live in production; that is, until you are ready for your audience to see your course.
+Do not do this step until you are ready for your code to go live in production; that is, until you are ready for your audience to see your course.
 
 If you want to see what your app looks like in production, you can upload it to Google. When traffic comes to your app, App Engine servers start up an instance running your app and enable access to it from its default URL of _{{{APP_ID}}}_{{{.appspot.com}}} to handle requests. To get your app to Google, there are two main options: use the Launcher or the command-line tool. (Be sure to have registered your app as described in [GetCode Run the Sample App], otherwise you won't be able to upload your app.)
 
