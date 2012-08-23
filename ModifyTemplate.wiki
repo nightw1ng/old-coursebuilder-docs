@@ -1,5 +1,7 @@
 #summary How to modify the two base template that all other pages in your app use.
 
+<table><tr><td>[CourseBuilder Link to related forum]</td></tr></table>
+
 = Modify Course Template =
 
 This code uses _view_ files as templates to determine the look and feel of all of the pages in your app. The view files are HTML files defined in the {{{views/}}} directory.
