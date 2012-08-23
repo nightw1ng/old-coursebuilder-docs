@@ -69,7 +69,7 @@ In these steps, all pathnames are relative to the directory containing your appl
     # Change the look of assessment pages at  {{{views/assessment.html}}}.
     # [CreateAssessments#Writing_assessments  Define the assessments] in files named {{{activity-}}}_*{{{SUFFIX}}}*_{{{.js}}}, where _*{{{SUFFIX}}}*_ is one of {{{Pre}}}, {{{Mid}}}, or {{{Fin}}}. 
     # [CreateAssessments#Sending_email_after_assessments Fix the messages] sent to students after they take assessments in {{{views/test_confirmation.html}}}.
-  # [UploadCode Upload Your App to production.]
+  # [UploadCode Deploy Your App to production.]
 
 === C.2. [Metrics Prepare to evaluate the efficacy of your course] ===
   # [AssessmentMetrics Analyze assessment data.]
