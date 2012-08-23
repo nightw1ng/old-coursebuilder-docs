@@ -45,7 +45,7 @@ As you can see on [WebForums that page], if you use a forum post for these annou
 
 == Optional course material, in a web forum, blog, or Google+ page ==
 
-[CreateLessons Lessons], [CreateActivities activities], and [CreateAssessments assessments] contain the primary course material for your MOOC. However, you can have optional material you suggest for some students. For example, you can have background reading for students who need a little extra help getting started. You can have more advanced material for students who want more challenging activities to strengthen their knowledge of the main materials. You can have material about aspects of the topic not covered at all in the main materials for students who want to explore more.
+[CreateLessons Lessons], [CreateActivities activities], and [CreateAssessments assessments] contain your primary course material. However, you can have optional material you suggest for some students. For example, you can have background reading for students who need a little extra help getting started. You can have more advanced material for students who want more challenging activities to strengthen their knowledge of the main materials. You can have material about aspects of the topic not covered at all in the main materials for students who want to explore more.
 
 You have several options for creating your optional material, depending on your goals for it.
 
