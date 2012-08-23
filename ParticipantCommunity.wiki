@@ -1,8 +1,8 @@
-#summary Introduction to community aspects of a MOOC.
+#summary Introduction to community aspects of a course.
 
 =Set up and Manage the Participant Community=
 
-Fostering a community between instructors and students and among the students is an integral part of creating an successful MOOC. There are several aspects of the community, each of which is covered in a separate page:
+Fostering a community between instructors and students and among the students is an integral part of creating an successful online course. There are several aspects of the community, each of which is covered in a separate page:
 
   * [Announcements Announcements and optional material] for course staff to communicate things such as reminders of upcoming events, deadlines, or the location of extra course material,  
   * [WebForums Community discussion] mechanisms, such as a web forum, for students to interact with each other, asking and answering their questions,
