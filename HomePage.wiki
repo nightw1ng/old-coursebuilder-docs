@@ -1,0 +1,51 @@
+<font size="36">Course Builder</font>
+
+= Launch your course - Share your experiences =
+-------
+
+<table width="100%">
+  <tr>
+    <td width="50%">
+<font color=red>Why Course Builder?</font>
+  * *Course template:* Take our sample course and make it your own.
+  * *Platform:* Launch your course online using Google App Engine.
+  * *Forum:* Start a course community with Google Groups.
+  * *Evaluation:* Evaluate your course's efficacy with Google Analytics and Google Forms.
+  * *Share your experiences:* Hangout with Google and your fellow educators to exchange ideas.
+    </td>
+    <td width="50%">
+<img src="https://www.corp.google.com/~vpg/no_crawl/cb/video.png" align="middle" />
+[TODO Watch the welcome video with Peter Norvig]
+    </td>
+  </tr>
+</table>
+
+<table width="100%">
+  <tr>
+    <td width="33%" valign="top">
+== <img src="https://www.corp.google.com/~vpg/no_crawl/cb/stop.png" height="24" width="24" /> Prerequisites ==
+  * Experience creating course material.
+  * HTML familiarity.
+  * !JavaScript familiarity.
+  * App Engine familiarity is a plus, but it's not necessary.
+    </td>
+    <td width="33%" valign="top">
+== 	<img src="https://www.corp.google.com/~vpg/no_crawl/cb/start.png" height="24" width="24" /> Get Started ==
+
+  # [Download Download the software] 
+  # [GetCode Run the sample app] 
+  # [ExploreCode Explore the sample code] 
+    </td>
+    <td width="34%" valign="top">
+== <img src="https://www.corp.google.com/~vpg/no_crawl/cb/deep.gif" height="24" width="24" /> Dive Deeper ==
+  * [CourseMaterial Create course content] 
+  * [ParticipantCommunity Develop community]
+  * [Metrics Evaluate course efficacy]
+  * [CreationMethodology Follow best practices for teaching online] 
+    </td>
+  </tr>
+</table>
+
+<!-- 
+link to forum, snippets of announcements
+-->
