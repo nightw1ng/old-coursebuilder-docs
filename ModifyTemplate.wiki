@@ -1,7 +1,5 @@
 #summary How to modify the two base template that all other pages in your app use.
 
-|| [CourseBuilder Link to related forum] ||
-
 = Modify Course Template =
 
 This code uses _view_ files as templates to determine the look and feel of all of the pages in your app. The view files are HTML files defined in the {{{views/}}} directory.
@@ -50,3 +48,6 @@ You can, of course, make these pages look more different.
 Changes you make to any file in the {{{views}}} directory appear automatically in your running development server.
 
 That is, after you make a change to one of these files, simply load (or reload) a page that uses that view and the change appears.
+
+
+|| [CourseBuilder Ask questions here] ||
