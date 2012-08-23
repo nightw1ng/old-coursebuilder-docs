@@ -15,6 +15,8 @@ The current version of Course Builder is designed for technically-savvy course d
   * *!JavaScript familiarity,* particularly !JavaScript arrays, simple objects, and regular expressions. Of these, regular expressions tend to be the biggest stumbling block. The [https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions Mozilla Developer Network] has an introduction to regular expressions. 
   * *App Engine familiarity is a plus,* but it's not necessary.
 
+Before you dive into creating your own course, consider reading [WhatsInACourse Parts of a Course Builder Course] and [CourseFlow Course Flow for Students] to get a quick overview of the terminology we use in talking about online courses you create using Course Builder.
+
 == A. [OnePlan Plan for 30 minutes.] ==
   # Define the problem statement and high-level goal of the course.
   # Identify your audience and your assumptions.
