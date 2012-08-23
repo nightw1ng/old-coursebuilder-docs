@@ -23,11 +23,8 @@ We want to make this technology available to you as an open source project so th
   <tr>
     <td width="50%" valign="top">
 == 	<img src="https://www.corp.google.com/~vpg/no_crawl/cb/start.png" height="24" width="24" /> Get Started ==
-[CourseBuilder Complete step-by-step instructions.]
+  [CourseBuilder Complete step-by-step instructions.]
 
-  # [Download Download the software.] 
-  # [GetCode Run the sample app.] 
-  # [ExploreCode Explore the sample code.] 
     </td>
 
     <td width="50%" valign="top">
