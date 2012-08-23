@@ -6,7 +6,7 @@ The primary parts of a course created with Course Builder are as follows:
 
   * *[#Course_content_and_delivery Course content and delivery]*<br>The material that you formally convey to students. Formal content can be lessons recorded or written in advance. It can also be live question and answer sessions with course staff.
   * *[#Assessments_and_activities Assessments and activities]*<br>Graded assessments with a fixed deadline to track student progress. You can also use ungraded assessments, called *activities*, to provide feedback and hints to students.
-  * *[#People_interactions Social interactions]*<br>An important component of any MOOC is the interactions among the students themselves and the interactions between students and the course staff -- the instructors or teaching assistants (TAs).
+  * *[#People_interactions Social interactions]*<br>An important component of an online course is the interactions among the students themselves and the interactions between students and the course staff -- the instructors or teaching assistants (TAs).
   * *[#Administrivia Administrative tasks]*<br>Of course, there are bits and pieces required to register students, to get the course up and running, to track usage, and so on.
 
 A single *course* consists of a series of *units* with individual *lessons* and *activities*. The course can have any number of *graded assessments* scattered before, between, and after the units and lessons. It can also have one or more formally-set up avenues for *social interaction* for the students.
@@ -51,11 +51,11 @@ Tips:
 
 For online office hours you have a fixed date and time when the course staff broadcasts a session for students to watch and interact with. 
 
-If you have a very small MOOC (fewer than 10 people), you can use a Google Hangout for your session. If you have more than 10 people, you can use a combination of Google Hangouts on Air and Google Moderator instead.
+If you have a very small course (fewer than 10 people), you can use a Google Hangout for your session. If you have more than 10 people, you can use a combination of Google Hangouts on Air and Google Moderator instead.
 
 A [http://www.google.com/+/learnmore/hangouts/ Google Hangout] is a video chat that can have up to 10 participants. In a Google Hangout, all participants can share what’s on each person's screen, collaborate in Google Docs, view presentations and diagrams together and speak to each other about all of that. If your course is small enough, this is a great way to go. If your course is large, you may still consider having your students break into small groups for interactive activities with each other over Hangouts.
 
-Given the “M” in MOOC, your course probably has many more students. If it does, you can use a combination of Hangouts on Air and Google Moderator to create a live experience with your students. With a [OnlineOfficeHours#Setting_up_a_Hangout_On_Air Google Hangout on Air], you can post a live session with your instructors and any guests you chose. You post the Hangout on Air to your !YouTube channel and to your Google+ stream. Students cannot talk to you in real-time, but they can ask you questions through the use of a Google Moderator series, or by posting comments to any of the Moderator stream, !YouTube stream, or Google+ stream. You can use a [OnlineOfficeHours#Setting_up_a_Google_Moderator_series Google Moderator series] to collect questions from your students and have them vote those questions up and down; the collecting can either be done in advance, during the Hangout on Air, or both.
+If your course has many more than 10 students, you can use a combination of Hangouts on Air and Google Moderator to create a live experience with your students. With a [OnlineOfficeHours#Setting_up_a_Hangout_On_Air Google Hangout on Air], you can post a live session with your instructors and any guests you chose. You post the Hangout on Air to your !YouTube channel and to your Google+ stream. Students cannot talk to you in real-time, but they can ask you questions through the use of a Google Moderator series, or by posting comments to any of the Moderator stream, !YouTube stream, or Google+ stream. You can use a [OnlineOfficeHours#Setting_up_a_Google_Moderator_series Google Moderator series] to collect questions from your students and have them vote those questions up and down; the collecting can either be done in advance, during the Hangout on Air, or both.
 
 *Tip:* If you do a Hangout on Air, consider using a live captioning service to help students who are hearing impaired or whose primary language is not the language used in the Hangout on Air.
 
@@ -101,7 +101,7 @@ If you choose to allow your students to take the same graded assessment multiple
 
 Another critical component of a successful course is student participation, in a variety of venues that you can set up. The online office hours discussed as part of course content are only one way for students to participate. Asking questions of the experts is, of course, a time-honored technique.
 
-But one of the main impetuses behind doing a MOOC is to reach an extremely large audience. The size of a MOOC’s audience means that it is impractical for the course staff to answer all of the questions and to enter all of the discussions posed by all of the students. Instead, you can set up avenues in which the students can participate more proactively and not just with the instructor but also with themselves.
+But one of the main impetuses behind doing an online course is to reach an extremely large audience. The size of an online course's audience means that it is impractical for the course staff to answer all of the questions and to enter all of the discussions posed by all of the students. Instead, you can set up avenues in which the students can participate more proactively and not just with the instructor but also with themselves.
 
 The most common avenues are as follows:
 
@@ -115,6 +115,6 @@ In addition to these things that you set up, students may create additional inte
 <a name="administrivia"></a>
 == Administrative tasks ==
 
-Of course, as with any class there are various administrative aspects to creating a MOOC. Two of the major ones are [CreateRegistration managing student registration] and [Metrics collecting and analyzing data to see how well your course does].
+Of course, as with any class there are various administrative aspects to creating an online course. Two of the major ones are [CreateRegistration managing student registration] and [Metrics collecting and analyzing data to see how well your course does].
 
 For a full list of tasks needed to create a course, see [CourseBuilder Course Builder in a Nutshell].
