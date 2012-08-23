@@ -33,7 +33,7 @@ Before you dive into creating your own course, consider reading [WhatsInACourse 
   # Verify your content with others.
 
 == C. [ThreeImplement Implement your content using your technology.] ==
-In these steps, all pathnames are relative to the directory containing your application. Every place in the source tree that you must make changes to a file (other than when you replace entire files), a string {{{FIXME}}} is nearby, briefly describing the change.
+In these steps, all pathnames are relative to the directory containing your application. Every place in the code you must make a change is marked by a comment starting with {{{FIXME}}}.
 
 === C.1. [CourseMaterial Implement the course material.] ===
   # [DevEnvironment Set up for development.]
