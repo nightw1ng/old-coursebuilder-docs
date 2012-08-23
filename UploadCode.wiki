@@ -18,4 +18,9 @@ It can take up to a minute to upload your app; generally it's less than 30 secon
 
 
 <font color=red><<TODO more to add?
-production doesn't have clear_datastore, so if you want to change the data store, you can use the console as described in [AppEngine Work with App Engine] or you can do one of the things talked about [http://stackoverflow.com/questions/1062540/how-to-delete-all-datastore-in-google-app-engine here] to get rid of everything. I'll get back to this in a bit...>></font>
+
+production doesn't have clear_datastore, so if you want to change the data store, you can use the console as described in [AppEngine Work with App Engine] or you can do one of the things talked about [http://stackoverflow.com/questions/1062540/how-to-delete-all-datastore-in-google-app-engine here] to get rid of everything.
+
+This is where the info about --oauth2 goes.
+
+ I'll get back to this in a bit...>></font>
