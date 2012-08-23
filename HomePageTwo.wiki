@@ -1,6 +1,5 @@
 <font size="36">Welcome to Course Builder!</font>
 
-= Launch your course - Share your experiences =
 -------
 
 <table width="100%">
