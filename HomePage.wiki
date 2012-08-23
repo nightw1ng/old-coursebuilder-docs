@@ -36,6 +36,6 @@ Welcome to Course Builder! In it, we packaged the software and technology we use
 
     <td width="50%" valign="top">
 == Course Builder Announcements ==
-<wiki:gadget url="http://google-code-feed-gadget.googlecode.com/svn/trunk/gadget.xml" up_feeds="https://groups.google.com/group/powersearch-announce/feed/rss_v2_0_msgs.xml"  width="500px" height="1000px" border="0"/>    </td>
+<wiki:gadget url="http://google-code-feed-gadget.googlecode.com/svn/trunk/gadget.xml" up_feeds="https://groups.google.com/group/powersearch-announce/feed/rss_v2_0_msgs.xml" border="0" height="500" width="100%" />    </td>
   </tr>
 </table>
