@@ -1,7 +1,7 @@
   * [CourseBuilder Course Builder in a Nutshell]
     * [WhatsInACourse Parts of a Course Builder Course]
     * [CourseFlow Course Flow for Students]
- * [CreationMethodology Design Process]
+  * [CreationMethodology Design Process]
     * [PSHistory About the Power Searching Experiment]
     * [OnePlan Plan Before You Start]
     * [TwoDevelop Develop the Content without the Technology]
