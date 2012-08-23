@@ -28,6 +28,6 @@ The pages in this section include:
 
   * [VerifyCode Verify Your Code]<br>How to perform some automated checks to verify the syntactic validity of some of your code changes.
 
-  * [UploadCode Upload Your Code]<br>How to upload your course to Google's production servers, to make it available to the world.
+  * [UploadCode Deploy Your Code]<br>How to deploy your course to Google's production servers, to make it available to the world.
 
   * [AppEngine About App Engine]<br>Some details you might want to know about App Engine.
