@@ -8,7 +8,7 @@ This page doesn't go into any explanations. It simply lists all of the steps inv
 
 == Prerequisites for using Course Builder ==
 
-The current version of Course Builder is designed for technically-savvy course designers. In particular:
+The current version of Course Builder is designed for technically-savvy course designers. In particular, we expect the following from users:
 
   * *Experience creating course material* either for a traditional live classroom or for a more traditional online class. 
   * *HTML familiarity.* 
@@ -17,13 +17,15 @@ The current version of Course Builder is designed for technically-savvy course d
 
 Before you dive into creating your own course, consider reading [WhatsInACourse Parts of a Course Builder Course] and [CourseFlow Course Flow for Students] to get a quick overview of the terminology we use in talking about online courses you create using Course Builder.
 
+And now, the steps...
+
 == A. [OnePlan Plan for 30 minutes.] ==
   # Define the problem statement and high-level goal of the course.
   # Identify your audience and your assumptions.
   # Define course objectives.
   # Consider course logistics.
 
-== B. [TwoDevelop Develop content without the technology.] ==
+== B. [TwoDevelop Develop content without technology.] ==
   # Clarify your goals and non-goals for the course.
   # Clarify your assumptions about your students.
   # Write clear, specific objectives.
@@ -32,7 +34,7 @@ Before you dive into creating your own course, consider reading [WhatsInACourse 
   # Sequence and organize your content into digestible chunks.
   # Verify your content with others.
 
-== C. [ThreeImplement Implement your content using your technology.] ==
+== C. [ThreeImplement Implement your content using technology.] ==
 In these steps, all pathnames are relative to the directory containing your application. Every place in the code you must make a change is marked by a comment starting with {{{FIXME}}}.
 
 === C.1. [CourseMaterial Implement the course material.] ===
