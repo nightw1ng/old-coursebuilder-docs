@@ -2,7 +2,7 @@
 
 =Implement the Course with Technology= 
 
-In [TwoDevelop Develop the Content without the Technology], you did most of the theoretical course development. Once you have a clear idea what you want to accomplish, it’s time to put it into the format you’ll use. At this point, you can create videos, implement assessments, set up your groups, and do all that other fun stuff. 
+In [TwoDevelop Develop the Content without Technology], you did most of the theoretical course development. Once you have a clear idea what you want to accomplish, it’s time to put it into the format you’ll use. At this point, you can create videos, implement assessments, set up your groups, and do all that other fun stuff. 
 
 == Implementation parts ==
 
