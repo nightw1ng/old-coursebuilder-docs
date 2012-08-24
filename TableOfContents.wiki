@@ -45,4 +45,4 @@
 
 [https://code.google.com/p/course-builder/w/list Wiki Site Map]
 
-|| [CourseBuilder Ask questions here] ||
+|| [CourseBuilder Discussion forum] ||
