@@ -73,7 +73,7 @@ In deciding the objectives for your course, try to design for the middle ground.
 
 You should collect data so that you can evaluate difference you have made with your course and so you can have concrete information to guide future improvement of your course. We collect three categories of data for these purposes:
 
-  * *Assessments*, as discussed above, measure skill level and improvement in ability. <br><br>You collect this data by creating the pre-, mid-, and post-course assessments and comparing students' scores on them. See [AssessmentMetrics Assessment].
+  * *Assessments*, as discussed above, measure skill level and improvement in ability. <br><br>You collect this data by creating the pre-, mid-, and post-course assessments and comparing students' scores on them. See [AssessmentMetrics Student Assessments].
 
   * *Reach and engagement* data measures how many people you reached with the course and how engaged those people were. <br><br>Common reach and engagement data includes: How many students registered? How many completed each unit and each lesson?  What countries did the students come from? Was there a difference in course performance based on location? <br><br>You can collect this data by using [ReachAndEngagementMetrics Google Analytics] to track visitors to your course.
 
