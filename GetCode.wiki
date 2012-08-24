@@ -109,4 +109,4 @@ In either case, you should see the registration page for the sample app:
 
 <img src="https://www.corp.google.com/~vpg/no_crawl/cb/registration.png" />
 
-*Next step:* [ExplorePS Explore the Sample Application]
+*Next step:* [ExplorePS Explore the Sample App]
