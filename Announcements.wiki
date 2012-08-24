@@ -56,3 +56,5 @@ For background material or for material on related, but not primary material, yo
 Even if you keep the web forum for your course private to its registered students, you might have a  Google+ page or blog that is available to a wider audience. You can use them as ways to let everyone know what a great course you've created.
 
 You can even create a Google+ page explicitly for your course. Consider [http://support.google.com/plus/bin/answer.py?hl=en&amp;answer=1710691&amp;topic=1710599&amp;ctx=topic creating a Google+ page] for your course before you release the course.
+
+|| [CourseBuilder Ask questions here] ||
