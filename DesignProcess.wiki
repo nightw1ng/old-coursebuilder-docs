@@ -1,4 +1,5 @@
 #summary Advice for designing an online course
+#labels Featured
 
 = Design Process =
 
