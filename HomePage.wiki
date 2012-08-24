@@ -10,7 +10,7 @@ Course Builder is our experimental first step in the world of online education. 
 <table width="100%">
 <tr>
 <td width="50%" valign="top">
-== <img src="https://www.corp.google.com/~vpg/no_crawl/cb/start.png" height="24" width="24" /> [CourseBuilder Get Started] == 
+== <img src="https://www.corp.google.com/~vpg/no_crawl/cb/start.png" height="24" width="24" /> [CourseBuilderChecklist Get Started] == 
 
 == <img src="https://www.corp.google.com/~vpg/no_crawl/cb/deep.gif" height="24" width="24" /> Dive Deeper ==
   * [DesignProcess Advice for online course design] 
