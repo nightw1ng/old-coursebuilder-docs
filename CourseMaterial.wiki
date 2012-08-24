@@ -20,4 +20,4 @@ The pages in this section include:
 
   * [VerifyCode Verify Your Code]<br>How to perform some automated checks to verify the syntactic validity of some of your code changes.
 
-  * [UploadCode Deploy Your Code]<br>How to deploy your course to Google's production servers, to make it available to the world.
+  * [UploadCode Deploy Your App]<br>How to deploy your course to Google's production servers, to make it available to the world.
