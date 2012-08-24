@@ -12,7 +12,7 @@ This page talks about the mechanics of creating a lesson page and its content. F
 
 == What happens on a lesson page ==
 
-A lesson page is where you teach your prepared material. Typically, each lesson consists of a short video and text version of the content. You embed the video in the lesson page, hosting the video on !YouTube. (See [#Working_with_video Working with video].) You put the text version in a file at some other URL; for Power Searching, we hosted the text versions as [http://support.google.com/docs/bin/answer.py?hl=en&answer=49008 Google Docs]. 
+A lesson page is where you teach your prepared material. Typically, each lesson consists of a short video and text version of the content. You embed the video in the lesson page, hosting the video on !YouTube. (See [#Working_with_Video Working with video].) You put the text version in a file at some other URL; for Power Searching, we hosted the text versions as [http://support.google.com/docs/bin/answer.py?hl=en&answer=49008 Google Docs]. 
 
 Students can watch the video as many times as they like. If they click on *Text version*, a separate browser window appears with that content.
 
