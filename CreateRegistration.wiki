@@ -42,7 +42,7 @@ https://www.corp.google.com/~vpg/no_crawl/cb/registrationconfirmation-parts.png
 
 This page displays one message if the student is registered. It displays another message if the class is full. You can change either of these messages.
 
-The default message upon successful registration includes information about joining the course's [WebForums discussion forum] and about joining another email alias for [CreateEmailList receiving course announcements]. Be sure to modify this information to be applicable to your situation. See [WebForums Community Discussion] and [CreateEmailList Announcements-only Email List].
+The default message upon successful registration includes information about joining the course's discussion forum and about joining another email alias for receiving course announcements. Be sure to modify this information to be applicable to your situation. See [WebForums Community Discussion] and [CreateEmailList Announcements-only Email List].
 
 This page consists of the same three areas as the registration page and uses these files to render the page:
   * {{{views/base_registration.html}}} defines the header and footer areas. Note this is the same file the registration form uses, guaranteeing that these two pages have the same general look and feel.  See [ModifyTemplate ModifyCourseTemplate].
