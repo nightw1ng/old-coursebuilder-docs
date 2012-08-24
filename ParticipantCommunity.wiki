@@ -1,4 +1,5 @@
 #summary Introduction to community aspects of a course.
+#labels Featured
 
 =Set up and Manage the Participant Community=
 
