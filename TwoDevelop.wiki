@@ -79,7 +79,7 @@ You should collect data so that you can evaluate difference you have made with y
 
   * *Happiness* data measures student attitudes towards the material and feelings of satisfaction. They answer questions such as how satisfied the students were with what they learned and whether they think they will be able to use the material.<br><br>While not objective, happiness data is an important indicator of the success of your course. Even if a course was objectively effective, if your students hated it, they are not likely to recommend it to their friends. <br><br>You can collect happiness data by sending a post-course survey to everyone who registered for your course.  Consider sending different surveys to people who registered but didn't finish the course from those who did finish it. See [HappinessMetrics Student Happiness].
 
-Deciding early on what data you want to evaluate makes it more likely that as you continue to the develop the course, you will remember to collect the information necessary to do those evaluations. Do not wait until after the course has launched; it may well be too late by then. For more information, see [Metrics Evaluate Course Efficacy].
+Deciding early on what data you want to evaluate makes it more likely that as you continue to the develop the course, you will remember to collect the information necessary to do those evaluations. Do not wait until after the course has launched; it may well be too late by then. For more information, see [MeasureEfficacy Evaluate Course Efficacy].
 
 ==Sequence and organize your content into digestible chunks.==
 
