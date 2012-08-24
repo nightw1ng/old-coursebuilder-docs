@@ -2,7 +2,7 @@
 
 = Get Started =
 
-This section is about getting started with the Course Builder code. The pages take you through downloading and installing the necessary software, including the sample course provided with Course Builder. 
+This section is about getting started with the Course Builder code. The pages take you through downloading and installing the necessary software, including the sample course provided with Course Builder.  Later pages get you started running the sample code for the first time and exploring what's in it. The final page contains a small set of App Engine information you may find particularly useful when working with Course Builder.
 
 The pages in this section include:
 
@@ -15,4 +15,4 @@ The pages in this section include:
   * [ExploreCode Explore the Sample Code]<br>Lists all of the files included with the sample code and notes which ones you must change.
 
 
-  * [AppEngine About App Engine]<br>Some details you might want to know about App Engine.
+  * [AppEngine Work with App Engine]<br>Some details you might want to know about App Engine.
