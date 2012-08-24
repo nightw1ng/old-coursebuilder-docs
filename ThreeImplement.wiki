@@ -13,7 +13,7 @@ This is the only part of the process that is really specific to building a Cours
   * For details of creating community mechanisms, see [ParticipantCommunity Set up and Manage Community].
   * For tips on measuring aspects of your course, see [Metrics Evaluate Course Efficacy].
 
-For a complete step-by-step checklist, see [CourseBuilder Course Builder Checklist].
+For a complete step-by-step checklist, see [CourseBuilderChecklist Course Builder Checklist].
 
 Once you’ve implemented your content, it’s time to move on to [FourPilot piloting with your target audience].
 
