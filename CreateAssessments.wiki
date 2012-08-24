@@ -8,7 +8,7 @@ At certain parts throughout the course, students take assessments to see how the
 
 <img src="https://www.corp.google.com/~vpg/no_crawl/cb/assessment-zig.png" height=265 width=420 />
 
-This page talks about the mechanics of creating an assessment. For information on what to put in your assessment, see [TwoDevelop#Decide_what_you_want_to_test_in_your_assessments,_both_graded_an Develop the Content without the Technology].
+This page talks about the mechanics of creating an assessment. For information on what to put in your assessment, see [TwoDevelop#Decide_what_you_want_to_test_in_your_assessments,_both_graded_an Develop the Content without Technology].
 
 == What happens on an assessment page ==
 
