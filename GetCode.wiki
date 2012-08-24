@@ -34,7 +34,7 @@ Later, if you decide to customize your course, you may need more information on 
 
 == 3. Start the App Engine Launcher == 
 
-Download App Engine as described in [Download Software Download]. Then...
+Download App Engine as described in [Download Download the Software]. Then...
 
 Activate the Launcher wherever it's available, that is, from the Desktop, the Dock, the Applications folder, Start -> Programs -> Google App Engine -> !GoogleAppEngineLauncher, and so on. 
 
