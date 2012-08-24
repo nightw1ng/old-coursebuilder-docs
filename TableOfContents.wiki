@@ -14,7 +14,7 @@
     * [ExplorePS Explore the Sample App]
     * [ExploreCode Explore the Sample Code]
     * [AppEngine Work with App Engine]
-  * [CourseMaterial Customize the Code]
+  * [CourseMaterial Implement Course Material]
     * [ModifyTemplate Modify Course Template]
     * [CreateRegistration Create Registration]
     * [CreateHomePage Create Home Page]
