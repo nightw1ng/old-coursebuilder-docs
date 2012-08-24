@@ -124,7 +124,7 @@ Students see a list of possible answers, a button labelled *Check Answer*, and a
 
 If students choose the correct answer, the code also highlights the line containing that answer.
 
-==== A group of multiple-choice questions ====
+==== Group of multiple-choice questions ====
 
 Sometimes you want to group a set of multiple-choice questions so that students can only check their answers after answering all of the questions in the group. You can do this with code that looks like the following example:
 
