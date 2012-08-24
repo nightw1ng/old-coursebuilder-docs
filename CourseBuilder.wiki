@@ -84,3 +84,5 @@ In these steps, all pathnames are relative to the directory containing your appl
   # [Announcements Prepare announcements and optional material.]
 
 == D. [FourPilot Pilot with your target audience.] ==
+
+|| [CourseBuilder Ask questions here] ||
