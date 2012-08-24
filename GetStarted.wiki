@@ -1,5 +1,18 @@
-#summary First things first.
+#summary Get the software needed to implement your course and explore the sample course.
 
 = Get Started =
 
-<font color=red><<TODO write this>></font>
+This section is about getting started with the Course Builder code. The pages take you through downloading and installing the necessary software, including the sample course provided with Course Builder. 
+
+The pages in this section include:
+
+  * [Download Download the Software]<br>Describes how to download Python, Google App Engine, and the Course Builder sample application.
+
+  * [GetCode Run the Sample App]<br>Describes how to get the sample application running for the first time.
+
+  * [ExplorePS Explore the Sample App]<br>Walks through the pages students see when they take the course. This is about what the course looks like. Consider reading [WhatsInACourse Parts of a Course Builder Course] at the same time; it goes into more detail about the parts of content.
+
+  * [ExploreCode Explore the Sample Code]<br>Lists all of the files included with the sample code and notes which ones you must change.
+
+
+  * [AppEngine About App Engine]<br>Some details you might want to know about App Engine.
