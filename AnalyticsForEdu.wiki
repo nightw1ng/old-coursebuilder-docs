@@ -5,13 +5,15 @@
 
 == Introduction ==
 
-Metrics are anything you can measure to see the potential impact you have made with your course so you can have concrete information to guide future improvement of your course. There are two categories of metrics you can get on your course: Course Builder metrics and Google Analytics metrics. Course Builder automatically stores Assessment results for you as your students complete the course. Google Analytics enables you to capture data on student interactions with your course, as well as reach, and engagement metrics. Reach and engagement metrics let you determine how many people you reached with the course, how engaged those people were, and how they interacted with the course pages.
+Metrics are anything you can measure to see the potential impact you have made with your course so you can have concrete information to guide future improvement of your course. There are two categories of metrics you can get on your course: Course Builder metrics and Google Analytics metrics. Course Builder automatically stores assessment results for you as your students complete the course. Google Analytics enables you to capture data on student interactions with your course (reach and engagement metrics). Reach and engagement metrics let you determine how many people you reached with the course, how engaged those people were, and how they interacted with the course pages.
 
-This page walks you through a simple example of how to use metrics to understand the effectiveness of a course lesson and to improve your course material. This example only touches the surface of what you can do with this data, but does illustrate how important metrics are to improving the quality of effectiveness of your courses. 
+For information on Course Builder metrics, see [https://code.google.com/p/course-builder/wiki/ExportingCourseData Exporting Course Data], [https://code.google.com/p/course-builder/wiki/ReachAndEngagementMetrics Reach and Engagement], and [https://code.google.com/p/course-builder/wiki/ExampleReachEngagementMetrics Example Reach & Engagement].)
+
+This page walks you through a simple example of how to use metrics to understand the effectiveness of a course and how to use metrics to improve your course material. This example only touches the surface of what you can do with this data, but does illustrate how important metrics are to improving the quality of effectiveness of your courses. 
 
 == Determine the effectiveness of your courses ==
 
-Imagine you create a class and you want to understand if the material is too hard, too easy, and if the material meets your learning objectives. The class contains three pages of material, with an assessment at the end to determine how well students understood the material.
+Imagine you create a class and you want to understand if the material is too hard, too easy, and if the material meets your learning objectives. The class contains three pages of material, with an assessment at the end to determine how well students understand the material.
 
 https://www.corp.google.com/~omalley/cb/analytics_edu.png
 
@@ -31,7 +33,6 @@ As you look at the assessment data, the following questions pop out:
 Looking at assessment data alone makes it difficult to understand where students had problems or how to improve the material. But, if you combine this data with the data gathered by Google Analytics you get a more complete picture of what was going on in the class. Here are some ways you can use Analytics to answer your questions.
 
 Let’s look at this data in more detail.
-
 
 Analytics can provide some insight into how a student engages with your material:
 
