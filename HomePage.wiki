@@ -13,8 +13,8 @@ Course Builder is our experimental first step in the world of online education. 
 == <img src="https://www.corp.google.com/~vpg/no_crawl/cb/start.png" height="24" width="24" /> [CourseBuilder Get Started] == 
 
 == <img src="https://www.corp.google.com/~vpg/no_crawl/cb/deep.gif" height="24" width="24" /> Dive Deeper ==
-  * [CreationMethodology Follow best practices for teaching online] 
-  * [CourseMaterial Customize the code] 
+  * [CreationMethodology Best practices for online course design] 
+  * [CourseMaterial Implement course material] 
   * [ParticipantCommunity Develop community]
   * [Metrics Evaluate course efficacy]
 </td>
@@ -25,7 +25,6 @@ Course Builder is our experimental first step in the world of online education. 
   * 3 Oct 10:00am - 11:00am PDT
 
 Visit the most recent [OnlineOfficeHours Hangout On Air].
-<font color=red><<TODO need a real link>></font>
 </td>
 </tr>
 </table>
