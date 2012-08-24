@@ -13,6 +13,8 @@ This page walks you through a simple example of how to use metrics to understand
 
 Imagine you create a class and you want to understand if the material is too hard, too easy, and if the material meets your learning objectives. The class contains three pages of material, with an assessment at the end to determine how well students understood the material.
 
+https://www.corp.google.com/~omalley/cb/analytics_edu.png
+
 *Assessment Data and Google Analytics*
 || Lesson Page || Question / Learning Objective || Google Analytics || 
 || 1|| Question 1 assess if students understood LO1. 95% answered correctly, indicating most students met the objective.  ||  Time on page, in/outbound links, pageviews and unique pageviews. ||
