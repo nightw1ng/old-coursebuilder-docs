@@ -1,0 +1,24 @@
+#summary Overview of the pages that discuss changing the code.
+#labels Featured
+
+= Implement Course Material =
+
+This section is about understanding and modifying the Course Builder code to make it appropriate for your course material. These pages discuss changes you can make to have different course material but essentially the same course layout and the same types of questions and interactions with your students. You are welcome to make more extensive changes to the software, if you find it does not meet all of your needs.
+
+The pages in this section include:
+
+  * [ModifyTemplate Modify Course Template]<br>How to modify the basic look and feel of all of the course pages.
+
+  * [CreateRegistration Create Registration]<br>How to modify the student registration code.
+
+  * [CreateHomePage Create Home Page]<br>How to modify the code that creates the home page for your course. 
+
+  * [CreateLessons Create Lessons]<br>How to modify the code to know about the lessons for your units and a bit about creating video and text for those lessons.
+
+  * [CreateActivities Create Activities]<br>How to modify the code to create the activities that go into the course units; that is, ungraded assessments.
+
+  * [CreateAssessments Create Assessments]<br>How to modify the code to create the graded assessments for your course.
+
+  * [VerifyCode Verify Your Code]<br>How to perform some automated checks to verify the syntactic validity of some of your code changes.
+
+  * [UploadCode Deploy Your App]<br>How to deploy your course to Google's production servers, to make it available to the world.
