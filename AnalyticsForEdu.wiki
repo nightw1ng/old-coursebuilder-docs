@@ -1,0 +1,7 @@
+#Using analytics for EDU.
+
+Google Analytics for EDU
+
+Metrics are anything you can measure to see the potential impact you have made with your course so you can have concrete information to guide future improvement of your course. There are two categories of metrics you can get on your course: Course Builder metrics and Google Analytics metrics. Course Builder automatically stores Assessment results for you as your students complete the course. Google Analytics enables you to capture data on student interactions with your course, as well as reach, and engagement metrics. Reach and engagement metrics let you determine how many people you reached with the course, how engaged those people were, and how they interacted with the course pages.
+
+This page walks you through a simple example of how to use metrics to understand the effectiveness of a course lesson and to improve your course material. This example only touches the surface of what you can do with this data, but does illustrate how important metrics are to improving the quality of effectiveness of your courses. 
