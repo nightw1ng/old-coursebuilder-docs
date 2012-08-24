@@ -16,7 +16,7 @@ Course Builder is our experimental first step in the world of online education. 
   * [DesignProcess Advice for online course design] 
   * [ImplementCourseMaterial Implement course material] 
   * [ManageCommunity Develop community]
-  * [Metrics Evaluate course efficacy]
+  * [MeasureEfficacy Evaluate course efficacy]
 </td>
 <td width="50%" valign="top">
 == <img src="https://www.corp.google.com/~vpg/no_crawl/cb/hoa.png" height="24" width="24" /> Upcoming Hangouts on Air ==
