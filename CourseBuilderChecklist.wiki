@@ -83,7 +83,7 @@ In these steps, all pathnames are relative to the directory containing your appl
   # [HappinessMetrics Create a survey to analyze student happiness.]
   # [ReachAndEngagementMetrics Capture reach & engagement data.]
 
-=== C.4. [ParticipantCommunity Setup and and manage the participant community.] ===
+=== C.4. [ManageCommunity Setup and and manage the participant community.] ===
   # [TeachingAssistants Engage and train teaching assistants.]
   # [WebForums Setup a community discussion forum.]
   # Add the link to your forum to the file {{{views/forum.html}}}.
