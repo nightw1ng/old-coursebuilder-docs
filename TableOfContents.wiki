@@ -40,7 +40,8 @@
     * [ReachAndEngagementMetrics Reach & Engagement]
     * [ExampleReachEngagementMetrics Example Reach & Engagement]
     * [ExportingCourseData Export Course Data]
-  * [ExampleCourses Course Showcase]
+    * [AnalyticsForEdu Analytics for EDU]
+ * [ExampleCourses Course Showcase]
 
 
 [https://code.google.com/p/course-builder/w/list Wiki Site Map]
