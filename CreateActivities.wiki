@@ -8,7 +8,7 @@ Each unit may have  some number of activities. An activity is a set of questions
 
 <img src="https://www.corp.google.com/~vpg/no_crawl/cb/activity.png" height=529 width=420 />
 
-This page talks about the mechanics of creating an activity. For information on what to put in your activities, see [TwoDevelop#Decide_what_you_want_to_test_in_your_assessments,_both_graded_an Develop the Content without the Technology].
+This page talks about the mechanics of creating an activity. For information on what to put in your activities, see [TwoDevelop#Decide_what_you_want_to_test_in_your_assessments,_both_graded_an Develop the Content without Technology].
 
 == What happens on an activity page ==
 
