@@ -38,15 +38,8 @@ Visit the most recent [OnlineOfficeHours Hangout On Air].
   </tr>
 </table>
 
-<table width="100%">
-  <tr>
-    <td width="50%" valign="top">
-
-== <img src="https://www.corp.google.com/~vpg/no_crawl/cb/announce.png" height="24" width="24" /> Announcements ==
+== <img src="https://www.corp.google.com/~vpg/no_crawl/cb/announce.png" height="24" width="24" /> Forum ==
 <wiki:gadget url="http://google-code-feed-gadget.googlecode.com/svn/trunk/gadget.xml" up_feeds="https://groups.google.com/group/powersearch-announce/feed/rss_v2_0_msgs.xml" border="0" width="90%"/>
 
-   </td>
-    <td width="50%" valign="top">
-
-== <img src="https://www.corp.google.com/~vpg/no_crawl/cb/announce.png" height="24" width="24" /> Forum ==
+== <img src="https://www.corp.google.com/~vpg/no_crawl/cb/announce.png" height="24" width="24" /> Announcements ==
 <wiki:gadget url="http://google-code-feed-gadget.googlecode.com/svn/trunk/gadget.xml" up_feeds="https://groups.google.com/group/powersearch-announce/feed/rss_v2_0_msgs.xml" border="0" width="90%"/>
