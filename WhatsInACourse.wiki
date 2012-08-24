@@ -13,8 +13,8 @@ A single *course* consists of a series of *units* with individual *lessons* and 
 
 For a quick description of the flow a student typically experiences in a course, see [CourseFlow Course Flow for Students]. For detailed information on creating a course, see:
   * [OnePlan Plan Before You Start]
-  * [TwoDevelop Develop the Content without the Technology]
-  * [ThreeImplement Implement the Entire Course with the Technology]
+  * [TwoDevelop Develop the Content without Technology]
+  * [ThreeImplement Implement the Course with Technology]
   * [FourPilot Pilot with Your Target Audience]
 
 The rest of this page discusses the four main parts of a course in more detail.
