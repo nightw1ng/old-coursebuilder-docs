@@ -1,4 +1,4 @@
-  * [CourseBuilder Course Builder Checklist]
+  * [CourseBuilderChecklist Course Builder Checklist]
     * [WhatsInACourse Parts of a Course Builder Course]
     * [CourseFlow Course Flow for Students]
   * [DesignProcess Design Process]
