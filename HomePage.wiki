@@ -30,7 +30,7 @@ Course Builder is our experimental first step in the world of online education. 
     </td>
     <td width="30%"  valign="top">
 ==== Watch the welcome video with Peter Norvig ====
-<wiki:video url="http://www.youtube.com/watch?v=3LkNlTNHZzE" width="283" height="229" />
+<wiki:video url="http://www.youtube.com/watch?v=aVwwJScZ6Iw&feature=youtu.be" width="283" height="229" />
     </td>
   </tr>
 </table>
