@@ -1,5 +1,4 @@
 #summary Describes the primary parts of a course created with Course Builder.
-#featured
 
 <h1>Parts of a Course Builder Course</h1>
 
