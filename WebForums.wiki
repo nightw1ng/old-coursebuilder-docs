@@ -64,7 +64,7 @@ This is just one set of category groups and categories. You might choose complet
 
 It is very common for people to post essentially the same question many times. Rather than answer the same question over and over again, you can instead mark some posts as duplicates of other posts.
 
-To do so, you first must set the moderation permissions for your group as described in [#creategroup Create your group]. Then, when you encounter a duplicate question, follow this procedure:
+To do so, you first must set the moderation permissions for your group as described in [#Create_your_group Create your group]. Then, when you encounter a duplicate question, follow this procedure:
 
   # Identify the main post.
     # Decide which post is the "main" post; that is, which post you want all the others to point to.
