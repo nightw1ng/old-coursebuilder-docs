@@ -1,19 +1,47 @@
+
 #summary How to deploy your course code to Google production servers.
 
 <h1>Deploy Your App to Google </h1>
 
 Do not do this step until you are ready for your code to go live in production; that is, until you are ready for members of your audience to see your course.
 
-If you want to see what your app looks like in production, you can deploy it to Google. When traffic comes to your app, App Engine servers start up an instance running your app and enable access to it from its default URL of _*{{{APP_ID}}}*_{{{.appspot.com}}} to handle requests, where  _*{{{APP_ID}}}*_ is the app name you specified in [GetCode#2._Decide_on_a_name_for_your_app Run the sample app]. To get your app to Google, there are two main options: use the Launcher or the command-line tool. 
+If you want to see what your app looks like in production, you can deploy it to Google. When traffic comes to your app, App Engine servers start up an instance running your app and enable access to it from its default URL of _*{{{APP_ID}}}*_{{{.appspot.com}}} to handle requests, where  _*{{{APP_ID}}}*_ is the app name you specified in [GetCode#2._Decide_on_a_name_for_your_app Run the sample app]. 
 
+The first time you deploy your app, there are three steps:
+  # [#Register_your_app_with_Google Register the app.]
+  # [Set_up_an_app-specific_password Set up a 2-step application-specific password.]
+  # [ Upload_(or_deploy)_your_app Deploy the app.]
+
+If you make changes and need to redeploy your app, you only need to repeat the third step.
 
 == Register your app with Google ==
 
-First, you must register your app with Google.
+Before you can deploy (or upload) an application to Google, you must register that app with Google.  Before you can register an app with Google, you must have a Google account. If you do not have a Google account, you can [https://www.google.com/settings/account create a Google account] with an email address and password.
+
+Once you have a Google account, you can start registering your application in two ways:
+
+  * From a web  browser, navigate to https://appengine.google.com/
+  * From the App Engine Launcher, click on *Dashboard*.
+
+Both of these get you to the same place.
+
+If you are not currently logged in to your Google account, you're brought to a login screen. Once you login, you are brought to your App Engine dashboard. If you've never worked on an App Engine app, your dashboard will look as follows:
+
+https://www.corp.google.com/~vpg/no_crawl/cb/dashboard.png
+
+Click on *Create Application* and follow the instructions for verifying your account. After this process, you see the new account screen:
+
+https://www.corp.google.com/~vpg/no_crawl/cb/new-account.png
+
+To create a new application, follow the instructions to register an application ID, a name unique to this application. If you elect to use the free appspot.com domain name, the full URL for the application will be {{{http://}}}_*{{{APP_ID}}}*_{{{.appspot.com/}}}. You can also purchase a top-level domain name for your app, or use one that you have already registered.
+
+*Important:* The app ID you register for your app *must* be the app ID in your {{{app.yaml}}} file. If you register a different ID than you use in development, you must change {{{app.yaml}}} before deploying your app. We strongly suggest that you use the same app ID in both development and in production.
+
+== Set up an app-specific password ==
 
 == Upload (or deploy) your app ==
 
-Once registered, uploading your app using the Launcher is fairly straightforward: click on the *Deploy* button and enter your credentials. 
+Once you register your app, uploading it using the Launcher is straightforward: click on the *Deploy* button and enter your credentials. 
 
 Using the command-line is almost as easy.  
 
