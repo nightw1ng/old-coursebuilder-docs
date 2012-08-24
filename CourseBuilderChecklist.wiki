@@ -49,7 +49,7 @@ In these steps, all pathnames are relative to the directory containing your appl
     # [GetCode#7._Upload_the_unit_and_lesson_data Upload sample data] to the app.
     # [ExplorePS Explore the sample app] and [ExploreCode its  code].
 
-=== C.1. [ImplementCourseMaterial Implement the course material.] ===
+=== C.2. [ImplementCourseMaterial Implement the course material.] ===
   # [ModifyTemplate Modify the basic look and feel of course pages]<br>by changing {{{views/base.html}}} and {{{views/base_registration.html}}}. Things you must change include:
     # The course name, for the title element.
     # Code to collect Analytics data. (This change is only in {{{views/base.html}}}.)
@@ -78,12 +78,12 @@ In these steps, all pathnames are relative to the directory containing your appl
     # [CreateAssessments#Sending_email_after_assessments Fix the messages] sent to students after they take assessments in {{{views/test_confirmation.html}}}.
   # [UploadCode Deploy Your App to production.]
 
-=== C.2. [Metrics Prepare to evaluate the efficacy of your course] ===
+=== C.3. [Metrics Prepare to evaluate the efficacy of your course] ===
   # [AssessmentMetrics Analyze assessment data.]
   # [HappinessMetrics Create a survey to analyze student happiness.]
   # [ReachAndEngagementMetrics Capture reach & engagement data.]
 
-=== C.3. [ParticipantCommunity Setup and and manage the participant community.] ===
+=== C.4. [ParticipantCommunity Setup and and manage the participant community.] ===
   # [TeachingAssistants Engage and train teaching assistants.]
   # [WebForums Setup a community discussion forum.]
   # Add the link to your forum to the file {{{views/forum.html}}}.
