@@ -5,7 +5,7 @@
     * [PSHistory About the Power Searching Experiment]
     * [OnePlan Plan Before You Start]
     * [TwoDevelop Develop the Content without the Technology]
-      * [ObjectivesToOutline From Objectives to Outline]
+    * [ObjectivesToOutline From Objectives to Outline]
     * [ThreeImplement Implement the Entire Course with the Technology]
     * [FourPilot Pilot with Your Target Audience]
   * [GetStarted Get Started]
@@ -41,9 +41,7 @@
     * [ExampleReachEngagementMetrics Example Reach & Engagement]
     * [ExportingCourseData Export Course Data]
     * [AnalyticsForEdu Analytics for EDU]
- * [ExampleCourses Course Showcase]
-
-
-[https://code.google.com/p/course-builder/w/list Wiki Site Map]
-
+  * [ExampleCourses Course Showcase]
+  * [https://code.google.com/p/course-builder/w/list Wiki Site Map]
+  
 || [CourseBuilder Discussion forum] ||
