@@ -32,7 +32,7 @@ And now, the steps...
   # Decide what you want to test in your assessments, both graded and ungraded.
   # Decide what other data to collect to evaluate the efficacy of your course.
   # Sequence and organize your content into digestible chunks.
-  # Verify your content with others.
+  # Validate your content with others.
 
 == C. [ThreeImplement Implement your content using technology.] ==
 In these steps, all pathnames are relative to the directory containing your application. Every place in the code you must make a change is marked by a comment starting with {{{FIXME}}}.
