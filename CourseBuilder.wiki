@@ -58,14 +58,14 @@ In these steps, all pathnames are relative to the directory containing your appl
     # In {{{views/course.html}}}, change the course name and description.
     # In {{{data/unit.csv}}}, [CreateHomePage#List_of_units change what's listed on the home page]. 
     # When you change {{{unit.csv}}}, you must also [AppEngine#Modify_your_app_and_see_the_effects reload all data].
-  # [CreateLessons Implement course lessons.]
+  # [CreateLessons Create course lessons.]
     # Change the look of lesson pages at {{{views/unit.html}}}.
     # Change the [CreateLessons#Lesson_content lesson content] in {{{data/lesson.csv}}}. 
     # When you change {{{lesson.csv}}}, you must also [AppEngine#Modify_your_app_and_see_the_effects reload all data].
-  # [CreateActivities Implement Activities.]
+  # [CreateActivities Create Activities.]
     # Change the look of activity pages at {{{views/activity.html}}}.
     # [CreateActivities#Writing_activities Define the activity content] in files named {{{activity-}}}_*{{{N.M}}}*_{{{.js}}}, where _*{{{N}}}*_ is the unit number and _*{{{M}}}*_ is the lesson number.
-  # [CreateAssessments Implememnt Assessments.]
+  # [CreateAssessments Create Assessments.]
     # Change the look of assessment pages at  {{{views/assessment.html}}}.
     # [CreateAssessments#Writing_assessments  Define the assessments] in files named {{{activity-}}}_*{{{SUFFIX}}}*_{{{.js}}}, where _*{{{SUFFIX}}}*_ is one of {{{Pre}}}, {{{Mid}}}, or {{{Fin}}}. 
     # [CreateAssessments#Sending_email_after_assessments Fix the messages] sent to students after they take assessments in {{{views/test_confirmation.html}}}.
@@ -76,7 +76,7 @@ In these steps, all pathnames are relative to the directory containing your appl
   # [HappinessMetrics Create a survey to analyze student happiness.]
   # [ReachAndEngagementMetrics Capture reach & engagement data.]
 
-=== C.3. [ParticipantCommunity Implement the participant community.] ===
+=== C.3. [ParticipantCommunity Setup and and manage the participant community.] ===
   # [TeachingAssistants Engage and train teaching assistants.]
   # [WebForums Setup a community discussion forum.]
   # Add the link to your forum to the file {{{views/forum.html}}}.
