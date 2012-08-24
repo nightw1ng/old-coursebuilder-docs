@@ -6,14 +6,6 @@ This section is about understanding and modifying the Course Builder code to mak
 
 The pages in this section include:
 
-  * [Download Download the Software]<br>Describes how to download Python, Google App Engine, and the Course Builder sample application.
-
-  * [GetCode Run the Sample App]<br>Describes how to get the sample application running for the first time.
-
-  * [ExplorePS Explore the Sample App]<br>Walks through the pages students see when they take the course. This is about what the course looks like. Consider reading [WhatsInACourse Parts of a Course Builder Course] at the same time; it goes into more detail about the parts of content.
-
-  * [ExploreCode Explore the Sample Code]<br>Lists all of the files included with the sample code and notes which ones you must change.
-
   * [ModifyTemplate Modify Course Template]<br>How to modify the basic look and feel of all of the course pages.
 
   * [CreateRegistration Create Registration]<br>How to modify the student registration code.
@@ -29,5 +21,3 @@ The pages in this section include:
   * [VerifyCode Verify Your Code]<br>How to perform some automated checks to verify the syntactic validity of some of your code changes.
 
   * [UploadCode Deploy Your Code]<br>How to deploy your course to Google's production servers, to make it available to the world.
-
-  * [AppEngine About App Engine]<br>Some details you might want to know about App Engine.
