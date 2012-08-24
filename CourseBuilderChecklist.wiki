@@ -1,0 +1,95 @@
+#summary Checklist of all steps to create a course using Course Builder.
+#labels Featured
+
+<h1>Course Builder Checklist</h1>
+
+The rest of these Wiki pages go into a lot of detail about how to build your own online course using the Course Builder software and the other tools and processes that we used when we created [http://www.google.com/insidesearch/landing/powersearching.html Power Searching with Google].
+
+This page doesn't go into any explanations. It simply lists all of the steps involved -- everything from your beginning planning stages, to downloading and changing the Course Builder code to setting up online office hours -- and provides links to other places with more information.
+
+== Prerequisites for using Course Builder ==
+
+The current version of Course Builder is designed for technically-savvy course designers. In particular, we expect the following from users:
+
+  * *Experience creating course material* either for a traditional live classroom or for a more traditional online class. 
+  * *HTML familiarity.* 
+  * *!JavaScript familiarity,* particularly !JavaScript arrays, simple objects, and regular expressions. Of these, regular expressions tend to be the biggest stumbling block. The [https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions Mozilla Developer Network] has an introduction to regular expressions. 
+  * *App Engine familiarity is a plus,* but it's not necessary.
+
+Before you dive into creating your own course, consider reading [WhatsInACourse Parts of a Course Builder Course] and [CourseFlow Course Flow for Students] to get a quick overview of the terminology we use in talking about online courses you create using Course Builder.
+
+And now, the steps...
+
+== A. [OnePlan Plan for 30 minutes.] ==
+  # Define the problem statement and high-level goal of the course.
+  # Identify your audience and your assumptions.
+  # Define course objectives.
+  # Consider course logistics.
+
+== B. [TwoDevelop Develop content without technology.] ==
+  # Clarify your goals and non-goals for the course.
+  # Clarify your assumptions about your students.
+  # Write clear, specific objectives.
+  # Decide what you want to test in your assessments, both graded and ungraded.
+  # Decide what other data to collect to evaluate the efficacy of your course.
+  # Sequence and organize your content into digestible chunks.
+  # Validate your content with others.
+
+== C. [ThreeImplement Implement your content using technology.] ==
+In these steps, all pathnames are relative to the directory containing your application. Every place in the code you must make a change is marked by a comment starting with {{{FIXME}}}.
+
+=== C.1. [GetStarted Download and install needed software and the Course Builder sample application.] ===
+  # [Download Set up for development.]
+    # Download and install  [http://python.org/download Python].
+    # Download and install [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python App Engine].
+    # Download the [Download#Download_Course_Builder_sample_application Course Builder sample application].
+  # [GetCode Run the sample app]
+    # Pick a name for your app. Make it the value of {{{application}}} in {{{app.yaml}}}.
+    # [GetCode#5._Add_the_app_to_App_Engine Load the app].
+    # [GetCode#7._Upload_the_unit_and_lesson_data Upload sample data] to the app.
+    # [ExplorePS Explore the sample app] and [ExploreCode its  code].
+
+=== C.1. [CourseMaterial Implement the course material.] ===
+  # [ModifyTemplate Modify the basic look and feel of course pages]<br>by changing {{{views/base.html}}} and {{{views/base_registration.html}}}. Things you must change include:
+    # The course name, for the title element.
+    # Code to collect Analytics data. (This change is only in {{{views/base.html}}}.)
+    # Logo image for the header.
+    # Link to go with the logo.
+    # Course name or description for the header.
+    # Link and name of entity responsible for the course, for the footer.
+    # Link to a relevant privacy policy and terms of service, for the footer.
+  # [CreateRegistration Modify the registration pages.]
+    # Change the content at {{{views/register.html}}} and  {{{views/confirmation.html}}}. 
+    # (Optionally) Change the maximum number of students who can enroll in {{{controllers/utils.py}}}.
+  # [CreateHomePage Modify the course home page].
+    # In {{{views/course.html}}}, change the course name and description.
+    # In {{{data/unit.csv}}}, [CreateHomePage#List_of_units change what's listed on the home page]. 
+    # When you change {{{unit.csv}}}, you must also [AppEngine#Modify_your_app_and_see_the_effects reload all data].
+  # [CreateLessons Create course lessons.]
+    # Change the look of lesson pages at {{{views/unit.html}}}.
+    # Change the [CreateLessons#Lesson_content lesson content] in {{{data/lesson.csv}}}. 
+    # When you change {{{lesson.csv}}}, you must also [AppEngine#Modify_your_app_and_see_the_effects reload all data].
+  # [CreateActivities Create Activities.]
+    # Change the look of activity pages at {{{views/activity.html}}}.
+    # [CreateActivities#Writing_activities Define the activity content] in files named {{{activity-}}}_*{{{N.M}}}*_{{{.js}}}, where _*{{{N}}}*_ is the unit number and _*{{{M}}}*_ is the lesson number.
+  # [CreateAssessments Create Assessments.]
+    # Change the look of assessment pages at  {{{views/assessment.html}}}.
+    # [CreateAssessments#Writing_assessments  Define the assessments] in files named {{{activity-}}}_*{{{SUFFIX}}}*_{{{.js}}}, where _*{{{SUFFIX}}}*_ is one of {{{Pre}}}, {{{Mid}}}, or {{{Fin}}}. 
+    # [CreateAssessments#Sending_email_after_assessments Fix the messages] sent to students after they take assessments in {{{views/test_confirmation.html}}}.
+  # [UploadCode Deploy Your App to production.]
+
+=== C.2. [Metrics Prepare to evaluate the efficacy of your course] ===
+  # [AssessmentMetrics Analyze assessment data.]
+  # [HappinessMetrics Create a survey to analyze student happiness.]
+  # [ReachAndEngagementMetrics Capture reach & engagement data.]
+
+=== C.3. [ParticipantCommunity Setup and and manage the participant community.] ===
+  # [TeachingAssistants Engage and train teaching assistants.]
+  # [WebForums Setup a community discussion forum.]
+  # Add the link to your forum to the file {{{views/forum.html}}}.
+  # [OnlineOfficeHours Schedule online office hours.]
+  # [Announcements Prepare announcements and optional material.]
+
+== D. [FourPilot Pilot with your target audience.] ==
+
+|| [CourseBuilder Ask questions here] ||
