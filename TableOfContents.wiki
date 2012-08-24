@@ -41,6 +41,6 @@
     * [ExampleReachEngagementMetrics Example Reach & Engagement]
     * [ExportingCourseData Export Course Data]
     * [AnalyticsForEdu Analytics for EDU]
-  * [ExampleCourses Course Showcase]
+  * [Showcase Course Showcase]
   
 || [CourseBuilderChecklist Discussion forum] ||
