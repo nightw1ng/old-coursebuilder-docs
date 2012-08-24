@@ -108,6 +108,6 @@ It is outside the scope of this documentation to tell you how to create video. W
     * Have someone committed to going through the final videos and uploads to double check everything.
 
 Once you have created your videos, you need to post them to the internet to make them available to students. If you decide to post your videos on !YouTube, you may be interested in the following information:
-  * [http://www.google.com/url?q=http%3A//www.youtube.com/create_channel&usg=AFQjCNHi_jsXh0k5m9xQXOWbwJzt7ojKTA Create your YouTube channel].
-  * [http://support.google.com/youtube/bin/static.py?hl=en&guide=1719823&page=guide.cs How to upload videos]
+  * [http://www.youtube.com/create_channel Create your YouTube channel.]
+  * [http://support.google.com/youtube/bin/static.py?hl=en&guide=1719823&page=guide.cs How to upload videos.]
   * Tools for working with videos: For information on posting videos to !YouTube, see [http://www.youtube.com/t/about_essentials#upload YouTube Essentials: Upload].
