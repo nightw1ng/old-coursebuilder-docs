@@ -103,7 +103,7 @@ Some things to consider during this step:
 
 A lot of your development time is spent in this step. For details on one way to create a detailed outline, see [ObjectivesToOutline From Objectives to Outline].
 
-==Valideate your content with others.==
+==Validate your content with others.==
 
   * Before you go to the effort of writing text, recording video, and coding activities and assessments, check with others that what you plan to teach will accomplish your goals. 
 
