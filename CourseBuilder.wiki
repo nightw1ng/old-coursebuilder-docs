@@ -1,4 +1,5 @@
 #summary Checklist of all steps to create a course using Course Builder.
+#label Featured
 
 <h1>Course Builder Checklist</h1>
 
