@@ -1,6 +1,7 @@
 #summary Examples of courses created using our experimental code and techniques.
+#labels Featured
 
-<h1>Example Courses</h1>
+<h1>Course Showcase</h1>
 
 If you've created an online course using our code and techniques, please let us know.
 
