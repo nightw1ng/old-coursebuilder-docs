@@ -78,17 +78,17 @@ In these steps, all pathnames are relative to the directory containing your appl
     # [CreateAssessments#Sending_email_after_assessments Fix the messages] sent to students after they take assessments in {{{views/test_confirmation.html}}}.
   # [UploadCode Deploy Your App to production.]
 
-=== C.3. [Metrics Prepare to evaluate the efficacy of your course] ===
-  # [AssessmentMetrics Analyze assessment data.]
-  # [HappinessMetrics Create a survey to analyze student happiness.]
-  # [ReachAndEngagementMetrics Capture reach & engagement data.]
-
-=== C.4. [ManageCommunity Setup and and manage the participant community.] ===
+=== C.3. [ManageCommunity Setup and and manage the participant community.] ===
   # [TeachingAssistants Engage and train teaching assistants.]
   # [WebForums Setup a community discussion forum.]
   # Add the link to your forum to the file {{{views/forum.html}}}.
   # [OnlineOfficeHours Schedule online office hours.]
   # [Announcements Prepare announcements and optional material.]
+
+=== C.4. [MeasureEfficacy Prepare to evaluate the efficacy of your course] ===
+  # [AssessmentMetrics Analyze assessment data.]
+  # [HappinessMetrics Create a survey to analyze student happiness.]
+  # [ReachAndEngagementMetrics Capture reach & engagement data.]
 
 == D. [FourPilot Pilot with your target audience.] ==
 
