@@ -15,9 +15,9 @@ Imagine you create a class and you want to understand if the material is too har
 
 *Assessment Data and Google Analytics*
 || Lesson Page || Question / Learning Objective || Google Analytics || 
-|| 1|| Question 1 assess if students understood LO1. 95% answered correctly, indicating most students met the objective. (Time on page, In/outbound links, Pageviews and unique pageviews) ||
-|| 2 || Question 2 assess if students understood LO2. 50% answered correctly, indicating 50% of students did not met the objective. (Time on page, Pageviews and unique pageviews, Clicks on reference links, when did they return to the lesson (in/outbound links) ||
-|| 3 || Question 3 assess if students understood LO3. 25% answered correctly, indicating 75% of students did not met the objective. (Time on page, In/outbound links, Pageviews and unique pageviews || 
+|| 1|| Question 1 assess if students understood LO1. 95% answered correctly, indicating most students met the objective.  ||  Time on page, in/outbound links, pageviews and unique pageviews. ||
+|| 2 || Question 2 assess if students understood LO2. 50% answered correctly, indicating 50% of students did not met the objective.  || Time on page, pageviews and unique pageviews, clicks on reference links, when did they return to the lesson (in/outbound links). ||
+|| 3 || Question 3 assess if students understood LO3. 25% answered correctly, indicating 75% of students did not met the objective. ||  Time on page, in/outbound links, pageviews and unique pageviews. || 
 
 As you look at the assessment data, the following questions pop out:
 
