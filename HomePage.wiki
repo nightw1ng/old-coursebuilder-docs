@@ -23,8 +23,7 @@ Course Builder is our experimental first step in the world of online education. 
   * 19 Sept 10:00am - 10:45am PDT
   * 26 Sept 10:00am - 10:45am PDT
   * 3 Oct 10:00am - 11:00am PDT
-
-Visit the most recent [OnlineOfficeHours Hangout On Air].
+  Visit the most recent [OnlineOfficeHours Hangout On Air].
 </td>
 </tr>
 </table>
@@ -32,7 +31,6 @@ Visit the most recent [OnlineOfficeHours Hangout On Air].
     <td width="30%"  valign="top">
 ==== Watch the welcome video with Peter Norvig ====
 <wiki:video url="http://www.youtube.com/watch?v=3LkNlTNHZzE" width="283" height="229" />
-
     </td>
   </tr>
 </table>
