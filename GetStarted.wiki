@@ -1,4 +1,5 @@
 #summary Get the software needed to implement your course and explore the sample course.
+#labels Featured
 
 = Get Started =
 
