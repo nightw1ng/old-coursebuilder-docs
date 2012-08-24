@@ -23,7 +23,7 @@
     * [CreateAssessments Create Assessments]
     * [VerifyCode Verify Your Code]
     * [UploadCode Deploy Your App]
-  * [ParticipantCommunity Set up & Manage Community]
+  * [ManageCommunity Set up & Manage Community]
     * [Announcements Announcements & Optional Material]
     * [WebForums Community Discussion]
     * [CreateEmailList Announcements-only Email List]
