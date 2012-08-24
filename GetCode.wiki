@@ -2,7 +2,7 @@
 
 <h1>Run the Sample App</h1>
 
-To create your own course, you download a zip file from Google Code that contains all of the files that constitute the Course Builder App Engine application.  You then load that code into a new App Engine app and modify it as needed. This page describes how to download the source code and get it running as an app in App Engine. The basic steps are:
+Once you've downloaded the sample application, you load that code into a new App Engine app and modify it as needed for your course. This page describes how to get the sample app running for the first time on App Engine. The basic steps are:
 
 <wiki:toc max_depth="2" />
 
