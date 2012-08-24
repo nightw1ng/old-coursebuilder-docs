@@ -8,7 +8,7 @@ In [TwoDevelop Develop the Content without the Technology], you did most of the 
 
 This is the only part of the process that is really specific to building a Course Builder course. 
 
-  * For details of using the experimental code, see [CourseMaterial Implement Course Topics in Software].
+  * For details of using the experimental code, see [CourseMaterial Implement Course Material].
   * For tips on measuring aspects of your course, see [Metrics Evaluate Course Efficacy].
   * For details of creating community mechanisms, see [ParticipantCommunity Set up and Manage the Participant Community].
 
