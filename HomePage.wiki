@@ -15,7 +15,7 @@ Course Builder is our experimental first step in the world of online education. 
 == <img src="https://www.corp.google.com/~vpg/no_crawl/cb/deep.gif" height="24" width="24" /> Dive Deeper ==
   * [DesignProcess Advice for online course design] 
   * [ImplementCourseMaterial Implement course material] 
-  * [ParticipantCommunity Develop community]
+  * [ManageCommunity Develop community]
   * [Metrics Evaluate course efficacy]
 </td>
 <td width="50%" valign="top">
