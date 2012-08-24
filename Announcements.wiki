@@ -1,7 +1,7 @@
 #summary The role of email, web forums, blogs, and Google+ for announcements, and optional material.
 <h1>Announcements and Optional Material</h1>
 
-The official course content you create using our experimental code (see [CourseMaterial Implement Course Material]) is, of course, a major part of the formal communication between you and your students. However, it is not the only communication.
+The official course content you create using our experimental code (see [ImplementCourseMaterial Implement Course Material]) is, of course, a major part of the formal communication between you and your students. However, it is not the only communication.
 
 Here, we distinguish between formal communication, typically initiated by the course staff, from informal web forum communication, frequently initiated by students. All of these efforts are important in creating a successful feeling of community for your students and your course staff.
 
