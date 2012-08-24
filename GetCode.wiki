@@ -49,7 +49,7 @@ A new line appears in the Launcher. Its name is the name you put in the {{{app.y
 
 == 5. Start the development server ==
 
-Before you can upload your app to run in production and be available to your audience, you need to develop and debug it in a more private setting. That more private setting is called a *development server*.
+Before you can deploy your app to run in production and be available to your audience, you need to develop and debug it in a more private setting. That more private setting is called a *development server*.
 
 To start the development server from the Launcher:
   # Select your app. 
