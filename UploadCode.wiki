@@ -6,9 +6,14 @@ Do not do this step until you are ready for your code to go live in production; 
 
 If you want to see what your app looks like in production, you can deploy it to Google. When traffic comes to your app, App Engine servers start up an instance running your app and enable access to it from its default URL of _*{{{APP_ID}}}*_{{{.appspot.com}}} to handle requests, where  _*{{{APP_ID}}}*_ is the app name you specified in [GetCode#2._Decide_on_a_name_for_your_app Run the sample app]. To get your app to Google, there are two main options: use the Launcher or the command-line tool. 
 
-First, be sure to have registered your app as described in [GetCode Run the Sample App], otherwise you won't be able to deploy your app.
 
-Using the Launcher is fairly straightforward: click on the *Deploy* button and enter your credentials. 
+== Register your app with Google ==
+
+First, you must register your app with Google.
+
+== Upload (or deploy) your app ==
+
+Once registered, uploading your app using the Launcher is fairly straightforward: click on the *Deploy* button and enter your credentials. 
 
 Using the command-line is almost as easy.  
 
@@ -21,8 +26,6 @@ where _*{{{APPPATH}}}*_ is the directory containing your app.
 You will be asked to supply your credentials (your username and password).
 
 It can take up to a minute to deploy your app; generally it's less than 30 seconds but usually not more than a minute. Once the deploy completes and confirms, you (and everyone else on the planet not blocked from Google) can visit {{{http://}}}_*{{{APP_ID}}}*_{{{.appspot.com}}} (with your _*{{{APP_ID}}}*_) and verify that your app is indeed available to all.
-
-
 
 <font color=red><<TODO finish
 
