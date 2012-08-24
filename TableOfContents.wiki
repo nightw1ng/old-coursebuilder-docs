@@ -42,6 +42,5 @@
     * [ExportingCourseData Export Course Data]
     * [AnalyticsForEdu Analytics for EDU]
   * [ExampleCourses Course Showcase]
-  * [https://code.google.com/p/course-builder/w/list Wiki Site Map]
   
 || [CourseBuilder Discussion forum] ||
