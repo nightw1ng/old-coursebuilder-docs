@@ -1,4 +1,5 @@
 #summary Categories of measurements to consider collecting and general tips for doing so.
+#labels Featured
 
 = Evaluate Course Efficacy =
 
