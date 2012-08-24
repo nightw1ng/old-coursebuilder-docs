@@ -10,7 +10,7 @@ This is the only part of the process that is really specific to building a Cours
 
   * For information on downloading software and exploring the sample application, see [GetStarted Get Started].
   * For details of using the experimental code, see [ImplementCourseMaterial Implement Course Material].
-  * For details of creating community mechanisms, see [ParticipantCommunity Set up and Manage Community].
+  * For details of creating community mechanisms, see [ManageCommunity Set up and Manage Community].
   * For tips on measuring aspects of your course, see [Metrics Evaluate Course Efficacy].
 
 For a complete step-by-step checklist, see [CourseBuilderChecklist Course Builder Checklist].
