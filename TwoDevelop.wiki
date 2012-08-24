@@ -112,4 +112,4 @@ A lot of your development time is spent in this step. For details on one way to 
   * It can be hard to remember what not knowing something feels like, especially if you are an expert on the topic. This is why it’s so important to verify your content with representatives of your audience. You and the people who help you create a course know too much about it.
 
   * Keep your content legal. This may sound obvious, but laws for what you can do in a live classroom can be different from what you can do online. Also, laws regarding what you can show in a video or talk about in an online forum vary from country to country.
-Once you’ve developed your content, it’s time to move on to [ThreeImplement implementing the entire  course with the technology].
+Once you’ve developed your content, it’s time to move on to [ThreeImplement implementing the course with technology].
