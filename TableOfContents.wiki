@@ -43,4 +43,4 @@
     * [AnalyticsForEdu Analytics for EDU]
   * [ExampleCourses Course Showcase]
   
-|| [CourseBuilder Discussion forum] ||
+|| [CourseBuilderChecklist Discussion forum] ||
