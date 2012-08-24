@@ -13,7 +13,7 @@ Course Builder is our experimental first step in the world of online education. 
 == <img src="https://www.corp.google.com/~vpg/no_crawl/cb/start.png" height="24" width="24" /> [CourseBuilder Get Started] == 
 
 == <img src="https://www.corp.google.com/~vpg/no_crawl/cb/deep.gif" height="24" width="24" /> Dive Deeper ==
-  * [DesignProcess Best practices for online course design] 
+  * [DesignProcess Advice for online course design] 
   * [CourseMaterial Implement course material] 
   * [ParticipantCommunity Develop community]
   * [Metrics Evaluate course efficacy]
