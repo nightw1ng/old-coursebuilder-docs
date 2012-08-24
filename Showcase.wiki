@@ -1,4 +1,5 @@
 #summary Examples of courses created using our experimental code and techniques.
+#labels Featured
 
 <h1>Course Showcase</h1>
 
