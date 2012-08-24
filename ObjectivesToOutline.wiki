@@ -39,4 +39,4 @@ If you have multiple objectives, break them up and perform these steps separatel
     * Are there other dependencies in learning the material and acquiring the skills?
     * Identify these and do a final rearranging of your list. Combine elements where needed. Eliminate repeated pieces.
 
-We recommend that you get a second set of knowledgeable eyes to take a look at your material and verify it. Does the flow make sense? Is there anything that was forgotten?
+We recommend that you get a second set of knowledgeable eyes to take a look at your material and validate it. Does the flow make sense? Is there anything that was forgotten?
