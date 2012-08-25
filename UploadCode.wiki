@@ -66,6 +66,8 @@ Before you choose to do so, please read [https://developers.google.com/appengine
 
 To upload your application without supplying your credentials:
 
+<font color=red><<TODO this doesn't work for me. The update does, but the upload_data lines still ask for credentials. I wonder what I'm doing wrong?>></font>
+
   {{{$ cd }}}_*{{{APPPATH}}}*_<br>
   {{{$ appcfg.py --oauth2 update .}}}<br>
   {{{$ }}}<br>
