@@ -89,7 +89,7 @@ Each question object has three attributes. Two of these are the same for all que
 
 The common attributes are:
 
-  * {{{questionHTML.}}} A string containing text and complete HTML elements. This sring is the text to display for this question. As with a preamble string, if this string contains an open HTML tag (such as {{{<em>}}}), it must also have the corresponding close tag (such as {{{</em>}}}). Also note that the entire string must be on a single line. If you want it to render as multiple lines, you must include the appropriate HTML markup.
+  * {{{questionHTML.}}} A string containing text and complete HTML elements. This string is the text to display for this question. As with a preamble string, if this string contains an open HTML tag (such as {{{<em>}}}), it must also have the corresponding close tag (such as {{{</em>}}}). Also note that the entire string must be on a single line. If you want it to render as multiple lines, you must include the appropriate HTML markup.
 
   * {{{lesson.}}} A string representing the lesson (or lessons) that cover the material this question is about. The app displays this string if the student incorrectly answers the question and has requested the app to [#Submitting_and_checking_answers check answers].
 
