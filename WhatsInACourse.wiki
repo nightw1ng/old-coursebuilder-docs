@@ -21,7 +21,7 @@ To make the content more digestible, consider grouping course material into a nu
 
 For example, in the Power Searching with Google course, one unit is about interpreting search results; another is about checking the reliability of the content of those search results. Each of those units consists of about five lessons and about five activities.  For these units, course staff creates and releases the lessons and activities ahead of time. While the material is available to students, course staff interacts with students through the [ManageCommunity participant community mechanisms].
 
-As a very different example, a third unit is [OnlineOfficeHours online office hours] where the students presubmit questions and the course staff answers those questions in real-time using a [http://www.google.com/+/learnmore/hangouts/onair.html Hangout On Air]. Depending on your course, you may have some students interacting with the course staff over video for the Hangout On Air or you may have students submit all of their questions using Google Moderator.
+As a very different example, a third unit is [OnlineOfficeHours online office hours] where the students submit questions ahead of time and the course staff answers those questions in real-time using a [http://www.google.com/+/learnmore/hangouts/onair.html Hangout On Air]. Depending on your course, you may have some students interacting with the course staff over video for the Hangout On Air or you may have students submit all of their questions using Google Moderator.
 
 For all of these unit types, instructors make course content available to students at scheduled intervals throughout the course. Once available, the content continues to be available until the course ends. That is, lessons are not available for only a few days; students can go back and redo lessons at any time throughout the course. Soon after online office hours take place, the course staff posts a video of it. So even if students miss the office hours, that material is still available.
 
@@ -111,7 +111,7 @@ In addition to these things that you set up, students may create additional inte
 <a name="administrivia"></a>
 == Administrative tasks ==
 
-Of course, as with any class there are various administrative aspects to creating an online course. Two of the major ones are [CreateRegistration managing student registration] and [Metrics collecting and analyzing data to see how well your course does].
+Of course, as with any class there are various administrative aspects to creating an online course. Two of the major ones are [CreateRegistration managing student registration] and [MeasureEfficacy collecting and analyzing data to see how well your course does].
 
 For a full list of tasks needed to create a course, see [CourseBuilderChecklist Course Builder Checklist].
 
