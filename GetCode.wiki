@@ -90,7 +90,7 @@ Before running each {{{appcfg.py}}} command, the system prompts you to enter you
 
 If you have trouble with these commands, see [AppEngine#Troubleshooting Troubleshooting].
 
-To learn how to reupload data after making changes, see [AppEngine#Modify_your_app_and_see_the_effects Modify your app and see the effects].
+To learn how to upload data again after making changes, see [AppEngine#Modify_your_app_and_see_the_effects Modify your app and see the effects].
 
 == 7. Connect to the development server ==
 
