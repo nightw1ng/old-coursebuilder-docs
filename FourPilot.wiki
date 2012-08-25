@@ -13,7 +13,7 @@ Some tips:
 
   * Have a second pilot; this time using use people who are in your real audience. Trust me; they’ll be quite different from people who are more familiar with the material.
 
-  * Depending on the length of your course, a single pilot may run on one or more days. Schedule a checkin with the pilot participants at the end of each day on which the pilot runs, so that the material from that day is fresh in the participants' minds.
+  * Depending on the length of your course, a single pilot may run on one or more days. Checkin with the pilot participants at the end of each day on which the pilot runs, so that the material from that day is fresh in the participants' minds.
 
   * Pilot your course content, but also pilot other features of your course. For example, have your pilot participants use the forum you set up for the course. Try to test the forum at high volume to see how well it works. If you plan to do a Hangout On Air as part of the course, pilot that as well.
 
