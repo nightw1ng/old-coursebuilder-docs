@@ -4,7 +4,7 @@
 
 If you are not familiar with App Engine, read [https://developers.google.com/appengine/docs/whatisgoogleappengine What is Google App Engine?].
 
-Youo do not need to be an App Engine expert to work with Course Builder. There are just a few things you should be familiar with. Much of this is discussed on other pages. We summarize them here.
+You do not need to be an App Engine expert to work with Course Builder. There are just a few things you should be familiar with. Much of this is discussed on other pages. We summarize them here.
 
 <wiki:toc />
 
@@ -18,7 +18,7 @@ Make sure you have Python 2.7 on your system. Visit the general Python 2.7 [http
 
 Follow [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python this link] to download the Python App Engine SDK for your platform.
 
-  * *PC:* Run the downloaded installer .msi by doubleclicking. Follow all on-screen instructions. Once completed, you should find the App Engine Launcher icon on your desktop or be able to find it via Start -> Programs. There is no equivalent set of command-line tools for PCs, so there you must use the Launcher.
+  * *PC:* Run the downloaded installer .msi by double clicking. Follow all on-screen instructions. Once completed, you should find the App Engine Launcher icon on your desktop or be able to find it via Start -> Programs. There is no equivalent set of command-line tools for PCs, so there you must use the Launcher.
   * *Mac:* Open the downloaded .dmg file and drag the App Engine icon into the Applications folder. Optionally,  open the Applications folder and drag the App Engine icon to your Dock so that you can start the App Engine Launcher more conveniently. Putting App Engine in the Applications folder also installs the command-line tools.
   * *Linux or other POSIX-compliant system:* After downloading the .zip file, go to the directory where you want to install App Engine. When you unzip the archive, it creates a subdirectory named google_appengine. Add that directory to your shell's path so that it can find the command-line tools when you need them.
 
@@ -26,7 +26,7 @@ When developing on Google App Engine, you have a choice of performing administra
 
 == Name your app for production ==
 
-When you're ready to make your course available to students, you'll run your app in production. In production, your app lives in Google datacenters. Google runs the production server. Google must be able to provide a URL for people to use to reach your application.
+When you're ready to make your course available to students, you'll run your app in production. In production, your app lives in Google data centers. Google runs the production server. Google must be able to provide a URL for people to use to reach your application.
 
 By default, Google gives your app a domain name so that it can be reached from almost anywhere on the internet. That domain is of the form _*{{{APP_ID}}}*_{{{.appspot.com}}} where _*{{{APP_ID}}}*_ is the app ID you chose to record in the {{{app.yaml}}} file. You must choose a name that hasn't already been used by anybody else.
 
@@ -68,7 +68,7 @@ By default, your app is only available from the machine on which you start it. T
   {{{$ cd }}}_*{{{APPPATH}}}*_<br>
   {{{$ dev_appserver.py . -a 0.0.0.0 &}}}
 
-where _*{{{APPPATH}}}*_ is the directory containing your app. (The {{{&}}} has this comand run in the background.)
+where _*{{{APPPATH}}}*_ is the directory containing your app. (The {{{&}}} has this command run in the background.)
 
 === From a shell, to clear lesson and unit data ===
 
