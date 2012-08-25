@@ -28,7 +28,7 @@ When developing on Google App Engine, you have a choice of performing administra
 
 When you're ready to make your course available to students, you'll run your app in production. In production, your app lives in Google data centers. Google runs the production server. Google must be able to provide a URL for people to use to reach your application.
 
-By default, Google gives your app a domain name so that it can be reached from almost anywhere on the internet. That domain is of the form _*{{{APP_ID}}}*_{{{.appspot.com}}} where _*{{{APP_ID}}}*_ is the app ID you chose to record in the {{{app.yaml}}} file. You must choose a name that hasn't already been used by anybody else.
+By default, Google gives your app a domain name so that it can be reached from almost anywhere on the Internet. That domain is of the form _*{{{APP_ID}}}*_{{{.appspot.com}}} where _*{{{APP_ID}}}*_ is the app ID you chose to record in the {{{app.yaml}}} file. You must choose a name that hasn't already been used by anybody else.
 
 App ID names can only be used once and can never be returned to the pool of available names. Whether your app is running, not running, or deleted, once a name has been chosen, it can no longer be used by any other app. More details on creating an app can be found in the [https://developers.google.com/appengine/docs/python/gettingstartedpython27/uploading official docs]. 
 
