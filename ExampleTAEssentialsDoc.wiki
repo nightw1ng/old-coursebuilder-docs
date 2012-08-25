@@ -34,7 +34,7 @@ Sheer number of participants and community
   * Each unit contains several lessons and activities.
   * A lesson consists of a short video and a text version of the same material.
   * An activity is some number of questions for the students to answer. Activities are not graded.
-  * If you notice problems with the course content or have other feedback, please let us know. _*Course createor: You need to reate a mechanism for this. For example, you can have them send email to a particular address, or you can create a spreadsheet or shared document for them to use.*_
+  * If you notice problems with the course content or have other feedback, please let us know. _*Course creator: You need to create a mechanism for this. For example, you can have them send email to a particular address, or you can create a spreadsheet or shared document for them to use.*_
 
 ==TA responsibilities for course pilot==
 
@@ -48,8 +48,8 @@ Sheer number of participants and community
 ==TA responsibilities for course launch==
 
   * Be prepared to help students feel well-supported.
-  * Sign up for _*N*_ hours ([https://docs.google.com/a/google.com/spreadsheet/ccc?key=0Arvsi5kPl6d8dGZkZDNCbEVNT1BGQ2dzWnlNczNsdEE#gid=0 signup sheet]) to support worldwide course launch _*on these dates*._
-  * Before the course starts, skim the TA documentation to get an idea of what questions to expect and how to interact with students. _*Course createor: You need to write those documents. and point to them here.*_
+  * Sign up for _*N*_ hours ([https://docs.google.com/a/google.com/spreadsheet/ccc?key=0Arvsi5kPl6d8dGZkZDNCbEVNT1BGQ2dzWnlNczNsdEE#gid=0 sign up sheet]) to support worldwide course launch _*on these dates*._
+  * Before the course starts, skim the TA documentation to get an idea of what questions to expect and how to interact with students. _*Course creator: You need to write those documents. and point to them here.*_
   * On _*the date the course starts*,_ attend the pre-launch TA meeting to go over your instructions.
   * As TAs, you'll check in on the three interaction mechanisms we have for students:
     * Google Groups Forum
@@ -71,7 +71,7 @@ Sheer number of participants and community
     * For new posts (in bold) where questions are being asked and no participant nor TA has provided response yet:
       * A Staff badge appears next to your name when you Post reply, showing that the comment is from Course Staff.  
     * If you know how to answer it, go for it!  Post reply.
-    * If you don’t know the answer and aren’t able to pursue it at the moment for any reason,  send the URL of the forum post to help@example.com and ask for another TA to handle it.  
+    * If you don’t know the answer and are not able to pursue it at the moment for any reason,  send the URL of the forum post to help@example.com and ask for another TA to handle it.  
     * If you don’t know the answer, but will own and help pursue it, things are a little more complicated?
       * Reply back "Thanks for your good question.  I’ll research this and get back to you." Add a star to the message, which means "escalation in progress."
       * Go into the help@ email account and locate the email message that corresponds to the forum post. Every forum post and response gets emailed to help@. They are located under the filter "forum posts." Research or escalate to the appropriate alias: 
