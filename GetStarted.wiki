@@ -16,4 +16,4 @@ The pages in this section include:
   * [ExploreCode Explore the Sample Code]<br>Lists all of the files included with the sample code and notes which ones you must change.
 
 
-  * [AppEngine Work with App Engine]<br>Some details you might want to know about App Engine.
+  * [AppEngine Develop with App Engine]<br>Some details you might want to know about App Engine.
