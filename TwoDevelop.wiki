@@ -91,7 +91,7 @@ Some things to consider during this step:
 
   * Even though you think your content has a logical flow from beginning to end, remember that people typically jump around online material. As much as possible, make each of your lessons standalone so that students can successfully access them in a different order than you anticipated.
 
-  * To help with the last point, be consistent in lesson format. For example, first define the topic of the lesson, then say why it's important, give a demonstration of the topic, talk about it a bit, and finish with another demostration and a short conclusion.
+  * To help with the last point, be consistent in lesson format. For example, first define the topic of the lesson, then say why it's important, give a demonstration of the topic, talk about it a bit, and finish with another demonstration and a short conclusion.
 
   * Consider having most lessons be of approximately the same size so your students know what to expect. For online consumption, your material should be in smaller chunks than for live classes. Keep videos 3-5 minutes in length. 
 
