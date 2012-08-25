@@ -61,7 +61,7 @@ You will be asked to supply your credentials. Supply your username and the app-s
 
 It can take up to a minute to deploy your app; generally it's less than 30 seconds but usually not more than a minute. Once the deploy completes and confirms, you (and everyone else on the planet not blocked from Google) can visit {{{http://}}}_*{{{APP_ID}}}*_{{{.appspot.com}}} and verify that your app is indeed available to all.
 
-== (Alternative) Upload without a Password ==
+== (Alternative) Upload without a password ==
 
 In general, every time you make a change that causes you to redeploy your app to production, you need a new app-specific password to use when uploading your app. You may choose to avoid this, by giving App Engine access to your account. 
 
