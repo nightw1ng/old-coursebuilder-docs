@@ -57,8 +57,6 @@ The value of the {{{assessmentName}}} attribute is one of  {{{"precourse"}}}, {{
 
 When students complete an assessment, they see a message about how they did. You can change the contents of these messages in {{{views/test_confirmation.html}}}. (See [#Submitting_and_checking_answers Submitting and checking answers].)
 
-The sample code is hardcoded to have these three assessments. If you want different types of assessments or different score weights/thresholds, you must edit the code in {{{assets/js/activity-generic.js}}} and in {{{controllers/lessons.py}}}.
-
 === Preamble ===
 
 The value of the {{{preamble}}} attribute is a string that contains a set of complete HTML elements.  
