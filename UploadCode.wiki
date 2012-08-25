@@ -7,7 +7,10 @@ Do not do this step until you are ready for your code to go live in production; 
 If you want to see what your app looks like in production, you can deploy it to Google. When traffic comes to your app, App Engine servers start up an instance running your app and enable access to it from its default URL of _*{{{APP_ID}}}*_{{{.appspot.com}}} to handle requests, where  _*{{{APP_ID}}}*_ is the app name you specified in [GetCode#2._Decide_on_a_name_for_your_app Run the sample app]. 
 
 The first time you deploy your app, there are three steps:
-<wiki:toc max_depth="2" />
+
+  # [#Register_your_app_with_Google Register your app with Google.]
+  # [#Set_up_an_app-specific_password Set up an app-specific password.]
+  # [#Upload_(or_deploy)_your_app Upload (or deploy) your app.]
 
 If you make changes and need to redeploy your app, you do not need to repeat the first step. You may need to repeat the second step. (Details below.)
 
