@@ -39,7 +39,7 @@ You need change these files to customize the app for your material. For details,
 
 == Course home page ==
 
-After successul registration, the student can click on *Home* in the navigation bar of the confirmation page to be taken to the home page for your course.
+After successful registration, the student can click on *Home* in the navigation bar of the confirmation page to be taken to the home page for your course.
 
 https://www.corp.google.com/~vpg/no_crawl/cb/homepage-parts.png
 
