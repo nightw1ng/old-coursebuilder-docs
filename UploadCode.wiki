@@ -2,9 +2,11 @@
 
 <h1>Deploy Your App to Google </h1>
 
-Do not do this step until you are ready for your code to go live in production; that is, until you are ready for members of your audience to see your course.
+During development, you primarily work on your course using your development server. (See [AppEngine Develop with App Engine] for information on using App Engine during development.)
 
-If you want to see what your app looks like in production, you can deploy it to Google. When traffic comes to your app, App Engine servers start up an instance running your app and enable access to it from its default URL of _*{{{APP_ID}}}*_{{{.appspot.com}}} to handle requests, where  _*{{{APP_ID}}}*_ is the app name you specified in [GetCode#2._Decide_on_a_name_for_your_app Run the sample app]. 
+When you are ready for final testing or for members of your audience to see your course, it's time to deploy your app to Google's production servers. Once you have deployed your course, it's more complicated to make changes to it than in development. For this reason, we suggest waiting until you think you're done to deploy your course.
+
+Once you deploy your app to Google's servers, App Engine servers start up an instance running your app. At that point, people can access your course from its default URL of _*{{{APP_ID}}}*_{{{.appspot.com}}}, where  _*{{{APP_ID}}}*_ is the app name you specified in [GetCode#2._Decide_on_a_name_for_your_app Run the sample app]. 
 
 The first time you deploy your app, there are three steps:
 
