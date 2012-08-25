@@ -13,7 +13,7 @@
     * [GetCode Run the Sample App]
     * [ExplorePS Explore the Sample App]
     * [ExploreCode Explore the Sample Code]
-    * [AppEngine Work with App Engine]
+    * [AppEngine Develop with App Engine]
   * [ImplementCourseMaterial Implement Course Material]
     * [ModifyTemplate Modify Course Template]
     * [CreateRegistration Create Registration]
