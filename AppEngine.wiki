@@ -128,7 +128,7 @@ Changes you make to the {{{views}}} directory or to either subdirectory under {{
 
 When you  make changes to either file in the {{{data}}} directory, you have two choices:
 
-  * Clear out all of the existing data and start afresh with your changes.<br>While this sounds drastic, in it is the safer option. You only make your changes in the source code and then you reload those files. This way you're certain your code is in sync with your server.
+  * Clear out all of the existing data and start afresh with your changes.<br>While this sounds drastic, it is the safer option. You only make your changes in the source code and then you reload those files. This way you're certain your code is in sync with your server.
 
   * Manually change only the parts of the data store that you changed in the data files.<br>You can use the Admin Console to remove or add individual records in either the Lesson or Unit store. This feels like a smaller change, but it requires you to enter the same information in two places, which can be error prone.
 
