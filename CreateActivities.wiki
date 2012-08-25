@@ -113,7 +113,7 @@ This code represents a single !JavaScript object with two required attributes. T
 
 Each element of the {{{choices}}} array is itself a 3-element array whose required values are:
    * The text to display for this answer.
-   * A boolean indicating whether or not this is the correct answer.
+   * A Boolean value indicating whether or not this is the correct answer.
    * The text to display if this choice is submitted.
 
 For this question, students see the following:
@@ -189,7 +189,7 @@ This code represents a single !JavaScript object with several attributes. The fi
 
   * {{{questionType}}}. The value {{{'freetext'}}} indicates that this answer expects a string from the student.
 
-  * {{{correctAnswerRegex}}} is a regular expression to use to check whether or not the student's answer is correct.  In constructing a regular expresssion, consider come situations such as whether or not capitalization in the answer matters and how exact the wording must be. See the [https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions  Mozilla docs on regular expressions] for help.
+  * {{{correctAnswerRegex}}} is a regular expression to use to check whether or not the student's answer is correct.  In constructing a regular expression, consider come situations such as whether or not capitalization in the answer matters and how exact the wording must be. See the [https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions  Mozilla docs on regular expressions] for help.
 
   * {{{correctAnswerOutput}}} is the text to display when the student's answer is correct. Optional.
   * {{{incorrectAnswerOutput}}} is the text to display when the student's answer is not correct. Optional.<br>If you do not supply both {{{correctAnswerOutput}}} and {{{incorrectAnswerOutput}}}, then the code does not display the *Check Answer* button. If you supply one of these, you must supply both of them.
