@@ -1,3 +1,4 @@
+
 #summary How to deploy your course code to Google production servers.
 
 <h1>Deploy Your App to Google </h1>
@@ -7,11 +8,9 @@ Do not do this step until you are ready for your code to go live in production; 
 If you want to see what your app looks like in production, you can deploy it to Google. When traffic comes to your app, App Engine servers start up an instance running your app and enable access to it from its default URL of _*{{{APP_ID}}}*_{{{.appspot.com}}} to handle requests, where  _*{{{APP_ID}}}*_ is the app name you specified in [GetCode#2._Decide_on_a_name_for_your_app Run the sample app]. 
 
 The first time you deploy your app, there are three steps:
-  # [#Register_your_app_with_Google Register the app.]
-  # [#Set_up_an_app-specific_password Set up a 2-step application-specific password.]
-  # [#Upload_(or_deploy)_your_app Deploy the app.]
+<wiki:toc max_depth="2" />
 
-If you make changes and need to redeploy your app, you only need to repeat the third step.
+If you make changes and need to redeploy your app, you do not need to repeat the first step. You may need to repeat the second step. (Details below.)
 
 == Register your app with Google ==
 
@@ -28,9 +27,9 @@ If you are not currently logged in to your Google account, you're brought to a l
 
 https://www.corp.google.com/~vpg/no_crawl/cb/dashboard.png
 
-Click on *Create Application* and follow the instructions for verifying your account. After this process, you see the new account screen:
+Click on *Create Application* and follow the instructions for verifying your account. After this process, you see the new application screen:
 
-https://www.corp.google.com/~vpg/no_crawl/cb/new-account.png
+https://www.corp.google.com/~vpg/no_crawl/cb/new-application.png
 
 To create a new application, follow the instructions to register an application ID, a name unique to this application. If you elect to use the free appspot.com domain name, the full URL for the application will be {{{http://}}}_*{{{APP_ID}}}*_{{{.appspot.com/}}}. You can also purchase a top-level domain name for your app, or use one that you have already registered.
 
@@ -38,24 +37,29 @@ To create a new application, follow the instructions to register an application 
 
 == Set up an app-specific password ==
 
-== Upload (or deploy) your app ==
-
-Once you register your app, uploading it using the Launcher is straightforward: click on the *Deploy* button and enter your credentials. 
-
-Using the command-line is almost as easy.  
-
-  {{{$ cd }}}_*{{{APPPATH}}}*_<br>
-  {{{$ dev_appserver.py . &    // only do this if your development server is NOT already running}}} <br>
-  {{{$ appcfg.py update .}}}
-
-where _*{{{APPPATH}}}*_ is the directory containing your app.
-
-You will be asked to supply your credentials (your username and password).
-
-It can take up to a minute to deploy your app; generally it's less than 30 seconds but usually not more than a minute. Once the deploy completes and confirms, you (and everyone else on the planet not blocked from Google) can visit {{{http://}}}_*{{{APP_ID}}}*_{{{.appspot.com}}} (with your _*{{{APP_ID}}}*_) and verify that your app is indeed available to all.
+Course Builder uses 2-step authentication to ensure the security of your courses. This means that to deploy your application, it is not good enough to provide the standard password that goes with your username. You must insted supply a password that is specific to this application. See [http://support.google.com/accounts/bin/answer.py?hl=en&answer=185833 Signing in using application-specific passwords] for information on how to create your app-specific password.
 
 <font color=red><<TODO finish
 
 This is where the info about --oauth2 goes.
 
 >></font>
+
+
+== Upload (or deploy) your app ==
+
+Once you register your app, the most straightforward way to deploy your applicaiton is from a Unix command-line shell. From the shell:
+
+  {{{$ cd }}}_*{{{APPPATH}}}*_<br>
+  {{{$ dev_appserver.py . &    // only do this if your development server is NOT already running}}} <br>
+  {{{$ appcfg.py update .}}}
+<br>
+  {{{$ cd data}}}<br>
+  {{{$ appcfg.py upload_data --url=http://}}}_*{{{APP_ID}}}*_{{{.appspot.com/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br>
+  {{{$ appcfg.py upload_data --url=http://}}}_*{{{APP_ID}}}*_{{{.appspot.com/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}}
+
+where _*{{{APP_ID}}}*_ is the app ID you registered for your app.
+
+You will be asked to supply your credentials. Supply your username and the app-specific password you created in the previous step.
+
+It can take up to a minute to deploy your app; generally it's less than 30 seconds but usually not more than a minute. Once the deploy completes and confirms, you (and everyone else on the planet not blocked from Google) can visit {{{http://}}}_*{{{APP_ID}}}*_{{{.appspot.com}}} and verify that your app is indeed available to all.
