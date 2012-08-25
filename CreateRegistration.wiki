@@ -29,7 +29,7 @@ This page consists of three areas:
   * The *footer* contains two links -- one to your website and one to the privacy conditions and terms for your course.
 
 The app uses two files to render this page:
-  * {{{views/base_registration.html}}} defines the header and footer areas.  See [ModifyTemplate ModifyCourseTemplate].
+  * {{{views/base_registration.html}}} defines the header and footer areas.  See [ModifyTemplate Modify Course Template].
   * {{{views/register.html}}} defines the content of the registration form. If you change the questions asked, you'll have to change the code that handles the answers.
 
 == Registration confirmation page ==
