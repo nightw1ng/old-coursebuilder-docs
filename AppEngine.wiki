@@ -1,10 +1,12 @@
-#summary Hints for using App Engine
+#summary Hints for using App Engine during development
 
-<h1>Work with App Engine</h1>
+<h1>Develop with App Engine</h1>
 
 If you are not familiar with App Engine, read [https://developers.google.com/appengine/docs/whatisgoogleappengine What is Google App Engine?].
 
-You do not need to be an App Engine expert to work with Course Builder. There are just a few things you should be familiar with. Much of this is discussed on other pages. We summarize them here.
+You do not need to be an App Engine expert to work with Course Builder. There are just a few things you should be familiar with while developing your course. Much of this is discussed on other pages. We summarize it  here.
+
+This page discusses using App Engine in development. For information on working with it to deploy your course and to modify it after deployment, see [UploadCode Deploy Your App].
 
 <wiki:toc />
 
@@ -34,7 +36,7 @@ App ID names can only be used once and can never be returned to the pool of avai
 
 Unfortunately, you only find out if the name you choose is available when you register the app with Google. You must register it before you can deploy it. For more information, see [UploadCode Deploy Your App].
 
-== Start your server ==
+== Start your development server ==
 
 Your development server is where you modify and test your application before releasing it to production.
 
@@ -44,7 +46,7 @@ To start the development server from the Launcher:
   # Select your app. 
   # When it's highlighted, click the *Run* button to start the server (for that app).
 
-Once the icon to the left of the app name is green, your server is ready to accept requests.
+Once the icon to the left of the app name is green, your development server is ready to accept requests.
 
 Alternatively, because the command-line version has more options, you may wish to run the development server from your Unix command-line shell. 
 
@@ -59,7 +61,7 @@ where _*{{{APPPATH}}}*_ is the directory containing your app. As the command run
 
 Once the app is set up, you see a URL reference to the hostname and port you use to connect to your app from a web browser. It defaults to {{{http://localhost:8080}}}.
 
-The {{{&}}} at the end of the {{{dev_appserver.py}}} command tells Unix to run this command in the background. That means that while your server runs you can continue to use that shell for other operations. If you do not see the shell prompt, press enter.
+The {{{&}}} at the end of the {{{dev_appserver.py}}} command tells Unix to run this command in the background. That means that while your development server runs you can continue to use that shell for other operations. If you do not see the shell prompt, press enter.
 
 === From a shell, to enable remote access ===
 
@@ -81,18 +83,18 @@ From a Unix shell simply start your development server with an extra argument:
 
 where _*{{{APPPATH}}}*_ is the directory containing your app.  (The {{{&}}} has this command run in the background.)
 
-== Stop your server ==
+== Stop your development server ==
 
 === From the Launcher ===
-If you started your server from the Launcher, you can stop it there:
+If you started your devlopment server from the Launcher, you can stop it there:
 
   # Select your app. 
   # When it's highlighted, click the *Stop* button to start the server (for that app). 
 
-Once the icon to the left of the app name is gray, your server is stopped.
+Once the icon to the left of the app name is gray, your development server is stopped.
 
 === From a shell ===
-If you started your server from the command line, you can stop it there:
+If you started your development server from the command line, you can stop it there:
 
 Use the {{{ps}}} command to find the process number associated with your server and then to kill that server. 
 
@@ -131,7 +133,6 @@ When you  make changes to either file in the {{{data}}} directory, you have two 
   * Clear out all of the existing data and start afresh with your changes.<br>While this sounds drastic, it is the safer option. You only make your changes in the source code and then you reload those files. This way you're certain your code is in sync with your server.
 
   * Manually change only the parts of the data store that you changed in the data files.<br>You can use the Admin Console to remove or add individual records in either the Lesson or Unit store. This feels like a smaller change, but it requires you to enter the same information in two places, which can be error prone.
-
 
 ==== Reload all data ====
 
@@ -178,7 +179,7 @@ To change only some of the lesson or unit data, there are two steps:
 
 === Development server won't start ===
 
-If you do not see the registration page when you start your server for the first time, there may be an error somewhere.
+If you do not see the registration page when you start your development server for the first time, there may be an error somewhere.
 
 If you start your app from the command line, errors messages appear on the console. If you start your app from the Launcher, error messages appear in the logs. To see the logs, click on *Logs* in the Launcher's task bar.
 
