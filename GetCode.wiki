@@ -17,7 +17,7 @@ The first time you start the Launcher, you may see a dialog box asking you about
 
 For App Engine to work, you must agree to set up symbolic links.
 
-For more information about working with App Engine, see [AppEngine Work with App Engine].
+For more information about working with App Engine, see [AppEngine Develop with App Engine].
 
 == 2. Decide on a name for your app ==
 
