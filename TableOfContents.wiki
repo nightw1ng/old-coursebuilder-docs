@@ -38,7 +38,7 @@
     * [HappinessMetrics Student Happiness]
     * [ExampleSurvey Example Post-Course Survey]
     * [ReachAndEngagementMetrics Reach & Engagement]
-    * [ExampleReachEngagementMetrics Example Reach & Engagement]
+    * [ExampleReachEngagementMetrics Example Reach & Engagement Data]
     * [ExportingCourseData Export Course Data]
     * [AnalyticsForEdu Analytics for EDU]
   * [Showcase Course Showcase]
