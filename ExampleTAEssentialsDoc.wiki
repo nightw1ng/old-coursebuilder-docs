@@ -78,8 +78,8 @@ Sheer number of participants and community
         * *_experts@example.com_* (content or course-related)
         * *_techhelp@example.com_* (technical or registration issue)
         * *_prhelp@example.com_* (press, confidential, product-related)
-      * If the answer comes back within your shift, reply to the forum post with the answer and un-star the post.
-      * If the answer does not come back within your shift, the next TA will keep an eye on the starred messages in email. When the response comes back from the alias, copy and paste the response into the thread at the forum. Un-star the post.
+      * If the answer comes back within your shift, reply to the forum post with the answer and remove the star from the post.
+      * If the answer does not come back within your shift, the next TA will keep an eye on the starred messages in email. When the response comes back from the alias, copy and paste the response into the thread at the forum. Remove the star from the post.
       * Record the question and answer into the TA Answer Guide, if you think it will be helpful to other TA’s.
   * For old posts marked with a star (indicating that it is in the process of being escalated) 
     * Check the starred messages in help@ gmail. Reply to the questions if you can.  See step f above.
