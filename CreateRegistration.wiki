@@ -15,7 +15,7 @@ https://www.corp.google.com/~vpg/no_crawl/cb/registration-parts.png
 The sample registration page asks one question, the student's name. This is just to show you that you _can_ ask questions on this page and store the information:
 
   * The registration page {{{views/register.html}}} stores the name in a variable named {{{form01}}}.
-  * The  {{{RegisterHandler.post()}}} method, defined in {{{controllers/utils.py}}}, uses {{{form01}}} to define the variable {{{name}}} and store it with the {{{Student}}} instance in the datastore.
+  * The  {{{RegisterHandler.post()}}} method, defined in {{{controllers/utils.py}}}, uses {{{form01}}} to define the variable {{{name}}} and store it with the {{{Student}}} instance in the data store.
 
 If you want to ask different questions, you must change these two files.
 
