@@ -20,7 +20,7 @@ where _*{{{APPPATH}}}*_ is the directory containing your app.
 
 The verification tool outputs a list of warnings and errors that indicate possible invalid data in the CSV files and incorrectly-formatted activities and assessments. For example, in CSV files it catches incorrectly numbered units or a row containing too many or too few elements. 
 
-If the tool runs with no errors, you see output similiar to the following:
+If the tool runs with no errors, you see output similar to the following:
 
   {{{INFO: Started verification in: /oy/coursebuilder/tools/verify.py}}}<br>
   {{{INFO: Loading units from: /oy/coursebuilder/tools/../data/unit.csv}}}<br>
@@ -48,7 +48,7 @@ If the tool runs with no errors, you see output similiar to the following:
   {{{INFO: Read 29 lessons}}}<br>
   <font color="green"> {{{INFO: Completed verification: 0 warnings, 0 errors.}}} </font>
 
-If the tool encounters errors, instead you see output similiar to the following:
+If the tool encounters errors, instead you see output similar to the following:
 
   {{{INFO: Started verification in: /oy/coursebuilder/tools/verify.py}}}<br>
   {{{INFO: Loading units from: /oy/coursebuilder/tools/../data/unit.csv}}}<br>
