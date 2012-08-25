@@ -79,7 +79,7 @@ From a Unix shell simply start your development server with an extra argument:
   {{{$ cd }}}_*{{{APPPATH}}}*_<br>
   {{{$ dev_appserver.py --clear_datastore . &}}}
 
-where _*{{{APPPATH}}}*_ is the directory containing your app.  (The {{{&}}} has this comand run in the background.)
+where _*{{{APPPATH}}}*_ is the directory containing your app.  (The {{{&}}} has this command run in the background.)
 
 == Stop your server ==
 
