@@ -182,7 +182,7 @@ If you do not see the registration page when you start your server for the first
 
 If you start your app from the command line, errors messages appear on the console. If you start your app from the Launcher, error messages appear in the logs. To see the logs, click on *Logs* in the Launcher's task bar.
 
-One common problem is that, even though you downloaded Python 2.7, App Engine may not notice. In this case, the log says either that you are not runing Python 2.7 or has warnings about using a runtime older that is than the production runtime.
+One common problem is that, even though you downloaded Python 2.7, App Engine may not notice. In this case, the log says either that you are not running Python 2.7 or has warnings about using a runtime older that is than the production runtime.
 
 In this situation, you need to manually specify the path for Python 2.7. To do so:
   # First, find out what that path is:
