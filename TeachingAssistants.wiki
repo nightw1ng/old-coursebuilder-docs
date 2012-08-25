@@ -48,7 +48,7 @@ TAs won't be able to handle all questions that they receive. They need to be abl
 
 Recruit willing and enthusiastic helpers for these support email aliases. For escalated questions, TAs can continue serve as the interface with users, relaying the solutions and closing out requests in a friendly, helpful manner.  
 
-Note that you may choose to not make a help email address available to students. Instead, you may force students to do all of their written communication with course staff through the discussion forum. Even if you do this, consider having the help@ email alias and have that alias get copies of all messages sent to the web forum. Doing so makes it easier to foward problematic posts to the escalation lists.
+Note that you may choose to not make a help email address available to students. Instead, you may force students to do all of their written communication with course staff through the discussion forum. Even if you do this, consider having the help@ email alias and have that alias get copies of all messages sent to the web forum. Doing so makes it easier to forward problematic posts to the escalation lists.
 
 ==TA training==
 
@@ -68,7 +68,7 @@ Just like your course will be more successful if the students form a support com
     * If your TAs are physically distributed, have all TAs on duty at the same time enter the same [http://support.google.com/chat/bin/answer.py?hl=en&amp;answer=161886 group chat].
     * Don't force your TAs to participate in these group sessions, but do encourage them to attend at least one, to get a feel for what goes on during a shift.
 
-  * Schedule TAs with overlapping shifts or encourage them to pass on highlights of what happend in the last shift to the new shift.
+  * Schedule TAs with overlapping shifts or encourage them to pass on highlights of what happened in the last shift to the new shift.
 
   * TAs often feel more comfortable checking with each other before escalating questions to more expert advice. New TAs tend to be less confident and may need help to getting started.
 
@@ -78,7 +78,7 @@ Just like your course will be more successful if the students form a support com
 
 ==TA documentation==
 
-The more documentation you provide your TAs, the more self-sufficient they can be. Centralize all of the documentation in one searchable place; consider creating a Google Site for TA resources. Make the information editable by the TAs themselves, so that they can add information as the course progresses.
+The more documentation you provide your TAs, the more self-sufficient they can be. Centralize all of the documentation in one place that can be searched; consider creating a Google Site for TA resources. Make the information editable by the TAs themselves, so that they can add information as the course progresses.
 
 Topics to include:
 
@@ -136,7 +136,7 @@ In addition to the formal documentation or training you do for your TAs, strive 
 
   * Set up an internal email alias for the TA team.
 
-  * Througout the course, keep TAs informed on course developments, breaking news, shifts in strategies, and so on. In essence, make sure they feel part of the team delivering the course.
+  * Throughout the course, keep TAs informed on course developments, breaking news, shifts in strategies, and so on. In essence, make sure they feel part of the team delivering the course.
 
   * Keep emails to TAs concise and don’t send too many small details or too much to read. You want them to feel included, not overwhelmed.
 
