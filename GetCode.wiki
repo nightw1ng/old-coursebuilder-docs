@@ -10,12 +10,12 @@ Once you've downloaded the sample application, you load that code into a new App
 
 Activate the Launcher wherever it's available, that is, from the Desktop, the Dock, the Applications folder, Start -> Programs -> Google App Engine -> !GoogleAppEngineLauncher, and so on. 
 
-The first time you start the Launcher, you may see a dialog box asking you about symlinks
+The first time you start the Launcher, you may see a dialog box asking you about symbolic links
 
 <img src="https://www.corp.google.com/~vpg/no_crawl/cb/symlinks.png" />
 
 
-For App Engine to work, you must agree to set up symlinks.
+For App Engine to work, you must agree to set up symbolic links.
 
 For more information about working with App Engine, see [AppEngine Work with App Engine].
 
