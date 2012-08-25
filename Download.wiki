@@ -30,7 +30,7 @@ If you are not familiar with App Engine, read [https://developers.google.com/app
 
 Follow [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python this link] to download the Python App Engine SDK for your platform.
 
-  * *PC:* Run the downloaded installer .msi by doubleclicking. Follow all on-screen instructions. Once completed, you should find the App Engine Launcher icon on your desktop or be able to find it via Start -> Programs. There is no equivalent set of command-line tools for PCs, so there you must use the Launcher.
+  * *PC:* Run the downloaded installer .msi by double clicking. Follow all on-screen instructions. Once completed, you should find the App Engine Launcher icon on your desktop or be able to find it via Start -> Programs. There is no equivalent set of command-line tools for PCs, so there you must use the Launcher.
   * *Mac:* Open the downloaded .dmg file and drag the App Engine icon into the Applications folder. Optionally,  open the Applications folder and drag the App Engine icon to your Dock so that you can start the App Engine Launcher more conveniently. Putting App Engine in the Applications folder also installs the command-line tools.
   * *Linux or other POSIX-compliant system:* After downloading the .zip file, go to the directory where you want to install App Engine. When you unzip the archive, it creates a subdirectory named google_appengine. Add that directory to your shell's path so that it can find the command-line tools when you need them.
 
