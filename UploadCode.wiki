@@ -1,4 +1,3 @@
-
 #summary How to deploy your course code to Google production servers.
 
 <h1>Deploy Your App to Google </h1>
@@ -15,7 +14,7 @@ The first time you deploy your app, there are three steps:
   # [#Set_up_an_app-specific_password Set up an app-specific password.]
   # [#Upload_(or_deploy)_your_app Upload (or deploy) your app.]
 
-If you make changes and need to redeploy your app, you do not need to repeat the first step. You may need to repeat the second step. (Details below.)
+If you make changes and need to redeploy parts of your app, follow the instructions in [#Modify_an_app_in_production Modify an app in production].
 
 == Register your app (course) with Google ==
 
@@ -86,13 +85,11 @@ where _*{{{APP_ID}}}*_ is the app ID you registered for your app.
 
 == Modify an app in production ==
 
-<font color=red><<TODO working here>></font>
-
 Once you deploy your app, modifying it in production is a little more complicated than modifying it on your development server.  However, sometimes you need to do so.
 
 === Modify !JavaScript or HTML files ===
 
-You modify the content of assessments or activities (files in {{{assets/js/}}}) or the look of the various pages of your course (files in {{{views/}}} in the same way that you uploaded those to production in the first place. That is, from a shell:
+You upload modifications to the content of assessments or activities (files in {{{assets/js/}}}) or the look of the various pages of your course (files in {{{views/}}}) in the same way that you uploaded those to production in the first place. That is, from a shell:
 
   {{{$ cd }}}_*{{{APPPATH}}}*_<br>
   {{{$ appcfg.py update .}}}
@@ -103,26 +100,20 @@ You are asked to supply your credentials. Supply your username and the app-speci
 
 === Modify CSV files ===
 
-Modifying the contents of the home page ({{{data/unit.csv}}}) or the definition of the lessons ({{{data/lesson.csv}}}) is trickier. Although it is several steps, the simplest way to do this and be certain that what you get is the same as what is on your development server is to clear out all of the existing unit and lesson data and then upload the data anew. To do so:
+Uploading modifications to the contents of the home page ({{{data/unit.csv}}}) or the definition of the lessons ({{{data/lesson.csv}}}) is trickier. Although it is several steps, the simplest way to do this and be certain that what you get is the same as what is on your development server is to clear out all of the existing data and then upload the data anew. 
+
+If you want to change the lesson data, do the following:
 
   # From a web  browser, navigate to https://appengine.google.com/.
   # On the *My Applications* page, click on the name of your app. The dashboard for your app appears:<br> <img src="https://www.corp.google.com/~vpg/no_crawl/cb/prod-dashboard.png" /> 
-  # In the left navigation, click on *Datastore Admin*. A screen appears asking if you want to enable datastore administration options:<br> <img src="https://www.corp.google.com/~vpg/no_crawl/cb/datastore-enable.png" /> 
+  # In the left navigation, click on *Datastore Admin*. The first time you do this, a screen appears asking if you want to enable datastore administration options:<br> <img src="https://www.corp.google.com/~vpg/no_crawl/cb/datastore-enable.png" /> 
   # Click on *Enable Datastore Admin*. <br>You only need to do this step once.
   # The *Datastore Admin* page for your app appears. It's main area looks similar to the following:<br> <img src="https://www.corp.google.com/~vpg/no_crawl/cb/datastore-admin.png" /> 
   # Choose the check box in the *Lesson* row.
   # Click on *Delete Entities*.
-  # A confirmation page appears. Click on *Delete Entities*. <br>The *Delete Job Status* page appears. <br> <img src="https://www.corp.google.com/~vpg/no_crawl/cb/delete-job-status.png" /> <br>Deleting the entities for your job should be very fast. The easiest way to check when the entities are gone is to return to the *Datastore Admin* page.
-  # From the *Datastore Admin* page, choose the check box in the *Unit* row.
-  # Click on *Delete Entities*.
-  # A confirmation page appears. Click on *Delete Entities*.
+  # A confirmation page appears. Click on *Delete Entities*. <br>The *Delete Job Status* page appears. <br> <img src="https://www.corp.google.com/~vpg/no_crawl/cb/delete-job-status.png" /> <br>Deleting the entities for your job should be very fast. The easiest way to check when the entities are gone is to return to the *Datastore Admin* page. Now all of the old lesson data is gone. 
+  # To load the new data, repeat the steps you did to upload the data initially. From a Unix shell:<br>{{{$ cd }}}_*{{{APPPATH}}}*_{{{/data}}}<br>{{{$ appcfg.py upload_data --url=http://}}}_*{{{APP_ID}}}*_{{{.appspot.com/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}}<br>where _*{{{APP_ID}}}*_ is the app ID you registered for your app.<br>You are asked to supply your credentials. Supply your username and the app-specific password you created.  If you don't remember the app-specific password, [#Set_up_an_app-specific_password create another one].
 
-Now all of the old data is gone. To load the new data, repeat the steps you did to upload the data initially. From a Unix shell:
+Uploading new unit data uses the same procedure. Of course, for unit data, on the *Datastore Admin* page, you delete the *Unit* data. When you reload data, the {{{appcfg.py}}} command is:
 
- {{{$ cd }}}_*{{{APPPATH}}}*_{{{/data}}}<br>
   {{{$ appcfg.py upload_data --url=http://}}}_*{{{APP_ID}}}*_{{{.appspot.com/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br>
-  {{{$ appcfg.py upload_data --url=http://}}}_*{{{APP_ID}}}*_{{{.appspot.com/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}}
-
-where _*{{{APP_ID}}}*_ is the app ID you registered for your app.
-
-You are asked to supply your credentials. Supply your username and the app-specific password you created.  If you don't remember the app-specific password, [#Set_up_an_app-specific_password create another one].
