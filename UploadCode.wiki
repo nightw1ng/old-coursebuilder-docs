@@ -112,8 +112,10 @@ If you want to change the lesson data, do the following:
   # Choose the check box in the *Lesson* row.
   # Click on *Delete Entities*.
   # A confirmation page appears. Click on *Delete Entities*. <br>The *Delete Job Status* page appears. <br> <img src="https://www.corp.google.com/~vpg/no_crawl/cb/delete-job-status.png" /> <br>Deleting the entities for your job should be very fast. The easiest way to check when the entities are gone is to return to the *Datastore Admin* page. Now all of the old lesson data is gone. 
-  # To load the new data, repeat the steps you did to upload the data initially. From a Unix shell:<br>{{{$ cd }}}_*{{{APPPATH}}}*_{{{/data}}}<br>{{{$ appcfg.py upload_data --url=http://}}}_*{{{APP_ID}}}*_{{{.appspot.com/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}}<br>where _*{{{APP_ID}}}*_ is the app ID you registered for your app.<br>You are asked to supply your credentials. Supply your username and the app-specific password you created.  If you don't remember the app-specific password, [#Set_up_an_app-specific_password create another one].
+  # To load the new data, repeat the steps you did to upload the data initially. From a Unix shell:<br><br>{{{$ cd }}}_*{{{APPPATH}}}*_{{{/data}}}<br>{{{$ appcfg.py upload_data --url=http://}}}_*{{{APP_ID}}}*_{{{.appspot.com/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}}<br><br>where _*{{{APP_ID}}}*_ is the app ID you registered for your app. You are asked to supply your credentials. Supply your username and the app-specific password you created.  If you don't remember the app-specific password, [#Set_up_an_app-specific_password create another one].
 
-Uploading new unit data uses the same procedure. Of course, for unit data, on the *Datastore Admin* page, you delete the *Unit* data. When you reload data, the {{{appcfg.py}}} command is:
+All done! Uploading new unit data uses the same procedure. Of course, for unit data, on the *Datastore Admin* page, you delete the *Unit* data. When you reload data, the {{{appcfg.py}}} command is:
 
-  {{{$ appcfg.py upload_data --url=http://}}}_*{{{APP_ID}}}*_{{{.appspot.com/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br>
+  {{{$ appcfg.py upload_data --url=http://}}}_*{{{APP_ID}}}*_{{{.appspot.com/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}
+
+where _*{{{APP_ID}}}*_ is the app ID you registered for your app. 
