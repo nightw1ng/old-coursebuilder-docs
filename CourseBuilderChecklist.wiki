@@ -45,7 +45,7 @@ In these steps, all pathnames are relative to the directory containing your appl
     # Download the [Download#Download_Course_Builder_sample_application Course Builder sample application].
   # [GetCode Run the sample app]
     # Pick a name for your app. Make it the value of {{{application}}} in {{{app.yaml}}}.
-    # [GetCode#5._Add_the_app_to_App_Engine Load the app].
+    # [GetCode#4._Add_the_app_to_App_Engine Load the app].
     # [GetCode#7._Upload_the_unit_and_lesson_data Upload sample data] to the app.
     # [ExplorePS Explore the sample app] and [ExploreCode its  code].
 
