@@ -10,7 +10,7 @@ Once you deploy your app, it's more complicated to make changes to it than in de
 
 The first time you deploy your app, there are three steps:
 
-  # [#Register_your_app_with_Google Register your app with Google.]
+  # [#Register_your_app_(course)_with_Google Register your app with Google.]
   # [#Set_up_an_app-specific_password Set up an app-specific password.]
   # [#Upload_(or_deploy)_your_app Upload (or deploy) your app.]
 
