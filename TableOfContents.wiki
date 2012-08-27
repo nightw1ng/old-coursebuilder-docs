@@ -43,4 +43,4 @@
     * [ExportingCourseData Export Course Data]
   * [Showcase Course Showcase]
 
-|| [https://groups.google.com/forum/?fromgroups#!forum/course-builder Discussion forum] ||
+|| [https://groups.google.com/forum/?fromgroups#!forum/course-builder-forum Discussion forum] ||
