@@ -16,7 +16,7 @@ _*Everybody working to get the course ready. Include the TAs themselves!*_
 
 ==The Student Experience==
 
-<img src="https://www.corp.google.com/~vpg/no_crawl/cb/userflow.png" height="279" width="418">
+<img src="http://gcb-x-03141590.googlecode.com/git/images/userflow.png" height="279" width="418">
 
 ==What distinguishes this course from a traditional online course?==
 
