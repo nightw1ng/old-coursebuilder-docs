@@ -69,6 +69,7 @@ In these steps, all pathnames are relative to the directory containing your appl
     # When you change {{{unit.csv}}}, you must also [AppEngine#Modify_your_app_and_see_the_effects reload all data].
   # [CreateLessons Create course lessons.]
     # Change the look of lesson pages at {{{views/unit.html}}}.
+    # Actually create the lesson content -- record the videos, write the objectives, and write the text versions of the lessons.
     # Change the [CreateLessons#Lesson_content lesson content] in {{{data/lesson.csv}}}. 
     # When you change {{{lesson.csv}}}, you must also [AppEngine#Modify_your_app_and_see_the_effects reload all data].
   # [CreateActivities Create Activities.]
@@ -93,5 +94,3 @@ In these steps, all pathnames are relative to the directory containing your appl
   # [ReachAndEngagementMetrics Capture reach & engagement data.]
 
 == D. [FourPilot Pilot with your target audience.] ==
-
-|| [CourseBuilder Ask questions here] ||
