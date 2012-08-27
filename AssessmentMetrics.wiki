@@ -9,3 +9,5 @@ Student assessments measure student skill level and improvement in ability. Cour
   * What percentage of students had a score higher than 70% on questions around a particular topic?
 
 To get the assessment information, follow the instructions in [ExportingCourseData ExportCourseData] to download the *Student* data as a CSV file.
+
+For an example of how to use student assessments and reach and engagement data to evaluate your course's effectiveness, see [AnalyticsEDU Assessment and Reach Data for EDU].
