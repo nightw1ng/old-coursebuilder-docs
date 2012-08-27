@@ -4,7 +4,7 @@
 
 == Introduction ==
 
-This page describes the course data stored by Course Builder and how to export your data into text files in [http://en.wikipedia.org/wiki/Comma-separated_values CSV] format. We’ll start with an overview of the Course Builder data, followed by the steps for exporting the data. Before getting started, make sure you’ve downloaded and installed the Python App Engine SDK and that you have Python 2.7 on your system. (For information on downloading and installing the Python App Engine SDK, see [AppEngine Develop with App Engine].)
+This page describes the student assessment and course data stored by Course Builder and how to export your data into text files in [http://en.wikipedia.org/wiki/Comma-separated_values CSV] format. We’ll start with an overview of the Course Builder data, followed by the steps for exporting the data. Before getting started, make sure you’ve downloaded and installed the Python App Engine SDK and that you have Python 2.7 on your system. (For information on downloading and installing the Python App Engine SDK, see [AppEngine Develop with App Engine].)
 
 == Course Builder data overview ==
 
