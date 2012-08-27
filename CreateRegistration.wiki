@@ -8,7 +8,7 @@
 
 When prospective students first visit your course, the app displays a registration page:
 
-https://www.corp.google.com/~vpg/no_crawl/cb/registration-parts.png
+http://gcb-x-03141590.googlecode.com/git/images/registration-parts.png
 
 === What happens from this page ===
 
@@ -38,7 +38,7 @@ The app uses two files to render this page:
 
 Once a prospective student submits the registration form, the app displays the registration confirmation page:
 
-https://www.corp.google.com/~vpg/no_crawl/cb/registrationconfirmation-parts.png
+http://gcb-x-03141590.googlecode.com/git/images/registrationconfirmation-parts.png
 
 This page displays one message if the student is registered. It displays another message if the class is full. You can change either of these messages.
 
