@@ -6,7 +6,7 @@
 
 At certain parts throughout the course, students take assessments to see how they're doing:
 
-<img src="https://www.corp.google.com/~vpg/no_crawl/cb/assessment-zig.png" height=265 width=420 />
+<img src="http://gcb-x-03141590.googlecode.com/git/images/assessment-zig.png" height=265 width=420 />
 
 This page talks about the mechanics of creating an assessment. For information on what to put in your assessment, see [TwoDevelop#Decide_what_you_want_to_test_in_your_assessments,_both_graded_an Develop the Content without Technology].
 
@@ -71,13 +71,13 @@ The code simply renders the HTML you enter as the first thing on the assessment 
 
 The bottom of an assessment page always includes a *Save Answers* button. When students submit an assessment by clicking on this button, they see a page such as the following:
 
-https://www.corp.google.com/~vpg/no_crawl/cb/assessment-submit.png
+http://gcb-x-03141590.googlecode.com/git/images/assessment-submit.png
 
 By default, this page acknowledges that they submitted the assessment and gives them information about next steps. You can change the messages for different assessments by changing the file at {{{views/test_confirmation.html}}}.
 
 Notice that this page does not tell students how they did on the assessment or give any feedback about what they might want to study some more. You can give students the option of checking their answers before submitting an assessment. If you set the {{{disableCheckAnswers}}} attribute of the {{{assessment}}} object to {{{FALSE}}} (or omit this attribute), then the assessment page has an additional *Check your Answers* button and an area for feedback, as shown here:
 
-https://www.corp.google.com/~vpg/no_crawl/cb/assessment-check.png 
+http://gcb-x-03141590.googlecode.com/git/images/assessment-check.png 
 
 The feedback contains the student's score. If the student doesn't answer all questions correctly, the code displays which lessons the student should review to improve their score. How you specify this information is discussed in the next section.
 
