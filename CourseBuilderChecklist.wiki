@@ -65,7 +65,7 @@ In these steps, all pathnames are relative to the directory containing your appl
     # (Optionally) Change the maximum number of students who can enroll in {{{controllers/utils.py}}}.
   # [CreateHomePage Modify the course home page].
     # In {{{views/course.html}}}, change the course name, course description, and information about the instructor. Also, add an image for the home page .
-    # In {{{data/unit.csv}}}, [CreateHomePage#List_of_units change what's listed on the home page]. 
+    # In {{{data/unit.csv}}}, [CreateHomePage#Home_page_content change what's listed on the home page]. 
     # When you change {{{unit.csv}}}, you must also [AppEngine#Modify_your_app_and_see_the_effects reload all data].
   # [CreateLessons Create course lessons.]
     # Change the look of lesson pages at {{{views/unit.html}}}.
