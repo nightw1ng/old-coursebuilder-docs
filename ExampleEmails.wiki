@@ -98,4 +98,4 @@ You can print out the attached certificate and hang it on your wall.  We hope yo
 Cheers,<br>
 Power Searching with Google course staff
 
-<img src="https://www.corp.google.com/~vpg/no_crawl/cb/certificate.png" height="246" width="320 />
+<img src="http://gcb-x-03141590.googlecode.com/git/images/certificate.png" height="246" width="320 />
