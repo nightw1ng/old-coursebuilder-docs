@@ -35,12 +35,12 @@
     * [CommunityToolsComparison Tools Comparison]
   * [MeasureEfficacy Evaluate Course Efficacy]
     * [AssessmentMetrics Student Assessments]
-    * [HappinessMetrics Student Happiness]
-    * [ExampleSurvey Example Post-Course Survey]
     * [ReachAndEngagementMetrics Reach & Engagement]
     * [ExampleReachEngagementMetrics Example Reach & Engagement Data]
+    * [HappinessMetrics Student Happiness]
+    * [ExampleSurvey Example Post-Course Survey]
+    * [AnalyticsForEdu Combine Assessment & Reach Data]
     * [ExportingCourseData Export Course Data]
-    * [AnalyticsForEdu Analytics for EDU]
   * [Showcase Course Showcase]
 
 || [https://groups.google.com/forum/?fromgroups#!forum/course-builder Discussion forum] ||
