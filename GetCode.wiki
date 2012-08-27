@@ -97,7 +97,7 @@ To learn how to upload data again after making changes, see [AppEngine#Modify_yo
 Once your development server is running, you access it through a web browser.
 
 From the Launcher:
-  # Click *Browser*.<br>A login window appears.
+  # Click *Browse*.<br>A login window appears.
   # Accept the test email address.
   # Click on *Login*.
 
