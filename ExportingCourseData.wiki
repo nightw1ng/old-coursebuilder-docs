@@ -14,7 +14,7 @@ The following table describes the data Course Builder stores for your course. Co
 || *Name* || *Type* || *Description* ||
 || {{{midterm_score}}} || INTEGER || The student’s midterm score. A numeric value or empty for no score. || 
 || {{{final_answer}}} || TEXT || The selection of answers for each of the final exam questions. It is stored as a 2 dimensional array of strings. || 
-|| {{{enrolled_date}}} || DATETIME || The date and timestamp when student enrolled for the class. || 
+|| {{{enrolled_date}}} || DATETIME || The date and timestamp when student enrolled in the class. || 
 || {{{final_score}}} || INTEGER || The student’s final score. A numeric value or empty for no score. || 
 || {{{precourse_answer}}} ||  TEXT || The selection of answers for each of the precourse survey questions. It is stored as a 2-dimensional array of strings. || 
 || {{{overall_score}}} || INTEGER || The student’s overall score. A numeric value or empty for no score. || 
@@ -23,9 +23,9 @@ The following table describes the data Course Builder stores for your course. Co
 
 *Unit* - Data on the units offered in the course.
 || *Name* || *Type* || *Description* ||
-|| {{{id}}} || INTEGER || An integer representing this unit. These start at 1 and go in order. || 
+|| {{{id}}} || INTEGER || An integer representing this unit. || 
 || {{{type}}} || STRING || The type of unit being offered. A string value containing the type ‘A’, ‘U’ or ‘O’ for assessment, Unit or Other. || 
-|| {{{unit_id}}} || STRING || A string id for this unit. Its value depends on whether this item is assessment, unit or something else. || 
+|| {{{unit_id}}} || STRING || A string id for this unit. Its value depends on if this item is assessment, unit or something else. || 
 || {{{title}}} || STRING || A string value containing the title of the unit. || 
 || {{{release_date}}} || STRING || The date when this unit will be made available. A string value containing the date. || 
 || {{{now_available}}} || STRING || A Boolean value of True or False representing whether or no students can access this unit. || 
@@ -43,7 +43,7 @@ The following table describes the data Course Builder stores for your course. Co
 
 == Export your class data ==
 
-The Course Builder application stores data in App Engine’s [https://developers.google.com/appengine/docs/python/datastore/structuring_for_strong_consistency High Replication] datastore. You download course data using the App Engine bulk loader tool, which is included with the Python App Engine SDK for your platform. (For information on downloading and installing the Python App Engine SDK, see [AppEngine Develop with App Engine].) We’ll use CSV format for this example so you can upload data into a spreadsheet or into Fusion Tables for viewing and analysis.
+The Course Builder application stores data in App Engine’s [https://developers.google.com/appengine/docs/python/datastore/structuring_for_strong_consistency High Replication datastore]. You download course data using the App Engine bulk loader tool, which is included with the Python App Engine SDK for your platform. (For information on downloading and installing the Python App Engine SDK, see [AppEngine Develop with App Engine].) We’ll use CSV format for this example so you can upload data into a spreadsheet or into Fusion Tables for viewing and analysis.
 
 Follow these steps to export Course Builder data.
 
@@ -121,13 +121,14 @@ transformers:
 }}}
 
  # Create an application-specific password for your class (save/remember the password). For help, see [http://support.google.com/accounts/bin/answer.py?hl=en&answer=185833 Signing in using application-specific passwords].
- # Open the your platforms terminal application, change to your data directory, and run the following command with the appropriate parameters; type your application-specific password at the prompt. 
+ # Open the your platforms terminal application, change to your data directory, and run the following command with the appropriate parameters (see examples below); type your application-specific password at the prompt. 
 {{{
 # email = Your Google email address.
 # config_file = The bulkloader.yaml file, with the relative location from the current directory.
 # filename = The name of your exported data file.
 # kind = The name of the model to export.
 # url = The URL for the server, followed with /remote_api. 
+#
 # Example commands for exporting all data.
 # $ appcfg.py download_data --email=molson@google.com --config_file=bulkloader.yaml --filename=student.csv --kind=Student --url=http://myclass.google.com/remote_api
 # $ appcfg.py download_data --email=molson@google.com --config_file=bulkloader.yaml --filename=unit.csv --kind=Unit --url=http://myclass.google.com/remote_api
