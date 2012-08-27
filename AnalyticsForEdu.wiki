@@ -1,24 +1,24 @@
 #summary Describes course data and how to export your course data.
 
-<h1>Google Analytics for EDU</h1>
+<h1>Assessment and Interaction Data for EDU</h1>
 <font color=red><<TODO This page is an early draft.>></font>
 
 == Introduction ==
 
-Metrics are anything you can measure to see the potential impact you have made with your course so you can have concrete information to guide future improvement of your course. There are two types of data you can get on your course: assessment data (Course Builder) and interaction data (Google Analytics).
+Metrics are anything you can measure to see the potential impact you have made with your course so you can have concrete information to guide future improvement of your course. There are two types of data you can get on your course: assessment data (from Course Builder) and interaction data (from Google Analytics).
 
 Assessment data are stored by Course Builder in App Engine’s High Replication datastore and includes pre-, mid-, and post-course assessment data, data on the units offered in the course, and data on the lessons offered in each unit. You can use this data to understand student skill levels and improvements in abilities. Interaction data (reach and engagement metrics) are tracked in Google Analytics. Interaction data (reach and engagement metrics) let you determine how many people you reached with the course, how engaged those people were, and how they interacted with the course pages. For information on Course Builder metrics, see [https://code.google.com/p/course-builder/wiki/ExportingCourseData Exporting Course Data], [https://code.google.com/p/course-builder/wiki/ReachAndEngagementMetrics Reach and Engagement], and [https://code.google.com/p/course-builder/wiki/ExampleReachEngagementMetrics Example Reach & Engagement].)
 
-This page walks you through a simple example of how to use metrics to understand the effectiveness of a course and how to use metrics to improve your course material. This example only touches the surface of what you can do with this data, but does illustrate how important metrics are to improving the quality of effectiveness of your courses. 
+This page walks you through a simple example of how to use metrics to understand the effectiveness of a course and improve your course materials. This example only touches the surface of what you can do with this data, but does illustrate how important metrics are to improving the quality of effectiveness of your courses. 
 
 == Determine the effectiveness of your courses ==
 
-Imagine you create a class and you want to understand if the material is too hard, too easy, and if the material meets your learning objectives. The class contains three pages of material, with an assessment at the end to determine how well students understand the material.
+Imagine you create a class and you want to understand if the material is too hard or too easy, and if the material meets your learning objectives. The class contains three pages of material, with an assessment at the end to determine how well students understood the material.
 
 https://www.corp.google.com/~omalley/cb/analytics_edu.png
 
 *Assessment Data and Google Analytics*
-|| Lesson Page || Question / Learning Objective || Google Analytics || 
+|| *Lesson Page* || *Question / Learning Objective* || *Google Analytics* || 
 || 1|| Question 1 assess if students understood LO1. 95% answered correctly, indicating most students met the objective.  ||  Time on page, in/outbound links, page views and unique  page views. ||
 || 2 || Question 2 assess if students understood LO2. 50% answered correctly, indicating 50% of students did not met the objective.  || Time on page,  page views and unique  page views, clicks on reference links, when did they return to the lesson (in/outbound links). ||
 || 3 || Question 3 assess if students understood LO3. 25% answered correctly, indicating 75% of students did not met the objective. ||  Time on page, in/outbound links,  page views and unique  page views. || 
@@ -26,18 +26,15 @@ https://www.corp.google.com/~omalley/cb/analytics_edu.png
 As you look at the assessment data, the following questions pop out:
 
  * Why was there a steep drop off in the assessment scores from questions 1-3?
- * How much time did students spend on each lesson and does that correlate with their score?
+ * How much time did students spend on each lesson and does that correlate with scores and the drop off?
  * What times/dates were my students interacting with the course?
- * Was the class enough for them to understand and answer the assessment or did they need to go elsewhere for supplementary material?
+ * Could they complete the class and answer the assessment questions with the material provided or did they need to go elsewhere for supplementary material?
 
-Looking at assessment data alone makes it difficult to understand where students had problems or how to improve the material. But, if you combine this data with the data gathered by Google Analytics you get a more complete picture of what was going on in the class. Here are some ways you can use Analytics to answer your questions.
+Looking at just the assessment data alone makes it difficult to understand where students had problems or how to improve the material. But, if you combine this data with the data gathered by Google Analytics you get a more complete picture of what was going on in the class. Here are some ways you can use Analytics to answer your questions.
 
-Let’s look at this data in more detail.
-
-Analytics can provide some insight into how a student engages with your material:
-
- * Time on page can show how long students are spending on each lesson and how that correlates with their assessment score. You might see times that do not align with your expectations (very short/long) which could suggest a need to have a discussion with your students as to why this is. You will see what time of day/day of the week your students are engaging with the material. You may wish to schedule your office hours around these times to support the students as they are working through the material.
- * You expect your students to progress through the course sequentially, but they may wish to jump back to another lesson or perhaps they need to look at external resources to help them understand. The in/outbound analytics will give you insight into how your students are moving through the material. You may use this information to refine the lessons to provide clarification or review.
+ * Time on page can show how long students are spending on each lesson and how that correlates with their assessment score. You might see times that do not align with your expectations (very short/long time on page) that could suggest a need to have a discussion with your students as to why this is. You will see what time of day/day of the week your students are engaging with the material. You may wish to schedule your office hours around these times to support the students as they are working through the material.
+ * You expect your students to progress through the course sequentially, but they may wish to jump back to another lesson or perhaps they need to look at external resources to help them understand. The in/outbound analytics give you insight into how your students are moving through the material. You may use this information to refine the lessons to provide clarification or review.
  * Are students coming back over and over to review, or are they viewing the materials at all? This information can be especially useful in a hybrid classroom where the online materials and the live class support each other. Page views give you this information along with how many people are returning.
+* Are students clicking on the reference links to support the in place class material or are they skipping over the links to the next page?
 
-These analytics when combined with the Course Builder assessment data are a powerful tool to determine how your students are learning in your classroom. This can help you prepare for discussions with your students to get more detail on why. While assessments can provide a snapshot of student understanding, Analytics can provide a continuum of interaction. Coupled with an active learning community, the classroom has a strong feedback mechanism for improving student understanding.
+These Analytics, when combined with the Course Builder assessment data, are a powerful tool to determine how your students are learning in your classroom. This data can help you prepare for discussions with your students and make changes to your material to improve your class. While assessments can provide a snapshot of student understanding, Analytics can provide a continuum of interaction. Coupled with an active learning community, the classroom has a strong feedback mechanism for improving student understanding.
