@@ -16,6 +16,3 @@ Our design process has four simple steps, which get iterated multiple times:
   * *[ThreeImplement Implement the course with technology.]*<br> The first iteration of the theoretical development is now done. Now, it’s time to "implement" it. During this phase, you write the text content of your lessons, create videos, and modify the Course Builder software to implement assessments and activities. You also set up your groups, organize online office hours, arrange for teaching assistants, and do all that other fun stuff.
 
   * *[FourPilot Pilot with your target audience.]*<br>  We strongly encourage you to pilot your course by having people go through the entire course before you release it to actual students. You may find, as we have, that a large percentage of your work comes after the first pilot, when you see how people actually interact with your material. Be sure to leave enough time to make the necessary changes you discover while piloting.
-
-
-|| [Coursebuilder Ask questions here] ||
