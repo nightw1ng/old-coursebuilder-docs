@@ -1,6 +1,5 @@
-#labels Featured
-
 #summary Checklist of all steps to create a course using Course Builder.
+#labels Featured
 
 <h1>Course Builder Checklist</h1>
 
@@ -62,7 +61,7 @@ In these steps, all pathnames are relative to the directory containing your appl
   # [CreateRegistration Modify the registration pages.]
     # Change the content at {{{views/register.html}}} to ask whatever registration questions you want.
     # If you change those questions, you must also change {{{RegisterHandler}}} in {{{controllers/utils.py}}}.
-    # Change the content at {{{views/confirmation.html}}} to include the correct discussion group and email list. (You must first create the lists; this is explained [#CommunitySetup later].
+    # Change the content at {{{views/confirmation.html}}} to include the correct discussion group and email list. (You must first create the lists; this is explained [#C.3. later].
     # (Optionally) Change the maximum number of students who can enroll in {{{controllers/utils.py}}}.
   # [CreateHomePage Modify the course home page].
     # In {{{views/course.html}}}, change the course name, course description, and information about the instructor. Also, add an image for the home page .
