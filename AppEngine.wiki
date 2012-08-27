@@ -12,6 +12,14 @@ This page discusses using App Engine in development. For information on working 
 
 *Note:* In the following, you'll see input and output from working in a shell. In these areas, new command lines start with {{{$}}} which you do not type. Lines that do not start with {{{$}}} are output from an earlier command.
 
+== Important: Quotas and billing ==
+
+<font color=red><<TODO It would be nice to have information about what Power Searching cost.>></font>
+
+Each App Engine application can consume a certain level of computing resources for free, controlled by a set of [https://developers.google.com/appengine/docs/quotas limits]. If you need resources above these free limits, you can switch to a paid app using Google Checkout to set a daily resource budget. When you convert to a paid app you will spend a minimum of $2.10/week. This allows you to purchase additional resources when needed. App Engine will always be free to get started, and after you've created a paid app, all usage up to the free limits will remain free.
+
+For more information, see [https://developers.google.com/appengine/docs/billing Billing and Budgeting Resources] and [https://developers.google.com/appengine/docs/quotas Quotas].
+
 == Download and install Python 2.7 ==
 
 Make sure you have Python 2.7 on your system. Visit the general Python 2.7 [http://python.org/download download page] to get the right version for you. (Python 2.7.3 was the latest at the time of this writing.)
