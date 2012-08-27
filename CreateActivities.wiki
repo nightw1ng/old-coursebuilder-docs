@@ -6,7 +6,7 @@
 
 Each unit may have  some number of activities. An activity is a set of questions related to a particular lesson within a unit:
 
-<img src="https://www.corp.google.com/~vpg/no_crawl/cb/activity.png" height=529 width=420 />
+<img src="http://gcb-x-03141590.googlecode.com/git/images/activity.png" height=529 width=420 />
 
 This page talks about the mechanics of creating an activity. For information on what to put in your activities, see [TwoDevelop#Decide_what_you_want_to_test_in_your_assessments,_both_graded_an Develop the Content without Technology].
 
@@ -118,7 +118,7 @@ Each element of the {{{choices}}} array is itself a 3-element array whose requir
 
 For this question, students see the following:
 
-https://www.corp.google.com/~vpg/no_crawl/cb/answer-multiple.png
+http://gcb-x-03141590.googlecode.com/git/images/answer-multiple.png
 
 Students see a list of possible answers, a button labelled *Check Answer*, and an empty text box. When they choose one of the answers and click on *Check Answer*, the code displays the string associated with that answer. In this example, if the user submits the answer {{{[yarnbombing news article]}}}, the code displays {{{Try again. This is a risky approach, since many news articles do not call themselves 'news articles' on the page.}}}
 
@@ -169,7 +169,7 @@ This code represents a single !JavaScript object with four required attributes:
 
 For this example, if students answer one question correctly, they see the following:
 
-https://www.corp.google.com/~vpg/no_crawl/cb/answer-group.png
+http://gcb-x-03141590.googlecode.com/git/images/answer-group.png
 
 ==== Free text ====
 
@@ -200,7 +200,7 @@ This code represents a single !JavaScript object with several attributes. The fi
 
   * {{{outputHeight}}} is the height of the text box to display. Optional; defaults to 50px (a single line of text).
 
-https://www.corp.google.com/~vpg/no_crawl/cb/answer-free.png
+http://gcb-x-03141590.googlecode.com/git/images/answer-free.png
 
 
 == Testing changes ==
