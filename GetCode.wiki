@@ -12,7 +12,7 @@ Activate the Launcher wherever it's available, that is, from the Desktop, the Do
 
 The first time you start the Launcher, you may see a dialog box asking you about symbolic links
 
-<img src="https://www.corp.google.com/~vpg/no_crawl/cb/symlinks.png" />
+<img src="http://gcb-x-03141590.googlecode.com/git/images/symlinks.png" />
 
 
 For App Engine to work, you must agree to set up symbolic links.
@@ -107,6 +107,6 @@ From the command-line:
 
 In either case, you should see the registration page for the sample app:
 
-<img src="https://www.corp.google.com/~vpg/no_crawl/cb/registration.png" />
+<img src="http://gcb-x-03141590.googlecode.com/git/images/registration.png" />
 
 *Next step:* [ExplorePS Explore the Sample App]
