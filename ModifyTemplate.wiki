@@ -31,7 +31,7 @@ You change this header and footer once for all registered pages.  In the file, e
 
 The numbers in the image show where this image appears on the screen. (The analytics code has no visible effect.)
 
-https://www.corp.google.com/~vpg/no_crawl/cb/base.png
+http://gcb-x-03141590.googlecode.com/git/images/base.png
 
 == Structure of an unregistered page ==
 
