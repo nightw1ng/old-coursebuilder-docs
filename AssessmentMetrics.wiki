@@ -8,4 +8,4 @@ Student assessments measure student skill level and improvement in ability. Cour
   * Did they improve? 
   * What percentage of students had a score higher than 70% on questions around a particular topic?
 
-To get the assessment information, <font color=red><<TODO Kevin, bless his heart, said he'd write up this part>></font>
+To get the assessment information, follow the instructions in [ExportingCourseData ExportCourseData] to download the *Student* data as a CSV file.
