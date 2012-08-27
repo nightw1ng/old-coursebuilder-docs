@@ -50,5 +50,3 @@ The flow for a student participating in the sample course is as follows (your co
 Throughout all of these steps, the student has opportunities to interact with other students and with the course instructors and teaching assistants. Moderated interactions are through email forums, Google+ pages, and regular email; students may set up their own unmoderated interactions by themselves.
 
 To see what the course looks like to the student during some of these steps, see [ExplorePS Explore the Sample App]. 
-
-|| [CourseBuilder Ask questions here] ||
