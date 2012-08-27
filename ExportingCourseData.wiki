@@ -1,7 +1,6 @@
 #summary Describes course data and how to export your course data.
 
 <h1>Export Course Data</h1>
-<font color=red><<TODO This page is an early draft.>></font>
 
 == Introduction ==
 
