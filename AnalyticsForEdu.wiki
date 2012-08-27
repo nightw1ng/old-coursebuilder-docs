@@ -16,7 +16,7 @@ If you [ReachAndEngagementMetrics set up your course] to do so, Google Analytics
 
 Imagine you create a course and you want to understand if the material is too hard or too easy, and if the material meets your learning objectives. The course contains three pages of material, with an assessment at the end to determine how well students understood the material.
 
-https://www.corp.google.com/~vpg/no_crawl/cb/analytics-edu.png
+http://gcb-x-03141590.googlecode.com/git/images/analytics-edu.png
 
 *Assessment Data and Google Analytics*
 || *Lesson Page* || *Question / Learning Objective* || *Google Analytics* || 
