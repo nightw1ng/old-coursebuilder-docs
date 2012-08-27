@@ -1,4 +1,4 @@
-<table width="95%">
+<table width="98%">
   <tr>
     <td width="70%" valign="top">
 = Welcome to Course Builder! =
