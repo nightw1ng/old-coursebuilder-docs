@@ -14,7 +14,7 @@ The different pages a student can see are as follows:
 
 When prospective students first visit your course, the app displays a registration page:
 
-https://www.corp.google.com/~vpg/no_crawl/cb/registration-parts.png
+http://gcb-x-03141590.googlecode.com/git/images/registration-parts.png
 
 This page consists of three areas:
   * The *header* contains 
@@ -29,7 +29,7 @@ The app uses two files to render this page:
 
 Once a prospective student submits the registration form, the app displays the registration confirmation page:
 
-https://www.corp.google.com/~vpg/no_crawl/cb/registrationconfirmation-parts.png
+http://gcb-x-03141590.googlecode.com/git/images/registrationconfirmation-parts.png
 
 This page consists of the same three areas as the previous page and uses these files to render the page:
   * {{{views/base_registration.html}}} defines the header and footer areas. Note this is the same file the registration form uses, guaranteeing that these two pages have the same general look and feel.
@@ -41,7 +41,7 @@ You need change these files to customize the app for your material. For details,
 
 After successful registration, the student can click on *Home* in the navigation bar of the confirmation page to be taken to the home page for your course.
 
-https://www.corp.google.com/~vpg/no_crawl/cb/homepage-parts.png
+http://gcb-x-03141590.googlecode.com/git/images/homepage-parts.png
 
 This page consists of three areas:
   * The *header* contains 
@@ -61,7 +61,7 @@ You need to change these files to customize the app for your material. For detai
 
 When students click on a unit from the home page, they go to the page for the first lesson of the unit they chose. From there, they can go to any other lesson or activity in that unit:
 
-https://www.corp.google.com/~vpg/no_crawl/cb/lesson-parts.png
+http://gcb-x-03141590.googlecode.com/git/images/lesson-parts.png
 
 This page consists of four areas:
   * The *header* contains 
@@ -89,7 +89,7 @@ You need to change these files to customize the app for your material. For detai
 
 Each unit may have  some number of activities. An activity page shares almost the same structure as a lesson page:
 
-https://www.corp.google.com/~vpg/no_crawl/cb/activity-parts.png
+http://gcb-x-03141590.googlecode.com/git/images/activity-parts.png
 
 The only difference between a lesson page and an activity page (at least in look and feel) is that instead of a video for the main content, an activity has a summary of important points from the preceding lesson and has a set of questions, with places to answer the questions and to check your answers or get hints.
 
@@ -104,7 +104,7 @@ You need to change these files to customize the app for your material. For detai
 
 At certain parts throughout the course, students take assessments to see how they're doing. An assessment page has the simplest form of all:
 
-https://www.corp.google.com/~vpg/no_crawl/cb/assessment-parts.png
+http://gcb-x-03141590.googlecode.com/git/images/assessment-parts.png
 
 This page consists of three areas:
   * The *header* is the same as for the home page.
@@ -122,7 +122,7 @@ You need to change these files to customize the app for your material. For detai
 
 At any time, the student may decide to visit your discussion forum for the course. The sample application does not contain a link to a valid forum, so its forum page looks as follows:
 
-https://www.corp.google.com/~vpg/no_crawl/cb/forum404-parts.png
+http://gcb-x-03141590.googlecode.com/git/images/forum404-parts.png
 
 This page consists of three areas:
   * The *header* is the same as for the home page.
