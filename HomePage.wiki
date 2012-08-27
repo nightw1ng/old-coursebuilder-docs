@@ -1,4 +1,4 @@
-<table width="100%">
+<table width="98%">
   <tr>
     <td width="70%" valign="top">
 = Welcome to Course Builder! =
@@ -28,7 +28,8 @@ Course Builder is our experimental first step in the world of online education. 
 </tr>
 </table>
     </td>
-    <td width="30%"  valign="top">
+    <td width="3%"> </td>
+    <td width="27%"  valign="top">
 <wiki:video url="http://www.youtube.com/watch?v=aVwwJScZ6Iw&feature=youtu.be" width="283" height="229" />
     </td>
   </tr>
