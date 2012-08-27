@@ -42,3 +42,5 @@
     * [ExportingCourseData Export Course Data]
     * [AnalyticsForEdu Analytics for EDU]
   * [Showcase Course Showcase]
+
+|| [https://groups.google.com/forum/?fromgroups#!forum/course-builder Discussion forum] ||
