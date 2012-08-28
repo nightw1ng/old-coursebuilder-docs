@@ -18,7 +18,11 @@ The current version of Course Builder is designed for technically-savvy course d
 
 Before you dive into creating your own course, consider reading [WhatsInACourse Parts of a Course Builder Course] and [CourseFlow Course Flow for Students] to get a quick overview of the terminology we use in talking about online courses you create using Course Builder.
 
-And now, the steps...
+== Costs ==
+
+When you use Course Builder, you create your course as an App Engine application. Each App Engine application can consume a certain level of computing resources for free, controlled by a set of limits. If you need resources above these free limits, you can switch to a paid app using Google Checkout to set a daily resource budget. For more information, see [https://code.google.com/p/course-builder/wiki/AppEngine#Important:_Quotas_and_billing Develop with App Engine].
+
+*And now, the steps...*
 
 == A. [OnePlan Plan for 30 minutes.] ==
   # Define the problem statement and high-level goal of the course.
