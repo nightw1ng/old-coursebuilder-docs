@@ -29,7 +29,7 @@ The file {{{app.yaml}}} is the configuration file for your App Engine app. Befor
 Pick a single word as an app name. It's best if you keep all the letters of the app name in lowercase and select a directory that does not have a space and does not have upper case characters in it. See [UploadCode#Register_your_app_(course)_with_Google Register your app with Google] for restrictions on naming.
 
 *Note:* During development, you can give your app any name you want. However, when you release your app to production, as described in [UploadCode#Register_your_app_(course)_with_Google Register your app with Google], you name your production app once and can never reuse that name. 
-  
+
 Later, if you decide to customize your course, you may need more information on configuration. If you do, see the [https://developers.google.com/appengine/docs/python/config/appconfig#Required_Elements official documentation].
 
 == 3. Start the App Engine Launcher == 
