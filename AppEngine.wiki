@@ -10,8 +10,6 @@ This page discusses using App Engine in development. For information on working 
 
 <wiki:toc />
 
-*Note:* In the following, you'll see input and output from working in a shell. In these areas, new command lines start with {{{$}}} which you do not type. Lines that do not start with {{{$}}} are output from an earlier command.
-
 == Important: Quotas and billing ==
 
 Each App Engine application can consume a certain level of computing resources for free, controlled by a set of [https://developers.google.com/appengine/docs/quotas limits]. If you need resources above these free limits, you can switch to a paid app using Google Checkout to set a daily resource budget. When you convert to a paid app you will spend a minimum of $2.10/week. This allows you to purchase additional resources when needed. App Engine will always be free to get started, and after you've created a paid app, all usage up to the free limits will remain free.
@@ -27,29 +25,34 @@ Make sure you have Python 2.7 on your system. To find out if you do...
 ==== Check on Mac or Unix ====
 On Mac or Unix systems, open a Unix shell window and type
 
-  {{{$ which python}}}
+  {{{which python}}}
 
 If Python 2.7 is installed, you should see something similar to one of the following:
 
-  {{{/Library/Frameworks/Python.framework/Versions/2.7/bin/python}}}
-  {{{/usr/local/bin/python}}}
+  <font color=green> {{{/Library/Frameworks/Python.framework/Versions/2.7/bin/python}}} </font><br>
+  <font color=green> {{{/usr/local/bin/python}}} </font>
 
 The first of these indicates the Python version. The second does not. In that case, you need to check to see if you have the correct version of Python, with the following command:
 
-  {{{$ python -V}}}
+  {{{python -V}}}
+
+The output of this command is similar to the following:
+
+  <font color=green> {{{Python 2.7.3}}} </font>
 
 ==== Check on Windows ====
+
 On Windows, open a *Command Prompt* and type
   {{{python}}}
 
 If Python is installed, you should see something similar to:
-  {{{Python 2.6.4 (r264:75708, Oct 26 2009, 07:36:50) [MSC v.1500 64 bit (AMD64)] on win32}}}<br>
-  {{{Type "help", "copyright", "credits" or "license" for further information.}}}<br>
-  {{{>>>}}}
+  <font color=green> {{{Python 2.6.4 (r264:75708, Oct 26 2009, 07:36:50) [MSC v.1500 64 bit (AMD64)] on win32}}} </font><br>
+  <font color=green> {{{Type "help", "copyright", "credits" or "license" for further information.}}} </font><br>
+  <font color=green> {{{>>>}}} </font>
 
 This starts the Python interpreter and indicates the version. If Python is not installed, you see:
-  {{{'python' is not recognized as an internal or external command,}}}<br>
-  {{{operable program or batch file.}}}
+  <font color=green> {{{'python' is not recognized as an internal or external command,}}} </font><br>
+  <font color=green> {{{operable program or batch file.}}} </font>
 
 ==== Getting Python ====
 
@@ -80,60 +83,58 @@ Once the icon to the left of the app name is green, your development server is r
 
 Alternatively, because the command-line version has more options, you may wish to run the development server from your Unix command-line shell. 
 
-=== From a shell ===
+=== From a shell or command prompt ===
 
-Open a Unix command-line shell. In the shell:
+Open a Unix command-line shell (Mac or Unix) or a Command Prompt (Windows). In the window:
 
-  {{{$ cd }}}_*{{{APPPATH}}}*_<br>
-  {{{$ dev_appserver.py . &}}}
+  {{{cd }}}_*{{{APPPATH}}}*_<br>
+  {{{dev_appserver.py .}}}
 
 where _*{{{APPPATH}}}*_ is the directory containing your app. As the command runs, you may see some warnings you can ignore and questions you must answer.
 
 Once the app is set up, you see a URL reference to the hostname and port you use to connect to your app from a web browser. It defaults to {{{http://localhost:8080}}}.
 
-The {{{&}}} at the end of the {{{dev_appserver.py}}} command tells Unix to run this command in the background. That means that while your development server runs you can continue to use that shell for other operations. If you do not see the shell prompt, press enter.
-
-=== From a shell, to enable remote access ===
+=== From a shell or command prompt, to enable remote access ===
 
 By default, your app is only available from the machine on which you start it. To get access to your development server from another machine on the network, you need to request this through the command line. Start your development server with this command:
 
-  {{{$ cd }}}_*{{{APPPATH}}}*_<br>
-  {{{$ dev_appserver.py . -a 0.0.0.0 &}}}
+  {{{cd }}}_*{{{APPPATH}}}*_<br>
+  {{{dev_appserver.py . -a 0.0.0.0 &}}}
 
-where _*{{{APPPATH}}}*_ is the directory containing your app. (The {{{&}}} has this command run in the background.)
+where _*{{{APPPATH}}}*_ is the directory containing your app.
 
-=== From a shell, to clear lesson and unit data ===
+=== From a shell or command prompt, to clear lesson and unit data ===
 
 Before you can put new or changed data into your data store, you must clear out the data that is already there. This is only necessary when you change either {{{data/lesson.csv}}} or {{{data/unit.csv}}}.
 
-From a Unix shell simply start your development server with an extra argument:
+From a Unix shell or command prompt simply start your development server with an extra argument:
 
-  {{{$ cd }}}_*{{{APPPATH}}}*_<br>
-  {{{$ dev_appserver.py --clear_datastore . &}}}
+  {{{cd }}}_*{{{APPPATH}}}*_<br>
+  {{{dev_appserver.py --clear_datastore .}}}
 
-where _*{{{APPPATH}}}*_ is the directory containing your app.  (The {{{&}}} has this command run in the background.)
+where _*{{{APPPATH}}}*_ is the directory containing your app.
 
 == Stop your development server ==
 
 === From the Launcher ===
-If you started your devlopment server from the Launcher, you can stop it there:
+If you started your development server from the Launcher, you can stop it there:
 
   # Select your app. 
   # When it's highlighted, click the *Stop* button to start the server (for that app). 
 
 Once the icon to the left of the app name is gray, your development server is stopped.
 
-=== From a shell ===
+=== From a shell or command prompt ===
 If you started your development server from the command line, you can stop it there:
 
 Use the {{{ps}}} command to find the process number associated with your server and then to kill that server. 
 
-  {{{$ ps x | grep dev_appserver}}}<br>
-  {{{PID TTY TIME CMD}}}<br>
-  {{{25603 ttys000    0:00.07 -bash}}}<br>
-  {{{25993 ttys000    0:00.71 /Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python /usr/local/bin/dev_appserver.py .}}}<br>
-  <br>
-  {{{$ kill 25993}}}
+  {{{ps x | grep dev_appserver}}}<br><br>
+  <font color=green> {{{PID TTY TIME CMD}}} </font><br>
+  <font color=green> {{{25603 ttys000    0:00.07 -bash}}} </font><br>
+  <font color=green> {{{25993 ttys000    0:00.71 /Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python /usr/local/bin/dev_appserver.py .}}} </font><br>
+  <br><br>
+  {{{kill 25993}}}
 
 == View the App Engine Admin Console ==
 
@@ -170,28 +171,32 @@ To clear and reload all data,  you need to stop your development server, restart
 
 1a. If you're running your server from the Launcher:
 
-  {{{$ ps x | grep Launcher       # Find the Launcher's process number}}}<br>
-  {{{25677   ??  S      0:00.50 /Applications/GoogleAppEngineLauncher.app/Contents/MacOS/GoogleAppEngineLauncher -psn_0_499834}}}<br>
-  {{{28161 s000  U+     0:00.00 grep Launcher}}}<br>
+  {{{ps x | grep Launcher       # Find the Launcher's process number}}}<br><br>
+  <font color=green> {{{25677   ??  S      0:00.50 /Applications/GoogleAppEngineLauncher.app/Contents/MacOS/GoogleAppEngineLauncher -psn_0_499834}}} </font><br>
+  <font color=green> {{{28161 s000  U+     0:00.00 grep Launcher}}} </font><br>
   <br>
-  {{{$ kill 25677}}}
+  {{{kill 25677}}}
 
 1b. If you're running your  server from the shell:
 
-  {{{$ ps x | grep dev_appserver   # Find the process number}}}<br>
-  {{{30849 s000  S      0:00.85 /Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python /usr/local/bin/dev_appserver.py .}}}<br>
-  {{{30856 s000  R+     0:00.01 grep dev_appserver}}}<br>
+  {{{ps x | grep dev_appserver   # Find the process number}}}<br><br>
+  <font color=green> {{{30849 s000  S      0:00.85 /Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python /usr/local/bin/dev_appserver.py .}}} </font><br>
+  <font color=green> {{{30856 s000  R+     0:00.01 grep dev_appserver}}} </font><br>
   <br>
-  {{{$ kill 30849}}}
+  {{{kill 30849}}}
 
-2. Start your development server from the command line, clearing out the old data and reloading the changed data:
+2. Start your development server from the command line, clearing out the old data:
 
-  {{{$ cd }}}_*{{{APPPATH}}}*_<br>
-  {{{$ dev_appserver.py --clear_datastore . &}}}<br>
-  <br>
-  {{{$ cd data}}}<br>
-  {{{$ appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br>
-  {{{$ appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}}
+  {{{cd }}}_*{{{APPPATH}}}*_<br>
+  {{{dev_appserver.py --clear_datastore .}}}
+
+where _*{{{APPPATH}}}*_ is the directory containing your app.
+
+3. Start another command line and reload the changed data: 
+
+  {{{cd }}}_*{{{APPPATH}}}*_{{{/data}}}<br>
+  {{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br>
+  {{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}}
 
 where _*{{{APPPATH}}}*_ is the directory containing your app and _*{{{PORT}}}*_ is your app's port number. You will be asked for your credentials (Google user name and password) twice, once for loading each data file.
 
@@ -227,7 +232,7 @@ In this situation, you need to manually specify the path for Python 2.7. To do s
 
 When you enter your credentials, you may get the following error:
 
-  {{{urllib2.URLError: <urlopen error [Errno 61] Connection refused>}}}
+  <font color=green> {{{urllib2.URLError: <urlopen error [Errno 61] Connection refused>}}} </font>
 
 If you do, then you have forgotten to start your development server. 
 
