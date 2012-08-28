@@ -2,7 +2,7 @@
 
 <h1>Develop with App Engine</h1>
 
-If you are not familiar with App Engine, read [https://developers.google.com/appengine/docs/whatisgoogleappengine What is Google App Engine?].
+If you are unfamiliar with App Engine, but know something about cloud computing, read [https://developers.google.com/appengine/docs/whatisgoogleappengine What is Google App Engine?] If you're completely new to cloud computing as well, a more user-friendly introduction to the cloud and App Engine can be found in this [https://developers.google.com/academy/apis/cloud/appengine/intro/ Introduction to Google App Engine].
 
 You do not need to be an App Engine expert to work with Course Builder. There are just a few things you should be familiar with while developing your course. Much of this is discussed on other pages. We summarize it  here.
 
@@ -17,6 +17,8 @@ This page discusses using App Engine in development. For information on working 
 Each App Engine application can consume a certain level of computing resources for free, controlled by a set of [https://developers.google.com/appengine/docs/quotas limits]. If you need resources above these free limits, you can switch to a paid app using Google Checkout to set a daily resource budget. When you convert to a paid app you will spend a minimum of $2.10/week. This allows you to purchase additional resources when needed. App Engine will always be free to get started, and after you've created a paid app, all usage up to the free limits will remain free.
 
 For more information, see [https://developers.google.com/appengine/docs/billing Billing and Budgeting Resources] and [https://developers.google.com/appengine/docs/quotas Quotas].
+
+<font color=red><<TODO Note that we plan to add a little information about typical costs for a course, but we don't have those numbers quite yet.>></font>
 
 == Download and install Python 2.7 ==
 
