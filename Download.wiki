@@ -10,7 +10,7 @@ Before you can start working on your own course, you need to download Python and
 
   # [http://python.org/download Download Python 2.7.]
   # [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python Download the Python App Engine SDK.]
-  # [http://code.google.com/p/gcb-x-03141590/downloads/detail?name=coursebuilder.zip&can=2&q=#makechanges Download the Course Builder sample application.] 
+  # [http://gcb-x-03141590.googlecode.com/files/coursebuilder.zip Download the Course Builder sample application.] 
 
 == Download Python 2.7 ==
 
@@ -48,6 +48,6 @@ When developing on Google App Engine, you have a choice of performing administra
 
 To download Course Builder's sample application, you have two choices:
 
-  * *Download the [http://code.google.com/p/gcb-x-03141590/downloads/detail?name=coursebuilder.zip&can=2&q=#makechanges zip file.]* Unzip that file into a working directory.<br><br>This is the simplest route and is suitable for most people. At present, we restrict who can make changes to the open source Course Builder code.
+  * *Download the [http://gcb-x-03141590.googlecode.com/files/coursebuilder.zip zip file.]* Unzip that file into a working directory.<br><br>This is the simplest route and is suitable for most people. At present, we restrict who can make changes to the open source Course Builder code.
 
   * *Visit the [https://code.google.com/p/course-builder/source/checkout Source > Checkout] tab for the Course Builder project.*<br><br>From there, follow the instructions to get a local copy of the repository using Git. Use this approach if you have explicitly partnered with Google to make changes to Course Builder itself.
