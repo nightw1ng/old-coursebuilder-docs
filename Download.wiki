@@ -34,8 +34,8 @@ The output of this command is similar to the following:
 
   <font color=green> {{{Python 2.7.3}}} </font>
 
-==== Check on Windows ====
-On Windows, open a *Command Prompt* and type
+==== Check on a PC ====
+On a PC, open a *Command Prompt* and type
   {{{python}}}
 
 If Python is installed, you should see something similar to:
