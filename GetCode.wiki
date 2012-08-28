@@ -1,3 +1,4 @@
+
 #summary How to download the sample code and get started with App Engine.
 
 <h1>Run the Sample App</h1>
@@ -10,10 +11,9 @@ Once you've downloaded the sample application, you load that code into a new App
 
 Activate the Launcher wherever it's available, that is, from the Desktop, the Dock, the Applications folder, Start -> Programs -> Google App Engine -> !GoogleAppEngineLauncher, and so on. 
 
-The first time you start the Launcher, you may see a dialog box asking you about symbolic links
+The first time you start the Launcher, you may see a dialog box asking you about symbolic links:
 
 <img src="http://gcb-x-03141590.googlecode.com/git/images/symlinks.png" />
-
 
 For App Engine to work, you must agree to set up symbolic links.
 
@@ -26,7 +26,7 @@ The file {{{app.yaml}}} is the configuration file for your App Engine app. Befor
   # Edit {{{app.yaml}}}. The first line is:<br>{{{  application: mycourse # FIXME: Put your application id here}}}
   # Replace {{{mycourse}}} with the name you choose for your app. 
 
-*Note for Windows uesrs:* Do not use Notepad to edit Course Builder files. If you do, every Course Builder file appears to be one long line. Please use another text editor, such as !WordPad.
+*Note for Windows uesrs:* Do *not* use Notepad to edit Course Builder files. If you do, every Course Builder file appears to be one long line. Please use another text editor, such as !WordPad.
 
 Pick a single word as an app name. It's best if you keep all the letters of the app name in lowercase and select a directory that does not have a space and does not have upper case characters in it. See [UploadCode#Register_your_app_(course)_with_Google Register your app with Google] for restrictions on naming.
 
@@ -53,29 +53,34 @@ A new line appears in the Launcher. Its name is the name you put in the {{{app.y
 
 Before you can deploy your app to run in production and be available to your audience, you need to develop and debug it in a more private setting. That more private setting is called a *development server*.
 
+==== From the Launcher (PC, Mac) ====
+
 To start the development server from the Launcher:
   # Select your app. 
   # When it's highlighted, click the *Run* button to start the server (for that app). <br>Once the round icon to the left of the app name is green and contains a right-facing triangle, your server is ready to accept requests.
+  # Click on the *Browse* button to visit the app in a web browser. <br>If you do not see the registration page, read [AppEngine#Troubleshooting Troubleshooting].
 
-Because the command-line version has more options, you may wish to run the development server from your Unix shell. To do so:
+From the Launcher, you stop your server by clicking on the *Stop* button. For more information, see [AppEngine#Stop_your_server Stop your server].
+
+==== From a Unix shell (Mac, Linux) ====
+
+On Mac or Linux systems, because the command-line version has more options, you may wish to run the development server from your Unix shell. To do so:
   # Open a Unix shell (command line).
-  # Change directory to the one you specified as the path for your app
-  # Run the server with the command<br><br>{{{$ dev_appserver.py . &}}}
+  # Change directory to the one you specified as the path for your app.
+  # Run the server with the command:<br><br>{{{$ dev_appserver.py . &}}}
 
 (Do not type the {{{$}}} because it is the prompt at the start of a command line.) The {{{&}}} tells Unix to run this command in the background, so you can continue to use that shell while the command runs.
 
-As the command starts running, you may see some warnings you can ignore and questions you must answer. Once the app is set up, you see a URL reference to the hostname and port you use to connect to your app from a web browser.
+As the command starts running, you may see some warnings you can ignore and questions you must answer. 
 
+Once the app is set up, you see a URL reference to the hostname and port you use to connect to your app from a web browser. If you do not see the registration page, read [AppEngine#Troubleshooting Troubleshooting].
+ 
 By default, your app is only available from the machine on which you start it. To get access to your development server from another machine on the network, you need to request this through the command line. To do so, do not run the server using the Launcher. Instead, run your development server with this command
 
   {{{$ cd }}}_*{{{APPPATH}}}*_<br>
   {{{$ dev_appserver.py -a 0.0.0.0 . &}}}
 
 where _*{{{APPPATH}}}*_ is the directory containing your app.
-
-If you do not see the registration page, read [AppEngine#Troubleshooting Troubleshooting].
-
-From the Launcher, you stop your server by clicking on the *Stop* button. For more information, see [AppEngine#Stop_your_server Stop your server].
 
 == 6. Upload the unit and lesson data ==
 
