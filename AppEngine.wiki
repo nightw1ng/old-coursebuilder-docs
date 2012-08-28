@@ -22,7 +22,38 @@ For more information, see [https://developers.google.com/appengine/docs/billing 
 
 == Download and install Python 2.7 ==
 
-Make sure you have Python 2.7 on your system. Visit the general Python 2.7 [http://python.org/download download page] to get the right version for you. (Python 2.7.3 was the latest at the time of this writing.)
+Make sure you have Python 2.7 on your system. To find out if you do...
+
+==== Check on Mac or Unix ====
+On Mac or Unix systems, open a Unix shell window and type
+
+  {{{$ which python}}}
+
+If Python 2.7 is installed, you should see something similar to one of the following:
+
+  {{{/Library/Frameworks/Python.framework/Versions/2.7/bin/python}}}
+  {{{/usr/local/bin/python}}}
+
+The first of these indicates the Python version. The second does not. In that case, you need to check to see if you have the correct version of Python, with the following command:
+
+  {{{$ python -V}}}
+
+==== Check on Windows ====
+On Windows, open a *Command Prompt* and type
+  {{{python}}}
+
+If Python is installed, you should see something similar to:
+  {{{Python 2.6.4 (r264:75708, Oct 26 2009, 07:36:50) [MSC v.1500 64 bit (AMD64)] on win32}}}<br>
+  {{{Type "help", "copyright", "credits" or "license" for further information.}}}<br>
+  {{{>>>}}}
+
+This starts the Python interpreter and indicates the version. If Python is not installed, you see:
+  {{{'python' is not recognized as an internal or external command,}}}<br>
+  {{{operable program or batch file.}}}
+
+==== Getting Python ====
+
+If you don't have Python at all or you have the wrong version, visit the general Python 2.7 [http://python.org/download download page] to get the right version for you. You probably want to simply download the current production version for your platform. (Python 2.7.3 was the latest at the time of this writing.) 
 
 == Download and install App Engine ==
 
