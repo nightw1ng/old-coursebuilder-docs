@@ -1,4 +1,3 @@
-
 #summary How to download the sample code and get started with App Engine.
 
 <h1>Run the Sample App</h1>
@@ -64,13 +63,13 @@ To start the development server from the Launcher:
 
 From the Launcher, you stop your server by clicking on the *Stop* button. For more information, see [AppEngine#Stop_your_server Stop your server].
 
-==== From a Unix shell (Mac, Linux) ====
+==== From a shell (Mac, Linux) or command prompt (Windows) ====
 
-On Mac or Linux systems, because the command-line version has more options, you may wish to run the development server from your Unix shell. To do so:
-  # Open a Unix shell (command line).
+Because the command-line version has more options, you may wish to run the development server from your Unix shell or Windows command prompt. To do so:
+  # Open a Unix shell or Windows command prompt.
   # Change directory to the one you specified as the path for your app.
-  # Run the server with the command:<br>{{{$ dev_appserver.py . &}}}<br><br>(Do not type the {{{$}}} because it is the prompt at the start of a command line.) The {{{&}}} tells Unix to run this command in the background, so you can continue to use that shell while the command runs.
-  # As the command starts running, you may see some warnings you can ignore and questions you must answer. <br>Once the app is set up, you see a URL reference to the hostname and port you use to connect to your app from a web browser. 
+  # Run the server with the following command:<br>{{{$ dev_appserver.py . }}}<br><br>(Do not type the {{{$}}} because it indicates the prompt at the start of a command line.) 
+  # As the command starts running, you may see some warnings you can ignore and questions you must answer. <br>Once the app is set up, you see a URL reference to the hostname and port you use to connect to your app from a web browser. Typically, this URL is {{{http://localhost:8080}}}, but the port number ({{{8080}}}) may be different.
   # Open a browser window and navigate to the URL. You should see the login page for the server (as shown above for Windows).
   # If you do not see the login page, read [AppEngine#Troubleshooting Troubleshooting].
   # If you do see the login page, you can use any login name you want; this is the login for your development server, it does not have to match any real email address. 
@@ -78,7 +77,7 @@ On Mac or Linux systems, because the command-line version has more options, you 
 By default, your app is only available from the machine on which you start it. To get access to your development server from another machine on the network, you need to request this through the command line. To do so, do not run the server using the Launcher. Instead, run your development server with this command
 
   {{{$ cd }}}_*{{{APPPATH}}}*_<br>
-  {{{$ dev_appserver.py -a 0.0.0.0 . &}}}
+  {{{$ dev_appserver.py -a 0.0.0.0 .}}}
 
 where _*{{{APPPATH}}}*_ is the directory containing your app.
 
@@ -86,7 +85,9 @@ where _*{{{APPPATH}}}*_ is the directory containing your app.
 
 Before you can run the sample code, you need to upload the data files that represent the units and lessons of the course. (Basically, two CSV files contain the information the code needs to find all of the information pertaining to the units and lessons.)
 
-To upload the data, first make sure that your development server is running (as described in step 5). Then, open a Unix shell. In that shell:
+To upload the data, first make sure that your development server is running (as described in step 5). 
+
+Then, open a new Unix shell or command prompt. In that window:
 
   {{{$ cd }}}_*{{{APPPATH}}}*_{{{/data}}}<br>
   {{{$ appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br>
