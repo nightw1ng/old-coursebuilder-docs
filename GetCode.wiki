@@ -25,7 +25,7 @@ The file {{{app.yaml}}} is the configuration file for your App Engine app. Befor
   # Edit {{{app.yaml}}}. The first line is:<br>{{{  application: mycourse # FIXME: Put your application id here}}}
   # Replace {{{mycourse}}} with the name you choose for your app. 
 
-*Note for Windows uesrs:* Do *not* use Notepad to edit Course Builder files. If you do, every Course Builder file appears to be one long line. Please use another text editor, such as !WordPad.
+*Note for PC users:* Do *not* use Notepad to edit Course Builder files. If you do, every Course Builder file appears to be one long line. Please use another text editor, such as !WordPad.
 
 Pick a single word as an app name. It's best if you keep all the letters of the app name in lowercase and select a directory that does not have a space and does not have upper case characters in it. See [UploadCode#Register_your_app_(course)_with_Google Register your app with Google] for restrictions on naming.
 
@@ -63,14 +63,14 @@ To start the development server from the Launcher:
 
 From the Launcher, you stop your server by clicking on the *Stop* button. For more information, see [AppEngine#Stop_your_server Stop your server].
 
-==== From a shell (Mac, Linux) or command prompt (Windows) ====
+==== From a shell (Mac, Linux) or command prompt (PC) ====
 
-Because the command-line version has more options, you may wish to run the development server from your Unix shell or Windows command prompt. To do so:
-  # Open a Unix shell or Windows command prompt.
+Because the command-line version has more options, you may wish to run the development server from your Unix shell or PC command prompt. To do so:
+  # Open a Unix shell or PC command prompt.
   # Change directory to the one you specified as the path for your app.
   # Run the server with the following command:<br>{{{dev_appserver.py . }}}
   # As the command starts running, you may see some warnings you can ignore and questions you must answer. <br>Once the app is set up, you see a URL reference to the hostname and port you use to connect to your app from a web browser. Typically, this URL is {{{http://localhost:8080}}}, but the port number ({{{8080}}}) may be different.
-  # Open a browser window and navigate to the URL. You should see the login page for the server (as shown above for Windows).
+  # Open a browser window and navigate to the URL. You should see the login page for the server (as shown above for a PC).
   # If you do not see the login page, read [AppEngine#Troubleshooting Troubleshooting].
   # If you do see the login page, you can use any login name you want; this is the login for your development server, it does not have to match any real email address. 
 
