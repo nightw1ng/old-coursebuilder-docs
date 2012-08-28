@@ -49,7 +49,7 @@ If you don't have Python at all or you have the wrong version, visit the general
 
 == Download App Engine ==
 
-If you are a developer unfamiliar with App Engine, read [https://developers.google.com/appengine/docs/whatisgoogleappengine What is Google App Engine?] If you're completely new to cloud computing as well, a more user-friendly introduction to the cloud and App Engine can be found in this [https://developers.google.com/academy/apis/cloud/appengine/intro/ Introduction to Google App Engine].
+If you are unfamiliar with App Engine, but know something about cloud computing, read [https://developers.google.com/appengine/docs/whatisgoogleappengine What is Google App Engine?] If you're completely new to cloud computing as well, a more user-friendly introduction to the cloud and App Engine can be found in this [https://developers.google.com/academy/apis/cloud/appengine/intro/ Introduction to Google App Engine].
 
 Follow [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python this link] to download the Python App Engine SDK for your platform.
 
