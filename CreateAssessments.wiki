@@ -39,7 +39,7 @@ The format of the file is
 var assessment = {
   assessmentName: nameString,
   preamble: preambleString,
-  disableCheckAnswers: Boolean,  // Optional
+  checkAnswers: Boolean,
   questionsList: questionsArray
 }
 }}}
@@ -48,7 +48,7 @@ The file contains a single object named {{{assessment}}}. This object describes 
 
   * {{{assessmentName.}}} A string containing a unique name for this assessment. The code uses the assessment name to determine what special processing to do for an assessment. The possible values are {{{"precourse"}}}, {{{"midcourse"}}}, and {{{"postcourse"}}}. See [#Assessment_name Assessment name].
   * {{{preamble.}}} A string containing text and complete HTML elements. The preamble appears as the first thing on the assessment page.  See [#Preamble Preamble].
-  * {{{disableCheckAnswers.}}} An optional Boolean. If false, then students can check their answers before submission. Defaults to {{{FALSE}}}. See [#Submitting_and_checking_answers Submitting and checking answers].
+  * {{{checkAnswers.}}} A Boolean. If True, then students can check their answers before submission. See [#Submitting_and_checking_answers Submitting and checking answers].
   * {{{questionsList.}}} An ordered array, each of whose elements describes a question in the assessment. The questions appear after the preamble. See [#Questions Questions]. 
 
 === Assessment name ===
@@ -75,7 +75,7 @@ http://gcb-x-03141590.googlecode.com/git/images/assessment-submit.png
 
 By default, this page acknowledges that they submitted the assessment and gives them information about next steps. You can change the messages for different assessments by changing the file at {{{views/test_confirmation.html}}}.
 
-Notice that this page does not tell students how they did on the assessment or give any feedback about what they might want to study some more. You can give students the option of checking their answers before submitting an assessment. If you set the {{{disableCheckAnswers}}} attribute of the {{{assessment}}} object to {{{FALSE}}} (or omit this attribute), then the assessment page has an additional *Check your Answers* button and an area for feedback, as shown here:
+Notice that this page does not tell students how they did on the assessment or give any feedback about what they might want to study some more. You can give students the option of checking their answers before submitting an assessment. If you set the {{{checkAnswers}}} attribute of the {{{assessment}}} object to {{{True}}}, then the assessment page has an additional *Check your Answers* button and an area for feedback, as shown here:
 
 http://gcb-x-03141590.googlecode.com/git/images/assessment-check.png 
 
