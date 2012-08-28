@@ -26,7 +26,7 @@ The file {{{app.yaml}}} is the configuration file for your App Engine app. Befor
   # Edit {{{app.yaml}}}. The first line is:<br>{{{  application: mycourse # FIXME: Put your application id here}}}
   # Replace {{{mycourse}}} with the name you choose for your app. 
 
-*Windows note:* Do not use Notepad to edit Course Builder files. If you do, every Course Builder file appears to be one long line. Please use another text editor, such as WordPad.
+*Note for Windows uesrs:* Do not use Notepad to edit Course Builder files. If you do, every Course Builder file appears to be one long line. Please use another text editor, such as WordPad.
 
 Pick a single word as an app name. It's best if you keep all the letters of the app name in lowercase and select a directory that does not have a space and does not have upper case characters in it. See [UploadCode#Register_your_app_(course)_with_Google Register your app with Google] for restrictions on naming.
 
