@@ -132,3 +132,5 @@ This page consists of three areas:
 The app uses two files to render this page:
   * {{{views/base.html}}} defines the header and footer areas.
   * {{{views/forum.html}}} defines the structure of the content area. It also has a link to the discussion forum. You need to change that to the link you create for your forum. See [WebForums Community Discussion].
+
+*Next step:* [ExploreCode Explore the Sample Code]
