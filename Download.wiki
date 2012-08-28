@@ -1,3 +1,4 @@
+
 #summary Get Python, App Engine, and the sample code
 
 <h1>Download the Software </h1>
@@ -19,16 +20,16 @@ Make sure you have Python 2.7 on your system. To find out if you do...
 ==== Check on Mac or Unix ====
 On Mac or Unix systems, open a Unix shell window and type
 
-  {{{$ which python}}}
+  {{{which python}}}
 
 If Python 2.7 is installed, you should see something similar to one of the following:
 
-  {{{/Library/Frameworks/Python.framework/Versions/2.7/bin/python}}}
-  {{{/usr/local/bin/python}}}
+  <font color=green> {{{/Library/Frameworks/Python.framework/Versions/2.7/bin/python}}} </font><br>
+  <font color=green> {{{/usr/local/bin/python}}} </font>
 
 The first of these indicates the Python version. The second does not. In that case, you need to check to see if you have the correct version of Python, with the following command:
 
-  {{{$ python -V}}}
+  {{{python -V}}}
 
 ==== Check on Windows ====
 On Windows, open a *Command Prompt* and type
