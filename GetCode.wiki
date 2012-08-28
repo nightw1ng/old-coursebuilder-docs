@@ -58,7 +58,9 @@ Before you can deploy your app to run in production and be available to your aud
 To start the development server from the Launcher:
   # Select your app. 
   # When it's highlighted, click the *Run* button to start the server (for that app). <br>Once the round icon to the left of the app name is green and contains a right-facing triangle, your server is ready to accept requests.
-  # Click on the *Browse* button to visit the app in a web browser. <br>If you do not see the registration page, read [AppEngine#Troubleshooting Troubleshooting].
+  # Click on the *Browse* button to visit the app in a web browser.<br>You should see the login page for the server.<br> <img src="http://gcb-x-03141590.googlecode.com/git/images/server-login.png" />
+  # If you do not see the login page, read [AppEngine#Troubleshooting Troubleshooting].
+  # If you do see the login page, you can use any login name you want; this is the login for your development server, it does not have to match any real email address. 
 
 From the Launcher, you stop your server by clicking on the *Stop* button. For more information, see [AppEngine#Stop_your_server Stop your server].
 
@@ -67,14 +69,12 @@ From the Launcher, you stop your server by clicking on the *Stop* button. For mo
 On Mac or Linux systems, because the command-line version has more options, you may wish to run the development server from your Unix shell. To do so:
   # Open a Unix shell (command line).
   # Change directory to the one you specified as the path for your app.
-  # Run the server with the command:<br><br>{{{$ dev_appserver.py . &}}}
+  # Run the server with the command:<br>{{{$ dev_appserver.py . &}}}<br><br>(Do not type the {{{$}}} because it is the prompt at the start of a command line.) The {{{&}}} tells Unix to run this command in the background, so you can continue to use that shell while the command runs.
+  # As the command starts running, you may see some warnings you can ignore and questions you must answer. <br>Once the app is set up, you see a URL reference to the hostname and port you use to connect to your app from a web browser. 
+  # Open a browser window and navigate to the URL. You should see the login page for the server (as shown above for Windows).
+  # If you do not see the login page, read [AppEngine#Troubleshooting Troubleshooting].
+  # If you do see the login page, you can use any login name you want; this is the login for your development server, it does not have to match any real email address. 
 
-(Do not type the {{{$}}} because it is the prompt at the start of a command line.) The {{{&}}} tells Unix to run this command in the background, so you can continue to use that shell while the command runs.
-
-As the command starts running, you may see some warnings you can ignore and questions you must answer. 
-
-Once the app is set up, you see a URL reference to the hostname and port you use to connect to your app from a web browser. If you do not see the registration page, read [AppEngine#Troubleshooting Troubleshooting].
- 
 By default, your app is only available from the machine on which you start it. To get access to your development server from another machine on the network, you need to request this through the command line. To do so, do not run the server using the Launcher. Instead, run your development server with this command
 
   {{{$ cd }}}_*{{{APPPATH}}}*_<br>
