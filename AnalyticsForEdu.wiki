@@ -6,7 +6,7 @@
 
 As described in [MeasureEfficacy Evaluate Course Efficacy], there are three types of data we recommend collecting for your course -- student assessment data, reach and engagement data, and student happiness data. Assessment data and reach and engagement data are all objective measurements of what students did. Student happiness data is subjective information about what students think about the course.
 
-This page walks you through a simple example of how to use the objectvie data to understand the effectiveness of your course and to improve your course materials. This example only touches the surface of what you can do with this data, but illustrates how important this data is to improving the quality of effectiveness of your courses. 
+This page walks you through a simple example of how to use the objective data to understand the effectiveness of your course and to improve your course materials. This example only touches the surface of what you can do with this data, but illustrates how important this data is to improving the quality of effectiveness of your courses. 
 
 Course Builder stores assessment data in  App Engine’s [https://developers.google.com/appengine/docs/python/datastore/structuring_for_strong_consistency High Replication datastore]. This data includes pre-, mid-, and post-course assessment data, data on the units offered in the course, and data on the lessons offered in each unit. See [ExportingCourseData Export Course Data] for details. You can use this data to understand student skill levels and improvements in abilities. 
 
