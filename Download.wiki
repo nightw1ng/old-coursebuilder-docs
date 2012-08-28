@@ -16,17 +16,23 @@ Before you can start working on your own course, you need to download Python and
 
 Make sure you have Python 2.7 on your system. To find out if you do, open a Unix shell window and type
 
-  {{{which python}}}
+  {{{$ which python}}}
 
-If Python 2.7 is installed, you should see something similar to
+If Python 2.7 is installed, you should see something similar to one of the following:
 
   {{{/Library/Frameworks/Python.framework/Versions/2.7/bin/python}}}
+or
+  {{{/usr/local/bin/python}}}
 
-If you don't have it, visit the general Python 2.7 [http://python.org/download download page] to get the right version for you. You probably want to simply download the current production version for your platform. (Python 2.7.3 was the latest at the time of this writing.) 
+The first of these indicates the Python version. The second does not. In that case, you need to check to see if you have the correct version of Python, with the following command:
+
+  {{{$ python -V}}}
+
+If you don't have Python at all or you have the wrong version, visit the general Python 2.7 [http://python.org/download download page] to get the right version for you. You probably want to simply download the current production version for your platform. (Python 2.7.3 was the latest at the time of this writing.) 
 
 == Download App Engine ==
 
-If you are not familiar with App Engine, read [https://developers.google.com/appengine/docs/whatisgoogleappengine What is Google App Engine?]. 
+If you are a developer unfamiliar with App Engine, read [https://developers.google.com/appengine/docs/whatisgoogleappengine What is Google App Engine?] If you're completely new to cloud computing as well, a more user-friendly introduction to the cloud and App Engine can be found in this [https://developers.google.com/academy/apis/cloud/appengine/intro/ Introduction to Google App Engine].
 
 Follow [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python this link] to download the Python App Engine SDK for your platform.
 
