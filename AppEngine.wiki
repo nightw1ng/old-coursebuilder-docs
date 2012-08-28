@@ -126,7 +126,14 @@ If you started your development server from the Launcher, you can stop it there:
 
 Once the icon to the left of the app name is gray, your development server is stopped.
 
-=== From a shell (Mac, Linux) or command prompt (PC) ===
+=== From the Task Manager (PC) ===
+
+If you started your server from a command prompt on a PC, bring up the Windows Task Manager. 
+
+  # Search for the task that looks like:<br>  {{{Command Prompt - dev_appserver.py .}}} 
+  # End that task.
+
+=== From a shell (Mac, Linux) ===
 If you started your development server from the command line, you can stop it there:
 
 Use the {{{ps}}} command to find the process number associated with your server and then to kill that server. 
@@ -169,38 +176,14 @@ When you  make changes to either file in the {{{data}}} directory, you have two 
 
 ==== Reload all data ====
 
-To clear and reload all data,  you need to stop your development server, restart it clearing out the old data, and then reload the new data. You can do this whole process from a shell.
+To clear and reload all data,  you need to stop your development server, restart it clearing out the old data, and then reload the new data.
 
-1a. If you're running your server from the Launcher:
-
-  {{{ps x | grep Launcher       # Find the Launcher's process number}}}<br><br>
-  <font color=green> {{{25677   ??  S      0:00.50 /Applications/GoogleAppEngineLauncher.app/Contents/MacOS/GoogleAppEngineLauncher -psn_0_499834}}} </font><br>
-  <font color=green> {{{28161 s000  U+     0:00.00 grep Launcher}}} </font><br>
-  <br>
-  {{{kill 25677}}}
-
-1b. If you're running your  server from the shell:
-
-  {{{ps x | grep dev_appserver   # Find the process number}}}<br><br>
-  <font color=green> {{{30849 s000  S      0:00.85 /Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python /usr/local/bin/dev_appserver.py .}}} </font><br>
-  <font color=green> {{{30856 s000  R+     0:00.01 grep dev_appserver}}} </font><br>
-  <br>
-  {{{kill 30849}}}
-
-2. Start your development server from the command line, clearing out the old data:
-
-  {{{cd }}}_*{{{APPPATH}}}*_<br>
-  {{{dev_appserver.py --clear_datastore .}}}
-
-where _*{{{APPPATH}}}*_ is the directory containing your app.
-
-3. Start another command line and reload the changed data: 
-
-  {{{cd }}}_*{{{APPPATH}}}*_{{{/data}}}<br>
-  {{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br>
-  {{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}}
-
-where _*{{{APPPATH}}}*_ is the directory containing your app and _*{{{PORT}}}*_ is your app's port number. You will be asked for your credentials (Google user name and password) twice, once for loading each data file.
+  # Stopping your development server depends on how you started it:
+    * If you started your server *from the Launcher*, go to the Launcher application and quit it.
+    * If you started your server *from a command prompt on a PC*, bring up the Windows Task Manager and search for the task that looks like {{{Command Prompt - dev_appserver.py .}}} End that task.
+    * If you started  your server *from a shell on Mac or Linux*:<br><br>  {{{ps x | grep dev_appserver   # Find the process number}}}<br><br><font color=green> {{{30849 s000  S      0:00.85 /Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python /usr/local/bin/dev_appserver.py .}}} </font><br><font color=green> {{{30856 s000  R+     0:00.01 grep dev_appserver}}} </font><br> <br>{{{kill 30849}}}
+  # Start your development server from the command line, clearing out the old data:<br><br>  {{{cd }}}_*{{{APPPATH}}}*_<br>  {{{dev_appserver.py --clear_datastore .}}} <br><br>where _*{{{APPPATH}}}*_ is the directory containing your app.
+  # Start another command line and reload the changed data:  <br><br>  {{{cd }}}_*{{{APPPATH}}}*_{{{/data}}}<br><br>  {{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br><br>  {{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}} <br><br>where _*{{{APPPATH}}}*_ is the directory containing your app and _*{{{PORT}}}*_ is your app's port number. You will be asked for your credentials (Google user name and password) twice, once for loading each data file.
 
 ==== Change some data ====
 
