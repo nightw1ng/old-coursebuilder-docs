@@ -21,7 +21,7 @@ http://gcb-x-03141590.googlecode.com/git/images/analytics-edu.png
 *Assessment Data and Google Analytics*
 || *Lesson Page* || *Question / Learning Objective* || *Google Analytics* || 
 || 1|| Question 1 assess if students understood LO1. 95% answered correctly, indicating most students met the objective.  ||  Time on page, in/outbound links, page views and unique page views. ||
-|| 2 || Question 2 assess if students understood LO2. 50% answered correctly, indicating 50% of students did not met the objective.  || Time on page,  page views and unique  page views, clicks on reference links, when did they return to the lesson (in/outbound links). ||
+|| 2 || Question 2 assess if students understood LO2. 50% answered correctly, indicating 50% of students did not met the objective.  || Time on page,  page views and unique  page views, clicks on reference links, how did they return to the lesson (in/outbound links). ||
 || 3 || Question 3 assess if students understood LO3. 25% answered correctly, indicating 75% of students did not met the objective. ||  Time on page, in/outbound links,  page views and unique  page views. || 
 
 As you look at the assessment data, the following questions pop out:
@@ -31,11 +31,11 @@ As you look at the assessment data, the following questions pop out:
  * What dates and times were students interacting with the course?
  * Could they complete the course and answer the assessment questions with the material provided or did they need to go elsewhere for supplementary material?
 
-If you look at the assessment data by itself, it is difficult to understand where students had problems or how to improve the materials. But, if you combine this data with the data gathered by Google Analytics, you get a more complete picture of what was going on in the course. Here are some ways you can use Analytics to answer your questions.
+If you look at the assessment data by itself, it is difficult to understand where students had problems or how to improve the materials. But, if you combine assessment data with the data gathered by Google Analytics, you get a more complete picture of what was going on in the course. Here are some ways you can use Analytics to answer your questions:
 
  * Time on page can show how long students are spending on each lesson and how that correlates with their assessment scores. You might see times that do not align with your expectations, such as a very short or very long time on a page. 
   * You also see what time of day and day of the week your students engage with the material. Consider scheduling office hours around these times to support the students as they work through the material.
- * You expect your students to progress through the course sequentially, You may find that instead they jump back to another lesson or need to look at external resources to help them understand. The inbound and outbound analytics give you insight into how your students move through the material. You may use this information to refine the lessons to provide clarification or review.
+ * You might expect your students to progress through the course sequentially. You may find that instead they jump back to another lesson or need to look at external resources to help them understand. The inbound and outbound analytics give you insight into how your students move through the material. You may use this information to refine the lessons to provide clarification or review.
  * Are students coming back over and over to review, or are they viewing the materials at all? Do they watch the videos? Do they read the text versions? Page views give you this information along with how many people are returning.
  * Are students clicking on the reference links to support the course material or are they skipping over the links to the next page?
 
