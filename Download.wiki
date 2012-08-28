@@ -68,3 +68,5 @@ To download Course Builder's sample application, you have two choices:
   * *Download the [http://gcb-x-03141590.googlecode.com/files/coursebuilder.zip zip file.]* Unzip that file into a working directory.<br><br>This is the simplest route and is suitable for most people. At present, we restrict who can make changes to the open source Course Builder code.
 
   * *Visit the [https://code.google.com/p/course-builder/source/checkout Source > Checkout] tab for the Course Builder project.*<br><br>From there, follow the instructions to get a local copy of the repository using Git. Use this approach if you have explicitly partnered with Google to make changes to Course Builder itself.
+
+*Next step:* [GetCode Run the Sample App]
