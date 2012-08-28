@@ -62,7 +62,7 @@ Because the command-line version has more options, you may wish to run the devel
 
 (Do not type the {{{$}}} because it is the prompt at the start of a command line.) The {{{&}}} tells Unix to run this command in the background, so you can continue to use that shell while the command runs.
 
-As the command starts running, you may see some warnings you can ignore and questions you must answer. Once the app is set up, you see a URL reference to the hostname and port you use to connect to your app from a web browser. It defaults to {{{http://localhost:8080}}}. 
+As the command starts running, you may see some warnings you can ignore and questions you must answer. Once the app is set up, you see a URL reference to the hostname and port you use to connect to your app from a web browser.
 
 By default, your app is only available from the machine on which you start it. To get access to your development server from another machine on the network, you need to request this through the command line. To do so, do not run the server using the Launcher. Instead, run your development server with this command
 
