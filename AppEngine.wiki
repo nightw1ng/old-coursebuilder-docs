@@ -1,3 +1,4 @@
+
 #summary Hints for using App Engine during development
 
 <h1>Develop with App Engine</h1>
@@ -77,29 +78,30 @@ Your development server is where you modify and test your application before rel
 
 To start the development server from the Launcher:
   # Select your app. 
-  # When it's highlighted, click the *Run* button to start the server (for that app).
+  # When it's highlighted, click the *Run* button to start the server (for that app). <br>Once the round icon to the left of the app name is green and contains a right-facing triangle, your server is ready to accept requests.
+  # Click on the *Browse* button to visit the app in a web browser.<br>You should see the login page for the server.<br> <img src="http://gcb-x-03141590.googlecode.com/git/images/server-login.png" />
+  # If you do not see the login page, read [Troubleshooting Troubleshooting].
+  # If you do see the login page, you can use any login name you want; this is the login for your development server, it does not have to match any real email address. 
 
-Once the icon to the left of the app name is green, your development server is ready to accept requests.
-
-Alternatively, because the command-line version has more options, you may wish to run the development server from your Unix command-line shell. 
+Alternatively, because the command-line version has more options, you may wish to run the development server from your shell or command prompt. 
 
 === From a shell (Mac, Linux) or command prompt (PC) ===
 
 Open a Unix command-line shell (Mac or Unix) or a Command Prompt (PC). In the window:
 
-  {{{cd }}}_*{{{APPPATH}}}*_<br>
-  {{{dev_appserver.py .}}}
-
-where _*{{{APPPATH}}}*_ is the directory containing your app. As the command runs, you may see some warnings you can ignore and questions you must answer.
-
-Once the app is set up, you see a URL reference to the hostname and port you use to connect to your app from a web browser. It defaults to {{{http://localhost:8080}}}.
+  # Change directory to the one you specified as the path for your app.
+  # Run the server with the following command:<br>{{{dev_appserver.py . }}}
+  # As the command starts running, you may see some warnings you can ignore and questions you must answer. <br>Once the app is set up, you see a URL reference to the hostname and port you use to connect to your app from a web browser. Typically, this URL is {{{http://localhost:8080}}}, but the port number ({{{8080}}}) may be different.
+  # Open a browser window and navigate to the URL. You should see the login page for the server (as shown above for a PC).
+  # If you do not see the login page, read [Troubleshooting Troubleshooting].
+  # If you do see the login page, you can use any login name you want; this is the login for your development server, it does not have to match any real email address. 
 
 === From a shell (Mac, Linux) or command prompt (PC), to enable remote access ===
 
 By default, your app is only available from the machine on which you start it. To get access to your development server from another machine on the network, you need to request this through the command line. Start your development server with this command:
 
   {{{cd }}}_*{{{APPPATH}}}*_<br>
-  {{{dev_appserver.py . -a 0.0.0.0 &}}}
+  {{{dev_appserver.py . -a 0.0.0.0}}}
 
 where _*{{{APPPATH}}}*_ is the directory containing your app.
 
@@ -107,7 +109,7 @@ where _*{{{APPPATH}}}*_ is the directory containing your app.
 
 Before you can put new or changed data into your data store, you must clear out the data that is already there. This is only necessary when you change either {{{data/lesson.csv}}} or {{{data/unit.csv}}}.
 
-From a Unix shell or command prompt simply start your development server with an extra argument:
+From a shell or command prompt simply start your development server with an extra argument:
 
   {{{cd }}}_*{{{APPPATH}}}*_<br>
   {{{dev_appserver.py --clear_datastore .}}}
@@ -222,7 +224,7 @@ One common problem is that, even though you downloaded Python 2.7, App Engine ma
 
 In this situation, you need to manually specify the path for Python 2.7. To do so:
   # First, find out what that path is:
-    # Open a Unix shell.
+    # Open a shell or command prompt.
     # Run the command {{{which python}}}
     # Copy the path that appears (for example, {{{/Library/Frameworks/Python.framework/Versions/2.7/bin/python}}})
   # From the *!GoogleAppEngineLauncher* menu, choose *Preferences*.<br>A dialog box appears.
