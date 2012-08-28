@@ -66,22 +66,18 @@ It can take up to a minute to deploy your app; generally it's less than 30 secon
 
 == (Alternative) Upload without a password ==
 
-<font color=red><<TODO This procedure doesn't work for Course Builder. Be sure to note your app-specific password! (I'm leaving this section in, in case we make a change so this does work.) >></font>
-
-In general, every time you make a change that causes you to redeploy your app to production, you either need to remember the app-specific password created when registering or you need a new app-specific password. You may choose to avoid giving a password at all, by giving App Engine access to your account. 
+In general, every time you make a change that causes you to redeploy your app to production, you either need to remember the app-specific password created when registering or you need a new app-specific password. In some situations, you may choose to avoid giving a password at all, by giving App Engine access to your account. 
 
 Before you choose to do so, please read [https://developers.google.com/appengine/docs/python/tools/uploadinganapp#oauth Passwordless Login with OAuth2], so that you understand the risks involved.
 
 To upload your application without supplying your credentials:
 
   {{{$ cd }}}_*{{{APPPATH}}}*_<br>
-  {{{$ appcfg.py --oauth2 update .}}}<br>
-  {{{$ }}}<br>
-  {{{$ cd data}}}<br>
-  {{{$ appcfg.py --oauth2 upload_data --url=http://}}}_*{{{APP_ID}}}*_{{{.appspot.com/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br>
-  {{{$ appcfg.py --oauth2 upload_data --url=http://}}}_*{{{APP_ID}}}*_{{{.appspot.com/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}}
+  {{{$ appcfg.py --oauth2 update .}}}
 
 where _*{{{APP_ID}}}*_ is the app ID you registered for your app.
+
+Note that this works for the {{{upload}}} command. It *does not* work for the {{{upload_data}}} command. For this reason, if you upload changes to either {{{data/lesson.csv}}} or {{{data/unit.csv}}}, you must supply your app-specific password.
 
 == Modify an app in production ==
 
