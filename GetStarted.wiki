@@ -5,6 +5,8 @@
 
 This section is about getting started with the Course Builder code. The pages take you through downloading and installing the necessary software, including the sample course provided with Course Builder.  Later pages get you started running the sample code for the first time and exploring what's in it. The final page contains a small set of App Engine information you may find particularly useful when working with Course Builder.
 
+  <b>Note for PC users:</b> Do *not* use Notepad to edit Course Builder files. If you do, every Course Builder file appears to be one long line. Please use another text editor, such as !WordPad.
+
 The pages in this section include:
 
   * [Download Download the Software]<br>Describes how to download Python, Google App Engine, and the Course Builder sample application.
