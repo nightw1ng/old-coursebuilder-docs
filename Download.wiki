@@ -73,4 +73,4 @@ To download Course Builder's sample application, you have two choices:
 
   * *Visit the [https://code.google.com/p/course-builder/source/checkout Source > Checkout] tab for the Course Builder project.*<br><br>From there, follow the instructions to get a local copy of the repository using Git. Use this approach if you have explicitly partnered with Google to make changes to Course Builder itself.
 
-|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions here] ||
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||
