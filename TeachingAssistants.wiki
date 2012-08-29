@@ -65,7 +65,7 @@ Just like your course will be more successful if the students form a support com
   * If you have multiple TAs on duty at the same time:
     * Encourage them to be in close communication with each other. Questions come in waves; it's common for there to be a frequently-asked question at a particular time. Sharing information about problems and solutions eases the TA work.
     * If most of your TAs are physically near each other, get a single room for them to meet in during their TA shifts.
-    * If your TAs are physically distributed, have all TAs on duty at the same time enter the same [http://support.google.com/chat/bin/answer.py?hl=en&amp;answer=161886 group chat].
+    * If your TAs are physically distributed, have all TAs on duty at the same time enter the same [http://support.google.com/chat/bin/answer.py?hl=en&answer=161886 group chat].
     * Don't force your TAs to participate in these group sessions, but do encourage them to attend at least one, to get a feel for what goes on during a shift.
 
   * Schedule TAs with overlapping shifts or encourage them to pass on highlights of what happened in the last shift to the new shift.
