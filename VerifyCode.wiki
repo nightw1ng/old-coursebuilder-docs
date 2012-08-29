@@ -10,8 +10,8 @@ Note that this verifier may not catch all errors. It is a first step, to find ce
 
 To run this tool, open a Unix command-line shell. In the shell:
 
-  {{{$ cd }}}_*{{{APPPATH}}}*_<br>
-  {{{$ python tools/verify.py}}}
+  {{{cd }}}_*{{{APPPATH}}}*_<br>
+  {{{python tools/verify.py}}}
 
 where _*{{{APPPATH}}}*_ is the directory containing your app. 
 
