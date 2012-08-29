@@ -9,19 +9,4 @@ Not real content. just to see if things work.
 
 ----------------------------
 
-try an iframe
-
-<iframe id="forum_embed"
-        src="javascript:void(0)"
-        scrolling="no"
-        frameborder="0"
-        width="900"
-        height="700">
-</iframe>
-
-<script type="text/javascript">
-  document.getElementById("forum_embed").src =
-      "https://groups.google.com/forum/embed/?place=forum/course-builder-announce" +          
-      "&showsearch=true&showpopout=true&parenturl=" +
-      encodeURIComponent(window.location.href);
-</script>
+<script src="//www.gmodules.com/ig/ifr?url=http://www.javascripttoolbox.com/gadget/groups/groups2.xml&amp;up_title=Course%20Builder%20Discussion%20Forum&amp;up_titlelink=&amp;up_group=course-builder-forum&amp;up_num=50&amp;up_format=%3Cdiv%20class%3Dmc%3E%25STAR%25%3Ca%20href%3D%22%25URL%25%22%20oncontextmenu%3D%22_toggle(this.nextSibling)%3Bresize()%3Breturn%20false%3B%22%20title%3D%22right-click%20to%20view%20summary%22%20class%3D%22%25A_CLASSNAME%25%22%20target%3D%22%25TARGET%25%22%3E%25BULLET%25%25TITLE%25%26nbsp%3B%3Cspan%20style%3D%22color%3A%23aaa%3B%22%3E(%25M%25-%25D%25)%3C%2Fspan%3E%3C%2Fa%3E%3Cdiv%20style%3D%22display%3Anone%22%20class%3D%22summary%22%3E%25SUMMARY%25%3C%2Fdiv%3E%3C%2Fdiv%3E&amp;up_newwindow=1&amp;up_expandbydefault=0&amp;up_fontsize=100%25&amp;up_refresh=15&amp;up_lastseen=&amp;up_lastmsg=0&amp;synd=open&amp;w=500&amp;h=500&amp;title=Course+Builder+Discussion+Forum+Please!&amp;border=%23ffffff%7C0px%2C1px+solid+%2382CAFA%7C0px%2C2px+solid+%23BDEDFF%7C0px%2C3px+solid+%23E0FFFF&amp;output=js"></script>
