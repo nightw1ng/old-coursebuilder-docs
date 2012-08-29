@@ -18,4 +18,4 @@ Past those simple points, there are significant differences in implementation an
 
 For Power Searching with Google, we chose one approach. It’s not the only approach; it’s not the most innovative approach. This approach is not appropriate for all subjects. But it was relatively easy to create and was extremely successful for this subject matter. We’d like to share that approach and code with you. 
 
-|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/design-process Ask questions here] ||
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/design-process Ask questions in the forum] ||
