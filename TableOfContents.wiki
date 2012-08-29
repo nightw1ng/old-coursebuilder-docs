@@ -41,6 +41,5 @@
     * [ExampleSurvey Example Post-Course Survey]
     * [AnalyticsForEdu Combine Assessment & Reach Data]
     * [ExportingCourseData Export Course Data]
-  * [Showcase Course Showcase]
 
 || [https://groups.google.com/forum/?fromgroups#!forum/course-builder-forum Discussion forum] ||
