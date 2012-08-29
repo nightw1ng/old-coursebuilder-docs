@@ -50,4 +50,4 @@ That is, after you make a change to one of these files, simply load (or reload) 
 
 On the other hand, if you change the content of the {{{data/unit.csv}}} file, you must load the changed data into your development server as described in [AppEngine#Modify_your_app_and_see_the_effects Modify your app and see the effects].
 
-|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions here] ||
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||
