@@ -52,4 +52,4 @@ The following table briefly describes the directory structure for the sample cod
 || {{{views/}}} || {{{unit.html}}} || The structure for a lesson, activity, or assessment.  It includes additional footer and header regions and the left-hand navigation.  ||  || 
 
 
-|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions here] ||
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||
