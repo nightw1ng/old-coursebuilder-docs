@@ -7,6 +7,9 @@ The rest of these Wiki pages go into a lot of detail about how to build your own
 
 This page doesn't go into any explanations. It simply lists all of the steps involved -- everything from your beginning planning stages, to downloading and changing the Course Builder code to setting up online office hours -- and provides links to other places with more information.
 
+If you have issues or feature requests for Course Builder, please report them in our [https://code.google.com/p/course-builder/issues/list Issues Tracker].
+
+
 == Prerequisites for using Course Builder ==
 
 The current version of Course Builder is designed for technically-savvy course designers. In particular, we expect the following from users:
