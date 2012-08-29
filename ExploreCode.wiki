@@ -50,3 +50,6 @@ The following table briefly describes the directory structure for the sample cod
 || {{{views/}}} || {{{register.html}}} || The content of the registration form an unenrolled person sees when visiting your course.  || Likely ||
 || {{{views/}}} || {{{test_confirmation.html}}} || The set of messages a student can see after completing an assessment. See [CreateAssessments Create Assessments]. || Required|| 
 || {{{views/}}} || {{{unit.html}}} || The structure for a lesson, activity, or assessment.  It includes additional footer and header regions and the left-hand navigation.  ||  || 
+
+
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions here] ||
