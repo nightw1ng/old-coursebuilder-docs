@@ -17,4 +17,4 @@ Our design process has four simple steps, which get iterated multiple times:
 
   * *[FourPilot Pilot with your target audience.]*<br>  We strongly encourage you to pilot your course by having people go through the entire course before you release it to actual students. You may find, as we have, that a large percentage of your work comes after the first pilot, when you see how people actually interact with your material. Be sure to leave enough time to make the necessary changes you discover while piloting.
 
-|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/design-process Ask questions here] ||
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/design-process Ask questions in the forum] ||
