@@ -5,6 +5,8 @@
 
 This section is about understanding and modifying the Course Builder code to make it appropriate for your course material. These pages discuss changes you can make to have different course material but essentially the same course layout and the same types of questions and interactions with your students. You are welcome to make more extensive changes to the software, if you find it does not meet all of your needs.
 
+  <b>Note for PC users:</b> Do *not* use Notepad to edit Course Builder files. If you do, every Course Builder file appears to be one long line. Please use another text editor, such as !WordPad.
+
 The pages in this section include:
 
   * [ModifyTemplate Modify Course Template]<br>How to modify the basic look and feel of all of the course pages.
