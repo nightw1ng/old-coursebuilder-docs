@@ -102,3 +102,5 @@ In these steps, all pathnames are relative to the directory containing your appl
   # [ReachAndEngagementMetrics Capture reach & engagement data.]
 
 == D. [FourPilot Pilot with your target audience.] ==
+
+|| [https://groups.google.com/forum/?fromgroups#!forum/course-builder-forum Ask questions in the forum] ||
