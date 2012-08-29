@@ -115,3 +115,5 @@ All done! Uploading new unit data uses the same procedure. Of course, for unit d
   {{{appcfg.py upload_data --url=http://}}}_*{{{APP_ID}}}*_{{{.appspot.com/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}
 
 where _*{{{APP_ID}}}*_ is the app ID you registered for your app. 
+
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||
