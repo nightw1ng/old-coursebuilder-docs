@@ -157,3 +157,5 @@ In addition to the formal documentation or training you do for your TAs, strive 
   * Try and give hints rather than full answers, so that the questioner has a chance to learn in the process.
   * Admit mistakes -- you'd be amazed how long people spend trying to justify incorrect course material.
   * Trust your instincts (TAs tend to be hesitant).
+
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/set-up-and-manage-community Ask questions in the forum] ||
