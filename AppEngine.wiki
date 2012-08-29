@@ -84,7 +84,7 @@ To start the development server from the Launcher:
 
 Alternatively, because the command-line version has more options, you may wish to run the development server from your shell or command prompt. 
 
-=== From a shell (Mac, Linux, or other POSIX-compliant+) or command prompt (PC) ===
+=== From a shell or command prompt ===
 
 Open a shell or a command prompt. In the window:
 
@@ -95,7 +95,7 @@ Open a shell or a command prompt. In the window:
   # If you do not see the login page, read [Troubleshooting Troubleshooting].
   # If you do see the login page, you can use any login name you want; this is the login for your development server, it does not have to match any real email address. 
 
-=== From a shell (Mac, Linux) or command prompt (PC), to enable remote access ===
+=== From a shell or command prompt, to enable remote access ===
 
 By default, your app is only available from the machine on which you start it. To get access to your development server from another machine on the network, you need to request this through the command line. Start your development server with this command:
 
@@ -104,7 +104,7 @@ By default, your app is only available from the machine on which you start it. T
 
 where _*{{{APPPATH}}}*_ is the directory containing your app.
 
-=== From a shell (Mac, Linux) or command prompt (PC), to clear lesson and unit data ===
+=== From a shell or command prompt, to clear lesson and unit data ===
 
 Before you can put new or changed data into your data store, you must clear out the data that is already there. This is only necessary when you change either {{{data/lesson.csv}}} or {{{data/unit.csv}}}.
 
@@ -132,7 +132,7 @@ If you started your server from a command prompt on a PC, bring up the Windows T
   # Search for the task that looks like:<br>  {{{Command Prompt - dev_appserver.py .}}} 
   # End that task.
 
-=== From a shell (Mac, Linux) ===
+=== From a shell (Mac, Linux, or other POSIX-compliant system) ===
 If you started your development server from a shell, you can stop it there:
 
 Use the {{{ps}}} command to find the process number associated with your server and then to kill that server. 
@@ -180,7 +180,7 @@ To clear and reload all data,  you need to stop your development server, restart
   # Stopping your development server depends on how you started it:
     * If you started your server *from the Launcher*, go to the Launcher application and quit it.
     * If you started your server *from a command prompt on a PC*, bring up the Windows Task Manager and search for the task that looks like {{{Command Prompt - dev_appserver.py .}}} End that task.
-    * If you started  your server *from a shell on Mac or Linux*:<br><br>  {{{ps x | grep dev_appserver   # Find the process number}}}<br><br><font color=green> {{{30849 s000  S      0:00.85 /Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python /usr/local/bin/dev_appserver.py .}}} </font><br><font color=green> {{{30856 s000  R+     0:00.01 grep dev_appserver}}} </font><br> <br>{{{kill 30849}}}
+    * If you started  your server *from a shell on Mac, Linux, or other POSIX-compliant system*:<br><br>  {{{ps x | grep dev_appserver   # Find the process number}}}<br><br><font color=green> {{{30849 s000  S      0:00.85 /Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python /usr/local/bin/dev_appserver.py .}}} </font><br><font color=green> {{{30856 s000  R+     0:00.01 grep dev_appserver}}} </font><br> <br>{{{kill 30849}}}
   # Start your development server from the command line, clearing out the old data:<br><br>  {{{cd }}}_*{{{APPPATH}}}*_<br>  {{{dev_appserver.py --clear_datastore .}}} <br><br>where _*{{{APPPATH}}}*_ is the directory containing your app.
   # Start another command line and reload the changed data:  <br><br>  {{{cd }}}_*{{{APPPATH}}}*_{{{/data}}}<br><br>  {{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br><br>  {{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}} <br><br>where _*{{{APPPATH}}}*_ is the directory containing your app and _*{{{PORT}}}*_ is your app's port number. You will be asked for your credentials (Google user name and password) twice, once for loading each data file.
 
