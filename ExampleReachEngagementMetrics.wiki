@@ -3,8 +3,8 @@
 
 This page lists some data to collect to evaluate how many people you reach and how engaged they are with the material.  The list is not exhaustive; it's data we found useful for Power Searching with Google.
 
-  * *Overall* 
-    * Number of registrants (See [ExportingCourseData Export Course Data]
+  * *Overall*  (See [ExportingCourseData Export Course Data])
+    * Number of registrants
     * Number of  countries represented
     * Number of registrants who complete pre-course assessment
     * Number of  registrants who complete mid-course assessment
@@ -12,21 +12,21 @@ This page lists some data to collect to evaluate how many people you reach and h
     * Number of  registrants who pass/get certified
     * Number of  registrants who passed of those who completed the pre-course assessment
 
-  * *Course Forums* 
+  * *Course Forums*  (See [WebForums Community Discussion])
     * Number of posts
-    * Number of posts in each category group (See [WebForums Community Discussion])
+    * Number of posts in each category group
     * Number of posts in each category
     * Number who joined the forum 
     * Number who posted anything on the forum (with duplicates removed)
 
-  * *Hangouts on Air* <br>For each Hangout On Air
+  * *Hangouts on Air* (See [OnlineOfficeHours Online Office Hours]) <br>For each Hangout On Air
     * Number of concurrent viewers
     * Number of playbacks on !YouTube
     * Number of !YouTube comments
     * In Moderator, number of votes on number of questions from number of people
     * Number of Google+ comments on post about the Hangout On Air
 
-  * *Google+ Course Page* 
+  * *Google+ Course Page* (See [Announcements Announcements and Optional Material])
     * Increase in number of followers since the course announcement
     * Average number of valid comments on posts to that page as a whole
     * Average number of likes per post
