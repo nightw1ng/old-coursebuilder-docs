@@ -1,8 +1,0 @@
-#summary This page is just for testing stuff
-
-= Test page =
-
-Not real content. just to see if things work.
-
-
-<wiki:gadget url="http://www.gstatic.com/sites-gadgets/forum/forum_content.xml" width="95%" height="300" border="0" /> 
