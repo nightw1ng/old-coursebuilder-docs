@@ -1,4 +1,3 @@
-
 #summary Hints for using App Engine during development
 
 <h1>Develop with App Engine</h1>
