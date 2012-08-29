@@ -130,11 +130,11 @@ transformers:
 # url = The URL for the server, followed with /remote_api. 
 #
 # Example commands for exporting all data.
-# $ appcfg.py download_data --email=molson@google.com --config_file=bulkloader.yaml --filename=student.csv --kind=Student --url=http://myclass.google.com/remote_api
-# $ appcfg.py download_data --email=molson@google.com --config_file=bulkloader.yaml --filename=unit.csv --kind=Unit --url=http://myclass.google.com/remote_api
-# $ appcfg.py download_data --email=molson@google.com --config_file=bulkloader.yaml --filename=lesson.csv --kind=Lesson --url=http://myclass.google.com/remote_api
+# appcfg.py download_data --email=molson@google.com --config_file=bulkloader.yaml --filename=student.csv --kind=Student --url=http://myclass.google.com/remote_api
+# appcfg.py download_data --email=molson@google.com --config_file=bulkloader.yaml --filename=unit.csv --kind=Unit --url=http://myclass.google.com/remote_api
+# appcfg.py download_data --email=molson@google.com --config_file=bulkloader.yaml --filename=lesson.csv --kind=Lesson --url=http://myclass.google.com/remote_api
 
-$ appcfg.py download_data --email=<email> --config_file=<config-file> --filename=<data_filename> --kind=<what to export> --url=<url>
+appcfg.py download_data --email=<email> --config_file=<config-file> --filename=<data_filename> --kind=<what to export> --url=<url>
 }}}
 
 The command will generate the following files:
