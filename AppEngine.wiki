@@ -86,7 +86,7 @@ Alternatively, because the command-line version has more options, you may wish t
 
 === From a shell (Mac, Linux) or command prompt (PC) ===
 
-Open a Unix command-line shell (Mac or Unix) or a Command Prompt (PC). In the window:
+Open a Unix command-line shell (Mac or Unix) or a command prompt (PC). In the window:
 
   # Change directory to the one you specified as the path for your app.
   # Run the server with the following command:<br>{{{dev_appserver.py . }}}
@@ -133,7 +133,7 @@ If you started your server from a command prompt on a PC, bring up the Windows T
   # End that task.
 
 === From a shell (Mac, Linux) ===
-If you started your development server from the command line, you can stop it there:
+If you started your development server from a shell, you can stop it there:
 
 Use the {{{ps}}} command to find the process number associated with your server and then to kill that server. 
 
