@@ -114,3 +114,5 @@ A couple of hints for !JavaScript debugging:
   * Consider using a !JavaScript editor or IDE that highlights errors. 
 
   * If you use Google Chrome to test your app, consider using the !JavaScript console. (See [https://developers.google.com/chrome-developer-tools/docs/console Chrome Developer Tools: Console].) The console shows fairly detailed information about !JavaScript parse errors.
+
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||
