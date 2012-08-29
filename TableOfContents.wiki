@@ -40,6 +40,6 @@
     * [HappinessMetrics Student Happiness]
     * [ExampleSurvey Example Post-Course Survey]
     * [AnalyticsForEdu Combine Assessment & Reach Data]
-    * [ExportingCourseData Export Course Data]
+    * [ExportCourseData Export Course Data]
 
 || [https://groups.google.com/forum/?fromgroups#!forum/course-builder-forum Discussion forum] ||
