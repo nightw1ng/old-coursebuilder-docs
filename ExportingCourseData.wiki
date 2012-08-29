@@ -146,3 +146,5 @@ The command will generate the following files:
 || {{{<filename>.csv}}} || The exported class data in CSV format. || 
 
 You can now import your CSV files into a spreadsheet or into [http://www.google.com/fusiontables Fusion Tables] for viewing and analysis. For help importing data into Fusion Tables, see [http://support.google.com/fusiontables/bin/answer.py?hl=en&answer=181717&topic=27017&ctx=topic Import data].
+
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/evaluate-course-efficacy Ask questions in the forum] ||
