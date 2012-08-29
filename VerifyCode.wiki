@@ -93,3 +93,5 @@ If the tool encounters errors, instead you see output similar to the following:
 
 
 You can go back and fix the errors, and run the verifier again after you finish.
+
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||
