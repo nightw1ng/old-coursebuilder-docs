@@ -1,3 +1,4 @@
+
 #summary Hints for using App Engine during development
 
 <h1>Develop with App Engine</h1>
@@ -129,8 +130,9 @@ Once the icon to the left of the app name is gray, your development server is st
 
 If you started your server from a command prompt on a PC, bring up the Windows Task Manager. 
 
-  # Search for the task that looks like:<br>  {{{Command Prompt - dev_appserver.py .}}} 
-  # End that task.
+  # On the *Applications* tab, search for the task that looks like:<br>  {{{Command Prompt - dev_appserver.py .}}} 
+  # Select the line for that task.
+  # Click on *End Task*.
 
 === From a shell (Mac, Linux, or other POSIX-compliant system) ===
 If you started your development server from a shell, you can stop it there:
@@ -179,7 +181,7 @@ To clear and reload all data,  you need to stop your development server, restart
 
   # Stopping your development server depends on how you started it:
     * If you started your server *from the Launcher*, go to the Launcher application and quit it.
-    * If you started your server *from a command prompt on a PC*, bring up the Windows Task Manager and search for the task that looks like {{{Command Prompt - dev_appserver.py .}}} End that task.
+    * If you started your server *from a command prompt on a PC*, bring up the Windows Task Manager and on the *Applications* tab, search for the task that looks like {{{Command Prompt - dev_appserver.py .}}} Select that task and click on *End Task*.
     * If you started  your server *from a shell on Mac, Linux, or other POSIX-compliant system*:<br><br>  {{{ps x | grep dev_appserver   # Find the process number}}}<br><br><font color=green> {{{30849 s000  S      0:00.85 /Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python /usr/local/bin/dev_appserver.py .}}} </font><br><font color=green> {{{30856 s000  R+     0:00.01 grep dev_appserver}}} </font><br> <br>{{{kill 30849}}}
   # Start your development server from the command line, clearing out the old data:<br><br>  {{{cd }}}_*{{{APPPATH}}}*_<br>  {{{dev_appserver.py --clear_datastore .}}} <br><br>where _*{{{APPPATH}}}*_ is the directory containing your app.
   # Start another command line and reload the changed data:  <br><br>  {{{cd }}}_*{{{APPPATH}}}*_{{{/data}}}<br><br>  {{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br><br>  {{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}} <br><br>where _*{{{APPPATH}}}*_ is the directory containing your app and _*{{{PORT}}}*_ is your app's port number. You will be asked for your credentials (Google user name and password) twice, once for loading each data file.
@@ -193,6 +195,9 @@ To change only some of the lesson or unit data, there are two steps:
   # From the *Entity Kind* drop down, choose whichever type of data you changed (Lesson or Unit).<br>A list of data appears.
   # (Optional) If you changed an existing piece of data, select the row containing that data and click on *Delete*.
   # Click on *Create New Entity* to add a new piece of data. Notice that you have to add the entire row over again, even if you're changing existing information.
+
+The most common time to change some data is when you want to modify a *Unit* entity to reflect when units become available or unavailable. (See [CreateHomePage Create Home Page].)
+
 
 == Troubleshooting ==
 
