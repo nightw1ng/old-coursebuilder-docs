@@ -112,4 +112,4 @@ Once you have created your videos, you need to post them to the Internet to make
   * [http://support.google.com/youtube/bin/static.py?hl=en&guide=1719823&page=guide.cs How to upload videos.]
   * Tools for working with videos: For information on posting videos to !YouTube, see [http://www.youtube.com/t/about_essentials#upload YouTube Essentials: Upload].
 
-|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions here] ||
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||
