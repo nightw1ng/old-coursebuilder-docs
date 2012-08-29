@@ -19,4 +19,4 @@ The pages in this section include:
 
   * [AppEngine Develop with App Engine]<br>Some details you might want to know about App Engine.
 
-|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions here] ||
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||
