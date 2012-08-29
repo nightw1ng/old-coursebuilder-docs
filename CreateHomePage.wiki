@@ -42,6 +42,8 @@ When you edit the file, leave the first line as is. Replace all of the other lin
   * {{{release_date:}}} When this release will be available to students. Optional.
   * {{{now_available:}}} A Boolean representing whether or not students can currently access this item. If False, the title is not a link.
 
+Typically, you make the lessons in your course available over time, as the course progresses. When you first launch the course, for example, perhaps only the pre-course assessment and the first unit are available. In that case, only those two lines would have {{{now_available}}} set to True. Later, you change the data associated with subsequent lessons as they become available.
+
 == Testing changes ==
 
 Changes you make to any file in the {{{views}}} directory appear automatically in your running development server.
@@ -49,5 +51,8 @@ Changes you make to any file in the {{{views}}} directory appear automatically i
 That is, after you make a change to one of these files, simply load (or reload) a page that uses that view and the change appears. 
 
 On the other hand, if you change the content of the {{{data/unit.csv}}} file, you must load the changed data into your development server as described in [AppEngine#Modify_your_app_and_see_the_effects Modify your app and see the effects].
+
+To see how to make these changes in your live, deployed course, see [UploadCode Deploy Your App].
+
 
 || [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||
