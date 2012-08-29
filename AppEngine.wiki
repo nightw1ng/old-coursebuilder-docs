@@ -22,8 +22,8 @@ For more information, see [https://developers.google.com/appengine/docs/billing 
 
 Make sure you have Python 2.7 on your system. To find out if you do...
 
-==== Check on Mac or Unix ====
-On Mac or Unix systems, open a shell window and type
+==== Check on Mac, Linux, or other POSIX-compliant systems ====
+On Mac, Linux, or other POSIX-compliant systems, open a shell and type:
 
   {{{which python}}}
 
@@ -84,9 +84,9 @@ To start the development server from the Launcher:
 
 Alternatively, because the command-line version has more options, you may wish to run the development server from your shell or command prompt. 
 
-=== From a shell (Mac, Linux) or command prompt (PC) ===
+=== From a shell (Mac, Linux, or other POSIX-compliant+) or command prompt (PC) ===
 
-Open a Unix command-line shell (Mac or Unix) or a command prompt (PC). In the window:
+Open a shell or a command prompt. In the window:
 
   # Change directory to the one you specified as the path for your app.
   # Run the server with the following command:<br>{{{dev_appserver.py . }}}
