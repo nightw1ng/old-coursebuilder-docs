@@ -25,4 +25,4 @@ The pages in this section include:
 
   * [UploadCode Deploy Your App]<br>How to deploy your course to Google's production servers, to make it available to the world.
 
-|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions here] ||
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||
