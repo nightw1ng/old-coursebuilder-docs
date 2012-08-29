@@ -10,7 +10,7 @@ Evaluating the reach and engagement of your course lets you determine how many p
   * What were the overall drop-off rates? 
   * When did students tend to drop-off?
 
-For suggestions on data you can use to measure reach and engagement, see [ExampleReachEngagementMetrics Example Reach & Engagement].
+For suggestions on data you can use to measure reach and engagement, see [ExampleReachEngagementMetrics Example Reach & Engagement Data].
 
 For an example of how to use student assessments and reach and engagement data to evaluate your course's effectiveness, see [AnalyticsForEdu Combine Assessment and Reach Data].
 
