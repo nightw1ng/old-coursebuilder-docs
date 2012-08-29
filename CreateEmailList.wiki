@@ -74,3 +74,5 @@ Include information about your group on the page the student sees upon successfu
   {{{<a href="http://groups.google.com/group/}}}_*{{{My-Course-Announce}}}*_{{{">http://groups.google.com/group/}}}_*{{{My-Course-Announce}}}*_{{{</a>.}}}<br>
   {{{On that page, click on <b>Join Group</b>.}}}<br>
   {{{In the dialog box that appears, under <b>How do you want to read this group?</b>, choose <b>Email</b>.</p>}}}
+
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/set-up-and-manage-community Ask questions in the forum] ||
