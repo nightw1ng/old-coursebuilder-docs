@@ -113,3 +113,5 @@ A lot of your development time is spent in this step. For details on one way to 
 
   * Keep your content legal. This may sound obvious, but laws for what you can do in a live classroom can be different from what you can do online. Also, laws regarding what you can show in a video or talk about in an online forum vary from country to country.
 Once you’ve developed your content, it’s time to move on to [ThreeImplement implementing the course with technology].
+
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions here] ||
