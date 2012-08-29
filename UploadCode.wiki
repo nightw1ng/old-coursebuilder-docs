@@ -83,6 +83,8 @@ Note that this works for the {{{upload}}} command. It *does not* work for the {{
 
 Once you deploy your app, modifying it in production is a little more complicated than modifying it on your development server.  However, sometimes you need to do so.
 
+One of the most common reasons for modifying your course in production is to make units available progressively, as the course goes on. (See [CreateHomePage Create Home Page].)
+
 === Modify !JavaScript or HTML files ===
 
 You upload modifications to the content of assessments or activities (files in {{{assets/js/}}}) or the look of the various pages of your course (files in {{{views/}}}) in the same way that you uploaded those to production in the first place. That is, from a shell or command prompt:
@@ -96,15 +98,38 @@ You are asked to supply your credentials. Supply your username and the app-speci
 
 === Modify CSV files ===
 
-Uploading modifications to the contents of the home page ({{{data/unit.csv}}}) or the definition of the lessons ({{{data/lesson.csv}}}) is trickier. Although it is several steps, the simplest way to do this and be certain that what you get is the same as what is on your development server is to clear out all of the existing data and then upload the data anew. 
+Uploading modifications to the contents of the home page ({{{data/unit.csv}}}) or the definition of the lessons ({{{data/lesson.csv}}}) is trickier. Some of these steps you only need to do the first time you modify the datastore.
 
-If you want to change the lesson data, do the following:
+==== Getting ready to make changes to the datastore ====
+
+The following steps you only need to do once:
 
   # From a web  browser, navigate to https://appengine.google.com/.
   # On the *My Applications* page, click on the name of your app. The dashboard for your app appears:<br> <img src="http://gcb-x-03141590.googlecode.com/git/images/prod-dashboard.png" /> 
   # In the left navigation, click on *Datastore Admin*. The first time you do this, a screen appears asking if you want to enable datastore administration options:<br> <img src="http://gcb-x-03141590.googlecode.com/git/images/datastore-enable.png" /> 
-  # Click on *Enable Datastore Admin*. <br>You only need to do this step once.
-  # The *Datastore Admin* page for your app appears. It's main area looks similar to the following:<br> <img src="http://gcb-x-03141590.googlecode.com/git/images/datastore-admin.png" /> 
+  # Click on *Enable Datastore Admin*.
+  # The *Datastore Admin* page for your app appears.
+
+==== Changing one lesson or unit ====
+
+To change a unit or lesson, you must first delete the row of existing data for that unit and then create a new row of data. To do so:
+
+  # From a web  browser, navigate to https://appengine.google.com/.
+  # On the *My Applications* page, click on the name of your app. The dashboard for your app appears.
+  # In the left navigation, click on *Datastore Viewer*. Its main area looks similar to the following:<br> <img src="http://gcb-x-03141590.googlecode.com/git/images/datastore-viewer.png" /> 
+  # On the *Query* tab, in the *By kind* drop-down box, choose the type of entity you want to change, *Unit* or *Lesson*.
+  # Select the row containing the unit or lesson you want to change. 
+  # Click on *Delete* and confirm your choice in the dialog box that appears.
+  # Click on the *Create* tab. The top part of this tab looks similar to the following: <br> <img src="http://gcb-x-03141590.googlecode.com/git/images/datastore-create.png" /> 
+  # Click on *Next*.
+  # Enter the information for your revised entity and click on *Save Entity*.
+
+==== Deleting all lessons or units and reloading ====
+
+Once you have the ability to make changes to the datastore:
+  # From a web  browser, navigate to https://appengine.google.com/.
+  # On the *My Applications* page, click on the name of your app. The dashboard for your app appears.
+  # In the left navigation, click on *Datastore Admin*. Its main area looks similar to the following:<br> <img src="http://gcb-x-03141590.googlecode.com/git/images/datastore-admin.png" /> 
   # Choose the check box in the *Lesson* row.
   # Click on *Delete Entities*.
   # A confirmation page appears. Click on *Delete Entities*. <br>The *Delete Job Status* page appears. <br> <img src="http://gcb-x-03141590.googlecode.com/git/images/delete-job-status.png" /> <br>Deleting the entities for your job should be very fast. The easiest way to check when the entities are gone is to return to the *Datastore Admin* page. Now all of the old lesson data is gone. 
