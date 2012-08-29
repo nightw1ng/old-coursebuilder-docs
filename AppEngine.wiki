@@ -224,4 +224,4 @@ If you do, then you have forgotten to start your development server.
 
 There's a lot of [https://developers.google.com/appengine/docs/python/config/appconfig#Required_Elements official documentation] for App Engine.
 
-|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions here] ||
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||
