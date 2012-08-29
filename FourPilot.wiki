@@ -26,4 +26,4 @@ Some tips:
 After you’ve piloted your course, return to earlier steps for more [TwoDevelop development] and [ThreeImplement implementation]. Once you’ve iterated a few times, go live and enjoy your students!
 
 
-|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions here] ||
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/design-process Ask questions here] ||
