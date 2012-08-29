@@ -31,3 +31,5 @@ This page lists some data to collect to evaluate how many people you reach and h
     * Average number of valid comments on posts to that page as a whole
     * Average number of likes per post
     * Average number of "reshares" per post
+
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/evaluate-course-efficacy Ask questions in the forum] ||
