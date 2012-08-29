@@ -63,10 +63,10 @@ To start the development server from the Launcher:
 
 From the Launcher, you stop your server by clicking on the *Stop* button. For more information, see [AppEngine#Stop_your_server Stop your server].
 
-==== From a shell (Mac, Linux) or command prompt (PC) ====
+==== From a shell (Mac, Linux, or other POSIX-compliant system) or command prompt (PC) ====
 
-Because the command-line version has more options, you may wish to run the development server from your Unix shell or PC command prompt. To do so:
-  # Open a Unix shell or PC command prompt.
+Because the command-line version has more options, you may wish to run the development server from your shell or command prompt. To do so:
+  # Open a shell or command prompt.
   # Change directory to the one you specified as the path for your app.
   # Run the server with the following command:<br>{{{dev_appserver.py . }}}
   # As the command starts running, you may see some warnings you can ignore and questions you must answer. <br>Once the app is set up, you see a URL reference to the hostname and port you use to connect to your app from a web browser. Typically, this URL is {{{http://localhost:8080}}}, but the port number ({{{8080}}}) may be different.
@@ -87,7 +87,7 @@ Before you can run the sample code, you need to upload the data files that repre
 
 To upload the data, first make sure that your development server is running (as described in step 5). 
 
-Then, open a new Unix shell or PC command prompt. In that window:
+Then, open a new shell or command prompt. In that window:
 
   {{{cd }}}_*{{{APPPATH}}}*_{{{/data}}}<br>
   {{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br>
