@@ -99,3 +99,5 @@ Cheers,<br>
 Power Searching with Google course staff
 
 <img src="http://gcb-x-03141590.googlecode.com/git/images/certificate.png" height="246" width="320 />
+
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/set-up-and-manage-community Ask questions in the forum] ||
