@@ -28,4 +28,4 @@ Some overall tips:
 
   * *Take heart.*<br>If you’re an experienced classroom teacher, you know that in a class of 30, there’s usually one troublemaker, one student who progresses slowly, and one student who progresses quickly. If your course reaches 30,000 students, that one troublemaker becomes 1,000 troublemakers, and so on. Keep your perspective. It’s still the same phenomenon.
 
-|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions here] ||
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/design-process Ask questions here] ||
