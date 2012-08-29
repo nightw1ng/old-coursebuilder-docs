@@ -16,8 +16,8 @@ Before you can start working on your own course, you need to download Python and
 
 Make sure you have Python 2.7 on your system. To find out if you do...
 
-==== Check on Mac or Unix ====
-On Mac or Unix systems, open a Unix shell window and type
+==== Check on Mac, Linux or other POSIX-compliant systems ====
+On Mac, Linux or other POSIX-compliant systems, open a shell and type
 
   {{{which python}}}
 
