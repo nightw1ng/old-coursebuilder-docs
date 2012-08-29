@@ -40,3 +40,6 @@ If you have multiple objectives, break them up and perform these steps separatel
     * Identify these and do a final rearranging of your list. Combine elements where needed. Eliminate repeated pieces.
 
 We recommend that you get a second set of knowledgeable eyes to take a look at your material and validate it. Does the flow make sense? Is there anything that was forgotten?
+
+
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions here] ||
