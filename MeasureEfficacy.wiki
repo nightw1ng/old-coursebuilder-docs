@@ -28,3 +28,5 @@ There are three basic categories of data that we suggest using. Not all are rele
   * Assuming you have a team of people working on your course, split the evaluation work among several people. If possible, have a different person be responsible for each of the categories above. Data collection and analysis takes time, and it helps to have the many team members think through what’s needed and how you analyze it.
 
   * If you have not done evaluations of this sort before, keep in mind that working with and analyzing data takes time and practice. The amount of data you collect may seem overwhelming and it will require time for analysis. If you know people who are comfortable in this area, reach out to them. In general, you’ll find that people are very eager to share their expertise!
+
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/evaluate-course-efficacy Ask questions in the forum] ||
