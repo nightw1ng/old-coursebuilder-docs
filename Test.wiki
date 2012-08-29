@@ -6,3 +6,22 @@ Not real content. just to see if things work.
 
 
 <wiki:gadget url="http://google-code-feed-gadget.googlecode.com/svn/trunk/gadget.xml" up_feeds="https://groups.google.com/group/course-builder-forum/feed/rss_v2_0_msgs.xml" border="0" width="90%" height="1000" width="95%" />
+
+----------------------------
+
+try an iframe
+
+<iframe id="forum_embed"
+        src="javascript:void(0)"
+        scrolling="no"
+        frameborder="0"
+        width="900"
+        height="700">
+</iframe>
+
+<script type="text/javascript">
+  document.getElementById("forum_embed").src =
+      "https://groups.google.com/forum/embed/?place=forum/course-builder-announce" +          
+      "&showsearch=true&showpopout=true&parenturl=" +
+      encodeURIComponent(window.location.href);
+</script>
