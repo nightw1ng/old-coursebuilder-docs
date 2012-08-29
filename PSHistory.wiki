@@ -17,3 +17,6 @@ Power Searching is only one instance of a MOOC. Simply put, a MOOC is a course, 
 Past those simple points, there are significant differences in implementation and philosophy of what constitutes a MOOC. Many people are experimenting with different approaches, using different code and different interaction models between students, instructors, and even casual visitors. 
 
 For Power Searching with Google, we chose one approach. It’s not the only approach; it’s not the most innovative approach. This approach is not appropriate for all subjects. But it was relatively easy to create and was extremely successful for this subject matter. We’d like to share that approach and code with you. 
+
+
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions here] ||
