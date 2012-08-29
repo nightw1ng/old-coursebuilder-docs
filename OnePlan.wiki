@@ -45,5 +45,4 @@ Good objectives accomplish several things:
 
 Once you’ve done initial planning, it’s time to move on to [TwoDevelop developing the content without technology].
 
-
-|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions here] ||
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/design-process Ask questions here] ||
