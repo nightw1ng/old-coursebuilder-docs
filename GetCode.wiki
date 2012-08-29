@@ -117,4 +117,4 @@ In either case, you should see the registration page for the sample app:
 
 <img src="http://gcb-x-03141590.googlecode.com/git/images/registration.png" />
 
-*Next step:* [ExplorePS Explore the Sample App]
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions here] ||
