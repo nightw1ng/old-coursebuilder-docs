@@ -15,3 +15,5 @@ For suggestions on data you can use to measure reach and engagement, see [Exampl
 For an example of how to use student assessments and reach and engagement data to evaluate your course's effectiveness, see [AnalyticsForEdu Assessment and Reach Data for EDU].
 
 Google Analytics is our tool for collecting and analyzing reach and engagement data. The [http://www.google.com/analytics/learn/index.html Analytics site] contains a lot of useful information. Start with [http://support.google.com/analytics/bin/answer.py?hl=en&answer=1008015&topic=1726909&ctx=topic Get started with Google Analytics.] This step-by-step guide describes how to get an Analytics account to use with your course. From there, you'll learn how to get the !JavaScript snippet you must add to {{{views/base.html}}} to collect Analytics data.
+
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/evaluate-course-efficacy Ask questions in the forum] ||
