@@ -8,7 +8,7 @@ As described in [MeasureEfficacy Evaluate Course Efficacy], there are three type
 
 This page walks you through a simple example of how to use the objective data to understand the effectiveness of your course and to improve your course materials. This example only touches the surface of what you can do with this data, but illustrates how important this data is to improving the quality of effectiveness of your courses. 
 
-Course Builder stores assessment data in  App Engine’s [https://developers.google.com/appengine/docs/python/datastore/structuring_for_strong_consistency High Replication datastore]. This data includes pre-, mid-, and post-course assessment data, data on the units offered in the course, and data on the lessons offered in each unit. See [ExportingCourseData Export Course Data] for details. You can use this data to understand student skill levels and improvements in abilities. 
+Course Builder stores assessment data in  App Engine’s [https://developers.google.com/appengine/docs/python/datastore/structuring_for_strong_consistency High Replication datastore]. This data includes pre-, mid-, and post-course assessment data, data on the units offered in the course, and data on the lessons offered in each unit. See [ExportCourseData Export Course Data] for details. You can use this data to understand student skill levels and improvements in abilities. 
 
 If you [ReachAndEngagementMetrics set up your course] to do so, Google Analytics tracks reach and engagement data. This data lets you determine how many people you reached with the course, how engaged those people were, and how they interacted with the course pages. 
 
