@@ -114,3 +114,5 @@ In addition to these things that you set up, students may create additional inte
 Of course, as with any class there are various administrative aspects to creating an online course. Two of the major ones are [CreateRegistration managing student registration] and [MeasureEfficacy collecting and analyzing data to see how well your course does].
 
 For a full list of tasks needed to create a course, see [CourseBuilderChecklist Course Builder Checklist].
+
+|| [https://groups.google.com/forum/?fromgroups#!forum/course-builder-forum Ask questions in the forum] ||
