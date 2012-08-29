@@ -63,7 +63,7 @@ To start the development server from the Launcher:
 
 From the Launcher, you stop your server by clicking on the *Stop* button. For more information, see [AppEngine#Stop_your_server Stop your server].
 
-==== From a shell (Mac, Linux, or other POSIX-compliant system) or command prompt (PC) ====
+==== From a shell or command prompt ====
 
 Because the command-line version has more options, you may wish to run the development server from your shell or command prompt. To do so:
   # Open a shell or command prompt.
