@@ -99,3 +99,5 @@ Sheer number of participants and community
   * Please be sure to keep chat "off"/invisible/signed out at the help@ account.
   * Add any interesting solutions you discovered to the *_TA Answer Guide_*.
   * If possible, give the next shift of TAs a briefing on any happenings they should be aware of (such as known issues).
+
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/set-up-and-manage-community Ask questions in the forum] ||
