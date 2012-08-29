@@ -11,3 +11,5 @@
 || *Hangouts On Air* || Live office hours to address student questions. || Can broadcast to the world.<br>Can collect engagement data easily. || Limited live interaction between students and instructors.<br>New technology. || Requires Google+ account (or Google+ page) for the instructor.<br>Helpful to use a Moderator page to sort student questions in advance.<br>Requires !YouTube channel.<br> See [OnlineOfficeHours Online Office Hours]. ||
 || *Google Moderator* || Students ask questions of course staff. || Most popular questions can be addressed.<br>Students vote for top questions. || Not well integrated with Hangouts on Air. || Best when used with live events (like Hangouts on Air).<br>See [OnlineOfficeHours Online Office Hours]. ||
 || *!YouTube Channel* || Host all videos; encourage reuse and video responses. || All of your course videos are accessible at one site. ||  || Necessary to have a !YouTube channel if you want to do a Hangout on Air. || 
+
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/set-up-and-manage-community Ask questions in the forum] ||
