@@ -94,3 +94,5 @@ Include information about your group on the page the student sees upon successfu
   {{{<p>To participate in community discussions about this course, register for the web forum at}}}<br>
   {{{<a href="http://groups.google.com/group/}}}_*{{{My-Course}}}*_{{{">http://groups.google.com/group/}}}_*{{{My-Course}}}*_{{{</a>.}}}<br>
   {{{On that page, click on <b>Join Group</b>.</p>}}}
+
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/set-up-and-manage-community Ask questions in the forum] ||
