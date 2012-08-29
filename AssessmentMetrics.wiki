@@ -11,3 +11,5 @@ Student assessments measure student skill level and improvement in ability. Cour
 To get the assessment information, follow the instructions in [ExportingCourseData ExportCourseData] to download the *Student* data as a CSV file.
 
 For an example of how to use student assessments and reach and engagement data to evaluate your course's effectiveness, see [AnalyticsForEdu Assessment and Reach Data for EDU].
+
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/evaluate-course-efficacy Ask questions in the forum] ||
