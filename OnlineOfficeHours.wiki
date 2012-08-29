@@ -50,3 +50,5 @@ You can later change this information by using the *Edit Series* button on your 
   * *How can I get other people to vote on my idea or an idea that I really like?*<br>The *Share* button allows you to copy a direct URL link to your idea, or share your idea directly through Gmail, Facebook, and Twitter. To use any of these services, you will need to sign-in to them and allow Google Moderator to access them. If you do so, perhaps people will notice your idea and vote on it.
 
 Many of these questions your students may also have. Consider sharing this information with them.
+
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/set-up-and-manage-community Ask questions in the forum] ||
