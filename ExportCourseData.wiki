@@ -22,25 +22,25 @@ The following table describes the data Course Builder stores for your course. Co
 || {{{precourse_answer}}} ||  TEXT || Information about the precourse assessment.  Stored as a 2-dimensional array of strings, in the same format as for the final assessment. || 
 || {{{precourse_score}}} || INTEGER || The student’s score on the pre-course assessment. A numeric value or empty for no score. || 
 
-*Unit* - Data on the units offered in the course.
+*Unit* - Data on the units offered in the course. Used on the [CreateHomePage home page].
 || *Name* || *Type* || *Description* ||
 || {{{id}}} || INTEGER || An integer representing this unit. || 
-|| {{{type}}} || STRING || The type of unit being offered. A string value containing the type ‘A’, ‘U’ or ‘O’ for assessment, Unit or Other. || 
-|| {{{unit_id}}} || STRING || A string id for this unit. Its value depends on if this item is assessment, unit or something else. || 
-|| {{{title}}} || STRING || A string value containing the title of the unit. || 
+|| {{{now_available}}} || BOOLEAN || A Boolean value of True or False representing whether or not students can access this unit. || 
 || {{{release_date}}} || STRING || The date when this unit will be made available. A string value containing the date. || 
-|| {{{now_available}}} || STRING || A Boolean value of True or False representing whether or no students can access this unit. || 
+|| {{{title}}} || STRING || A string value containing the title of the unit. || 
+|| {{{type}}} || STRING || The type of unit being offered. A string value containing the type ‘A’, ‘U’ or ‘O’ for assessment, unit or other. || 
+|| {{{unit_id}}} || STRING || A string id for this unit. Its value depends on if this item is an assessment, unit or something else. || 
 
-*Lesson* - Data on the lessons offered in each unit.
+*Lesson* - Data on the lessons offered in each unit. Use on [CreateLessons lesson pages].
 || *Name* || *Type* || *Description* ||
-|| {{{unit_id}}} || INTEGER || An integer indicating which unit this lesson is part of. || 
-|| {{{id}}} || INTEGER || An integer indicating which lesson this is. Lessons in each unit start with 1 and go in order. || 
-|| {{{title}}} || STRING || A string value representing the name of the lesson. || 
-|| {{{objectives}}} || TEXT || A string containing lesson objectives, that appears after the title of the lesson. || 
-|| {{{video}}} || TEXT	 || The id of the YouTube video associated with the lesson. || 
-|| {{{notes}}} || TEXT || URL of the text version of the lesson. || 
 || {{{activity}}} || STRING || A string value of Yes or No representing whether there is an activity associated with this lesson. || 
 || {{{activity_title}}} || STRING || The title of the activity. || 
+|| {{{id}}} || INTEGER || An integer indicating which lesson this is. Lessons in each unit start with 1 and go in order. || 
+|| {{{notes}}} || TEXT || URL of the text version of the lesson. || 
+|| {{{objectives}}} || TEXT || A string containing lesson objectives, that appears after the title of the lesson. || 
+|| {{{title}}} || STRING || A string value representing the name of the lesson. || 
+|| {{{unit_id}}} || INTEGER || An integer indicating which unit this lesson is part of. || 
+|| {{{video}}} || TEXT || The id of the !YouTube video associated with the lesson. || 
 
 == Export your class data ==
 
