@@ -72,10 +72,10 @@ For example, assume that my course files live in {{{~/mycourse}}} and that I wan
 The command generates the following files:
 
 || *File* || *Description* ||
-|| {{{bulkloader-log-<timestamp>}}} || A log file showing the processing steps. Use the {{{--db_filename=skip}}} flag to skip generating this file.|| 
-|| {{{bulkloader-progress-<timestamp>.sql3}}} || A SQL3 database file showing progress. Use the {{{--db_filename=skip}}} flag to skip generating this file. || 
-|| {{{bulkloader-results-<timestamp>.sql3}}} || The exported class data in SQL3 format. Use the {{{--db_filename=skip}}} flag to skip generating this file. || 
-|| {{{<filename>.csv}}} || The exported class data in CSV format. || 
+|| {{{bulkloader-log-}}}*_{{{timestamp}}}_* || A log file showing the processing steps. Use the {{{--db_filename=skip}}} flag to skip generating this file.|| 
+|| {{{bulkloader-progress-}}}*_{{{timestamp}}}_*{{{.sql3}}} || A SQL3 database file showing progress. Use the {{{--db_filename=skip}}} flag to skip generating this file. || 
+|| {{{bulkloader-results-}}}*_{{{timestamp}}}_*{{{.sql3}}} || The exported class data in SQL3 format. Use the {{{--db_filename=skip}}} flag to skip generating this file. || 
+|| *_{{{filename}}}_*{{{.csv}}} || The exported class data in CSV format. || 
 
 You can now import your CSV files into a spreadsheet or into [http://www.google.com/fusiontables Fusion Tables] for viewing and analysis. For help importing data into Fusion Tables, see [http://support.google.com/fusiontables/bin/answer.py?hl=en&answer=181717&topic=27017&ctx=topic Import data].
 
