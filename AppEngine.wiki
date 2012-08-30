@@ -79,7 +79,7 @@ To start the development server from the Launcher:
   # Select your app. 
   # When it's highlighted, click the *Run* button to start the server (for that app). <br>Once the *Browse* button is enabled, your server is ready to accept requests.
   # Click on the *Browse* button to visit the app in a web browser.<br>You should see the login page for the server.<br> <img src="http://gcb-x-03141590.googlecode.com/git/images/server-login.png" />
-  # If you do not see the login page, read [Troubleshooting Troubleshooting].
+  # If you do not see the login page, read [#Troubleshooting Troubleshooting].
   # If you do see the login page, you can use any login name you want; this is the login for your development server, it does not have to match any real email address. 
 
 Alternatively, because the command-line version has more options, you may wish to run the development server from your shell or command prompt. 
@@ -92,7 +92,7 @@ Open a shell or a command prompt. In the window:
   # Run the server with the following command:<br>{{{dev_appserver.py . }}}
   # As the command starts running, you may see some warnings you can ignore and questions you must answer. <br>Once the app is set up, you see a URL reference to the hostname and port you use to connect to your app from a web browser. Typically, this URL is {{{http://localhost:8080}}}, but the port number ({{{8080}}}) may be different.
   # Open a browser window and navigate to the URL. You should see the login page for the server (as shown above for a PC).
-  # If you do not see the login page, read [Troubleshooting Troubleshooting].
+  # If you do not see the login page, read [#Troubleshooting Troubleshooting].
   # If you do see the login page, you can use any login name you want; this is the login for your development server, it does not have to match any real email address. 
 
 === From a shell or command prompt, to enable remote access ===
