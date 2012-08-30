@@ -61,7 +61,7 @@ In these commands:
 
 || _*{{{APPPATH}}}*_ || The directory containing your app's code. ||
 || _*{{{DataFilename}}}*_ || Pathname to the exported data file this command creates. ||
-|| _*{{{EntityType}}}*_ || What type of entity to export. One of Lesson, Student, or Unit. ||
+|| _*{{{EntityType}}}*_ || What type of entity to export. One of {{{Lesson}}}, {{{Student}}}, or {{{Unit}}}. ||
 || _*{{{URL}}}*_ || The URL for the server. <br> For your development server, this is {{{http://localhost:}}}_*{{{PORT}}}*_, where _*{{{PORT}}}*_ is the port running your server.<br> For your production server, this is _*{{{APP_ID}}}*_{{{.appspot.com}}}, where  _*{{{APP_ID}}}*_ is the app name you [#Register_your_app_with_Google registered]. ||
 
 For example, assume that my course files live in {{{~/mycourse}}} and that I want to export student data from my development server to a a file named {{{~/student.csv}}}. I would use these commands:
