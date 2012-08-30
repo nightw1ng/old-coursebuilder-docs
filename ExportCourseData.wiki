@@ -12,14 +12,15 @@ The following table describes the data Course Builder stores for your course. Co
 
 *Student* - Data on the student’s work on the class.
 || *Name* || *Type* || *Description* ||
-|| {{{midterm_score}}} || INTEGER || The student’s midterm score. A numeric value or empty for no score. || 
-|| {{{final_answer}}} || TEXT || Information about the final assessment. Stored as a 2-dimensional array of strings. For example:<br><br>{{{[["assessment_type", "midcourse"],}}} <br> {{{["0", "true"],}}} <br> {{{["1", "true"],}}} <br> {{{["2", "true"],}}} <br> {{{["3", "true"],}}} <br> {{{["4", "false"],}}} <br> {{{["num_correct", "4"],}}} <br> {{{["num_questions", "5"],}}} <br> {{{["score", "80.00"]]}}} <br><br> The first element of the array indicates the assessment type. The next N  elements indicate whether the student got that question correct. Finally, there are elements that indicate how many questions the student answered correctly, the total number of questions in the assessment, and the student's score on the assessment. || 
-|| {{{enrolled_date}}} || DATETIME || The date and timestamp when student enrolled in the class. || 
-|| {{{final_score}}} || INTEGER || The student’s final score. A numeric value or empty for no score. || 
-|| {{{precourse_answer}}} ||  TEXT || Information about the precourse assessment.  Stored as a 2-dimensional array of strings, in the same format as for the final assessment. || 
-|| {{{overall_score}}} || INTEGER || The student’s overall score. A numeric value or empty for no score. || 
-|| {{{midterm_answer}}} || TEXT || Information about the mid-course assessment. Stored as a 2-dimensional array of strings, in the same format as for the final assessment. || 
 || {{{cert_name}}} || STRING || The name the student supplied during registration. || 
+|| {{{enrolled_date}}} || DATETIME || The date and timestamp when the student enrolled in the class. || 
+|| {{{final_answer}}} || TEXT || Information about the final assessment. Stored as a 2-dimensional array of strings. For example:<br><br>{{{[["assessment_type", "midcourse"],}}} <br> {{{["0", "true"],}}} <br> {{{["1", "true"],}}} <br> {{{["2", "true"],}}} <br> {{{["3", "true"],}}} <br> {{{["4", "false"],}}} <br> {{{["num_correct", "4"],}}} <br> {{{["num_questions", "5"],}}} <br> {{{["score", "80.00"]]}}} <br><br> The first element of the array indicates the assessment type. The next N  elements indicate whether the student answered correctly the corresponding question (note that the elements in this array number questions starting with 0, but the assessment actually numbers them starting with 1). Finally, there are elements that indicate how many questions the student answered correctly, the total number of questions in the assessment, and the student's score on the assessment. || 
+|| {{{final_score}}} || INTEGER || The student’s score on the final assessment. A numeric value or empty for no score. || 
+|| {{{midterm_answer}}} || TEXT || Information about the mid-course assessment. Stored as a 2-dimensional array of strings, in the same format as for the final assessment. || 
+|| {{{midterm_score}}} || INTEGER || The student’s score on the mid-course assessment. A numeric value or empty for no score. || 
+|| {{{overall_score}}} || INTEGER || The student’s overall score. A numeric value or empty for no score. || 
+|| {{{precourse_answer}}} ||  TEXT || Information about the precourse assessment.  Stored as a 2-dimensional array of strings, in the same format as for the final assessment. || 
+|| {{{precourse_score}}} || INTEGER || The student’s score on the pre-course assessment. A numeric value or empty for no score. || 
 
 *Unit* - Data on the units offered in the course.
 || *Name* || *Type* || *Description* ||
