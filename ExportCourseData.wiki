@@ -31,6 +31,8 @@ The following table describes the data Course Builder stores for your course. Co
 || {{{type}}} || STRING || The type of unit being offered. A string value containing the type ‘A’, ‘U’ or ‘O’ for assessment, unit or other. || 
 || {{{unit_id}}} || STRING || A string id for this unit. Its value depends on if this item is an assessment, unit or something else. || 
 
+If you keep your {{{data/unit.csv}}} file in sync with your application (that is, you don't change unit information using the Datastore Admin page), then downloaded unit data will be the same as that in {{{data/unit.csv}}}. However, the order of columns in the CSV file for downloaded data does not match the order of the data in that file.
+
 *Lesson* - Data on the lessons offered in each unit. Use on [CreateLessons lesson pages].
 || *Name* || *Type* || *Description* ||
 || {{{activity}}} || STRING || A string value of Yes or No representing whether there is an activity associated with this lesson. || 
@@ -41,6 +43,8 @@ The following table describes the data Course Builder stores for your course. Co
 || {{{title}}} || STRING || A string value representing the name of the lesson. || 
 || {{{unit_id}}} || INTEGER || An integer indicating which unit this lesson is part of. || 
 || {{{video}}} || TEXT || The id of the !YouTube video associated with the lesson. || 
+
+If you keep your {{{data/lesson.csv}}} file in sync with your application (that is, you don't change lesson information using the Datastore Admin page), then downloaded lesson data will be the same as that in {{{data/lesson.csv}}}. However, the order of columns in the CSV file for downloaded data does not match the order of the data in that file.
 
 == Export your class data ==
 
