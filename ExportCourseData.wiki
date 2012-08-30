@@ -1,4 +1,3 @@
-
 #summary Describes course data and how to export your course data.
 
 <h1>Export Course Data</h1>
