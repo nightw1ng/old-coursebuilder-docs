@@ -1,4 +1,3 @@
-
 #summary Describes course data and how to export your course data.
 
 <h1>Export Course Data</h1>
@@ -68,7 +67,7 @@ In these commands:
 
 For example, assume that my course files live in {{{~/mycourse}}} and that I want to export student data from my development server to a a file named {{{~/student.csv}}}. I would use these commands:
 
-  {{{cd ~/mycourse{/data}}}<br>
+  {{{cd ~/mycourse/data}}}<br>
   {{{appcfg.py download_data --config_file=../bulkloader.yaml --email=test@example.com  --filename=../student.csv --kind=Student --url=http://localhost:8080/remote_api}}}
 
 The command generates the following files:
