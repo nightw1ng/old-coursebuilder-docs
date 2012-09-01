@@ -71,7 +71,7 @@ In deciding the objectives for your course, try to design for the middle ground.
 
 ==Decide what other data to collect to evaluate your course's efficacy.==
 
-You should collect data so that you can evaluate difference you have made with your course and so you can have concrete information to guide future improvement of your course. We collect three categories of data for these purposes:
+You should collect data so that you can evaluate the difference you have made with your course and so you can have concrete information to guide future improvement of your course. We collect three categories of data for these purposes:
 
   * *Assessments*, as discussed above, measure skill level and improvement in ability. <br><br>You collect this data by creating the pre-, mid-, and post-course assessments and comparing students' scores on them. See [AssessmentMetrics Student Assessments].
 
