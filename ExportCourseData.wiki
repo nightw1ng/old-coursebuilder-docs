@@ -43,6 +43,8 @@ You can now import your CSV files into a spreadsheet or into [http://www.google.
 
 === Save time: export data subsets ===
 
+<font color=red><<TODO As of 3 Sept, this section reflects what the kind *will* do, not what it *does* do. At present, the default bulkloader.yaml only exports email addresses. In the next day or so, the code will change to reflect what this section says.>></font>
+
 By default, when you download data from Course Builder, App Engine downloads all of the fields for the entity type you specify. For lessons and units, this is probably a fairly small amount of data. Also, for those entities, the amount of data does not change based on course size.
 
 Student entities, however, are different. If your course is relatively small, downloading all data for that course is fairly fast. But if your course has a very large number of students, the {{{appcfg.py}}} command can take hours to run. If you find that downloading data takes too long, consider downloading only the data subset you really need. 
