@@ -2,18 +2,84 @@
 
 <h1>Export Course Data</h1>
 
-This page describes the student assessment and course data stored by Course Builder and how to export your data into text files in [http://en.wikipedia.org/wiki/Comma-separated_values CSV] format. We’ll start with an overview of the Course Builder data, followed by the steps for exporting the data. Before getting started, make sure you’ve downloaded and installed the Python App Engine SDK and that you have Python 2.7 on your system. (For information on downloading and installing the Python App Engine SDK, see [AppEngine Develop with App Engine].)
+This page describes the student assessment and course data stored by Course Builder and the process for exporting your data into text files in [http://en.wikipedia.org/wiki/Comma-separated_values CSV] format. We’ll start with the steps for exporting the data, followed by a description of the available data. 
 
-<wiki:toc />
+<wiki:toc max_depth="2" />
 
-== Course Builder data overview ==
+Before getting started, make sure you’ve downloaded and installed the Python App Engine SDK and that you have Python 2.7 on your system. For information on downloading and installing the Python App Engine SDK, see [AppEngine Develop with App Engine].
 
-The following table describes the data Course Builder stores for your course. Course Builder stores three  kinds of data: Student, Unit, and Lesson. 
+== Export process ==
 
-*Student* - Data on the student’s work on the class.
+The Course Builder application stores data in App Engine’s [https://developers.google.com/appengine/docs/python/datastore/structuring_for_strong_consistency High Replication datastore]. You download course data using the App Engine bulk loader tool, which is included with the Python App Engine SDK for your platform. Data is downloaded using the CSV format; this makes it easy to upload data into a spreadsheet or into Fusion Tables for viewing and analysis.
+
+You can export data either from your development server or from your production server. The steps are the same. The only difference is that when you download data from your production server, you need to use your app-specific password, as described in [UploadCode#Set_up_an_app-specific_password Set up an app-specific password].
+
+To export Course Builder data, first decide on the directory in which to put your exported files. Now, open a shell or command prompt. In that window:
+
+  {{{cd }}}_*{{{APPPATH}}}*_{{{/data}}}<br>
+  {{{appcfg.py download_data --config_file=../bulkloader.yaml  --filename=}}}_*{{{DataFilename}}}*_{{{ --kind=}}}_*{{{EntityType}}}*_{{{ --url=}}}_*{{{URL}}}*_{{{/remote_api}}}
+
+In these commands:
+
+|| _*{{{APPPATH}}}*_ || The directory containing your app's code. ||
+|| _*{{{DataFilename}}}*_ || Pathname to the exported data file this command creates. ||
+|| _*{{{EntityType}}}*_ || What type of entity to export. One of {{{Lesson}}}, {{{Student}}}, or {{{Unit}}}. ||
+|| _*{{{URL}}}*_ || The URL for the server. <br> For your development server, this is {{{http://localhost:}}}_*{{{PORT}}}*_, where _*{{{PORT}}}*_ is the port running your server.<br> For your production server, this is _*{{{APP_ID}}}*_{{{.appspot.com}}}, where  _*{{{APP_ID}}}*_ is the app name you [#Register_your_app_with_Google registered]. ||
+
+For example, assume that my course files live in {{{~/mycourse}}} and that I want to export student data from my development server to a file named {{{~/student.csv}}}. I would use these commands:
+
+  {{{cd ~/mycourse/data}}}<br>
+  {{{appcfg.py download_data --config_file=../bulkloader.yaml  --filename=../student.csv --kind=Student --url=http://localhost:8080/remote_api}}}
+
+The {{{appcfg.py}}} command generates the following files:
+
+|| *File* || *Description* ||
+|| {{{bulkloader-log-}}}*_{{{timestamp}}}_* || A log file showing the processing steps. Use the {{{--db_filename=skip}}} flag to skip generating this file.|| 
+|| {{{bulkloader-progress-}}}*_{{{timestamp}}}_*{{{.sql3}}} || A SQL3 database file showing progress. Use the {{{--db_filename=skip}}} flag to skip generating this file. || 
+|| {{{bulkloader-results-}}}*_{{{timestamp}}}_*{{{.sql3}}} || The exported course data in SQL3 format. Use the {{{--db_filename=skip}}} flag to skip generating this file. || 
+|| *_{{{filename}}}_*{{{.csv}}} || The exported course data in CSV format. || 
+
+You can now import your CSV files into a spreadsheet or into [http://www.google.com/fusiontables Fusion Tables] for viewing and analysis. For help importing data into Fusion Tables, see [http://support.google.com/fusiontables/bin/answer.py?hl=en&answer=181717&topic=27017&ctx=topic Import data].
+
+=== Save time: export data subsets ===
+
+By default, when you download data from Course Builder, App Engine downloads all of the fields for the entity type you specify. For lessons and units, this is probably a fairly small amount of data. Also, for those entities, the amount of data does not change based on course size.
+
+Student entities, however, are different. If your course is relatively small, downloading all data for that course is fairly fast. But if your course has a very large number of students, the {{{appcfg.py}}} command can take hours to run. If you find that downloading data takes too long, consider downloading only the data subset you really need. 
+
+In the {{{appcfg.py}}} command above, one of the parameters is {{{--config_file=../bulkloader.yaml}}}. This parameter tells App Engine to use the information in {{{../bulkloader.yaml}}} to determine what to download for each entity type. If you want to download a subset of the data, create a new {{{bulkloader.yaml}}} file in a different directory (such as the directory for the output) and run {{{appcfg.py}}} pointing to that file.
+
+For example, assume that your course files live in  {{{~/mycourse}}} and that you want to download to your home directory only the email addresses of registered students. Do the following:
+
+1. Make a copy of  _*{{{APPPATH}}}*_{{{/bulkloader.yaml}}} as {{{~/bulkloader.yaml}}}, where _*{{{APPPATH}}}*_ is the directory containing your app's code. 
+
+2. Edit  {{{~/bulkloader.yaml}}}.
+
+3. Change the section that starts {{{- kind: Student}}} to remove the information about all properties other than the email address. That is:
+<pre>
+- kind: Student
+  connector: csv
+  property_map:
+    - property: __key__  
+      external_name: email
+      export_transform: datastore.Key.name</pre>
+
+4. Run the following commands:
+<pre>
+cd ~/mycourse/data
+appcfg.py download_data --config_file=~/bulkloader.yaml  --filename=~/student.csv --kind=Student --url=http://localhost:8080/remote_api
+</pre>
+
+For data analysis, you may choose to download other subsets of the Student data. To do so, change {{{~/bulkloader.yaml}}} to remove just the information you do not want.
+
+== Student, Lesson, and Unit data ==
+
+The following tables describe the data Course Builder stores for your course. Course Builder stores three  kinds of data: Student, Unit, and Lesson. By default, when you download data to a CSV file, you get all of this information.
+
+*Student* - Data on the student’s work on the course.
 || *Name* || *Type* || *Description* ||
 || {{{cert_name}}} || STRING || The name the student supplied during registration. || 
-|| {{{enrolled_date}}} || DATETIME || The date and timestamp when the student enrolled in the class. || 
+|| {{{enrolled_date}}} || DATETIME || The date and timestamp when the student enrolled in the course. || 
 || {{{final_answer}}} || TEXT || Information about the final assessment. Stored as a 2-dimensional array of strings. For example:<br><br>{{{[["assessment_type", "midcourse"],}}} <br> {{{["0", "true"],}}} <br> {{{["1", "true"],}}} <br> {{{["2", "true"],}}} <br> {{{["3", "true"],}}} <br> {{{["4", "false"],}}} <br> {{{["num_correct", "4"],}}} <br> {{{["num_questions", "5"],}}} <br> {{{["score", "80.00"]]}}} <br><br> The first element of the array indicates the assessment type. The next N  elements indicate whether the student answered correctly the corresponding question (note that the elements in this array number questions starting with 0, but the assessment actually numbers them starting with 1). Finally, there are elements that indicate how many questions the student answered correctly, the total number of questions in the assessment, and the student's score on the assessment. || 
 || {{{final_score}}} || INTEGER || The student’s score on the final assessment. A numeric value or empty for no score. || 
 || {{{midterm_answer}}} || TEXT || Information about the mid-course assessment. Stored as a 2-dimensional array of strings, in the same format as for the final assessment. || 
@@ -46,37 +112,5 @@ If you keep your {{{data/unit.csv}}} file in sync with your application (that is
 
 If you keep your {{{data/lesson.csv}}} file in sync with your application (that is, you don't change lesson information using the Datastore Admin page), then downloaded lesson data will be the same as that in {{{data/lesson.csv}}}. However, the order of columns in the CSV file for downloaded data does not match the order of the data in that file.
 
-== Export your class data ==
-
-The Course Builder application stores data in App Engine’s [https://developers.google.com/appengine/docs/python/datastore/structuring_for_strong_consistency High Replication datastore]. You download course data using the App Engine bulk loader tool, which is included with the Python App Engine SDK for your platform. (For information on downloading and installing the Python App Engine SDK, see [AppEngine Develop with App Engine].) Data is downloaded using the CSV format; this makes it easy to upload data into a spreadsheet or into Fusion Tables for viewing and analysis.
-
-You can export data either from your development server or from your production server. The steps are the same. The only difference is that when you download data from your production server, you need to use your app-specific password, as described in [UploadCode#Set_up_an_app-specific_password Set up an app-specific password].
-
-To export Course Builder data, first decide on the directory in which to put your exported files. Now, open a shell or command prompt. In that window:
-
-  {{{cd }}}_*{{{APPPATH}}}*_{{{/data}}}<br>
-  {{{appcfg.py download_data --config_file=../bulkloader.yaml  --filename=}}}_*{{{DataFilename}}}*_{{{ --kind=}}}_*{{{EntityType}}}*_{{{ --url=}}}_*{{{URL}}}*_{{{/remote_api}}}
-
-In these commands:
-
-|| _*{{{APPPATH}}}*_ || The directory containing your app's code. ||
-|| _*{{{DataFilename}}}*_ || Pathname to the exported data file this command creates. ||
-|| _*{{{EntityType}}}*_ || What type of entity to export. One of {{{Lesson}}}, {{{Student}}}, or {{{Unit}}}. ||
-|| _*{{{URL}}}*_ || The URL for the server. <br> For your development server, this is {{{http://localhost:}}}_*{{{PORT}}}*_, where _*{{{PORT}}}*_ is the port running your server.<br> For your production server, this is _*{{{APP_ID}}}*_{{{.appspot.com}}}, where  _*{{{APP_ID}}}*_ is the app name you [#Register_your_app_with_Google registered]. ||
-
-For example, assume that my course files live in {{{~/mycourse}}} and that I want to export student data from my development server to a a file named {{{~/student.csv}}}. I would use these commands:
-
-  {{{cd ~/mycourse/data}}}<br>
-  {{{appcfg.py download_data --config_file=../bulkloader.yaml  --filename=../student.csv --kind=Student --url=http://localhost:8080/remote_api}}}
-
-The command generates the following files:
-
-|| *File* || *Description* ||
-|| {{{bulkloader-log-}}}*_{{{timestamp}}}_* || A log file showing the processing steps. Use the {{{--db_filename=skip}}} flag to skip generating this file.|| 
-|| {{{bulkloader-progress-}}}*_{{{timestamp}}}_*{{{.sql3}}} || A SQL3 database file showing progress. Use the {{{--db_filename=skip}}} flag to skip generating this file. || 
-|| {{{bulkloader-results-}}}*_{{{timestamp}}}_*{{{.sql3}}} || The exported class data in SQL3 format. Use the {{{--db_filename=skip}}} flag to skip generating this file. || 
-|| *_{{{filename}}}_*{{{.csv}}} || The exported class data in CSV format. || 
-
-You can now import your CSV files into a spreadsheet or into [http://www.google.com/fusiontables Fusion Tables] for viewing and analysis. For help importing data into Fusion Tables, see [http://support.google.com/fusiontables/bin/answer.py?hl=en&answer=181717&topic=27017&ctx=topic Import data].
 
 || [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/evaluate-course-efficacy Ask questions in the forum] ||
