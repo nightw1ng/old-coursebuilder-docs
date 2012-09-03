@@ -12,7 +12,7 @@ If you use Course Builder and have issues or feature requests, please report the
 </td>
 <td width="3%"></td>
 <td width="27%">
-<wiki:video url="http://www.youtube.com/watch?v=GAY5ICoVnA8&feature=youtu.be" width="640" height="360"  style="float:right" />
+<wiki:video url="http://www.youtube.com/watch?v=GAY5ICoVnA8&feature=youtu.be" width="320" height="180"  style="float:right" />
 </td>
 </tr>
 </table>
