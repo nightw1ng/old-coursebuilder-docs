@@ -2,6 +2,7 @@
   <tr>
     <td width="70%" valign="top">
 = Welcome to Course Builder! =
+<font color=red><<TODO This is a test page; it's not the real home page!!!!>></font>
 
 Course Builder packages the software and technology we used to build our [http://www.powersearchingwithgoogle.com Power Searching with Google] online course. The first time we offered Power Searching, 155,000 students registered and over 20,000 students completed the course.
 
