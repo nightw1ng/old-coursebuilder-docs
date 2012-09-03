@@ -1,8 +1,8 @@
- <table width="98%">
+ 
+<table width="98%">
   <tr>
     <td width="70%" valign="top">
 = Welcome to Course Builder! =
-<font color=red><<TODO This is a test page; it's not the real home page!!!!>></font>
 
 Course Builder packages the software and technology we used to build our [http://www.powersearchingwithgoogle.com Power Searching with Google] online course. The first time we offered Power Searching, 155,000 students registered and over 20,000 students completed the course.
 
@@ -12,7 +12,7 @@ If you use Course Builder and have issues or feature requests, please report the
 </td>
 <td width="3%"></td>
 <td width="27%">
-<wiki:video url="http://www.youtube.com/watch?v=GAY5ICoVnA8&feature=youtu.be"  width="283" height="229"  style="float:right" />
+<wiki:video url="http://www.youtube.com/watch?v=GAY5ICoVnA8&feature=youtu.be" width="640" height="360"  style="float:right" />
 </td>
 </tr>
 </table>
