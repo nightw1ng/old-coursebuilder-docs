@@ -19,7 +19,7 @@ To export Course Builder data, first decide on the directory in which to put you
   {{{cd }}}_*{{{APPPATH}}}*_{{{/data}}}<br>
   {{{appcfg.py download_data --config_file=../bulkloader.yaml  --filename=}}}_*{{{DataFilename}}}*_{{{ --kind=}}}_*{{{EntityType}}}*_{{{ --url=}}}_*{{{URL}}}*_{{{/remote_api}}}
 
-In these commands:
+where:
 
 || _*{{{APPPATH}}}*_ || The directory containing your app's code. ||
 || _*{{{DataFilename}}}*_ || Pathname to the exported data file this command creates. ||
