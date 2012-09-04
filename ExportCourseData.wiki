@@ -41,11 +41,11 @@ The {{{appcfg.py}}} command generates the following files:
 
 You can now import your CSV files into a spreadsheet or into [http://www.google.com/fusiontables Fusion Tables] for viewing and analysis. For help importing data into Fusion Tables, see [http://support.google.com/fusiontables/bin/answer.py?hl=en&answer=181717&topic=27017&ctx=topic Import data].
 
-=== Save time: export data subsets ===
+=== Save time and costs: export data subsets ===
 
 By default, when you download data from Course Builder, App Engine downloads all of the fields for the entity type you specify. For lessons and units, this is probably a fairly small amount of data. Also, for those entities, the amount of data does not change based on course size.
 
-Student entities, however, are different. If your course is relatively small, downloading all data for that course is fairly fast. But if your course has a very large number of students, the {{{appcfg.py}}} command can take hours to run. If you find that downloading data takes too long, consider downloading only the data subset you really need. 
+Student entities, however, are different. If your course is relatively small, downloading all data for that course is fairly fast and is free. But if your course has a very large number of students, the {{{appcfg.py}}} command can take hours to run and may incur [https://developers.google.com/appengine/docs/billing App Engine costs]. If you find that downloading data takes too long, consider downloading only the data subset you really need. 
 
 In the {{{appcfg.py}}} command above, one of the parameters is {{{--config_file=../bulkloader.yaml}}}. This parameter tells App Engine to use the information in {{{../bulkloader.yaml}}} to determine what to download for each entity type. If you want to download a subset of the data, create a new {{{bulkloader.yaml}}} file in a different directory (such as the directory for the output) and run {{{appcfg.py}}} pointing to that file.
 
@@ -78,6 +78,7 @@ The following tables describe the data Course Builder stores for your course. Co
 
 *Student* - Data on the student’s work on the course.
 || *Name* || *Type* || *Description* ||
+|| {{{email}}} || STRING || The email address the student from which the student registered. ||
 || {{{name}}} || STRING || The name the student supplied during registration. || 
 || {{{enrolled_date}}} || DATETIME || The date and timestamp when the student enrolled in the course. || 
 || {{{final_answer}}} || TEXT || Information about the final assessment. Stored as a 2-dimensional array of strings. For example:<br><br>{{{[["assessment_type", "midcourse"],}}} <br> {{{["0", "true"],}}} <br> {{{["1", "true"],}}} <br> {{{["2", "true"],}}} <br> {{{["3", "true"],}}} <br> {{{["4", "false"],}}} <br> {{{["num_correct", "4"],}}} <br> {{{["num_questions", "5"],}}} <br> {{{["score", "80.00"]]}}} <br><br> The first element of the array indicates the assessment type. The next N  elements indicate whether the student answered correctly the corresponding question (note that the elements in this array number questions starting with 0, but the assessment actually numbers them starting with 1). Finally, there are elements that indicate how many questions the student answered correctly, the total number of questions in the assessment, and the student's score on the assessment. || 
