@@ -68,7 +68,7 @@ From the Launcher, you stop your server by clicking on the *Stop* button. For mo
 Because the command-line version has more options, you may wish to run the development server from your shell or command prompt. To do so:
   # Open a shell or command prompt.
   # Change directory to the one you specified as the path for your app.
-  # Run the server with the following command:<br>{{{dev_appserver.py . }}}
+  # Run the server with the following command:<br>{{{dev_appserver.py . }}}<br>Note that the period at the end of that command is necessary.
   # As the command starts running, you may see some warnings you can ignore and questions you must answer. <br>Once the app is set up, you see a URL reference to the hostname and port you use to connect to your app from a web browser. Typically, this URL is {{{http://localhost:8080}}}, but the port number ({{{8080}}}) may be different.
   # Open a browser window and navigate to the URL. You should see the login page for the server (as shown above for a PC).
   # If you do not see the login page, read [AppEngine#Troubleshooting Troubleshooting].
@@ -79,7 +79,7 @@ By default, your app is only available from the machine on which you start it. T
   {{{cd }}}_*{{{APPPATH}}}*_<br>
   {{{dev_appserver.py -a 0.0.0.0 .}}}
 
-where _*{{{APPPATH}}}*_ is the directory containing your app.
+where _*{{{APPPATH}}}*_ is the directory containing your app. Note that the period at the end of the second command is necessary.
 
 == 6. Upload the unit and lesson data ==
 
