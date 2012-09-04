@@ -51,28 +51,29 @@ The second two lines of the header, the vertical navigation, and the content are
 
 Each line after that contains the information for an individual lesson, such as: 
 
-  {{{3,Advanced techniques,1,Web organization,Yes,Lesson 3.1 Activity,https://docs.google.com/SOMETHING,DndOoEVCWfI,"- Describe how operators filter results.}}}<br>
-  {{{- Use the site: operator at the top-level domain and website levels.}}}<br>
-  {{{- Use a word you expect to appear on the target page to refine results.}}}<br>
-  {{{- Use the site: operator within images and news results."}}}
+  {{{3,Advanced techniques,1,Web organization,Yes,Lesson 3.1 Activity,https://docs.google.com/SOMETHING,DndOoEVCWfI,"<ul><li>Describe how operators filter results.}}}<br>
+  {{{<li>Use the site: operator at the top-level domain and website levels.</li>}}}<br>
+  {{{<li>Use a word you expect to appear on the target page to refine results.</li>}}}<br>
+  {{{<li>Use the site: operator within images and news results.</li></ul>"}}}
 
-When you edit the file, leave the first line as is. Replace all of the other lines with the information relevant to your course. Each line consists of:
+When you edit the file, leave the first line as is. Replace all of the other lines with the information relevant to your course. Each line contains 9 fields. The template files and various Python files refer to these fields when displaying course information. Those files use a different name for the field than does {{{data/lesson.csv}}}. The mapping between the two names is defined in {{{bulkloader.yaml}}}.
 
-  # {{{unit_id:}}} An integer indicating which unit this lesson is part of.  (You must number units consecutively starting with 1.)
-  # {{{unit_title:}}} The name of the unit.
-  # {{{lesson_id:}}} An integer indicating which lesson this is.  (You must number lessons in each unit consecutively starting with 1.)
-  # {{{lesson_title:}}} The name of the lesson.
-  # {{{lesson_activity:}}} Set this value to {{{Yes}}} if there is an associated activity. Leave it blank if there is not.
-  # {{{lesson_activity_name:}}} The name of the associated activity, to appear as the title of the activity page.
-  # {{{lesson_notes:}}} URL of the text version of the lesson.
-  # {{{lesson_video_id:}}} The id of the !YouTube video associated with the lesson. For example, if the URL of the video is [http://www.youtube.com/watch?v=DndOoEVCWfI], then the id is {{{DndOoEVCWfI}}}.
-  # {{{lesson_objectives:}}} A string containing lesson objectives, to appear after the title of the lesson. The string can contain HTML elements.
+|| || *{{{data/lesson.csv}}} field* || *Referred to as* || *Description* ||
+|| 1 || {{{unit_id}}} || {{{unit.unit_id}}} || An integer indicating which unit this lesson is part of.  You must number units consecutively starting with 1. ||
+|| 2 || {{{unit_title}}} || {{{unit.title}}} || The name of the unit. ||
+|| 3 || {{{lesson_id}}} || {{{lesson.id}}} || An integer indicating which lesson this is.  You must number lessons in each unit consecutively starting with 1. ||
+|| 4 || {{{lesson_title}}} || {{{lesson.title}}} || The name of the lesson. ||
+|| 5 || {{{lesson_activity}}} || {{{lesson.activity}}} || Set this value to {{{Yes}}} if there is an associated activity. Leave it blank if there is not. ||
+|| 6 || {{{lesson_activity_name}}} || {{{lesson.activity_title}}} || The name of the associated activity, to appear as the title of the activity page. ||
+|| 7 || {{{lesson_notes}}} || {{{lesson.notes}}} || URL of the text version of the lesson. ||
+|| 8 || {{{lesson_video_id}}} || {{{lesson.video}}} || The id of the !YouTube video associated with the lesson. For example, if the URL of the video is [http://www.youtube.com/watch?v=DndOoEVCWfI], then the id is {{{DndOoEVCWfI}}}. ||
+|| 9 || {{{lesson_objectives}}} || {{{lesson.objectives}}} || A string containing lesson objectives, to appear after the title of the lesson. The string can contain HTML elements. ||
 
 The following image shows where this information appears on the screen:
 
 http://gcb-x-03141590.googlecode.com/git/images/annotatedlesson.png
 
-=== Testing changes ===
+=== Test changes ===
 
 Changes you make to any file in the {{{views}}} directory appear automatically in your running development server.
 
@@ -80,7 +81,81 @@ That is, after you make a change to one of these files, simply load (or reload) 
 
 On the other hand, if you change the content of the {{{data/lesson.csv}}} file, you must load the changed data into your development server as described in [AppEngine#Modify_your_app_and_see_the_effects Modify your app and see the effects].
 
-== Working with Video ==
+== Change page layout ==
+
+The previous section described the default layout for a lesson page and how you supply your course content to fit into that layout. But what if you want a different layout? For example, what if you do not want to use videos? Good news! You can change anything you want in the templates that define page layout.  In some cases, it is quite easy; in others, you'll need to be more careful.
+
+=== An example ===
+
+As an example that is easy to implement and has a large effect on the look of your course, let's assume that you do not want to use videos in your course. And that, for every lesson, you have associated reference material you want to provide. In this case, a typical lesson might look as follows:
+
+<img src="http://gcb-x-03141590.googlecode.com/git/images/lesson-text.png" height=388 width=420 />
+
+For this change, all you need to do is edit the file that renders a lesson page ({{{views/unit.html}}}) and supply different information in {{{data/lesson.csv}}}. Originally, {{{views/unit.html}}} contains, in part: 
+
+  {{{
+  ...
+  <div class="gcb-col-3">
+    <p style="float:right; margin-top: 0px;">
+      <a class="gcb-button gcb-button-primary" href="{{ lesson.notes }}" target="_blank">Text Version</a>
+    </p>
+  </div>
+  </div><!-- /gcb-cols -->
+  {% if lesson.video %}
+  <p class="video-container">
+    <iframe width="650px" height="400px" 
+      src="http://www.youtube.com/embed/{{ lesson.video   }}?feature=player_embedded&rel=0" 
+      frameborder="0" allowfullscreen></iframe>
+  </p>
+  {% endif %}
+  ...
+  }}}
+
+To make the changes suggested above, change that snippet to:
+
+  {{{
+  ...
+  <div class="gcb-col-3">
+    <p style="float:right; margin-top: 0px;">
+      <!-- DIFFERENT BUTTON LABEL -->
+      <a class="gcb-button gcb-button-primary" href="{{ lesson.notes }}" target="_blank">Reference Material</a>
+    </p>
+  </div>
+  </div><!-- /gcb-cols -->
+  {% if lesson.video %}
+  <!-- SIMPLER IFRAME -->
+  <iframe width="95%" height="600" src="{{ lesson.video }}"></iframe>
+  {% endif %}
+  ...
+  }}}
+
+Then, in {{{data/lesson.csv}}}, where you previously put the ID of a !YouTube video, you instead put the URL of the file you want to appear inside the iframe. Yes, the code still calls it a "video", but it doesn't really care. That's all you need to do for this change.
+
+=== Caution when making changes ===
+
+Notice that in the example you changed the semantics of the {{{lesson_video_id}}} field in {{{data/lesson.csv}}}. Previously, the code expected that field to contain a part of a URL and {{{views/unit.html}}} supplied the rest of the URL. With this change, the code expects that field to be a complete URL. 
+
+In general, if you make changes to the *semantics* of the data (as we did here), you need to be very careful that you make the changes everywhere that data is used. It happens to be the case that {{{lesson_video_id}}} is only used in {{{views/unit.html}}}, so this was a safe, easy change. If you change the semantics of other data fields, you need to be sure to account for that change everywhere.
+
+We strongly suggest that you do not change the semantics of these fields unless you thoroughly understand the Course Builder code. These fields are used in many places:
+  * {{{unit_id}}}
+  * {{{lesson_id}}}
+  * {{{lesson_activity}}}
+
+You can change the semantics of the following fields. They are used only in the template files listed here:
+
+|| *Field in {{{data/lesson.csv}}}* || *Which templates use it* ||
+|| {{{unit_title}}} || {{{views/activity.html}}} <br>{{{views/course.html}}} <br> {{{views/unit.html}}} ||
+|| {{{lesson_title}}} || {{{views/unit.html}}} ||
+|| {{{lesson_activity_name}}} || {{{views/activity.html}}} ||
+|| {{{lesson_notes}}} || {{{views/activity.html}}} <br> {{{views/unit.html}}} ||
+|| {{{lesson_video_id}}} || {{{views/unit.html}}} ||
+|| {{{lesson_objectives}}} || {{{views/unit.html}}} ||
+
+You can change the *look* of any field in one place, without consequences in other places.
+
+
+== Work with video ==
 
 It is outside the scope of this documentation to tell you how to create video. We do have a few general tips that may make your life easier:
 
