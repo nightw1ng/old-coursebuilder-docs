@@ -58,7 +58,7 @@ Once you register your app, the most straightforward way to deploy it is from a 
   {{{appcfg.py upload_data --url=http://}}}_*{{{APP_ID}}}*_{{{.appspot.com/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br>
   {{{appcfg.py upload_data --url=http://}}}_*{{{APP_ID}}}*_{{{.appspot.com/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}}
 
-where _*{{{APPPATH}}}*_ is the directory containing your app's code and _*{{{APP_ID}}}*_ is the app ID you registered for your app.
+where _*{{{APPPATH}}}*_ is the directory containing your app's code and _*{{{APP_ID}}}*_ is the app ID you registered for your app. Note that the period at the end of the {{{appcfg.py update}}} command is necessary.
 
 For each {{{appcfg.py}}} command, you are asked to supply your credentials. Supply your username and the app-specific password you created in the [#Set_up_an_app-specific_password previous step].
 
@@ -75,7 +75,7 @@ To upload your application without supplying your credentials:
   {{{cd }}}_*{{{APPPATH}}}*_<br>
   {{{appcfg.py --oauth2 update .}}}
 
-where _*{{{APPPATH}}}*_ is the directory containing your app's code.
+where _*{{{APPPATH}}}*_ is the directory containing your app's code. Note that the period at the end of the second command is necessary.
 
 Note that this works for the {{{upload}}} command. It *does not* work for the {{{upload_data}}} command. For this reason, if you upload changes to either {{{data/lesson.csv}}} or {{{data/unit.csv}}}, you must supply your app-specific password.
 
@@ -92,7 +92,7 @@ You upload modifications to the content of assessments or activities (files in {
   {{{cd }}}_*{{{APPPATH}}}*_<br>
   {{{appcfg.py update .}}}
 
-where _*{{{APPPATH}}}*_ is the directory containing your app's code.
+where _*{{{APPPATH}}}*_ is the directory containing your app's code. Note that the period at the end of the second command is necessary.
 
 You are asked to supply your credentials. Supply your username and the app-specific password you created.  If you don't remember the app-specific password, [#Set_up_an_app-specific_password create another one].
 
