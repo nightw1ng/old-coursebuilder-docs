@@ -1,12 +1,12 @@
-#summary How to download the sample code and get started with App Engine.
+#summary How to download the sample code and get started with Google App Engine.
 
 <h1>Run the Sample App</h1>
 
-Once you've downloaded the sample application, you load that code into a new App Engine app and modify it as needed for your course. This page describes how to get the sample app running for the first time on App Engine. The basic steps are:
+Once you've downloaded the sample application, you load that code into a new Google App Engine app and modify it as needed for your course. This page describes how to get the sample app running for the first time on Google App Engine. The basic steps are:
 
 <wiki:toc max_depth="2" />
 
-== 1. Start the App Engine Launcher (PC, Mac) ==
+== 1. Start the Google App Engine Launcher (PC, Mac) ==
 
 Activate the Launcher wherever it's available, that is, from the Desktop, the Dock, the Applications folder, Start -> Programs -> Google App Engine -> !GoogleAppEngineLauncher, and so on. 
 
@@ -14,13 +14,13 @@ The first time you start the Launcher, you may see a dialog box asking you about
 
 <img src="http://gcb-x-03141590.googlecode.com/git/images/symlinks.png" />
 
-For App Engine to work, you must agree to set up symbolic links.
+For Google App Engine to work, you must agree to set up symbolic links.
 
-For more information about working with App Engine, see [AppEngine Develop with App Engine].
+For more information about working with Google App Engine, see [AppEngine Develop with Google App Engine].
 
 == 2. Decide on a name for your app ==
 
-The file {{{app.yaml}}} is the configuration file for your App Engine app. Before you get started, you need to choose a new name for the app. To do so:
+The file {{{app.yaml}}} is the configuration file for your Google App Engine app. Before you get started, you need to choose a new name for the app. To do so:
 
   # Edit {{{app.yaml}}}. The first line is:<br>{{{  application: mycourse # FIXME: Put your application id here}}}
   # Replace {{{mycourse}}} with the name you choose for your app. 
@@ -33,15 +33,15 @@ Pick a single word as an app name. It's best if you keep all the letters of the 
 
 Later, if you decide to customize your course, you may need more information on configuration. If you do, see the [https://developers.google.com/appengine/docs/python/config/appconfig#Required_Elements official documentation].
 
-== 3. Start the App Engine Launcher == 
+== 3. Start the Google App Engine Launcher == 
 
-Download App Engine as described in [Download Download the Software]. Then...
+Download Google App Engine as described in [Download Download the Software]. Then...
 
 Activate the Launcher wherever it's available, that is, from the Desktop, the Dock, the Applications folder, Start -> Programs -> Google App Engine -> !GoogleAppEngineLauncher, and so on. 
 
-== 4. Add the app to App Engine ==
+== 4. Add the app to Google App Engine ==
 
-  # In the App Engine Launcher, from the *File* menu, choose *Add Existing Application*. 
+  # In the Google App Engine Launcher, from the *File* menu, choose *Add Existing Application*. 
   # For the Path, navigate to the directory containing the source code you downloaded in the first step.<br>Note that you choose a directory for the path, not a particular file in the directory.
   # For the Port, the default value is typically fine. If you have other apps running locally, you may need to change the port number.
   # Click on *Add*.
