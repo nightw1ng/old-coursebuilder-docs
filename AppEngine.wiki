@@ -12,11 +12,13 @@ This page discusses using Google App Engine in development. For information on w
 
 == Important: Quotas and billing ==
 
-Currently, each Google App Engine application can consume a certain level of computing resources for free, controlled by a set of [https://developers.google.com/appengine/docs/quotas limits]. If you need resources above these free limits, you can switch to a paid app to set a daily resource budget. When you convert to a paid app you will spend a minimum of $2.10/week. This allows you to purchase additional resources when needed.
+The use of Google App Engine for your course may incur some costs. Currently, each Google App Engine application can consume a certain level of computing resources for free, controlled by a set of [https://developers.google.com/appengine/docs/quotas limits]. If you need resources above these free limits, you can switch to a paid app to set a daily resource budget. When you convert to a paid app you will spend a minimum of $2.10/week. This allows you to purchase additional resources when needed. 
 
-For more information, see [https://developers.google.com/appengine/docs/billing Billing and Budgeting Resources] and [https://developers.google.com/appengine/docs/quotas Quotas].
+It's difficult to predict in advance the costs for your course, as Google App Engine has a fairly complex cost structure (see [https://developers.google.com/appengine/docs/billing Billing and Budgeting Resources] and [https://developers.google.com/appengine/docs/quotas Quotas] for details). For rough comparison purposes, the Power Searching course run by Google incurred billable charges of approximately $20/day to support a course enrollment of approximately 150,000 students. Your costs will vary based on enrollment, engagement, drop-out, code changes, and so on.
 
-<font color=red><<TODO Note that we plan to add a little information about typical costs for a course, but we don't have those numbers quite yet.>></font>
+Remember that you can begin development and testing of your course at no charge, by using the downloaded development server (from the [https://code.google.com/p/course-builder/wiki/AppEngine#Download_and_install_App_Engine Google App Engine SDK]) and the free quota initially provided by Google App Engine for deployed applications. That free quota is fairly limited and is unlikely to support a sizable course enrollment. 
+
+Also note that you can control your cost by setting a [https://developers.google.com/appengine/docs/billing#Setting_a_Daily_Budget maximum daily budget], which will cap your costs (and your quota) per day.  However, doing so may lead to your course becoming unavailable for the remainder of any day that your application exceeds its budget.
 
 == Download and install Python 2.7 ==
 
