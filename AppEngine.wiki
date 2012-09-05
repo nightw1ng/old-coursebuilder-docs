@@ -58,15 +58,15 @@ This starts the Python interpreter and indicates the version. If Python is not i
 
 If you don't have Python at all or you have the wrong version, visit the general Python 2.7 [http://python.org/download download page] to get the right version for you. You probably want to simply download the current production version for your platform. (Python 2.7.3 was the latest at the time of this writing.) 
 
-== Download and install App Engine ==
+== Download and install Google App Engine ==
 
-Follow [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python this link] to download the Python App Engine SDK for your platform.
+Follow [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python this link] to download the Python Google App Engine SDK for your platform.
 
-  * *PC:* Run the downloaded installer .msi by double clicking. Follow all on-screen instructions. Once completed, you should find the App Engine Launcher icon on your desktop or be able to find it via Start -> Programs. There is no equivalent set of command-line tools for PCs, so there you must use the Launcher.
-  * *Mac:* Open the downloaded .dmg file and drag the App Engine icon into the Applications folder. Optionally,  open the Applications folder and drag the App Engine icon to your Dock so that you can start the App Engine Launcher more conveniently. Putting App Engine in the Applications folder also installs the command-line tools.
-  * *Linux or other POSIX-compliant system:* After downloading the .zip file, go to the directory where you want to install App Engine. When you unzip the archive, it creates a subdirectory named google_appengine. Add that directory to your shell's path so that it can find the command-line tools when you need them.
+  * *PC:* Run the downloaded installer .msi by double clicking. Follow all on-screen instructions. Once completed, you should find the Google App Engine Launcher icon on your desktop or be able to find it via Start -> Programs. There is no equivalent set of command-line tools for PCs, so there you must use the Launcher.
+  * *Mac:* Open the downloaded .dmg file and drag the Google App Engine icon into the Applications folder. Optionally,  open the Applications folder and drag the Google App Engine icon to your Dock so that you can start the Google App Engine Launcher more conveniently. Putting Google App Engine in the Applications folder also installs the command-line tools.
+  * *Linux or other POSIX-compliant system:* After downloading the .zip file, go to the directory where you want to install Google App Engine. When you unzip the archive, it creates a subdirectory named google_appengine. Add that directory to your shell's path so that it can find the command-line tools when you need them.
 
-When developing on Google App Engine, you have a choice of performing administrative tasks using a graphical interface (GUI) or a traditional command-line interface. The GUI, called The Launcher, is available for users of PCs or Macs. Command-line tools are available on any POSIX-based system such as Mac OS X or Linux. The Python App Engine SDK includes both tools. 
+When developing on Google App Engine, you have a choice of performing administrative tasks using a graphical interface (GUI) or a traditional command-line interface. The GUI, called The Launcher, is available for users of PCs or Macs. Command-line tools are available on any POSIX-based system such as Mac OS X or Linux. The Python Google App Engine SDK includes both tools. 
 
 
 == Start your development server ==
@@ -145,9 +145,9 @@ Use the {{{ps}}} command to find the process number associated with your server 
   <br><br>
   {{{kill 25993}}}
 
-== View the App Engine Admin Console ==
+== View the Google App Engine Admin Console ==
 
-When App Engine starts your app, it also starts an associated Admin Console. If your app is available at {{{http://localhost:/8080}}}, its Admin Console is at {{{http://localhost:8080/_ah/admin}}}.
+When Google App Engine starts your app, it also starts an associated Admin Console. If your app is available at {{{http://localhost:/8080}}}, its Admin Console is at {{{http://localhost:8080/_ah/admin}}}.
 
 From the console, you can see and modify the content of your data store.
 
@@ -206,7 +206,7 @@ If you do not see the registration page when you start your development server f
 
 If you start your app from the command line, errors messages appear on the console. If you start your app from the Launcher, error messages appear in the logs. To see the logs, click on *Logs* in the Launcher's task bar.
 
-One common problem is that, even though you downloaded Python 2.7, App Engine may not notice. In this case, the log says either that you are not running Python 2.7 or has warnings about using a runtime older that is than the production runtime.
+One common problem is that, even though you downloaded Python 2.7, Google App Engine may not notice. In this case, the log says either that you are not running Python 2.7 or has warnings about using a runtime older that is than the production runtime.
 
 In this situation, you need to manually specify the path for Python 2.7. To do so:
   # First, find out what that path is:
@@ -224,8 +224,8 @@ When you enter your credentials, you may get the following error:
 
 If you do, then you have forgotten to start your development server. 
 
-== Official App Engine documentation ==
+== Official Google App Engine documentation ==
 
-There's a lot of [https://developers.google.com/appengine/docs/python/config/appconfig#Required_Elements official documentation] for App Engine.
+There's a lot of [https://developers.google.com/appengine/docs/python/config/appconfig#Required_Elements official documentation] for Google App Engine.
 
 || [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||
