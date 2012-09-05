@@ -60,13 +60,13 @@ If you don't have Python at all or you have the wrong version, visit the general
 
 == Download and install Google App Engine ==
 
-Follow [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python this link] to download the Python Google App Engine SDK for your platform.
+Follow [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python this link] to download the Google App Engine SDK for Python for your platform.
 
   * *PC:* Run the downloaded installer .msi by double clicking. Follow all on-screen instructions. Once completed, you should find the Google App Engine Launcher icon on your desktop or be able to find it via Start -> Programs. There is no equivalent set of command-line tools for PCs, so there you must use the Launcher.
   * *Mac:* Open the downloaded .dmg file and drag the Google App Engine icon into the Applications folder. Optionally,  open the Applications folder and drag the Google App Engine icon to your Dock so that you can start the Google App Engine Launcher more conveniently. Putting Google App Engine in the Applications folder also installs the command-line tools.
   * *Linux or other POSIX-compliant system:* After downloading the .zip file, go to the directory where you want to install Google App Engine. When you unzip the archive, it creates a subdirectory named google_appengine. Add that directory to your shell's path so that it can find the command-line tools when you need them.
 
-When developing on Google App Engine, you have a choice of performing administrative tasks using a graphical interface (GUI) or a traditional command-line interface. The GUI, called The Launcher, is available for users of PCs or Macs. Command-line tools are available on any POSIX-based system such as Mac OS X or Linux. The Python Google App Engine SDK includes both tools. 
+When developing on Google App Engine, you have a choice of performing administrative tasks using a graphical interface (GUI) or a traditional command-line interface. The GUI, called The Launcher, is available for users of PCs or Macs. Command-line tools are available on any POSIX-based system such as Mac OS X or Linux. The Google App Engine SDK for Python includes both tools. 
 
 
 == Start your development server ==
