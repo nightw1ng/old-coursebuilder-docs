@@ -12,7 +12,7 @@ This page discusses using Google App Engine in development. For information on w
 
 == Important: Quotas and billing ==
 
-Each Google App Engine application can consume a certain level of computing resources for free, controlled by a set of [https://developers.google.com/appengine/docs/quotas limits]. If you need resources above these free limits, you can switch to a paid app to set a daily resource budget. When you convert to a paid app you will spend a minimum of $2.10/week. This allows you to purchase additional resources when needed.
+Currently, each Google App Engine application can consume a certain level of computing resources for free, controlled by a set of [https://developers.google.com/appengine/docs/quotas limits]. If you need resources above these free limits, you can switch to a paid app to set a daily resource budget. When you convert to a paid app you will spend a minimum of $2.10/week. This allows you to purchase additional resources when needed.
 
 For more information, see [https://developers.google.com/appengine/docs/billing Billing and Budgeting Resources] and [https://developers.google.com/appengine/docs/quotas Quotas].
 
