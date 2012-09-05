@@ -2,7 +2,7 @@
 
 <h1>Deploy Your App to Google </h1>
 
-During development, you primarily work on your course using your development server. (See [AppEngine Develop with App Engine] for information on using App Engine during development.)
+During development, you primarily work on your course using your development server. (See [AppEngine Develop with Google App Engine] for information on using Google App Engine during development.)
 
 When you are ready for final testing or to make your course available to students, it's time to deploy your app to Google's production servers. In production, your app lives in Google data centers. Google runs the production server containing your course.  At that point, people can access your course from its default URL of _*{{{APP_ID}}}*_{{{.appspot.com}}}, where  _*{{{APP_ID}}}*_ is the app name you register [#Register_your_app_with_Google Register below].
 
@@ -26,12 +26,12 @@ When you register a name with Google, Google gives your app a domain name that c
 
 To register your app:
 
-  # You must have a Google account to register an App Engine app. If you do not have a Google account, you can [https://www.google.com/settings/account create a Google account] with an email address and password.
+  # You must have a Google account to register a Google App Engine app. If you do not have a Google account, you can [https://www.google.com/settings/account create a Google account] with an email address and password.
   # Once you have a Google account, start registration of your app in one of two ways:
     * From a web  browser, navigate to https://appengine.google.com/
-    * From the App Engine Launcher, click on *Dashboard*. <br>Both of these get you to the same place.
+    * From the Google App Engine Launcher, click on *Dashboard*. <br>Both of these get you to the same place.
   # If you are not currently logged in to your Google account, you see a login screen.
-  # Once you login, you see your App Engine dashboard. If you've never worked on an App Engine app, your dashboard looks as follows:<br> <img src="http://gcb-x-03141590.googlecode.com/git/images/dashboard.png" />
+  # Once you login, you see your Google App Engine dashboard. If you've never worked on a Google App Engine app, your dashboard looks as follows:<br> <img src="http://gcb-x-03141590.googlecode.com/git/images/dashboard.png" />
   # Click on *Create Application* and follow the instructions for verifying your account. After this process, you see the new application screen:<br> <img src="http://gcb-x-03141590.googlecode.com/git/images/new-application.png" />
   # To create a new application, follow the instructions to register an application ID, a name unique to this application. If you elect to use the free appspot.com domain name, the full URL for the application will be {{{http://}}}_*{{{APP_ID}}}*_{{{.appspot.com/}}}. You can also purchase a top-level domain name for your app, or use one that you have already registered.
 
@@ -66,7 +66,7 @@ It can take up to a minute to deploy your app; generally it's less than 30 secon
 
 == (Alternative) Upload without a password ==
 
-In general, every time you make a change that causes you to redeploy your app to production, you either need to remember the app-specific password created when registering or you need a new app-specific password. In some situations, you may choose to avoid giving a password at all, by giving App Engine access to your account. 
+In general, every time you make a change that causes you to redeploy your app to production, you either need to remember the app-specific password created when registering or you need a new app-specific password. In some situations, you may choose to avoid giving a password at all, by giving Google App Engine access to your account. 
 
 Before you choose to do so, please read [https://developers.google.com/appengine/docs/python/tools/uploadinganapp#oauth Passwordless Login with OAuth2], so that you understand the risks involved.
 
