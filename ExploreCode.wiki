@@ -21,7 +21,7 @@ The following table briefly describes the directory structure for the sample cod
 || {{{assets/js/}}}  || {{{activity-generic}}}.js || The !JavaScript code that defines the logic for running activities and assessments. You define the content of the activities and assessments in the _{{{[activity-N.M.js]}}}_ and _{{{[assessment-SUFFIX.js]}}}_ files. || || 
 || {{{assets/js/}}}  || _{{{[assessment-SUFFIX.js]}}}_ || These are sample files. You must replace all of them. These files define the assessments associated with your lessons. See [CreateAssessments Create Assessments]. || Required || 
 || {{{assets/js/}}} || {{{jquery-1.7.2.min.js}}} || || || 
-|| || {{{bulkloader.yaml}}} || Defines the mapping between entities stored in the App Engine datastore (including the data in {{{data/lesson.csv}}} and {{{data/unit.csv}}}) and how those entities are referred to in code. If you have a large number of students and download the student data, you may need to modify this file. See [ExportCourseData Export Course Data]. || Possible. || 
+|| || {{{bulkloader.yaml}}} || Defines the mapping between entities stored in the Google App Engine datastore (including the data in {{{data/lesson.csv}}} and {{{data/unit.csv}}}) and how those entities are referred to in code. If you have a large number of students and download the student data, you may need to modify this file. See [ExportCourseData Export Course Data]. || Possible. || 
 || {{{controllers}}} || || ||  ||
 || {{{controllers/}}} || {{{__init__.py}}} ||  || || 
 || {{{controllers/}}} || {{{lessons.py}}} ||  || || 
