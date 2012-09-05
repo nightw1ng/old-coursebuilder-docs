@@ -7,7 +7,7 @@ Instead, you have several options:
 
   * If you already have a way to manage a large email alias, use that mechanism. To get a list of registered students,  see [ExportCourseData Export Course Data].
 
-  * If your course has fewer than 100 students, you can send mail from your Course Builder App Engine application for free. If you want to send more than 100 emails in a single day, you would have to upgrade to a paid App Engine account. See the official [https://developers.google.com/appengine/docs/python/mail/sendingmail App Engine documentation].
+  * If your course has fewer than 100 students, you can send mail from your Google App Engine application for free. If you want to send more than 100 emails in a single day, you would have to upgrade to a paid Google App Engine account. See the official [https://developers.google.com/appengine/docs/python/mail/sendingmail Google App Engine documentation].
 
   * Alternatively, you can use Google Groups to create an announcement email alias. [#Include_subscription_link Include a subscription link] to your group on the page you display when a student successfully [CreateRegistration registers].
 
