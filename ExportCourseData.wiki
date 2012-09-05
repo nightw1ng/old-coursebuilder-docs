@@ -6,11 +6,11 @@ This page describes the student assessment and course data stored by Course Buil
 
 <wiki:toc max_depth="2" />
 
-Before getting started, make sure you’ve downloaded and installed the Python App Engine SDK and that you have Python 2.7 on your system. For information on downloading and installing the Python App Engine SDK, see [AppEngine Develop with App Engine].
+Before getting started, make sure you’ve downloaded and installed the Google App Engine SDK for Python and that you have Python 2.7 on your system. For information on downloading and installing the Google App Engine SDK, see [AppEngine Develop with Google App Engine].
 
 == Export process ==
 
-The Course Builder application stores data in App Engine’s [https://developers.google.com/appengine/docs/python/datastore/structuring_for_strong_consistency High Replication datastore]. You download course data using the App Engine bulk loader tool, which is included with the Python App Engine SDK for your platform. Data is downloaded using the CSV format; this makes it easy to upload data into a spreadsheet or into Fusion Tables for viewing and analysis.
+The Course Builder application stores data in Google App Engine’s [https://developers.google.com/appengine/docs/python/datastore/structuring_for_strong_consistency High Replication datastore]. You download course data using the Google App Engine bulk loader tool, which is included with the Google App Engine SDK for Python for your platform. Data is downloaded using the CSV format; this makes it easy to upload data into a spreadsheet or into Fusion Tables for viewing and analysis.
 
 You can export data either from your development server or from your production server. The steps are the same. The only difference is that when you download data from your production server, you need to use your app-specific password, as described in [UploadCode#Set_up_an_app-specific_password Set up an app-specific password].
 
@@ -43,11 +43,11 @@ You can now import your CSV files into a spreadsheet or into [http://www.google.
 
 === Save time and costs: export data subsets ===
 
-By default, when you download data from Course Builder, App Engine downloads all of the fields for the entity type you specify. For lessons and units, this is probably a fairly small amount of data. Also, for those entities, the amount of data does not change based on course size.
+By default, when you download data from Course Builder, Google App Engine downloads all of the fields for the entity type you specify. For lessons and units, this is probably a fairly small amount of data. Also, for those entities, the amount of data does not change based on course size.
 
-Student entities, however, are different. If your course is relatively small, downloading all data for that course is fairly fast and is free. But if your course has a very large number of students, the {{{appcfg.py}}} command can take hours to run and may incur [https://developers.google.com/appengine/docs/billing App Engine costs]. If you find that downloading data takes too long, consider downloading only the data subset you really need. 
+Student entities, however, are different. If your course is relatively small, downloading all data for that course is fairly fast and is free. But if your course has a very large number of students, the {{{appcfg.py}}} command can take hours to run and may incur [https://developers.google.com/appengine/docs/billing Google App Engine costs]. If you find that downloading data takes too long, consider downloading only the data subset you really need. 
 
-In the {{{appcfg.py}}} command above, one of the parameters is {{{--config_file=../bulkloader.yaml}}}. This parameter tells App Engine to use the information in {{{../bulkloader.yaml}}} to determine what to download for each entity type. If you want to download a subset of the data, create a new {{{bulkloader.yaml}}} file in a different directory (such as the directory for the output) and run {{{appcfg.py}}} pointing to that file.
+In the {{{appcfg.py}}} command above, one of the parameters is {{{--config_file=../bulkloader.yaml}}}. This parameter tells Google App Engine to use the information in {{{../bulkloader.yaml}}} to determine what to download for each entity type. If you want to download a subset of the data, create a new {{{bulkloader.yaml}}} file in a different directory (such as the directory for the output) and run {{{appcfg.py}}} pointing to that file.
 
 For example, assume that your course files live in  {{{~/mycourse}}} and that you want to download to your home directory only the email addresses of registered students. Do the following:
 
