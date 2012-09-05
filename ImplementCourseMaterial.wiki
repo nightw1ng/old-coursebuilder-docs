@@ -25,7 +25,7 @@ The pages in this section include:
 
   * [UploadCode Deploy Your App]<br>How to deploy your course to Google's production servers, to make it available to the world.
 
-  * [AppEngine Develop with App Engine]<br>Some details you might want to know about App Engine.
+  * [AppEngine Develop with Google App Engine]<br>Some details you might want to know about Google App Engine.
 
 
 || [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||
