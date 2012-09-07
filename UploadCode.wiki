@@ -6,8 +6,6 @@ During development, you primarily work on your course using your development ser
 
 When you are ready for final testing or to make your course available to students, it's time to deploy your app to Google's production servers. In production, your app lives in Google data centers. Google runs the production server containing your course.  At that point, people can access your course from its default URL of _*{{{APP_ID}}}*_{{{.appspot.com}}}, where  _*{{{APP_ID}}}*_ is the app name you register [#Register_your_app_with_Google Register below].
 
-Once you deploy your app, it's more complicated to make changes to it than in development. For this reason, we suggest waiting until you think you're done to deploy your course.
-
 The first time you deploy your app, there are three steps:
 
   # [#Register_your_app_(course)_with_Google Register your app with Google.]
