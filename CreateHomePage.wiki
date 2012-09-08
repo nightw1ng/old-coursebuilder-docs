@@ -41,10 +41,10 @@ When you edit the file, leave the first line as is. Replace all of the other lin
     * For a unit (type=U): an integer representing the unit number. 
     * For something else (type=O): a URL pointing to that thing.
   * {{{title:}}} The text to describe this item.
-  * {{{release_date:}}} When this release will be available to students. This string appears only if {{{now_available}}} is False. Optional.
-  * {{{now_available:}}} A Boolean representing whether or not students can currently access this item. If False, the title is not a link.
+  * {{{release_date:}}} When this release will be available to students. This string appears only if {{{now_available}}} is {{{False}}}. Optional.
+  * {{{now_available:}}} A Boolean representing whether or not students can currently access this item. If {{{False}}}, the title is not a link.  (Note that case is important in this value; it must be either {{{True}}} or {{{False}}}.)
 
-Typically, you make the lessons in your course available over time, as the course progresses. When you first launch the course, for example, perhaps only the pre-course assessment and the first unit are available. In that case, only those two lines would have {{{now_available}}} set to True. Later, you change the data associated with subsequent lessons as they become available.
+Typically, you make the lessons in your course available over time, as the course progresses. When you first launch the course, for example, perhaps only the pre-course assessment and the first unit are available. In that case, only those two lines would have {{{now_available}}} set to {{{True}}}. Later, you change the data associated with subsequent lessons as they become available.
 
 == Testing changes ==
 
