@@ -92,7 +92,7 @@ The following tables describe the data Course Builder stores for your course. Co
 *Unit* - Data on the units offered in the course. Used on the [CreateHomePage home page].
 || *Name* || *Type* || *Description* ||
 || {{{id}}} || INTEGER || An integer representing this unit. || 
-|| {{{now_available}}} || BOOLEAN || A Boolean value of True or False representing whether or not students can access this unit. (Note that case is important in these values.) || 
+|| {{{now_available}}} || BOOLEAN || A Boolean value of {{{True}}} or {{{False}}} representing whether or not students can access this unit. (Note that case is important in this value; it must be {{{True}}} or {{{False}}}.) || 
 || {{{release_date}}} || STRING || The date when this unit will be made available. A string value containing the date. || 
 || {{{title}}} || STRING || A string value containing the title of the unit. || 
 || {{{type}}} || STRING || The type of unit being offered. A string value containing the type ‘A’, ‘U’ or ‘O’ for assessment, unit or other. || 
