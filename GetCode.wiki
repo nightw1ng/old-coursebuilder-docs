@@ -94,7 +94,7 @@ Then, open a new shell or command prompt. In that window:
   {{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}}
 
 where _*{{{APPPATH}}}*_ is the directory and _*{{{PORT}}}*_ is the port number you specified in step 4.
-Before running each {{{appcfg.py}}} command, the system prompts you to enter your credentials. Your credentials are your Google account name and password. 
+Before running each {{{appcfg.py}}} command, the system prompts you to enter your credentials. Your credentials are your Google account name and password. However, for the development server, your credentials do not really matter; you can just hit return twice and not provide credentials.
 
 If you have trouble with these commands, see [AppEngine#Troubleshooting Troubleshooting].
 
