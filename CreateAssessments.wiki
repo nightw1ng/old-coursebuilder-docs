@@ -48,7 +48,7 @@ The file contains a single object named {{{assessment}}}. This object describes 
 
   * {{{assessmentName.}}} A string containing a unique name for this assessment. The code uses the assessment name to determine what special processing to do for an assessment. The possible values are {{{"precourse"}}}, {{{"midcourse"}}}, and {{{"postcourse"}}}. See [#Assessment_name Assessment name].
   * {{{preamble.}}} A string containing text and complete HTML elements. The preamble appears as the first thing on the assessment page.  See [#Preamble Preamble].
-  * {{{checkAnswers.}}} A Boolean. If True, then students can check their answers before submission. See [#Submitting_and_checking_answers Submitting and checking answers].
+  * {{{checkAnswers.}}} A Boolean. If {{{True}}}, then students can check their answers before submission.  (Note that case is important in this value; it must be either {{{True}}} or {{{False}}}.) See [#Submitting_and_checking_answers Submitting and checking answers].
   * {{{questionsList.}}} An ordered array, each of whose elements describes a question in the assessment. The questions appear after the preamble. See [#Questions Questions]. 
 
 === Assessment name ===
