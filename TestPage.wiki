@@ -1,4 +1,3 @@
-<font color=red><<TODO Test Page: Under construction!!! >></font>
 
 == Create a test server in production ==
 
@@ -16,58 +15,56 @@ What does it mean to create versions of a GAE application?
 
 When you load an application into GAE as described in [UploadCode#Upload_(or_deploy)_your_app Upload your app], it decides what application it is based on the {{{application}}} parameter in {{{app.yaml}}}. 
 
-Assume you have two different directories, each of which contains code for a Course Builder course *and* each of their {{{app.yaml}}} files has the same value for the {{{application}}} parameter. If you run {{{appcfg.py upload}}} in both of these directories, GAE loads both applications to production.
-  * GAE considers them the same application.
+Assume you have two different directories, each of which contains code for a Course Builder course *and* each of their {{{app.yaml}}} files has the same value for the {{{application}}} parameter. If you run {{{appcfg.py upload}}} in both of these directories, GAE loads both applications to production and considers them to be the same application.
   * If the value of the {{{version}}} parameter is the same in both {{{app.yaml}}} files, then App Engine considers there to be only one version of the application and overwrites the first one loaded with the second one.
-  * If the value of the {{{version}}} parameter is different in the {{{app.yaml}}} files, then App Engine considers there to be two versions of the application. The *first* one you upload is the default version. That version is available at {{{http://}}}_*{{{MYCOURSE}}}*_{{{.appspot.com}}} and at  {{{http://}}}_*{{{VERSION.MYCOURSE}}}*_{{{.appspot.com}}}, where _*{{{VERSION}}}*_ is the value of the {{{version}}} parameter. The non-default version is available only at {{{http://}}}_*{{{OTHERVERSION.MYCOURSE}}}*_{{{.appspot.com}}}, where _*{{{OTHERVERSION}}}*_ is the value of its {{{version}}} parameter.
+  * If the value of the {{{version}}} parameter is different in the {{{app.yaml}}} files, then App Engine considers there to be two versions of the application. 
+    * The *first* one you upload is the default version. That version is available at {{{http://}}}_*{{{MYCOURSE}}}*_{{{.appspot.com}}} and at  {{{http://}}}_*{{{VERSION.MYCOURSE}}}*_{{{.appspot.com}}}, where _*{{{VERSION}}}*_ is the value of the {{{version}}} parameter. 
+    * The second one you upload is a non-default version. It is available only at {{{http://}}}_*{{{OTHERVERSION.MYCOURSE}}}*_{{{.appspot.com}}}, where _*{{{OTHERVERSION}}}*_ is the value of its {{{version}}} parameter.
 
 Notice, by the way, that a version doesn't have to be a number; it can be any alphanumeric string (without spaces).
 
 === Change the default version ===
 
-In its own, the first version of an application that is uploaded remains the default version (that is, the version you get when you simply enter {{{http://}}}_*{{{APPID}}}*_{{{.appspot.com}}}). Later versions do not automaically supercede it. You can change the default version yourself.
+If you do nothing special, the first version of an application that is uploaded remains the default version (that is, the version you get when you simply enter {{{http://}}}_*{{{APPID}}}*_{{{.appspot.com}}}). Later versions do not automaically supercede it. You can change the default version yourself:
 
   # Visit http://appengine.google.com.
   # Choose your app.
   # Click on *Versions* in the left navigation.
-  # Pick the radio button by the version you want to be the default.
+  # Pick the radio button for the version you want to be the default.
   # Click on *Make Default*. 
 
 === Make "under construction" and "latest" versions ===
 
+To create an "under construction" version as the default and a "latest" version as a working version, follow steps similar to the following:
 
-
-To create an "under construction" version as the default and a "latest" version as my working version, I did the following:
-Make two directories that contain the sample app.
-Edit the app.yaml file in each of them.
-In the under construction version, specify vpgtest as the value of application and specify underconstruction as the value of version.
-In the version I'll work in, specify vpgtest as the value of application and specify latest as the value of version.
-In underconstruction,
-Replace the entire contents of views/course.html with
-<html><body>Really under construction.</body></html>
-Replace the text in views/register.html with
-Under construction.
-In latest, actually work on my course.
-Upload both versions to production, making underconstruction the default one as described above.
-Et voila.
-
-
-=== Restrict access to your course ===
-
-Any time someone comes to any URL in your course, code figures out if they're already registered. If not, they are sent to the registration page. 
-The RegisterHandler class (defined in controllers/utils.py) handles the registration page.
-
-Before rendering the registration page, the RegisterHandler's get method checks to see if the person is already registered.
-If they are registered, they are redirected to the course's home page.
-If they are not registered, they are shown the registration page.
-
-Instead of immediately showing the registration page, you can add some logic to that method that checks whether or not the person is on the whitelist. 
-(You can simply code the whitelist as a fiel containing a list of email addresses.) 
-If the person is on the whitelist, send them to registration. If not, render a different page that says "Sorry. Course closed." or something like that.
+  # Make two directories that contain the sample app.
+  # Edit the {{{app.yaml}}} file in each of them.
+  # In the directory for your "under construction" version, specify _*{{{mycourse}}}*_ as the value of {{{application}}} and specify {{{underconstruction}}} as the value of {{{version}}}.
+  # In the directory for your working version, specify _*{{{mycourse}}}*_ as the value of {{{application}}} and specify {{{latest}}} as the value of {{{version}}}.
+  # In the under construction directory, 
+    # Replace the entire contents of {{{views/course.html}}} with<br>{{{<html><body>Really under construction.</body></html>}}}
+    # Replace the text in {{{views/register.html}}} with<br>{{{Under construction.}}}
+  # In the working version directory, do all the work you need to create your course.
+  # Upload both versions to production, as described in [UploadCode#Upload_(or_deploy)_your_app Upload your app], making the app in the under construction directory be the default version, as described [#Change_the_default_version above].
+  # Test away.
+  # When you're ready to release your application, change the default version to your working version.
 
 === Hide your course from Google ===
 
-You can add a {{{robots.txt}}} file to your application by modifying {{{app.yaml}}}. In that file, the handlers section looks like this:
+To further decrease the likelihood of someone stumbling upon your course, you can create a [http://www.robotstxt.org/ robots.txt] file to tell search engines such as Google's search engine to ignore your pages. 
+
+You add a {{{robots.txt}}} file to your application by creating that file and modifying {{{app.yaml}}} to know about it. 
+
+1. Create a {{{robots.txt}}} file in the top-level of your application directory (the same place that contains {{{app.yaml}}}). In robots.txt, specify:
+
+{{{
+User-agent: *
+Disallow: /
+}}}
+
+This tells robots (such as Google's robots that crawl the web to create its index) to ignore everything in this site.
+
+2. In {{{app.yaml}}}, the handlers section looks like this:
 
 {{{
 handlers:
@@ -84,7 +81,7 @@ handlers:
   login: required
 }}}
 
-Add a new section to this file:
+Add a new entry to the handlers section as follows:
 
 {{{
 - url: /robots.txt
@@ -92,4 +89,20 @@ Add a new section to this file:
   upload: robots.txt
 }}}
 
-Then write the {{{robots.txt}}} file to have your files not indexed. When you release the course, remember to change {{{robots.txt}}} so that the files are indexed.
+
+Later, when you release the course, if you want it to be findable, you should reverse this change: remove the entry from {{{app.yaml}}} and delete the {{{robots.txt}}} file.
+
+=== Restrict access to your course ===
+
+You may decide that simply making your course harder to find is not adequate. You may want to actually restrict access to a specific set of testers. To do this, you must write new Python code. We do not provide this code for you, but the basic idea is described here.
+
+Any time someone comes to any URL in your course, Course Builder figures out if that person is already registered. If not, Course Builder displays the registration page.
+The {{{RegisterHandler}}} class (defined in {{{controllers/utils.py}}}) determines what happens on the registration page.
+
+Before actually rendering the registration page, the {{{RegisterHandler's get}}} method checks to see if the person is already registered. (It does this check again, in case the person went directly to the registration page instead of being redirected there from another page.)
+
+If the persion is registered, {{{get}}} displays the course's home page. If the person is not registered, {{{get}}} displays the registration page.
+
+Instead of immediately showing the registration page, you can add some extra code to the {{{get}}} method. In that code, check whether or not the person is in the list of specified testers (the "whitelist"). If the person is on the whitelist, display the registration page. If not, display a different page that says "Sorry. Course closed." or something like that.
+
+You can simply create the whitelist as a file containing a list of email addresses.
