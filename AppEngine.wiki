@@ -2,21 +2,21 @@
 
 <h1>Develop with Google App Engine</h1>
 
-If you are unfamiliar with Google App Engine, but know something about cloud computing, read [https://developers.google.com/appengine/docs/whatisgoogleappengine What is Google App Engine?] If you're completely new to cloud computing as well, a more user-friendly introduction to the cloud and Google App Engine can be found in this [https://developers.google.com/academy/apis/cloud/appengine/intro/ Introduction to Google App Engine].
+If you are unfamiliar with Google App Engine (GAE), but know something about cloud computing, read [https://developers.google.com/appengine/docs/whatisgoogleappengine What is Google App Engine?] If you're completely new to cloud computing as well, a more user-friendly introduction to the cloud and GAE can be found in this [https://developers.google.com/academy/apis/cloud/appengine/intro/ Introduction to Google App Engine].
 
-You do not need to be a Google App Engine expert to work with Course Builder. There are just a few things you should be familiar with while developing your course. Much of this is discussed on other pages. We summarize it  here.
+You do not need to be a GAE expert to work with Course Builder. There are just a few things you should be familiar with while developing your course. Much of this is discussed on other pages. We summarize it  here.
 
-This page discusses using Google App Engine in development. For information on working with it to deploy your course and to modify it after deployment, see [UploadCode Deploy Your App].
+This page discusses using GAE in development. For information on working with it to deploy your course and to modify it after deployment, see [UploadCode Deploy Your App].
 
 <wiki:toc />
 
 == Important: Quotas and billing ==
 
-The use of Google App Engine for your course may incur some costs. Currently, each Google App Engine application can consume a certain level of computing resources for free, controlled by a set of [https://developers.google.com/appengine/docs/quotas limits]. If you need resources above these free limits, you can switch to a paid app to set a daily resource budget. When you convert to a paid app you will spend a minimum of $2.10/week. This allows you to purchase additional resources when needed. 
+The use of GAE for your course may incur some costs. Currently, each GAE application can consume a certain level of computing resources for free, controlled by a set of [https://developers.google.com/appengine/docs/quotas limits]. If you need resources above these free limits, you can switch to a paid app to set a daily resource budget. When you convert to a paid app you will spend a minimum of $2.10/week. This allows you to purchase additional resources when needed. 
 
-It's difficult to predict in advance the costs for your course, as Google App Engine has a fairly complex cost structure (see [https://developers.google.com/appengine/docs/billing Billing and Budgeting Resources] and [https://developers.google.com/appengine/docs/quotas Quotas] for details). For rough comparison purposes, the Power Searching course run by Google incurred billable charges of approximately $20/day to support a course enrollment of approximately 150,000 students. Your costs will vary based on enrollment, engagement, drop-out, code changes, and so on.
+It's difficult to predict in advance the costs for your course, as GAE has a fairly complex cost structure (see [https://developers.google.com/appengine/docs/billing Billing and Budgeting Resources] and [https://developers.google.com/appengine/docs/quotas Quotas] for details). For rough comparison purposes, the Power Searching course run by Google incurred billable charges of approximately $20/day to support a course enrollment of approximately 150,000 students. Your costs will vary based on enrollment, engagement, drop-out, code changes, and so on.
 
-Remember that you can begin development and testing of your course at no charge, by using the downloaded development server (from the [https://code.google.com/p/course-builder/wiki/AppEngine#Download_and_install_App_Engine Google App Engine SDK]) and the free quota initially provided by Google App Engine for deployed applications. That free quota is fairly limited and is unlikely to support a sizable course enrollment. 
+Remember that you can begin development and testing of your course at no charge, by using the downloaded development server (from the [https://code.google.com/p/course-builder/wiki/AppEngine#Download_and_install_App_Engine Google App Engine SDK]) and the free quota initially provided by GAE for deployed applications. That free quota is fairly limited and is unlikely to support a sizable course enrollment. 
 
 Also note that you can control your cost by setting a [https://developers.google.com/appengine/docs/billing#Setting_a_Daily_Budget maximum daily budget], which will cap your costs (and your quota) per day.  However, doing so may lead to your course becoming unavailable for the remainder of any day that your application exceeds its budget.
 
@@ -60,15 +60,15 @@ This starts the Python interpreter and indicates the version. If Python is not i
 
 If you don't have Python at all or you have the wrong version, visit the general Python 2.7 [http://python.org/download download page] to get the right version for you. You probably want to simply download the current production version for your platform. (Python 2.7.3 was the latest at the time of this writing.) 
 
-== Download and install Google App Engine ==
+== Download and install GAE ==
 
-Follow [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python this link] to download the Google App Engine SDK for Python for your platform.
+Follow [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python this link] to download the GAE SDK for Python for your platform.
 
-  * *PC:* Run the downloaded installer .msi by double clicking. Follow all on-screen instructions. Once completed, you should find the Google App Engine Launcher icon on your desktop or be able to find it via Start -> Programs. There is no equivalent set of command-line tools for PCs, so there you must use the Launcher.
-  * *Mac:* Open the downloaded .dmg file and drag the Google App Engine icon into the Applications folder. Optionally,  open the Applications folder and drag the Google App Engine icon to your Dock so that you can start the Google App Engine Launcher more conveniently. Putting Google App Engine in the Applications folder also installs the command-line tools.
-  * *Linux or other POSIX-compliant system:* After downloading the .zip file, go to the directory where you want to install Google App Engine. When you unzip the archive, it creates a subdirectory named google_appengine. Add that directory to your shell's path so that it can find the command-line tools when you need them.
+  * *PC:* Run the downloaded installer .msi by double clicking. Follow all on-screen instructions. Once completed, you should find the GAE Launcher icon on your desktop or be able to find it via Start -> Programs. There is no equivalent set of command-line tools for PCs, so there you must use the Launcher.
+  * *Mac:* Open the downloaded .dmg file and drag the GAE icon into the Applications folder. Optionally,  open the Applications folder and drag the GAE icon to your Dock so that you can start the GAE Launcher more conveniently. Putting GAE in the Applications folder also installs the command-line tools.
+  * *Linux or other POSIX-compliant system:* After downloading the .zip file, go to the directory where you want to install GAE. When you unzip the archive, it creates a subdirectory named google_appengine. Add that directory to your shell's path so that it can find the command-line tools when you need them.
 
-When developing on Google App Engine, you have a choice of performing administrative tasks using a graphical interface (GUI) or a traditional command-line interface. The GUI, called The Launcher, is available for users of PCs or Macs. Command-line tools are available on any POSIX-based system such as Mac OS X or Linux. The Google App Engine SDK for Python includes both tools. 
+When developing on GAE, you have a choice of performing administrative tasks using a graphical interface (GUI) or a traditional command-line interface. The GUI, called The Launcher, is available for users of PCs or Macs. Command-line tools are available on any POSIX-based system such as Mac OS X or Linux. The GAE SDK for Python includes both tools. 
 
 
 == Start your development server ==
@@ -147,9 +147,9 @@ Use the {{{ps}}} command to find the process number associated with your server 
   <br><br>
   {{{kill 25993}}}
 
-== View the Google App Engine Admin Console ==
+== View the GAE Admin Console ==
 
-When Google App Engine starts your app, it also starts an associated Admin Console. If your app is available at {{{http://localhost:/8080}}}, its Admin Console is at {{{http://localhost:8080/_ah/admin}}}.
+When GAE starts your app, it also starts an associated Admin Console. If your app is available at {{{http://localhost:/8080}}}, its Admin Console is at {{{http://localhost:8080/_ah/admin}}}.
 
 From the console, you can see and modify the content of your data store.
 
@@ -199,6 +199,113 @@ To change only some of the lesson or unit data, there are two steps:
 
 The most common time to change some data is when you want to modify a *Unit* entity to reflect when units become available or unavailable. (See [CreateHomePage Create Home Page].)
 
+== Create a test server in production ==
+
+You may want to test your course in the production environment before you make it publicly available. Rather than have a truly _private_ course in production, we have found it sufficient to have a separate _version_ of the course at a related, but unpublicized, URL. The key is that GAE allows versioning of your app and provides a separate URL for each version. (For details, see [https://developers.google.com/appengine/docs/python/runtime?hl=en#Requests_and_Domains Requests and Domains]).
+
+Remember that if the name of your app is _*{{{MYCOURSE}}}*_, it's available at {{{http://}}}_*{{{MYCOURSE}}}*_{{{.appspot.com}}}. You can use the {{{version}}} field in {{{app.yaml}}} to create and deploy a second version of the app. In this situation, you get a separate URL for that version. For example, if you specify {{{version: latest}}}, that gets deployed to  {{{http://latest.}}}_*{{{MYCOURSE}}}*_{{{.appspot.com}}}.
+
+One caveat: By default, all deployed versions of an app use the same datastore. That is, they all share the same {{{Lesson}}}, {{{Unit}}}, and {{{Student}}} entities. You can use different [https://developers.google.com/appengine/docs/python/multitenancy/overview?hl=en namespaces] to change this behavior, but that is probably overkill if you just want a test server before release of your course.
+
+This section talks about details of creating separate "under construction" and "latest" versions of your course in production.
+
+=== Create multiple versions ===
+
+What does it mean to create versions of a GAE application?
+
+When you load an application into GAE as described in [UploadCode#Upload_(or_deploy)_your_app Upload your app], it decides what application it is based on the {{{application}}} parameter in {{{app.yaml}}}. 
+
+Assume you have two different directories, each of which contains code for a Course Builder course *and* each of their {{{app.yaml}}} files has the same value for the {{{application}}} parameter. If you run {{{appcfg.py upload}}} in both of these directories, GAE loads both applications to production and considers them to be the same application.
+  * If the value of the {{{version}}} parameter is the same in both {{{app.yaml}}} files, then App Engine considers there to be only one version of the application and overwrites the first one loaded with the second one.
+  * If the value of the {{{version}}} parameter is different in the {{{app.yaml}}} files, then App Engine considers there to be two versions of the application. 
+    * The *first* one you upload is the default version. That version is available at {{{http://}}}_*{{{MYCOURSE}}}*_{{{.appspot.com}}} and at  {{{http://}}}_*{{{VERSION.MYCOURSE}}}*_{{{.appspot.com}}}, where _*{{{VERSION}}}*_ is the value of the {{{version}}} parameter. 
+    * The second one you upload is a non-default version. It is available only at {{{http://}}}_*{{{OTHERVERSION.MYCOURSE}}}*_{{{.appspot.com}}}, where _*{{{OTHERVERSION}}}*_ is the value of its {{{version}}} parameter.
+
+Notice, by the way, that a version doesn't have to be a number; it can be any alphanumeric string (without spaces).
+
+=== Change the default version ===
+
+If you do nothing special, the first version of an application that is uploaded remains the default version (that is, the version you get when you simply enter {{{http://}}}_*{{{APPID}}}*_{{{.appspot.com}}}). Later versions do not automaically supercede it. You can change the default version yourself:
+
+  # Visit http://appengine.google.com.
+  # Choose your app.
+  # Click on *Versions* in the left navigation.
+  # Pick the radio button for the version you want to be the default.
+  # Click on *Make Default*. 
+
+=== Make "under construction" and "latest" versions ===
+
+To create an "under construction" version as the default and a "latest" version as a working version, follow steps similar to the following:
+
+  # Make two directories that contain the sample app.
+  # Edit the {{{app.yaml}}} file in each of them.
+  # In the directory for your "under construction" version, specify _*{{{mycourse}}}*_ as the value of {{{application}}} and specify {{{underconstruction}}} as the value of {{{version}}}.
+  # In the directory for your working version, specify _*{{{mycourse}}}*_ as the value of {{{application}}} and specify {{{latest}}} as the value of {{{version}}}.
+  # In the under construction directory, 
+    # Replace the entire contents of {{{views/course.html}}} with<br>{{{<html><body>Really under construction.</body></html>}}}
+    # Replace the text in {{{views/register.html}}} with<br>{{{Under construction.}}}
+  # In the working version directory, do all the work you need to create your course.
+  # Upload both versions to production, as described in [UploadCode#Upload_(or_deploy)_your_app Upload your app], making the app in the under construction directory be the default version, as described [#Change_the_default_version above].
+  # Test away.
+  # When you're ready to release your application, change the default version to your working version.
+
+=== Hide your course from search engines ===
+
+To further decrease the likelihood of someone stumbling upon your course, you can create a [http://www.robotstxt.org/ robots.txt] file to tell search engines such as Google's search engine to ignore your pages. 
+
+You add a {{{robots.txt}}} file to your application by creating that file and modifying {{{app.yaml}}} to know about it. 
+
+1. Create a {{{robots.txt}}} file in the top-level of your application directory (the same place that contains {{{app.yaml}}}). In robots.txt, specify:
+
+{{{
+User-agent: *
+Disallow: /
+}}}
+
+This tells robots (such as Google's robots that crawl the web to create its index) to ignore everything in this site.
+
+2. In {{{app.yaml}}}, the handlers section looks like this:
+
+{{{
+handlers:
+- url: /remote_api
+  script: $PYTHON_LIB/google/appengine/ext/remote_api/handler.py
+  login: admin
+- url: /favicon.ico
+  static_files: assets/img/favicon.ico
+  upload: assets/img/favicon.ico
+- url: /assets
+  static_dir: assets
+- url: /.*
+  script: main.app
+  login: required
+}}}
+
+Add a new entry to the handlers section as follows:
+
+{{{
+- url: /robots.txt
+  static_files: robots.txt
+  upload: robots.txt
+}}}
+
+
+Later, when you release the course, if you want it to be findable, you should reverse this change: remove the entry from {{{app.yaml}}} and delete the {{{robots.txt}}} file.
+
+=== Restrict access to your course ===
+
+You may decide that simply making your course harder to find is not adequate. You may want to actually restrict access to a specific set of testers. To do this, you must write new Python code. We do not provide this code for you, but the basic idea is described here.
+
+Any time someone comes to any URL in your course, Course Builder figures out if that person is already registered. If not, Course Builder displays the registration page.
+The {{{RegisterHandler}}} class (defined in {{{controllers/utils.py}}}) determines what happens on the registration page.
+
+Before actually rendering the registration page, the {{{RegisterHandler's get}}} method checks to see if the person is already registered. (It does this check again, in case the person went directly to the registration page instead of being redirected there from another page.)
+
+If the persion is registered, {{{get}}} displays the course's home page. If the person is not registered, {{{get}}} displays the registration page.
+
+Instead of immediately showing the registration page, you can add some extra code to the {{{get}}} method. In that code, check whether or not the person is in the list of specified testers (the "whitelist"). If the person is on the whitelist, display the registration page. If not, display a different page that says "Sorry. Course closed." or something like that.
+
+You can simply create the whitelist as a file containing a list of email addresses.
 
 == Troubleshooting ==
 
@@ -208,7 +315,7 @@ If you do not see the registration page when you start your development server f
 
 If you start your app from the command line, errors messages appear on the console. If you start your app from the Launcher, error messages appear in the logs. To see the logs, click on *Logs* in the Launcher's task bar.
 
-One common problem is that, even though you downloaded Python 2.7, Google App Engine may not notice. In this case, the log says either that you are not running Python 2.7 or has warnings about using a runtime older that is than the production runtime.
+One common problem is that, even though you downloaded Python 2.7, GAE may not notice. In this case, the log says either that you are not running Python 2.7 or has warnings about using a runtime older that is than the production runtime.
 
 In this situation, you need to manually specify the path for Python 2.7. To do so:
   # First, find out what that path is:
@@ -226,8 +333,8 @@ When you enter your credentials, you may get the following error:
 
 If you do, then you have forgotten to start your development server. 
 
-== Official Google App Engine documentation ==
+== Official GAE documentation ==
 
-There's a lot of [https://developers.google.com/appengine/docs/python/config/appconfig#Required_Elements official documentation] for Google App Engine.
+There's a lot of [https://developers.google.com/appengine/docs/python/config/appconfig#Required_Elements official documentation] for GAE.
 
 || [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||
