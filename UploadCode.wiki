@@ -14,6 +14,9 @@ The first time you deploy your app, there are three steps:
 
 If you make changes and need to redeploy parts of your app, follow the instructions in [#Modify_an_app_in_production Modify an app in production].
 
+This page talks about deploying your app to production. When you deploy your app to production, typically it is publicly available. You may decide that you want to test your application in production before making it publicly available. To do that, you'll need to follow the steps on this page and also follow the steps in [AppEngine#Create_a_test_server_in_production Create a test server in production].
+
+
 == Register your app (course) with Google ==
 
 Before you can deploy (or upload) an application to Google, you must register that app with Google, by giving it a name.
