@@ -6,7 +6,7 @@
 
 When students click on a unit from the home page, they go to the page for the first lesson of the unit they chose. From there, they can go to any other lesson or activity in that unit:
 
-<img src="http://gcb-x-03141590.googlecode.com/git/images/lesson.png" height=529 width=420 />
+<img src="http://wiki.course-builder.googlecode.com/git/images/lesson.png" height=529 width=420 />
 
 This page talks about the mechanics of creating a lesson page and its content. For information on what to put in your lesson, see [TwoDevelop Develop the Content without Technology].
 
@@ -71,7 +71,7 @@ When you edit the file, leave the first line as is. Replace all of the other lin
 
 The following image shows where this information appears on the screen:
 
-http://gcb-x-03141590.googlecode.com/git/images/annotatedlesson.png
+http://wiki.course-builder.googlecode.com/git/images/annotatedlesson.png
 
 === Test changes ===
 
@@ -89,7 +89,7 @@ The previous section described the default layout for a lesson page and how you 
 
 As an example that is easy to implement and has a large effect on the look of your course, let's assume that you do not want to use videos in your course. And that, for every lesson, you have associated reference material you want to provide. In this case, a typical lesson might look as follows:
 
-<img src="http://gcb-x-03141590.googlecode.com/git/images/lesson-text.png" height=388 width=420 />
+<img src="http://wiki.course-builder.googlecode.com/git/images/lesson-text.png" height=388 width=420 />
 
 For this change, all you need to do is edit the file that renders a lesson page ({{{views/unit.html}}}) and supply different information in {{{data/lesson.csv}}}. Originally, {{{views/unit.html}}} contains, in part: 
 
