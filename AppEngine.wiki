@@ -305,7 +305,7 @@ If the persion is registered, {{{get}}} displays the course's home page. If the 
 
 Instead of immediately showing the registration page, you can add some extra code to the {{{get}}} method. In that code, check whether or not the person is in the list of specified testers (the "whitelist"). If the person is on the whitelist, display the registration page. If not, display a different page that says "Sorry. Course closed." or something like that.
 
-You can simply create the whitelist as a file containing a list of email addresses.
+You can simply create the whitelist as an array of email addresses.
 
 == Troubleshooting ==
 
