@@ -8,7 +8,7 @@
 
 When prospective students first visit your course, the app displays a registration page:
 
-http://gcb-x-03141590.googlecode.com/git/images/registration-parts.png
+http://wiki.course-builder.googlecode.com/git/images/registration-parts.png
 
 === What happens from this page ===
 
@@ -38,7 +38,7 @@ The app uses two files to render this page:
 
 Once a prospective student submits the registration form, the app displays the registration confirmation page:
 
-http://gcb-x-03141590.googlecode.com/git/images/registrationconfirmation-parts.png
+http://wiki.course-builder.googlecode.com/git/images/registrationconfirmation-parts.png
 
 This page displays a message when the student is registered. The default message upon successful registration includes information about joining the course's discussion forum and about joining another email alias for receiving course announcements. Be sure to modify this information to be applicable to your situation. See [WebForums Community Discussion] and [CreateEmailList Announcements-only Email List].
 
