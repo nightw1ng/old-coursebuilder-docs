@@ -69,7 +69,6 @@ In these steps, all pathnames are relative to the directory containing your appl
     # Change the content at {{{views/register.html}}} to ask whatever registration questions you want.
     # If you change those questions, you must also change {{{RegisterHandler}}} in {{{controllers/utils.py}}}.
     # Change the content at {{{views/confirmation.html}}} to include the correct discussion group and email list. (You must first create the lists. That step is listed in [#C.3. C.3.]
-    # (Optionally) Change the maximum number of students who can enroll in {{{controllers/utils.py}}}.
   # [CreateHomePage Modify the course home page].
     # In {{{views/course.html}}}, change the course name, course description, and information about the instructor. Also, add an image for the home page .
     # In {{{data/unit.csv}}}, [CreateHomePage#Home_page_content change what's listed on the home page]. 
