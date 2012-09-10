@@ -4,7 +4,7 @@
 
 After successful registration, the student can click on *Home* in the navigation bar of the confirmation page to be taken to the home page for your course. Once registered, any time the student leaves your course and returns to its main URL, this is the page that appears.
 
-<img src="http://gcb-x-03141590.googlecode.com/git/images/homepage.png" height=529 width=420 />
+<img src="http://wiki.course-builder.googlecode.com/git/images/homepage.png" height=529 width=420 />
 
 You create the home page with these files:
   * {{{views/base.html}}} defines the header and footer areas. See [ModifyTemplate Modify Course Template] for information about this file.
