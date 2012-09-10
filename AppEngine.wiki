@@ -207,7 +207,7 @@ Remember that if the name of your app is _*{{{MYCOURSE}}}*_, it's available at {
 
 One caveat: By default, all deployed versions of an app use the same datastore. That is, they all share the same {{{Lesson}}}, {{{Unit}}}, and {{{Student}}} entities. You can use different [https://developers.google.com/appengine/docs/python/multitenancy/overview?hl=en namespaces] to change this behavior, but that is probably overkill if you just want a test server before release of your course.
 
-This section talks about details of creating separate "under construction" and "latest" versions of your course in production.
+This section talks about details of creating separate temporarily public "under construction" and temporarily hidden "latest" versions of your course in production.
 
 === Create multiple versions ===
 
@@ -235,11 +235,11 @@ If you do nothing special, the first version of an application that is uploaded 
 
 === Make "under construction" and "latest" versions ===
 
-To create an "under construction" version as the default and a "latest" version as a working version, follow steps similar to the following:
+To create an "under construction" public version as the temporary default and a "latest" hidden version as a working version, follow steps similar to the following:
 
   # Make two directories that contain the sample app.
   # Edit the {{{app.yaml}}} file in each of them.
-  # In the directory for your "under construction" version, specify _*{{{mycourse}}}*_ as the value of {{{application}}} and specify {{{underconstruction}}} as the value of {{{version}}}.
+  # In the directory for your temporarily public "under construction" version, specify _*{{{mycourse}}}*_ as the value of {{{application}}} and specify {{{underconstruction}}} as the value of {{{version}}}.
   # In the directory for your working version, specify _*{{{mycourse}}}*_ as the value of {{{application}}} and specify {{{latest}}} as the value of {{{version}}}.
   # In the under construction directory, 
     # Replace the entire contents of {{{views/course.html}}} with<br>{{{<html><body>Really under construction.</body></html>}}}
@@ -247,7 +247,7 @@ To create an "under construction" version as the default and a "latest" version 
   # In the working version directory, do all the work you need to create your course.
   # Upload both versions to production, as described in [UploadCode#Upload_(or_deploy)_your_app Upload your app], making the app in the under construction directory be the default version, as described [#Change_the_default_version above].
   # Test away.
-  # When you're ready to release your application, change the default version to your working version.
+  # When you're ready to release your application, hide the "under construction" version by changing the default version to your working version, which makes that one visible.
 
 === Hide your course from search engines ===
 
