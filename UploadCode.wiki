@@ -32,8 +32,8 @@ To register your app:
     * From a web  browser, navigate to https://appengine.google.com/
     * From the Google App Engine Launcher, click on *Dashboard*. <br>Both of these get you to the same place.
   # If you are not currently logged in to your Google account, you see a login screen.
-  # Once you login, you see your Google App Engine dashboard. If you've never worked on a Google App Engine app, your dashboard looks as follows:<br> <img src="http://gcb-x-03141590.googlecode.com/git/images/dashboard.png" />
-  # Click on *Create Application* and follow the instructions for verifying your account. After this process, you see the new application screen:<br> <img src="http://gcb-x-03141590.googlecode.com/git/images/new-application.png" />
+  # Once you login, you see your Google App Engine dashboard. If you've never worked on a Google App Engine app, your dashboard looks as follows:<br> <img src="http://wiki.course-builder.googlecode.com/git/images/dashboard.png" />
+  # Click on *Create Application* and follow the instructions for verifying your account. After this process, you see the new application screen:<br> <img src="http://wiki.course-builder.googlecode.com/git/images/new-application.png" />
   # To create a new application, follow the instructions to register an application ID, a name unique to this application. If you elect to use the free appspot.com domain name, the full URL for the application will be {{{http://}}}_*{{{APP_ID}}}*_{{{.appspot.com/}}}. You can also purchase a top-level domain name for your app, or use one that you have already registered.
 
 
@@ -106,8 +106,8 @@ Uploading modifications to the contents of the home page ({{{data/unit.csv}}}) o
 The following steps you only need to do once:
 
   # From a web  browser, navigate to https://appengine.google.com/.
-  # On the *My Applications* page, click on the name of your app. The dashboard for your app appears:<br> <img src="http://gcb-x-03141590.googlecode.com/git/images/prod-dashboard.png" /> 
-  # In the left navigation, click on *Datastore Admin*. The first time you do this, a screen appears asking if you want to enable datastore administration options:<br> <img src="http://gcb-x-03141590.googlecode.com/git/images/datastore-enable.png" /> 
+  # On the *My Applications* page, click on the name of your app. The dashboard for your app appears:<br> <img src="http://wiki.course-builder.googlecode.com/git/images/prod-dashboard.png" /> 
+  # In the left navigation, click on *Datastore Admin*. The first time you do this, a screen appears asking if you want to enable datastore administration options:<br> <img src="http://wiki.course-builder.googlecode.com/git/images/datastore-enable.png" /> 
   # Click on *Enable Datastore Admin*.
   # The *Datastore Admin* page for your app appears.
 
@@ -117,11 +117,11 @@ To change a unit or lesson, you must first delete the row of existing data for t
 
   # From a web  browser, navigate to https://appengine.google.com/.
   # On the *My Applications* page, click on the name of your app. The dashboard for your app appears.
-  # In the left navigation, click on *Datastore Viewer*. Its main area looks similar to the following:<br> <img src="http://gcb-x-03141590.googlecode.com/git/images/datastore-viewer.png" /> 
+  # In the left navigation, click on *Datastore Viewer*. Its main area looks similar to the following:<br> <img src="http://wiki.course-builder.googlecode.com/git/images/datastore-viewer.png" /> 
   # On the *Query* tab, in the *By kind* drop-down box, choose the type of entity you want to change, *Unit* or *Lesson*.
   # Select the row containing the unit or lesson you want to change. 
   # Click on *Delete* and confirm your choice in the dialog box that appears.
-  # Click on the *Create* tab. The top part of this tab looks similar to the following: <br> <img src="http://gcb-x-03141590.googlecode.com/git/images/datastore-create.png" /> 
+  # Click on the *Create* tab. The top part of this tab looks similar to the following: <br> <img src="http://wiki.course-builder.googlecode.com/git/images/datastore-create.png" /> 
   # Click on *Next*.
   # Enter the information for your revised entity and click on *Save Entity*.
 
@@ -130,10 +130,10 @@ To change a unit or lesson, you must first delete the row of existing data for t
 Once you have the ability to make changes to the datastore:
   # From a web  browser, navigate to https://appengine.google.com/.
   # On the *My Applications* page, click on the name of your app. The dashboard for your app appears.
-  # In the left navigation, click on *Datastore Admin*. Its main area looks similar to the following:<br> <img src="http://gcb-x-03141590.googlecode.com/git/images/datastore-admin.png" /> 
+  # In the left navigation, click on *Datastore Admin*. Its main area looks similar to the following:<br> <img src="http://wiki.course-builder.googlecode.com/git/images/datastore-admin.png" /> 
   # Choose the check box in the *Lesson* row.
   # Click on *Delete Entities*.
-  # A confirmation page appears. Click on *Delete Entities*. <br>The *Delete Job Status* page appears. <br> <img src="http://gcb-x-03141590.googlecode.com/git/images/delete-job-status.png" /> <br>Deleting the entities for your job should be very fast. The easiest way to check when the entities are gone is to return to the *Datastore Admin* page. Now all of the old lesson data is gone. 
+  # A confirmation page appears. Click on *Delete Entities*. <br>The *Delete Job Status* page appears. <br> <img src="http://wiki.course-builder.googlecode.com/git/images/delete-job-status.png" /> <br>Deleting the entities for your job should be very fast. The easiest way to check when the entities are gone is to return to the *Datastore Admin* page. Now all of the old lesson data is gone. 
   # To load the new data, repeat the steps you did to upload the data initially. From a shell or command prompt:<br><br>{{{cd }}}_*{{{APPPATH}}}*_{{{/data}}}<br>{{{appcfg.py upload_data --url=http://}}}_*{{{APP_ID}}}*_{{{.appspot.com/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}}<br><br>where _*{{{APP_ID}}}*_ is the app ID you registered for your app. You are asked to supply your credentials. Supply your username and the app-specific password you created.  If you don't remember the app-specific password, [#Set_up_an_app-specific_password create another one].
 
 All done! Uploading new unit data uses the same procedure. Of course, for unit data, on the *Datastore Admin* page, you delete the *Unit* data. When you reload data, the {{{appcfg.py}}} command is:
