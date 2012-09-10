@@ -12,7 +12,7 @@ You may be asking yourself, “What is the difference between knowledge and skil
 
 Think about what level each of your objectives takes and annotate them as either a knowledge objective or a skill objective. You use this annotation in what follows to organize your objectives into a coherent learning flow. The process looks somewhat like this:
 
-http://gcb-x-03141590.googlecode.com/git/images/objectives-outline.png
+http://wiki.course-builder.googlecode.com/git/images/objectives-outline.png
 
 If you have multiple objectives, break them up and perform these steps separately for each:
 
