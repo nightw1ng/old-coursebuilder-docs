@@ -31,7 +31,7 @@ You change this header and footer once for all registered pages.  In the file, e
 
 The numbers in the image show where this image appears on the screen. (The analytics code has no visible effect.)
 
-http://gcb-x-03141590.googlecode.com/git/images/base.png
+http://wiki.course-builder.googlecode.com/git/images/base.png
 
 == Structure of an unregistered page ==
 
