@@ -83,7 +83,7 @@ where _*{{{APPPATH}}}*_ is the directory containing your app. _Note that the per
 
 == 6. Upload the unit and lesson data ==
 
-Before you can run the sample code, you need to upload the data files that represent the units and lessons of the course. (Basically, two CSV files contain the information the code needs to find all of the information pertaining to the units and lessons.)
+Before you can run the sample code, you need to upload the data files that represent the units and lessons of the course. (Basically, two CSV files contain the information the code needs to find all of the information pertaining to the units and lessons.) You always need to do this step, whether you used the Launcer or a shell or command prompt to start your development server and load the course framework.
 
 To upload the data, first make sure that your development server is running (as described in step 5). 
 
