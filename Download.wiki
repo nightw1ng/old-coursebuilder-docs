@@ -12,7 +12,7 @@ Before you can start working on your own course, you need to download Python and
   # [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python Download the Google App Engine SDK for Python.]
   # [http://gcb-x-03141590.googlecode.com/files/coursebuilder.zip Download the Course Builder sample application.] 
 
-== Download Python 2.7 ==
+== Download and install Python 2.7 ==
 
 Make sure you have Python 2.7 on your system. To find out if you do...
 
@@ -47,15 +47,15 @@ This starts the Python interpreter and indicates the version. If Python is not i
   <font color=green> {{{'python' is not recognized as an internal or external command,}}} </font><br>
   <font color=green> {{{operable program or batch file.}}} </font>
 
-==== Getting Python ====
+==== Installing Python ====
 
-If you don't have Python at all or you have the wrong version, visit the general Python 2.7 [http://python.org/download download page] to get the right version for you. You probably want to simply download the current production version for your platform. (Python 2.7.3 was the latest at the time of this writing.) 
+If you don't have Python at all or you have the wrong version, visit the general Python 2.7 [http://python.org/download download page] to download and install the right version for you. You probably want to simply use the current production version for your platform. (Python 2.7.3 was the latest at the time of this writing.) 
 
-== Download Google App Engine ==
+== Download and install Google App Engine ==
 
 If you are unfamiliar with Google App Engine, but know something about cloud computing, read [https://developers.google.com/appengine/docs/whatisgoogleappengine What is Google App Engine?] If you're completely new to cloud computing as well, a more user-friendly introduction to the cloud and Google App Engine can be found in this [https://developers.google.com/academy/apis/cloud/appengine/intro/ Introduction to Google App Engine].
 
-Follow [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python this link] to download the Google App Engine SDK for Python for your platform.
+Follow [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python this link] to download and install the Google App Engine SDK for Python for your platform.
 
   * *PC:* Run the downloaded installer .msi by double clicking. Follow all on-screen instructions. Once completed, you should find the Google App Engine Launcher icon on your desktop or be able to find it via Start -> Programs. 
   * *Mac:* Open the downloaded .dmg file and drag the Google App Engine icon into the Applications folder. Optionally,  open the Applications folder and drag the Google App Engine icon to your Dock so that you can start the Google App Engine Launcher more conveniently. Putting Google App Engine in the Applications folder also installs the command-line tools.
