@@ -1,0 +1,29 @@
+#summary Frequently asked questions
+
+<h1>Frequently Asked Questions</h1>
+
+<wiki:toc />
+
+== What's a "shell or command prompt"? ==
+
+In several places, you're asked to open a "shell or command prompt" and then enter some arcane command.
+
+Every operating system has a utility you can use that lets you type in text-based "commands" for some arbitrary piece of software. Each operating system calls this utility something different.
+
+  * *Windows* calls it a *Command Prompt*.<br><br>Choose *Start > Command Prompt*. If Command Prompt does not appear on the *Start* menu, then instead choose *Start > All Programs > Accessories > Command Prompt*.
+
+  * *Mac* calls it either a *terminal* or a *shell*.<br><br>Open the *Finder*. Choose *Go > Utilities*. From the window that appears, choose *Terminal.app*.
+
+  * *Linux* and other *POSIX-compliant systems* call it a *shell*. <br><br><font color=red><<TODO I don't remember how.>></font>
+
+== How do CSV files work? ==
+
+Course Builder gets lesson and unit data for your course from CSV files. [http://en.wikipedia.org/wiki/Comma-separated_values CSV (comma-separated value)] is a simple format for storing lines of data. Actually, CSV files can differ. As used by Course Buidler:
+
+  * Each line represents one set of related data (think of a row in a table).
+
+  * The pieces of data on a single line are separated by commas.
+
+  * The  first line in the CSV file is special. It indicates what information is on each line and in what order. For example, the first line of the {{{data/unit.csv}}} file is:<br> {{{id,type,unit_id,title,release_date,now_available}}}<br>This says that each subsequent line has those six pieces of information in the specified order.
+
+  * *The tricky part:* If one of the pieces of data on a line contains a comma, that entire piece of data needs to be surrounded by double quotes. For example, if you want to have a unit whose title is *All about cats, dogs, and mice*, then the line in {{{data/unit.csv}}} might look as follows:<br> {{{6,U,3,"All about cats, dogs, and mice",available July 12,True}}} 
