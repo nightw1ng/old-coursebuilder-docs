@@ -70,7 +70,7 @@ Follow [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_
 
   * *Linux or other POSIX-compliant system:* After downloading the .zip file, go to the directory where you want to install GAE. When you unzip the archive, it creates a subdirectory named google_appengine. Add that directory to your shell's path so that it can find the command-line tools when you need them.
 
-When developing on GAE, you have a choice of performing administrative tasks using a graphical interface (GUI) or a traditional command-line interface. The GUI, called The Launcher, is available for users of PCs or Macs. Command-line tools are available on any POSIX-based system such as Mac OS X or Linux. The GAE SDK for Python includes both tools. 
+When developing on GAE, you have a choice of performing administrative tasks using a graphical interface (GUI) or a traditional command-line interface. The GUI, called the Launcher, is available for users of PCs or Macs. Command-line tools are available on any POSIX-based system such as Mac OS X or Linux. The GAE SDK for Python includes both tools. 
 
 
 == Start your development server ==
@@ -80,6 +80,7 @@ Your development server is where you modify and test your application before rel
 === From the Launcher (PC, Mac) ===
 
 To start the development server from the Launcher:
+  # (Mac only) The first time you start the Launcher, you may see a dialog box asking you about symbolic links:<br> <img src="http://wiki.course-builder.googlecode.com/git/images/symlinks.png" /><br>For GAE to work, you must agree to set up symbolic links.
   # Select your app. 
   # When it's highlighted, click the *Run* button to start the server (for that app). <br>Once the *Browse* button is enabled, your server is ready to accept requests.
   # Click on the *Browse* button to visit the app in a web browser.<br>You should see the login page for the server.<br> <img src="http://wiki.course-builder.googlecode.com/git/images/server-login.png" />
