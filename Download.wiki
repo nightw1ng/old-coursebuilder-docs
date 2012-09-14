@@ -2,7 +2,7 @@
 
 <h1>Download the Software </h1>
 
-Before you can start working on your own course, you need to download Python and Google App Engine. You also need to download the Course Builder sample application.
+Before you can start working on your own course, you need to download Python and Google App Engine (GAE). You also need to download the Course Builder sample application.
 
 <wiki:toc max_depth="2" />
 
@@ -53,15 +53,17 @@ If you don't have Python at all or you have the wrong version, visit the general
 
 == Download and install Google App Engine ==
 
-If you are unfamiliar with Google App Engine, but know something about cloud computing, read [https://developers.google.com/appengine/docs/whatisgoogleappengine What is Google App Engine?] If you're completely new to cloud computing as well, a more user-friendly introduction to the cloud and Google App Engine can be found in this [https://developers.google.com/academy/apis/cloud/appengine/intro/ Introduction to Google App Engine].
+If you are unfamiliar with GAE, but know something about cloud computing, read [https://developers.google.com/appengine/docs/whatisgoogleappengine What is Google App Engine?] If you're completely new to cloud computing as well, a more user-friendly introduction to the cloud and GAE can be found in this [https://developers.google.com/academy/apis/cloud/appengine/intro/ Introduction to Google App Engine].
 
-Follow [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python this link] to download and install the Google App Engine SDK for Python for your platform.
+Follow [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python this link] to download and install the GAE SDK for Python for your platform.
 
-  * *PC:* Run the downloaded installer .msi by double clicking. Follow all on-screen instructions. Once completed, you should find the Google App Engine Launcher icon on your desktop or be able to find it via Start -> Programs. 
-  * *Mac:* Open the downloaded .dmg file and drag the Google App Engine icon into the Applications folder. Optionally,  open the Applications folder and drag the Google App Engine icon to your Dock so that you can start the Google App Engine Launcher more conveniently. Putting Google App Engine in the Applications folder also installs the command-line tools.
-  * *Linux or other POSIX-compliant system:* After downloading the .zip file, go to the directory where you want to install Google App Engine. When you unzip the archive, it creates a subdirectory named google_appengine. Add that directory to your shell's path so that it can find the command-line tools when you need them.
+  * *PC:* Run the downloaded installer .msi by double clicking. Follow all on-screen instructions. On the screen that asks for the destination folder, be sure that *Add product path to user PATH* is checked. This is required for the command-line tools to work properly.  Once completed, you should find the GAE Launcher icon on your desktop or be able to find it via Start -> Programs. 
 
-When developing on Google App Engine, you have a choice of performing administrative tasks using a graphical interface (GUI) or a traditional command-line interface. The GUI, called The Launcher, is available for users of PCs or Macs while command-line tools are available on all systems. The Google App Engine SDK for Python includes both tools. 
+  * *Mac:* Open the downloaded .dmg file and drag the GAE icon into the Applications folder. Optionally,  open the Applications folder and drag the GAE icon to your Dock so that you can start the GAE Launcher more conveniently. Putting GAE in the Applications folder also installs the command-line tools.
+
+  * *Linux or other POSIX-compliant system:* After downloading the .zip file, go to the directory where you want to install GAE. When you unzip the archive, it creates a subdirectory named google_appengine. Add that directory to your shell's path so that it can find the command-line tools when you need them.
+
+When developing on GAE, you have a choice of performing administrative tasks using a graphical interface (GUI) or a traditional command-line interface. The GUI, called The Launcher, is available for users of PCs or Macs while command-line tools are available on all systems. The GAE SDK for Python includes both tools. 
 
 *Note:* If you decide to use the command-line tools, consult the official [https://developers.google.com/appengine/docs/python/overview Google App Engine documentation].
 
