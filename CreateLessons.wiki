@@ -173,7 +173,7 @@ It is outside the scope of this documentation to tell you how to create video. W
     * Have as many content creators present during filming as possible (in order to catch any issues so they can be reshot on the spot).
 
   * *Captioning*
-    * Consider adding captions to your videos to help the hearing impaired and to help students who are not natives speakers of the language used in your videos.
+    * Consider adding captions to your videos to help the hearing impaired and to help students who are not natives speakers of the language used in your videos. See [http://support.google.com/youtube/bin/answer.py?hl=en&answer=100079 How to create captions and subtitles on YouTube].
     * Remember that edits may change the captions. Look into having someone clean up the captions.
 
   * *Editing*
