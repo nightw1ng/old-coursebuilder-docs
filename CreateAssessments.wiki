@@ -6,7 +6,7 @@
 
 At certain parts throughout the course, students take assessments to see how they're doing:
 
-<img src="http://wiki.course-builder.googlecode.com/git/images/assessment-zig.png" height=265 width=420 />
+<img src="http://wiki.course-builder.googlecode.com/git/images/assessment-zig.png" />
 
 This page talks about the mechanics of creating an assessment. For information on what to put in your assessment, see [TwoDevelop#Decide_what_you_want_to_test_in_your_assessments,_both_graded_an Develop the Content without Technology].
 
