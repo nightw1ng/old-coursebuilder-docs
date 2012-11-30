@@ -6,13 +6,13 @@
 
 At certain parts throughout the course, students take assessments to see how they're doing:
 
-<img src="http://wiki.course-builder.googlecode.com/git/images/assessment-zig.png" />
+<img src="http://wiki.course-builder.googlecode.com/git/images/assessment-zig.png" height=265 width=420 />
 
 This page talks about the mechanics of creating an assessment. For information on what to put in your assessment, see [TwoDevelop#Decide_what_you_want_to_test_in_your_assessments,_both_graded_an Develop the Content without Technology].
 
 == What happens on an assessment page ==
 
-An assessment is a graded test, typically covering material from several units and lessons. With our experimental code, you have control over how many graded assessments you provide and how each of those assessments counts in the final scoring for a student’s grade.
+An assessment is a graded test, typically covering material from several units and lessons. With our experimental code, you have control over how many graded assessments you provide and how each of those assessments counts in the final scoring for a student’s grade. 
 
 When students submit an assessment, the code determines how they did on the assessment and provides the feedback you specify. It also stores the student score for later retrieval.
 
@@ -23,7 +23,7 @@ This page consists of three areas:
   * The *content area* contains the questions and answer areas and a submit button.
   * The *footer* is the same as for the home page. See [ModifyTemplate Modify Course Template] for information about this file.
 
-The app uses three files to render this page:
+The app uses several files to render this page:
   * {{{views/base.html}}} defines the header and footer areas.
   * {{{views/assessment.html}}} defines the structure of the content area.
   * {{{assets/js/assessment-}}}_*{{SUFFIX}}}*_{{{.js}}} contains a !JavaScript object that fills in the actual question and answer areas for the assessment. Each assessment has its own file.
@@ -32,7 +32,7 @@ The app uses three files to render this page:
 
 An assessment contains explanatory text and one or more questions for the student.
 
-You define each assessment in its own !JavaScript file. The filenames have the form {{{assessment-}}}_*{{{SUFFIX}}}*_{{{.js}}}, where _*{{{SUFFIX}}}*_ is one of {{{Pre}}}, {{{Mid}}}, or {{{Fin}}}.
+You define each assessment in its own !JavaScript file. The filenames have the form {{{assessment-}}}_*{{{SUFFIX}}}*_{{{.js}}}. For the sample course _*{{{SUFFIX}}}*_ is one of {{{Pre}}}, {{{Mid}}}, or {{{Fin}}}. If you add more assessments, you use different suffixes of your choosing.
 
 The format of the file is
 {{{
@@ -46,14 +46,14 @@ var assessment = {
 
 The file contains a single object named {{{assessment}}}. This object describes everything the code needs to know about an assessment. The attributes of the {{{assessment}}} object are as follows:
 
-  * {{{assessmentName.}}} A string containing a unique name for this assessment. The code uses the assessment name to determine what special processing to do for an assessment. The possible values are {{{"precourse"}}}, {{{"midcourse"}}}, and {{{"postcourse"}}}. See [#Assessment_name Assessment name].
+  * {{{assessmentName.}}} A string containing a unique name for this assessment. The code uses the assessment name to determine what special processing to do for an assessment. The sample course uses {{{"precourse"}}}, {{{"midcourse"}}}, and {{{"postcourse"}}}. See [#Assessment_name Assessment name].
   * {{{preamble.}}} A string containing text and complete HTML elements. The preamble appears as the first thing on the assessment page.  See [#Preamble Preamble].
   * {{{checkAnswers.}}} A Boolean. If {{{True}}}, then students can check their answers before submission.  (Note that case is important in this value; it must be either {{{True}}} or {{{False}}}.) See [#Submitting_and_checking_answers Submitting and checking answers].
   * {{{questionsList.}}} An ordered array, each of whose elements describes a question in the assessment. The questions appear after the preamble. See [#Questions Questions]. 
 
 === Assessment name ===
 
-The value of the {{{assessmentName}}} attribute is one of  {{{"precourse"}}}, {{{"midcourse"}}}, or {{{"postcourse"}}}.
+For the sample course, the value of the {{{assessmentName}}} attribute is one of  {{{"precourse"}}}, {{{"midcourse"}}}, or {{{"postcourse"}}}. If you add more assessments, you add more values for this attribute. The code in {{{controllers/assessments.py}}} uses {{{assessmentName}}} to determine how to score assessments. See [#Scoring Scoring].
 
 When students complete an assessment, they see a message about how they did. You can change the contents of these messages in {{{views/test_confirmation.html}}}. (See [#Submitting_and_checking_answers Submitting and checking answers].)
 
@@ -95,7 +95,7 @@ The common attributes are:
 
 A question can be one of four types, depending on the third attribute:
 
-  * {{{choices.}}}  A multiple-choice question. The value of the {{{choices}}} attribute is an array of strings and one function call.  Each string represents a possible wrong answer to the question. You specify the correct answer by with a function call of the form {{{correct(}}}_*{{{string}}}*_{{{)}}}, where _*{{{string}}}*_ is a string containing the correct answer. Students see a set of radio buttons to choose from as with multiple-choice questions in [CreateActivities#Single_multiple-choice_question activities]. 
+  * {{{choices.}}}  A multiple-choice question. The value of the {{{choices}}} attribute is an array of strings and one function call.  Each string represents a possible wrong answer to the question. You specify the correct answer with a function call of the form {{{correct(}}}_*{{{string}}}*_{{{)}}}, where _*{{{string}}}*_ is a string containing the correct answer. Students see a set of radio buttons to choose from as with multiple-choice questions in [CreateActivities#Single_multiple-choice_question activities]. 
 
   * {{{correctAnswerNumeric.}}}   A number. For questions with a numeric answer. The value of the attribute is the correct answer.
 
@@ -103,11 +103,41 @@ A question can be one of four types, depending on the third attribute:
 
   * {{{correctAnswerRegex.}}}  Free text. The value of this attribute is a regular expression capturing the correct answer. Use this attribute when your question is more open ended than a string match can handle. In this case, the code uses a [https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions regular expression] to verify the answer. Regular expressions can be notoriously difficult for a programmer to get right. For this reason, you need to be very careful with the wording of any question that takes a free text answer. Your regular expression needs to account for reasonable variations in student responses.  
 
+=== Scoring ===
+
+Aspects of scoring for assessments takes place in two places in the code:
+
+  * In {{{assets/js/activity-generic.js}}}, {{{checkOrSubmitAnswers}}} determines the score of each assessment. The default formula is simply a percentage of the number of correct answers out of the total number of questions in that assessment. 
+
+  * In {{{controllers/assessments.py}}}, {{{storeAssessmentData}}} does a couple of scoring things:
+    * It determines when to store an assessment score. By default, it stores the score either if it's the first time the student has taken this assessment or if this score is higher than the previously-stored score. 
+    * When storing the score for the final assessment of the course, {{{storeAssessmentData}}} also computes the student's score for the entire course. The default scoring for the entire course uses the mid-term assessment as 30% of the score and the final assessment as 70% of the score.
+
+If you want the default scoring and you use the default number of assessments, you do not need to change any code.
+
+If you have a different number of assessments, you should change how {{{storeAssessmentData}}} computes the overall score. Note that {{{storeAssessmentData}}} uses the {{{assessmentName}}} attribute to identify each assessment.
+
+
+== Changing the number of assessments ==
+
+By default, Course Builder supports 3 assessments -- a precourse assessment, midterm assessment, and final assessment. The precourse assessment is not included in the overall score for the course.
+
+You can change Course Builder to use more or fewer assessments. To do so, you need to make the following changes:
+
+  # Create a separate {{{assessment-}}}_*{{{SUFFIX}}}*_{{{.js}}} file for each assessment. Using the default suffixes of {{{Pre}}}, {{{Mid}}}, and {{{Fin}}} for those 3 assessments is optional. See [#Writing_assessments Writing assessments] for details on creating assessment files. A couple of points:
+    * You need the suffix in the next step when updating {{{data/unit.csv}}} to include the new assessment.
+    * In each assessment file, you choose a value for the {{{assessmentName}}} attribute. The scoring function in {{{controllers/assessments.py}}} uses these values.
+  # Change {{{data/unit.csv}}} to add your assessments to the appropriate points in your course. See [CreateHomePage#Home_page_content Home page content] for details.
+  # Update {{{storeAssessmentData}}} in {{{controllers/assessments.py}}} to consider all assessments when computing the student's overall score for the course. See [#Scoring Scoring].
+  # Update {{{views/student_profile.html}}} to display information about the assessments on the student's profile page. This file identifies which information to display using values supplied by {{{storeAssessmentData}}}. See [ModifyProfile#Student_information Modify My Profile Tab]. 
+  # Update {{{views/test_confirmation.html}}} to display appropriate confirmation messages upon completion of each assessment. This file identifies which message to send using values supplied by {{{storeAssessmentData}}}.
+
+
 == Testing changes ==
 
-Changes you make to any file in the {{{views}}} directory or to any file in the {{{assets/js}}} directory appear automatically in your running development server.
+Changes you make to any file in the {{{views}}} directory appear automatically in your running development server. That is, after you make a change to one of these files, simply load (or reload) a page that uses that view and the change appears.
 
-That is, after you make a change to one of these HTML or JavaScript files, simply load (or reload) a page that uses that page and the change appears.
+To see how to make these changes in your live, deployed course, see [UploadCode Deploy Your App].
 
 A couple of hints for !JavaScript debugging:
 

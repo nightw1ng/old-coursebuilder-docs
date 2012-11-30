@@ -1,6 +1,8 @@
 #summary How to modify the two base template that all other pages in your app use.
 
-= Modify Course Template =
+<h1>Modify Course Template</h1>
+
+<wiki:toc />
 
 This code uses _view_ files as templates to determine the look and feel of all of the pages in your app. The view files are HTML files defined in the {{{views/}}} directory.
 
@@ -16,7 +18,7 @@ All pages that a registered student sees start from the same template, {{{views/
 
   * The *header* contains 
     * Course icon and name of your course.
-    * Horizontal navigation bar, with two tabs on the left (Course and Forum) and an area with the person's address and a Logout link.
+    * Horizontal navigation bar, with several tabs on the left (Announcements, Course, Forum, and My Profile) and an area with the person's address and a Logout link.
   * The *footer* contains the same two links as for the registration pages. 
 
 You change this header and footer once for all registered pages.  In the file, every place you must make a change is marked with the string {{{FIXME}}}. The changes are:
@@ -35,18 +37,18 @@ http://wiki.course-builder.googlecode.com/git/images/base.png
 
 == Structure of an unregistered page ==
 
-The two pages an unregistered person can see start from a different base template, {{{views/base_registration.html}}}.  As with {{{views/base.html}}}, this template defines the overall HTML for these pages and includes definitions for the header and footer areas.
+The pages an unregistered person can see start from a different base template, {{{views/base_registration.html}}}.  As with {{{views/base.html}}}, this template defines the overall HTML for these pages and includes definitions for the header and footer areas.
 
 In the sample code, much of this template starts out the same as {{{views/base.html}}}. The only difference is the tabs in the horizontal navigation in the header.
 
-You change this header and footer once for both registration pages.  In the file, every place you must make a change is marked with the string {{{FIXME}}}. The changes are the same as in {{{views/base.html}}} with one exception. There is no place to collect Analytics data about people visiting the registration pages.
+You change this header and footer once for all pages that are visible to an unregistered person.  In the file, every place you must make a change is marked with the string {{{FIXME}}}. The changes are the same as in {{{views/base.html}}} with one exception. There is no place to collect Analytics data about people visiting the registration pages.
 
 You can, of course, make these pages look more different.
 
 == Testing changes ==
 
-Changes you make to any file in the {{{views}}} directory appear automatically in your running development server.
+Changes you make to any file in the {{{views}}} directory appear automatically in your running development server. That is, after you make a change to one of these files, simply load (or reload) a page that uses that view and the change appears.
 
-That is, after you make a change to one of these files, simply load (or reload) a page that uses that view and the change appears.
+To see how to make these changes in your live, deployed course, see [UploadCode Deploy Your App].
 
 || [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||

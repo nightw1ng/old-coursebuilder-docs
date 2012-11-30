@@ -1,0 +1,21 @@
+#summary Course Builder Release Notes
+
+<h1>Release notes for version 1.1</h1>
+
+  * *New tabs.* Course Builder 1.0 contained two tabs: Course and Forum. CB 1.1 adds two new tabs: Announcements and My Profile.
+    * *Announcements tab.* The new Announcements tab gives you a place that you can put course announcements, without having to create a separate forum. The content of the announcements tab is in {{{views/announcements.html}}}. See [Announcements Announcements and Optional Material].
+    * *My Profile tab.* The new My Profile tab displays basic student information, such as their name and scores on various assessments. It also provides a place for the student to un-enroll from the course or to change their name. See [ModifyProfile Modify My Profile Tab].
+
+  * *Arbitrary number of assessments.* Course Builder 1.0 supported exactly three assessments per course: a pre-course assessment, a mid-term, and a final. In Course Builder 1.1, you can create any number of assessments for each course, each with its own scoring algorithm. See [CreateAssessments Create Assessments].
+
+  * *Support for multiple courses.* In Course Builder 1.0, you could only host one course per Google App Engine application instance. That is, in the GAE Launcher, you needed a separate application for each course and running each course started its own copy of the GAE binary. Two courses could not share any of the same code. CB 1.1 allows you to host multiple courses simultaneously. See [RunMultipleCourses Run Multiple Courses].
+
+  * *List of existing courses.* This documentation now includes a [ListOfCourses list of courses] people have created with Course Builder. If you have created a course and wanted it listed, fill out the form on that page.
+
+  * *Course syllabus before registration.* In Course Builder 1.0, students had to register for a course before they could see the syllabus of the course. Course Builder 1.1 removes this restriction. See [CreateRegistration Create Registration]. 
+
+  * *Page caching.* Course Builder 1.1 [UploadCode#Clear_cached_pages caches pages] displayed to students during production (but not during development). This should reduce the latency perceived by students and can also reduce [AppEngine#Important:_Quotas_and_billing Google App Engine costs]. 
+
+  * *Changes to assessment data.*  Course Builder 1.1 changes how it stores information about student assessments. See [ExportCourseData Export Course Data].
+
+  * *Testing.* Course Builder 1.1 includes a set of functional tests in the new {{{tests}}} directory. If you make significant changes to Course Builder's source code, consider running (and possibly changing) these tests. See [AppEngine#Run_Course_Builder_tests Run Course Builder tests].

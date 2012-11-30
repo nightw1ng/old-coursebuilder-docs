@@ -6,6 +6,8 @@ Once you've downloaded the sample application, you load that code into a new Goo
 
 <wiki:toc max_depth="2" />
 
+*Note:* To run the sample application successfully, you *must* follow the steps on this page.
+
 == 1. Start the Google App Engine Launcher (PC, Mac) ==
 
 Activate the Launcher wherever it's available, that is, from the Desktop, the Dock, the Applications folder, Start -> Programs -> Google App Engine -> !GoogleAppEngineLauncher, and so on. 
@@ -48,6 +50,15 @@ Activate the Launcher wherever it's available, that is, from the Desktop, the Do
 
 A new line appears in the Launcher. Its name is the name you put in the {{{app.yaml}}} file. Its path is the path you specified here.
 
+(Optional) While developing your application, you may frequently need to reload course data. (This step is discussed below in [#6._Upload_the_unit_and_lesson_data 6. Upload the unit and lesson data].) When you do that, you also need to remove any old data. If you think you'll be changing units and lessons frequently, you can tell the Launcher to remove this data every time you restart the application. To do so:
+
+  # In the Google App Engine Launcher, double-click the line containing your application. <br>The *Settings* dialog box appears.
+  # In the *Launch Settings* area, choose *Clear datastore on launch*.
+  # Click on Update.
+
+Now, any time you restart the application, you must reload the data, as described [#6._Upload_the_unit_and_lesson_data here].
+
+
 == 5. Start the development server ==
 
 Before you can deploy your app to run in production and be available to your audience, you need to develop and debug it in a more private setting. That more private setting is called a *development server*.
@@ -65,6 +76,8 @@ From the Launcher, you stop your server by clicking on the *Stop* button. For mo
 
 ==== From a shell or command prompt ====
 
+(Asking yourself: [http://code.google.com/p/gcb-x-03141590/wiki/FAQ#What%27s_a_%22shell_or_command_prompt%22? What's a "shell or command prompt"?])
+
 Because the command-line version has more options, you may wish to run the development server from your shell or command prompt. To do so:
   # Open a shell or command prompt.
   # Change directory to the one you specified as the path for your app.
@@ -81,6 +94,7 @@ By default, your app is only available from the machine on which you start it. T
 
 where _*{{{APPPATH}}}*_ is the directory containing your app. _Note that the period at the end of the second command is necessary._
 
+<a name="uploaddata"></a>
 == 6. Upload the unit and lesson data ==
 
 Before you can run the sample code, you need to upload the data files that represent the units and lessons of the course. (Basically, two CSV files contain the information the code needs to find all of the information pertaining to the units and lessons.) You always need to do this step, whether you used the Launcer or a shell or command prompt to start your development server and load the course framework.

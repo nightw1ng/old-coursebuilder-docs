@@ -7,14 +7,17 @@ Here, we distinguish between formal communication, typically initiated by the co
 
 The types of formal communication we typically see are:
 
-|| *Type* || *Typical implementation* || *Examples* || 
-|| [#Reminder_announcements,_typically_in_email Reminder announcements] || Email || Deadlines for assessments. Release of new units. See [CreateEmailList Announcements-only Email List] for information on setting up announcement email list. ||
-|| [#Informative_announcements,_typically_in_a_web_forum Informative announcements] || Web forum post || A standard answer to a question that came up repeatedly in any student communication. (For example, if the wording of an activity question confused a lot of students, you might decide to post a clarification.) See [WebForums Community Discussion] for information on setting up a web forum. ||
-|| [#Optional_course_material,_in_a_web_forum,_blog,_or_Google+_page Optional course material] || Web forum post, Google+ page or Blog post || Background reading for students who might need a little extra help getting started. Slightly off-topic or more advanced material for students who want to explore aspects of the topic not covered in the main materials or who want more challenging activities to strengthen their knowledge of the main materials. ||
+<table border=1 style="border-collapse:collapse">
+
+<tr><td width="15%"> *Type* </td><td width="15%"> *Typical implementation* </td><td width="70%"> *Examples* </td></tr>
+<tr><td> [#Reminder_announcements,_typically_in_email Reminder announcements] </td><td> Email, backup to Announcements tab </td><td> Deadlines for assessments. Release of new units. See [CreateEmailList Announcements-only Email List] for information on setting up announcement email list and [UpdateAnnouncementsTab Update Announcements Tab] for information on that tab. </td></tr>
+<tr><td> [#Informative_announcements,_typically_in_a_web_forum Informative announcements] </td><td> Web forum post, backup to Announcements tab </td><td> A standard answer to a question that came up repeatedly in any student communication. (For example, if the wording of an activity question confused a lot of students, you might decide to post a clarification.) See [WebForums Community Discussion] for information on setting up a web forum and [UpdateAnnouncementsTab Update Announcements Tab] for information on that tab. </td></tr>
+<tr><td> [#Optional_course_material,_in_a_web_forum,_blog,_or_Google+_page Optional course material] </td><td> Web forum post, Google+ page or Blog post </td><td> Background reading for students who might need a little extra help getting started. Slightly off-topic or more advanced material for students who want to explore aspects of the topic not covered in the main materials or who want more challenging activities to strengthen their knowledge of the main materials. </td></tr>
+</table>
 
 There are a variety of technologies available to you for each of these types of communication. Which you choose to use depends on your circumstances. What we describe below are the choices we made for Power Searching.
 
-== Reminder announcements, typically in email ==
+== Reminder announcements ==
 
 You may choose to send reminder announcements to students at important points along the way. Consider sending the following reminder announcements:
 
@@ -31,7 +34,7 @@ During [http://www.powersearchingwithgoogle.com/ Power Searching with Google], w
 
 See [CreateEmailList Announcements-only Email List] for information on setting up announcement email list.
 
-== Informative announcements, typically in a web forum ==
+== Informative announcements ==
 
 During the course, you may want to let your students know some that is optional or that you otherwise do not think it worth sending to all of their email accounts. 
 
@@ -43,7 +46,7 @@ Although answering a standard question could be considered a formal announcement
 
 As you can see on [WebForums that page], if you use a forum post for these announcements, you can mark duplicates of the question the post answers and cut down on the noise in your forum.
 
-== Optional course material, in a web forum, blog, or Google+ page ==
+== Optional course material ==
 
 [CreateLessons Lessons], [CreateActivities activities], and [CreateAssessments assessments] contain your primary course material. However, you can have optional material you suggest for some students. For example, you can have background reading for students who need a little extra help getting started. You can have more advanced material for students who want more challenging activities to strengthen their knowledge of the main materials. You can have material about aspects of the topic not covered at all in the main materials for students who want to explore more.
 

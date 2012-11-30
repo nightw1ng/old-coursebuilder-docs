@@ -21,6 +21,8 @@ The pages in this section include:
 
   * [CreateAssessments Create Assessments]<br>How to modify the code to create the graded assessments for your course.
 
+  * [RunMultipleCourses Run Multiple Courses]<br>How to use the same Google App Engine instance to run multiple Course Builder courses (optional).
+
   * [VerifyCode Verify Your Code]<br>How to perform some automated checks to verify the syntactic validity of some of your code changes.
 
   * [UploadCode Deploy Your App]<br>How to deploy your course to Google's production servers, to make it available to the world.

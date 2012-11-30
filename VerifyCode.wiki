@@ -8,7 +8,7 @@ Note that this verifier may not catch all errors. It is a first step, to find ce
 
 == Run the verification tool ==
 
-To run this tool, open a shell or command prompt. In that window:
+To run this tool, open a [http://code.google.com/p/gcb-x-03141590/wiki/FAQ#What%27s_a_%22shell_or_command_prompt%22? shell or command prompt]. In that window:
 
   {{{cd }}}_*{{{APPPATH}}}*_<br>
   {{{python tools/verify.py}}}

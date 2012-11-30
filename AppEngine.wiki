@@ -8,15 +8,17 @@ You do not need to be a GAE expert to work with Course Builder. There are just a
 
 This page discusses using GAE in development. For information on working with it to deploy your course and to modify it after deployment, see [UploadCode Deploy Your App].
 
+*Note:* Several of these pages refer to a "shell or command prompt". If you're unsure what that means, see [http://code.google.com/p/gcb-x-03141590/wiki/FAQ#What%27s_a_%22shell_or_command_prompt%22? What's a "shell or command prompt"?]
+
 <wiki:toc />
 
 == Important: Quotas and billing ==
 
-The use of GAE for your course may incur some costs. Currently, each GAE application can consume a certain level of computing resources for free, controlled by a set of [https://developers.google.com/appengine/docs/quotas limits]. If you need resources above these free limits, you can switch to a paid app to set a daily resource budget. When you convert to a paid app you will spend a minimum of $2.10/week. This allows you to purchase additional resources when needed. 
+The use of GAE for your course may incur some costs. Currently, each GAE application can consume a certain level of computing resources for free, controlled by a set of [https://developers.google.com/appengine/docs/quotas limits]. If you need resources above these free limits, you can switch to a paid app to set a daily resource budget. When you convert to a paid app you will spend a minimum of $2.10/week. This allows you to purchase additional resources when needed.
 
 It's difficult to predict in advance the costs for your course, as GAE has a fairly complex cost structure (see [https://developers.google.com/appengine/docs/billing Billing and Budgeting Resources] and [https://developers.google.com/appengine/docs/quotas Quotas] for details). It is likely that any significantly sized course _will_ incur costs. For rough comparison purposes, the Power Searching course run by Google incurred billable charges of approximately $20/day to support a course enrollment of approximately 150,000 students.  We've done tests which suggest that the code might support a course of up to 300 students for free. That figure is not a guarantee and is dependent on a fairly complex set of variables and usage patterns, such as enrollment, engagement, drop-out, code changes, and so on.
 
-Remember that you can begin development and testing of your course at no charge, by using the downloaded development server (from the [https://code.google.com/p/course-builder/wiki/AppEngine#Download_and_install_App_Engine Google App Engine SDK]) and the free quota initially provided by GAE for deployed applications. That free quota is fairly limited and is unlikely to support a sizable course enrollment. 
+Remember that you can begin development and testing of your course at no charge, by using the downloaded development server (from the [https://code.google.com/p/course-builder/wiki/AppEngine#Download_and_install_App_Engine Google App Engine SDK]) and the free quota initially provided by GAE for deployed applications. That free quota is fairly limited and is unlikely to support a sizable course enrollment.
 
 Also note that you can control your cost by setting a [https://developers.google.com/appengine/docs/billing#Setting_a_Daily_Budget maximum daily budget], which will cap your costs (and your quota) per day.  However, doing so may lead to your course becoming unavailable for the remainder of any day that your application exceeds its budget.
 
@@ -58,7 +60,7 @@ This starts the Python interpreter and indicates the version. If Python is not i
 
 ==== Getting Python ====
 
-If you don't have Python at all or you have the wrong version, visit the general Python 2.7 [http://python.org/download download page] to get the right version for you. You probably want to simply download the current production version for your platform. (Python 2.7.3 was the latest at the time of this writing.) 
+If you don't have Python at all or you have the wrong version, visit the general Python 2.7 [http://python.org/download download page] to get the right version for you. You probably want to simply download the current production version for your platform. (Python 2.7.3 was the latest at the time of this writing.)
 
 == Download and install GAE ==
 
@@ -70,7 +72,7 @@ Follow [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_
 
   * *Linux or other POSIX-compliant system:* After downloading the .zip file, go to the directory where you want to install GAE. When you unzip the archive, it creates a subdirectory named google_appengine. Add that directory to your shell's path so that it can find the command-line tools when you need them.
 
-When developing on GAE, you have a choice of performing administrative tasks using a graphical interface (GUI) or a traditional command-line interface. The GUI, called the Launcher, is available for users of PCs or Macs. Command-line tools are available on any POSIX-based system such as Mac OS X or Linux. The GAE SDK for Python includes both tools. 
+When developing on GAE, you have a choice of performing administrative tasks using a graphical interface (GUI) or a traditional command-line interface. The GUI, called the Launcher, is available for users of PCs or Macs. Command-line tools are available on any POSIX-based system such as Mac OS X or Linux. The GAE SDK for Python includes both tools.
 
 
 == Start your development server ==
@@ -81,13 +83,13 @@ Your development server is where you modify and test your application before rel
 
 To start the development server from the Launcher:
   # (Mac only) The first time you start the Launcher, you may see a dialog box asking you about symbolic links:<br> <img src="http://wiki.course-builder.googlecode.com/git/images/symlinks.png" /><br>For GAE to work, you must agree to set up symbolic links.
-  # Select your app. 
+  # Select your app.
   # When it's highlighted, click the *Run* button to start the server (for that app). <br>Once the *Browse* button is enabled, your server is ready to accept requests.
   # Click on the *Browse* button to visit the app in a web browser.<br>You should see the login page for the server.<br> <img src="http://wiki.course-builder.googlecode.com/git/images/server-login.png" />
   # If you do not see the login page, read [#Troubleshooting Troubleshooting].
-  # If you do see the login page, you can use any login name you want; this is the login for your development server, it does not have to match any real email address. 
+  # If you do see the login page, you can use any login name you want; this is the login for your development server, it does not have to match any real email address.
 
-Alternatively, because the command-line version has more options, you may wish to run the development server from your shell or command prompt. 
+Alternatively, because the command-line version has more options, you may wish to run the development server from your shell or command prompt.
 
 === From a shell or command prompt ===
 
@@ -98,7 +100,7 @@ Open a shell or a command prompt. In the window:
   # As the command starts running, you may see some warnings you can ignore and questions you must answer. <br>Once the app is set up, you see a URL reference to the hostname and port you use to connect to your app from a web browser. Typically, this URL is {{{http://localhost:8080}}}, but the port number ({{{8080}}}) may be different.
   # Open a browser window and navigate to the URL. You should see the login page for the server (as shown above for a PC).
   # If you do not see the login page, read [#Troubleshooting Troubleshooting].
-  # If you do see the login page, you can use any login name you want; this is the login for your development server, it does not have to match any real email address. 
+  # If you do see the login page, you can use any login name you want; this is the login for your development server, it does not have to match any real email address.
 
 === From a shell or command prompt, to enable remote access ===
 
@@ -125,23 +127,23 @@ where _*{{{APPPATH}}}*_ is the directory containing your app. _Note that the per
 === From the Launcher (PC, Mac) ===
 If you started your development server from the Launcher, you can stop it there:
 
-  # Select your app. 
-  # When it's highlighted, click the *Stop* button to start the server (for that app). 
+  # Select your app.
+  # When it's highlighted, click the *Stop* button to start the server (for that app).
 
 Once the icon to the left of the app name is gray, your development server is stopped.
 
 === From the Task Manager (PC) ===
 
-If you started your server from a command prompt on a PC, bring up the Windows Task Manager. 
+If you started your server from a command prompt on a PC, bring up the Windows Task Manager.
 
-  # On the *Applications* tab, search for the task that looks like:<br>  {{{Command Prompt - dev_appserver.py .}}} 
+  # On the *Applications* tab, search for the task that looks like:<br>  {{{Command Prompt - dev_appserver.py .}}}
   # Select the line for that task.
   # Click on *End Task*.
 
 === From a shell (Mac, Linux, or other POSIX-compliant system) ===
 If you started your development server from a shell, you can stop it there:
 
-Use the {{{ps}}} command to find the process number associated with your server and then to kill that server. 
+Use the {{{ps}}} command to find the process number associated with your server and then to kill that server.
 
   {{{ps x | grep dev_appserver}}}<br><br>
   <font color=green> {{{PID TTY TIME CMD}}} </font><br>
@@ -160,7 +162,7 @@ From the console, you can see and modify the content of your data store.
 
 == Modify your app and see the effects ==
 
-While working on your app, there are several places you can change information. Depending on the type and location of the information, either the changes you make take effect immediately, or you need to do something special to make them take effect. Common changes include:
+While working on your app, there are several places you can change information. Common changes include:
 
   * *HTML:* Change HTML view files in the {{{views}}} directory.
   * *!JavaScript:* Change !JavaScript activity or assessment files in the {{{assets/js}}} directory.
@@ -169,7 +171,8 @@ While working on your app, there are several places you can change information. 
 
 === Changes to non-data files ===
 
-Changes you make to the {{{views}}} directory or to either subdirectory under {{{assets}}} appear immediately in your development server. You do not have to stop or reload anything. Simply change the files and load (or reload) the corresponding page on your server.
+When you make changes to the {{{views}}} directory or to either subdirectory under {{{assets}}}, those changes appear immediately. Simply reload the affected pages and the changes are visible.
+
 
 === Change to data files ===
 
@@ -181,21 +184,28 @@ When you  make changes to either file in the {{{data}}} directory, you have two 
 
 ==== Reload all data ====
 
-To clear and reload all data,  you need to stop your development server, restart it clearing out the old data, and then reload the new data.
+To clear and reload all data,  you need to stop your development server, restart it clearing out the old data, reload the new data, and then tell GAE to start using the new data..
 
   # Stopping your development server depends on how you started it:
     * If you started your server *from the Launcher*, go to the Launcher application and quit it.
     * If you started your server *from a command prompt on a PC*, bring up the Windows Task Manager and on the *Applications* tab, search for the task that looks like {{{Command Prompt - dev_appserver.py .}}} Select that task and click on *End Task*.
     * If you started  your server *from a shell on Mac, Linux, or other POSIX-compliant system*:<br><br>  {{{ps x | grep dev_appserver   # Find the process number}}}<br><br><font color=green> {{{30849 s000  S      0:00.85 /Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python /usr/local/bin/dev_appserver.py .}}} </font><br><font color=green> {{{30856 s000  R+     0:00.01 grep dev_appserver}}} </font><br> <br>{{{kill 30849}}}
-  # Start your development server from the command line, clearing out the old data:<br><br>  {{{cd }}}_*{{{APPPATH}}}*_<br>  {{{dev_appserver.py --clear_datastore .}}} <br><br>where _*{{{APPPATH}}}*_ is the directory containing your app. _Note that the period at the end of that command is necessary._
+  # You can either start your development server from the Launcher or the command line. In either case, you must be sure to clear out the old data:
+    * To start from the Launcher:
+      * Double-click on the name of the application to get the *Settings* dialog box.
+      * In the *Launch Settings* area, choose *Clear datastore on launch*. <br> (This is a sticky setting. Once you set it, every time you relaunch the application, GAE clears the data store.)
+      * Click on *Update*.
+      * Back in the Launcher, click on *Run* to restart the application.
+    * To start from the command line:<br><br>  {{{cd }}}_*{{{APPPATH}}}*_<br>  {{{dev_appserver.py --clear_datastore .}}} <br><br>where _*{{{APPPATH}}}*_ is the directory containing your app. _Note that the period at the end of that command is necessary._
   # Start another command line and reload the changed data:  <br><br>  {{{cd }}}_*{{{APPPATH}}}*_{{{/data}}}<br><br>  {{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br><br>  {{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}} <br><br>where _*{{{APPPATH}}}*_ is the directory containing your app and _*{{{PORT}}}*_ is your app's port number. You will be asked for your credentials (Google user name and password) twice, once for loading each data file.
-
+ 
 ==== Change some data ====
 
-To change only some of the lesson or unit data, there are two steps:
+To change only some of the lesson or unit data, there are the following steps:
 
   # Make the appropriate changes in the {{{data/lesson.csv}}} or  {{{data/unit.csv}}} file.
   # Visit the Admin Console.
+  # If *Datastore Viewer* is not selected, click on that in the left nav.
   # From the *Entity Kind* drop down, choose whichever type of data you changed (Lesson or Unit).<br>A list of data appears.
   # (Optional) If you changed an existing piece of data, select the row containing that data and click on *Delete*.
   # Click on *Create New Entity* to add a new piece of data. Notice that you have to add the entire row over again, even if you're changing existing information.
@@ -216,12 +226,12 @@ This section talks about details of creating separate temporarily public "under 
 
 What does it mean to create versions of a GAE application?
 
-When you load an application into GAE as described in [UploadCode#Upload_(or_deploy)_your_app Upload your app], it decides what application it is based on the {{{application}}} parameter in {{{app.yaml}}}. 
+When you load an application into GAE as described in [UploadCode#Upload_(or_deploy)_your_app Upload your app], it decides what application it is based on the {{{application}}} parameter in {{{app.yaml}}}.
 
 Assume you have two different directories, each of which contains code for a Course Builder course *and* each of their {{{app.yaml}}} files has the same value for the {{{application}}} parameter. If you run {{{appcfg.py upload}}} in both of these directories, GAE loads both applications to production and considers them to be the same application.
   * If the value of the {{{version}}} parameter is the same in both {{{app.yaml}}} files, then App Engine considers there to be only one version of the application and overwrites the first one loaded with the second one.
-  * If the value of the {{{version}}} parameter is different in the {{{app.yaml}}} files, then App Engine considers there to be two versions of the application. 
-    * The *first* one you upload is the default version. That version is available at {{{http://}}}_*{{{MYCOURSE}}}*_{{{.appspot.com}}} and at  {{{http://}}}_*{{{VERSION.MYCOURSE}}}*_{{{.appspot.com}}}, where _*{{{VERSION}}}*_ is the value of the {{{version}}} parameter. 
+  * If the value of the {{{version}}} parameter is different in the {{{app.yaml}}} files, then App Engine considers there to be two versions of the application.
+    * The *first* one you upload is the default version. That version is available at {{{http://}}}_*{{{MYCOURSE}}}*_{{{.appspot.com}}} and at  {{{http://}}}_*{{{VERSION.MYCOURSE}}}*_{{{.appspot.com}}}, where _*{{{VERSION}}}*_ is the value of the {{{version}}} parameter.
     * The second one you upload is a non-default version. It is available only at {{{http://}}}_*{{{OTHERVERSION.MYCOURSE}}}*_{{{.appspot.com}}}, where _*{{{OTHERVERSION}}}*_ is the value of its {{{version}}} parameter.
 
 Notice, by the way, that a version doesn't have to be a number; it can be any alphanumeric string (without spaces).
@@ -234,7 +244,7 @@ If you do nothing special, the first version of an application that is uploaded 
   # Choose your app.
   # Click on *Versions* in the left navigation.
   # Pick the radio button for the version you want to be the default.
-  # Click on *Make Default*. 
+  # Click on *Make Default*.
 
 === Make "under construction" and "latest" versions ===
 
@@ -244,7 +254,7 @@ To create an "under construction" public version as the temporary default and a 
   # Edit the {{{app.yaml}}} file in each of them.
   # In the directory for your temporarily public "under construction" version, specify _*{{{mycourse}}}*_ as the value of {{{application}}} and specify {{{underconstruction}}} as the value of {{{version}}}.
   # In the directory for your working version, specify _*{{{mycourse}}}*_ as the value of {{{application}}} and specify {{{latest}}} as the value of {{{version}}}.
-  # In the under construction directory, 
+  # In the under construction directory,
     # Replace the entire contents of {{{views/course.html}}} with<br>{{{<html><body>Really under construction.</body></html>}}}
     # Replace the text in {{{views/register.html}}} with<br>{{{Under construction.}}}
   # In the working version directory, do all the work you need to create your course.
@@ -254,9 +264,9 @@ To create an "under construction" public version as the temporary default and a 
 
 === Hide your course from search engines ===
 
-To further decrease the likelihood of someone stumbling upon your course, you can create a [http://www.robotstxt.org/ robots.txt] file to tell search engines such as Google's search engine to ignore your pages. 
+To further decrease the likelihood of someone stumbling upon your course, you can create a [http://www.robotstxt.org/ robots.txt] file to tell search engines such as Google's search engine to ignore your pages.
 
-You add a {{{robots.txt}}} file to your application by creating that file and modifying {{{app.yaml}}} to know about it. 
+You add a {{{robots.txt}}} file to your application by creating that file and modifying {{{app.yaml}}} to know about it.
 
 1. Create a {{{robots.txt}}} file in the top-level of your application directory (the same place that contains {{{app.yaml}}}). In robots.txt, specify:
 
@@ -310,6 +320,21 @@ Instead of immediately showing the registration page, you can add some extra cod
 
 You can simply create the whitelist as an array of email addresses.
 
+== Run Course Builder tests ==
+
+Course Builder contains a set of functional tests for its source code. If you make significant changes to the source code, consider running these tests. Depending on your changes, you may also have to modify the tests.
+
+Before you can run the tests:
+  # Install Python !WebTest. To do so, follow the instructions at [http://webtest.pythonpaste.org/en/latest Testing Applications with WebTest].
+  # Add !WebTest to your Python path.
+
+Once you have !WebTest installed, run the tests with the following commands:
+
+  {{{cd }}}_*{{{APPPATH}}}*_<br>
+  {{{python ./tests/suite.py}}}
+
+where _*{{{APPPATH}}}*_ is the directory containing your app.
+
 == Troubleshooting ==
 
 === Development server won't start ===
@@ -334,7 +359,7 @@ When you enter your credentials, you may get the following error:
 
   <font color=green> {{{urllib2.URLError: <urlopen error [Errno 61] Connection refused>}}} </font>
 
-If you do, then you have forgotten to start your development server. 
+If you do, then you have forgotten to start your development server.
 
 == Official GAE documentation ==
 

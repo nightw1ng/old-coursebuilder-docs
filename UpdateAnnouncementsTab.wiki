@@ -1,0 +1,13 @@
+#summary How to update the announcements tab for your course
+
+= Update Announcements Tab =
+
+Course Builder provides an announcements tab for you to post course announcements.
+
+<img src="http://wiki.course-builder.googlecode.com/git/images/announcements.png" width="392" height="364" />
+
+We recommend that you add to this tab all announcements that you send to either an [CreateEmailList announcements email alias] or to a [WebForums community discussion forum]. This allows students to see all course announcements, even if they choose to not join an email elias or visit the forum.
+ 
+The content of the announcements is in the file {{{views/announcements.html}}}. You must replace the sample announcements that come with the sample course.
+
+If you would prefer to not have the announcements tab at all, you can remove the tab from {{{views/base.html}}}.

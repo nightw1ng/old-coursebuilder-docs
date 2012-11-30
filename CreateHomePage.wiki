@@ -1,23 +1,32 @@
 #summary How to create the home page for your course.
 
-= Create Home Page =
+<h1>Create Home Page</h1>
 
-After successful registration, the student can click on *Home* in the navigation bar of the confirmation page to be taken to the home page for your course. Once registered, any time the student leaves your course and returns to its main URL, this is the page that appears.
+<wiki:toc />
+
+After successful registration, the student can click on *Course* in the navigation bar of the confirmation page to be taken to the home page for your course. Once registered, any time the student leaves your course and returns to its main URL, this is the page that appears.
 
 <img src="http://wiki.course-builder.googlecode.com/git/images/homepage.png" height=529 width=420 />
 
 You create the home page with these files:
   * {{{views/base.html}}} defines the header and footer areas. See [ModifyTemplate Modify Course Template] for information about this file.
-  * {{{views/course.html}}} defines the structure of the content area (the part that contains the blurb and the  schedule).
-  * {{{data/unit.csv}}} defines the actual content of the content area. 
+  * {{{views/course.html}}} defines the structure of the content area (the part that contains the blurb and the  schedule). You probably don't have to change this file.
+  * {{{views/summary.html}}} defines course descriptive information for the introductory area above the course syllabus.
+  * {{{data/unit.csv}}} defines the set of units in the course.
 
-You _must_ change these files to be relevant to your course. 
+You _must_ change {{{views/base.html}}}, {{{views/summary.html}}}, and {{{data/unit.csv}}} to be relevant to your course. 
+
+By default, this version of the home page shares {{{views/base_registration.html}}}, {{{views/summary.html}}}, and {{{data/unit.csv}}} with the version that unregistered people see. 
+
 
 == Structure of home page ==
 
-{{{views/course.html}}} contains the structure of the home page. It consists of a short blurb and a list of what's scheduled for your course. For the list, this file contains the structure of how its items are laid out. You specify the actual text to display in {{{data/unit.csv}}}.
+{{{views/course.html}}} contains the structure of the home page. It directly contains the parts of the home page that you do not need to change for a specific course, such as the structure for how the syllabus is displayed. {{{views/course.html}}} automatically includes {{{views/summary.html}}}.
 
-You must change the title, course blurb, and a banner image for your course.
+{{{views/summary.html}}} contains the course-specific information, such as the  course description and an introductory video. You must change the information in {{{views/summary.html}}}.
+
+You specify the actual text to display in {{{data/unit.csv}}}.
+
 
 == Home page content ==
 
@@ -31,13 +40,12 @@ Each line after that contains the information for an individual part of the cour
   {{{...}}}<br>
   {{{11,O,http://www.youtube.com/watch?v=dwlpViuIYgU&feature=player_embedded,Hang Out with Search Experts Video,,True}}}
 
-
 When you edit the file, leave the first line as is. Replace all of the other lines with the information relevant to your course. The template files and various Python files refer to these fields when displaying course information.  Each line contains the following fields:
 
   * {{{id:}}} An integer representing this item. These integers must start at 1 and be in order.
   * {{{type:}}} One of A, U, or O, depending on whether this line represents an assessment, a unit, or something else (such as a link to a video or to an upcoming Hangout On Air).
   * {{{unit_id:}}} An id for this item. Its value depends on the type:
-    * For an assessment (type=A): one of {{{Pre}}}, {{{Mid}}}, or {{{Fin}}}.
+    * For an assessment (type=A): the suffix of the corresponding {{{assessment-}}}*{{{SUFFIX}}}*{{{.js}}} file. By default, one of {{{Pre}}}, {{{Mid}}}, or {{{Fin}}}. See [CreateAssessments#Writing_assessments Writing assessments].
     * For a unit (type=U): an integer representing the unit number. 
     * For something else (type=O): a URL pointing to that thing.
   * {{{title:}}} The text to describe this item.
@@ -48,11 +56,9 @@ Typically, you make the lessons in your course available over time, as the cours
 
 == Testing changes ==
 
-Changes you make to any file in the {{{views}}} directory appear automatically in your running development server.
+If you change the content of the {{{data/unit.csv}}} file, you must load the changed data into your development server as described in [AppEngine#Modify_your_app_and_see_the_effects Modify your app and see the effects].
 
-That is, after you make a change to one of these files, simply load (or reload) a page that uses that view and the change appears. 
-
-On the other hand, if you change the content of the {{{data/unit.csv}}} file, you must load the changed data into your development server as described in [AppEngine#Modify_your_app_and_see_the_effects Modify your app and see the effects].
+Changes you make to any file in the {{{views}}} directory appear automatically in your running development server. That is, after you make a change to one of these files, simply load (or reload) a page that uses that view and the change appears.
 
 To see how to make these changes in your live, deployed course, see [UploadCode Deploy Your App].
 

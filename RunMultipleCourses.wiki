@@ -1,0 +1,145 @@
+#summary Using one GAE instance to host multiple courses.
+
+<h1>Run Multiple Courses</h1>
+
+In CB 1.0, you could only host one course per Google App Engine application instance. That is, in the GAE Launcher, you needed a separate application for each course and running each course started its own copy of the GAE binary. Two courses could not share any of the same code.
+
+CB 1.1 allows you to host multiple courses simultaneously. This is, of course, optional. If you only need to run one course, stop reading now. Otherwise...
+
+<wiki:toc max_depth=2 />
+
+== 1. Make sure the courses can be run on the same instance. ==
+
+When you host multiple courses in one instance, all of those courses must share most of their code. (See [ExploreCode Explore the Sample Code] for a description of all the files shipped with Course Builder.) 
+
+Specifically, assume that _*{{{APPPATH}}}*_ is the directory containing Course Builder. Multiple courses that run in one GAE instance must share all files and code except what is in the _*{{{APPPATH}}}*_{{{/assets}}}, _*{{{APPPATH}}}*_{{{/data}}}, and _*{{{APPPATH}}}*_{{{/views}}} directories.
+
+If you have existing courses that you want to consolidate into one instance, first check that they share the correct code. If this is not the case, stop here. You cannot host the courses on the same instance.
+
+== 2. Create or copy unshared files to appropriate directories. ==
+
+Instead of using the top-level {{{assets}}}, {{{data}}}, and {{{views}}} directories, when multiple courses share an instance, they use a new top-level directory,  _*{{{APPPATH}}}*_{{{/courses}}}.
+
+This directory contains a separate subdirectory for each course. Each of _those_ subdirectories contains {{{assets}}}, {{{data}}}, and {{{views}}} directories for that one course. Those subdirectories must contain all of the asset, data, and view files for the given course.
+
+For example, assume that you have two courses, Algebra and Calculus. You would have files and directories such as the following:
+
+  _*{{{APPPATH}}}*_{{{/app.yaml}}} <br>
+  {{{...}}} <br>
+  _*{{{APPPATH}}}*_{{{/courses/}}} <br>
+  _*{{{APPPATH}}}*_{{{/courses/algebra/}}} <br>
+  _*{{{APPPATH}}}*_{{{/courses/algebra/assets/...}}} <br>
+  _*{{{APPPATH}}}*_{{{/courses/algebra/data/...}}} <br>
+  _*{{{APPPATH}}}*_{{{/courses/algebra/views/...}}} <br>
+  {{{...}}} <br>
+  _*{{{APPPATH}}}*_{{{/courses/calculus/}}} <br>
+  _*{{{APPPATH}}}*_{{{/courses/calculus/assets/...}}} <br>
+  _*{{{APPPATH}}}*_{{{/courses/calculus/data/...}}} <br>
+  _*{{{APPPATH}}}*_{{{/courses/calculus/views/...}}} <br>
+  {{{...}}} <br>
+  _*{{{APPPATH}}}*_{{{/models/models.py}}} <br>
+  {{{...}}}
+
+All files and directories outside of _*{{{APPPATH}}}*_{{{/assets}}}, _*{{{APPPATH}}}*_{{{/data}}}, and _*{{{APPPATH}}}*_{{{/views}}} remain the same.
+
+If you consolidate existing courses, make a copy of one entire _*{{{APPPATH}}}*_ tree. Move the top-level {{{assets}}}, {{{data}}}, and {{{views}}} directories in that copy into an appropriately named subdirectory for that course. Then create other subdirectories for your other courses and copy their {{{assets}}}, {{{data}}}, and {{{views}}} directories into the new tree.
+
+== 3. Let Course Builder know about the multiple courses. ==
+
+=== Add URL routing ===
+
+Once you have your files in the appropriate directory structure, you need to configure Course Builder to know where to find the courses and what URLs to use to refer to them. You do this by setting  the {{{GCB_COURSES_CONFIG}}} environment variable in _*{{{APPPATH}}}*_{{{/app.yaml}}}.
+
+In our example, assume that you plan to use {{{http://www.example.com/index.html}}} as the home page that lists all of your courses, {{{http://www.example.com/algebra101}}} for the Algebra course, and {{{http://www.example.com/calculus202}}} for the Calculus course. In this situation, you would add the following section to {{{app.yaml}}}.
+
+  {{{...}}}<br>
+  {{{env_variables:}}}<br>
+  {{{  GCB_COURSES_CONFIG: 'course:/algebra101:/courses/algebra, course:/calculus202:/courses/calculus'}}}<br>
+  {{{...}}}
+
+{{{GCB_COURSES_CONFIG}}} is a comma-separated list of rules. Each rule has three parts, separated by colons: 
+
+  * *Type of entry.*<br>Every rule must start with the word {{{course}}}. (This allows for future expansion of configuration rules.)
+
+  * *URL prefix.*<br>Specifies the URL to use for this portion of the site. In the example, the home page is accessible as {{{http://www.example.com/}}} and the second unit of the Algebra course is accessible as {{{http://www.example.com/algebra101/unit?unit=2}}}.
+
+  * *File system location for course files.*<br>Specifies where to find the files associated with each course. In the example, the views files for Algebra 101 are stored under _*{{{APPPATH}}}*_{{{/courses/algebra/views/}}}. 
+
+=== Change data upload commands ===
+
+As described in [AppEngine#Modify_your_app_and_see_the_effects Develop with Goolge App Engine], when you upload lesson and unit data into GAE for a single application, you use commands such as the following:
+
+  {{{cd }}}_*{{{APPPATH}}}*_{{{/data}}}
+  
+  {{{appcfg.py upload_data \}}}<br>
+  {{{--url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api \}}}<br>
+  {{{--config_file=../bulkloader.yaml  \}}}<br>
+  {{{--filename=unit.csv \}}}<br>
+  {{{--kind=Unit}}}
+  
+  {{{appcfg.py upload_data \}}}<br>
+  {{{--url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api \}}}<br>
+  {{{--config_file=../bulkloader.yaml  \}}}<br>
+  {{{--filename=lesson.csv \}}}<br>
+  {{{--kind=Lesson}}} 
+  
+where _*{{{APPPATH}}}*_ is the directory containing your course and _*{{{PORT}}}*_ is your course's port number. (Here, the {{{appcfg.py}}} commands are spread across several lines for readability. If you copy and paste the example into a shell or command prompt, including the {{{\}}} at the end of each line, the shell or command prompt interprets that as though everything was typed on a single line.)
+
+When you have multiple courses running in the same instance, you must change these commands to tell Course Builder where the data files are and to tell it which namespaces to use for the data. (See [#GAE_namespaces GAE namespaces] for information about namespaces.) For example, to upload data for both courses in the example, use these commands:
+
+  {{{cd }}}_*{{{APPPATH}}}*_
+  
+  {{{appcfg.py upload_data \ }}}<br>
+  {{{--url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api \}}}<br>
+  {{{--config_file=bulkloader.yaml  \}}}<br>
+  {{{--filename=courses/algebra/data/unit.csv \}}}<br>
+  {{{--kind=Unit \}}}<br>
+  {{{--namespace=gcb-algebra101}}}
+  
+  {{{appcfg.py upload_data \}}}<br>
+  {{{--url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api \}}}<br>
+  {{{--config_file=bulkloader.yaml  \}}}<br>
+  {{{--filename=courses/algebra/data/lesson.csv \}}}<br>
+  {{{--kind=Lesson \}}}<br>
+  {{{--namespace=gcb-algebra101}}}
+
+  {{{appcfg.py upload_data \ }}}<br>
+  {{{--url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api \}}}<br>
+  {{{--config_file=bulkloader.yaml  \}}}<br>
+  {{{--filename=courses/calculus/data/unit.csv \}}}<br>
+  {{{--kind=Unit \}}}<br>
+  {{{--namespace=gcb-calculus202}}}
+  
+  {{{appcfg.py upload_data \}}}<br>
+  {{{--url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api \}}}<br>
+  {{{--config_file=bulkloader.yaml  \}}}<br>
+  {{{--filename=courses/calculus/data/lesson.csv \}}}<br>
+  {{{--kind=Lesson \}}}<br>
+  {{{--namespace=gcb-calculus202}}}
+
+=== GAE namespaces ===
+
+When you run multiple courses in a single GAE instance, Course Builder needs a way to separate information that belongs to different courses. For example, each of your courses has a Unit 1. Course Builder needs to know which information corresponds to Unit 1 in Algebra 101 and which corresponds to Unit 1 in Calculus 202. For this purpose, it uses GAE _namespaces_. A namespace is a method for disambiguating collections of information.
+
+All of your courses run in a single GAE instance, but each course runs in separate namespace. Course Builder creates the name of the namespace using the course's file system location. Course Builder replaces slashes in the location with dashes and gives the namespace a prefix of {{{gcb-}}}. So in the example, the Algebra course uses the namespace name {{{gcb-courses-algebra}}}, based on its file system location of {{{/courses/algebra}}}.
+
+== 4. (Only for CB 1.0 applications) Modify each course's views to use relative URLs. ==
+
+If you originally developed your courses using Course Builder 1.0, there's a final step involved to run multiple courses from the same application instance. This step does not apply if you originally developed your courses with Course Builder 1.1.
+
+In Course Builder 1.0, by default, many of the files in {{{views/}}} referred to other Course Builder files using _absolute_ URLs.  An absolute URL starts with {{{http://}}},  {{{https://}}}, or  {{{/}}}. For example, {{{http://www.example.com/index.html}}} and  {{{/index.html}}} are absolute URLs. A URL that does not start with {{{http://}}},  {{{https://}}}, or  {{{/}}} is a _relative_ URL; for example, {{{index.html}}} is a relative URL. An absolute URL describes precisely where the page lives, in "absolute" terms. A relative URL describes where the page lives, relative to the current directory. For example, in CB 1.0 {{{views/base.html}}} contained the following line:
+
+  {{{<link href="/assets/css/main.css" rel="stylesheet" type="text/css">}}}
+
+When you run Course Builder for only one application, {{{/assets/css/main.css}}} refers to _*{{{APPPATH}}}*_{{{/assets/css/main.css}}}. When you run it for multiple applications, what {{{/assets/css/main.css}}} refers to depends on the routing defined by {{{GCB_COURSES_CONFIG}}}.
+
+To fix the URLs, first add the {{{base}}} tag to {{{views/base.html}}} and {{{views/base_registration.html}}}. Add the following line to both of those files, as the first line in the {{{<head>}}} section. 
+
+  {{{ <base href="{{ gcb_course_base }}" /> }}}
+
+This tag tells the browser where to start looking for relative URLs.
+
+Ntext, check all URLs in your Course Builder 1.0 courses to make sure they're ok. 
+
+  * Absolute URLs that start with either {{{http://}}} or {{{https://}}} do not change. 
+  * Absolute URLs that start with {{{/}}} (slash) probably become relative. In most cases, you change URLs pointing to files that live in a {{{views}}} directory. In these situations, you can simply remove the initial {{{/}}}. For example, change {{{/assets/css/main.css}}} to  {{{assets/css/main.css}}}. 

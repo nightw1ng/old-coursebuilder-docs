@@ -14,7 +14,7 @@ Every operating system has a utility you can use that lets you type in text-base
 
   * *Mac* calls it either a *terminal* or a *shell*.<br><br>Open the *Finder*. Choose *Go > Utilities*. From the window that appears, choose *Terminal.app*.
 
-  * *Linux* and other *POSIX-compliant systems* call it a *shell*. <br><br><font color=red><<TODO I don't remember how.>></font>
+  * *Linux* and other *POSIX-compliant systems* call it a *shell*. 
 
 == How do CSV files work? ==
 

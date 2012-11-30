@@ -75,11 +75,11 @@ http://wiki.course-builder.googlecode.com/git/images/annotatedlesson.png
 
 === Test changes ===
 
-Changes you make to any file in the {{{views}}} directory appear automatically in your running development server.
+If you change the content of the {{{data/lesson.csv}}} file, you must load the changed data into your development server as described in [AppEngine#Modify_your_app_and_see_the_effects Modify your app and see the effects].
 
-That is, after you make a change to one of these files, simply load (or reload) a page that uses that view and the change appears. 
+Changes you make to any file in the {{{views}}} directory appear automatically in your running development server. That is, after you make a change to one of these files, simply load (or reload) a page that uses that view and the change appears.
 
-On the other hand, if you change the content of the {{{data/lesson.csv}}} file, you must load the changed data into your development server as described in [AppEngine#Modify_your_app_and_see_the_effects Modify your app and see the effects].
+To see how to make these changes in your live, deployed course, see [UploadCode Deploy Your App].
 
 == Change page layout ==
 

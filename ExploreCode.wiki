@@ -7,7 +7,9 @@ The following table briefly describes the directory structure for the sample cod
 || *Pathname* || *Filename* || *Description* || *Needs changing?* || 
 || || {{{COPYING}}} || || ||
 || || {{{README}}} || || ||
+|| || {{{VERSION}}} || Course Builder release number. || No ||
 || || {{{app.yaml}}} || App configuration file. In setting up the sample code, you change the app name in this file. || Required || 
+|| || {{{appengine_config.py}}} || || || 
 || {{{assets/}}} || || || || 
 || {{{assets/css/}}} || || || || 
 || {{{assets/css/}}}  || {{{main.css}}} || CSS file that specifies the look of the HTML pages associated with your course. || Possible || 
@@ -24,7 +26,10 @@ The following table briefly describes the directory structure for the sample cod
 || || {{{bulkloader.yaml}}} || Defines the mapping between entities stored in the Google App Engine datastore (including the data in {{{data/lesson.csv}}} and {{{data/unit.csv}}}) and how those entities are referred to in code. If you have a large number of students and download the student data, you may need to modify this file. See [ExportCourseData Export Course Data]. || Possible || 
 || {{{controllers}}} || || ||  ||
 || {{{controllers/}}} || {{{__init__.py}}} ||  || || 
+|| {{{controllers/}}} || {{{assessments.py}}} || Classes and methods to manage assessments, including scoring. Optionally, you can change how to score assessments. If you change the number of assessments from the default of three, you should change the scoring for the entire course. See [CreateAssessments Create Assessments]. || Possible || 
 || {{{controllers/}}} || {{{lessons.py}}} ||  || || 
+|| {{{controllers/}}} || {{{servings.py}}} ||  || || 
+|| {{{controllers/}}} || {{{sites.py}}} ||  || || 
 || {{{controllers/}}} || {{{utils.py}}} || Utility functions. Optionally, you can change the maximum student enrollment allowed; that value defaults to 250,000. At present, the only difference between a student who enrolls before the limit and one who enrolls after the limit is the page they see. That page implies to the latter that they do not have access to the course. They do. If you want to really enforce enrollment limits, you must write special Python code.  || Possible ||
 || {{{data/}}} || || ||  ||
 || {{{data/}}} || _{{{[bulkloader-log-SUFFIX]}}}_ || These files appear when you upload data (such as CSV files) to the course.  || || 
@@ -35,21 +40,27 @@ The following table briefly describes the directory structure for the sample cod
 || || {{{main.py}}} ||  || || 
 || {{{models}}} || || ||  ||
 || {{{models/}}} || {{{__init__.py}}} ||  || || 
-|| {{{models/}}} || {{{models.py}}} ||  || || 
+|| {{{models/}}} || {{{models.py}}} || Defines the data Course Builder stores. If you collect more student information, you must change the definition here.  || Possible || 
 || {{{tools}}} || || ||  ||
 || {{{tools/}}} || {{{__init__.py}}} ||  || || 
+|| {{{tools/}}} || {{{export.py}}} ||  || || 
 || {{{tools/}}} || {{{verify.py}}} ||  || || 
 || {{{views}}} || || These HTML files comprise templates that define what the pages of your course look like to students.<br>Course Builder uses [http://jinja.pocoo.org/docs/ Jinja2 templating]. The templates work together hierarchically. Every page displayed for your course starts from either the {{{base_registration.html}}} template (for unenrolled people) or {{{base.html}}} template (for enrolled people). Those templates define the overall HTML structure of a page. The other views, such as {{{activity.html}}}, fill in more structure for a specific type of page. Finally, files outside of views may fill in the content for a particular page, such as {{{activity-1.1.js}}}.  <br>You _must_ change a few of these files. You _can_ change any of them. || ||
 || {{{views/}}} || {{{activity.html}}} || The structure of the main content of an activity page. See [CreateActivities Create Activities]. || ||
+|| {{{views/}}} || {{{announcements.html}}} || The structure and content of the page containing course announcements. See [CreateAnnouncements Create Announcements]. || Required. ||
 || {{{views/}}} || {{{assessment.html}}} || The structure of the main content of an assessment page. See [CreateAssessments Create Assessments]. || ||
 || {{{views/}}} || {{{base.html}}} ||  The base template for any page, once a student is registered. It defines the footer, the top header, and the top navigation. See [ModifyTemplate Modify Course Template]. || Required || 
 || {{{views/}}} || {{{base_registration.html}}} || The base template for the registration and registration confirmation pages. These are the only pages people  can see before they finish registering. The template defines the footer, the top header, and the top navigation.  See [ModifyTemplate Modify Course Template]. || Required || 
 || {{{views/}}} || {{{confirmation.html}}} || The page that appears after a student enrolls. || Required || 
 || {{{views/}}} || {{{course.html}}} || The structure of the content for the home page for the course. Contains a short blurb and a list of units and assessments. See [CreateHomePage Create Home Page]. || Required || 
 || {{{views/}}} || {{{forum.html}}} || The structure of the page that contains your [WebForums discussion forum]. You must include a link to your forum. || Required || 
+|| {{{views/}}} || {{{preview.html}}} || The structure of the content for the home page for the course, as seen by people before they have registered for the course. Contains a short blurb and a list of units and assessments. See [CreateHomePage Create Home Page]. || Required || 
 || {{{views/}}} || {{{register.html}}} || The content of the registration form an unenrolled person sees when visiting your course.  || Likely ||
+|| {{{views/}}} || {{{student_profile.html}}} || The student profile page.  See [ModifyProfile Modify My Profile Tab]. ||  ||
+|| {{{views/}}} || {{{summary.html}}} ||  Contains the actual summary information for the course home page that's used by {{{course.html}}} and {{{preview.html}}}. See [CreateHomePage Create Home Page]. || Required || 
 || {{{views/}}} || {{{test_confirmation.html}}} || The set of messages a student can see after completing an assessment. See [CreateAssessments Create Assessments]. || Required|| 
+|| {{{views/}}} || {{{unenroll_confirmation.html}}} || The message a student sees after unenrolling from the course. See  [CreateProfile Create Profile]. || Required|| 
+|| {{{views/}}} || {{{unenroll_confirmation_check.html}}} || The question students get when they first request to unenroll from the course. See  [CreateProfile Create Profile]. || Required || 
 || {{{views/}}} || {{{unit.html}}} || The structure for a lesson, activity, or assessment.  It includes additional footer and header regions and the left-hand navigation.  ||  || 
-
 
 || [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||

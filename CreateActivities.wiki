@@ -204,11 +204,9 @@ http://wiki.course-builder.googlecode.com/git/images/answer-free.png
 
 == Testing changes ==
 
-Changes you make to any file in the {{{views}}} directory or to any file in the {{{assets/js}}} directory appear automatically in your running development server.
+Changes you make to any file in the {{{views}}} directory appear automatically in your running development server. That is, after you make a change to one of these files, simply load (or reload) a page that uses that view and the change appears.
 
-That is, after you make a change to one of these HTML or !JavaScript files, simply load (or reload) a page that uses that page and the change appears. 
-
-
+To see how to make these changes in your live, deployed course, see [UploadCode Deploy Your App].
 
 A couple of hints for !JavaScript debugging:
 

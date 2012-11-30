@@ -4,11 +4,38 @@
 
 <wiki:toc max-depth="2" />
 
+== Unregistered home page ==
+
+When prospective students first visit your course, the app displays a preview page:
+
+http://wiki.course-builder.googlecode.com/git/images/homepage-unregistered-parts.png
+
+=== What happens from this page ===
+ 
+By default, this page is a version of the course home page. In this version, the course syllabus is visible, but students cannot access the content. The page also displays a Register button. You can change the preview page to display however much or however little information you want. 
+
+=== Page layout ===
+
+This page consists of three areas:
+  * The *header* contains 
+    * Course icon and name of your course.
+    * Horizontal navigation bar, with two tabs on the left (Course and Registration) and an area with a login link. Notice that the horizontal navigation is different once the student completes registration.
+  * The *content area* contains names of each unit and each assessment. None of this information is clickable before registration.
+  * The *footer* contains the same two links as for the registration pages. 
+
+The app uses four files to render this page:
+  * {{{views/base_registration.html}}} defines the header and footer areas.
+  * {{{views/preview.html}}} defines the structure of the content area.
+  * {{{views/summary.html}}} provides the course description and other introductory material. 
+  * {{{data/unit.csv}}} provides the actual content of the content area.
+
+It shares {{{views/base_registration.html}}}, {{{views/summary.html}}}, and {{{data/unit.csv}}} with the version of the home page that registered students see. For details, see [CreateHomePage Create Home Page].
+
 == Registration page ==
 
-When prospective students first visit your course, the app displays a registration page:
+When prospective students click on *Register*, the app displays a registration page:
 
-http://wiki.course-builder.googlecode.com/git/images/registration-parts.png
+http://wiki.course-builder.googlecode.com/git/images/registration.png
 
 === What happens from this page ===
 
@@ -51,8 +78,8 @@ This page consists of the same three areas as the registration page and uses the
 
 == Testing changes ==
 
-Changes you make to any file in the {{{views}}} directory appear automatically in your running development server.
+Changes you make to any file in the {{{views}}} directory appear automatically in your running development server. That is, after you make a change to one of these files, simply load (or reload) a page that uses that view and the change appears.
 
-That is, after you make a change to one of these files, simply load (or reload) a page that uses that view and the change appears. 
+To see how to make these changes in your live, deployed course, see [UploadCode Deploy Your App].
 
 || [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||

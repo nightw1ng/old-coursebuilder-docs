@@ -14,7 +14,7 @@ The Course Builder application stores data in Google App Engine’s [https://dev
 
 You can export data either from your development server or from your production server. The steps are the same. The only difference is that when you download data from your production server, you need to use your app-specific password, as described in [UploadCode#Set_up_an_app-specific_password Set up an app-specific password].
 
-To export Course Builder data, first decide on the directory in which to put your exported files. Now, open a shell or command prompt. In that window:
+To export Course Builder data, first decide on the directory in which to put your exported files. Now, open a [http://code.google.com/p/gcb-x-03141590/wiki/FAQ#What%27s_a_%22shell_or_command_prompt%22? shell or command prompt]. In that window:
 
   {{{cd }}}_*{{{APPPATH}}}*_{{{/data}}}<br>
   {{{appcfg.py download_data --config_file=../bulkloader.yaml  --filename=}}}_*{{{DataFilename}}}*_{{{ --kind=}}}_*{{{EntityType}}}*_{{{ --url=}}}_*{{{URL}}}*_{{{/remote_api}}}
@@ -81,13 +81,8 @@ The following tables describe the data Course Builder stores for your course. Co
 || {{{email}}} || STRING || The email address the student from which the student registered. ||
 || {{{name}}} || STRING || The name the student supplied during registration. || 
 || {{{enrolled_date}}} || DATETIME || The date and timestamp when the student enrolled in the course. || 
-|| {{{final_answer}}} || TEXT || Information about the final assessment. Stored as a 2-dimensional array of strings. For example:<br><br>{{{[["assessment_type", "midcourse"],}}} <br> {{{["0", "true"],}}} <br> {{{["1", "true"],}}} <br> {{{["2", "true"],}}} <br> {{{["3", "true"],}}} <br> {{{["4", "false"],}}} <br> {{{["num_correct", "4"],}}} <br> {{{["num_questions", "5"],}}} <br> {{{["score", "80.00"]]}}} <br><br> The first element of the array indicates the assessment type. The next N  elements indicate whether the student answered correctly the corresponding question (note that the elements in this array number questions starting with 0, but the assessment actually numbers them starting with 1). Finally, there are elements that indicate how many questions the student answered correctly, the total number of questions in the assessment, and the student's score on the assessment. || 
-|| {{{final_score}}} || INTEGER || The student’s score on the final assessment. A numeric value or empty for no score. || 
-|| {{{midterm_answer}}} || TEXT || Information about the mid-course assessment. Stored as a 2-dimensional array of strings, in the same format as for the final assessment. || 
-|| {{{midterm_score}}} || INTEGER || The student’s score on the mid-course assessment. A numeric value or empty for no score. || 
-|| {{{overall_score}}} || INTEGER || The student’s overall score. A numeric value or empty for no score. || 
-|| {{{precourse_answer}}} ||  TEXT || Information about the precourse assessment.  Stored as a 2-dimensional array of strings, in the same format as for the final assessment. || 
-|| {{{precourse_score}}} || INTEGER || The student’s score on the pre-course assessment. A numeric value or empty for no score. || 
+|| {{{answers}}} || TEXT || The student's answers to all assessments. Stored as a dictionary, where the key is the identifier for the assessment, such as {{{midcourse}}} and {{{postcourse}}}, and the value is a 2-dimensional array of question number and whether or not the student answered the question correctly. For example:<br> {{{ { }}}<br>{{{"midcourse":}}}<br> {{{"[["assessment_type", "midcourse"],}}}<br>{{{ ["0", "false"], ["1", "true"], ["2", "false"], ["3", "false"], ["4", "false"],}}}<br> {{{ ["num_correct", "1"], ["num_questions", "5"], ["score", "20.00"]]",}}}<br><br> {{{ "postcourse":}}}<br> {{{ "[["assessment_type", "postcourse"],}}}<br> {{{ ["0", "false"], ["1", "true"], ["2", "false"], ["3", "false"], ["4", "false"], ["5", "true"], ["6", "false"],}}}<br> {{{ ["num_correct", "2"], ["num_questions", "7"], ["score", "28.57"]]"}}}<br>{{{ } }}} ||
+|| {{{scores}}} || TEXT || The student's scores on all assessments.  Stored as a dictionary, where the key is the identifier for the assessment, such as {{{midcourse}}},  {{{postcourse}}}, and {{{overall_score}}}, and the value is an integer or empty for no score. For example:<br> {{{ {"midcourse": 20, "overall_score": 26, "postcourse": 29} }}} ||
 
 *Unit* - Data on the units offered in the course. Used on the [CreateHomePage home page].
 || *Name* || *Type* || *Description* ||

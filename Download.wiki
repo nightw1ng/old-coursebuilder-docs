@@ -16,6 +16,8 @@ Before you can start working on your own course, you need to download Python and
 
 Make sure you have Python 2.7 on your system. To find out if you do...
 
+(*Note:* This page refers to a "shell or command prompt". If you're unsure what that means, see [http://code.google.com/p/gcb-x-03141590/wiki/FAQ#What%27s_a_%22shell_or_command_prompt%22? What's a "shell or command prompt"?])
+
 ==== Check on Mac, Linux or other POSIX-compliant systems ====
 On Mac, Linux or other POSIX-compliant systems, open a shell and type
 

@@ -1,5 +1,5 @@
 #summary Tips for creating and organizing a web forum for student discussions.
-<h1>Community Discussion</h1>
+<h1>Community Discussion (Forums)</h1>
 
 <wiki:toc />
 
