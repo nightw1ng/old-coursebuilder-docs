@@ -141,7 +141,7 @@ To fix the URLs, first add the {{{base}}} tag to {{{views/base.html}}} and {{{vi
 
 This tag tells the browser where to start looking for relative URLs.
 
-Ntext, check all URLs in your Course Builder 1.0 courses to make sure they're ok. 
+Next, check all URLs in your Course Builder 1.0 courses to make sure they're ok. 
 
   * Absolute URLs that start with either {{{http://}}} or {{{https://}}} do not change. 
   * Absolute URLs that start with {{{/}}} (slash) probably become relative. In most cases, you change URLs pointing to files that live in a {{{views}}} directory. In these situations, you can simply remove the initial {{{/}}}. For example, change {{{/assets/css/main.css}}} to  {{{assets/css/main.css}}}. 
