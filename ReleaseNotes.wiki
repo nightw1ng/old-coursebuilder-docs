@@ -1,6 +1,6 @@
 #summary Course Builder Release Notes
 
-<h1>Release notes for version update 1.1.1</h1>
+<h1>Release notes for version 1.1.1</h1>
 
   * *Windows platform support.* Course Builder version 1.1.0 contained a bug specific to running a development server on Windows platforms. This update fixes the issue.
 
