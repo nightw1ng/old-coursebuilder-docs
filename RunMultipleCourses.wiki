@@ -52,10 +52,12 @@ Once you have your files in the appropriate directory structure, you need to con
 
 In our example, assume that you plan to use {{{http://www.example.com/index.html}}} as the home page that lists all of your courses, {{{http://www.example.com/algebra101}}} for the Algebra course, and {{{http://www.example.com/calculus202}}} for the Calculus course. In this situation, you would add the following section to {{{app.yaml}}}.
 
-  {{{...}}}<br>
-  {{{env_variables:}}}<br>
-  {{{  GCB_COURSES_CONFIG: 'course:/algebra101:/courses/algebra, course:/calculus202:/courses/calculus'}}}<br>
-  {{{...}}}
+{{{
+...
+env_variables:
+  GCB_COURSES_CONFIG: 'course:/algebra101:/courses/algebra, course:/calculus202:/courses/calculus'}}}
+...
+}}}
 
 {{{GCB_COURSES_CONFIG}}} is a comma-separated list of rules. Each rule has three parts, separated by colons: 
 
