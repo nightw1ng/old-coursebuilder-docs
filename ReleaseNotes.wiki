@@ -24,3 +24,7 @@
   * *Changes to assessment data.*  Course Builder 1.1 changes how it stores information about student assessments. See [ExportCourseData Export Course Data].
 
   * *Testing.* Course Builder 1.1 includes a set of functional tests in the new {{{tests}}} directory. If you make significant changes to Course Builder's source code, consider running (and possibly changing) these tests. See [AppEngine#Run_Course_Builder_tests Run Course Builder tests].
+
+<h1>Release notes for version 1.0</h1>
+
+  * *First public release.* Course Builder is our experimental first step in the world of online education.
