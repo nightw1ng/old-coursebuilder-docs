@@ -1,6 +1,11 @@
 #summary Course Builder Release Notes
 
-<h1>Release notes for version 1.1</h1>
+<h1>Release notes for version update 1.1.1</h1>
+
+  * *Windows platform support.* Course Builder version 1.1.0 contained a bug specific to running a development server on Windows platforms. This update fixes the issue.
+
+
+<h1>Release notes for version 1.1.0</h1>
 
   * *New tabs.* Course Builder 1.0 contained two tabs: Course and Forum. CB 1.1 adds two new tabs: Announcements and My Profile.
     * *Announcements tab.* The new Announcements tab gives you a place that you can put course announcements, without having to create a separate forum. The content of the announcements tab is in {{{views/announcements.html}}}. See [Announcements Announcements and Optional Material].
