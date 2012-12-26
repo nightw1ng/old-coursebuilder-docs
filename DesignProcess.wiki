@@ -5,7 +5,7 @@
 
 Designing an online course using Course Builder is both similar to and different from designing for any other setting. This section contains advice we've gleaned from creating online courses, such as [PSHistory Power Searching] that handled thousands of students. Much of what we describe is fairly standard instructional design methodology, modified to support the demands of this different venue. Some of the differences took us by surprise.
 
-We are not the experts instructional design or in creating online courses. We offer this advice in the spirit of lessons we've learned that may be useful to you. If you have other lessons or more effective ones, please share them with us on our [https://groups.google.com/forum/?fromgroups#!forum/course-builder-forum discussion forum].
+We are not the experts in instructional design or in creating online courses. We offer this advice in the spirit of lessons we've learned that may be useful to you. If you have other lessons or more effective ones, please share them with us on our [https://groups.google.com/forum/?fromgroups#!forum/course-builder-forum discussion forum].
 
 Our design process has four simple steps, which get iterated multiple times:
 
