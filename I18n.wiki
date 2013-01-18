@@ -1,0 +1,35 @@
+#summary Explains the internationalization (i18n) and localization support.
+
+<h1>Internationalization</h1>
+
+<wiki:toc />
+
+You can translate Course Builder’s student visible text, like “Activity” and “Unit”, from the default English. All translatable strings are placed within the {{{ {% trans %} }}} {{{ {% endtrans %} }}} beginning and end tags. These tags are embedded within the HTML templates, which are located in the {{{views/}}} directory.
+
+For example, the following code:
+{{{
+{% trans %} Unit {% endtrans %}
+}}}
+indicates that the text “Unit” can be translated. Course Builder’s Internationalization framework uses the following technologies:
+
+ * [http://code.google.com/p/webapp-improved/downloads/detail?name=webapp2-2.5.1.zip&can=2&q= webapp2]
+ * [http://babel.edgewall.org/wiki/Documentation/cmdline.html pybabel]
+ * [http://pytz.sourceforge.net/ pytz]
+ * [http://jinja.pocoo.org/docs/extensions/ Jinja2’s i18n extension]
+
+This Internationalization capability was provided with the help of [https://plus.google.com/114264876894441886706/ Sergio Luján Mora] at [http://www.ua.es/ Universidad de Alicante].
+
+==Translated Languages==
+The student visible text in Course Builder has been translated into the following languages:
+
+ * Spanish
+ * Russian
+
+The translations are found in the {{{modules/i18n/resources/locale}}} of your Course Builder installation. To use one of these languages, specify it in the {{{course.yaml}}} file. For example, to specify the Spanish translation, the locale line should look like:
+{{{locale: ‘es_ES’}}}
+
+If you change the default text within these tags or add new translatable strings of your own, you must update the {{{.po}}} file in 
+
+{{{modules/i18n/resources/locale/<language>/LC_MESSAGES}}} 
+
+Then run {{{pybabel update}}}.
