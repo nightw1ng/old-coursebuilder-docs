@@ -1,0 +1,16 @@
+#summary Explains the various roles of Course Builder.
+
+<h1>Course Builder Roles</h1>
+
+<wiki:toc />
+
+Course Builder currently differentiates between two main roles -- Course Author and Administrator. These roles exist to allow an organization to separate the technical implementation from the course design. This separation can allow each person or team to focus on respective competencies. This is solely at the discretion of the organization or individual; you may decide one person should be responsible for both roles.
+
+==Course Author==
+This is the person or team who designs and creates the content of the course or the “what is learned” from the students’ points of view. Currently for Course Builder, we aggregate some different names and roles under the term "Course Author." For example, we call the Instructional Designer, Online Educator, Online Teacher, Teacher's Assistant, and so forth, all “Course Authors.” Course Builder's [Dashboard Dashboard] is a special section for Course Authors to view a broad range of information about an individual course.
+
+==Administrator==
+This is the person or team who is responsible for setting up and managing Course Builder on Google App Engine. They may also be responsible for duties like Google App Engine billing. The Administrator can be thought of as the webmaster for a particular course or courses. The Administrator is most likely the point of contact for the Course Author for any customizations or problems with a particular course. Course Builder's [AdminPage Administrator Page] is a special section for Administrators to access and manage the Google App Engine instance for a particular course.
+
+==Student==
+This person or group are the learners, "consumers", or "users" of the content that was created with Course Builder.
