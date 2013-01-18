@@ -1,0 +1,14 @@
+#summary Explains the upgrade process from 1.1 to 1.2.
+
+<h1>Upgrading Course Builder Versions</h1>
+
+<wiki:toc />
+
+To upgrade your 1.1.x version of Course Builder to 1.2, do the following steps:
+
+  # Make a copy of your current 1.1.x version of Course Builder
+  # Download and install version 1.2
+  # Copy the {{{/assets}}} and {{{/data}}} folders from 1.1.x to 1.2.
+  # Manually transfer the modifications you made in the {{{#FIXME}}} sections in the individual template files in the {{{/views}}} directory to the new {{{course.yaml}}} file. In 1.2, you can make all these customizations in one place, the {{{course.yaml}}} file, instead of to each individual template file.
+  # Manually transfer other modifications you made in the individual template files.
+  # Manually transfer any modifications you made to the Python .py files.
