@@ -1,5 +1,28 @@
 #summary Course Builder Release Notes
 
+<h1>Release notes for version 1.2.0</h1>
+  * *Accessibility.* A variety of accessibility features were added. See [Accessibility Accessibility].
+  
+  * *Administrator Page.* A new page was added for administrators who manage Google App Engine for Course Builder. See [AdminPage Administrator Page].
+  
+  * *Announcements.* You can now create and edit announcements directly in the *Announcements* tab.  Furthermore, you can save announcements as drafts and publish them later. See [UpdateAnnouncementsTab Update Announcements Tab].
+  
+  * *Bulk uploading.* You no longer have to manually upload the unit and lesson CSV files with the bulkuploader. The uploading of these files is now done automatically.
+  
+  * *course.yaml file.* The {{{course.yaml}}} file is a new file where you make course customizations. You no longer have to edit each individual template file in the {{{/views}}} directory. See [CourseSettings Customize Course Settings].
+  
+  * *Dashboard.* A new dashboard was added for course authors to see a broad range of information about their course in one place. See [Dashboard Dashboard].
+  
+  * *Event Recording.* Course Builder now allows recording of all assessment and activity interactions attempted by students. This feature is off by default and can be enabled in Admin > Settings.
+  
+  * *Internationalization.* An Internationalization framework was added so you can translate the student viewable text in a custom language. New translations in Spanish and Russian were also added. See [I18n Internationalization].
+        
+  * *Third Party Libraries.* Course Builder now uses several open source third party libraries. The libraries are located in the {{{/lib}}} directory.
+  
+  * *Yahoo Libraries.* The Administrator and Dashboard interfaces use Yahoo's open-source !JavaScript and CSS libraries (YUI) from http://yuilibrary.com/. Course Builder will make direct web requests to http://yui.yahooapis.com/ to obtain these files. If this is not acceptable, the Course Builder administrator can make a local copy of the YUI libraries and change the HTML templates to point to these local files. The Course Builder student-facing interface does not use YUI.
+  
+  * *Security.* Cross-site request forgery, also known as XSRF or CSRF, is a malicious attack that tries to exploit the relationship between a website and a user’s browser. Course Builder implements protection against XSRF using transient user-action specific tokens for all state-modifying HTTP operations supported by the product. Note that full in-depth security review has not yet been conducted. You should conduct independent security testing and take additional steps to secure your production site. If you find an issue, please report it immediately to the development team for assessment and resolution.
+
 <h1>Release notes for version 1.1.1</h1>
 
   * *Windows platform support.* Course Builder version 1.1.0 contained a bug specific to running a development server on Windows platforms. This update fixes the issue.

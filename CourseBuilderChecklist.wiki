@@ -57,7 +57,7 @@ In these steps, all pathnames are relative to the directory containing your appl
     # [ExplorePS Explore the sample app] and [ExploreCode its  code].
 
 === C.2. [ImplementCourseMaterial Implement the course material.] ===
-  # [ModifyTemplate Modify the basic look and feel of course pages]<br>by changing {{{views/base.html}}} and {{{views/base_registration.html}}}. Things you must change include:
+  # [CourseSettings Modify the basic look and feel of course pages]<br>by editing the {{{course.yaml}}} file. Things you must change include:
     # The course name, for the title element.
     # Code to collect Analytics data. (This change is only in {{{views/base.html}}}.)
     # Logo image for the header.

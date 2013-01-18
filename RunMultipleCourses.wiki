@@ -67,58 +67,6 @@ env_variables:
 
   * *File system location for course files.*<br>Specifies where to find the files associated with each course. In the example, the views files for Algebra 101 are stored under _*{{{APPPATH}}}*_{{{/courses/algebra/views/}}}. 
 
-=== Change data upload commands ===
-
-As described in [AppEngine#Modify_your_app_and_see_the_effects Develop with Goolge App Engine], when you upload lesson and unit data into GAE for a single application, you use commands such as the following:
-
-  {{{cd }}}_*{{{APPPATH}}}*_{{{/data}}}
-  
-  {{{appcfg.py upload_data \}}}<br>
-  {{{--url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api \}}}<br>
-  {{{--config_file=../bulkloader.yaml  \}}}<br>
-  {{{--filename=unit.csv \}}}<br>
-  {{{--kind=Unit}}}
-  
-  {{{appcfg.py upload_data \}}}<br>
-  {{{--url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api \}}}<br>
-  {{{--config_file=../bulkloader.yaml  \}}}<br>
-  {{{--filename=lesson.csv \}}}<br>
-  {{{--kind=Lesson}}} 
-  
-where _*{{{APPPATH}}}*_ is the directory containing your course and _*{{{PORT}}}*_ is your course's port number. (Here, the {{{appcfg.py}}} commands are spread across several lines for readability. If you copy and paste the example into a shell or command prompt, including the {{{\}}} at the end of each line, the shell or command prompt interprets that as though everything was typed on a single line.)
-
-When you have multiple courses running in the same instance, you must change these commands to tell Course Builder where the data files are and to tell it which namespaces to use for the data. (See [#GAE_namespaces GAE namespaces] for information about namespaces.) For example, to upload data for both courses in the example, use these commands:
-
-  {{{cd }}}_*{{{APPPATH}}}*_
-  
-  {{{appcfg.py upload_data \ }}}<br>
-  {{{--url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api \}}}<br>
-  {{{--config_file=bulkloader.yaml  \}}}<br>
-  {{{--filename=courses/algebra/data/unit.csv \}}}<br>
-  {{{--kind=Unit \}}}<br>
-  {{{--namespace=gcb-algebra101}}}
-  
-  {{{appcfg.py upload_data \}}}<br>
-  {{{--url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api \}}}<br>
-  {{{--config_file=bulkloader.yaml  \}}}<br>
-  {{{--filename=courses/algebra/data/lesson.csv \}}}<br>
-  {{{--kind=Lesson \}}}<br>
-  {{{--namespace=gcb-algebra101}}}
-
-  {{{appcfg.py upload_data \ }}}<br>
-  {{{--url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api \}}}<br>
-  {{{--config_file=bulkloader.yaml  \}}}<br>
-  {{{--filename=courses/calculus/data/unit.csv \}}}<br>
-  {{{--kind=Unit \}}}<br>
-  {{{--namespace=gcb-calculus202}}}
-  
-  {{{appcfg.py upload_data \}}}<br>
-  {{{--url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api \}}}<br>
-  {{{--config_file=bulkloader.yaml  \}}}<br>
-  {{{--filename=courses/calculus/data/lesson.csv \}}}<br>
-  {{{--kind=Lesson \}}}<br>
-  {{{--namespace=gcb-calculus202}}}
-
 === GAE namespaces ===
 
 When you run multiple courses in a single GAE instance, Course Builder needs a way to separate information that belongs to different courses. For example, each of your courses has a Unit 1. Course Builder needs to know which information corresponds to Unit 1 in Algebra 101 and which corresponds to Unit 1 in Calculus 202. For this purpose, it uses GAE _namespaces_. A namespace is a method for disambiguating collections of information.

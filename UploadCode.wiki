@@ -51,17 +51,12 @@ Course Builder uses 2-step authentication to ensure the security of your courses
 Make a note of the password you generate. You'll need to use it several times in the next step. You'll also need it in the future, if you make changes that you must upload.
 
 == Upload (or deploy) your app ==
-
 Once you register your app, the most straightforward way to deploy it is from a [http://code.google.com/p/gcb-x-03141590/wiki/FAQ#What%27s_a_%22shell_or_command_prompt%22? shell or command prompt]. From that window:
 
   {{{cd }}}_*{{{APPPATH}}}*_<br>
   {{{appcfg.py update .}}}<br>
-  <br>
-  {{{cd data}}}<br>
-  {{{appcfg.py upload_data --url=http://}}}_*{{{APP_ID}}}*_{{{.appspot.com/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br>
-  {{{appcfg.py upload_data --url=http://}}}_*{{{APP_ID}}}*_{{{.appspot.com/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}}
 
-where _*{{{APPPATH}}}*_ is the directory containing your app's code and _*{{{APP_ID}}}*_ is the app ID you registered for your app. _Note that the period at the end of the {{{appcfg.py update}}} command is necessary._
+where _*{{{APPPATH}}}*_ is the directory containing your app's code. _Note that the period at the end of the {{{appcfg.py update}}} command is necessary._
 
 For each {{{appcfg.py}}} command, you are asked to supply your credentials. Supply your username and the app-specific password you created in the [#Set_up_an_app-specific_password previous step].
 
@@ -84,13 +79,9 @@ Note that this works for the {{{upload}}} command. It *does not* work for the {{
 
 == Modify an app in production ==
 
-Once you deploy your app, modifying it in production is a little more complicated than modifying it on your development server.  However, sometimes you need to do so.
+Once you deploy your app, modifying it in production is a little more complicated than modifying it on your development server. One of the most common reasons for modifying your course in production is to make units available progressively, as the course goes on. (See [CreateHomePage Create Home Page].)
 
-One of the most common reasons for modifying your course in production is to make units available progressively, as the course goes on. (See [CreateHomePage Create Home Page].)
-
-=== Modify !JavaScript or HTML files ===
-
-You upload modifications to the content of assessments or activities (files in {{{assets/js/}}}) or the look of the various pages of your course (files in {{{views/}}}) in the same way that you uploaded those to production in the first place. That is, from a shell or command prompt:
+You upload modifications to the CSV files, {{{course.yaml}}} file, content of assessments or activities (files in {{{assets/js/}}}) or the look of the various pages of your course (files in {{{views/}}}) in the same way that you uploaded those to production in the first place. That is, from a shell or command prompt:
 
   {{{cd }}}_*{{{APPPATH}}}*_<br>
   {{{appcfg.py update .}}}
@@ -99,15 +90,9 @@ where _*{{{APPPATH}}}*_ is the directory containing your app's code. _Note that 
 
 You are asked to supply your credentials. Supply your username and the app-specific password you created.  If you don't remember the app-specific password, [#Set_up_an_app-specific_password create another one].
 
-When you make  changes to these files, it can take up to 60 minutes for those changes to be visible. To have Course Builder serve new versions of the affected pages sooner, see [#Clear_cached_pages Clear cached pages].
+After deployment completes changes to CSV files and {{{course.yaml}}} file will be visible instantaneously. The !JavaScript and image files in {{{assets/js/}}} are cached in the student browsers for 10 minutes and will not be viewed immediately. Frequent changes to the assessments and activities can make it difficult to invalidate analyze previously submitted results.
 
-=== Modify CSV files ===
-
-Uploading modifications to the contents of the home page ({{{data/unit.csv}}}) or the definition of the lessons ({{{data/lesson.csv}}}) is trickier. Some of these steps you only need to do the first time you modify the datastore.
-
-When you make  changes to CSV files, it can take up to 60 minutes for those changes to be visible. To have Course Builder serve new versions of the affected pages sooner, see [#Clear_cached_pages Clear cached pages].
-
-==== Getting ready to make changes to the datastore ====
+==== Enabling and using Datastore Admin ====
 
 The following steps you only need to do once:
 
@@ -117,50 +102,6 @@ The following steps you only need to do once:
   # Click on *Enable Datastore Admin*.
   # The *Datastore Admin* page for your app appears.
 
-==== Changing one lesson or unit ====
-
-To change a unit or lesson, you must first delete the row of existing data for that unit and then create a new row of data. To do so:
-
-  # From a web  browser, navigate to https://appengine.google.com/.
-  # On the *My Applications* page, click on the name of your app. The dashboard for your app appears.
-  # In the left navigation, click on *Datastore Viewer*. Its main area looks similar to the following:<br> <img src="http://wiki.course-builder.googlecode.com/git/images/datastore-viewer.png" /> 
-  # On the *Query* tab, in the *By kind* drop-down box, choose the type of entity you want to change, *Unit* or *Lesson*.
-  # Select the row containing the unit or lesson you want to change. 
-  # Click on *Delete* and confirm your choice in the dialog box that appears.
-  # Click on the *Create* tab. The top part of this tab looks similar to the following: <br> <img src="http://wiki.course-builder.googlecode.com/git/images/datastore-create.png" /> 
-  # Click on *Next*.
-  # Enter the information for your revised entity and click on *Save Entity*.
-
-==== Deleting all lessons or units and reloading ====
-
-Once you have the ability to make changes to the datastore:
-  # From a web  browser, navigate to https://appengine.google.com/.
-  # On the *My Applications* page, click on the name of your app. The dashboard for your app appears.
-  # In the left navigation, click on *Datastore Admin*. Its main area looks similar to the following:<br> <img src="http://wiki.course-builder.googlecode.com/git/images/datastore-admin.png" /> 
-  # Choose the check box in the *Lesson* row.
-  # Click on *Delete Entities*.
-  # A confirmation page appears. Click on *Delete Entities*. <br>The *Delete Job Status* page appears. <br> <img src="http://wiki.course-builder.googlecode.com/git/images/delete-job-status.png" /> <br>Deleting the entities for your job should be very fast. The easiest way to check when the entities are gone is to return to the *Datastore Admin* page. Now all of the old lesson data is gone. 
-  # To load the new data, repeat the steps you did to upload the data initially. From a shell or command prompt:<br><br>{{{cd }}}_*{{{APPPATH}}}*_{{{/data}}}<br>{{{appcfg.py upload_data --url=http://}}}_*{{{APP_ID}}}*_{{{.appspot.com/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}}<br><br>where _*{{{APP_ID}}}*_ is the app ID you registered for your app. You are asked to supply your credentials. Supply your username and the app-specific password you created.  If you don't remember the app-specific password, [#Set_up_an_app-specific_password create another one].
-
-All done! Uploading new unit data uses the same procedure. Of course, for unit data, on the *Datastore Admin* page, you delete the *Unit* data. When you reload data, the {{{appcfg.py}}} command is:
-
-  {{{appcfg.py upload_data --url=http://}}}_*{{{APP_ID}}}*_{{{.appspot.com/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}
-
-where _*{{{APP_ID}}}*_ is the app ID you registered for your app. 
-
-
-=== Clear cached pages ===
-
-When Course Builder displays a page in production, it caches the rendered version of the page. This means that, while the page is in the cache, when subsequent people visit the same page, Course Builder fetches the stored page from the cache and displays that, rather than rendering the page from scratch. Caching pages should reduce the latency perceived by students and can also reduce [AppEngine#Important:_Quotas_and_billing GAE costs]. 
-
-However, because of caching, when you upload changes to any pages, by default those changes do not take effect immediately. The old versions of the pages may continue to be served for up to 60 minutes. 
-
-From the GAE Admin Console, you can force GAE to clear the cache and start using the new pages. To do so, 
-
-  # Visit the [http://appengine.google.com GAE Admin Console].
-  # Choose your app from the console.
-  # In the left navigation, click on *Memcache Viewer*. <br> <img src="http://wiki.course-builder.googlecode.com/git/images/memcache-prod.png" />
-  # In the middle of the page, click on the *Flush Cache* button.
-  # Confirm flushing the cache.
+You now can use the Datastore Admin to directly inspect or export data stored by a Course Builder. We advise you not to modify any datastore objects directly.
 
 || [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||

@@ -16,7 +16,10 @@
     * [ExplorePS Explore the Sample App]
     * [ExploreCode Explore the Sample Code]
   * [ImplementCourseMaterial Implement Course Material]
+    * [CBRoles Course Builder Roles]
+    * [CourseSettings Customize Course Settings]
     * [ModifyTemplate Modify Course Template]
+    * [Dashboard Dashboard]
     * [CreateRegistration Create Registration]
     * [ModifyProfile Modify My Profile Tab]
     * [CreateHomePage Create Home Page]
@@ -24,6 +27,8 @@
     * [CreateActivities Create Activities]
     * [CreateAssessments Create Assessments]
     * [RunMultipleCourses Run Multiple Courses]
+    * [Accessibility Accessibility]
+    * [I18n Internationalization]
     * [VerifyCode Verify Your Code]
     * [UploadCode Deploy Your App]
     * [AppEngine Develop with Google App Engine]
@@ -46,6 +51,8 @@
     * [ExampleSurvey Example Post-Course Survey]
     * [AnalyticsForEdu Combine Assessment & Reach Data]
     * [ExportCourseData Export Course Data]
+  * [AdminPage Administrator Page]
+  * [Upgrade Upgrading Course Builder Versions]
   * [ReleaseNotes Release Notes]
 
 || [https://groups.google.com/forum/?fromgroups#!forum/course-builder-forum Discussion forum] ||

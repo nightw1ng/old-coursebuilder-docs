@@ -111,17 +111,6 @@ By default, your app is only available from the machine on which you start it. T
 
 where _*{{{APPPATH}}}*_ is the directory containing your app.
 
-=== From a shell or command prompt, to clear lesson and unit data ===
-
-Before you can put new or changed data into your data store, you must clear out the data that is already there. This is only necessary when you change either {{{data/lesson.csv}}} or {{{data/unit.csv}}}.
-
-From a shell or command prompt simply start your development server with an extra argument:
-
-  {{{cd }}}_*{{{APPPATH}}}*_<br>
-  {{{dev_appserver.py --clear_datastore .}}}
-
-where _*{{{APPPATH}}}*_ is the directory containing your app. _Note that the period at the end of the second command is necessary._
-
 == Stop your development server ==
 
 === From the Launcher (PC, Mac) ===
@@ -164,25 +153,18 @@ From the console, you can see and modify the content of your data store.
 
 While working on your app, there are several places you can change information. Common changes include:
 
-  * *HTML:* Change HTML view files in the {{{views}}} directory.
+  * *course.yaml* Change {{{course.yaml}}} file.
   * *!JavaScript:* Change !JavaScript activity or assessment files in the {{{assets/js}}} directory.
   * *Image:* Change image files in the {{{assets/img}}} directory.
   * *CSV:* Change home page or lesson information in the files {{{data/unit.csv}}} or {{{data/lesson.csv}}}.
 
-=== Changes to non-data files ===
+Occasionally you may choose to also modify {{{HTML}}} and {{{Python}}} files. Modifications to these files are discouraged. These files will change in the future and it may be difficult for you to port your changes to the future version of Course Builder.
 
-When you make changes to the {{{views}}} directory or to either subdirectory under {{{assets}}}, those changes appear immediately. Simply reload the affected pages and the changes are visible.
+=== Make changes while local server is running ===
 
+When you make changes to the files in the {{{data}}} directory, {{{course.yaml}}} file or {{{views}}} directory, while local server is running, those changes appear immediately. Simply reload the affected pages and the changes are visible. Note that !JavaScript or image files located in {{{assets}}} can be cached in the browser. Clear browser cache to see your changes.
 
-=== Change to data files ===
-
-When you  make changes to either file in the {{{data}}} directory, you have two choices:
-
-  * Clear out all of the existing data and start afresh with your changes.<br>While this sounds drastic, it is the safer option. You only make your changes in the source code and then you reload those files. This way you're certain your code is in sync with your server.
-
-  * Manually change only the parts of the data store that you changed in the data files.<br>You can use the Admin Console to remove or add individual records in either the Lesson or Unit store. This feels like a smaller change, but it requires you to enter the same information in two places, which can be error prone.
-
-==== Reload all data ====
+=== Restart local server and reload all data ===
 
 To clear and reload all data,  you need to stop your development server, restart it clearing out the old data, reload the new data, and then tell GAE to start using the new data..
 
@@ -197,21 +179,7 @@ To clear and reload all data,  you need to stop your development server, restart
       * Click on *Update*.
       * Back in the Launcher, click on *Run* to restart the application.
     * To start from the command line:<br><br>  {{{cd }}}_*{{{APPPATH}}}*_<br>  {{{dev_appserver.py --clear_datastore .}}} <br><br>where _*{{{APPPATH}}}*_ is the directory containing your app. _Note that the period at the end of that command is necessary._
-  # Start another command line and reload the changed data:  <br><br>  {{{cd }}}_*{{{APPPATH}}}*_{{{/data}}}<br><br>  {{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=unit.csv --kind=Unit}}}<br><br>  {{{appcfg.py upload_data --url=http://localhost:}}}_*{{{PORT}}}*_{{{/_ah/remote_api --config_file=../bulkloader.yaml  --filename=lesson.csv --kind=Lesson}}} <br><br>where _*{{{APPPATH}}}*_ is the directory containing your app and _*{{{PORT}}}*_ is your app's port number. You will be asked for your credentials (Google user name and password) twice, once for loading each data file.
  
-==== Change some data ====
-
-To change only some of the lesson or unit data, there are the following steps:
-
-  # Make the appropriate changes in the {{{data/lesson.csv}}} or  {{{data/unit.csv}}} file.
-  # Visit the Admin Console.
-  # If *Datastore Viewer* is not selected, click on that in the left nav.
-  # From the *Entity Kind* drop down, choose whichever type of data you changed (Lesson or Unit).<br>A list of data appears.
-  # (Optional) If you changed an existing piece of data, select the row containing that data and click on *Delete*.
-  # Click on *Create New Entity* to add a new piece of data. Notice that you have to add the entire row over again, even if you're changing existing information.
-
-The most common time to change some data is when you want to modify a *Unit* entity to reflect when units become available or unavailable. (See [CreateHomePage Create Home Page].)
-
 == Create a test server in production ==
 
 You may want to test your course in the production environment before you make it publicly available. Rather than have a truly _private_ course in production, we have found it sufficient to have a separate _version_ of the course at a related, but unpublicized, URL. The key is that GAE allows versioning of your app and provides a separate URL for each version. (For details, see [https://developers.google.com/appengine/docs/python/runtime?hl=en#Requests_and_Domains Requests and Domains]).
@@ -284,17 +252,15 @@ handlers:
 - url: /remote_api
   script: $PYTHON_LIB/google/appengine/ext/remote_api/handler.py
   login: admin
-- url: /favicon.ico
-  static_files: assets/img/favicon.ico
-  upload: assets/img/favicon.ico
-- url: /assets
-  static_dir: assets
+- url: /_ah/dev_admin(/.*)?  # provides interactive console
+  script: $PYTHON_LIB/google/appengine/ext/admin
+  login: admin
+  secure: always
 - url: /.*
   script: main.app
-  login: required
 }}}
 
-Add a new entry to the handlers section as follows:
+Add a new entry to the top of handlers section as follows:
 
 {{{
 - url: /robots.txt

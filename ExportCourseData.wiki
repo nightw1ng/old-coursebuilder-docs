@@ -72,41 +72,11 @@ appcfg.py download_data --config_file=~/bulkloader.yaml  --filename=~/student.cs
 
 For data analysis, you may choose to download other subsets of the Student data. To do so, change {{{~/bulkloader.yaml}}} to remove just the information you do not want.
 
-== Student, Lesson, and Unit data ==
+=== Types of data available ===
 
-The following tables describe the data Course Builder stores for your course. Course Builder stores three  kinds of data: Student, Unit, and Lesson. By default, when you download data to a CSV file, you get all of this information.
+The following tables describe the data Course Builder stores for your course. Course Builder stores several kinds of data, most important sets being: Student, !StudentAnswersEntity and !EventEntity.
 
-*Student* - Data on the student’s work on the course.
-|| *Name* || *Type* || *Description* ||
-|| {{{email}}} || STRING || The email address the student from which the student registered. ||
-|| {{{name}}} || STRING || The name the student supplied during registration. || 
-|| {{{enrolled_date}}} || DATETIME || The date and timestamp when the student enrolled in the course. || 
-|| {{{answers}}} || TEXT || The student's answers to all assessments. Stored as a Python dictionary, where the key is the identifier for the assessment, such as {{{midcourse}}} and {{{postcourse}}}, and the value is a _string containing_ a 2-dimensional array of information about the answers. First is the detailed information on which questions the student answered correctly; after that is more general about the assessment. For example:<br> {{{ { }}}<br>{{{"midcourse":}}}<br> {{{"[['assessment_type', 'midcourse'],}}}<br>{{{ ['0', 'false'], ['1', 'true'], ['2', 'false'], ['3', 'false'], ['4', 'false'],}}}<br> {{{ ['num_correct', '1'], ['num_questions', '5'], ['score', '20.00']]",}}}<br><br> {{{ "postcourse":}}}<br> {{{"[['assessment_type', 'postcourse'],}}}<br> {{{ ['0', 'false'], ['1', 'true'], ['2', 'false'], ['3', 'false'], ['4', 'false'], ['5', 'true'], ['6', 'false'],}}}<br> {{{ ['num_correct', '2'], ['num_questions', '7'], ['score', '28.57']]"}}}<br>{{{ } }}}<br>Be careful with the string containing a 2-dimensional array. You need to quote the entire string *and* you need to quote the elements of the interior array. You must use different quotes for the inner and outer parts, as shown here. ||
-|| {{{scores}}} || TEXT || The student's scores on all assessments.  Stored as a dictionary, where the key is the identifier for the assessment, such as {{{midcourse}}},  {{{postcourse}}}, and {{{overall_score}}}, and the value is an integer or empty for no score. For example:<br> {{{ {"midcourse": 20, "overall_score": 26, "postcourse": 29} }}} ||
-
-*Unit* - Data on the units offered in the course. Used on the [CreateHomePage home page].
-|| *Name* || *Type* || *Description* ||
-|| {{{id}}} || INTEGER || An integer representing this unit. || 
-|| {{{now_available}}} || BOOLEAN || A Boolean value of {{{True}}} or {{{False}}} representing whether or not students can access this unit. (Note that case is important in this value; it must be {{{True}}} or {{{False}}}.) || 
-|| {{{release_date}}} || STRING || The date when this unit will be made available. A string value containing the date. || 
-|| {{{title}}} || STRING || A string value containing the title of the unit. || 
-|| {{{type}}} || STRING || The type of unit being offered. A string value containing the type ‘A’, ‘U’ or ‘O’ for assessment, unit or other. || 
-|| {{{unit_id}}} || STRING || A string id for this unit. Its value depends on if this item is an assessment, unit or something else. || 
-
-If you keep your {{{data/unit.csv}}} file in sync with your application (that is, you don't change unit information using the Datastore Admin page), then downloaded unit data will be the same as that in {{{data/unit.csv}}}. However, the order of columns in the CSV file for downloaded data does not match the order of the data in that file.
-
-*Lesson* - Data on the lessons offered in each unit. Use on [CreateLessons lesson pages].
-|| *Name* || *Type* || *Description* ||
-|| {{{activity}}} || STRING || A string value of Yes or No representing whether there is an activity associated with this lesson. || 
-|| {{{activity_title}}} || STRING || The title of the activity. || 
-|| {{{id}}} || INTEGER || An integer indicating which lesson this is. Lessons in each unit start with 1 and go in order. || 
-|| {{{notes}}} || TEXT || URL of the text version of the lesson. || 
-|| {{{objectives}}} || TEXT || A string containing lesson objectives, that appears after the title of the lesson. || 
-|| {{{title}}} || STRING || A string value representing the name of the lesson. || 
-|| {{{unit_id}}} || INTEGER || An integer indicating which unit this lesson is part of. || 
-|| {{{video}}} || TEXT || The id of the !YouTube video associated with the lesson. || 
-
-If you keep your {{{data/lesson.csv}}} file in sync with your application (that is, you don't change lesson information using the Datastore Admin page), then downloaded lesson data will be the same as that in {{{data/lesson.csv}}}. However, the order of columns in the CSV file for downloaded data does not match the order of the data in that file.
+Student table contains information about students, their enrollment status and assessment scores. !StudentAnswersEntity table contains the most recent detailed answers given by a student for each assessment. !EventEntity table contains system level events and historical data about each activity or assessment completed. Event recording is off by default and can be enabled in Admin > Settings.
 
 
 || [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/evaluate-course-efficacy Ask questions in the forum] ||
