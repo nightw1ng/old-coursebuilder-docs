@@ -1,0 +1,27 @@
+#summary Lists the custom settings for courses, which is all done through the course.yaml file.
+
+<h1>Customize Course Settings</h1>
+
+<wiki:toc />
+
+By default, all the settings in Course Builder are generic or contain placeholder text.  You must change Course Builder settings so that they are specific to your course.  You can set all these items and more through one file: {{{course.yaml}}}. The {{{course.yaml}}} file is located in the root directory of your Course Builder installation.
+
+The settings in the {{{course.yaml}}} are:
+  * Course title
+  * Main page blurb (introductory text on the main page)
+  * Information about the instructor to display on the main page
+  * Whether you want a video or an image on the main page (if you specify both, video will take priority)
+  * Course start date
+  * Forum URL
+  * URL for the mailing list where students can register to receive course announcements
+  * Locale for internationalization
+  * Name of your institution
+  * URL of your institution's webpage
+  * Link and alt text for the logo of the course or your institution
+  * HTML to be included before the closing {{{head}}} tag in all pages, including code for analytics
+  * Whether to show a G+ button on the header of all pages
+  * Header phrase for the main navigation bar
+  * Link to your privacy policy and terms of service
+  * Header text for the course registration form
+  * HTML representing additional fields to include in the course registration form
+  * HTML to be displayed on the test confirmation page
