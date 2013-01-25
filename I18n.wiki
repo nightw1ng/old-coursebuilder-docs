@@ -17,7 +17,7 @@ indicates that the text “Unit” can be translated. Course Builder’s Interna
  * [http://pytz.sourceforge.net/ pytz]
  * [http://jinja.pocoo.org/docs/extensions/ Jinja2’s i18n extension]
 
-This Internationalization capability was provided with the help of [https://plus.google.com/114264876894441886706/ Sergio Luján Mora] at [http://www.ua.es/ Universidad de Alicante].
+This Internationalization capability was provided with the help of UniMOOC-Tec ([http://www.unimooc-tec.com/]) at Universidad de Alicante.
 
 ==Translated Languages==
 The student visible text in Course Builder has been translated into the following languages:
