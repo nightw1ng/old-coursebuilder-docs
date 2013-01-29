@@ -104,4 +104,9 @@ The following steps you only need to do once:
 
 You now can use the Datastore Admin to directly inspect or export data stored by a Course Builder. We advise you not to modify any datastore objects directly.
 
+== Set Up Security ==
+After you deploy our app but before anyone uses the course, you must change the default security setting. Course Builder implements protection against XSRF using transient user-action specific tokens for all state-modifying HTTP operations supported by the product.
+
+To change the default token, go to *Settings* in the Administrator Page and change the value of *gcb_xsrf_secret*. See [AdminPage#Security Security] for more information.
+
 || [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||
