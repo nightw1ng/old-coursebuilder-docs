@@ -14,7 +14,7 @@
     * [Download Download the Software]
     * [GetCode Run the Sample App]
     * [ExplorePS Explore the Sample App]
-    * [ExploreCode Explore the Sample Code]
+    * [ExploreCode Explore the Sample Code]  
   * [ImplementCourseMaterial Implement Course Material]
     * [CBRoles Course Builder Roles]
     * [CourseSettings Customize Course Settings]
