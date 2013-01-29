@@ -1,5 +1,10 @@
 #summary Course Builder Release Notes
 
+<h1>Release notes for version 1.2.1</h1>
+  * *CSV and international characters.* There was a bug that prevented you from uploading CSV files that contained international characters such as accents. This update fixes the issue.
+  
+  * *course.yaml and international characters.* There was a bug that disabled the *Settings* section in the Dashboard when [CourseSettings course.yaml] contained international characters such as accents. This update fixes the issue.
+  
 <h1>Release notes for version 1.2.0</h1>
   * *Accessibility.* A variety of accessibility features were added. See [Accessibility Accessibility].
   
