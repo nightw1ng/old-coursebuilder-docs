@@ -56,7 +56,7 @@ Each line after that contains the information for an individual lesson, such as:
   {{{<li>Use a word you expect to appear on the target page to refine results.</li>}}}<br>
   {{{<li>Use the site: operator within images and news results.</li></ul>"}}}
 
-When you edit the file, leave the first line as is. Replace all of the other lines with the information relevant to your course. Each line contains 9 fields. The template files and various Python files refer to these fields when displaying course information. Those files use a different name for the field than does {{{data/lesson.csv}}}. The mapping between the two names is defined in {{{bulkloader.yaml}}}.
+When you edit the file, leave the first line as is. Replace all of the other lines with the information relevant to your course. Each line contains 9 fields. The template files and various Python files refer to these fields when displaying course information. Those files use a different name for the field than does {{{data/lesson.csv}}}. The mapping between the two names is defined in {{{verify.py}}}.
 
 || || *{{{data/lesson.csv}}} field* || *Referred to as* || *Description* ||
 || 1 || {{{unit_id}}} || {{{unit.unit_id}}} || An integer indicating which unit this lesson is part of.  You must number units consecutively starting with 1. ||
