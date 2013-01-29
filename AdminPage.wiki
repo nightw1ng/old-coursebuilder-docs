@@ -10,10 +10,19 @@ The Administrator Page contains information regarding Google App Engine deployme
 
 The menu band color here is different than that of the Dashboard to visually differentiate between the roles of administrator and course author. At the very top of every Administrator page, you will see breadcrumbs to aid your navigation.
 
-The Administrator Page contains the following sections:
- * Courses: Lists all the courses for which the administrator has responsibility.
- * Settings: Manage administrators, the update interval, and memcache
- * Metrics: Lists and gives the values of various in-process performance counters.
- * Deployment: Displays app and server settings for a particular course so the administrator does not have go to the individual files on the instance.
- * Console: Provides an area where you can write and test Python code within the Google App Engine environment.
- * Google App Engine: Clicking on this link takes you directly to the Google App Engine Dashboard outside of Course Builder.
+The Administrator Page contains the following sections: * Courses: Lists all the courses for which the administrator has responsibility. * Settings: Manage administrators, the update interval, and memcache * Metrics: Lists and gives the values of various in-process performance counters. * Deployment: Displays app and server settings for a particular course so the administrator does not have go to the individual files on the instance. * Console: Provides an area where you can write and test Python code within the Google App Engine environment. * Google App Engine: Clicking on this link takes you directly to the Google App Engine Dashboard outside of Course Builder.
+
+== Security == 
+Cross-site request forgery, also known as XSRF or CSRF, is a malicious attack that tries to exploit the relationship between a website and a user’s browser. Course Builder implements protection against XSRF using transient user-action specific tokens for all state-modifying HTTP operations supported by the product.
+
+You should modify the default token by taking the following steps:
+
+ # Go to the *Settings* section of the Administrator Page.
+ # Click the *Override* button in *gcb_xsrf_secret*.
+ # Change the value of the token from its default value of {{{course builder XSRF secret}}}.
+ # Select *Active* in the *Status* box.
+ # Click the *Save* button.
+
+You will not have to change this token again. If you choose to do so, do not change this token while students or course authors are interacting with the course. Any requests left hanging before the value change will not go through. For example, if the user is editing an announcement while the XSRF token value is being changed, then the announcement edit request will not go through. The user will have to make the edit again.
+
+Note that full in-depth security review has not yet been conducted. You should conduct independent security testing and take additional steps to secure your production site. If you find an issue, please report it immediately to the development team for assessment and resolution.
