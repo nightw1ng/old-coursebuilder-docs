@@ -14,10 +14,13 @@ The Course Builder application stores data in Google App Engine’s [https://dev
 
 You can export data either from your development server or from your production server. The steps are the same. The only difference is that when you download data from your production server, you need to use your app-specific password, as described in [UploadCode#Set_up_an_app-specific_password Set up an app-specific password].
 
-To export Course Builder data, first decide on the directory in which to put your exported files. Now, open a [http://code.google.com/p/gcb-x-03141590/wiki/FAQ#What%27s_a_%22shell_or_command_prompt%22? shell or command prompt]. In that window:
+To export Course Builder data, first decide on the directory in which to put your exported files. Copy the {{{bulkloader.yaml}}} to that directory. Ensure the directory does not contain both {{{appengine_config.py}}} and {{{bulkloader.yaml}}}. Otherwise, you will not be able to export the data. 
+
+Now, open a [http://code.google.com/p/gcb-x-03141590/wiki/FAQ#What%27s_a_%22shell_or_command_prompt%22? shell or command prompt]. In that window:
 
   {{{cd }}}_*{{{APPPATH}}}*_{{{/data}}}<br>
-  {{{appcfg.py download_data --config_file=../bulkloader.yaml  --filename=}}}_*{{{DataFilename}}}*_{{{ --kind=}}}_*{{{EntityType}}}*_{{{ --url=}}}_*{{{URL}}}*_{{{/remote_api}}}
+  {{{cp }}} {{{../bulkloader.yaml}}} {{{.}}}<br>
+  {{{appcfg.py download_data --config_file=bulkloader.yaml  --filename=}}}_*{{{DataFilename}}}*_{{{ --kind=}}}_*{{{EntityType}}}*_{{{ --url=}}}_*{{{URL}}}*_{{{/remote_api}}}
 
 where:
 
@@ -26,10 +29,11 @@ where:
 || _*{{{EntityType}}}*_ || What type of entity to export. One of {{{Lesson}}}, {{{Student}}}, or {{{Unit}}}. ||
 || _*{{{URL}}}*_ || The URL for the server. <br> For your development server, this is {{{http://localhost:}}}_*{{{PORT}}}*_, where _*{{{PORT}}}*_ is the port running your server.<br> For your production server, this is _*{{{APP_ID}}}*_{{{.appspot.com}}}, where  _*{{{APP_ID}}}*_ is the app name you [#Register_your_app_with_Google registered]. ||
 
-For example, assume that my course files live in {{{~/mycourse}}} and that I want to export student data from my development server to a file named {{{~/student.csv}}}. I would use these commands:
+For example, assume that my course files live in {{{~/mycourse}}} and that I want to export student data from my development server to a file named {{{student.csv}}} in the current directory. I would use these commands:
 
   {{{cd ~/mycourse/data}}}<br>
-  {{{appcfg.py download_data --config_file=../bulkloader.yaml  --filename=../student.csv --kind=Student --url=http://localhost:8080/remote_api}}}
+  {{{cp }}} {{{../bulkloader.yaml}}} {{{.}}}<br>
+  {{{appcfg.py download_data --config_file=bulkloader.yaml  --filename=student.csv --kind=Student --url=http://localhost:8080/remote_api}}}
 
 The {{{appcfg.py}}} command generates the following files:
 
