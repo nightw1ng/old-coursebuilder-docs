@@ -1,5 +1,8 @@
 #summary Course Builder Release Notes
 
+<h1>Release notes for i18n language pack</h1>
+  * *Internationalization.* Course Builder now supports 57 languages. [http://code.google.com/p/course-builder/downloads/list Download] the language pack and integrate it with your installation of Course Builder. See [I18n Internationalization].
+  
 <h1>Release notes for version 1.2.1</h1>
   * *CSV and international characters.* There was a bug that prevented you from uploading CSV files that contained international characters such as accents. This update fixes the issue.
   
