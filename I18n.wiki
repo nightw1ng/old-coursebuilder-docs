@@ -4,13 +4,22 @@
 
 <wiki:toc />
 
-You can translate Course Builder’s student visible text, like “Activity” and “Unit”, from the default English. All translatable strings are placed within the {{{ {% trans %} }}} {{{ {% endtrans %} }}} beginning and end tags. These tags are embedded within the HTML templates, which are located in the {{{views/}}} directory.
+Course Builder supports 57 languages and all student facing text is translated in these languages. To enable this expanded language capability, do the following steps:
 
-For example, the following code:
-{{{
-{% trans %} Unit {% endtrans %}
-}}}
-indicates that the text “Unit” can be translated. Course Builder’s Internationalization framework uses the following technologies:
+  # [http://code.google.com/p/course-builder/downloads/list Download] the language pack to your computer.
+  # Unzip the file. You now have a directory called {{{i18n}}}.
+  # Navigate into the {{{modules/}}} directory in your Course Builder installation.
+  # Copy the new {{{i18n}}} directory that you unzipped to this current directory, completely replacing the old {{{i18n}}} directory with this new directory. 
+
+To use one of these languages, specify it in the {{{course.yaml}}} file. For example, to specify the Spanish translation, the locale line should be 
+
+{{{locale: 'es'}}}
+
+The language letter code to use is the directory name of that language in the {{{locale}}} directory. The full path to the language directory is:
+
+{{{modules/i18n/resources/locale}}}
+
+Course Builder’s Internationalization framework uses the following technologies:
 
  * [http://code.google.com/p/webapp-improved/downloads/detail?name=webapp2-2.5.1.zip&can=2&q= webapp2]
  * [http://babel.edgewall.org/wiki/Documentation/cmdline.html pybabel]
@@ -19,14 +28,14 @@ indicates that the text “Unit” can be translated. Course Builder’s Interna
 
 This Internationalization capability was provided with the help of UniMOOC-Tec ([http://www.unimooc-tec.com/]) at Universidad de Alicante.
 
-==Translated Languages==
-The student visible text in Course Builder has been translated into the following languages:
+==Custom Translations==
+You can still make custom translations for languages outside of the supported languages. All translatable strings are placed within the {{{ {% trans %} }}} {{{ {% endtrans %} }}} beginning and end tags. These tags are embedded within the HTML templates, which are located in the {{{views/}}} directory.
 
- * Spanish
- * Russian
-
-The translations are found in the {{{modules/i18n/resources/locale}}} of your Course Builder installation. To use one of these languages, specify it in the {{{course.yaml}}} file. For example, to specify the Spanish translation, the locale line should look like:
-{{{locale: ‘es_ES’}}}
+For example, the following code:
+{{{
+{% trans %} Unit {% endtrans %}
+}}}
+indicates that the text “Unit” can be translated. 
 
 If you change the default text within these tags or add new translatable strings of your own, you must update the {{{.po}}} file in 
 
