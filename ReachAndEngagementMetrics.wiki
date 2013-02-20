@@ -2,11 +2,15 @@
 
 =Reach and Engagement=
 
-Evaluating the reach and engagement of your course lets you determine how many people you reached with the course and how engaged those people were. Some common questions include:
+Evaluating the reach and engagement of your course lets you determine how many people you reached with the course and how engaged those people were. *Reach* refers to home many people visited your course while *engagement* can refer to how long each person stayed on each page and how many pages each person visited.
+
+Some common questions on reach and engagement include:
 
   * How many students registered? 
   * How many completed each unit and each lesson? 
-  * What countries did the students come from? 
+  * What countries did the students come from?
+  * How many students are new versus returning students?
+  * What are the most popular pages?
   * What were the overall drop-off rates? 
   * When did students tend to drop-off?
 
@@ -14,6 +18,29 @@ For suggestions on data you can use to measure reach and engagement, see [Exampl
 
 For an example of how to use student assessments and reach and engagement data to evaluate your course's effectiveness, see [AnalyticsForEdu Combine Assessment and Reach Data].
 
-Google Analytics is our tool for collecting and analyzing reach and engagement data. The [http://www.google.com/analytics/learn/index.html Analytics site] contains a lot of useful information. Start with [http://support.google.com/analytics/bin/answer.py?hl=en&answer=1008015&topic=1726909&ctx=topic Get started with Google Analytics.] This step-by-step guide describes how to get an Analytics account to use with your course. From there, you'll learn how to get the !JavaScript snippet you must add to {{{views/base.html}}} to collect Analytics data.
+==Google Analytics==
+Google Analytics is our tool for collecting and analyzing reach and engagement data. The [http://www.google.com/analytics/learn/index.html Analytics site] contains a lot of useful information. Start with [http://support.google.com/analytics/bin/answer.py?hl=en&answer=1008015&topic=1726909&ctx=topic Get started with Google Analytics.] This step-by-step guide describes how to get an Analytics account to use with your course. 
+
+To collect Analytics data, copy the !JavaScript snippet from your Google Analytics account and paste it into the {{{before_head_tag_ends}}} mapping in the [CourseSettings course.yaml] file:
+
+<pre>  before_head_tag_ends: |
+   `<script type="text/javascript"`>
+   var _gaq = _gaq || [];
+   _gaq.push(['_setAccount', 'UA-somenumber-x']);
+   _gaq.push(['_trackPageview']);
+   (function() {
+   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async =
+   true;
+   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
+   '.google-analytics.com/ga.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
+   `</script`></pre>
+
+You must specify the pipe ({{{|}}}) after {{{before_head_tag_ends}}} to indicate multi-lined block notation. 
+
+In YAML, indenting and spaces are incredibly important: even a single errant space can cause a parse error.  See the [http://www.yaml.org/ YAML official site] for more information about YAML, including the latest edition.
+
+Remember to convey your privacy policy to students and let them know that they will be tracked on metrics you wish to measure.
 
 || [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/evaluate-course-efficacy Ask questions in the forum] ||
