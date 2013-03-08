@@ -50,14 +50,6 @@ Activate the Launcher wherever it's available, that is, from the Desktop, the Do
 
 A new line appears in the Launcher. Its name is the name you put in the {{{app.yaml}}} file. Its path is the path you specified here.
 
-(Optional) While developing your application, you may frequently need to reload course data. (This step is discussed below in [#6._Upload_the_unit_and_lesson_data 6. Upload the unit and lesson data].) When you do that, you also need to remove any old data. If you think you'll be changing units and lessons frequently, you can tell the Launcher to remove this data every time you restart the application. To do so:
-
-  # In the Google App Engine Launcher, double-click the line containing your application. <br>The *Settings* dialog box appears.
-  # In the *Launch Settings* area, choose *Clear datastore on launch*.
-  # Click on Update.
-
-Now, any time you restart the application, you must reload the data, as described [#6._Upload_the_unit_and_lesson_data here].
-
 
 == 5. Start the development server ==
 
