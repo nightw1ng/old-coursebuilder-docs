@@ -32,28 +32,39 @@ The app uses several files to render this page:
 
 An assessment contains explanatory text and one or more questions for the student.
 
-You define each assessment in its own !JavaScript file. The filenames have the form {{{assessment-}}}_*{{{SUFFIX}}}*_{{{.js}}}. For the sample course _*{{{SUFFIX}}}*_ is one of {{{Pre}}}, {{{Mid}}}, or {{{Fin}}}. If you add more assessments, you use different suffixes of your choosing.
+Create new and edit existing assessments through the Dashboard.
 
-The format of the file is
-{{{
-var assessment = {
-  assessmentName: nameString,
-  preamble: preambleString,
-  checkAnswers: Boolean,
-  questionsList: questionsArray
-}
-}}}
+http://wiki.course-builder.googlecode.com/git/images/assessment-edit.png
 
+To add a new assessment:
+
+ # Go to the Dashboard. The *Outline* tab is the default landing tab.
+ # Click the *Add Assessment* button in the *Pages* section.
+ # In the *Title* field, type the name of the new assessment.
+ # In the *Content* field, type the code for your new assessment. The format of the code is:
+  {{{
+   var assessment = {
+     assessmentName: nameString,
+     preamble: preambleString,
+     checkAnswers: Boolean,
+     questionsList: questionsArray
+  }
+  }}}
+ # Change the status of the assessment to *Published*.
+ # Click Save
+ 
+
+In the Course Builder code, the example assessments are their own !JavaScript file. The filenames have the form {{{assessment-}}}_*{{{SUFFIX}}}*_{{{.js}}}. For the sample course _*{{{SUFFIX}}}*_ is one of {{{Pre}}}, {{{Mid}}}, or {{{Fin}}}. 
 The file contains a single object named {{{assessment}}}. This object describes everything the code needs to know about an assessment. The attributes of the {{{assessment}}} object are as follows:
 
-  * {{{assessmentName.}}} A string containing a unique name for this assessment. The code uses the assessment name to determine what special processing to do for an assessment. The sample course uses {{{"precourse"}}}, {{{"midcourse"}}}, and {{{"postcourse"}}}. See [#Assessment_name Assessment name].
+  * {{{assessmentName.}}} This attribute is optional, since the name will be taken directly from the *Title* field. The {{{assessmentName}}} attribute is a string containing a unique name for this assessment. The code uses the assessment name to determine what special processing to do for an assessment. The sample course uses {{{"precourse"}}}, {{{"midcourse"}}}, and {{{"postcourse"}}}. See [#Assessment_name Assessment name].
   * {{{preamble.}}} A string containing text and complete HTML elements. The preamble appears as the first thing on the assessment page.  See [#Preamble Preamble].
   * {{{checkAnswers.}}} A Boolean. If {{{True}}}, then students can check their answers before submission.  (Note that case is important in this value; it must be either {{{True}}} or {{{False}}}.) See [#Submitting_and_checking_answers Submitting and checking answers].
   * {{{questionsList.}}} An ordered array, each of whose elements describes a question in the assessment. The questions appear after the preamble. See [#Questions Questions]. 
 
 === Assessment name ===
 
-For the sample course, the value of the {{{assessmentName}}} attribute is one of  {{{"precourse"}}}, {{{"midcourse"}}}, or {{{"postcourse"}}}. If you add more assessments, you add more values for this attribute. The code in {{{controllers/assessments.py}}} uses {{{assessmentName}}} to determine how to score assessments. See [#Scoring Scoring].
+For the sample course, the value of the {{{assessmentName}}} attribute is one of  {{{"precourse"}}}, {{{"midcourse"}}}, or {{{"postcourse"}}}. The code in {{{controllers/assessments.py}}} uses {{{assessmentName}}} to determine how to score assessments. See [#Scoring Scoring].
 
 When students complete an assessment, they see a message about how they did. You can change the contents of these messages in {{{views/test_confirmation.html}}}. (See [#Submitting_and_checking_answers Submitting and checking answers].)
 
