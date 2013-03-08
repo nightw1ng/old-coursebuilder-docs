@@ -1,51 +1,31 @@
 #summary Checklist of all steps to create a course using Course Builder.
 #labels Featured
 
-<h1>Course Builder Checklist</h1>
+<h1>Course Builder Checklists</h1>
 
 The rest of these Wiki pages go into a lot of detail about how to build your own online course using the Course Builder software and the other tools and processes that we used when we created [http://www.google.com/insidesearch/landing/powersearching.html Power Searching with Google].
 
-This page doesn't go into any explanations. It simply lists all of the steps involved -- everything from your beginning planning stages, to downloading and changing the Course Builder code to setting up online office hours -- and provides links to other places with more information.
+Before you dive into creating your own course, consider reading [WhatsInACourse Parts of a Course Builder Course] and [CourseFlow Course Flow for Students] to get a quick overview of the terminology we use in talking about online courses you create using Course Builder.
 
 If you have issues or feature requests for Course Builder, please report them in our [https://code.google.com/p/course-builder/issues/list Issues Tracker].
-
-
-== Prerequisites for using Course Builder ==
-
-The current version of Course Builder is designed for technically-savvy course designers. In particular, we expect the following from users:
-
-  * *Experience creating course material* either for a traditional live classroom or for a more traditional online class. 
-  * *HTML familiarity.* 
-  * *!JavaScript familiarity,* particularly !JavaScript arrays, simple objects, and regular expressions. Of these, regular expressions tend to be the biggest stumbling block. The [https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions Mozilla Developer Network] has an introduction to regular expressions. 
-  * *App Engine familiarity is a plus,* but it's not necessary.
-
-Before you dive into creating your own course, consider reading [WhatsInACourse Parts of a Course Builder Course] and [CourseFlow Course Flow for Students] to get a quick overview of the terminology we use in talking about online courses you create using Course Builder.
 
 == Costs ==
 
 When you use Course Builder, you create your course as an App Engine application. Currently, each App Engine application can consume a certain level of computing resources for free, controlled by a set of limits. If you need resources above these free limits, you can switch to a paid app to set a daily resource budget. For more information, see [https://code.google.com/p/course-builder/wiki/AppEngine#Important:_Quotas_and_billing Develop with App Engine].
 
-*And now, the steps...*
+==Technologist Checklist==
 
-== A. [OnePlan Plan for 30 minutes.] ==
-  # Define the problem statement and high-level goal of the course.
-  # Identify your audience and your assumptions.
-  # Define course objectives.
-  # Consider course logistics.
+The technologist, sometimes known as the administrator or just "admin" in the technology industry, is the person or team who is responsible for setting up and managing Course Builder on Google App Engine. See [CBRoles Course Builder Roles] for more information on Course Builder Roles.
 
-== B. [TwoDevelop Develop content without technology.] ==
-  # Clarify your goals and non-goals for the course.
-  # Clarify your assumptions about your students.
-  # Write clear, specific objectives.
-  # Decide what you want to test in your assessments, both graded and ungraded.
-  # Decide what other data to collect to evaluate the efficacy of your course.
-  # Sequence and organize your content into digestible chunks.
-  # Validate your content with others.
+We expect the following from technologists:
 
-== C. [ThreeImplement Implement your content using technology.] ==
-In these steps, all pathnames are relative to the directory containing your application. Every place in the code you must make a change is marked by a comment starting with {{{FIXME}}}.
+  * *HTML familiarity.* 
+  * *!JavaScript familiarity,* particularly !JavaScript arrays, simple objects, and regular expressions. Of these, regular expressions tend to be the biggest stumbling block. The [https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions Mozilla Developer Network] has an introduction to regular expressions. 
+  * *App Engine familiarity is a plus,* but it's not necessary.
 
-=== C.1. [GetStarted Download and install needed software and the Course Builder sample application.] ===
+In the following steps, you will implement the content using technology. All pathnames are relative to the directory containing your application. Every place in the code you must make a change is marked by a comment starting with {{{FIXME}}}.
+
+=== A. [GetStarted Download and install needed software and the Course Builder sample application.] ===
   # [Download Set up for development.]
     # Download and install  [http://python.org/download Python].
     # Download and install [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python App Engine].
@@ -56,7 +36,7 @@ In these steps, all pathnames are relative to the directory containing your appl
     # [GetCode#6._Upload_the_unit_and_lesson_data Upload sample data] to the app.
     # [ExplorePS Explore the sample app] and [ExploreCode its  code].
 
-=== C.2. [ImplementCourseMaterial Implement the course material.] ===
+=== B. [ImplementCourseMaterial Implement the course material.] ===
   # [CourseSettings Modify the basic look and feel of course pages]<br>by editing the {{{course.yaml}}} file. Things you must change include:
     # The course name, for the title element.
     # Code to collect Analytics data. (This change is only in {{{views/base.html}}}.)
@@ -90,7 +70,30 @@ In these steps, all pathnames are relative to the directory containing your appl
     # [UploadCode#Set_up_an_app-specific_password Create an app-specific password.]
     # [UploadCode#Upload_(or_deploy)_your_app Upload your app to Google's production servers.]
 
-=== C.3. [ManageCommunity Setup and and manage the participant community.] ===
+==Course Author Checklist==
+
+Course author is the person or team who designs and creates the content of the course or the “what is learned” from the students’ points of view. See [CBRoles Course Builder Roles] for more information on Course Builder Roles.
+
+We expect the following from course authors:
+
+  * *Experience creating course material* either for a traditional live classroom or for a more traditional online class. 
+
+=== A. [OnePlan Plan for 30 minutes.] ===
+  # Define the problem statement and high-level goal of the course.
+  # Identify your audience and your assumptions.
+  # Define course objectives.
+  # Consider course logistics.
+
+=== B. [TwoDevelop Develop content without technology.] ===
+  # Clarify your goals and non-goals for the course.
+  # Clarify your assumptions about your students.
+  # Write clear, specific objectives.
+  # Decide what you want to test in your assessments, both graded and ungraded.
+  # Decide what other data to collect to evaluate the efficacy of your course.
+  # Sequence and organize your content into digestible chunks.
+  # Validate your content with others.
+
+=== C. [ManageCommunity Setup and and manage the participant community.] ===
   # [Announcements Prepare announcements and optional material.]
   # [WebForums Setup a community discussion forum.]
   # Add the link to your discussion forum to the file {{{views/forum.html}}}.
@@ -98,11 +101,11 @@ In these steps, all pathnames are relative to the directory containing your appl
   # [TeachingAssistants Engage and train teaching assistants.]
   # [OnlineOfficeHours Schedule online office hours.]
 
-=== C.4. [MeasureEfficacy Prepare to evaluate the efficacy of your course] ===
+=== D. [MeasureEfficacy Prepare to evaluate the efficacy of your course] ===
   # [AssessmentMetrics Analyze assessment data.]
   # [HappinessMetrics Create a survey to analyze student happiness.]
   # [ReachAndEngagementMetrics Capture reach & engagement data.]
 
-== D. [FourPilot Pilot with your target audience.] ==
+=== E. [FourPilot Pilot with your target audience.] ===
 
 || [https://groups.google.com/forum/?fromgroups#!forum/course-builder-forum Ask questions in the forum] ||
