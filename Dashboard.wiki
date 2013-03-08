@@ -6,7 +6,7 @@
 
 The Dashboard shows a broad range of information about a particular course. Information in the Dashboard includes the course outline, assets, settings, and student statistics. You must be the course author or have similar privileges (for example, teacher’s assistant) to access the Dashboard.
 
-<img src="http://wiki.course-builder.googlecode.com/git/images/dashboard-teacher.png" height=600 width=602 />
+<img src="http://wiki.course-builder.googlecode.com/git/images/dashboard-teacher.png" height=788 width=600 />
 
 Access the Dashboard from the menu bar. At the very top of every Dashboard page, there are breadcrumbs to aid your navigation. Breadcrumbs are navigational aids that help orient where you are on a site. It shows your current location (at the far right) and a “trail” or path that illustrates the pages you clicked through to arrive where you are now.
 
@@ -19,6 +19,7 @@ This is your default landing page when you enter the Dashboard.  This page shows
     * Add Assessment. Create new assessments directly online through the assessment editor. See [CreateAssessments#Writing_assessments Writing Assessments] for more information on creating and editing courses.
     * Add Link. Add a URL into your course. The URL can be relative to your course URL or in can be an absolute URL.
     * Add Unit. Create new units. The newly created units show in the *Course Outline* section.
+    * Add Lesson. Create new lessons and activities. The newly created lessons show in the *Course Outline* section. The newly created activities show up in the corresponding lesson pages.
     * Organize. Change the order of your course. You can change the order in which your students are presented with units, lessons, and assessments. You can change the order of your assessments, units, and the lessons within each unit through the up and down buttons. However, you cannot move lessons from one unit into another unit. For example, lesson 2.1 cannot "jump into" unit 1.
   * *Course Outline.* Outline of the course. It is ordered and structured exactly the way students see it. Each hyperlink goes to the corresponding course page.
   * *Debug.* Read-only information regarding your data files.
@@ -38,7 +39,11 @@ The Settings section shows how your course is customized in the {{{course.yaml}}
 
 In the *About this Course* section, you see the location of the {{{course.yaml}}} file from which the customizations are originating.  The Datastore Namespace refers to the particular name assigned to your course in the Google App Engine datastore. This is helpful in those cases when multiple courses are deployed from a single Google App Engine instance.
 
-The *Contents of course.yaml file* section is an exact representation of your {{{course.yaml}}} file. As a course author, you may not have access to this file like the administrator. Seeing the contents of this section can help you understand your course settings and communicate with the administrator viewing the same file. When you create a [CreateNewCourse new course], this section will be mostly empty except for some default text and the new course name. To edit {{{course.yaml}}} directly, click the *Edit* button.
+The *Contents of course.yaml file* section is an exact representation of your {{{course.yaml}}} file. As a course author, you may not have access to this file like the administrator. Seeing the contents of this section can help you understand your course settings and communicate with the administrator viewing the same file. To edit {{{course.yaml}}} directly, click the *Edit* button.
+
+When you create a [CreateNewCourse new course], this section will be mostly empty except for some default text and the new course name. New courses are by default private, which means students cannot view them. To make your course public, change the {{{now_available:}}} assignment to {{{True}}}. That is, the line should look like:
+
+{{{now_available: True}}}
 
 ==Students ==
 This page shows statistics regarding the students, including enrollment and assessments.  In the Assessment section you can view the number of students who completed a particular assessment and the average score of all those who have done so. The "Re-Calculate Now" button will refresh all statistics on the page. Note that the time it takes to recalculate depends on the number of students you have.
