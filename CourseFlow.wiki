@@ -1,5 +1,8 @@
 #summary What a student does, in what order, when taking a course created using our code and techniques.
-=Course Flow for Students=
+
+<h1>Course Flow for Students</h1>
+
+<wiki:toc />
 
 The first section of this page describes different types of course flow, because the one we use with the Course Builder sample app is unfamiliar to many students and instructors.
 
@@ -7,7 +10,7 @@ The second section describes  what a student does, in what order, when taking a 
 
 For a description of the parts of a course from the course designer’s perspective, see [WhatsInACourse Parts of a Course Builder Course].
 
-==Semi-synchronous flow==
+=Semi-synchronous flow=
 
 These online courses have a semi-synchronous flow. In conjunction with good material, this model can be effective at increasing student motivation, student retention, and student interactions. However, semi-synchronous flow is unfamiliar to many students. Students expect a course to be either completely asynchronous or completely synchronous.
 
@@ -24,9 +27,28 @@ These online courses have a semi-synchronous flow. In conjunction with good mate
     * Live events, such as live Q&A sessions with the instructors, happen at a fixed date and time. After the event, the instructors may post the video for students to watch at their own pace. Live events focus students around particular topics.
     * Assessments are due by a fixed deadline. Submitting an assessment after the deadline affects a student’s final score. This is the part that confounds students. Because much of the course is at their own pace, having fixed deadlines can be confusing unless you are crystal clear in what you tell students.
 
+=Student State=
+
+Students can track their progress on the course, [CreateActivities activity], and [CreateAssessments assessment] through *progress indicators*. The progress indicators are located to the left of the relevant links. The progress indicators fill irrespective of whether the student correctly answered the question.  That is, a student who answered all the questions in an activity will show the same state as a student who answered all the questions incorrectly. 
+
+All progress indicators have three states. At the course level, the indicators show:
+
+  * Full: The student completed all the lessons in the unit or all the questions in the assessment.
+  * Half-full: The student has started but not completed the unit or assessment. The student may have done only one unit or question or all but one. 
+  * Empty: The student has not started the unit or assessment.
+
+http://wiki.course-builder.googlecode.com/git/images/student-state-homepage.png
+
+By default the activities also show progress indicators. The administrator can turn this off on through the {{{gcb_can_persist_activity_events}}} setting on the [AdminPage Administrator Page] in the *Settings* tab. At the unit level, the indicators show:
+
+  * Full: The student completed the activity.  All the questions have been answered.
+  * Half-full: The student has started but not completed the activity. The student may have done only one question or every question except one. 
+  * Empty: The student has not started the activity.
+
+http://wiki.course-builder.googlecode.com/git/images/student-state.png
 
 
-==What students do when==
+=What students do when=
 
 The flow for a student participating in the sample course is as follows (your course may have different pieces, but this should give you the idea):
 
