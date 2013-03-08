@@ -6,27 +6,39 @@
 
 The Dashboard shows a broad range of information about a particular course. Information in the Dashboard includes the course outline, assets, settings, and student statistics. You must be the course author or have similar privileges (for example, teacher’s assistant) to access the Dashboard.
 
-Access the Dashboard from the menu bar. At the very top of every Dashboard page, there are breadcrumbs to aid your navigation. Breadcrumbs are navigational aids that help orient where you are on a site. It shows your current location (at the far right) and a “trail” or path that illustrates the pages you clicked through to arrive where you are now.
-
 <img src="http://wiki.course-builder.googlecode.com/git/images/dashboard-teacher.png" height=600 width=602 />
 
-For the 1.2 version of Course Builder, you can only view information in the Dashboard. In a future release, Course Builder intends to allow direct editing in the Dashboard.
+Access the Dashboard from the menu bar. At the very top of every Dashboard page, there are breadcrumbs to aid your navigation. Breadcrumbs are navigational aids that help orient where you are on a site. It shows your current location (at the far right) and a “trail” or path that illustrates the pages you clicked through to arrive where you are now.
+
 ==Outline==
-This is your default landing page when you enter the Dashboard.  This page shows an outline of the course.  It is ordered and structured exactly the way students see it. Each hyperlink goes to the corresponding course page.
+This is your default landing page when you enter the Dashboard.  This page shows:
+
+  * *Data Files.* Shows the pathname of the lessons and unit files used in your course.
+  * *Pages.* Links to your course announcement page and the preview page.
+    * Import. Import settings and data from another course on the same Google App Engine instance. For example, you can import the example Power Searching course into your newly made course.
+    * Add Assessment. Create new assessments directly online through the assessment editor. See [CreateAssessments#Writing_assessments Writing Assessments] for more information on creating and editing courses.
+    * Add Link. Add a URL into your course. The URL can be relative to your course URL or in can be an absolute URL.
+    * Add Unit. Create new units. The newly created units show in the *Course Outline* section.
+    * Organize. Change the order of your course. You can change the order in which your students are presented with units, lessons, and assessments. You can change the order of your assessments, units, and the lessons within each unit through the up and down buttons. However, you cannot move lessons from one unit into another unit. For example, lesson 2.1 cannot "jump into" unit 1.
+  * *Course Outline.* Outline of the course. It is ordered and structured exactly the way students see it. Each hyperlink goes to the corresponding course page.
+  * *Debug.* Read-only information regarding your data files.
 
 ==Assets==
-This page shows all the elements that are available to construct your course.
+This page shows all the elements that are used to construct your course.
 
- * Content Location: Shows the location on the server where this course was deployed.  
- * Course Data Files:  Shows the pathname of the lessons and unit files used in your course. The other files listed here include the log files generated during the loading and exporting of your lesson and unit files as well as the binaries for the assessment progress and results.
- * Course Assets: Lists the pathname of the various non-data files that are used for your course. For example, listed here are images and javascript files for your activities and assessments.
+ * *Assessments.* Links to your course assessments.
+ * *Activities.* Links to your course activities.
+ * *Images & Documents.* Links to the images and documents that you added to the course. To add images and documents, click the *Upload* button. This saves the file in Google App Engine datastore, which may be more expensive to host compared to statically hosting elsewhere.
+ * *Cascading Style Sheets.* Pathname to the inherited CSS.
+ * *!JavaScript Libraries.* Pathname to the inherited !JavaScript libraries.
+ * *View Templates.* Pathname to the inherited templates.
 
 ==Settings ==
 The Settings section shows how your course is customized in the {{{course.yaml}}} file described in [CourseSettings Customize Course Settings]. If you want to know why certain elements are named the way they are, this section is a good place to start.
 
-In the “About this Course” section, you see the location of the {{{course.yaml}}} file from which the customizations are originating.  The Datastore Namespace refers to the particular name assigned to your course in the Google App Engine datastore. This is helpful in those cases when multiple courses are deployed from a single Google App Engine instance.
+In the *About this Course* section, you see the location of the {{{course.yaml}}} file from which the customizations are originating.  The Datastore Namespace refers to the particular name assigned to your course in the Google App Engine datastore. This is helpful in those cases when multiple courses are deployed from a single Google App Engine instance.
 
-The “Contents of course.yaml file” section is an exact representation of your {{{course.yaml}}} file. As a course author, you may not have access to this file like the administrator. Seeing the contents of this section can help you understand your course settings and communicate with the administrator viewing the same file.
+The *Contents of course.yaml file* section is an exact representation of your {{{course.yaml}}} file. As a course author, you may not have access to this file like the administrator. Seeing the contents of this section can help you understand your course settings and communicate with the administrator viewing the same file. When you create a [CreateNewCourse new course], this section will be mostly empty except for some default text and the new course name. To edit {{{course.yaml}}} directly, click the *Edit* button.
 
 ==Students ==
 This page shows statistics regarding the students, including enrollment and assessments.  In the Assessment section you can view the number of students who completed a particular assessment and the average score of all those who have done so. The "Re-Calculate Now" button will refresh all statistics on the page. Note that the time it takes to recalculate depends on the number of students you have.
