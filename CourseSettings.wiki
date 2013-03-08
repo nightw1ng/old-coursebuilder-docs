@@ -2,9 +2,7 @@
 
 <h1>Customize Course Settings</h1>
 
-<wiki:toc />
-
-By default, all the settings in Course Builder are generic or contain placeholder text.  You must change Course Builder settings so that they are specific to your course.  You can set all these items and more through one file: {{{course.yaml}}}. The {{{course.yaml}}} file is located in the root directory of your Course Builder installation.
+By default, all the settings in Course Builder are generic or contain placeholder text.  You must change Course Builder settings so that they are specific to your course.  You can set all these items and more through one file: {{{course.yaml}}}. The [http://code.google.com/p/course-builder/source/browse/coursebuilder/course.yaml course.yaml] file is located in the root directory of your Course Builder installation.
 
 The settings in the {{{course.yaml}}} are:
   * Course title
