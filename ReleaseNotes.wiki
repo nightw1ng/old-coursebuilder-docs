@@ -3,7 +3,7 @@
 <h1>Release notes for version 1.3.0</h1>
 Many of the updates in version 1.3.0 enable course authors and administrators to edit their courses entirely online without the need to redeploy to Google App Engine.
 
-  * *Administer Page: Create courses.* You can now create new courses through the Administrator Page. See [CreateNewCourse Create New Courses].
+  * *Administrator Page: Create courses.* You can now create new courses through the Administrator Page. See [CreateNewCourse Create New Courses].
   
   * *Dashboard: course.yaml.* You can now edit the {{{course.yaml}}} file directly through the Dashboard. See [Dashboard#Settings Dashboard Settings].
 
