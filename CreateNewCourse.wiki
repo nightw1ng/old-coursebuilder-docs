@@ -5,10 +5,12 @@ Create new courses by clicking the *Add Course* button in the *Courses* tab on t
 
 http://wiki.course-builder.googlecode.com/git/images/create-new-course.png
 
-When you create a new course, it will be completely empty. You can however, import almost everything from an existing course that exists on the same Google App Engine instance.
+When you create a new course, it is by default private, which means students cannot view it. To make your course public, go to *[Dashboard#Settings Dashboard] > Settings* and change the {{{now_available:}}} assignment to {{{True}}} in the {{{course.yaml}}} section.  That is, the line should look like:
 
-If you want to modify the course name, URL prefix, course file system location, or Google App Engine namespace after you create the course, use the *gcb_courses_config* setting in the *Settings* tab on the Administrator Page. 
+{{{now_available: True}}}
 
-In the editor page, add a new course in the text box. You must specify the new course above the default {{{course:/:/}}}. That is, {{{course:/:/}}} must always be the final line in the text box.
+All newly created courses will also be completely empty. You can however, import almost everything from an existing course that exists on the same Google App Engine instance.
 
-The page describes in detail the syntax for adding a new course. Each course must be on its own line. You may have as many courses as you wish. 
+If you want to modify the course name, URL prefix, course file system location, or Google App Engine namespace after you create the course, use the *gcb_courses_config* setting in the *Settings* tab on the Administrator Page. The page describes in detail the syntax for modifying a course. 
+
+You can also add a new course through the *gcb_courses_config* setting. However, the suggested method is through the *Add Course* button because it is much easier. If you add a new course through the *gcb_courses_config* setting, you must specify it above the default {{{course:/:/}}}. That is, {{{course:/:/}}} must always be the final line in the text box. Each course must also be on its own line.
