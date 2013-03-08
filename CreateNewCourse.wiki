@@ -1,0 +1,14 @@
+#summary Explains how to create a new course.
+
+<h1>Create New Courses</h1>
+Create new courses by clicking the *Add Course* button in the *Courses* tab on the Administrator page.
+
+http://wiki.course-builder.googlecode.com/git/images/create-new-course.png
+
+When you create a new course, it will be completely empty. You can however, import almost everything from an existing course that exists on the same Google App Engine instance.
+
+If you want to modify the course name, URL prefix, course file system location, or Google App Engine namespace after you create the course, use the *gcb_courses_config* setting in the *Settings* tab on the Administrator Page. 
+
+In the editor page, add a new course in the text box. You must specify the new course above the default {{{course:/:/}}}. That is, {{{course:/:/}}} must always be the final line in the text box.
+
+The page describes in detail the syntax for adding a new course. Each course must be on its own line. You may have as many courses as you wish. 
