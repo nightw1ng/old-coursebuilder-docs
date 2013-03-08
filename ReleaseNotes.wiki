@@ -1,5 +1,36 @@
 #summary Course Builder Release Notes
 
+<h1>Release notes for version 1.3.0</h1>
+Many of the updates in version 1.3.0 enable course authors and administrators to edit their courses entirely online without the need to redeploy to Google App Engine.
+
+  * *Administer Page: Create courses.* You can now create new courses through the Administrator Page. See [CreateNewCourse Create New Courses].
+  
+  * *Dashboard: course.yaml.* You can now edit the {{{course.yaml}}} file directly through the Dashboard. See [Dashboard#Settings Dashboard Settings].
+
+  * *Dashboard: Create assessments.* You can now create assessments through the Dashboard. See [CreateAssessments#Writing_assessments Writing Assessments].
+
+  * *Dashboard: Create external links.* You can now create links to external sites through the Dashboard. See [Dashboard#Outline Dashboard Outline].
+
+  * *Dashboard: Create units.* You can now create units through the Dashboard. See [Dashboard#Outline Dashboard Outline].
+
+  * *Dashboard: Import courses.* You can now import an existing course to a new, empty course. See [Dashboard#Outline Dashboard Outline].
+
+  * *Dashboard: Organize course structure.* You can now organize the structure of your course through the Dashboard. See [Dashboard#Outline Dashboard Outline].
+  
+  * *Dashboard: Upload images.* You can now upload images through the Dashboard. See [Dashboard#Assets Dashboard Assets].
+
+The following are more updates for 1.3.0:
+
+  * *Announcements.* There is a rich text editor to edit the body of [Announcements announcements].
+  
+  * *Documentation structure.* The structure of the documentation was changed.
+  
+  * *Internationalization.* Course Builder now supports Zulu.
+
+  * *Student State.* Students can now track their progress on the course, [CreateActivities activity], and [CreateAssessments assessment] through progress indicators. See [CourseFlow#Student_State Student state].
+  
+  * *Tabs.* The current tab (the tab for the page on which you are currently on) is now underlined.
+
 <h1>Release notes for i18n language pack</h1>
   * *Internationalization.* Course Builder now supports 57 languages. [http://code.google.com/p/course-builder/downloads/list Download] the language pack and integrate it with your installation of Course Builder. See [I18n Internationalization].
   
