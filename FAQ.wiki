@@ -11,8 +11,12 @@ In several places, you're asked to open a "shell or command prompt" and then ent
 Every operating system has a utility you can use that lets you type in text-based "commands" for some arbitrary piece of software. Each operating system calls this utility something different.
 
   * *Windows* calls it a *Command Prompt*.<br><br>Choose *Start > Command Prompt*. If Command Prompt does not appear on the *Start* menu, then instead choose *Start > All Programs > Accessories > Command Prompt*.
+  
+  http://wiki.course-builder.googlecode.com/git/images/windows_prompt.PNG
 
   * *Mac* calls it either a *terminal* or a *shell*.<br><br>Open the *Finder*. Choose *Go > Utilities*. From the window that appears, choose *Terminal.app*.
+  
+  http://wiki.course-builder.googlecode.com/git/images/mac_terminal.png
 
   * *Linux* and other *POSIX-compliant systems* call it a *shell*. 
 
