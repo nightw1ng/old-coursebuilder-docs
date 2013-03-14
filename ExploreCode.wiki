@@ -28,7 +28,7 @@ You should avoid modifying these files to simplify migration to future versions 
     * {{{oeditor}}} - generic AJAX object editor used by other modules
   * {{{lib}}} - third party open-source libraries not developed by Google; it's your responsibility to review and accept licensing terms for each library
   * {{{tests}}} - all unit and functional tests
-  * {{{tools}}} - course structure and activity/assessment verification tools; dats export tools
+  * {{{tools}}} - course structure and activity/assessment verification tools; data export tools
   * {{{views}}} - HTML page templates for various course pages
 
 
