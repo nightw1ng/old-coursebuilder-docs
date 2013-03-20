@@ -93,7 +93,7 @@ We expect the following from course authors:
   # Sequence and organize your content into digestible chunks.
   # Validate your content with others.
 
-=== C. [ManageCommunity Setup and and manage the participant community.] ===
+=== C. [ManageCommunity Setup and manage the participant community.] ===
   # [Announcements Prepare announcements and optional material.]
   # [WebForums Setup a community discussion forum.]
   # Add the link to your discussion forum to the file {{{views/forum.html}}}.
