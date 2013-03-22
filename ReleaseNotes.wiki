@@ -1,6 +1,26 @@
 #summary Course Builder Release Notes
 
-<h1>Release notes for version 1.3.0</h1>
+<h1>Course Builder Release Notes</h1>
+
+<wiki:toc />
+
+==Release notes for version 1.3.1==
+
+  * *Announcements.* There was a bug in the *Announcements* editor when you typed text in Rich Text mode and switched to plain text mode. The text would be lost. This bug was fixed.
+  
+  * *Export and Import Data.* You can now export and import the files that constitute your Course Builder course. You can also export all Google App Engine datastore entities. See [http://code.google.com/p/course-builder/source/browse/coursebuilder/tools/etl/etl.py source code].
+  
+  * *French language.* There was a bug when using the French language ({{{locale: 'fr'}}}). Some activities were truncated. This bug was fixed.
+
+  * *HTTPS.* You can now access Course Builder through HTTPS.
+  
+  * *Lesson Notes.* If you do not specify lesson notes in your {{{lesson.csv}}} file or lesson editor, the *Text Version* button in the lesson will not show.
+  
+  * *Multiple Correct Answers.* You can now have questions that have multiple correct answers.
+      
+  * *Yahoo Libraries.* Course Builder will no longer make direct web requests to http://yui.yahooapis.com/ to obtain Yahoo's open-source !JavaScript and CSS libraries (YUI) files. This method is more secure than making requests for the libraries over the Internet. 
+
+==Release notes for version 1.3.0==
 Many of the updates in version 1.3.0 enable course authors and administrators to edit their courses entirely online without the need to redeploy to Google App Engine.
 
   * *Administrator Page: Create courses.* You can now create new courses through the Administrator Page. See [CreateNewCourse Create New Courses].
@@ -37,16 +57,16 @@ The following are more updates for 1.3.0:
   
 Here is an informal video to show the highlights: [http://www.youtube.com/watch?v=NncSiZhd8ds 1.3.0 (running time: 13:36)].
 
-<h1>Release notes for i18n language pack</h1>
+==Release notes for i18n language pack==
   * *Internationalization.* Course Builder now supports 57 languages. [http://code.google.com/p/course-builder/downloads/list Download] the language pack and integrate it with your installation of Course Builder. See [I18n Internationalization].
   
-<h1>Release notes for version 1.2.1</h1>
+==Release notes for version 1.2.1==
   * *CSV and international characters.* There was a bug that prevented you from uploading CSV files that contained international characters such as accents. This update fixes the issue.
   
   * *course.yaml and international characters.* There was a bug that disabled the *Settings* section in the Dashboard when [CourseSettings course.yaml] contained international characters such as accents. This update fixes the issue.
 
   
-<h1>Release notes for version 1.2.0</h1>
+==Release notes for version 1.2.0==
   * *Accessibility.* A variety of accessibility features were added. See [Accessibility Accessibility].
   
   * *Administrator Page.* A new page was added for administrators who manage Google App Engine for Course Builder. See [AdminPage Administrator Page].
@@ -69,12 +89,12 @@ Here is an informal video to show the highlights: [http://www.youtube.com/watch?
   
   * *Security.* Cross-site request forgery, also known as XSRF or CSRF, is a malicious attack that tries to exploit the relationship between a website and a user’s browser. Course Builder implements protection against XSRF using transient user-action specific tokens for all state-modifying HTTP operations supported by the product. Note that full in-depth security review has not yet been conducted. You should conduct independent security testing and take additional steps to secure your production site. If you find an issue, please report it immediately to the development team for assessment and resolution.
 
-<h1>Release notes for version 1.1.1</h1>
+==Release notes for version 1.1.1==
 
   * *Windows platform support.* Course Builder version 1.1.0 contained a bug specific to running a development server on Windows platforms. This update fixes the issue.
 
 
-<h1>Release notes for version 1.1.0</h1>
+==Release notes for version 1.1.0==
 
   * *New tabs.* Course Builder 1.0 contained two tabs: Course and Forum. CB 1.1 adds two new tabs: Announcements and My Profile.
     * *Announcements tab.* The new Announcements tab gives you a place that you can put course announcements, without having to create a separate forum. The content of the announcements tab is in {{{views/announcements.html}}}. See [Announcements Announcements and Optional Material].
@@ -94,6 +114,6 @@ Here is an informal video to show the highlights: [http://www.youtube.com/watch?
 
   * *Testing.* Course Builder 1.1 includes a set of functional tests in the new {{{tests}}} directory. If you make significant changes to Course Builder's source code, consider running (and possibly changing) these tests. See [AppEngine#Run_Course_Builder_tests Run Course Builder tests].
 
-<h1>Release notes for version 1.0</h1>
+==Release notes for version 1.0==
 
   * *First public release.* Course Builder is our experimental first step in the world of online education.
