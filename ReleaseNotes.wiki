@@ -16,7 +16,7 @@
   
   * *Lesson Notes.* If you do not specify lesson notes in your {{{lesson.csv}}} file or lesson editor, the *Text Version* button in the lesson will not show.
   
-  * *Multiple Correct Answers.* You can now have questions that have multiple correct answers.
+  * *Multiple Correct Answers.* You can now have questions that have multiple correct answers. See [CreateActivities#Multiple-choice_questions_with_multiple_correct_answers Multiple Correct Answers].
       
   * *Yahoo Libraries.* Course Builder will no longer make direct web requests to http://yui.yahooapis.com/ to obtain Yahoo's open-source !JavaScript and CSS libraries (YUI) files. This method is more secure than making requests for the libraries over the Internet. 
 
