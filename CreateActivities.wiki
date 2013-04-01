@@ -89,6 +89,7 @@ A question can be one of three types:
   * [#Single_multiple-choice_question A single multiple-choice question]
   * [#Group_of_multiple-choice_questions A group of multiple-choice questions]
   * [#Free_text Free text]
+  * [#Multiple-choice_questions_with_multiple_correct_answers Multiple correct answers]
 
 ==== Single multiple-choice question ====
 
@@ -170,6 +171,36 @@ This code represents a single !JavaScript object with four required attributes:
 For this example, if students answer one question correctly, they see the following:
 
 http://wiki.course-builder.googlecode.com/git/images/answer-group.png
+
+==== Multiple-choice questions with multiple correct answers====
+
+You can present multiple choice questions that have more than one correct answer. The code for this question type looks like the following example:
+
+{{{
+var activity = [
+
+  { questionType: 'multiple choice group',
+    questionGroupHTML: '<p>This section will test you on colors and numbers.</p>',
+    questionsList: [
+          {questionHTML: 'Pick all <i>odd</i> numbers:',
+           choices: ['1', '2', '3', '4', '5'], correctIndex: [0, 2, 4]},
+          {questionHTML: 'Pick one <i>even</i> number:',
+           choices: ['1', '2', '3', '4', '5'], correctIndex: [1, 3],
+           multiSelect: true},
+          {questionHTML: 'What color is the sky?',
+           choices: ['#00FF00', '#00FF00', '#0000FF'], correctIndex: 2}
+    ],
+    allCorrectMinCount: 2,
+    allCorrectOutput: 'Great job! You know the material well.',
+    someIncorrectOutput: 'You must answer at least two questions correctly.'
+  }
+
+];
+}}}
+
+You can specify whether a student must choose all the choices correctly or just one, in order for the question to be correct. By default, the {{{multiSelect:}}} setting is {{{true}}}, which means that the student needs to choose all the correct choices. To change this behavior, specify {{{multiSelect: false}}}. With {{{multiSelect: false}}} in the following example, the student only receives two out of three correct answers. Question one is incorrect while question two is correct because with question two, the student only needed to specify one correct answer.
+
+http://wiki.course-builder.googlecode.com/git/images/answer-multiple-correct.png
 
 ==== Free text ====
 
