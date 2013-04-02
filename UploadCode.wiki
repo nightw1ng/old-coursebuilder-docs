@@ -64,6 +64,8 @@ For each {{{appcfg.py}}} command, you are asked to supply your credentials. Supp
 
 It can take up to a minute to deploy your app; generally it's less than 30 seconds but usually not more than a minute. Once the deployment completes and confirms, you (and everyone else on the planet not blocked from Google) can visit {{{http://}}}_*{{{APP_ID}}}*_{{{.appspot.com}}} and verify that your app is indeed available to all.
 
+Here is a video that shows this proces, from download to deployment: [http://www.youtube.com/watch?v=OtVd1komyGY&list=PLbTy14-ZMIDJGS1XLdYj3Nzrhfd6EDWJC download, installation, and deployment (4:33).]
+
 == (Alternative) Upload without a password ==
 
 In general, every time you make a change that causes you to redeploy your app to production, you either need to remember the app-specific password created when registering or you need a new app-specific password. In some situations, you may choose to avoid giving a password at all, by giving GAE access to your account. 
