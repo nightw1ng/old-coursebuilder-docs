@@ -41,6 +41,8 @@ To register your app:
 
 *Important:* The app ID you register for your app *must* be the app ID in your {{{app.yaml}}} file; see [GetCode#2._Decide_on_a_name_for_your_app Run the Sample App]. If you register a different ID than you use in development, you must change {{{app.yaml}}} before deploying your app.
 
+Here is a video that shows these steps: [http://www.youtube.com/watch?v=_xpnfrqjuKU&feature=share&list=PLbTy14-ZMIDJGS1XLdYj3Nzrhfd6EDWJC Register your app and edit the app.yaml file (1:58)].
+
 More details on creating an app can be found in the [https://developers.google.com/appengine/docs/python/gettingstartedpython27/uploading official docs]. 
 
 
