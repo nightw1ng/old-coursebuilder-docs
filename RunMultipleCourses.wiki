@@ -55,7 +55,7 @@ In our example, assume that you plan to use {{{http://www.example.com/index.html
 {{{
 ...
 env_variables:
-  GCB_COURSES_CONFIG: 'course:/algebra101:/courses/algebra, course:/calculus202:/courses/calculus'}}}
+  GCB_COURSES_CONFIG: 'course:/algebra101:/courses/algebra, course:/calculus202:/courses/calculus'
 ...
 }}}
 
