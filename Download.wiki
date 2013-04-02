@@ -69,7 +69,7 @@ When developing on GAE, you have a choice of performing administrative tasks usi
 
 *Note:* If you decide to use the command-line tools, consult the official [https://developers.google.com/appengine/docs/python/overview Google App Engine documentation].
 
-Here is a video that shows this process, include [UploadCode deployment]: [http://www.youtube.com/watch?v=OtVd1komyGY&list=PLbTy14-ZMIDJGS1XLdYj3Nzrhfd6EDWJC download and installation (4:33)] 
+Here is a video that shows this process, include [UploadCode deployment]: [http://www.youtube.com/watch?v=OtVd1komyGY&list=PLbTy14-ZMIDJGS1XLdYj3Nzrhfd6EDWJC download and installation (4:33).] 
 
 == Download Course Builder sample application ==
 
