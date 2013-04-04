@@ -12,7 +12,7 @@ Before you can start working on your own course, you need to download Python and
   #  Download the Google App Engine SDK for Python:
     * [http://code.google.com/p/googleappengine/downloads/detail?name=GoogleAppEngine-1.7.0.msi&can=1&q=1.7.0 Windows]
     * [http://code.google.com/p/googleappengine/downloads/detail?name=GoogleAppEngineLauncher-1.7.0.dmg&can=1&q=1.7.0 Mac]
-  # [http://gcb-x-03141590.googlecode.com/files/coursebuilder.zip Download the Course Builder sample application.] 
+  # [http://code.google.com/p/course-builder/downloads/list Download the Course Builder sample application.] 
 
 == Download and install Python 2.7 ==
 
