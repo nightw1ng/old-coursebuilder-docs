@@ -28,7 +28,7 @@ In the following steps, you will implement the content using technology. All pat
 === A. [GetStarted Download and install needed software and the Course Builder sample application.] ===
   # [Download Set up for development.]
     # Download and install  [http://python.org/download Python].
-    # Download and install [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python App Engine].
+    # Download and install [Download#Download_and_install_Google_App_Engine App Engine].
     # Download the [Download#Download_Course_Builder_sample_application Course Builder sample application].
   # [GetCode Run the sample app]
     # Pick a name for your app. Make it the value of {{{application}}} in {{{app.yaml}}}.
