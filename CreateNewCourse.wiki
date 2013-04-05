@@ -41,5 +41,12 @@ When you create a new course, it is by default private, which means students can
 
 {{{now_available: True}}}
 
+When you create a new course through the Admin Page, this setting is automatically populated in your {{{course.yaml}}} file. This setting is not in the default {{{course.yaml}}} file that is packaged with the default Power Searching with Google course. Therefore, you must manually add this entry. This setting is listed under {{{course:}}} in {{{course.yaml}}} (note the indentation):
+
+{{{
+course:
+  now_available: True
+}}}
+
 ==Create New Courses with gcb_courses_config==
 You can also add a new course through the *gcb_courses_config* setting in *Admin > Settings*. However, the suggested method is through the *Add Course* button because it is much easier. If you add a new course through the *gcb_courses_config* setting, you must specify the root course "{{{/}}}" as the last entry. For more information on mapping URLs, see [URLMap URL Mapping].
