@@ -24,4 +24,6 @@ The settings in the {{{course.yaml}}} are:
   * HTML representing additional fields to include in the course registration form
   * HTML to be displayed on the test confirmation page
 
+By default the setting to make your course public or private is not set. See [CreateNewCourse#Make_Courses_Viewable Make Courses Viewable] on how to set it.
+
 Here is a video that shows how to edit your {{{course.yaml}}} file: [http://www.youtube.com/watch?v=7aLeEso9lNY&list=PLbTy14-ZMIDJGS1XLdYj3Nzrhfd6EDWJC Edit course.yaml (4:35)].
