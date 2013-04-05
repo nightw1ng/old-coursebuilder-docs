@@ -8,7 +8,7 @@ The settings in the {{{course.yaml}}} are:
   * Course title
   * Main page blurb (introductory text on the main page)
   * Information about the instructor to display on the main page
-  * Whether you want a video or an image on the main page (if you specify both, video will take priority)
+  * Whether you want a video or an image on the main page. If you specify both, video will take priority. The path to the image directory must also be relative, not absolute. That is, {{{assets/img}}} not {{{/assets/img}}}.
   * Course start date
   * Forum URL
   * URL for the mailing list where students can register to receive course announcements
