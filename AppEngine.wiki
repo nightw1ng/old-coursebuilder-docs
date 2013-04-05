@@ -64,7 +64,11 @@ If you don't have Python at all or you have the wrong version, visit the general
 
 == Download and install GAE ==
 
-Follow [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python this link] to download the GAE SDK for Python for your platform.
+Course Builder only supports GAE SDK version 1.7.0. Download the GAE SDK appropriate for your platform from the following links:
+
+  * [http://code.google.com/p/googleappengine/downloads/detail?name=GoogleAppEngine-1.7.0.msi&can=1&q=1.7.0 GAE SDK 1.7.0 for  Windows]
+  * [http://code.google.com/p/googleappengine/downloads/detail?name=GoogleAppEngineLauncher-1.7.0.dmg&can=1&q=1.7.0 GAE SDK 1.7.0 for Mac]
+  * [https://code.google.com/p/googleappengine/downloads/detail?name=google_appengine_1.7.0.zip&can=1&q= GAE SDK 1.7.0 for Linux]
 
   * *PC*: Run the downloaded installer .msi by double clicking. Follow all on-screen instructions. On the screen that asks for the destination folder, be sure that *Add product path to user PATH* is checked. This is required for the command-line tools to work properly. Once completed, you should find the GAE Launcher icon on your desktop or be able to find it via Start -> Programs.
 
