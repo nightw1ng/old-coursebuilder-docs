@@ -1,16 +1,45 @@
 #summary Explains how to create a new course.
 
 <h1>Create New Courses</h1>
-Create new courses by clicking the *Add Course* button in the *Courses* tab on the Administrator page.
 
-http://wiki.course-builder.googlecode.com/git/images/create-new-course.png
+<wiki:toc />
 
+You can create new courses directly in the Administrator Page. Such newly created courses will exist in the Google App Engine datastore, as opposed to the filesystem on your local computer. You can create as many courses as you like and they will persist on a single Google App Engine instance. 
+
+To create a new course:
+
+  # Create new courses by clicking the *Add Course* button in the *Courses* tab on the Administrator page.
+    http://wiki.course-builder.googlecode.com/git/images/create-new-course.png
+  # On the *New Course Entry*  page,
+    # Add a Unique name. This name represents this course's URL as well as its unique name in the datastore namespace. Course Builder automatically adds a {{{ns_}}} prefix to your name for its namespace representation. For example, if you choose the name {{{alpha}}}, then the URL would be {{{/alpha}}} and the automatically generated namespace will be {{{ns_alpha}}}. This namespace name can never be changed once it is generated.
+    # Add a Course Title. You can change this title later if you wish.
+    # Add the email address for the course administrator.
+  # Click *Add New Course*.
+  # Click *Close*. Access and see a list of all courses on the *Admin > Courses* page.
+
+==Import Data into an Empty Course==
+All newly created courses are completely empty. You can however, import data from an existing course that exists on the same Google App Engine instance.
+
+  # Go to the *Dashboard > Outline* page of your empty course.
+  # Click *Import*.
+  # Choose a course that has the data you want from the *Available Courses* dropdown menu.
+  # Click *Import*.
+  # Click *Close*.
+
+This does not import all the information in the {{{course.yaml}}} file. You must manually populate the {{{course.yaml}}} file in your new course. If you would like to use another course's {{{course.yaml}}} settings as a template, for example the one that comes with Power Searching with Google, do the following:
+
+  # Copy all the contents of the original {{{course.yaml}}}
+  # Go to *Dashboard > Settings* of your new course.
+  # Click *Edit* in the *Contents of course.yaml file* section.
+  # Delete all the contents.
+  # Paste all the contents of the original {{{course.yaml}}}
+  # Click *Save*.
+  # Click *Close*.
+
+==Make Courses Viewable==
 When you create a new course, it is by default private, which means students cannot view it. To make your course public, go to *[Dashboard#Settings Dashboard] > Settings* and change the {{{now_available:}}} assignment to {{{True}}} in the {{{course.yaml}}} section.  That is, the line should look like:
 
 {{{now_available: True}}}
 
-All newly created courses will also be completely empty. You can however, import almost everything from an existing course that exists on the same Google App Engine instance.
-
-If you want to modify the course name, URL prefix, course file system location, or Google App Engine namespace after you create the course, use the *gcb_courses_config* setting in the *Settings* tab on the Administrator Page. The page describes in detail the syntax for modifying a course. 
-
-You can also add a new course through the *gcb_courses_config* setting. However, the suggested method is through the *Add Course* button because it is much easier. If you add a new course through the *gcb_courses_config* setting, you must specify it above the default {{{course:/:/}}}. That is, {{{course:/:/}}} must always be the final line in the text box. Each course must also be on its own line.
+==Create New Courses with gcb_courses_config==
+You can also add a new course through the *gcb_courses_config* setting in *Admin > Settings*. However, the suggested method is through the *Add Course* button because it is much easier. If you add a new course through the *gcb_courses_config* setting, you must specify the root course "{{{/}}}" as the last entry. For more information on mapping URLs, see [URLMap URL Mapping].
