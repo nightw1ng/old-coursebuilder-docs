@@ -186,7 +186,7 @@ var activity = [
            choices: ['1', '2', '3', '4', '5'], correctIndex: [0, 2, 4]},
           {questionHTML: 'Pick one <i>even</i> number:',
            choices: ['1', '2', '3', '4', '5'], correctIndex: [1, 3],
-           multiSelect: true},
+           multiSelect: false},
           {questionHTML: 'What color is the sky?',
            choices: ['#00FF00', '#00FF00', '#0000FF'], correctIndex: 2}
     ],
@@ -198,9 +198,17 @@ var activity = [
 ];
 }}}
 
-You can specify whether a student must choose all the choices correctly or just one, in order for the question to be correct. By default, the {{{multiSelect:}}} setting is {{{true}}}, which means that the student needs to choose all the correct choices. To change this behavior, specify {{{multiSelect: false}}}. With {{{multiSelect: false}}} in the following example, the student only receives two out of three correct answers. Question one is incorrect while question two is correct because with question two, the student only needed to specify one correct answer.
+You can specify whether a student must choose all the answers correctly or just one, in order for the question to be correct. By default, the {{{multiSelect:}}} setting is {{{true}}}, which means that the student needs to select all the correct answers. You do not need to specify {{{multiSelect: true}}} since by default it is the case. 
+
+To change the default behavior, specify {{{multiSelect: false}}}. With {{{multiSelect: false}}} specified in the second question in the following example, the student receives an overall score of two out of three. Question one is incorrect while question two is correct because with question two, the student only needed to select one correct answer. 
 
 http://wiki.course-builder.googlecode.com/git/images/answer-multiple-correct.png
+
+If we specified {{{multiSelect: true}}} (or omitted any specification) in question two and the student only selected one correct answer, then the student would have received an overall score of one out of three.
+
+When answers are presented as checkboxes, it means that all correct choices must be selected. When answers are presented as radio buttons, it means you must select only one correct answer.
+
+The {{{allCorrectMinCount:}}} setting indicates how many questions in the activity must be answered correctly for successful completion. If the students are successful, they received the message in {{{allCorrectOutput:}}}. Else, they receive the message in {{{someIncorrectOutput}}}.
 
 ==== Free text ====
 
