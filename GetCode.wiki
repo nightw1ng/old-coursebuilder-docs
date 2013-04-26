@@ -29,7 +29,7 @@ The file {{{app.yaml}}} is the configuration file for your Google App Engine app
 
 *Note for PC users:* Do *not* use Notepad to edit Course Builder files. If you do, every Course Builder file appears to be one long line. Please use another text editor, such as !WordPad.
 
-Pick a single word as an app name. It's best if you keep all the letters of the app name in lowercase and select a directory that does not have a space and does not have upper case characters in it. See [UploadCode#Register_your_app_(course)_with_Google Register your app with Google] for restrictions on naming.
+Pick a single word as an app name. It's best if you keep all the letters of the app name in lowercase. See [UploadCode#Register_your_app_(course)_with_Google Register your app with Google] for restrictions on naming.
 
 *Note:* During development, you can give your app any name you want. However, when you release your app to production, as described in [UploadCode#Register_your_app_(course)_with_Google Register your app with Google], you name your production app once and can never reuse that name. 
 
