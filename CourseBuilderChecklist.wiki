@@ -29,7 +29,7 @@ In the following steps, you will implement the content using technology. All pat
   # [Download Set up for development.]
     # Download and install  [http://python.org/download Python].
     # Download and install [Download#Download_and_install_Google_App_Engine App Engine].
-    # Download the [Download#Download_Course_Builder_sample_application Course Builder sample application].
+    # Download the [Download#Download_Course_Builder_sample_application Course Builder sample application]. Course Builder supports Windows 7, Mac, and Linux.
   # [GetCode Run the sample app]
     # Pick a name for your app. Make it the value of {{{application}}} in {{{app.yaml}}}.
     # [GetCode#4._Add_the_app_to_App_Engine Load the app].
