@@ -1,86 +1,178 @@
-#summary Describes course data and how to export your course data.
+#summary Describes course data and how to download (export) your course data.
 
-<h1>Export Course Data</h1>
+<h1>Download Course Data</h1>
 
-This page describes the student assessment and course data stored by Course Builder and the process for exporting your data into text files in [http://en.wikipedia.org/wiki/Comma-separated_values CSV] format. We’ll start with the steps for exporting the data, followed by a description of the available data. 
+The Course Builder application stores data in Google App Engine’s [https://developers.google.com/appengine/docs/python/datastore/structuring_for_strong_consistency High Replication datastore]. You can download (export) data either from your development or production server. The steps are the same. The only difference is that when you download data from your production server, you need to use your app-specific password, as described in [UploadCode#Set_up_an_app-specific_password Set up an app-specific password].
+
+With download and [ImportCourseData upload], your data becomes accessible, portable, and liberated from any one system. Some reasons you may want to use this feature are:
+
+  * Download current data so that you can import it into a new version of Course Builder.
+  * Download data so that you can import into some third party system.
+  * Download data so you can edit it in some custom way.
+  * Download data "just so that you can have it with you."
+
+You cannot download courses that you made with Course Builder versions earlier than 1.3.0. You would most likely have these courses on disk and hence would not need to download them from the datastore.
 
 <wiki:toc max_depth="2" />
 
-Before getting started, make sure you’ve downloaded and installed the Google App Engine SDK for Python and that you have Python 2.7 on your system. For information on downloading and installing the Google App Engine SDK, see [AppEngine Develop with Google App Engine].
+== Types of data available ==
+Course Builder stores two types of data: course and datastore. 
 
-== Export process ==
+=== Course data ===
+You can find course data on your file system. Examples of course data include:
 
-The Course Builder application stores data in Google App Engine’s [https://developers.google.com/appengine/docs/python/datastore/structuring_for_strong_consistency High Replication datastore]. You download course data using the Google App Engine bulk loader tool, which is included with the Google App Engine SDK for Python for your platform. Data is downloaded using the CSV format; this makes it easy to upload data into a spreadsheet or into Fusion Tables for viewing and analysis.
+  * Assets — course CSS files, images, activities, assessments, and libraries
+  * !EventEntity — system level events and historical data about each activity or assessment completed. Event recording is off by default and can be enabled in *Admin > Settings*
+  * Lessons — information about each lesson, such as the video's URL and the lesson's title
+  * Student — information about students, their enrollment status and assessment scores
+  * !StudentAnswersEntity — the most recent detailed answers given by a student for each assessment
+  * Units — course unit information like ID, type, title, release date, and availability
 
-You can export data either from your development server or from your production server. The steps are the same. The only difference is that when you download data from your production server, you need to use your app-specific password, as described in [UploadCode#Set_up_an_app-specific_password Set up an app-specific password].
+=== Datastore data ===
+Datatsore data resides in the Google App Engine datastore. Examples include:
 
-To export Course Builder data, first decide on the directory in which to put your exported files. Copy the {{{bulkloader.yaml}}} to that directory. Ensure the directory does not contain both {{{appengine_config.py}}} and {{{bulkloader.yaml}}}. Otherwise, you will not be able to export the data. 
+  * Student
+  * !StudentAnswersEntity
+  * !StudentPropertyEntity 
 
-Now, open a [http://code.google.com/p/gcb-x-03141590/wiki/FAQ#What%27s_a_%22shell_or_command_prompt%22? shell or command prompt]. In that window:
+== Path settings ==
+The best way to download and upload data is to create a Python script that calls {{{etl.py}}}. This way, you do not have to touch the source code directly. You must specify correct path settings for the following items. Otherwise, neither download nor upload will not work:
 
-  {{{cd }}}_*{{{APPPATH}}}*_{{{/data}}}<br>
-  {{{cp }}} {{{../bulkloader.yaml}}} {{{.}}}<br>
-  {{{appcfg.py download_data --config_file=bulkloader.yaml  --filename=}}}_*{{{DataFilename}}}*_{{{ --kind=}}}_*{{{EntityType}}}*_{{{ --url=}}}_*{{{URL}}}*_{{{/remote_api}}}
+  * The absolute path of your Course Builder installation.
+  * The absolute path of your App Engine SDK.
+  * The absolute paths of third party libraries from the SDK used by Course Builder:
+    * fancy_urllib
+    * jinja2
+    * webapp2
+    * webob
 
-where:
+Paths to the various necessary items are different on each platform (Mac, Windows 7, Linux).
 
-|| _*{{{APPPATH}}}*_ || The directory containing your app's code. ||
-|| _*{{{DataFilename}}}*_ || Pathname to the exported data file this command creates. ||
-|| _*{{{EntityType}}}*_ || What type of entity to export. One of {{{Lesson}}}, {{{Student}}}, or {{{Unit}}}. ||
-|| _*{{{URL}}}*_ || The URL for the server. <br> For your development server, this is {{{http://localhost:}}}_*{{{PORT}}}*_, where _*{{{PORT}}}*_ is the port running your server.<br> For your production server, this is _*{{{APP_ID}}}*_{{{.appspot.com}}}, where  _*{{{APP_ID}}}*_ is the app name you [#Register_your_app_with_Google registered]. ||
+=== Mac path settings ===
+Create a Python script that defines all the paths and then calls {{{etl.py}}}. At the end of the steps is an example of what the script would look like.
 
-For example, assume that my course files live in {{{~/mycourse}}} and that I want to export student data from my development server to a file named {{{student.csv}}} in the current directory. I would use these commands:
+  # Create a new file in a plain text editor like vi, Text!Wrangler, or the like.
+  # Import the Python {{{sys}}} module by typing this on the first line: {{{import sys}}}
+  # Specify all the paths using Python's {{{sys.path.insert()}}}.
+  # Import the argparse module: {{{import argparse}}}
+  # Import Course Builder's {{{etl.py}}}: {{{import etl.py}}}
+  # Add code to wrap the command line argument parser of {{{etl.py}}}:
+  # Save the file with the {{{.py}}} extension. You must save this file to {{{/tools/etl}}}.
+  # Open {{{etl.py}}} in a plain text editor. Add a new line that refers to the file you just created, without the {{{.py}}} extension, in the import section of the file.
+  # Save the file.
 
-  {{{cd ~/mycourse/data}}}<br>
-  {{{cp }}} {{{../bulkloader.yaml}}} {{{.}}}<br>
-  {{{appcfg.py download_data --config_file=bulkloader.yaml  --filename=student.csv --kind=Student --url=http://localhost:8080/remote_api}}}
+Here is an example of a completed Python script. The coursebuilder installation is in a directory called {{{/Users/sammich/coursebuilder}}}.
 
-The {{{appcfg.py}}} command generates the following files:
+{{{
+import sys
+sys.path.insert(0,'/Users/sammich/coursebuilder')
+sys.path.insert(0,'/Applications/GoogleAppEngineLauncher.app/Contents/Resources/GoogleAppEngine-default.bundle/Contents/Resources/google_appengine')
+sys.path.insert(0,'/Applications/GoogleAppEngineLauncher.app/Contents/Resources/GoogleAppEngine-default.bundle/Contents/Resources/google_appengine/lib/fancy_urllib')
+sys.path.insert(0,'/Applications/GoogleAppEngineLauncher.app/Contents/Resources/GoogleAppEngine-default.bundle/Contents/Resources/google_appengine/lib/jinja2')
+sys.path.insert(0,'/Applications/GoogleAppEngineLauncher.app/Contents/Resources/GoogleAppEngine-default.bundle/Contents/Resources/google_appengine/lib/webapp2')
+sys.path.insert(0,'/Applications/GoogleAppEngineLauncher.app/Contents/Resources/GoogleAppEngine-default.bundle/Contents/Resources/google_appengine/lib/webob_1_1_1')
+sys.path.insert(0,'/Applications/GoogleAppEngineLauncher.app/Contents/Resources/GoogleAppEngine-default.bundle/Contents/Resources/google_appengine/lib/yaml/lib')
 
-|| *File* || *Description* ||
-|| {{{bulkloader-log-}}}*_{{{timestamp}}}_* || A log file showing the processing steps. Use the {{{--db_filename=skip}}} flag to skip generating this file.|| 
-|| {{{bulkloader-progress-}}}*_{{{timestamp}}}_*{{{.sql3}}} || A SQL3 database file showing progress. Use the {{{--db_filename=skip}}} flag to skip generating this file. || 
-|| {{{bulkloader-results-}}}*_{{{timestamp}}}_*{{{.sql3}}} || The exported course data in SQL3 format. Use the {{{--db_filename=skip}}} flag to skip generating this file. || 
-|| *_{{{filename}}}_*{{{.csv}}} || The exported course data in CSV format. || 
+import argparse
+import etl
+if __name__ =='__main__':
+    PARSER = argparse.ArgumentParser(add_help=False, parents=[etl.PARSER])
+    etl.main(PARSER.parse_args())
+}}}
 
-You can now import your CSV files into a spreadsheet or into [http://www.google.com/fusiontables Fusion Tables] for viewing and analysis. For help importing data into Fusion Tables, see [http://support.google.com/fusiontables/bin/answer.py?hl=en&answer=181717&topic=27017&ctx=topic Import data].
+We named the script {{{gcbpaths.py}}} and saved it in {{{tools/etl}}}. Now the directory will have both {{{etl.py}}} and {{{gcbpaths.py}}}.
+    
+=== Windows path settings ===
+The steps for Windows is the same as that of [ExportCourseData#Mac_path_settings Mac]. The difference is the paths are different. Follow the steps for Mac but add the paths in your Windows environment. For example, your script may look like this:
+{{{
+import sys
+sys.path.insert(0,'C:\coursebuilder')
+sys.path.insert(0,'C:\coursebuilder\google_appengine')
+sys.path.insert(0,'C:\coursebuilder\google_appengine\lib')
+sys.path.insert(0,'C:\coursebuilder\google_appengine\lib\jinja2')
+sys.path.insert(0,'C:\coursebuilder\google_appengine\lib\webapp2')
+sys.path.insert(0,'C:\coursebuilder\google_appengine\lib\webob_1_1_1')
+sys.path.insert(0,'C:\coursebuilder\google_appengine\lib\yaml\lib')
 
-=== Save time and costs: export data subsets ===
+import argparse
+import etl
+if __name__ =='__main__':
+    PARSER = argparse.ArgumentParser(add_help=False, parents=[etl.PARSER])
+    etl.main(PARSER.parse_args())
+}}}
 
-By default, when you download data from Course Builder, Google App Engine downloads all of the fields for the entity type you specify. For lessons and units, this is probably a fairly small amount of data. Also, for those entities, the amount of data does not change based on course size.
+Notice that the specification for the {{{fancy_urllib}}} library omits the directory name at the end of the path.
 
-Student entities, however, are different. If your course is relatively small, downloading all data for that course is fairly fast and is free. But if your course has a very large number of students, the {{{appcfg.py}}} command can take hours to run and may incur [https://developers.google.com/appengine/docs/billing Google App Engine costs]. If you find that downloading data takes too long, consider downloading only the data subset you really need. 
+=== Linux path settings ===
+The steps for Linux is the same as that of [ExportCourseData#Mac_path_settings Mac]. The difference is the paths are different. Follow the steps for Mac but add the paths in your Linux environment. For example, you script may look like this:
+{{{
+import sys
+sys.path.insert(0,'/usr/local/myorg/home/sammich/coursebuilder')
+sys.path.insert(0,'/usr/local/myorg/home/sammich/google_appengine')
+sys.path.insert(0,'/usr/local/myorg/home/sammich/google_appengine/lib/fancy_urllib')
+sys.path.insert(0,'/usr/local/myorg/home/sammich/google_appengine/lib/jinja2')
+sys.path.insert(0,'/usr/local/myorg/home/sammich/google_appengine/lib/webapp2')
+sys.path.insert(0,'/usr/local/myorg/home/sammich/google_appengine/lib/webob_1_1_1')
+sys.path.insert(0,'/usr/local/myorg/home/sammich/google_appengine/lib/yaml')
 
-In the {{{appcfg.py}}} command above, one of the parameters is {{{--config_file=../bulkloader.yaml}}}. This parameter tells Google App Engine to use the information in {{{../bulkloader.yaml}}} to determine what to download for each entity type. If you want to download a subset of the data, create a new {{{bulkloader.yaml}}} file in a different directory (such as the directory for the output) and run {{{appcfg.py}}} pointing to that file.
+import argparse
+import etl
+if __name__ =='__main__':
+    PARSER = argparse.ArgumentParser(add_help=False, parents=[etl.PARSER])
+    etl.main(PARSER.parse_args())
+}}}
 
-For example, assume that your course files live in  {{{~/mycourse}}} and that you want to download to your home directory only the email addresses of registered students. Do the following:
+== Download course information ==
+When you download the course information, some files will be in !JavaScript Object Notation ([http://www.json.org/ JSON]), which is a data-interchange format that is human readable.  JSON is computer language independent.
 
-1. Make a copy of  _*{{{APPPATH}}}*_{{{/bulkloader.yaml}}} as {{{~/bulkloader.yaml}}}, where _*{{{APPPATH}}}*_ is the directory containing your app's code. 
+The following command downloads your course data. ETL stands for "Extract, Transform, Load."
 
-2. Edit  {{{~/bulkloader.yaml}}}.
+{{{
+python tools/etl/<your_script_name>.py download course <course_url_prefix> <app_name> <app_server_name> <archive_path>
+}}}
 
-3. Change the section that starts {{{- kind: Student}}} to remove the information about all properties other than the email address. That is:
-<pre>
-- kind: Student
-  connector: csv
-  property_map:
-    - property: __key__  
-      external_name: email
-      export_transform: datastore.Key.name</pre>
+In our example above, we named our script {{{gcbpaths.py}}}, which calls {{{etl.py}}}. Here is the description of the {{{etl.py}}} command.
 
-4. Run the following commands:
-<pre>
-cd ~/mycourse/data
-appcfg.py download_data --config_file=~/bulkloader.yaml  --filename=~/student.csv --kind=Student --url=http://localhost:8080/remote_api
-</pre>
+|| *Options and Arguments* || *Description* ||
+|| -h || Get help on the {{{etl.py}}} command. ||
+|| --datastore_types || When the type is {{{datastore}}}, this option specifies a comma-separated list of datastore model types to process. All models are processed by default.  Models are Google app engine db.Model subclass instances. They contain the data in the app's datastore. You can tell which type a model is by its name in the datastore. ||
+|| --log_level {DEBUG,ERROR,INFO,WARNING} || Choose one error level. Specifies the log file messaging level. ||
+|| --batch_size || Specifies the number of results to attempt to retrieve per batch. ||
+|| download,upload || Choose either {{{download}}} or {{{upload}}}. Download will download (export) files out of Course Builder. Upload will upload (import) files into Course Builder. ||
+|| course,datastore || Choose either {{{course}}} or {{{datastore}}}. Specifies the "type" you are downloading. ||
+|| course_url_prefix || The URL where the lesson is located. ||
+|| application_id || The name of your app. ||
+|| server || The fullname of the server that is hosting your app. ||
+|| archive_path || The path and filename of the exported files, which will be compressed. ||
 
-For data analysis, you may choose to download other subsets of the Student data. To do so, change {{{~/bulkloader.yaml}}} to remove just the information you do not want.
+It is best to use this command from the root of your Course Builder installation. In the following example, the Course Builder installation is at {{{/Users/sammich/coursebuilder}}}:
+  # {{{cd /Users/sammich/coursebuilder}}}
+  # {{{python tools/etl/gcbpaths.py download course /physics zabaione zabaione.appspot.com ./physics.zip}}}
 
-=== Types of data available ===
+You would see a file called {{{physics.zip}}} in the current directory, {{{/Users/sammich/coursebuilder}}}.
 
-The following tables describe the data Course Builder stores for your course. Course Builder stores several kinds of data, most important sets being: Student, !StudentAnswersEntity and !EventEntity.
+Although you should feel free to view and make copies of data exported from Course Builder, you should not edit them if you want to load them back into Course Builder. If you do, you may receive an immediate upload error or pass uploading and create downstream errors that you must troubleshoot on your own. If you want to upload data back into Course Builder, you must upload exactly what you downloaded.
 
-Student table contains information about students, their enrollment status and assessment scores. !StudentAnswersEntity table contains the most recent detailed answers given by a student for each assessment. !EventEntity table contains system level events and historical data about each activity or assessment completed. Event recording is off by default and can be enabled in Admin > Settings.
+== Download datastore information ==
+The following command exports information, like student data, from the datastore:
+
+{{{
+python tools/etl/gcbpaths.py download datastore <course_url_prefix> <app_name> <app_server_name> <archive_path> --datastore_types <model1,model2>
+}}}
+
+It is best to use this command from the root of your Course Builder installation. In the following example, the Course Builder installation is at {{{/Users/sammich/coursebuilder}}} and the command downloads student information:
+  # {{{cd /Users/sammich/coursebuilder}}}
+  # {{{python tools/etl/gcbpaths.py download datastore /poetry bbq bbq.appspot.com ./poetry.zip --datastore_types Student}}}
+
+You would see a file called {{{poetry.zip}}} in the current directory, {{{/Users/sammich/coursebuilder}}}. You can also download multiple models:
+
+{{{python tools/etl/gcbpaths.py download datastore /poetry bbq bbq.appspot.com ./poetry.zip --datastore_types Student,StudentAnswersEntity}}}
+
+== Consider time and costs ==
+
+Usually, the course file will have a fairly small amount of data. Also, the amount of data does not change based on course enrollment.
+
+Student entities, however, are different. If your course has a very large number of students, the exporting of data can take hours to run and may incur [https://developers.google.com/appengine/docs/billing Google App Engine costs]. Also note that even if your data is relatively small in size, frequent downloads could also incur costs.
 
 
 || [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/evaluate-course-efficacy Ask questions in the forum] ||
