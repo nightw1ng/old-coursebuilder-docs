@@ -18,26 +18,27 @@ See [ExportCourseData#Path_settings Path settings] for more information on your 
 Similar to downloading course information, create a script that contains your correct paths and calls the {{{etl.py}}} command. Although you should feel free to view and make copies of data exported from Course Builder, you should not edit them if you want to load them back into Course Builder. If you do, you may receive an immediate upload error or pass uploading and create downstream errors that you must troubleshoot on your own. If you want to upload data back into Course Builder, you must upload exactly what you downloaded.
 
 {{{
-python tools/etl/<your_script_name>.py upload course <course_url_prefix> <app_name> <app_server_name> <archive_path>
+python tools/etl/<your_script_name>.py upload course <course_url_prefix> <app_name> <app_server_name> --archive_path <archive_path>
 }}}
 
 In our downloading course data example, we named our script {{{gcbpaths.py}}}, which calls {{{etl.py}}}. Here is the description of the {{{etl.py}}} command.
 
 || *Options and Arguments* || *Description* ||
 || -h || Get help on the {{{etl.py}}} command. ||
-|| --datastore_types || When the type is {{{datastore}}}, this option specifies a comma-separated list of datastore model types to process. All models are processed by default.  Models are Google app engine db.Model subclass instances. They contain the data in the app's datastore. You can tell which type a model is by its name in the datastore. ||
-|| --log_level {DEBUG,ERROR,INFO,WARNING} || Choose one error level. Specifies the log file messaging level. ||
+|| --archive_path || The path and filename of the exported files, which will be compressed. ||
 || --batch_size || Specifies the number of results to attempt to retrieve per batch. ||
-|| download,upload || Choose either {{{download}}} or {{{upload}}}. Download will download (export) files out of Course Builder. Upload will upload (import) files into Course Builder. ||
-|| course,datastore || Choose either {{{course}}} or {{{datastore}}}. Specifies the "type" you are downloading. ||
+|| --datastore_types || When the type is {{{datastore}}}, this option specifies a comma-separated list of datastore model types to process. All models are processed by default.  Models are Google app engine db.Model subclass instances. They contain the data in the app's datastore. You can tell which type a model is by its name in the datastore. ||
+|| --job_args ||  ||
+|| --log_level {DEBUG,ERROR,INFO,WARNING} || Choose one error level. Specifies the log file messaging level. ||
+|| download, run, upload || Choose either {{{download}}}, {{{run}}}, or {{{upload}}}. Download will download (export) files out of Course Builder. Upload will upload (import) files into Course Builder. ||
+|| type || Choose either {{{course}}} or {{{datastore}}}. Specifies the "type" you are downloading. ||
 || course_url_prefix || The URL where the lesson is located. ||
 || application_id || The name of your app. ||
 || server || The fullname of the server that is hosting your app. ||
-|| archive_path || The path and filename of the exported files, which will be compressed. ||
 
 It is best to use this command from the root of your Course Builder installation. In the following example, the Course Builder installation is at {{{/Users/sammich/coursebuilder}}}:
   # {{{cd /Users/sammich/coursebuilder}}}
-  # {{{python tools/etl/gcbpaths.py upload course /physics zabaione zabaione.appspot.com ./physics.zip}}}
+  # {{{python tools/etl/gcbpaths.py upload course /physics zabaione zabaione.appspot.com --archive_path ./physics.zip}}}
 
 You would see a file called {{{physics.zip}}} in the current directory, {{{/Users/sammich/coursebuilder}}}.
 
