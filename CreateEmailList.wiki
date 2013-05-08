@@ -9,7 +9,7 @@ Instead, you have several options:
 
   * If your course has fewer than 100 students, you can send mail from your Google App Engine application for free. If you want to send more than 100 emails in a single day, you would have to upgrade to a paid Google App Engine account. See the official [https://developers.google.com/appengine/docs/python/mail/sendingmail Google App Engine documentation].
 
-  * Alternatively, you can use Google Groups to create an announcement email alias. [#Include_subscription_link Include a subscription link] to your group on the page you display when a student successfully [CreateRegistration registers].
+  * Alternatively, you can use Google Groups to create an announcement email alias. [#Include_subscription_link Include a subscription link] to your group on the page you display when a student successfully [CreateRegistration registers]. When you create or edit an announcement, you have the option of sending it to the announcement alias.
 
 This page discusses how to create an announcement alias using Google Groups and how to suggest to your students that they subscribe to that alias.
 
