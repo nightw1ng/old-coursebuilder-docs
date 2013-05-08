@@ -1,0 +1,62 @@
+#summary Describes how to let students grade each other's work.
+
+<h1>Peer Review of Assignments</h1>
+Peer review is a way for students to grade each other's finished work. The item to be peer-reviewed can be textual input, like a paragraph or essay, or multiple choice questions. Unlike activities and assessments, there is no concept of automatic scoring since the students themselves provide the scoring or feedback.
+
+There are two parts to a peer review assignment: submission and review. A student submits an assignment to be peer reviewed and in turn reviews one or more assignments from peers. When you enable peer review, the student must complete the review(s) in order to complete the course.
+
+<wiki:toc max_depth="2" />
+
+== Submission ==
+Students know a particular assignment is peer reviewed from the course outline because there will always be an attached sub-heading called *Review peer assignments*. Of course, when you create the assignment you can also put "Peer Review" or some such language directly in the title of the assignment. 
+
+Students complete a peer review assignment like any activity or assessment. When the student is ready to submit answers, she clicks the *Submit Assignment* button. Students cannot alter or retract submitted assignments. They can see their submitted assignments by clicking on them from the course outline. If students answer questions and navigate away from the page without clicking the *Submit Assignment* button, answers will not be saved and they must start from the beginning of that assignment.
+
+Once an assignment is submitted, it is placed in a pool with other submitted assignments. Assignments that have a smaller number of finished reviews have priority and are sent out for peer review ahead of those assignments with more finished reviews. More specifically, winners of tiebreakers are determined in the following priority (with the first being the highest priority):
+
+ # smaller number of finished reviews
+ # smaller number of reviews currently assigned to other students
+ # earlier submission time
+    
+== Reviews ==
+After students submit assignments, they must review assignments by their peers. To do so, students can click *Review peer assignments* from the course outline or go to an assignment page and click *Go to the review dashboard* at the bottom.
+
+Students must request assignments to review. To do so, they should click *Review a new assignment*. An anonymous peer's assignment appears. After or during grading, students can click *Save Draft*. This will not submit answers. Course Builder allows draft mode with the ability to request additional assignments to review in case students want to calibrate the grades they give. This may help students determine whether they have graded too harshly or easily on the first assignment compared to subsequent assignments.
+
+Course authors specify an "expiration time", which is a time horizon in which the student must begin reviewing an assignment after receipt. If the student does not begin the review, that assignment will be available for others to review although it will still be assigned to the original reviewer. When students are ready to submit, they can click *Submit Review*. Only upon submission will students satisfy their review quota. Like submitting assignments, students cannot alter or retract reviews after submission. Students can see the status of their reviews by going to the review dashboard.
+
+The course author will specify the minimum number of assignments a student must review to receive credit for the assignment. While reviewing an assignment, a student can request to review additional assignments, without submitting current ones under review. However, once the student has requested the minimum number of assignments specified by the course author, he must then submit all assignments before he can request any more. 
+
+Example: The course author specifies that students must review a minimun of five assignments to receive full credit. A student finishes her assignment and submits it. She goes to the review dashboard and requests an assignment to review. She reviews the first assignment and then saves it as a draft. She requests four more assignments. She must now submit, not just put assignments in draft mode, all five assignments before she can request a sixth assignment. 
+
+== Peer review dashboard ==
+Course authors can see submitted assignments and reviews as well as delete reviews from *Dashboard > Peer Review*.
+
+ * In the *Assignment Name:* dropdown menu, select the peer review assignment you want to view.
+ * Type the specific student's email address in the *Student email address:* field and click *Show Reviews Received*. You now have the particular student's submitted assignment as well as assignments received by her, if any. Students cannot see reviews in draft mode; only authors can see their reviews in draft mode.
+
+===Assign and delete reviews ===
+The course author may want to manually assign reviews in some cases. For example, an instructor may believe that a  particular assignment merits review directly from one of the teacher's assistants. To manually assign a reviewer, add the reviewer's email in the *Add new reviewer:* field and click the *Add New Reviewer* button. Reviews assigned this way will not be time expired.
+
+The course author may also want to delete a particular review. To do so, click the *Remove This Review* button to the right of the review in question. Note that deletion notifications are not sent to those reviewers whose reviews are deleted.
+
+=== Create new peer review assignment ===
+You add peer review assignments like you add assessments. To create a new peer review assignment, go to *Dashboard > Outline > Add Assessment*. The one change you will make compared to non-peer graded assessments is in the *Assessment Details* text box. This text box conforms to YAML indentation, so you must be careful of errant spaces. Here are the explanation of the keys and their values:
+
+ * *grader*: by default this value is {{{auto}}}, which means Course Builder will grade it according to the course author's pre-populated answers. The other values is {{{human}}}, which means students will grade the reviews. 
+ * *matcher*: the only possible value is {{{peer}}}, which means that assignments will automatically be assigned to a pool.
+ * *review_due_date*: The UTC (coordinated universal time) date, in yyyy-mm-dd hh:mm format, by which the review must be submitted. Reviews in the "draft" state will not count. 
+ * *review_min_count*: The minimum number of reviews a student must complete to receive credit for the assignment and to view the reviews they have received. Students can see any of the reviews they receive as soon as they have submitted the number of reviews specified in *review_min_count*; they do not have to wait for *review_due_date*.
+ * *review_window_mins*: If a student requests a review and does not submit or put it in draft mode in this number of minutes, the review will return to the pool so that others can request to review it. The review will remain assigned to the original reviewer, however another student may request to review it before the original author gets to it.
+ * *submission_due_date*: The date UTC (coordinated universal time), in yyyy-mm-dd hh:mm format, that the assignment is due. This date must be earlier than the {{{review_due_date}}}.
+ 
+ Here is an example of *Assessment Details*:
+ {{{
+grader: human
+matcher: peer
+review_due_date: 2014-05-21 12:00
+review_min_count: 2
+review_window_mins: 60
+submission_due_date: 2014-05-14 12:00
+ }}}
+
