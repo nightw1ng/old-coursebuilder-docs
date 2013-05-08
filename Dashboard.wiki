@@ -13,7 +13,6 @@ Access the Dashboard from the menu bar. At the very top of every Dashboard page,
 ==Outline==
 This is your default landing page when you enter the Dashboard.  This page shows:
 
-  * *Data Files.* Shows the pathname of the lessons and unit files used in your course.
   * *Pages.* Links to your course announcement page and the preview page.
     * Import. Import settings and data from another course on the same Google App Engine instance. For example, you can import the example Power Searching course into your newly made course.
     * Add Assessment. Create new assessments directly online through the assessment editor. See [CreateAssessments#Writing_assessments Writing Assessments] for more information on creating and editing courses.
@@ -22,8 +21,8 @@ This is your default landing page when you enter the Dashboard.  This page shows
     * Add Lesson. Create new lessons and activities. The newly created lessons show in the *Course Outline* section. The newly created activities show up in the corresponding lesson pages.
     * Organize. Change the order of your course. You can change the order in which your students are presented with units, lessons, and assessments. You can change the order of your assessments, units, and the lessons within each unit through the up and down buttons. However, you cannot move lessons from one unit into another unit. For example, lesson 2.1 cannot "jump into" unit 1.
   * *Course Outline.* Outline of the course. It is ordered and structured exactly the way students see it. Each hyperlink goes to the corresponding course page.
-  * *Debug.* Read-only information regarding your data files.
-
+  * *Data Files.* Shows the file and pathname of the data file(s) that contains lesson information for the course. If you created courses through the browser, these data files are in the Google App Engine datastore. You can use the [ExportCourseData downloading] feature to download them to localhost. 
+  
 ==Assets==
 This page shows all the elements that are used to construct your course.
 
@@ -34,16 +33,26 @@ This page shows all the elements that are used to construct your course.
  * *!JavaScript Libraries.* Pathname to the inherited !JavaScript libraries.
  * *View Templates.* Pathname to the inherited templates.
 
-==Settings ==
+==Settings==
 The Settings section shows how your course is customized in the {{{course.yaml}}} file described in [CourseSettings Customize Course Settings]. If you want to know why certain elements are named the way they are, this section is a good place to start.
 
-In the *About this Course* section, you see the location of the {{{course.yaml}}} file from which the customizations are originating.  The Datastore Namespace refers to the particular name assigned to your course in the Google App Engine datastore. This is helpful in those cases when multiple courses are deployed from a single Google App Engine instance.
+In the *About the Course* section, you see the location of the {{{course.yaml}}} file from which the customizations are originating.  The Datastore Namespace refers to the particular name assigned to your course in the Google App Engine datastore. This is helpful in those cases when multiple courses are deployed from a single Google App Engine instance.
 
-The *Contents of course.yaml file* section is an exact representation of your {{{course.yaml}}} file. As a course author, you may not have access to this file like the administrator. Seeing the contents of this section can help you understand your course settings and communicate with the administrator viewing the same file. To edit {{{course.yaml}}} directly, click the *Edit* button.
+The *Contents of course.yaml file* section is an exact representation of your {{{course.yaml}}} file. As a course author, you may not have access to this file like the administrator. Seeing the contents of this section can help you understand your course settings and communicate with the administrator viewing the same file. To edit {{{course.yaml}}} directly, click the *Edit* or *Advanced Edit* button. The *Advanced Edit* shows a text box with your {{{course.yaml}}} settings. If you edit here, you must be careful with YAML spacing or you will get an error. The *Edit* button is a form based approach to editing your {{{course.yaml}}} settings. 
 
-When you create a [CreateNewCourse new course], this section will be mostly empty except for some default text and the new course name. New courses are by default private, which means students cannot view them. To make your course public, change the {{{now_available:}}} assignment to {{{True}}}. That is, the line should look like:
+<img src="http://wiki.course-builder.googlecode.com/git/images/dashboard-course.png" height=788 width=600 />
+
+You do not need to mind the YAML spacing and some keys are conveniently represented as checkboxes you can check or uncheck.
+
+When you create a [CreateNewCourse new course], this section will be mostly empty except for some default text and the new course name. New courses are by default private, which means students cannot view them. To make your course public, change the {{{now_available:}}} assignment to {{{True}}}. That is, in the *Advanced Edit* view the line should look like:
 
 {{{now_available: True}}}
 
-==Students ==
-This page shows statistics regarding the students, including enrollment and assessments.  In the Assessment section you can view the number of students who completed a particular assessment and the average score of all those who have done so. The "Re-Calculate Now" button will refresh all statistics on the page. Note that the time it takes to recalculate depends on the number of students you have.
+while in the *Edit* view the *Make Course Available* checkbox should be checked.
+
+==Analytics==
+This page shows statistics regarding the students, including enrollment, assessments, and peer review analytics.  In the Assessment section you can view the number of students who completed a particular assessment and the average score of all those who have done so. In the Peer Review section, you can see bar charts showing the number of assignments with a particular number of reviews. For example, there are two assignments with zero reviews or one assignment with two reviews.
+
+<img src="http://wiki.course-builder.googlecode.com/git/images/dashboard-analytics.png" height=788 width=600 />
+
+The *Re-Calculate Statistics* button will refresh all statistics on the page. Note that the time it takes to recalculate depends on the number of students you have.
