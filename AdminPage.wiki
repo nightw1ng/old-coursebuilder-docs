@@ -9,9 +9,9 @@ The Administrator Page contains information regarding Google App Engine deployme
 The menu band color here is different than that of the Dashboard to visually differentiate between the roles of administrator and course author. At the very top of every Administrator page, you will see breadcrumbs to aid your navigation.
 
 The Administrator Page contains the following sections: 
-  * Courses: Lists all the courses for which the administrator has responsibility. 
-  * Settings: Manage administrators, whether to record activities, memcache, the update interval, [CreateNewCourse new courses], and [Security security]. 
-  * Metrics: Lists and gives the values of various in-process performance counters. 
-  * Deployment: Displays app and server settings for a particular course so the administrator does not have go to the individual files on the instance. 
-  * Console: Provides an area where you can write and test Python code within the Google App Engine environment. 
-  * Google App Engine: Clicking on this link takes you directly to the Google App Engine Dashboard outside of Course Builder.
+  * *Courses*: Lists all the courses for which the administrator has responsibility. 
+  * *Settings*: Manage administrators, counters, record activities, memcache, the update interval, [CreateNewCourse new courses], and [Security security]. 
+  * *Metrics*: Lists and gives the values of various in-process performance counters. 
+  * *Deployment*: Displays app and server settings for a particular course so the administrator does not have go to the individual files on the instance. 
+  * *Console*: Provides an area where you can write and test Python code within the Google App Engine environment. 
+  * *Google App Engine*: Clicking on this link takes you directly to the Google App Engine Dashboard outside of Course Builder.
