@@ -62,9 +62,9 @@ If you are unfamiliar with GAE, but know something about cloud computing, read [
 Choose the appropriate GAE SDK version with the appropriate Course Builder version. The following table illustrates the correct pairings:
 
 || *Course Builder Version* || *Platform* || *Google App Engine SDK Version* ||
-|| 1.4.0 || [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python Windows] || 1.7.7 ||
-|| 1.4.0 || [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python Mac] || 1.7.7 ||
-|| 1.4.0 || [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python Linux] || 1.7.7 ||
+|| 1.4.0 || [http://code.google.com/p/googleappengine/downloads/detail?name=GoogleAppEngine-1.7.7.msi&can=1&q= Windows] || 1.7.7 ||
+|| 1.4.0 || [http://code.google.com/p/googleappengine/downloads/detail?name=GoogleAppEngineLauncher-1.7.7.dmg&can=1&q= Mac] || 1.7.7 ||
+|| 1.4.0 || [http://code.google.com/p/googleappengine/downloads/detail?name=google_appengine_1.7.7.zip&can=1&q= Linux] || 1.7.7 ||
 || All versions earlier than, and not including, 1.4.0 || [http://code.google.com/p/googleappengine/downloads/detail?name=GoogleAppEngine-1.7.0.msi&can=1&q=1.7.0 Windows] || 1.7.0 ||
 || All versions earlier than, and not including, 1.4.0 || [http://code.google.com/p/googleappengine/downloads/detail?name=GoogleAppEngineLauncher-1.7.0.dmg&can=1&q=1.7.0 Mac] || 1.7.0 ||
 || All versions earlier than, and not including, 1.4.0 || [https://code.google.com/p/googleappengine/downloads/detail?name=google_appengine_1.7.0.zip&can=1&q= Linux]  || 1.7.0 ||
