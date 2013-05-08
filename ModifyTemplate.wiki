@@ -45,6 +45,11 @@ You change this header and footer once for all pages that are visible to an unre
 
 You can, of course, make these pages look more different.
 
+== Deleting the Course Builder footer text ==
+On [AdminPage Administrator] and [Dashboard Dashboard] pages, there is footer text that states "Powered by Course Builder." You are not obligated to keep this and you may delete it.
+  * For the Administrator page, go to {{{/modules/admin/view.html}}} and delete the text in the HTML.
+  * For the Dashboard page, go to {{{/modules/dashboard/view.html}}} and delete the text in the HTML.
+
 == Testing changes ==
 
 Changes you make to any file in the {{{views}}} directory appear automatically in your running development server. That is, after you make a change to one of these files, simply load (or reload) a page that uses that view and the change appears.
