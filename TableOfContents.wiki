@@ -16,6 +16,7 @@
       * [CreateLessons Create Lessons]
       * [CreateActivities Create Activities]
       * [CreateAssessments Create Assessments]
+      * [PeerReview Peer Review]
       * [RunMultipleCourses Run Multiple Courses]
       * [Accessibility Accessibility]
       * [I18n Internationalization]
@@ -28,6 +29,7 @@
       * [CreateNewCourse Create New Courses]
       * [URLMap URL Mapping]
       * [Security Security]
+    * [CustomJob Create Custom Jobs]
     * [Upgrade Upgrade Course Builder]
     * [ReleaseNotes Release Notes]
   * Course Authors
