@@ -44,9 +44,9 @@ The app uses three files to render this page:
 
 The second two lines of the header, the vertical navigation, and the content area are defined in {{{views/unit.html}}}. If you like the look of those areas, there's nothing for you to change in {{{views/unit.html}}}. 
 
-=== Lesson content ===
+== Create lesson content from the development server ==
 
-{{{data/lesson.csv}}} contains information about each lesson, such as the video's URL and the lesson's title. The first line describes the content of the other lines:
+When you create lesson content from your development server, like your local machine, then you will edit the {{{lesson.csv}} file located in the {{{/data}}} directory. {{{data/lesson.csv}}} contains information about each lesson, such as the video's URL and the lesson's title. The first line describes the content of the other lines:
   {{{unit_id,unit_title,lesson_id,lesson_title,lesson_activity,lesson_activity_name,lesson_notes,lesson_video_id,lesson_objectives}}}
 
 Each line after that contains the information for an individual lesson, such as: 
@@ -80,6 +80,30 @@ If you change the content of the {{{data/lesson.csv}}} file, you must load the c
 Changes you make to any file in the {{{views}}} directory appear automatically in your running development server. That is, after you make a change to one of these files, simply load (or reload) a page that uses that view and the change appears.
 
 To see how to make these changes in your live, deployed course, see [UploadCode Deploy Your App].
+
+== Create lesson content from the browser ==
+
+When you create lessons from the browser, the data gets stored in Google App Engine's datastore. You can use the [ExportCourseData download] feature to download it to your local machine.
+
+To create a lesson from your browser, go to *Dashboard > Outline* and click the *Add Lesson* button from the *Pages* section. Fill out the forms on the page and click *Save*. You have the option of creating the lesson but keeping it private (not viewable to students).
+
+
+http://wiki.course-builder.googlecode.com/git/images/dashboard-lesson.png
+
+You edit lessons that already exist in this page as well. Change any details you would like and click *Save*.
+
+In the *Objectives* textbox, you create the content for your lesson. For example, you can add an image, !YouTube video, Google Doc, or Google Spreadsheet. You can even add a link to your Group forum as well as an activity. To facilitate the addition of these items, click the *Rich Text* button.
+
+http://wiki.course-builder.googlecode.com/git/images/dashboard-lesson-richtxt.png
+
+Under *Insert Item* in the toolbar, you see three buttons where you can:
+
+  * Add a HTML link
+  * Add an image
+  * Add various components, like !YouTube videos, your Group forum, and Google Docs. After you add a component, a placeholder icon shows. When you save and go to the lesson, the component itself shows.
+  
+You can add multiple components or mix and match multiple images with multiple components.
+
 
 == Change page layout ==
 
