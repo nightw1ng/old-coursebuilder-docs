@@ -58,8 +58,6 @@ Create a Python script that defines all the paths and then calls {{{etl.py}}}. A
   # Import Course Builder's {{{etl.py}}}: {{{import etl.py}}}
   # Add code to wrap the command line argument parser of {{{etl.py}}}:
   # Save the file with the {{{.py}}} extension. You must save this file to {{{/tools/etl}}}.
-  # Open {{{etl.py}}} in a plain text editor. Add a new line that refers to the file you just created, without the {{{.py}}} extension, in the import section of the file.
-  # Save the file.
 
 Here is an example of a completed Python script. The coursebuilder installation is in a directory called {{{/Users/sammich/coursebuilder}}}.
 
