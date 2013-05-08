@@ -50,7 +50,7 @@ To add a new assessment:
      questionsList: questionsArray
   }
   }}}
- # Change the status of the assessment to *Published*.
+ # Change the status of the assessment to *Public*.
  # Click Save
  
 
