@@ -4,7 +4,7 @@
 
 <wiki:toc />
 
-== What's a "shell or command prompt"? ==
+== What is a shell or command prompt? ==
 
 In several places, you're asked to open a "shell or command prompt" and then enter some arcane command.
 
