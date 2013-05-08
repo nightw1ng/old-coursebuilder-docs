@@ -4,6 +4,33 @@
 
 <wiki:toc />
 
+=Upgrade from 1.3.1 to 1.4.0=
+Before you deploy to Google App Engine with 1.4.0, you must update your index. First, use the same upgrade procedures as [Upgrade#Upgrade_from_1.2.x_to_1.3.0 upgrading to 1.3.0 from 1.2.x]. In those instructions:
+  * Replace 1.2.x with 1.3.1 
+  * Replace 1.3.0 with 1.4.0
+
+Next, before you deploy to Google App Engine:
+  # In the [FAQ#What_is_a_shell_or_command_prompt? terminal], go to your Course Builder root directory.
+  # Use the [UploadCode#Upload_(or_deploy)_your_app appcfg.py] command to update your index by typing (do not forget the period at the end): {{{appcfg.py update_indexes .}}}
+
+You are prompted for your email and application-specific password. There are no messages from the terminal if you are successful. If you do not build/update your index, you see Google App Engine errors until you do so. 
+
+You can track the statuses of your applications' indices by clicking on the *Datastore Indexes* menu item in the Google App Engine admin console.
+
+<img src="http://wiki.course-builder.googlecode.com/git/images/datastore-indexes-menu.png" width="600">
+
+While your indices are building, you see a screen similar to the following: 
+
+<img src="http://wiki.course-builder.googlecode.com/git/images/datastore-indexes-building.png" width="600">
+
+The time an index takes to build depends on the amount of data being indexed. For many users this will be fast. However, if you have a lot of data in the datastore you may have to wait for some time, up to days, for the indices to finish building. Plan ahead if you have lots of data. You only need to do this during a Course Builder upgrade.
+
+When indices are ready to serve, you see a screen that looks like the following:
+
+<img src="http://wiki.course-builder.googlecode.com/git/images/datastore-indexes-serving.png" width="600">
+
+The important point is the text under *Status*. When it says *Serving*, you should no longer experience errors.
+
 =Upgrade from 1.3.0 to 1.3.1=
 Please use the same upgrade procedures as [Upgrade#Upgrade_from_1.2.x_to_1.3.0 upgrading to 1.3.0 from 1.2.x]. In those instructions:
   * Replace 1.2.x with 1.3.0 
