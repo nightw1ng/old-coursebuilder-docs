@@ -102,8 +102,7 @@ Under *Insert Item* in the toolbar, you see three buttons where you can:
   * Add an image
   * Add various components, like !YouTube videos, your Group forum, and Google Docs. After you add a component, a placeholder icon shows. When you save and go to the lesson, the component itself shows.
   
-You can add multiple components or mix and match multiple images with multiple components.
-
+You can add multiple components or mix and match multiple images with multiple components. Here is a video that shows how to add components: [http://www.youtube.com/watch?v=EpQqNkRdcck Add course components (4:48)] 
 
 == Change page layout ==
 
