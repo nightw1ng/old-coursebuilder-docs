@@ -96,8 +96,10 @@ A question can be one of three types:
 The code for a single multiple-choice question looks like the following example:
 
 {{{
-{questionType: 'multiple choice',
- choices: [
+var activity = [
+
+  {questionType: 'multiple choice',
+  choices: [
     ['[yarnbombing news article]', false, 
       'Try again. This is a risky approach, since many news articles do not call themselves \'news articles\' on the page.'],
      ['[yarnbombing] then click News in the left menu', true,
@@ -106,8 +108,10 @@ The code for a single multiple-choice question looks like the following example:
       'Try again. We want to avoid including a lot of extra, confusing words into a query.'],
      ['[what are some recent publications about yarnbombing]', false,
       'Try again. Stating what you want in this way, introduces a lot of extra words into a query.']
- ]
-}
+    ]
+  }
+
+];
 }}}
 
 This code represents a single !JavaScript object with two required attributes. The first attribute is {{{questionType}}}. The value {{{'multiple choice'}}} indicates that this answer is for one multiple-choice question. The second attribute is {{{choices}}}. The value of this attribute is an array of the possible answers to the question and what to do with each.
@@ -130,29 +134,25 @@ If students choose the correct answer, the code also highlights the line contain
 Sometimes you want to group a set of multiple-choice questions so that students can only check their answers after answering all of the questions in the group. You can do this with code that looks like the following example:
 
 {{{
-{questionType: 'multiple choice group',
- questionsList: [ 
-    {
-     questionHTML: '<b>1.</b> In the United States, the state of California is known for its earthquakes. Have there been earthquakes in Iowa?<br/>',
-     choices: ['Yes', 'No'],
-     correctIndex: 0
-    },
+var activity = [
 
-    {
-     questionHTML: '<b>2.</b> Has there ever been an earthquake in Maine?<br/>',
-     choices: ['Yes', 'No'],
-     correctIndex: 0
-    },
+  {questionType: 'multiple choice group',
+    questionsList: [ 
+      {questionHTML: '<b>1.</b> In the United States, the state of California is known for its earthquakes. Have there been earthquakes in Iowa?<br/>',
+        choices: ['Yes', 'No'],
+        correctIndex: 0},
+      {questionHTML: '<b>2.</b> Has there ever been an earthquake in Maine?<br/>',
+        choices: ['Yes', 'No'],
+        correctIndex: 0},
+      {questionHTML: '<b>3.</b>Which state (Iowa or Maine) had an earthquake more recently?<br/>',
+        choices: ['Iowa', 'Maine'],
+        correctIndex: 1}
+    ],
+    allCorrectOutput: 'Hopefully you used Control-F to find the information quickly.',
+    someIncorrectOutput: 'Remember, you can use Control-F to find information like this more quickly. Please try again.'
+  }
 
-    {
-     questionHTML: '<b>3.</b>Which state (Iowa or Maine) had an earthquake more recently?<br/>',
-     choices: ['Iowa', 'Maine'],
-     correctIndex: 1
-    }
- ],
- allCorrectOutput: 'Hopefully you used Control-F to find the information quickly.',
- someIncorrectOutput: 'Remember, you can use Control-F to find information like this more quickly. Please try again.'
-}
+];
 }}}
 
 This code represents a single !JavaScript object with four required attributes:
@@ -217,11 +217,16 @@ The final type of answer is a free text area. Use this answer type when your que
 The code uses a [https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions regular expression] to verify the answer. Regular expressions can be notoriously difficult for a programmer to get right. For this reason, you need to be very careful with the wording of any question that takes a free text answer. Your regular expression needs to account for reasonable variations in student responses. The code for a simple free text answer looks as follows:
 
 {{{
+var activity = [
+
   { questionType: 'freetext',
     correctAnswerRegex: /white?/i,
     correctAnswerOutput: "Correct--Many charts, tables, and graphs have white backgrounds, so filtering for white images helps you find them faster.",
     incorrectAnswerOutput: "Try again. Consider what color would be dominant in images of charts, tables, and graphs. Look at the results above. Each of those sources is traditionally printed on paper.",
-    showAnswerOutput: "Our search expert says: I would click on white in the color grid, since many charts, tables, and graphs have white backgrounds." },
+    showAnswerOutput: "Our search expert says: I would click on white in the color grid, since many charts, tables, and graphs have white backgrounds." 
+  }
+
+];
 }}}
 
 This code represents a single !JavaScript object with several attributes. The first two are required; the others are optional.
