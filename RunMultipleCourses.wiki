@@ -20,7 +20,7 @@ If you have existing courses that you want to consolidate into one instance, fir
 
 Instead of using the top-level {{{assets}}}, {{{data}}}, and {{{views}}} directories, when multiple courses share an instance, they use a new top-level directory,  _*{{{APPPATH}}}*_{{{/courses}}}.
 
-This directory contains a separate subdirectory for each course. Each of _those_ subdirectories contains {{{assets}}}, {{{data}}}, and {{{views}}} directories for that one course. Those subdirectories must contain all of the asset, data, and view files for the given course.
+This directory contains a separate subdirectory for each course. Each of _those_ subdirectories contains {{{assets}}}, {{{data}}}, and {{{views}}} directories and the {{{course.yaml}}} file for that one course.
 
 For example, assume that you have two courses, Algebra and Calculus. You would have files and directories such as the following:
 
@@ -28,11 +28,13 @@ For example, assume that you have two courses, Algebra and Calculus. You would h
   {{{...}}} <br>
   _*{{{APPPATH}}}*_{{{/courses/}}} <br>
   _*{{{APPPATH}}}*_{{{/courses/algebra/}}} <br>
+  _*{{{APPPATH}}}*_{{{/courses/algebra/course.yaml}}} <br>
   _*{{{APPPATH}}}*_{{{/courses/algebra/assets/...}}} <br>
   _*{{{APPPATH}}}*_{{{/courses/algebra/data/...}}} <br>
   _*{{{APPPATH}}}*_{{{/courses/algebra/views/...}}} <br>
   {{{...}}} <br>
   _*{{{APPPATH}}}*_{{{/courses/calculus/}}} <br>
+  _*{{{APPPATH}}}*_{{{/courses/calculus/course.yaml}}} <br>
   _*{{{APPPATH}}}*_{{{/courses/calculus/assets/...}}} <br>
   _*{{{APPPATH}}}*_{{{/courses/calculus/data/...}}} <br>
   _*{{{APPPATH}}}*_{{{/courses/calculus/views/...}}} <br>
@@ -42,7 +44,7 @@ For example, assume that you have two courses, Algebra and Calculus. You would h
 
 All files and directories outside of _*{{{APPPATH}}}*_{{{/assets}}}, _*{{{APPPATH}}}*_{{{/data}}}, and _*{{{APPPATH}}}*_{{{/views}}} remain the same.
 
-If you consolidate existing courses, make a copy of one entire _*{{{APPPATH}}}*_ tree. Move the top-level {{{assets}}}, {{{data}}}, and {{{views}}} directories in that copy into an appropriately named subdirectory for that course. Then create other subdirectories for your other courses and copy their {{{assets}}}, {{{data}}}, and {{{views}}} directories into the new tree.
+If you consolidate existing courses, make a copy of one entire _*{{{APPPATH}}}*_ tree. Move the top-level {{{assets}}}, {{{data}}}, and {{{views}}} directories and {{{course.yaml}}} files in that copy into an appropriately named subdirectory for that course. Then create other subdirectories for your other courses and copy their {{{assets}}}, {{{data}}}, and {{{views}}} directories and {{{course.yaml}}} files into the new tree.
 
 == 3. Let Course Builder know about the multiple courses. ==
 
