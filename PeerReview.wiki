@@ -7,6 +7,8 @@ There are two parts to a peer review assignment: submission and review. A studen
 
 <wiki:toc max_depth="2" />
 
+A video is available explaining [http://www.youtube.com/watch?v=5ERlbCXAkDg peer review (7:38)].
+
 == Submission ==
 Students know a particular assignment is peer reviewed from the course outline because there will always be an attached sub-heading called *Review peer assignments*. Of course, when you create the assignment you can also put "Peer Review" or some such language directly in the title of the assignment. 
 

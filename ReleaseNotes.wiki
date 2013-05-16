@@ -24,9 +24,9 @@
 
   * *Google App Engine.* For version 1.4.0, you must use Google App Engine version 1.7.7. See [Download#Download_and_install_Google_App_Engine Download the Software].
     
-  * *Lessons: Adding components in Objectives.* When you create or edit lessons through the browser, you can now add various components through the rich text editor. Components include !YouTube videos, your course forum, Google Doc, Google Spreadsheet, and Course Builder Activity. See [CreateLessons#Create_lesson_content_from_the_browser Create lessons from the browser] or the video [http://www.youtube.com/watch?v=EpQqNkRdcck Add course components (4:48)].
+  * *Lessons: Adding components in Objectives.* When you create or edit lessons through the browser, you can now add various components through the rich text editor. Components include !YouTube videos, your course forum, Google Doc, Google Spreadsheet, and Course Builder Activity. See [CreateLessons#Create_lesson_content_from_the_browser Create lessons from the browser] or the [http://www.youtube.com/watch?v=EpQqNkRdcck video (4:48)].
   
-  * *Peer Review.* You can now use peer review as a grading mechanism. See [PeerReview Peer Review].
+  * *Peer Review.* You can now use peer review as a grading mechanism. See [PeerReview Peer Review] or the [http://www.youtube.com/watch?v=5ERlbCXAkDg video (7:38)].
   
   * *Updating Course Builder.* When updating Course Builder, you must now update your index. See [Upgrade Upgrade Course Builder Versions].
     
