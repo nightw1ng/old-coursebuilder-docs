@@ -4,6 +4,18 @@
 
 <wiki:toc />
 
+==Release notes for version 1.4.1==
+
+  * *Accessibility.* Added more ARIA landmarks and removed inappropriate headers.
+  
+  * *Assessments: Weighted scoring.* You can now weight questions in assessments. You can specify that some questions are "worth more points". This is also available on multiple choice questions with multiple answers.
+
+  * *Internationalization.* Added additional error strings to the i18n language module.
+
+  * *Power Searching Course.* The default _Power Searching with Google_ course had dates next to the units on the course listing page. These were removed. 
+  
+  * *Security: HTTPS.* Course Builder will now always connect through HTTPS.
+  
 ==Release notes for version 1.4.0==
 
   * *Administrator Page: Student page interactions.* You can now record student interactions for each of your Course Builder pages. This is off by default. See [AdminPage Administrator Page].
