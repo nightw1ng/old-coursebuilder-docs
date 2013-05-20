@@ -55,8 +55,8 @@ Create a Python script that defines all the paths and then calls {{{etl.py}}}. A
   # Import the Python {{{sys}}} module by typing this on the first line: {{{import sys}}}
   # Specify all the paths using Python's {{{sys.path.insert()}}}.
   # Import the argparse module: {{{import argparse}}}
-  # Import Course Builder's {{{etl.py}}}: {{{import etl.py}}}
-  # Add code to wrap the command line argument parser of {{{etl.py}}}:
+  # Import Course Builder's {{{etl.py}}}: {{{import etl}}}
+  # Add code to wrap the command line argument parser of {{{etl.py}}}.
   # Save the file with the {{{.py}}} extension. You must save this file to {{{/tools/etl}}}.
 
 Here is an example of a completed Python script. The coursebuilder installation is in a directory called {{{/Users/sammich/coursebuilder}}}.
