@@ -70,13 +70,17 @@ When students complete an assessment, they see a message about how they did. You
 
 === Preamble ===
 
-The value of the {{{preamble}}} attribute is a string that contains a set of complete HTML elements.  
-
-That is, if the string contains an open HTML tag (such as {{{<em>}}}), it must also have the corresponding close tag (such as {{{</em>}}}).  
+The value of the {{{preamble}}} attribute is a string that contains a set of complete HTML elements. That is, if the string contains an open HTML tag (such as {{{<em>}}}), it must also have the corresponding close tag (such as {{{</em>}}}). The code simply renders the HTML you enter as the first thing on the assessment page.
 
 Also note that the entire string must be on a single line. If you want it to render as multiple lines, you must include the appropriate HTML markup.
 
-The code simply renders the HTML you enter as the first thing on the assessment page. 
+The following code snippet is a preamble example:
+
+{{{
+var assessment = {
+  preamble: '<b>This assessment addresses content in units 1-6. You can try it as many times as you like. When you click "Check Answers," we will give you your score and give you a list of lessons to review.</b><br>',
+  }
+}}} 
 
 === Submitting and checking answers ===
 
@@ -91,6 +95,14 @@ Notice that this page does not tell students how they did on the assessment or g
 http://wiki.course-builder.googlecode.com/git/images/assessment-check.png 
 
 The feedback contains the student's score. If the student doesn't answer all questions correctly, the code displays which lessons the student should review to improve their score. How you specify this information is discussed in the next section.
+
+The following code snippet is an example of turning on check settings. The boolean value is case sensitive.
+
+{{{
+var assessment = {
+  checkAnswers: true  
+  }
+}}}
 
 === Questions ===
 
@@ -113,6 +125,39 @@ A question can be one of four types, depending on the third attribute:
   * {{{correctAnswerString.}}} A case-insensitive exact string match. For example, if the value is {{{"hello"}}}, then {{{Hello}}} and {{{hello}}} are both correct, but {{{HelloWorld}}} is incorrect. Use this attribute when your question requires a specific string answer.
 
   * {{{correctAnswerRegex.}}}  Free text. The value of this attribute is a regular expression capturing the correct answer. Use this attribute when your question is more open ended than a string match can handle. In this case, the code uses a [https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions regular expression] to verify the answer. Regular expressions can be notoriously difficult for a programmer to get right. For this reason, you need to be very careful with the wording of any question that takes a free text answer. Your regular expression needs to account for reasonable variations in student responses.  
+
+The following code snippet is an example of an assessment question.
+
+{{{
+var assessment = {
+
+  questionsList: [
+    {questionHTML: 'Where will the Summer Olympics of 2016 be held?',
+     choices: ['Chicago', 'Tokyo', correct('Rio de Janeiro'), 'Madrid', 'I don\'t know'],
+     lesson: '1.4'},
+
+  {questionHTML: 'In the 2012 Summer Olympics, who won the women\'s 100 meter gold medal?',
+     choices: ['Carmelita Jeter',
+               'Veronica Campbell-Brown',
+               'Blessing Okagbare',
+               correct('Shelly-Ann Fraser-Pryce'),
+               "I don't know"],
+      lesson: '4.1'},
+
+  {questionHTML: 'You decide to attend the Summer Olympics and find yourself surrounded by Portuguese speakers. How would you say, "Is there a cheap restaurant around here?" in Portuguese?"<br/>[this version of the question uses a case-insensitive string match]',
+     correctAnswerString: 'existe um rest?',
+     lesson: '4.5'},
+
+  {questionHTML: 'You decide to attend the Summer Olympics and find yourself surrounded by Portuguese speakers. How would you say, "Is there a cheap restaurant around here?" in Portuguese?"<br/>[this version of the question uses a regular expression match]',
+     correctAnswerRegex: /existe um rest?/i,
+     lesson: '4.5'},
+
+  {questionHTML: 'This is an example of a numeric freetext question. What is 3.2 + 4.7?',
+     correctAnswerNumeric: 7.9,
+     lesson: '99.99'},  
+  ],
+}
+}}}
 
 === Scoring ===
 
