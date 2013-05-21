@@ -25,6 +25,8 @@ After students submit assignments, they must review assignments by their peers. 
 
 Students must request assignments to review. To do so, they should click *Review a new assignment*. An anonymous peer's assignment appears. After or during grading, students can click *Save Draft*. This will not submit answers. Course Builder allows draft mode with the ability to request additional assignments to review in case students want to calibrate the grades they give. This may help students determine whether they have graded too harshly or easily on the first assignment compared to subsequent assignments.
 
+http://wiki.course-builder.googlecode.com/git/images/peer-review-review.png
+
 Course authors specify an "expiration time", which is a time horizon in which the student must begin reviewing an assignment after receipt. If the student does not begin the review, that assignment will be available for others to review although it will still be assigned to the original reviewer. When students are ready to submit, they can click *Submit Review*. Only upon submission will students satisfy their review quota. Like submitting assignments, students cannot alter or retract reviews after submission. Students can see the status of their reviews by going to the review dashboard.
 
 The course author will specify the minimum number of assignments a student must review to receive credit for the assignment. While reviewing an assignment, a student can request to review additional assignments, without submitting current ones under review. However, once the student has requested the minimum number of assignments specified by the course author, he must then submit all assignments before he can request any more. 
@@ -43,7 +45,55 @@ The course author may want to manually assign reviews in some cases. For example
 The course author may also want to delete a particular review. To do so, click the *Remove This Review* button to the right of the review in question. Note that deletion notifications are not sent to those reviewers whose reviews are deleted.
 
 === Create new peer review assignment ===
-You add peer review assignments like you add assessments. To create a new peer review assignment, go to *Dashboard > Outline > Add Assessment*. The one change you will make compared to non-peer graded assessments is in the *Assessment Details* text box. This text box conforms to YAML indentation, so you must be careful of errant spaces. Here are the explanation of the keys and their values:
+You add peer review assignments like you add [CreateAssessments assessments]. To create a new peer review assignment, go to *Dashboard > Outline > Add Assessment*. 
+
+For example, here is some sample code for *Assessment Content*:
+{{{
+var assessment = {
+  preamble: 'Solve the problem below by using concepts from at least three Power Search lessons. Record your experience in a Google doc.<br><br><strong>Problem</strong>: Plan a 3-day trip to a destination you have never visited. Where will you go? Why?',
+
+  questionsList: [
+    {questionHTML: 'Please write your response in a Google doc, and paste the link to the doc in the answer box below. You will need to ensure that your doc can be viewed by reviewers.',
+     correctAnswerRegex: /.*/i
+    },
+
+    {questionHTML: 'How many Power Search concepts did you use in your writeup?',
+     choices: ['0 - 2', '3', '4 -- 5', 'More than 5']},
+
+    {questionHTML: 'List the Power Search concepts you used.',
+     multiLine: true,
+     correctAnswerRegex: /.*/i
+    },
+  ],
+
+  assessmentName: 'ReviewAssessmentExample',
+  checkAnswers: false
+}
+}}}
+
+Here is some sample code *Reviewer Feedback Form*:
+{{{
+var assessment = {
+ 
+  preamble: 'When you write your review, please check that the student\'s response is relevant to the question asked. If not, answer \'No\' to the first question below.',
+
+  questionsList: [
+    {questionHTML: 'Did the student answer all parts of the question?',
+     choices: ['Yes', 'No']},
+
+    {questionHTML: 'Please provide feedback for the assignment author.',
+     multiLine: true,
+     correctAnswerRegex: /.*/i
+    }
+  ],
+  
+  assessmentName: 'ReviewAssessmentExample',
+  checkAnswers: false
+}
+
+}}}
+
+The one change you will make compared to non-peer graded assessments is in *Assessment Details*. This text box conforms to YAML indentation, so you must be careful of errant spaces. Here are the explanation of the keys and their values:
 
  * *grader*: by default this value is {{{auto}}}, which means Course Builder will grade it according to the course author's pre-populated answers. The other values is {{{human}}}, which means students will grade the reviews. 
  * *matcher*: the only possible value is {{{peer}}}, which means that assignments will automatically be assigned to a pool.
