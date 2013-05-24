@@ -4,6 +4,41 @@
 
 <wiki:toc />
 
+== Why does my course say Read-only course? ==
+The root course you upload from your local computer to your live App Engine instance will always be read-only. The root course is located at the root  URL (at yourcourse.appspot.com vs. yourcourse.appspot.com/anothercourse). To edit that root course, you would make those edits like you originally did: on your local computer or development server and then push the changes to App Engine. The new courses you make through the browser on App Engine are editable through the browser. By default, those new courses are off root (yourcourse.appspot.com/anothercourse, yourcourse.appspot.com/anothercourse2, etc.). 
+
+== How do I make my root course editable through the browser? ==
+Even though you cannot make your root course editable through the browser, you can make a new course and import everything from the root course. Next, you would [URLMap re-route] (switch) your URLs. Here are the steps to clone your root course and route the clone course to the root URL:
+
+  # In *Admin > Courses* create a [CreateNewCourse new course].
+  # [Dashboard#Outline Import] your old (read-only) course into the new course you created.
+  # In your new course, go to *Dashboard > Settings > Contents of course.yaml file* and click *Edit*.
+  # Delete all the contents in the text box.
+  # Copy all the contents of your {{{course.yaml}}} file that is now in your root course. Be careful of any extra spaces, which can cause an error.
+  # Add this line in the {{{course}}} section: 
+    {{{  
+    now_available: False
+    }}}
+    Make sure you add the indentation (two spaces) before the specification. For example,
+    {{{
+    course:
+      # Course title
+      title: 'My New Example Course'
+      
+      # Course Availability
+      now_available: False
+    }}}
+  # Click *Save*.
+  # Go to *Admin > Settings > gcb_courses_config* and click *Edit*.
+  # Make your new course the root URL and place your old course on the URL path that you specified when creating your new course:
+    # In the final value ({{{course:/:/:}}})) delete the {{{/}}} entry from the location entry. Your new course will get its data from the datastore, not from the file system.
+    # Add the datastore namespace of your new course. For example, if you specified {{{aux}}} as your Unique Name when you created your new course, your {{{gcb_courses_config}}} values will look like:   
+    {{{
+    course:/aux:/:
+    course:/::ns_aux
+    }}}
+    # Click *Save*. The page itself shows how to interpret and specify the {{{gcb_courses_config}}} values.
+
 == What is a shell or command prompt? ==
 
 In several places, you're asked to open a "shell or command prompt" and then enter some arcane command.
