@@ -4,16 +4,30 @@
 
 <wiki:toc />
 
+=Upgrade to the latest version=
+  # Make a complete copy of your old version of Course Builder and all your data.
+  # Download and install the latest version of Course Builder.
+  # Copy the {{{/assets}}} and {{{/data}}} folders from your old version to the latest version.
+  # Copy your old {{{course.yaml}}} to the latest version of Course Builder.
+  # Change your course name in {{{app.yaml}}} in the latest version of Course Builder.
+  # Change your {{{version:}}} value in {{{app.yaml}}} in the latest version.
+  # Manually transfer other modifications you made in the individual template files.
+  # Manually transfer any modifications you made to the Python .py files.
+  # In the [FAQ#What_is_a_shell_or_command_prompt? terminal], go to your new Course Builder root directory.
+  # Use the [UploadCode#Upload_(or_deploy)_your_app appcfg.py] command to update your index by typing (do not forget the period at the end): {{{appcfg.py update_indexes .}}}
+  # Type your email and application-specific password. There are no messages from Course Builder if you are successful. 
+  # [UploadCode#Upload_(or_deploy)_your_app Deploy] your new version to Google App Engine.
+
 =Upgrade from 1.3.1 to 1.4.0=
-Before you deploy to Google App Engine with 1.4.0, you must update your index. First, use the same upgrade procedures as [Upgrade#Upgrade_from_1.2.x_to_1.3.0 upgrading to 1.3.0 from 1.2.x]. In those instructions:
+Before you deploy to Google App Engine with 1.4.0, you must update your index. First, use the same upgrade procedures as [Upgrade#Upgrade_from_1.2.x_to_1.3.0 upgrading to 1.3.0 from 1.2.x] except stop before the deployment step. In those instructions:
   * Replace 1.2.x with 1.3.1 
   * Replace 1.3.0 with 1.4.0
 
 Next, before you deploy to Google App Engine:
-  # In the [FAQ#What_is_a_shell_or_command_prompt? terminal], go to your Course Builder root directory.
+  # In the [FAQ#What_is_a_shell_or_command_prompt? terminal], go to your new Course Builder root directory.
   # Use the [UploadCode#Upload_(or_deploy)_your_app appcfg.py] command to update your index by typing (do not forget the period at the end): {{{appcfg.py update_indexes .}}}
 
-You are prompted for your email and application-specific password. There are no messages from the terminal if you are successful. If you do not build/update your index, you see Google App Engine errors until you do so. 
+You are prompted for your email and application-specific password. There are no messages from Course Builder if you are successful. If you do not build/update your index, you see Google App Engine errors until you do so. 
 
 You can track the statuses of your applications' indices by clicking on the *Datastore Indexes* menu item in the Google App Engine admin console.
 
@@ -42,36 +56,10 @@ Please use the same upgrade procedures as [Upgrade#Upgrade_from_1.2.x_to_1.3.0 u
   # Copy the {{{/assets}}} and {{{/data}}} folders from 1.2.x to 1.3.0.
   # Copy your {{{course.yaml}}} from 1.2.x to 1.3.0.
   # Change your course name in {{{app.yaml}}} in 1.3.0.
+  # Change your {{{version:}}} value in {{{app.yaml}}} in 1.3.0.
   # Manually transfer other modifications you made in the individual template files.
   # Manually transfer any modifications you made to the Python .py files.
-  # In *Admin > Courses* create a [CreateNewCourse new course].
-  # [Dashboard#Outline Import] your old (read-only) course into the new course you created.
-  # In your new course, go to *Dashboard > Settings > Contents of course.yaml file* and click *Edit*.
-  # Delete all the contents in the text box.
-  # Copy all the contents of your {{{course.yaml}}} file that is now in your 1.3.0 installation into the text box. Be careful of any extra spaces, which can cause an error.
-  # Add this line in the {{{course}}} section: 
-    {{{  
-    now_available: False
-    }}}
-    Make sure you add the indentation (two spaces) before the specification. For example,
-    {{{
-    course:
-      # Course title
-      title: 'My New Example Course'
-      
-      # Course Availability
-      now_available: False
-    }}}
-  # Click *Save*.
-  # Go to *Admin > Settings > gcb_courses_config* and click *Edit*.
-  # Make your new course the root URL and place your old course on the URL path that you specified when creating your new course:
-    # In the final value ({{{course:/:/:}}})) delete the {{{/}}} entry from the location entry. Your new course will get its data from the datastore, not from the file system.
-    # Add the datastore namespace of your new course. For example, if you specified {{{aux}}} as your Unique Name when you created your new course, your {{{gcb_courses_config}}} values will look like:   
-    {{{
-    course:/aux:/:
-    course:/::ns_aux
-    }}}
-    # Click *Save*. The page itself shows how to interpret and specify the {{{gcb_courses_config}}} values.
+  # [UploadCode#Upload_(or_deploy)_your_app Deploy] your app to Google App Engine.
 
 =Upgrade from 1.1.x to 1.2.x=
   # Make a copy of your current 1.1.x version of Course Builder
