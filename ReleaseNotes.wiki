@@ -8,11 +8,9 @@
 
   * *Accessibility.* Added more ARIA landmarks and removed inappropriate headers.
   
-  * *Assessments: Weighted scoring.* You can now weight questions in assessments. You can specify that some questions are "worth more points". This is also available on multiple choice questions with multiple answers.
+  * *Assessments: Weighted scoring.* You can now weight questions in assessments. You can specify that some questions are "worth more points". This is also available on multiple choice questions with multiple answers. See [http://code.google.com/p/course-builder/wiki/CreateAssessments#Scoring Assessment Scoring].
 
-  * *Extensibility.* Improved support for custom tags and modules.
-
-  * *Internationalization.* Update translations in the i18n language module.
+  * *Internationalization.* Added additional error strings to the i18n language module.
 
   * *Power Searching Course.* The default _Power Searching with Google_ course had dates next to the units on the course listing page. These were removed. 
   
