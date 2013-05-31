@@ -16,6 +16,8 @@
   
   * *Security: HTTPS.* Course Builder will now always connect through HTTPS.
   
+Here is an informal video to show the highlights: [http://www.youtube.com/watch?v=04ggeGtTZo8&feature=share&list=PLPai_O_OnSmBAfHXuozRvBJY2IOAuJvTf 1.4.0 & 1.4.1 (running time: 5:30)].
+  
 ==Release notes for version 1.4.0==
 
   * *Administrator Page: Student page interactions.* You can now record student interactions for each of your Course Builder pages. This is off by default. See [AdminPage Administrator Page].
