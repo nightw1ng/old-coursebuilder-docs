@@ -189,7 +189,7 @@ var assessment = {
      choices :['4','5','7','8',correct('9')]},
 
     {questionHTML: 'How many Judo throws are recognized by the Kodokan Judo Institute?',
-      choiceScores: [0.2,0.4,0.6,0.8,1.0],
+      choiceScores: [0.0,0.0,0.0,0.8,1.0],
       weight: 4,
       choices :['17','26','33','40',correct('67')]},
 
@@ -200,7 +200,7 @@ var assessment = {
 }
 }}}
 
-== Changing the number of assessments ==
+== Changing the number of assessments through the development server ==
 
 By default, Course Builder supports 3 assessments -- a precourse assessment, midterm assessment, and final assessment. The precourse assessment is not included in the overall score for the course.
 
