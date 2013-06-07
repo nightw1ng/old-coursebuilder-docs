@@ -6,7 +6,7 @@
 
 ==Release notes for version 1.4.1==
 
-  * *Security Warning.* If you run multiple courses in one instance go to *Admin > Settings > gcb_can_use_memcache* and keep it at its default value of *false*. Otherwise, it is possible to access cached objects in course from another course. Objects include student, course, lesson, unit, activity, and assessment.
+  * *<font color='red'>KNOWN ISSUE.</font>* If you run multiple courses in one instance go to *Admin > Settings > gcb_can_use_memcache* and keep it at its default value of *false*. Otherwise, it is possible to access cached objects in course from another course. Objects include student, course, lesson, unit, activity, and assessment.
   
   * *Accessibility.* Added more ARIA landmarks and removed inappropriate headers.
   
