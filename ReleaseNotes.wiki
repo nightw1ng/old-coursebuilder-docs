@@ -6,7 +6,7 @@
 
 ==Release notes for version 1.4.1==
 
-  * *<font color='red'>KNOWN ISSUE.</font>* If you run multiple courses in one instance go to *Admin > Settings > gcb_can_use_memcache* and keep it at its default value of *false*. Otherwise, it is possible to access cached objects in one course from another course. Objects include student, course, lesson, unit, activity, and assessment. This issue will be fixed in version 1.5.1.
+  * *<font color='red'>KNOWN ISSUE.</font>* If you run multiple courses in one instance go to *Admin > Settings > gcb_can_use_memcache* and keep it at its default value of *false*. Otherwise, it is possible to access cached objects in one course from another course. Objects include student, course, lesson, unit, activity, and assessment. This issue will be fixed in version 1.5.0. See [https://groups.google.com/forum/?fromgroups#!topic/course-builder-announce/bAKkkVo2wew Fix to 1.4.1 Memcache Issue].
   
   * *Accessibility.* Added more ARIA landmarks and removed inappropriate headers.
   
