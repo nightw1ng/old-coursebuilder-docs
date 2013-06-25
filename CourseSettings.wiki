@@ -2,28 +2,52 @@
 
 <h1>Customize Course Settings</h1>
 
-By default, all the settings in Course Builder are generic or contain placeholder text.  You must change Course Builder settings so that they are specific to your course.  You can set all these items and more through one file: {{{course.yaml}}}. The [http://code.google.com/p/course-builder/source/browse/coursebuilder/course.yaml course.yaml] file is located in the root directory of your Course Builder installation.
-
-The settings in the {{{course.yaml}}} are:
-  * Course title
-  * Main page blurb (introductory text on the main page)
-  * Information about the instructor to display on the main page
-  * Whether you want a video or an image on the main page. If you specify both, video will take priority. The path to the image directory must also be relative, not absolute. That is, {{{assets/img}}} not {{{/assets/img}}}.
-  * Course start date
-  * Forum URL
-  * URL for the mailing list where students can register to receive course announcements
-  * Locale for internationalization
-  * Name of your institution
-  * URL of your institution's webpage
-  * Link and alt text for the logo of the course or your institution
-  * HTML to be included before the closing {{{head}}} tag in all pages, including code for analytics
-  * Whether to show a G+ button on the header of all pages
-  * Header phrase for the main navigation bar
-  * Link to your privacy policy and terms of service
-  * Header text for the course registration form
-  * HTML representing additional fields to include in the course registration form
-  * HTML to be displayed on the test confirmation page
+By default, all the settings in Course Builder are generic or contain placeholder text.  You must change Course Builder settings so that they are specific to your course.  You can set all these items and more through one file: {{{course.yaml}}}. The [http://code.google.com/p/course-builder/source/browse/coursebuilder/course.yaml course.yaml] file is located in the root directory of your Course Builder installation. 
 
 By default the setting to make your course public or private is not set. See [CreateNewCourse#Make_Courses_Viewable Make Courses Viewable] on how to set it.
+
+The following sections highlight some of the settings in the file.
+
+*course*
+  * {{{title:}}} Course title. This string appears in your browser as the name of the window or tab containing your course.
+  * {{{blurb:}}} Main page blurb (introductory text on the main page)
+  * {{{instructor_details:}}} Information about the instructor to display on the main page
+  * {{{main_video:}}} Whether you want a video or an image on the main page. If you specify both, video will take priority. The path to the image directory must also be relative, not absolute. That is, {{{assets/img}}} not {{{/assets/img}}}.
+  * {{{start_date:}}} Course start date
+  * {{{forum_url:}}} Forum URL
+  * {{{announcement_list_url:}}} URL for the mailing list where students can register to receive course announcements
+  * {{{locale:}}} Locale for internationalization
+
+*institution*
+  * {{{name:}}} Name of your institution
+  * {{{url:}}} URL of your institution's webpage
+  * {{{logo:url:}}} Link and alt text for the logo of the course or your institution
+
+*base*
+  * HTML to be included before the closing {{{head}}} tag in all pages, including code for analytics. See [ReachAndEngagementMetrics Reach and Engagement] for more information on setting up analytics.
+  * {{{show_gplus_button:}}} Whether to show a G+ button on the header of all pages
+  * {{{nav_header:}}} Header phrase for the main navigation bar
+  * {{{privacy_terms_url:}}} Link to your privacy policy and terms of service (#7 in picture below)
+
+*reg_form*
+  * {{{header_text:}}} Header text for the course registration form
+  * {{{additional_registration_fields:}}} HTML representing additional fields to include in the course registration form
+
+*assessment_confirmations*
+  * {{{result_text:}}} HTML to be displayed on the test confirmation page
+
+http://wiki.course-builder.googlecode.com/git/images/base.png
+
+1. {{{title}}}
+
+3. {{{logo:url}}}
+
+4. {{{url}}}
+
+5. {{{nav_header}}}
+
+6. {{{name}}}
+
+7. {{{privacy_terms_url}}}
 
 Here is a video that shows how to edit your {{{course.yaml}}} file: [http://www.youtube.com/watch?v=7aLeEso9lNY&list=PLbTy14-ZMIDJGS1XLdYj3Nzrhfd6EDWJC Edit course.yaml (4:35)].
