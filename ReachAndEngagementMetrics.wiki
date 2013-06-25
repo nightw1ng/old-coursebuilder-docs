@@ -2,7 +2,7 @@
 
 =Reach and Engagement=
 
-Evaluating the reach and engagement of your course lets you determine how many people you reached with the course and how engaged those people were. *Reach* refers to home many people visited your course while *engagement* can refer to how long each person stayed on each page and how many pages each person visited.
+Evaluating the reach and engagement of your course lets you determine how many people you reached with the course and how engaged those people were. *Reach* refers to how many people visited your course, while *engagement* can refer to how long each person stayed on each page and how many pages each person visited.
 
 Some common questions on reach and engagement include:
 
