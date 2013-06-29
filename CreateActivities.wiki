@@ -4,9 +4,11 @@
 
 <wiki:toc />
 
-Each unit may have  some number of activities. An activity is a set of questions related to a particular lesson within a unit:
+Each unit may have some number of activities. An activity is a set of questions related to a particular lesson within a unit:
 
 <img src="http://wiki.course-builder.googlecode.com/git/images/activity.png" height=529 width=420 />
+
+Instead of writing activities, we strongly encourage you instead to write questions through [Dashboard#Assets Dashboard > Assets > Question Bank] and put them in your [CreateLessons Lessons] as a question component. The effect is the same for students but it is much easier for you to create questions through the WYSIWYG interface than it would be to write the questions using !JavaScript and HTML.
 
 This page talks about the mechanics of creating an activity. For information on what to put in your activities, see [TwoDevelop#Decide_what_you_want_to_test_in_your_assessments,_both_graded_an Develop the Content without Technology].
 
