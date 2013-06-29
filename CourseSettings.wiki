@@ -2,11 +2,12 @@
 
 <h1>Customize Course Settings</h1>
 
-By default, all the settings in Course Builder are generic or contain placeholder text.  You must change Course Builder settings so that they are specific to your course.  You can set all these items and more through one file: {{{course.yaml}}}. The [http://code.google.com/p/course-builder/source/browse/coursebuilder/course.yaml course.yaml] file is located in the root directory of your Course Builder installation. 
+By default, all the settings in Course Builder are generic or contain placeholder text.  You must change Course Builder settings so that they are specific to your course.  You can set all these items and more through two files: {{{course.yaml}}} and {{{course_tem}}}. These files are located in the root directory of your Course Builder installation.
 
 By default the setting to make your course public or private is not set. See [CreateNewCourse#Make_Courses_Viewable Make Courses Viewable] on how to set it.
 
-The following sections highlight some of the settings in the file.
+== course.yaml ==
+The following list illustrates the types of settings you will find in {{{course.yaml}}}.
 
 *course*
   * {{{title:}}} Course title. This string appears in your browser as the name of the window or tab containing your course.
@@ -17,6 +18,17 @@ The following sections highlight some of the settings in the file.
   * {{{forum_url:}}} Forum URL
   * {{{announcement_list_url:}}} URL for the mailing list where students can register to receive course announcements
   * {{{locale:}}} Locale for internationalization
+  * {{{browsable:}}} Whether students who are not registered can freely browse the contents of the course.
+
+*reg_form*
+  * {{{header_text:}}} Header text for the course registration form
+  * {{{additional_registration_fields:}}} HTML representing additional fields to include in the course registration form
+
+*assessment_confirmations*
+  * {{{result_text:}}} HTML to be displayed on the test confirmation page
+
+== course_template.yaml ==
+You will find the following settings in {{{course_template.yaml}}}. All the courses inherit values from this file during HTML rendering.
 
 *institution*
   * {{{name:}}} Name of your institution
@@ -28,13 +40,8 @@ The following sections highlight some of the settings in the file.
   * {{{show_gplus_button:}}} Whether to show a G+ button on the header of all pages
   * {{{nav_header:}}} Header phrase for the main navigation bar
   * {{{privacy_terms_url:}}} Link to your privacy policy and terms of service (#7 in picture below)
+  * {{{locale:}}} Sets the Course Builder [I18n language].
 
-*reg_form*
-  * {{{header_text:}}} Header text for the course registration form
-  * {{{additional_registration_fields:}}} HTML representing additional fields to include in the course registration form
-
-*assessment_confirmations*
-  * {{{result_text:}}} HTML to be displayed on the test confirmation page
 
 http://wiki.course-builder.googlecode.com/git/images/base.png
 
