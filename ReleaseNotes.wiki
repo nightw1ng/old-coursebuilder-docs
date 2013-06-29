@@ -4,6 +4,74 @@
 
 <wiki:toc />
 
+==Release notes for version 1.5.0==
+
+  * *Announcements tab.* The [Announcements Announcements] tab is always visible.
+
+  * *Activities.* You can now record activities. Turn the {{{gcb_can_persist_activity_events}}} setting on in [AdminPage Admin > Settings].
+
+  * *Analytics: tags.* The {{{gcb_can_persist_tag_events}}} flag in [AdminPage Admin > Settings] specifies whether events from components (tags), like !YouTube videos, should be recorded in a datastore.
+
+ * *Course Explorer.* You can now use the {{{gcb_enable_course_explorer_page}}} setting in [AdminPage Admin > Settings] to route the root URL ({{{"/"}}}) to a page that lists all your courses. This page is called Course Explorer and by default it is turned off.
+
+  * *Course.yaml.* The {{{course.yaml}}} file is now separated into two parts: {{{course.yaml}}} and {{{course_template.yaml}}}. See [CourseSettings Course Settings].
+  
+  * *Custom Jobs.* There is a new {{{--disable_remote}}} flag so [CustomJob ETL] jobs that execute without remote procedure calls do not force authentication nor a remote environment setup.
+
+  * *Dashboard: Assets.* You can now make edits to the HTML and CSS directly in [Dashboard#Assets Dashboard > Assets] section. Previously, you had to develop on your development server and deploy the changes you made.
+
+  * *Documentation: Developer's Guide.* A new section was added to the documentation for [ExtendCB Developers]. This section aids those who want to programmatically and safely customize Course Builder. 
+
+  * *Documentation: Custom Jobs.* The [CustomJob Custom Jobs] section was moved to the Developer's section.
+
+  * *Google App Engine SDK.* For version 1.5.0, you should use Google App Engine SDK version 1.8.1. See [Download#Download_and_install_Google_App_Engine Download the Software].
+
+  * *Component: iframe.* A new component type, inlined frames (iframe), was added. You can add iframes as a component in activities as part of a [CreateLessons lesson] or [CreateAssessments assessments].
+
+  * *Lessons: saving the lesson.* There was a bug when you edited a lesson, clicked the *Save* button repeatedly, and then refreshed the page in your browser. In this case, the course information becomes lost in the datastore. This bug was fixed. Now after you click *Save*, the button will be unavailable until you make new changes. 
+  
+  * *Memcache with multiple courses.* There was a bug if you run multiple courses in one instance where it was possible to access cached objects in one course from another course. This bug was fixed.
+
+  * *Navigation: Logo.* Clicking the institution logo will now take you back to the course page.
+
+  * *Questions.* You can now create questions for both activities and assessments through the browser without using any !JavaScript. That is, you can create questions through the new WYSIWYG editor. You can also group your questions, which you can then insert as a component to both activities and assessments. Please use these question building methods to build your assessment and activity questions. See [Dashboard#Assets Dashboard > Assets].
+
+  * *Registration: Course Browsing.* There is now a setting, {{{browsable:}}}, in [CourseSettings course.yaml] that allows students to browse the course without registering. By default this setting is {{{true}}}.
+
+  * *Registration: Navigation.* Now you are taken to the course page after you register.
+
+  * *Student Profile.* The new {{{gcb_can_share_student_profile}}} in [AdminPage Admin > Settings] determines whether to share the student profile between different courses. It also enables single click registration for those instances with multiple courses on one instance.
+
+  * *Upload Data.* The [ImportCourseData ETL] command now has the {{{--force_overwrite}}} flag that completely overwrites all the existing data in the target system with the uploaded data.
+
+  * *Views Directory.* Here are the template files that were changed under the {{{views/}}} directory:
+    * activity.html
+    * announcements.html
+    * assessment.html
+    * assessment_html_content.html (new)
+    * bare.html
+    * base.html
+    * base_course.html (new)
+    * ~~base_registration.html~~ (removed)
+    * ~~confirmation.html~~ (removed)
+    * course.html
+    * error.html
+    * forum.html
+    * lesson_navbar.html
+    * preview.html
+    * register.html
+    * registration_module.html (new)
+    * review.html
+    * review_confirmation.html
+    * review_dashboard.html
+    * reviewed_assessment_confirmation.html
+    * student_data_table.html
+    * student_profile.html
+    * test_confirmation.html
+    * unenroll_confirmation.html
+    * unenroll_confirmation_check.html
+    * unit.html
+  
 ==Release notes for version 1.4.1==
 
   * *<font color='red'>KNOWN ISSUE.</font>* If you run multiple courses in one instance go to *Admin > Settings > gcb_can_use_memcache* and keep it at its default value of *false*. Otherwise, it is possible to access cached objects in one course from another course. Objects include student, course, lesson, unit, activity, and assessment. This issue will be fixed in version 1.5.0. See [https://groups.google.com/forum/?fromgroups#!topic/course-builder-announce/bAKkkVo2wew Fix to 1.4.1 Memcache Issue].
