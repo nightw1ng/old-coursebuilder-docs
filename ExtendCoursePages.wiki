@@ -1,0 +1,66 @@
+#summary Explains how to customize Course Builder through course pages.
+
+<h1>Customize with Course Pages</h1>
+
+<wiki:toc />
+
+To add a new page, like a static FAQ page, you should modify the:
+
+ * template files under the {{{/views}}} directory. These files are HTML files with Jinja, which is a template language for Python. When the files under {{{views/}}} are rendered, all the Jinja elements are replaced with the appropriate HTML so the final output will only show HTML.
+ * routing under {{{modules/}}}
+ * controller under {{{controllers/}}}
+ * navigation bar, if necessary
+
+When you modify any of these course pages and want to upgrade to a new version of Course Builder, you must manually implement the changes in the new release. Merely replacing the new files with your customized files may not work. Hence, it is important you have all your changes under source control with good documentation. Note also that these changes will propagate to all your courses if you are running multiple courses.
+ 
+== Handling Requests ==
+The following image illustrates how Course Builder handles a request from a page. In this case, from a forum page. 
+
+<br> <img src="http://wiki.course-builder.googlecode.com/git/images/request-handling.png" width="700px"/>
+
+ # A request comes from {{{<somename>.appspot.com/forum}}}.
+ # The request is sent to {{{controllers/sites.py}}} to determine where the user is currently located.
+ # The request is then sent to the URL router {{{modules/courses.py}}}. Within {{{course.py}}} each URL fragment, like {{{/forum}}}, is mapped to a controller under {{{controllers/}}}. The controllers themselves will have {{{GET}}} and {{{POST}}} handlers.
+ # The controller may interact with some {{{models/}}} and {{{modules/}}}.
+ # The controller generates the appropriate response, a rendered HTML page.
+
+== Add a FAQ Page ==
+We will work through an example of how to create a FAQ page.
+
+ # Add the link to the FAQ page in the navigation bar. All HTML files in Course Builder inherit {{{views/base.html}}} and it is also where the code for the navigation bar resides.
+   ## Search for {{{"{% block navbar %}"}}} in {{{base.html}}}
+   ## Add your new tab.
+   {{{
+   <!-- custom code: FAQ -->	
+   <li {% if navbar.faq %}class='active'{% endif %}>
+       {# I18N: Navbar tab. #}
+       <a href="faq">{{ gettext('FAQ') }}</a>
+    </li>
+   <!-- end custom code -->
+   }}}
+ # Open {{{modules/courses/courses.py}}}.
+ # Add your URL fragment for the FAQ page in {{{courses_routes}}}:
+ {{{
+ ('/faq', utils.FaqHandler)
+ }}}
+ # Start a new {{{utils.py}}} file under {{{controllers/}}}. For example, you can call it {{{utils_faq.py}}} Although you could modify the {{{utils.py}}} directly, this makes the upgrade process more difficult. By creating a separate file, you can just copy and paste your custom files in the {{{controllers/}}} directory of your new installation.
+ # In your new utils file, add a new FAQ handler.
+   ## Define a new class
+   ## Create a function to handle {{{get}}} requests. 
+   ## Add the code to create the tests for {{{example.com}}} and the logout link at the top of the page.
+   ## Highlight the FAQ tab in the navigation bar.
+   ## Render the FAQ page. The final output should look something like:
+   {{{
+   class Faqhandler(BaseHandler):
+       """Handler for FAQ page."""
+       def get(self):
+           """Handles GET requests."""
+           if not self.personalize_page_and_get_enrolled():
+               return
+           
+           self.template_value['navbar'] = {'faq': True}
+           self.render('faq.html')
+   }}}
+ # Add your FAQ page, {{{faq.html}}} under {{{views/}}}.
+
+
