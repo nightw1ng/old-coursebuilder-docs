@@ -29,7 +29,6 @@
       * [CreateNewCourse Create New Courses]
       * [URLMap URL Mapping]
       * [Security Security]
-    * [CustomJob Create Custom Jobs]
     * [Upgrade Upgrade Course Builder]
     * [ReleaseNotes Release Notes]
   * Course Authors
@@ -60,6 +59,12 @@
       * [HappinessMetrics Student Happiness]
       * [ExampleSurvey Example Post-Course Survey]
       * [AnalyticsForEdu Combine Assessment & Reach Data]
+  * Developers
+	  * [ExtendCB Customize Course Builder]
+	  * [ExtendCoursePages Customize Course Pages]
+	  * [CreateComponents Create Components]
+	  * [CreateModules Create Modules]
+	  * [CustomJob Create Custom Jobs]
   * [FAQ FAQ]
 
 || [https://groups.google.com/forum/?fromgroups#!forum/course-builder-forum Discussion forum] ||
