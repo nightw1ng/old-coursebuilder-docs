@@ -1,0 +1,14 @@
+#summary Explains how to create custom modules.
+
+<h1>Create Custom Modules</h1>
+
+If you want customizations that cannot be satisfied by adding new links, pages, or components, you can add custom modules. Modules are files that contain code authored independent of Course Builder yet can be integrated into Course Builder without editing the native Course Builder code. Each piece of functionality (one module, one feature) is captured in a collection of files. These collections of files are known as a "module" and reside in one place under a unique name.
+
+In Course Builder, the modules are located in the {{{modules/}}} directory and they are registered in {{{main.py}}}. 
+
+To create a custom module, at the very least you must:
+  * import your module through the {{{main.py}}} file.
+  * enable your module through the {{{main.py}}} file.
+  * create your module directory under {{{modules/}}}.
+  * add {{{__init__.py}}} file in your new module directory.
+  * define your feature in a Python file in your new module directory.
