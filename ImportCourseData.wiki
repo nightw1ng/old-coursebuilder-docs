@@ -28,7 +28,9 @@ In our downloading course data example, we named our script {{{gcbpaths.py}}}, w
 || --archive_path || The path and filename of the exported files, which will be compressed. ||
 || --batch_size || Specifies the number of results to attempt to retrieve per batch. ||
 || --datastore_types || When the type is {{{datastore}}}, this option specifies a comma-separated list of datastore model types to process. All models are processed by default.  Models are Google app engine db.Model subclass instances. They contain the data in the app's datastore. You can tell which type a model is by its name in the datastore. ||
-|| --job_args ||  ||
+|| --disable_remote || If the mode is {{{run}}}, this flag instructs Course Builder to skip authentication and remote environment setup. You should only use this flag for jobs that run entirely locally and do not require remote procedure calls (RPCs). ||
+|| --force_overwrite || If the mode is {{{download}}} and type is {{{course}}}, this flag instructs Course Builder to completely overwrite all the existing data in the target system with the uploaded data. Backup your data before using this feature. ||
+|| --job_args || If the mode is {{{run}}}, the string containing the arguments is delegated to {{{etl_lib.Job}}} subclass. ||
 || --log_level {DEBUG,ERROR,INFO,WARNING} || Choose one error level. Specifies the log file messaging level. ||
 || download, run, upload || Choose either {{{download}}}, {{{run}}}, or {{{upload}}}. Download will download (export) files out of Course Builder. Upload will upload (import) files into Course Builder. ||
 || type || Choose either {{{course}}} or {{{datastore}}}. Specifies the "type" you are downloading. ||
