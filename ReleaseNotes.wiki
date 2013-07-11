@@ -12,10 +12,14 @@
 
   * *Analytics: tags.* The {{{gcb_can_persist_tag_events}}} flag in [AdminPage Admin > Settings] specifies whether events from components (tags), like !YouTube videos, should be recorded in a datastore.
 
+  * *Butter Bar.* Two new files were added explicitly for the butter bar: {{{/assets/css/butterbar.css}}} and {{{/assets/lib/butterbar.js}}}. The butter bar is the floating, yellow, rectangle, textual information box that displays near the top of the browser. The butter bar will not work if you just drop these files into a previous release; you must start from the 1.5.0 release and bring any customizations into it.
+
  * *Course Explorer.* You can now use the {{{gcb_enable_course_explorer_page}}} setting in [AdminPage Admin > Settings] to route the root URL ({{{"/"}}}) to a page that lists all your courses. This page is called Course Explorer and by default it is turned off.
 
   * *Course.yaml.* The {{{course.yaml}}} file is now separated into two parts: {{{course.yaml}}} and {{{course_template.yaml}}}. See [CourseSettings Course Settings].
   
+  * *CSS (main.css).* The {{{main.css}}} file under {{{assets/css/}}} has changed. Manually update any customizations you made in this file.
+
   * *Custom Jobs.* There is a new {{{--disable_remote}}} flag so [CustomJob ETL] jobs that execute without remote procedure calls do not force authentication nor a remote environment setup.
 
   * *Dashboard: Assets.* You can now make edits to the HTML and CSS directly in [Dashboard#Assets Dashboard > Assets] section. Previously, you had to develop on your development server and deploy the changes you made.
