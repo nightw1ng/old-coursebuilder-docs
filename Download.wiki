@@ -63,7 +63,7 @@ Choose the appropriate GAE SDK version with the appropriate Course Builder versi
 
 || *Course Builder Version* || *Platform* || *Google App Engine SDK Version* ||
 || 1.5.0 || [http://code.google.com/p/googleappengine/downloads/detail?name=GoogleAppEngine-1.8.1.msi&can=2&q= Windows] || 1.8.1 ||
-|| 1.4.0 || [http://code.google.com/p/googleappengine/downloads/detail?name=GoogleAppEngineLauncher-1.8.1.dmg&can=2&q= Mac] || 1.8.1 ||
+|| 1.5.0 || [http://code.google.com/p/googleappengine/downloads/detail?name=GoogleAppEngineLauncher-1.8.1.dmg&can=2&q= Mac] || 1.8.1 ||
 || 1.5.0 || [http://code.google.com/p/googleappengine/downloads/detail?name=google_appengine_1.8.1.zip&can=2&q= Linux] || 1.8.1 ||
 || 1.4.x || [http://code.google.com/p/googleappengine/downloads/detail?name=GoogleAppEngine-1.7.7.msi&can=1&q= Windows] || 1.7.7 ||
 || 1.4.x || [http://code.google.com/p/googleappengine/downloads/detail?name=GoogleAppEngineLauncher-1.7.7.dmg&can=1&q= Mac] || 1.7.7 ||
