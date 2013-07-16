@@ -1,3 +1,5 @@
+#summary Describes a case that used Drupal with Course Builder.
+
 = Integrating Drupal with Course Builder =
 
 When Indiana University needed to create a specialized forum, registration, and profile management system for their [http://ivmooc.cns.iu.edu/ Information Visualization MOOC] (IVMOOC) on Course Builder, they turned to [https://drupal.org/ Drupal].
