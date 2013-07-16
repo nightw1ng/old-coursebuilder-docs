@@ -6,7 +6,7 @@ On this page, we list articles relevant to Course Builder. Articles are in alpha
 
   * [http://googleresearch.blogspot.com/2013/04/advanced-power-searching-with-google.html Advanced Power Searching with Google: Lessons Learned] by Dan Russell and Maggie Johnson
   * [http://googleresearch.blogspot.com/2012/09/helping-world-to-teach.html Helping the World to Teach] by Peter Norvig
-  * [ArticleDrupalwithCB Integrating Drupal with Course Builder] by Course Builder staff (latest)
+  * [ArticleDrupalwithCB Integrating Drupal with Course Builder] by Course Builder staff (*latest*)
   * [http://www.softwaresecretweapons.com/jspwiki/khan-academy-exercises-in-course-builder Khan Academy Exercises in Course Builder] by Pavel Simakov
   * [http://googleresearch.blogspot.com/2013/06/some-innovative-moocs.html Some Innovative MOOCs] by Maggie Johnson
   * [http://googleresearch.blogspot.com/2012/08/teaching-world-to-search.html Teaching the World to Search] by Maggie Johnson 
