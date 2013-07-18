@@ -2,7 +2,7 @@
 
 <h1>Customize Course Settings</h1>
 
-By default, all the settings in Course Builder are generic or contain placeholder text.  You must change Course Builder settings so that they are specific to your course.  You can set all these items and more through two files: {{{course.yaml}}} and {{{course_tem}}}. These files are located in the root directory of your Course Builder installation.
+By default, all the settings in Course Builder are generic or contain placeholder text.  You must change Course Builder settings so that they are specific to your course.  You can set all these items and more through two files: {{{course.yaml}}} and {{{course_template.yaml}}}. These files are located in the root directory of your Course Builder installation.
 
 By default the setting to make your course public or private is not set. See [CreateNewCourse#Make_Courses_Viewable Make Courses Viewable] on how to set it.
 
