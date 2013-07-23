@@ -24,3 +24,6 @@ Organic Groups allowed students to self-organize into project groups. Custom beh
   * [https://drupal.org/project/rules Rules]
   * [https://drupal.org/project/views Views]
   * [https://drupal.org/project/vote_up_down Vote Up/Down]
+
+== Download source code ==
+[https://groups.google.com/forum/?fromgroups#!category-topic/course-builder-forum/contributed-modules-and-code/tpBdgK04ey8 User profiles with custom groups]
