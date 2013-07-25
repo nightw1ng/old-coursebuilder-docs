@@ -4,14 +4,7 @@
 
 <wiki:toc />
 
-Course Builder supports 57 languages and all student facing text is translated in these languages. To enable this expanded language capability, do the following steps:
-
-  # [http://code.google.com/p/course-builder/downloads/list Download] the language pack to your computer.
-  # Unzip the file. You now have a directory called {{{i18n}}}.
-  # Navigate into the {{{modules/}}} directory in your Course Builder installation.
-  # Copy the new {{{i18n}}} directory that you unzipped to this current directory, completely replacing the old {{{i18n}}} directory with this new directory. 
-
-To use one of these languages, specify it in the {{{course.yaml}}} file. For example, to specify the Spanish translation, the locale line should be 
+Course Builder supports 57 languages and all student facing text is translated in these languages. To use one of these languages, specify it in the {{{course.yaml}}} file. For example, to specify the Spanish translation, the locale line should be 
 
 {{{locale: 'es'}}}
 
