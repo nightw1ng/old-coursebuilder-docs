@@ -9,9 +9,7 @@ Before you can start working on your own course, you need to download Python and
 == Summary ==
 
   # [http://python.org/download Download Python 2.7.]
-  #  Download the Google App Engine SDK for Python:
-    * [http://code.google.com/p/googleappengine/downloads/detail?name=GoogleAppEngine-1.7.0.msi&can=1&q=1.7.0 Windows]
-    * [http://code.google.com/p/googleappengine/downloads/detail?name=GoogleAppEngineLauncher-1.7.0.dmg&can=1&q=1.7.0 Mac]
+  # [Download#Download_and_install_Google_App_Engine Download the Google App Engine SDK for Python]
   # [http://code.google.com/p/course-builder/downloads/list Download the Course Builder sample application.] 
 
 == Download and install Python 2.7 ==
@@ -71,6 +69,8 @@ Choose the appropriate GAE SDK version with the appropriate Course Builder versi
 || All versions earlier than, and not including, 1.4.0 || [http://code.google.com/p/googleappengine/downloads/detail?name=GoogleAppEngine-1.7.0.msi&can=1&q=1.7.0 Windows] || 1.7.0 ||
 || All versions earlier than, and not including, 1.4.0 || [http://code.google.com/p/googleappengine/downloads/detail?name=GoogleAppEngineLauncher-1.7.0.dmg&can=1&q=1.7.0 Mac] || 1.7.0 ||
 || All versions earlier than, and not including, 1.4.0 || [https://code.google.com/p/googleappengine/downloads/detail?name=google_appengine_1.7.0.zip&can=1&q= Linux]  || 1.7.0 ||
+
+*Note:* In some cases there may be a new release of the GAE SDK in between new releases of Course Builder. Although upgrading incremental versions in most cases would not create problems, we still recommend that you stay at the suggested version.
 
 When developing on GAE, you have a choice of performing administrative tasks using a graphical interface (GUI) or a traditional command-line interface. The GUI, called The Launcher, is available for users of PCs or Macs while command-line tools are available on all systems. The GAE SDK for Python includes both tools. 
 
