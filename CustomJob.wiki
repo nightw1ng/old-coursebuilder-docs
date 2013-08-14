@@ -47,9 +47,10 @@ Here is the description of the {{{etl.py}}} command.
 || --archive_path || The path and filename of the exported files, which will be compressed. ||
 || --batch_size || Specifies the number of results to attempt to retrieve per batch. ||
 || --datastore_types || When the type is {{{datastore}}}, this option specifies a comma-separated list of datastore model types to process. All models are processed by default.  Models are Google app engine db.Model subclass instances. They contain the data in the app's datastore. You can tell which type a model is by its name in the datastore. ||
-|| --job_args ||  ||
+|| --job_args || If the mode is run, the string containing the arguments is delegated to etl_lib.Job subclass. ||
 || --log_level {DEBUG,ERROR,INFO,WARNING} || Choose one error level. Specifies the log file messaging level. ||
-|| download, run, upload || Choose either {{{download}}}, {{{run}}}, or {{{upload}}}. Download will download (export) files out of Course Builder. Upload will upload (import) files into Course Builder. ||
+|| --privacy || When mode is {{{download}}} and type is {{{datastore}}}, this flag will strip or obfuscate information that can identify a single user. ||
+|| delete, download, run, upload || Choose either {{{delete}}}, {{{download}}}, {{{run}}}, or {{{upload}}}. Delete will delete all your course information. Download will download (export) files out of Course Builder. Upload will upload (import) files into Course Builder. ||
 || type || Choose either {{{course}}} or {{{datastore}}}. Specifies the "type" you are downloading. ||
 || course_url_prefix || The URL where the lesson is located. ||
 || application_id || The name of your app. ||
@@ -72,3 +73,18 @@ The lifecycle of a custom job is:
   # Your job’s {{{main()}}} is invoked. In it, you can execute arbitrary code locally against the server enumerated on the command line.
 
 Now you can download data, run it through an arbitrary computation, and then upload it to another Course Builder instance or another business application entirely.
+
+== Convert JSON to CSV or XML==
+You can convert a JSON file that is outputted by ETL and convert it to a CSV or XML file. You must convert one file at a time. To convert a JSON file, run the following command from your Course Builder root directory:
+
+{{{
+python tools/etl/etl.py run tools.etl.mapreduce.JsonToCSV /<coursename> <appid> <server.appspot.com> \
+    --job_args='<path_to_an_Entity_file> <path_to_output_directory>'
+}}}
+
+The following example converts the {{{students.json}}} file to CSV and puts it in the directory called {{{movies}}}.
+
+{{{
+python tools/etl/etl.py run tools.etl.mapreduce.JsonToCSV /cinema filmstudies filmstudies.appspot.com \
+    --job_args='./students.json ~/movies/students.csv'
+}}}
