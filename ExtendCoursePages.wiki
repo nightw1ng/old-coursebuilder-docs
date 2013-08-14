@@ -27,8 +27,8 @@ The following image illustrates how Course Builder handles a request from a page
 == Add a FAQ Page ==
 We will work through an example of how to create a FAQ page.
 
- # Add the link to the FAQ page in the navigation bar. All HTML files in Course Builder inherit {{{views/base.html}}} and it is also where the code for the navigation bar resides.
-   ## Search for {{{"{% block navbar %}"}}} in {{{base.html}}}
+ # Add the link to the FAQ page in the navigation bar. All HTML files in Course Builder inherit {{{views/base_course.html}}} and it is also where the code for the navigation bar resides.
+   ## Search for {{{"{% block navbar %}"}}} in {{{base_course.html}}}
    ## Add your new tab.
    {{{
    <!-- custom code: FAQ -->	
