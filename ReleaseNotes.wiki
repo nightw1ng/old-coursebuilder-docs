@@ -4,6 +4,37 @@
 
 <wiki:toc />
 
+==Release notes for version 1.5.1==
+
+  * *Analytics for Student Progress.* You can view student progress, at an aggregate level, at *Dashboard > Analytics*. See [Dashboard#Analytics Dashboard > Analytics].
+
+  * *CSS Files.* The {{{main.css}}} and {{{butterbar.css}}} files under {{{assets/css/}}} have changed. Manually update any customizations you made in these files.
+
+  * *Delete Course Data.* Delete all of a course's data from the datastore using {{{ETL}}}. See [ExportCourseData#Download_course_information Download course information] for a summary of the {{{ETL}}} command.
+
+ * *Documentation.* Added example on how to add a custom module. See [CreateModules Create Custom Modules].
+
+  * *File Uploading.* You can now allow students to upload text files through the Upload component. The maximum file size is 1MB. See [CreateLessons#Create_lesson_content_from_the_browser Create lesson content from the browser].
+
+  * *Google App Engine SDK.* For Course Builder version 1.5.1, you should use Google App Engine SDK version 1.8.2. See [Download#Download_and_install_Google_App_Engine Download the Software].
+
+  * *JSON to CSV and XML Conversion.* You can now convert a JSON file into a CSV or XML file through a custom job using {{{ETL}}}. See [CustomJob#Convert_JSON_to_CSV Custom ETL jobs]. 
+
+  * *Page Load Performance.* The speed of page loads was increased on average by roughly 40% from a contribution by Thomas Grenfell Smith.
+
+  * *Peer Review.* There was a bug in those cases when a reviewer reviewed multiple assessments, only the last assessment that was submitted or saved as draft was recorded. This bug was fixed although the fix required a backwards-incompatible change that will break your course if you deploy 1.5.1 on a course that has preexisting review data.
+
+  * *Privacy.* You can obfuscate personally identifiable information with the {{{ETL --privacy}}} command. See [ExportCourseData#Download_course_information Download course information] for a summary of the {{{ETL}}} command.
+
+  * *Question Answer Fields.* You can control the size of the answer field by specifying the number of rows and columns. See [Dashboard#Assets Question Bank].
+
+  * *Search.* All users can now search over a course through the search box. There is a new tab, *Dashboard > Search* where you index your course. See [Dashboard#Search Dashboard > Search].
+
+  * *Views Directory.* Here are the template files that were changed under the {{{views/}}} directory:
+    * base.html
+    * base_course.html
+    * course.html
+
 ==Release notes for version 1.5.0==
 
   * *Announcements tab.* The [Announcements Announcements] tab is always visible.
@@ -75,7 +106,9 @@
     * unenroll_confirmation.html
     * unenroll_confirmation_check.html
     * unit.html
-  
+
+Here is an informal video to show the highlights: [http://www.youtube.com/watch?v=hWCGwsSyaZc&feature=share&list=PLPai_O_OnSmBAfHXuozRvBJY2IOAuJvTf 1.5.0 (running time: 3:45)]
+
 ==Release notes for version 1.4.1==
 
   * *<font color='red'>KNOWN ISSUE.</font>* If you run multiple courses in one instance go to *Admin > Settings > gcb_can_use_memcache* and keep it at its default value of *false*. Otherwise, it is possible to access cached objects in one course from another course. Objects include student, course, lesson, unit, activity, and assessment. This issue will be fixed in version 1.5.0. See [https://groups.google.com/forum/?fromgroups#!topic/course-builder-announce/bAKkkVo2wew Fix to 1.4.1 Memcache Issue].
