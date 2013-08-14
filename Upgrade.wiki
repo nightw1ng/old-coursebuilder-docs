@@ -4,7 +4,7 @@
 
 <wiki:toc />
 
-=Upgrade from any version to the latest version (1.5.0)=
+=Upgrade from any version to the latest version (1.5.1)=
   # Make a complete copy of your old version of Course Builder and all your data.
   # Download and unzip the latest version of Course Builder.
   # Copy the {{{/assets}}} and {{{/data}}} folders from your old version to the latest version. If you encounter visual oddities, check and adjust your .css file in {{{/assets/css}}}. New definitions may have been added or previous definitions changed.
@@ -18,6 +18,11 @@
   # Use the [UploadCode#Upload_(or_deploy)_your_app appcfg.py] command to update your index by typing (do not forget the period at the end): {{{appcfg.py update_indexes .}}}
   # Type your email and application-specific password. There are no messages from Course Builder if you are successful. 
   # [UploadCode#Upload_(or_deploy)_your_app Deploy] your new version to Google App Engine.
+
+=Upgrade notes from 1.5.0 on 1.5.1=
+ * We suggest you use the {{{course_template.yaml}}} in version 1.5.1 and manually transfer the settings from your 1.5.0 {{{course_template.yaml}}}. This is due to the Search box definition placed in {{{course_template.yaml}}} in version 1.5.1.
+
+ * There was a bug in those cases when a reviewer reviewed multiple assessments, only the last assessment that was submitted or saved as draft was recorded. This bug was fixed in 1.5.1 although the fix required a backwards-incompatible change that will break your course if you deploy 1.5.1 on a course that has preexisting review data.
 
 =Upgrade from 1.3.1 to 1.4.0=
 Before you deploy to Google App Engine with 1.4.0, you must update your index. First, use the same upgrade procedures as [Upgrade#Upgrade_from_1.2.x_to_1.3.0 upgrading to 1.3.0 from 1.2.x] except stop before the deployment step. In those instructions:
