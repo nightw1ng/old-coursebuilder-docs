@@ -100,7 +100,8 @@ Under *Insert Item* in the toolbar, you see three buttons where you can:
 
   * Add a HTML link
   * Add an image
-  * Add various components, like !YouTube videos, your Group forum, and Google Docs. After you add a component, a placeholder icon shows. When you save and go to the lesson, the component itself shows.
+  * Add various components, like !YouTube videos, your Group forum, and Google Docs. You can also add a component that allows your students to upload text files ({{{Student Text File Upload}}}). The maximum size for uploaded files is 1MB. 
+    * After you add a component, a placeholder icon shows. When you save and go to the lesson, the component itself shows.
   
 You can add multiple components or mix and match multiple images with multiple components. Here is a video that shows how to add components: [http://www.youtube.com/watch?v=EpQqNkRdcck Add course components (4:48)] 
 
