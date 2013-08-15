@@ -61,7 +61,7 @@ while in the *Edit* view the *Make Course Available* checkbox should be checked.
 ==Analytics==
 This page shows statistics regarding the students, including enrollment, assessments, progress, and peer review analytics.  In the Assessment section, you can view the number of students who completed a particular assessment and the average score of all those who have done so. In the Student Progress Statistics section, view the number of students who have completed particular sections. Remember that if you want to see progress on activities, you must turn on the activity recording setting in *Admin > Settings*. In the Peer Review section, you can see bar charts showing the number of assignments with a particular number of reviews.
 
-<img src="http://wiki.course-builder.googlecode.com/git/images/dashboard-analytics.png" height=788 width=600 />
+<img src="http://wiki.course-builder.googlecode.com/git/images/dashboard-analytics.png" height=700 width=600 />
 
 The *Update Statistics* button will refresh all statistics on the page. Note that the time it takes to update depends on the number of students you have.
 
