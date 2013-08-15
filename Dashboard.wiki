@@ -59,8 +59,15 @@ When you create a [CreateNewCourse new course], this section will be mostly empt
 while in the *Edit* view the *Make Course Available* checkbox should be checked.
 
 ==Analytics==
-This page shows statistics regarding the students, including enrollment, assessments, and peer review analytics.  In the Assessment section you can view the number of students who completed a particular assessment and the average score of all those who have done so. In the Peer Review section, you can see bar charts showing the number of assignments with a particular number of reviews. For example, there are two assignments with zero reviews or one assignment with two reviews.
+This page shows statistics regarding the students, including enrollment, assessments, progress, and peer review analytics.  In the Assessment section, you can view the number of students who completed a particular assessment and the average score of all those who have done so. In the Student Progress Statistics section, view the number of students who have completed particular sections. Remember that if you want to see progress on activities, you must turn on the activity recording setting in *Admin > Settings*. In the Peer Review section, you can see bar charts showing the number of assignments with a particular number of reviews.
 
 <img src="http://wiki.course-builder.googlecode.com/git/images/dashboard-analytics.png" height=788 width=600 />
 
-The *Re-Calculate Statistics* button will refresh all statistics on the page. Note that the time it takes to recalculate depends on the number of students you have.
+The *Update Statistics* button will refresh all statistics on the page. Note that the time it takes to update depends on the number of students you have.
+
+==Search==
+Before you can retrieve results from a search through the Search box, you must index your course. Choose the appropriate option to index your course. When you first index a new course, it does not matter which indexing method you select.
+
+Search will not cover results that are in sections marked "Private". It will also search over user created captions but not over automatically created captions.
+
+<img src="http://wiki.course-builder.googlecode.com/git/images/dashboard-search-indexed.png" height=450 width=600 />
