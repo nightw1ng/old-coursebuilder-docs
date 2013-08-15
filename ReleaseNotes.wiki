@@ -35,6 +35,8 @@
     * base_course.html
     * course.html
 
+Here is an informal video to show the highlights: [http://youtu.be/LdTX33xckoY 1.5.1 (running time: 4:18)]
+
 ==Release notes for version 1.5.0==
 
   * *Announcements tab.* The [Announcements Announcements] tab is always visible.
