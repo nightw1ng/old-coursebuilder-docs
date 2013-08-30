@@ -141,7 +141,7 @@ In our example above, we named our script {{{gcbpaths.py}}}, which calls {{{etl.
 || --job_args || If the mode is {{{run}}}, the string containing the arguments is delegated to {{{etl_lib.Job}}} subclass. ||
 || --log_level {DEBUG,ERROR,INFO,WARNING} || Choose one error level. Specifies the log file messaging level. ||
 || --privacy || When mode is {{{download}}} and type is {{{datastore}}}, this flag will strip or obfuscate information that can identify a single user. ||
-|| delete, download, run, upload || Choose either {{{delete}}}, {{{download}}}, {{{run}}}, or {{{upload}}}. Delete will delete all your course information. Download will download (export) files out of Course Builder. Upload will upload (import) files into Course Builder. ||
+|| delete, download, run, upload || Choose either {{{delete}}}, {{{download}}}, {{{run}}}, or {{{upload}}}. Delete will delete all your datastore information. Download will download (export) files out of Course Builder. Upload will upload (import) files into Course Builder. ||
 || type || Choose either {{{course}}} or {{{datastore}}}. Specifies the "type" you are downloading. ||
 || course_url_prefix || The URL where the lesson is located. ||
 || application_id || The name of your app. ||
