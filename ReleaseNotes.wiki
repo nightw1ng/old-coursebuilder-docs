@@ -4,8 +4,8 @@
 
 <wiki:toc />
 
-==Release notes (tentative) for next version==
-The items in this section are not in any release. They are likely candidates for the next new release. You can browse the source code that contains these items in [https://code.google.com/p/course-builder/source/browse/#git%2Fcoursebuilder%253Fstate%253Dclosed git]. You can also see a summary of changes under [https://code.google.com/p/course-builder/source/list committed changes].
+== Release notes for pending changes in master branch==
+The items in this section are the most recent changes towards the next new release. You can browse the source code that contains these items in [https://code.google.com/p/course-builder/source/browse/#git%2Fcoursebuilder%253Fstate%253Dclosed git]. You can also see a summary of changes under [https://code.google.com/p/course-builder/source/list committed changes].
 
   * *Bug Fix: Accessibility.* Added alert roles for feedback divs.
 
