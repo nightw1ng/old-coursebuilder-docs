@@ -11,7 +11,7 @@ The items in this section are the most recent changes towards the next new relea
 
   * *Bug Fix: Import questions and question groups.* There was a bug that did not import questions and question groups in the user interface. This was fixed.
 
-  * *ETL: Question and !QuestionGroup entities.* When you download course data, you will also get questions and question group entities.
+  * *ETL: Question and !QuestionGroup entities.* Download or upload of course data now properly handles question and question group entities.
 
   * *Video.* You can now control whether related videos show up at the end of your video.
 
