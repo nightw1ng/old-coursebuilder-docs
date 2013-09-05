@@ -51,7 +51,7 @@ We will work through an example of how to create a FAQ page.
    ## Highlight the FAQ tab in the navigation bar.
    ## Render the FAQ page. The final output should look something like:
    {{{
-   class Faqhandler(BaseHandler):
+   class FaqHandler(BaseHandler):
        """Handler for FAQ page."""
        def get(self):
            """Handles GET requests."""
