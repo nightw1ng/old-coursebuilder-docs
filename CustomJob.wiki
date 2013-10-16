@@ -78,13 +78,13 @@ Now you can download data, run it through an arbitrary computation, and then upl
 You can convert a JSON file that is outputted by ETL and convert it to a CSV or XML file. You must convert one file at a time. To convert a JSON file, run the following command from your Course Builder root directory:
 
 {{{
-python tools/etl/etl.py run tools.etl.mapreduce.JsonToCSV /<coursename> <appid> <server.appspot.com> \
+python tools/etl/gcbpaths.py run tools.etl.mapreduce.JsonToCsv /<coursename> <appid> <server.appspot.com> \
     --job_args='<path_to_an_Entity_file> <path_to_output_directory>'
 }}}
 
-The following example converts the {{{students.json}}} file to CSV and puts it in the directory called {{{movies}}}.
+The following example converts the {{{Students.json}}} file to CSV and puts it in the directory called {{{movies}}}.
 
 {{{
-python tools/etl/etl.py run tools.etl.mapreduce.JsonToCSV /cinema filmstudies filmstudies.appspot.com \
-    --job_args='./students.json ~/movies/students.csv'
+python tools/etl/etl.py run tools.etl.mapreduce.JsonToCsv /cinema filmstudies filmstudies.appspot.com \
+    --job_args='./Students.json ~/movies/students.csv'
 }}}
