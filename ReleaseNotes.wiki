@@ -7,11 +7,15 @@
 == Release notes for pending changes in master branch==
 The items in this section are the most recent changes towards the next new release. You can browse the source code that contains these items in [https://code.google.com/p/course-builder/source/browse/#git%2Fcoursebuilder%253Fstate%253Dclosed git]. You can also see a summary of changes under [https://code.google.com/p/course-builder/source/list committed changes].
 
+  * *Appstats.* Google App Engine Appstats, a feature that profiles an app's Remote Procedure Calls (RPCs), is now available in Course Builder. In your {{{app.yaml}}} file, turn the {{{GCB_APPSTATS_ENABLED}}} to {{{true}}}.
+  
   * *Bug Fix: Accessibility.* Added alert roles for feedback divs.
 
   * *Bug Fix: Import questions and question groups.* There was a bug that did not import questions and question groups in the user interface. This was fixed.
 
-  * *ETL: Question and !QuestionGroup entities.* Download or upload of course data now properly handles question and question group entities.
+  * *Datastore Optimization.* An optimization was made that decreased the number of Google App Engine datastore operations on the *Dashboard > Assets* page under particular circumstances. Specifically, there is a reduction in the number of required datastore operations when uploading assets. This optimization helps decrease process time and quota, compared to previous releases.
+
+  * *ETL: Question and !QuestionGroup entities.* When you download course data, you will also get questions and question group entities.
 
   * *Video.* You can now control whether related videos show up at the end of your video.
 
