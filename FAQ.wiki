@@ -55,9 +55,30 @@ Every operating system has a utility you can use that lets you type in text-base
 
   * *Linux* and other *POSIX-compliant systems* call it a *shell*. 
 
+== My course does not show up after I deploy ==
+Make sure your {{{.yaml}}} files are formatted correctly.  [http://yaml.org/ YAML] files are sensitive to spacing since the spacing itself is part of the syntax. For example, although the following examples from {{{app.yaml}}} seem similar, the first example is wrong.
+
+Wrong (extra spaces before first word):
+{{{
+blurb: |
+  Google Search makes it amazingly easy to find information. Come learn about
+the powerful advanced tools we provide to help you find just the right
+information when the stakes are high.
+}}}
+
+Correct:
+{{{
+blurb: |
+  Google Search makes it amazingly easy to find information. Come learn about
+  the powerful advanced tools we provide to help you find just the right
+  information when the stakes are high.
+}}}
+
 == How do CSV files work? ==
 
-Course Builder gets lesson and unit data for your course from CSV files. [http://en.wikipedia.org/wiki/Comma-separated_values CSV (comma-separated value)] is a simple format for storing lines of data. Actually, CSV files can differ. As used by Course Buidler:
+We suggest you use the [CreateLessons#Create_lesson_content_from_the_browser browser] to create your units and lessons. For the default course, Course Builder gets such information from CSV files. [http://en.wikipedia.org/wiki/Comma-separated_values CSV (comma-separated value)] is a simple format for storing lines of data. If you are going to edit the CSV files, you must use a plain text editor, like vi or Notepad++. Otherwise, the editor may introduce characters that will cause Course Builder to fail.
+
+CSV files can differ. As used by Course Builder:
 
   * Each line represents one set of related data (think of a row in a table).
 
