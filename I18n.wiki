@@ -26,7 +26,7 @@ Here are the supported languages and their abbreviation in parenthesis:
 
  * af (Afrikaans)
  * am (Amharic)
- * ar (Bulgarian)
+ * ar (Arabic)
  * bg (Bulgarian)
  * bn (Bengali)
  * ca (Catalan)
