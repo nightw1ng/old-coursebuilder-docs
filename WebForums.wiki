@@ -96,13 +96,6 @@ Include information about your group on the page the student sees upon successfu
   {{{On that page, click on <b>Join Group</b>.</p>}}}
 
 == Edit forum link ==
-
-Edit the link to your discussion forum in the file {{{views/forum.html}}} and replace the part marked by {{{"FIXME"}}} to contain your group's name.  For example, if your group is named _*{{{My-Course}}}*_ the line:
-
-  {{{"https://groups.google.com/forum/embed/?place=forum/[FIXME: insert course forum name here]"}}}
-
-should become:
-
-  {{{"https://groups.google.com/forum/embed/?place=forum/}}}_*{{{My-Course}}}*_{{{"}}}
+Add the link to your discussion forum in the [CourseSettings course.yaml] file. Specifically, set the {{{forum_url:}}} setting to your forum URL in {{{course.yaml}}}.
 
 || [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/set-up-and-manage-community Ask questions in the forum] ||
