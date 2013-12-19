@@ -1,111 +1,48 @@
-#summary Checklist of all steps to create a course using Course Builder.
+#summary Checklist of all steps to download and run Course Builder.
 #labels Featured
 
 <h1>Course Builder Checklists</h1>
 
-The rest of these Wiki pages go into a lot of detail about how to build your own online course using the Course Builder software and the other tools and processes that we used when we created [http://www.google.com/insidesearch/landing/powersearching.html Power Searching with Google].
-
-Before you dive into creating your own course, consider reading [WhatsInACourse Parts of a Course Builder Course] and [CourseFlow Course Flow for Students] to get a quick overview of the terminology we use in talking about online courses you create using Course Builder.
-
-If you have issues or feature requests for Course Builder, please report them in our [https://code.google.com/p/course-builder/issues/list Issues Tracker].
+<wiki:toc max_depth="2" />
 
 == Costs ==
+When you use Course Builder, you create your course as an App Engine application. Currently, each App Engine application can consume a certain level of computing resources for free, controlled by a set of limits. If you need resources above these free limits, you can switch to a paid app to set a daily resource budget. For more information, see [AppEngine Develop with App Engine].
 
-When you use Course Builder, you create your course as an App Engine application. Currently, each App Engine application can consume a certain level of computing resources for free, controlled by a set of limits. If you need resources above these free limits, you can switch to a paid app to set a daily resource budget. For more information, see [https://code.google.com/p/course-builder/wiki/AppEngine#Important:_Quotas_and_billing Develop with App Engine].
+==Download and install==
+All pathnames are relative to the directory containing Course Builder.
 
-==Technologist Checklist==
+  # Download and install  [http://python.org/download Python]. You may already have it. Check to ensure it is Python version 2.7.x.
+  # Download and install [Download#Download_and_install_Google_App_Engine App Engine].
+  # Download the latest version of the [https://code.google.com/p/course-builder/downloads/list Course Builder sample application]. Course Builder supports Windows 7, Mac, and Linux.
+  # [GetCode#1._Start_the_Google_App_Engine_Launcher Start the Google App Engine Launcher].
+  # [GetCode#2._Decide_on_a_name_for_your_app Decide a name for your Course Builder app]. Be careful with spacing in {{{.yaml}}} files since they are spacing sensitive. Also, your text editor might add unwanted spacing. Do not add or delete any spacing at this point.
+  # [GetCode#3._Add_the_app_to_Google_App_Engine Add the app to Google App Engine].
+  # [GetCode#4._Start_the_development_server Start the development server on your local computer].
+  # [GetCode#5._Connect_to_the_development_server Connect to the development server on your local computer].
 
-The technologist, sometimes known as the administrator or just "admin" in the technology industry, is the person or team who is responsible for setting up and managing Course Builder on Google App Engine. See [CBRoles Course Builder Roles] for more information on Course Builder Roles.
+==Explore==
+Explore Course Builder to get direct experience. Start by exploring the sample [http://www.google.com/insidesearch/landing/powersearching.html Power Searching with Google] course through your browser. This is a safe, exploration environment. Any new courses or modifications you make are lost when you turn off your computer. To make your changes permanent, you must [CourseBuilderChecklist#Deploy deploy] and begin your implementation on Google App Engine (as opposed to your local computer with the Google App Engine SDK). 
 
-We expect the following from technologists:
+  # [ExplorePS Explore the Sample App]
 
-  * *HTML familiarity.* 
-  * *!JavaScript familiarity,* particularly !JavaScript arrays, simple objects, and regular expressions. Of these, regular expressions tend to be the biggest stumbling block. The [https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions Mozilla Developer Network] has an introduction to regular expressions. 
-  * *App Engine familiarity is a plus,* but it's not necessary.
+==Deploy==
+You must deploy the Course Builder app before you can make permanent changes to it. When you first deploy, you use the example *Power Searching with Google* course. After deployment, you can use this example course as a template or completely start a new, empty course.
 
-In the following steps, you will implement the content using technology. All pathnames are relative to the directory containing your application. Every place in the code you must make a change is marked by a comment starting with {{{FIXME}}}.
+  # [UploadCode#Register_your_app_(course)_with_Google Register your app (course) with Google]
+  # [UploadCode#Set_up_an_app-specific_password Set up an app-specific password]
+  # [UploadCode#Upload_(or_deploy)_your_app Upload (or deploy) your app]
+  # [UploadCode#Set_Up_Security Set Up Security]
 
-=== A. [GetStarted Download and install needed software and the Course Builder sample application.] ===
-  # [Download Set up for development.]
-    # Download and install  [http://python.org/download Python].
-    # Download and install [Download#Download_and_install_Google_App_Engine App Engine].
-    # Download the [Download#Download_Course_Builder_sample_application Course Builder sample application]. Course Builder supports Windows 7, Mac, and Linux.
-  # [GetCode Run the sample app]
-    # Pick a name for your app. Make it the value of {{{application}}} in {{{app.yaml}}}.
-    # [GetCode#4._Add_the_app_to_App_Engine Load the app].
-    # [GetCode#6._Upload_the_unit_and_lesson_data Upload sample data] to the app.
-    # [ExplorePS Explore the sample app] and [ExploreCode its  code].
+==Create your course==
+You can create a new, empty course or import the example course and use it as a template. New courses are by default private: only the technologist(s) who created the course(s) can see it.
 
-=== B. [ImplementCourseMaterial Implement the course material.] ===
-  # [CourseSettings Modify the basic look and feel of course pages]<br>by editing the {{{course.yaml}}} file. Things you must change include:
-    # The course name, for the title element.
-    # Code to collect Analytics data. (This change is only in {{{views/base.html}}}.)
-    # Logo image for the header.
-    # Link to go with the logo.
-    # Course name or description for the header.
-    # Link and name of entity responsible for the course, for the footer.
-    # Link to a relevant privacy policy and terms of service, for the footer.
-  # [CreateRegistration Modify the registration pages.]
-    # Change the content at {{{views/register.html}}} to ask whatever registration questions you want.
-    # If you change those questions, you must also change {{{RegisterHandler}}} in {{{controllers/utils.py}}}.
-    # Change the content at {{{views/confirmation.html}}} to include the correct discussion group and email list. (You must first create the lists. That step is listed in [#C.3. C.3.]
-  # [CreateHomePage Modify the course home page].
-    # In {{{views/summary.html}}}, change the course name, course description, and information about the instructor. Also, add a video or image for the home page .
-    # In {{{data/unit.csv}}}, [CreateHomePage#Home_page_content change what's listed on the home page]. 
-    # When you change {{{unit.csv}}}, you must also [AppEngine#Modify_your_app_and_see_the_effects reload all data].
-  # [CreateLessons Create course lessons.]
-    # Actually create the lesson content -- record the videos, write the objectives, and write the text versions of the lessons.
-    # Change the look of lesson pages at {{{views/unit.html}}}.
-    # Change the [CreateLessons#Lesson_content lesson content data] in {{{data/lesson.csv}}}. 
-    # When you change {{{lesson.csv}}}, you must also [AppEngine#Modify_your_app_and_see_the_effects reload all data].
-  # [CreateActivities Create Activities.]
-    # Change the look of activity pages at {{{views/activity.html}}}.
-    # [CreateActivities#Writing_activities Define the activity content] in files named {{{activity-}}}_*{{{N.M}}}*_{{{.js}}}, where _*{{{N}}}*_ is the unit number and _*{{{M}}}*_ is the lesson number.
-  # [CreateAssessments Create Assessments.]
-    # Change the look of assessment pages at  {{{views/assessment.html}}}.
-    # [CreateAssessments#Writing_assessments  Define the assessments] in files named {{{activity-}}}_*{{{SUFFIX}}}*_{{{.js}}}, where _*{{{SUFFIX}}}*_ is one of {{{Pre}}}, {{{Mid}}}, or {{{Fin}}}. 
-    # [CreateAssessments#Submitting_and_checking_answers Fix the messages] sent to students after they take assessments in {{{views/test_confirmation.html}}}.
-  # [UploadCode Deploy your app to production.]
-    # [UploadCode#Register_your_app_(course)_with_Google Register your app with Google.]
-    # [UploadCode#Set_up_an_app-specific_password Create an app-specific password.]
-    # [UploadCode#Upload_(or_deploy)_your_app Upload your app to Google's production servers.]
+  # [CreateNewCourse Create a course]
+  # [CreateNewCourse#Import_Data_into_an_Empty_Course Import Data into an Empty Course]
+  # [CreateNewCourse#Make_Courses_Viewable Make Courses Viewable]
 
-==Course Author Checklist==
-
-Course author is the person or team who designs and creates the content of the course or the “what is learned” from the students’ points of view. See [CBRoles Course Builder Roles] for more information on Course Builder Roles.
-
-We expect the following from course authors:
-
-  * *Experience creating course material* either for a traditional live classroom or for a more traditional online class. 
-
-=== A. [OnePlan Plan for 30 minutes.] ===
-  # Define the problem statement and high-level goal of the course.
-  # Identify your audience and your assumptions.
-  # Define course objectives.
-  # Consider course logistics.
-
-=== B. [TwoDevelop Develop content without technology.] ===
-  # Clarify your goals and non-goals for the course.
-  # Clarify your assumptions about your students.
-  # Write clear, specific objectives.
-  # Decide what you want to test in your assessments, both graded and ungraded.
-  # Decide what other data to collect to evaluate the efficacy of your course.
-  # Sequence and organize your content into digestible chunks.
-  # Validate your content with others.
-
-=== C. [ManageCommunity Setup and manage the participant community.] ===
-  # [Announcements Prepare announcements and optional material.]
-  # [WebForums Setup a community discussion forum.]
-  # Add the link to your discussion forum to the file {{{views/forum.html}}}.
-  # Add links to both your discussion forum and your email list to the file {{{views/confirmation.html}}}.
-  # [TeachingAssistants Engage and train teaching assistants.]
-  # [OnlineOfficeHours Schedule online office hours.]
-
-=== D. [MeasureEfficacy Prepare to evaluate the efficacy of your course] ===
-  # [AssessmentMetrics Analyze assessment data.]
-  # [HappinessMetrics Create a survey to analyze student happiness.]
-  # [ReachAndEngagementMetrics Capture reach & engagement data.]
-
-=== E. [FourPilot Pilot with your target audience.] ===
+==Read the wiki==
+This checklist only covers the basics. Get details and learn to customize your own course content by: 
+  # reading the [GetStarted Get Started] page and proceeding through the wiki sequentially.
+  # going to the Course Builder [https://groups.google.com/forum/?fromgroups#!forum/course-builder-forum forum].
 
 || [https://groups.google.com/forum/?fromgroups#!forum/course-builder-forum Ask questions in the forum] ||
