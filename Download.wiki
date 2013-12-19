@@ -6,12 +6,6 @@ Before you can start working on your own course, you need to download Python and
 
 <wiki:toc max_depth="2" />
 
-== Summary ==
-
-  # [http://python.org/download Download Python 2.7.]
-  # [Download#Download_and_install_Google_App_Engine Download the Google App Engine SDK for Python]
-  # [http://code.google.com/p/course-builder/downloads/list Download the Course Builder sample application.] 
-
 == Download and install Python 2.7 ==
 
 Make sure you have Python 2.7 on your system. To find out if you do...
@@ -60,9 +54,7 @@ If you are unfamiliar with GAE, but know something about cloud computing, read [
 Choose the appropriate GAE SDK version with the appropriate Course Builder version. The following table illustrates the correct pairings:
 
 || *Course Builder Version* || *Platform* || *Google App Engine SDK Version* ||
-|| 1.5.1 || [http://code.google.com/p/googleappengine/downloads/detail?name=GoogleAppEngine-1.8.2.msi&can=1&q=1.8.2 Windows] || 1.8.2 ||
-|| 1.5.1 || [http://code.google.com/p/googleappengine/downloads/detail?name=GoogleAppEngineLauncher-1.8.2.dmg&can=1&q=1.8.2 Mac] || 1.8.2 ||
-|| 1.5.1 || [http://code.google.com/p/googleappengine/downloads/detail?name=google_appengine_1.8.2.zip&can=1&q=1.8.2 Linux] || 1.8.2 ||
+|| 1.5.1 || [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python Windows, Mac, Linux] || Latest ||
 || 1.5.0 || [http://code.google.com/p/googleappengine/downloads/detail?name=GoogleAppEngine-1.8.1.msi&can=2&q= Windows] || 1.8.1 ||
 || 1.5.0 || [http://code.google.com/p/googleappengine/downloads/detail?name=GoogleAppEngineLauncher-1.8.1.dmg&can=2&q= Mac] || 1.8.1 ||
 || 1.5.0 || [http://code.google.com/p/googleappengine/downloads/detail?name=google_appengine_1.8.1.zip&can=2&q= Linux] || 1.8.1 ||
