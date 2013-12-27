@@ -23,6 +23,6 @@ In the technology industry, Technologists like the ones referred to here are som
 This person or group are the learners, "consumers", or "users" of the content that was created with Course Builder.
 
 ==Roles and Actions==
-The picture below represents a general overview of using Course Builder. On the left, the boxes represent actions while the boxes on the left represent which role would typically be responsible for those actions. Of course, there are cases where the technologist is the course author.
+The picture below represents a general overview of using Course Builder. On the left, the boxes represent actions while the boxes on the right represent which role would typically be responsible for those actions. Of course, the technologist and the course author may be the same person.
 
 http://wiki.course-builder.googlecode.com/git/images/overview_diagram.png
