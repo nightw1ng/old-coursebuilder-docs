@@ -2,6 +2,8 @@
 
 <h1>Course Builder Roles</h1>
 
+<wiki:toc max_depth="2" />
+
 Course Builder currently differentiates between two main roles -- Course Author and Administrator. These roles exist to allow an organization to separate the technical implementation from the course design. This separation can allow each person or team to focus on respective competencies. This is solely at the discretion of the organization or individual; you may decide one person should be responsible for both roles.
 
 ==Course Author==
