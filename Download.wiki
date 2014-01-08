@@ -81,7 +81,7 @@ Open the downloaded .dmg file and drag the GAE icon into the Applications folder
 After downloading the .zip file, go to the directory where you want to install GAE. When you unzip the archive, it creates a subdirectory named google_appengine. Add that directory to your shell's path so that it can find the command-line tools when you need them.
 
 
-== Download Course Builder sample application ==
+== Download Course Builder ==
 
 To download Course Builder's sample application, you have two choices:
 
