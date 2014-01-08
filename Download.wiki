@@ -30,7 +30,7 @@ The output of this command is similar to the following:
 
   <font color=green> {{{Python 2.7.3}}} </font>
 
-==== Check on a PC ====
+==== Check on Windows 7 ====
 On a PC, open a *Command Prompt* and type
   {{{python}}}
 
@@ -45,7 +45,7 @@ This starts the Python interpreter and indicates the version. If Python is not i
 
 ==== Installing Python ====
 
-If you don't have Python at all or you have the wrong version, visit the general Python 2.7 [http://python.org/download download page] to download and install the right version for you. You probably want to simply use the current production version for your platform. (Python 2.7.3 was the latest at the time of this writing.) 
+If you don't have Python at all or you have the wrong version, visit the general Python 2.7 [http://python.org/download download page] to download and install the right version for you. You probably want to simply use the current production version for your platform. 
 
 == Download and install Google App Engine ==
 
@@ -85,8 +85,8 @@ After downloading the .zip file, go to the directory where you want to install G
 
 To download Course Builder's sample application, you have two choices:
 
-  * *Download the [http://code.google.com/p/course-builder/downloads/list zip file.]* Unzip that file into a working directory.<br><br>This is the simplest route and is suitable for most people.
+  * Download the [http://code.google.com/p/course-builder/downloads/list zip file]. Unzip that file into a working directory. This is the simplest route and is suitable for most people.
 
-  * *Visit the [https://code.google.com/p/course-builder/source/checkout Source > Checkout] tab for the Course Builder project.*<br><br>From there, follow the instructions to get a local copy of the repository using Git. Use this approach if you have explicitly partnered with Google to make changes to Course Builder itself.
+  * Visit the [https://code.google.com/p/course-builder/source/checkout Source > Checkout] tab for the Course Builder project. From there, follow the instructions to get a local copy of the repository using Git. Use this approach if you have explicitly partnered with Google to make changes to Course Builder itself.
 
 || [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||
