@@ -3,7 +3,7 @@
   * Technologists  
     * [GetStarted Get Started]
       * [Download Download the Software]
-      * [GetCode Run the Sample App]
+      * [GetCode Run Course Builder]
       * [ExplorePS Explore the Sample App]
       * [ExploreCode Explore the Sample Code]  
     * [ImplementCourseMaterial Implement Course Material]
