@@ -1,37 +1,35 @@
 #summary How to download the sample code and get started with Google App Engine.
 
-<h1>Run the Sample App</h1>
+<h1>Run Course Builder</h1>
 
-Once you've downloaded the sample application, you load that code into a new Google App Engine app and modify it as needed for your course. This page describes how to get the sample app running for the first time on Google App Engine. The basic steps are:
+Once you've downloaded Course Builder, you load it as a new Google App Engine (GAE) app and modify it as needed for your course. This page describes how to get Course Builder running for the first time on GAE. The basic steps are:
 
 <wiki:toc max_depth="2" />
 
-*Note:* To run the sample application successfully, you *must* follow the steps on this page.
+*Note:* To run Course Builder successfully, you *must* follow the steps on this page.
 
-== 1. Start the Google App Engine Launcher ==
+== 1. Start the Google App Engine Launcher on your computer ==
 
-Activate the Launcher wherever it's available, that is, from the Desktop, the Dock, the Applications folder, Start -> Programs -> Google App Engine -> !GoogleAppEngineLauncher, and so on. 
+Activate the GAE Launcher on your computer wherever it's available, that is, from the Desktop, the Dock, the Applications folder, *Start -> Programs -> Google App Engine -> !GoogleAppEngineLauncher*, and so on. 
 
 The first time you start the Launcher on Mac, you may see a dialog box asking you about symbolic links:
 
 <img src="http://wiki.course-builder.googlecode.com/git/images/symlinks.png" />
 
-For Google App Engine to work, you must agree to set up symbolic links.
-
-For more information about working with Google App Engine, see [AppEngine Develop with Google App Engine].
+For Google App Engine to work, you must agree to set up symbolic links. For more information about working with Google App Engine, see [AppEngine Develop with Google App Engine].
 
 == 2. Decide on a name for your app ==
 
-The file {{{app.yaml}}} is the configuration file for your Google App Engine app. Before you get started, you need to choose a new name for the app. To do so:
+The file {{{app.yaml}}}, located in the Course Builder root directory, is the configuration file for your Google App Engine app. Before you get started, you need to choose a new name for the app. To do so:
 
   # Edit {{{app.yaml}}}. The first line is:<br>{{{  application: mycourse # FIXME: Put your application id here}}}
-  # Replace {{{mycourse}}} with the name you choose for your app. 
+  # Replace {{{mycourse}}} with the name you choose for your app. During development, you can give your Course Builder app any name you want. However, when you upload your app to production GAE, as described in [UploadCode#Register_your_app_(course)_with_Google Register your app with Google], you name your production app once and can never reuse that name. 
 
 *Note for Windows 7 users:* Do *not* use Notepad to edit Course Builder files. If you do, every Course Builder file appears to be one long line. Please use another text editor, such as !WordPad.
 
-Pick a single word as an app name. It's best if you keep all the letters of the app name in lowercase. See [UploadCode#Register_your_app_(course)_with_Google Register your app with Google] for restrictions on naming.
+Be careful with spacing in {{{.yaml}}} files since they are spacing sensitive. Do not add or delete any spacing at this point.
 
-*Note:* During development, you can give your app any name you want. However, when you release your app to production, as described in [UploadCode#Register_your_app_(course)_with_Google Register your app with Google], you name your production app once and can never reuse that name. 
+Pick a single word as an app name. It's best if you keep all the letters of the app name in lowercase. See [UploadCode#Register_your_app_(course)_with_Google Register your app with Google] for restrictions on naming.
 
 Later, if you decide to customize your course, you may need more information on configuration. If you do, see the [https://developers.google.com/appengine/docs/python/config/appconfig#Required_Elements official documentation].
 
@@ -39,20 +37,22 @@ Later, if you decide to customize your course, you may need more information on 
 
   # In the Google App Engine Launcher, from the *File* menu, choose *Add Existing Application*. 
   # For the Path, navigate to the directory containing the source code you downloaded in the first step.<br>Note that you choose a directory for the path, not a particular file in the directory.
-  # For the Port, the default value is typically fine. If you have other apps running locally, you may need to change the port number.
+  # For the Port, the default value is typically fine. If you have other apps running locally, you may need to change the port number. For example, if you have an app or another program using port 8080, you may want to try port 8081.
   # Click on *Add*.
 
-A new line appears in the Launcher. Its name is the name you put in the {{{app.yaml}}} file. Its path is the path you specified here.
+A new line appears in the Launcher. Its name is the name you put in the {{{app.yaml}}} file. Its path is the path you specified.
 
 
 == 4. Start the development server ==
 
-Before you can deploy your app to run in production and be available to your audience, you need to develop and debug it in a more private setting. That more private setting is called a *development server*.
+Before you deploy your app to the production GAE environment and therefore be available to your external audience, you may want to explore Course Builder and its sample course in a more private setting. That more private setting is called a *development server*, which is run on your local computer.
 
 ==== From the Launcher (Windows 7, Mac) ====
 
+<img src="http://wiki.course-builder.googlecode.com/git/images/GAE_launcher.png" />
+
 To start the development server from the Launcher:
-  # Select your app. 
+  # Single click your app. 
   # When it's highlighted, click the *Run* button to start the server (for that app). <br>Once the *Browse* button is enabled, your server is ready to accept requests.
   # Click on the *Browse* button to visit the app in a web browser.<br>If you are not logged in to the development server, you should see the login page for the server.<br> <img src="http://wiki.course-builder.googlecode.com/git/images/server-login.png" /><br>If you have previously logged in to the development server, you may see the registration page or the home page for the sample course.
   # If you do not see one of these pages, read [AppEngine#Troubleshooting Troubleshooting].
@@ -82,9 +82,9 @@ where _*{{{APPPATH}}}*_ is the directory containing your app. _Note that the per
 
 <a name="uploaddata"></a>
 
-== 5. Connect to the development server ==
+== 5. Access the Course Builder sample course ==
 
-Once your development server is running, you access it through a web browser.
+Once your development server is running, you can run Course Builder and access the sample course through a web browser.
 
 From the Launcher:
   # Click *Browse*.<br>A login window appears.
