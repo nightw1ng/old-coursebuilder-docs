@@ -4,33 +4,20 @@
 
 <wiki:toc />
 
-== Release notes for version 1.6.0==
+== Release notes for pending changes in master branch==
+The items in this section are the most recent changes towards the next new release. You can browse the source code that contains these items in [https://code.google.com/p/course-builder/source/browse/#git%2Fcoursebuilder%253Fstate%253Dclosed git]. You can also see a summary of changes under [https://code.google.com/p/course-builder/source/list committed changes].
 
-  * *Appstats.* Google App Engine Appstats, a feature that profiles an app's Remote Procedure Calls (RPCs), is now available in Course Builder. In your {{{app.yaml}}} file, turn the {{{GCB_APPSTATS_ENABLED}}} to {{{true}}}. See [UploadCode#Enable_Google_App_Engine_Appstats Enable Google App Engine Appstats].
-
-  * *Assessments.* The viewing permissions for assessments were not being checked before they were shown to students. This bug was fixed. Peter Reutemann from the community contributed this fix.
-
-  * *Bug Fix: Accessibility.* Added alert roles for feedback {{{div}}}.
+  * *Appstats.* Google App Engine Appstats, a feature that profiles an app's Remote Procedure Calls (RPCs), is now available in Course Builder. In your {{{app.yaml}}} file, turn the {{{GCB_APPSTATS_ENABLED}}} to {{{true}}}.
+  
+  * *Bug Fix: Accessibility.* Added alert roles for feedback divs.
 
   * *Bug Fix: Import questions and question groups.* There was a bug that did not import questions and question groups in the user interface. This was fixed.
 
-  * *Dashboard: Breadcrumb.* The breadcrumb in the Dashboard is now hyperlinked.
-
   * *Datastore Optimization.* An optimization was made that decreased the number of Google App Engine datastore operations on the *Dashboard > Assets* page under particular circumstances. Specifically, there is a reduction in the number of required datastore operations when uploading assets. This optimization helps decrease process time and quota, compared to previous releases.
 
-  * *ETL: Question and !QuestionGroup entities.* Downloading or uploading a course will now include Question and !QuestionGroup entities.
+  * *ETL: Question and !QuestionGroup entities.* When you download course data, you will also get questions and question group entities.
 
-  * *Google Docs.* You can now have anchors in Google Docs links.
-  
-  * *Google Analytics.* You no longer have to copy and paste the entire Google Analytics !JavaScript as blocked text in the course.yaml file. Instead, add your Google Analytics Tracking ID in the new {{{google_analytics_id}}} setting in the same course.yaml file.
-
-  * *XBlock Module.* A new module was created that allows the use of Xblocks within Course Builder. See [ ].
-
-  * *!JsontoCsv.* The !JsonToCsv converter did not flatten all string fields. The converter will now allow trailing commas. There was also a bug in unpacking nested JSON content. This bug was fixed.
-  
-  * *Tag Manager.* You can now use [https://www.google.com/tagmanager/ Google Tag Manager] with Course Builder. This allows you to capture analytics at the event level, as opposed to the page level with just Google Analytics. See [ Customize Course Settings].
-  
-  * *Video.* You can now control whether related videos show up at the end of your video. Steve Midgley from the community contributed this feature.
+  * *Video.* You can now control whether related videos show up at the end of your video.
 
 ==Release notes for version 1.5.1==
 
