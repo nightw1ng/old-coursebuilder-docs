@@ -96,7 +96,7 @@ You are asked to supply your credentials. Supply your username and the app-speci
 
 After deployment completes changes to CSV files and {{{course.yaml}}} file will be visible instantaneously. The !JavaScript and image files in {{{assets/js/}}} are cached in the student browsers for 10 minutes and will not be viewed immediately. Frequent changes to the assessments and activities can make it difficult to invalidate analyze previously submitted results.
 
-==== Enabling and using Datastore Admin ====
+==== Enable and use Datastore Admin ====
 
 The following steps you only need to do once:
 
@@ -107,6 +107,20 @@ The following steps you only need to do once:
   # The *Datastore Admin* page for your app appears.
 
 You now can use the Datastore Admin to directly inspect or export data stored by a Course Builder. We advise you not to modify any datastore objects directly.
+
+== Enable Google App Engine Appstats ==
+The Appstats library in Google App Engine helps profile your Remote Procedure Calls (RPCs) for your implementation of Course Builder. It is a debugging feature and optional. For example, you may want to know if there are any redundant calls to the datastore.  By default Appstats is disabled.
+
+The setting to enable this feature is in {{{app.yaml}}}.  Specifically, it is under {{{env_variables}}}:
+{{{
+	...
+	env_variables:
+	  GCB_PRODUCT_VERSION: 'x.x.x'
+	  GCB_APPSTATS_ENABLED: false
+	...
+}}}
+
+To turn on Appstats, set {{{GCB_APPSTATS_ENABLED}}} to {{{true}}}. To learn more about Appstats, see the [https://developers.google.com/appengine/docs/python/tools/appstats Google App Engine documentation].
 
 == Set Up Security ==
 After you deploy our app but before anyone uses the course, you must change the default security setting. Course Builder implements protection against XSRF using transient user-action specific tokens for all state-modifying HTTP operations supported by the product.
