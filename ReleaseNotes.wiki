@@ -14,6 +14,8 @@
   * *Assessments.* The viewing permissions for assessments were not being checked before they were shown to students. This bug was fixed. Peter Reutemann from the community contributed this fix.
 
   * *Bug Fix: Accessibility.* There were various accessibility fixes, including adding roles and labels to elements on course pages.
+  
+  * *Bug Fix: Embedding Google Groups in Firefox.* There was a bug in which embedded Google Groups did not show up specifically in Firefox. This was fixed when you deploy to Google App Engine. On your local computer (using the SDK), the problem will persist on Firefox. The fix for this on localhost is to change "localhost" with  "127.0.0.1" in the {{{extensions/tags/gcb/__init__.py}}} file. The comment in that file will reiterate these instructions.
 
   * *Bug Fix: Import questions and question groups.* There was a bug that did not import questions and question groups in the user interface. This was fixed.
 
