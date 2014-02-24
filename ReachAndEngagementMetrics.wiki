@@ -21,25 +21,7 @@ For an example of how to use student assessments and reach and engagement data t
 ==Google Analytics==
 Google Analytics is our tool for collecting and analyzing reach and engagement data. The [http://www.google.com/analytics/learn/index.html Analytics site] contains a lot of useful information. Start with [http://support.google.com/analytics/bin/answer.py?hl=en&answer=1008015&topic=1726909&ctx=topic Get started with Google Analytics.] This step-by-step guide describes how to get an Analytics account to use with your course. 
 
-To collect Analytics data, copy the !JavaScript snippet from your Google Analytics account and paste it into the {{{before_head_tag_ends}}} mapping in the [CourseSettings course.yaml] file:
-
-<pre>  before_head_tag_ends: |
-   `<script type="text/javascript"`>
-   var _gaq = _gaq || [];
-   _gaq.push(['_setAccount', 'UA-somenumber-x']);
-   _gaq.push(['_trackPageview']);
-   (function() {
-   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async =
-   true;
-   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
-   '.google-analytics.com/ga.js';
-   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-   })();
-   `</script`></pre>
-
-You must specify the pipe ({{{|}}}) after {{{before_head_tag_ends}}} to indicate multi-lined block notation. 
-
-In YAML, indenting and spaces are incredibly important: even a single errant space can cause a parse error.  See the [http://www.yaml.org/ YAML official site] for more information about YAML, including the latest edition.
+To collect Analytics data, specify your Google Analytics Tracking ID as the value for the {{{google_analytics_id}}} setting in your [CourseSettings course.yaml] file.
 
 Remember to convey your privacy policy to students and let them know that they will be tracked on metrics you wish to measure.
 
