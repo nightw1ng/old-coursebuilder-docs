@@ -4,20 +4,46 @@
 
 <wiki:toc />
 
-== Release notes for pending changes in master branch==
-The items in this section are the most recent changes towards the next new release. You can browse the source code that contains these items in [https://code.google.com/p/course-builder/source/browse/#git%2Fcoursebuilder%253Fstate%253Dclosed git]. You can also see a summary of changes under [https://code.google.com/p/course-builder/source/list committed changes].
+== Release notes for version 1.6.0==
+<font color='red'>Starting from Course Builder 1.6.0, you must download the zip from here:</font> [http://releases.course-builder.googlecode.com/git/ Course Builder on Git]. The browsable source code will be in its usual area in [https://code.google.com/p/course-builder/source/browse/ code.google.com].
 
-  * *Appstats.* Google App Engine Appstats, a feature that profiles an app's Remote Procedure Calls (RPCs), is now available in Course Builder. In your {{{app.yaml}}} file, turn the {{{GCB_APPSTATS_ENABLED}}} to {{{true}}}.
+  * *Admin: News.* A new tab was added called "News." This links to Course Builder announcements. 
   
-  * *Bug Fix: Accessibility.* Added alert roles for feedback divs.
+  * *Appstats.* Google App Engine Appstats, a feature that profiles an app's Remote Procedure Calls (RPCs), is now available in Course Builder. In your {{{app.yaml}}} file, turn the {{{GCB_APPSTATS_ENABLED}}} to {{{true}}}. See [UploadCode#Enable_Google_App_Engine_Appstats Enable Google App Engine Appstats].
+
+  * *Assessments.* The viewing permissions for assessments were not being checked before they were shown to students. This bug was fixed. Peter Reutemann from the community contributed this fix.
+
+  * *Bug Fix: Accessibility.* There were various accessibility fixes, including adding roles and labels to elements on course pages.
 
   * *Bug Fix: Import questions and question groups.* There was a bug that did not import questions and question groups in the user interface. This was fixed.
 
+  * *Dashboard: Breadcrumb.* The breadcrumb in the Dashboard is now hyperlinked.
+  
+  * *Dashboard: Support.* A new tab was added in the Dashboard called "Support." This links to the Course Builder Google Group that can help you get answers from other community members.
+
   * *Datastore Optimization.* An optimization was made that decreased the number of Google App Engine datastore operations on the *Dashboard > Assets* page under particular circumstances. Specifically, there is a reduction in the number of required datastore operations when uploading assets. This optimization helps decrease process time and quota, compared to previous releases.
 
-  * *ETL: Question and !QuestionGroup entities.* When you download course data, you will also get questions and question group entities.
-
-  * *Video.* You can now control whether related videos show up at the end of your video.
+  * *ETL: Question and !QuestionGroup entities.* Downloading or uploading a course will now include Question and !QuestionGroup entities.
+  
+  * *Google Analytics.* You no longer have to copy and paste the entire Google Analytics !JavaScript as blocked text in the course.yaml file. Instead, add your Google Analytics Tracking ID in the new {{{google_analytics_id}}} setting in the same course.yaml file. See [ReachAndEngagementMetrics Reach And Engagement Metrics].
+  
+  * *Google Docs.* You can now have anchors in Google Docs links.
+  
+  * *Google+ Hangouts.* Add Google+ Hangout to any page. See [ListOfModulesExtensions List of Modules and Extensions].
+  
+  * *Google Tag Manager.* You can now use [https://www.google.com/tagmanager/ Google Tag Manager] with Course Builder. This allows you to capture analytics at the event level, as opposed to the page level with just Google Analytics. See [CourseSettings Customize Course Settings].
+  
+  * *!JsontoCsv.* The !JsonToCsv converter did not flatten all string fields. The converter will now allow trailing commas. There was also a bug in unpacking nested JSON content. This bug was fixed.
+  
+  * *!MapReduce.* !MapReduce moves a small amount of code to run near the data it operates on, rather than pushing data to a specific processor. Course data is ideal for this due to a large number of nouns (students, questions, events, lessons, answers to questions, etc.) with fairly simple relations to one another. Mapreduce gives us a way to collect, aggregate, and analyze data comparatively inexpensively and quickly. The current version is just a proof-of-concept: it estimates how difficult a question is by simply averaging the scores of all students that answered that question.  
+  
+  * *Navigation.* You can now hide the *Previous Page* and *Next Page* navigation buttons at the bottom of lesson and activity pages. See [CourseSettings Customize Course Settings].
+  
+  * *Oppia.* Oppia is a tool for creating interactive online activities. You can use Oppia as a Course Builder module. See [ListOfModulesExtensions List of Modules and Extensions].
+  
+  * *Video.* !YouTube videos will no longer show related videos at the end of the video. Steve Midgley from the community contributed this feature.
+  
+  * *XBlock Module.* A new module was created that allows the use of Xblocks within Course Builder. See [ListOfModulesExtensions List of Modules and Extensions].
 
 ==Release notes for version 1.5.1==
 
