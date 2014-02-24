@@ -19,13 +19,19 @@ The following list illustrates the types of settings you will find in {{{course.
   * {{{announcement_list_url:}}} URL for the mailing list where students can register to receive course announcements
   * {{{locale:}}} Locale for internationalization
   * {{{browsable:}}} Whether students who are not registered can freely browse the contents of the course.
+  * {{{google_analytics_id:}}} Specify your Google Analytics Tracking ID, if any, with this setting.
+  * {{{google_tag_manager_id:}}} Specify your Google Tag Manager ID, if any, with this setting.
 
 *reg_form*
   * {{{header_text:}}} Header text for the course registration form
   * {{{additional_registration_fields:}}} HTML representing additional fields to include in the course registration form
+  * {{{can_register:}}} Turns student registration on or off. The possible values are {{{True}}}, which allows student registration, and {{{False}}}, which disallows it. The default value is {{{True}}}.
 
 *assessment_confirmations*
   * {{{result_text:}}} HTML to be displayed on the test confirmation page
+
+*unit*
+  * {{{hide_lesson_navigation_buttons:}}} Specify whether to hide the *Previous Page* and *Next Page* navigation buttons at the bottom of lesson and activity pages.
 
 == course_template.yaml ==
 You will find the following settings in {{{course_template.yaml}}}. All the courses inherit values from this file during HTML rendering.
