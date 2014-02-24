@@ -14,7 +14,7 @@ You should modify the following files (except files in {{{lib}}}) to implement y
     * you can add here additional sub-folders for your other content (PDF, ...)
   * {{{data}}} - CSV data files that define sequence of units and lessons of the course
   * {{{course.yaml}}} - main course configuration file
-
+  * {{{course_template.yaml}}} - course specific settings
 
 ==Files common to all courses.==
 You should avoid modifying these files to simplify migration to future versions of Course Builder:
