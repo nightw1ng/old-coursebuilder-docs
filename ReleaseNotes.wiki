@@ -5,7 +5,7 @@
 <wiki:toc />
 
 == Release notes for version 1.6.0==
-<font color='red'>Starting from Course Builder 1.6.0, you must download the zip from here:</font> [http://releases.course-builder.googlecode.com/git/ Course Builder on Git]. The browsable source code will be in its usual area in [https://code.google.com/p/course-builder/source/browse/ code.google.com].
+<font color='red'>Starting from Course Builder 1.6.0, you must download the zip from here:</font> [https://code.google.com/p/course-builder/wiki/DownloadCourseBuilder?tm=2 Course Builder Zip Files]. The browsable source code will be in its usual area in [https://code.google.com/p/course-builder/source/browse/ code.google.com].
 
   * *Admin: News.* A new tab was added called "News." This links to Course Builder announcements. 
   
