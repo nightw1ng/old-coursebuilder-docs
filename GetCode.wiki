@@ -93,7 +93,7 @@ From the Launcher:
 
 From the command-line:
   # Open a web browser.
-  # In the address bar, enter<br>{{{http://localhost:}}}_*{{{PORT}}}*_<br>where _*{{{PORT}}}*_ is 8080 by default or whatever port you chose when adding the app in step 4.
+  # In the address bar, enter<br>{{{http://localhost:}}}_*{{{PORT}}}*_/course<br>where _*{{{PORT}}}*_ is 8080 by default or whatever port you chose when adding the app in step 4. The {{{course}}} specification refers to the default or "root" course.
 
 In either case, you should see the registration page for the sample app:
 
