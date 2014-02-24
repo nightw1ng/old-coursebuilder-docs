@@ -65,6 +65,7 @@
 	  * [CreateComponents Create Components]
 	  * [CreateModules Create Modules]
 	  * [CustomJob Create Custom Jobs]
+	  * [ListOfModulesExtensions List of Modules and Extensions]
   * [FAQ FAQ]
 
 || [https://groups.google.com/forum/?fromgroups#!forum/course-builder-forum Discussion forum] ||
