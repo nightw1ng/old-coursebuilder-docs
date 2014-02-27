@@ -45,6 +45,24 @@
   
   * *Video.* !YouTube videos will no longer show related videos at the end of the video. Steve Midgley from the community contributed this feature.
   
+  * *Views Directory.* Here are the template files that were changed under the {{{views/}}} directory:
+    * activity.html
+    * assessment.html
+    * base.html
+    * course.html
+    * forum.html
+    * preview.html
+    * register.html
+    * review.html
+    * review_confirmation.html
+    * review_dashboard.html
+    * reviewed_assessment_confirmation.html
+    * student_profile.html
+    * test_confirmation.html
+    * unenroll_confirmation.html
+    * unenroll_confirmation_check.html
+    * unit.html
+  
   * *XBlock Module.* A new module was created that allows the use of Xblocks within Course Builder. See [ListOfModulesExtensions List of Modules and Extensions].
 
 ==Release notes for version 1.5.1==
