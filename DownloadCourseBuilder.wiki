@@ -7,7 +7,7 @@ The Course Builder zip fill will work for the following operating systems: Windo
 
  * [http://releases.course-builder.googlecode.com/git/coursebuilder_1.6.0_20140221_144131.zip Course Builder v1.6.0] (24 February 2014)
 
-== Download Older Versions (Deprecated) ==
+== Download Older Versions ==
 
  * [https://code.google.com/p/course-builder/downloads/detail?name=coursebuilder_20130814_214936.zip&can=2&q=#makechanges Course Builder v1.5.1]
  * [https://code.google.com/p/course-builder/downloads/detail?name=coursebuilder_20130628_182846.zip&can=2&q=#makechanges Course Builder v1.5.0]
