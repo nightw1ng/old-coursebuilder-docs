@@ -1,6 +1,6 @@
 #summary Explore the sample app to see what it looks like to students.
 
-<h1>Explore the Sample App</h1>
+<h1>Explore the Sample Course</h1>
 
 In [GetCode Run Course Builder], you downloaded the sample application and got it running on your development server. Let's look at the various pages that a student can see.
 
