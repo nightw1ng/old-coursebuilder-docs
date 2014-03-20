@@ -2,37 +2,23 @@
 
 <h1>Explore the Sample App</h1>
 
-In [GetCode Run the Sample App], you downloaded the sample application and got it running on your development server. Before you start modifying the application for your own course material, let's look at the various pages that a student can see and briefly mention what you'll need to do to modify them for your course. 
-
-[ExploreCode Explore the Sample Code] lists all the files that make up the sample app and briefly describes the ones you'll have to change. This page shows you how the files work together to create the results of those changes.
-
-The different pages a student can see are as follows:
+In [GetCode Run Course Builder], you downloaded the sample application and got it running on your development server. Let's look at the various pages that a student can see.
 
 <wiki:toc max-depth="2" /> 
 
-== Before registration ==
+== Course home page ==
+When students first visit your course, Course Builder displays the course home page. By default, the example course allows you to access the course without registering. Students can always click *Course* in the navigation bar to get to the course home page.
 
-When prospective students first visit your course, the app displays a version of the course home page. In this version, the course syllabus is visible, but students cannot access the content. The page also displays a *Register* button.
-
-http://wiki.course-builder.googlecode.com/git/images/homepage-unregistered-parts.png
+http://wiki.course-builder.googlecode.com/git/images/homepage-parts.png
 
 This page consists of three areas:
   * The *header* contains 
     * Course icon and name of your course.
-    * Horizontal navigation bar, with two tabs on the left (Course and Registration) and an area with a login link. Notice that the horizontal navigation is different once the student completes registration.
-  * The *content area* contains names of each unit and each assessment. None of this information is clickable before registration.
-  * The *footer* contains the same two links as for the registration pages. 
-
-The app uses four files to render this page:
-  * {{{views/base_registration.html}}} defines the header and footer areas. This page is used by all pages displayed to an unregistered person. 
-  * {{{views/preview.html}}} defines the structure of the content area. This page is very similar to its registered counterpart, {{{views/course.html}}}.
-  * {{{views/summary.html}}} provides the course description and other introductory material.   This page is also used by {{{views/course.html}}}.
-  * {{{data/unit.csv}}} provides the actual content of the content area.   This page is also used by {{{views/course.html}}}.
-
-You need to change these files to customize the app for your material. For details, see [CreateHomePage Create Home Page].
+    * Horizontal navigation bar, with several tabs on the left (Announcements, Course, Forum, and My Profile) and an area with the person's address and a Logout link. Notice that the horizontal navigation is different once the student completes registration.
+  * The *content area* contains links to the each unit and to each assessment and also information about the availability of each of those links.
+  * The *footer* contains the same two links as for the registration pages.
 
 == Registration ==
-
 When prospective students visit the registration page, they see:
 
 http://wiki.course-builder.googlecode.com/git/images/registration-parts.png
@@ -44,43 +30,11 @@ This page consists of three areas:
   * The *content area* contains a form for the prospective student to fill out.
   * The *footer* contains two links -- one to your website and one to the privacy conditions and terms for your course.
 
-The app uses two files to render this page:
-  * {{{views/base_registration.html}}} defines the header and footer areas.  This page is used by all pages displayed to an unregistered person. 
-  * {{{views/register.html}}} defines the content of the registration form.
-
-Once a prospective student submits the registration form, the app displays the registration confirmation page:
+Once a prospective student submits the registration form, the Course Builder the registration confirmation page:
 
 http://wiki.course-builder.googlecode.com/git/images/registrationconfirmation-parts.png
 
-This page consists of the same three areas as the previous page and uses these files to render the page:
-  * {{{views/base_registration.html}}} defines the header and footer areas.  This page is used by all pages displayed to an unregistered person. 
-  * {{{views/confirmation.html}}} defines the content of the registration form.
-
-You need change these files to customize the app for your material. For details, see [CreateRegistration Create Registration].
-
-== Course home page ==
-
-After successful registration, the student can click on *Course* in the navigation bar of the confirmation page to be taken to the registered version of the home page for your course.
-
-http://wiki.course-builder.googlecode.com/git/images/homepage-parts.png
-
-This page consists of three areas:
-  * The *header* contains 
-    * Course icon and name of your course.
-    * Horizontal navigation bar, with several tabs on the left (Announcements, Course, Forum, and My Profile) and an area with the person's address and a Logout link. Notice that the horizontal navigation is different once the student completes registration.
-  * The *content area* contains links to the each unit and to each assessment and also information about the availability of each of those links.
-  * The *footer* contains the same two links as for the registration pages. 
-
-The app uses four files to render this page:
-  * {{{views/base.html}}} defines the header and footer areas.  This page is used by all pages displayed to a registered student.
-  * {{{views/course.html}}} defines the structure of the content area. This page is very similar to its unregistered counterpart, {{{views/preview.html}}}.
-  * {{{views/summary.html}}} provides the course description and other introductory material.  This page is also used by {{{views/preview.html}}}.
-  * {{{data/unit.csv}}} provides the actual content of the content area.  This page is also used by {{{views/preview.html}}}.
-
-You need to change these files to customize the app for your material. For details, see [CreateHomePage Create Home Page].
-
-== A lesson ==
-
+== Lesson ==
 When students click on a unit from the home page, they go to the page for the first lesson of the unit they chose. From there, they can go to any other lesson or activity in that unit:
 
 http://wiki.course-builder.googlecode.com/git/images/lesson-parts.png
@@ -98,32 +52,16 @@ This page consists of four areas:
     * A list of the lesson objectives.
     * The lesson video.
     * *Back* and *Next* buttons to navigate through the unit. (The first lesson of a unit does not include the *Back* button.)
-  * The *footer* contains the same two links as for the registration pages. 
+  * The *footer* contains the same two links as for the registration pages.
 
-The app uses three files to render this page:
-  * {{{views/base.html}}} defines the first two parts of the header and defines the footer.  This page is used by all pages displayed to a registered student.
-  * {{{views/unit.html}}} defines the second two lines of the header, the vertical navigation, and the content area.
-  * {{{data/lesson.csv}}} contains the content of the content area for all lessons in your course.
-
-You need to change these files to customize the app for your material. For details, see [CreateLessons Create Lessons].
-
-== An activity ==
-
-Each unit may have  some number of activities. An activity page shares almost the same structure as a lesson page:
+== Activity ==
+Each unit may have some number of activities. An activity page shares almost the same structure as a lesson page:
 
 http://wiki.course-builder.googlecode.com/git/images/activity-parts.png
 
 The only difference between a lesson page and an activity page (at least in look and feel) is that instead of a video for the main content, an activity has a summary of important points from the preceding lesson and has a set of questions, with places to answer the questions and to check your answers or get hints.
 
-The app uses four files to render this page:
-  * {{{views/base.html}}} is the same as for lessons.  This page is used by all pages displayed to a registered student.
-  * {{{views/activity.html}}} defines the same parts as does {{{views/unit.html}}} for lessons. You probably want to be consistent in these files.
-  * {{{assets/js/activity-}}}_*{{{N.M}}}*_{{{.js}}} contains a !JavaScript array that fills in the actual question and answer areas for the activity. Each activity section has its own file.
-
-You need to change these files to customize the app for your material. For details, see [CreateActivities Create Activities].
-
-== An assessment ==
-
+== Assessment ==
 At certain parts throughout the course, students take assessments to see how they're doing. An assessment page has the simplest form of all:
 
 http://wiki.course-builder.googlecode.com/git/images/assessment-parts.png
@@ -133,16 +71,8 @@ This page consists of three areas:
   * The *content area* contains the questions and answer areas and a submit button.
   * The *footer* is the same as for the home page.
 
-The app uses three files to render this page:
-  * {{{views/base.html}}} defines the header and footer areas.  This page is used by all pages displayed to a registered student.
-  * {{{views/assessment.html}}} defines the structure of the content area.
-  * {{{assets/js/assessment-}}}_*{{SUFFIX}}}*_{{{.js}}} contains a !JavaScript array that fills in the actual question and answer areas for the assessment. Each assessment has its own file.
-
-You need to change these files to customize the app for your material. For details, see [CreateAssessments Create Assessments].
-
 == The discussion forum ==
-
-At any time, the student may decide to visit your discussion forum for the course. The sample application does not contain a link to a valid forum, so its forum page looks as follows:
+At any time, the student may decide to visit your discussion forum for the course. The sample course does not contain a link to a valid forum, so its forum page looks as follows:
 
 http://wiki.course-builder.googlecode.com/git/images/forum404-parts.png
 
@@ -151,12 +81,7 @@ This page consists of three areas:
   * The *content area* contains the discussion forum.
   * The *footer* is the same as for the home page.
 
-The app uses two files to render this page:
-  * {{{views/base.html}}} defines the header and footer areas.  This page is used by all pages displayed to a registered student.
-  * {{{views/forum.html}}} defines the structure of the content area. It also has a link to the discussion forum. You need to change that to the link you create for your forum. See [WebForums Community Discussion].
-
 == Announcements ==
-
 At any time, the student may decide to visit a page that contains announcements for the course. The sample application contains announcements for the Power Searching with Google class, so its announcements page looks as follows:
 
 http://wiki.course-builder.googlecode.com/git/images/announcements-parts.png
@@ -166,15 +91,7 @@ This page consists of three areas:
   * The *content area* contains the announcements.
   * The *footer* is the same as for the home page.
 
-The app uses two files to render this page:
-  * {{{views/base.html}}} defines the header and footer areas.  This page is used by all pages displayed to a registered student.
-  * {{{views/announcements.html}}} defines the structure of the content area and contains the actual announcements. 
-
-You need to change {{{announcements.html}}} to be relevant to your course. For details, see [Announcements Announcements and Optional Material].
-
-
 == Student profile ==
-
 Finally, at any time, students can visit a profile page that displays information about their current status in the course and also lets them make some changes. This page looks as follows:
 
 http://wiki.course-builder.googlecode.com/git/images/myprofile-parts.png
@@ -184,12 +101,6 @@ This page consists of three areas:
   * The *content area* contains the student profile.
   * The *footer* is the same as for the home page.
 
-The app uses two files to render this page:
-  * {{{views/base.html}}} defines the header and footer areas.  This page is used by all pages displayed to a registered student.
-  * {{{views/student_profile.html}}} defines the structure of the content area.
-
-In addition, the app gets and sets information about the student from the Student object. Details of that information is in [ExportCourseData Export Course Data].
-
 One of the actions students can take from this page is to unenroll from the course. If they choose to do so, they are first presented with a page that requests confirmation of intent to unenroll:
 
 <img src="http://wiki.course-builder.googlecode.com/git/images/unenroll-ask.png" height="265" width="315">
@@ -198,10 +109,4 @@ If they confirm that they want to unenroll, they see a confirmation of unenrollm
 
 <img src="http://wiki.course-builder.googlecode.com/git/images/unenroll-confirmation.png" height="265" width="315">
 
-The app uses two files to render each of these pages:
-  * {{{views/base_registration.html}}} defines the header and footer areas.  This page is used by all pages displayed to an unregistered person. 
-  * {{{views/unenroll_confirmation_check.html}}} defines the content of the page that asks for confirmation before unenrolling <br> {{{views/unenroll_confirmation.html}}} defines the content of the page that confirms the student is actually unenrolled.
-
-You need to change details in each of the profile pages to be relevant to your course. For details, see [ModifyProfile Modify My Profile Tab].
-
-|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/general-troubleshooting Ask questions in the forum] ||
