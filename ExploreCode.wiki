@@ -1,24 +1,18 @@
 #summary Explore the sample application's directory structure before starting to modify it.
 
-<h1>Explore the Sample Code</h1>
+<h1>Explore the Directories</h1>
 
-The following briefly describes the directory structure for the source code files provided with Course Builder. Much of this code you will leave as is and some of it needs to change for your specific course.
+This page briefly describes the directory structure for the source code files provided with Course Builder.
 
-==Files specific to your course.===
-You should modify the following files (except files in {{{lib}}}) to implement your course:
   * {{{assets}}} - various files that make up the content of your course
     * {{{css}}} - cascading style sheet (CSS) files
     * {{{img}}} - images
     * {{{js}}} - activity and assessment !JavaScript files
     * {{{lib}}} - Course Builder and third party front-end libraries
     * you can add here additional sub-folders for your other content (PDF, ...)
-  * {{{data}}} - CSV data files that define sequence of units and lessons of the course
-  * {{{course.yaml}}} - main course configuration file
-  * {{{course_template.yaml}}} - course specific settings
-
-==Files common to all courses.==
-You should avoid modifying these files to simplify migration to future versions of Course Builder:
   * {{{controllers}}} - various web request handlers
+  * {{{data}}} - CSV data files that define sequence of units and lessons of the course. These .csv files are for the example course only. For the content and structure of your course, you should deploy Course Builder to Google App Engine and create your course through the browser. Your data will subsequently be saved on the Google App Engine datastore.
+  * {{{lib}}} - third party open-source libraries not developed by Google; it's your responsibility to review and accept licensing terms for each library
   * {{{models}}} - common infrastructure classes and database entities
   * {{{modules}}} - various extension modules
     * {{{admin}}} - administrator console
@@ -26,10 +20,8 @@ You should avoid modifying these files to simplify migration to future versions 
     * {{{dashboard}}} - course author dashboard
     * {{{i18n}}} - translation files for supporting user interface in multiple languages
     * {{{oeditor}}} - generic AJAX object editor used by other modules
-  * {{{lib}}} - third party open-source libraries not developed by Google; it's your responsibility to review and accept licensing terms for each library
   * {{{tests}}} - all unit and functional tests
   * {{{tools}}} - course structure and activity/assessment verification tools; data export tools
   * {{{views}}} - HTML page templates for various course pages
-
 
 || [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||
