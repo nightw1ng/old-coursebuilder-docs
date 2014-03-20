@@ -4,8 +4,8 @@
     * [GetStarted Get Started]
       * [Download Download the Software]
       * [GetCode Run Course Builder]
-      * [ExplorePS Explore the Sample App]
-      * [ExploreCode Explore the Sample Code]  
+      * [ExplorePS Explore Course Builder]
+      * [ExploreCode Explore the Course Builder Code]  
     * [ImplementCourseMaterial Implement Course Material]
       * [CourseSettings Customize Course Settings]
       * [ModifyTemplate Modify Course Template]
@@ -65,6 +65,7 @@
 	  * [CreateComponents Create Components]
 	  * [CreateModules Create Modules]
 	  * [CustomJob Create Custom Jobs]
+	  * [PresentationPages Presentation Pages]
 	  * [ListOfModulesExtensions List of Modules and Extensions]
   * [FAQ FAQ]
 
