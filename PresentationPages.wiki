@@ -1,0 +1,70 @@
+#summary Explore the HTML pages that comprise Course Builder.
+
+<h1>Explore HTML Presentation Pages</h1>
+This page describes the files that render the presentation pages in Course Builder. The files are located in the {{{views/}}} directory.
+
+<wiki:toc max-depth="2" /> 
+
+== Registration ==
+Course Builder uses the following files to render the Registration page:
+  * {{{views/base_registration.html}}} defines the header and footer areas. This page is used by all pages displayed to an unregistered person. 
+  * {{{views/confirmation.html}}} defines the content of the registration form.
+  * {{{views/preview.html}}} defines the structure of the content area. This page is very similar to its registered counterpart, {{{views/course.html}}}.
+  * {{{views/register.html}}} defines the content of the registration form.
+  * {{{views/summary.html}}} provides the course description and other introductory material.   This page is also used by {{{views/course.html}}}.
+  
+We strongly suggest you deploy Course Builder to Google App Engine and create your course in the browser after doing so. This places the course in the Google App Engine datastore. If you wanted to change the content of the example course on disk, you would change the .csv files in the {{{data/}}} directory.
+  * {{{data/unit.csv}}} provides the actual content of the content area.   This page is also used by {{{views/course.html}}}.
+
+== Course home page ==
+The following files render the course home page (*Course* in the navigation bar):
+
+  * {{{views/base.html}}} defines the header and footer areas.  This page is used by all pages displayed to a registered student.
+  * {{{views/course.html}}} defines the structure of the content area. This page is very similar to its unregistered counterpart, {{{views/preview.html}}}.
+  * {{{views/summary.html}}} provides the course description and other introductory material.  This page is also used by {{{views/preview.html}}}.
+
+We strongly suggest you deploy Course Builder to Google App Engine and create your course in the browser after doing so. This places the course in the Google App Engine datastore. If you wanted to change the content of the example course on disk, you would change the .csv files in the {{{data/}}} directory.
+  * {{{data/unit.csv}}} provides the actual content of the content area.  This page is also used by {{{views/preview.html}}}.
+
+== Lesson ==
+The following files render a lesson page:
+  * {{{views/base.html}}} defines the first two parts of the header and defines the footer.  This page is used by all pages displayed to a registered student.
+  * {{{views/unit.html}}} defines the second two lines of the header, the vertical navigation, and the content area.
+
+We strongly suggest you deploy Course Builder to Google App Engine and create your course in the browser after doing so. This places the course in the Google App Engine datastore. If you wanted to change the content of the example course on disk, you would change the .csv files in the {{{data/}}} directory.
+  * {{{data/lesson.csv}}} contains the content of the content area for all lessons in your example course on disk.
+
+== Activity ==
+The following files render an activity page:
+  * {{{views/base.html}}} is the same as for lessons.  This page is used by all pages displayed to a registered student.
+  * {{{views/activity.html}}} defines the same parts as does {{{views/unit.html}}} for lessons. You probably want to be consistent in these files.
+
+We strongly suggest you deploy Course Builder to Google App Engine and create your course in the browser after doing so. This places the course in the Google App Engine datastore. If you wanted to change the activity questions of the example course on disk, you would change the .js files in the {{{assets/js/}}} directory.
+  * {{{assets/js/activity-}}}_*{{{N.M}}}*_{{{.js}}} contains a !JavaScript array that fills in the actual question and answer areas for the activity. Each activity section has its own file.
+
+== Assessment ==
+The following files render an assessment page:
+  * {{{views/base.html}}} defines the header and footer areas.  This page is used by all pages displayed to a registered student.
+  * {{{views/assessment.html}}} defines the structure of the content area.
+
+We strongly suggest you deploy Course Builder to Google App Engine and create your course in the browser after doing so. This places the course in the Google App Engine datastore. If you wanted to change the assessment questions of the example course on disk, you would change the .js files in the {{{assets/js/}}} directory.
+  * {{{assets/js/assessment-}}}_*{{SUFFIX}}}*_{{{.js}}} contains a !JavaScript array that fills in the actual question and answer areas for the assessment. Each assessment has its own file.
+
+== Discussion forum ==
+The following files render the discussion page:
+  * {{{views/base.html}}} defines the header and footer areas.  This page is used by all pages displayed to a registered student.
+  * {{{views/forum.html}}} defines the structure of the content area. It also has a link to the discussion forum. You need to change that to the link you create for your forum. See [WebForums Community Discussion].
+
+== Announcements ==
+The followinng files render the announcement page:
+  * {{{views/base.html}}} defines the header and footer areas.  This page is used by all pages displayed to a registered student.
+  * {{{views/announcements.html}}} defines the structure of the content area and contains the actual announcements.
+
+== Student profile ==
+The following files render the student profile page:
+  * {{{views/base.html}}} defines the header and footer areas.  This page is used by all pages displayed to a registered student.
+  * {{{views/student_profile.html}}} defines the structure of the content area.
+  * {{{views/base_registration.html}}} defines the header and footer areas.  This page is used by all pages displayed to an unregistered person. 
+  * {{{views/unenroll_confirmation_check.html}}} defines the content of the page that asks for confirmation before unenrolling <br> {{{views/unenroll_confirmation.html}}} defines the content of the page that confirms the student is actually unenrolled.
+
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||
