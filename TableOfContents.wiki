@@ -4,8 +4,7 @@
     * [GetStarted Get Started]
       * [Download Download the Software]
       * [GetCode Run Course Builder]
-      * [ExplorePS Explore Course Builder]
-      * [ExploreCode Explore the Course Builder Code]  
+      * [ExplorePS Explore Course Builder]        
     * [ImplementCourseMaterial Implement Course Material]
       * [CourseSettings Customize Course Settings]
       * [ModifyTemplate Modify Course Template]
@@ -30,7 +29,6 @@
       * [URLMap URL Mapping]
       * [Security Security]
     * [Upgrade Upgrade Course Builder]
-    * [ReleaseNotes Release Notes]
   * Course Authors
     * [WhatsInACourse Parts of a Course Builder Course]
       * [CourseFlow Course Flow for Students]
@@ -60,13 +58,15 @@
       * [ExampleSurvey Example Post-Course Survey]
       * [AnalyticsForEdu Combine Assessment & Reach Data]
   * Developers
+	  * [ExploreCode Explore Directories]
+	  * [PresentationPages Presentation Pages]
 	  * [ExtendCB Customize Course Builder]
 	  * [ExtendCoursePages Customize Course Pages]
 	  * [CreateComponents Create Components]
 	  * [CreateModules Create Modules]
 	  * [CustomJob Create Custom Jobs]
-	  * [PresentationPages Presentation Pages]
 	  * [ListOfModulesExtensions List of Modules and Extensions]
+  * [ReleaseNotes Release Notes]
   * [FAQ FAQ]
 
 || [https://groups.google.com/forum/?fromgroups#!forum/course-builder-forum Discussion forum] ||
