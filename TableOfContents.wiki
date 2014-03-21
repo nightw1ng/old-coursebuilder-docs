@@ -59,7 +59,7 @@
       * [AnalyticsForEdu Combine Assessment & Reach Data]
   * Developers
 	  * [ExploreCode Explore Directories]
-      * [ModifyTemplate Modify Course Template]
+	  * [ModifyTemplate Modify Course Template]
 	  * [ExtendCB Customize Course Builder]
 	  * [ExtendCoursePages Customize Course Pages]
 	  * [CreateComponents Create Components]
