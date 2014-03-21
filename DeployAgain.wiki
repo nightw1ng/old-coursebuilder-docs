@@ -1,0 +1,49 @@
+#summary How to deploy your course after an initial version has already been deployed.
+
+<h1>Subsequent Deployments to Google App Engine</h1>
+
+<wiki:toc />
+
+This page talks about re-deploying Course Builder to Google App Engine. That is, you have at least deployed once. You may want to re-deploy because you are upgrading Course Builder versions. If you have not deployed to production yet, see [UploadCode Deploy Your App to Google App Engine for the First Time].
+
+== Deploy Course Builder ==
+The most straightforward way to deploy Course Builder is from a [http://code.google.com/p/gcb-x-03141590/wiki/FAQ#What%27s_a_%22shell_or_command_prompt%22? shell or command prompt]. From that window:
+
+  {{{cd }}}_*{{{APPPATH}}}*_<br>
+  {{{appcfg.py update .}}}<br>
+
+where _*{{{APPPATH}}}*_ is the directory containing your app's code. _Note that the period at the end of the {{{appcfg.py update}}} command is necessary._
+
+For each {{{appcfg.py}}} command, you are asked to supply your credentials. Supply your username and the app-specific password you created in the [#Set_up_an_app-specific_password previous step].
+
+Once the deployment completes and confirms, you (and everyone else on the planet not blocked from Google) can visit {{{http://}}}_*{{{APP_ID}}}*_{{{.appspot.com}}} and verify that your app is indeed available to all.
+
+Here is a video that shows this process, from download to deployment: [http://www.youtube.com/watch?v=OtVd1komyGY&list=PLbTy14-ZMIDJGS1XLdYj3Nzrhfd6EDWJC download, installation, and deployment (4:33).]
+
+==== Enable and use Datastore Admin ====
+The following steps you only need to do once:
+
+  # From a web  browser, navigate to https://appengine.google.com/.
+  # On the *My Applications* page, click on the name of your app. The dashboard for your app appears:<br> <img src="http://wiki.course-builder.googlecode.com/git/images/prod-dashboard.png" /> 
+  # In the left navigation, click on *Datastore Admin*. The first time you do this, a screen appears asking if you want to enable datastore administration options:<br> <img src="http://wiki.course-builder.googlecode.com/git/images/datastore-enable.png" /> 
+  # Click on *Enable Datastore Admin*.
+  # The *Datastore Admin* page for your app appears.
+
+You now can use the Datastore Admin to directly inspect or export data stored by a Course Builder. We advise you not to modify any datastore objects directly.
+
+== Enable Google App Engine Appstats ==
+The Appstats library in Google App Engine helps profile your Remote Procedure Calls (RPCs) for your implementation of Course Builder. It is a debugging feature and optional. For example, you may want to know if there are any redundant calls to the datastore.  By default Appstats is disabled.
+
+The setting to enable this feature is in {{{app.yaml}}}.  Specifically, it is under {{{env_variables}}}:
+{{{
+	...
+	env_variables:
+	  GCB_PRODUCT_VERSION: 'x.x.x'
+	  GCB_APPSTATS_ENABLED: false
+	...
+}}}
+
+To turn on Appstats, set {{{GCB_APPSTATS_ENABLED}}} to {{{true}}}. To learn more about Appstats, see the [https://developers.google.com/appengine/docs/python/tools/appstats Google App Engine documentation].
+
+
+|| [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||
