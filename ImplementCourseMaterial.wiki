@@ -29,7 +29,7 @@ The pages in this section include:
 
   * [RunMultipleCourses Run Multiple Courses]<br>How to use the same Google App Engine instance to run multiple Course Builder courses (optional).
 
-  * [DeployAgain Deploy Again]<br>How to repeatedly deploy your course to Google App Engine, to make it available to the world.
+  * [DeployAgain Deploy Again]<br>How to repeatedly deploy your course to Google App Engine after it is already available to the world.
 
 
 || [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||
