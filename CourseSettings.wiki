@@ -17,7 +17,7 @@ The following list illustrates the types of settings you will find in {{{course.
   * {{{start_date:}}} Course start date
   * {{{forum_url:}}} Forum URL
   * {{{announcement_list_url:}}} URL for the mailing list where students can register to receive course announcements
-  * {{{locale:}}} Locale for internationalization
+  * {{{locale:}}} Locale for internationalization. See [I18n Internationalization] for more information, including supported languages.
   * {{{browsable:}}} Whether students who are not registered can freely browse the contents of the course.
   * {{{google_analytics_id:}}} Specify your Google Analytics Tracking ID, if any, with this setting.
   * {{{google_tag_manager_id:}}} Specify your Google Tag Manager ID, if any, with this setting.
