@@ -1,85 +1,35 @@
 #summary How to modify the registration pages for your course.
 
-<h1>Create Registration</h1>
+<h1>Modify Registration</h1>
 
 <wiki:toc max-depth="2" />
 
-== Unregistered home page ==
+You do not need to make modifications to the registration page to deploy, create, or deliver your course. Modifying registration is an option.
 
-When prospective students first visit your course, the app displays a preview page:
-
-http://wiki.course-builder.googlecode.com/git/images/homepage-unregistered-parts.png
-
-=== What happens from this page ===
- 
-By default, this page is a version of the course home page. In this version, the course syllabus is visible, but students cannot access the content. The page also displays a Register button. You can change the preview page to display however much or however little information you want. 
-
-=== Page layout ===
-
-This page consists of three areas:
-  * The *header* contains 
-    * Course icon and name of your course.
-    * Horizontal navigation bar, with two tabs on the left (Course and Registration) and an area with a login link. Notice that the horizontal navigation is different once the student completes registration.
-  * The *content area* contains names of each unit and each assessment. None of this information is clickable before registration.
-  * The *footer* contains the same two links as for the registration pages. 
-
-The app uses four files to render this page:
-  * {{{views/base_registration.html}}} defines the header and footer areas.
-  * {{{views/preview.html}}} defines the structure of the content area.
-  * {{{views/summary.html}}} provides the course description and other introductory material. 
-  * {{{data/unit.csv}}} provides the actual content of the content area.
-
-It shares {{{views/base_registration.html}}}, {{{views/summary.html}}}, and {{{data/unit.csv}}} with the version of the home page that registered students see. For details, see [CreateHomePage Create Home Page].
+By default, students can see the contents of your course without registering. You can control this behavior by changing the {{{browsable:}}} setting in the [CourseSettings course.yaml] file. If {{{browsable:}}} is set to {{{false}}}, the course syllabus is visible, but students cannot access the content.
 
 == Registration page ==
-
-When prospective students click on *Register*, the app displays a registration page:
+When prospective students click on *Register* on the course homepage, Course Builder displays a registration page. The sample registration page asks one question, the student's name. This is just to show you that you _can_ ask questions on this page and store the information.
 
 http://wiki.course-builder.googlecode.com/git/images/registration.png
 
-=== What happens from this page ===
+== Registration confirmation ==
+Once a prospective student submits the registration form, Course Builder returns to the course homepage. The student will see a butter bar message that confirms their registration.
 
-The sample registration page asks one question, the student's name. This is just to show you that you _can_ ask questions on this page and store the information. Four files are involved in handling registration information. If you want to add extra registration questions, you must change these files:
+== Add additional fields ==
+After you deploy your course to Google App Engine, you can optionally add additional registration fields in *Dashboard > Settings >*. This page has a section, *Student Registration Options > Additional Fields*, where you can type your HTML to add additonal fields. If you do not know HTML, it may be best to skip this optional feature or find someone with the relevant knowledge.
 
-  * {{{views/register.html}}}: This file contains the template for the registration page. By default, it stores the student's name in a variable named {{{form01}}}. To collect extra information from the student, add more input fields to the form in this file.
+http://wiki.course-builder.googlecode.com/git/images/dashboard-registration-fields.png
 
-  * {{{models/model.py}}}: This file contains class definitions for the entities Course Builder stores ({{{Lesson}}}, {{{Unit}}}, and {{{Student}}}). In the definition of the {{{Student}}} class, add attributes that correspond to the new information you collect in {{{views/register.html}}}. The three most common attribute types are {{{db.IntegerProperty}}}, {{{db.TextProperty}}}, and {{{db.StringProperty}}}. {{{db.StringProperty}}} is for short strings, such as a name or email address; {{{db.TextProperty}}} is for longer fields, such as a paragraph of text.
+You do not have to redefine the original question "name" question that comes default with Course Builder. Add new registration fields between the HTML {{{<li>}}} tags. The following example adds an extra textbox:
 
-  * {{{controllers/utils.py}}}: This file contains code that handles various page types in the application. The {{{RegisterHandler}}} class defines what happens on the registration page; by default its {{{post}}} method uses {{{form01}}} to define the variable {{{name}}} and store it with the {{{Student}}} instance in the datastore. Modify that method to extract the information from the form you created in {{{views/register.html}}}. Use the information to populate the attributes you defined in {{{models/model.py}}}.
+{{{
+<li>
+	<label for="form02">What is your favorite ice-cream?<br></label><br>
+	<input id="form02" name="form02" type="textbox">
+</li>
+}}}
 
-  * {{{bulkloader.yaml}}}: If you plan to download {{{Student}}} data (as described in [ExportCourseData Export Course Data]), add the new attributes to the transformer for {{{Student}}}.
-
-=== Page layout ===
-
-This page consists of three areas:
-  * The *header* contains 
-    * Course icon and name of your course.
-    * Horizontal navigation bar, with two tabs on the left (Home and Registration) and an area with the person's address and a Logout link.
-  * The *content area* contains a form for the prospective student to fill out.
-  * The *footer* contains two links -- one to your website and one to the privacy conditions and terms for your course.
-
-The app uses two files to render this page:
-  * {{{views/base_registration.html}}} defines the header and footer areas.  See [ModifyTemplate Modify Course Template].
-  * {{{views/register.html}}} defines the content of the registration form. If you change the questions asked, you'll have to change the code that handles the answers.
-
-== Registration confirmation page ==
-
-=== Page layout ===
-
-Once a prospective student submits the registration form, the app displays the registration confirmation page:
-
-http://wiki.course-builder.googlecode.com/git/images/registrationconfirmation-parts.png
-
-This page displays a message when the student is registered. The default message upon successful registration includes information about joining the course's discussion forum and about joining another email alias for receiving course announcements. Be sure to modify this information to be applicable to your situation. See [WebForums Community Discussion] and [CreateEmailList Announcements-only Email List].
-
-This page consists of the same three areas as the registration page and uses these files to render the page:
-  * {{{views/base_registration.html}}} defines the header and footer areas. Note this is the same file the registration form uses, guaranteeing that these two pages have the same general look and feel.  See [ModifyTemplate Modify Course Template].
-  * {{{views/confirmation.html}}} defines the content of the registration form.
-
-== Testing changes ==
-
-Changes you make to any file in the {{{views}}} directory appear automatically in your running development server. That is, after you make a change to one of these files, simply load (or reload) a page that uses that view and the change appears.
-
-To see how to make these changes in your live, deployed course, see [UploadCode Deploy Your App].
+You are not limited to textboxes; for example, you can use radio buttons as well.
 
 || [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||
