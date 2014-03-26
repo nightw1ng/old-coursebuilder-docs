@@ -37,13 +37,13 @@ We strongly suggest you deploy Course Builder to Google App Engine and create yo
   * {{{data/unit.csv}}} provides the actual content of the content area.  This page is also used by {{{views/preview.html}}}.
 
 The first line describes the content of the other lines:
-{{{id,type,unit_id,title,release_date,now_available}}}
+  {{{id,type,unit_id,title,release_date,now_available}}}
 
-Each line after that contains the information for an individual part of the course, such as: 
-{{{1,A,Pre,Pre-course assessment,,True}}}<br>
-{{{2,U,1,Introduction,available July 10,True}}}<br>
-{{{...}}}<br>
-{{{11,O,http://www.youtube.com/watch?v=dwlpViuIYgU&feature=player_embedded,Hang Out with Search Experts Video,,True}}}
+Each line after that contains the information for an individual part of the course, such as:
+  {{{1,A,Pre,Pre-course assessment,,True}}}<br>
+  {{{2,U,1,Introduction,available July 10,True}}}<br>
+  {{{...}}}<br>
+  {{{11,O,http://www.youtube.com/watch?v=dwlpViuIYgU&feature=player_embedded,Hang Out with Search Experts Video,,True}}}
 
 If you edit the file, leave the first line as is. Replace all of the other lines with the information relevant to your course. The template files and various Python files refer to these fields when displaying course information.  Each line contains the following fields:
 
