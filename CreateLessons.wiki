@@ -1,21 +1,19 @@
-#summary Mechanics of creating a lesson.
+#summary Mechanics of creating a lesson and activities.
 
-<h1>Create Lessons</h1>
+<h1>Create Lessons and Activities</h1>
 
 <wiki:toc />
 
-When students click on a unit from the home page, they go to the page for the first lesson of the unit they chose. From there, they can go to any other lesson or activity in that unit:
+When students click on a unit from the home page, they go to the page for the first lesson of the unit they chose. From there, they can go to any other lesson in that unit:
 
 <img src="http://wiki.course-builder.googlecode.com/git/images/lesson.png" height=529 width=420 />
 
-This page talks about the mechanics of creating a lesson page and its content. For information on what to put in your lesson, see [TwoDevelop Develop the Content without Technology].
+This page talks about the mechanics of creating a lesson page and its content, which includes activities. For information on what to put in your lesson, see [TwoDevelop Develop the Content without Technology].
 
 == What happens on a lesson page ==
-A lesson page is where you teach your prepared material. Typically, each lesson consists of a short video and text version of the content. You embed the video in the lesson page, hosting the video on !YouTube. (See [WorkWithVideo Working with video].) You put the text version in a file at some other URL; for Power Searching, we hosted the text versions as [http://support.google.com/docs/bin/answer.py?hl=en&answer=49008 Google Docs]. 
+A lesson page is where you teach your prepared material and optionally provide an activity to further help students understand the material just presented. Typically, each lesson consists of a short video, text version of the content, and an activity. You embed the video in the lesson page, hosting the video on !YouTube. (See [WorkWithVideo Working with video].) You put the text version in a file at some other URL; for Power Searching, we hosted the text versions as [http://support.google.com/docs/bin/answer.py?hl=en&answer=49008 Google Docs]. 
 
 Students can watch the video as many times as they like. If they click on *Text version*, a separate browser window appears with that content.
-
-Everything else on the page is context and navigation.
 
 == Page layout ==
 This page consists of four areas:
@@ -30,15 +28,12 @@ This page consists of four areas:
     * A button to access a text version of the lesson.
     * A list of the lesson objectives.
     * The lesson video.
-	* Activities, if any.
+    * Activities, if any.
     * *Back* and *Next* buttons to navigate through the unit. (The first lesson of a unit does not include the *Back* button.)
   * The *footer* contains the same two links as for the registration pages. 
 
-
 == Create lessons ==
-When you create lessons from the browser, the data gets stored in Google App Engine's datastore. You can use the [ExportCourseData download] feature to download it to your local machine.
-
-To create a lesson from your browser, go to *Dashboard > Outline* and click the *Add Lesson* button from the *Pages* section. Fill out the forms on the page and click *Save*. You have the option of creating the lesson but keeping it private (not viewable to students).
+When you create lessons from the browser, the data gets stored in Google App Engine's datastore. Go to *Dashboard > Outline* and click the *Add Lesson* button from the *Pages* section. Fill out the forms on the page and click *Save*. You have the option of creating the lesson but keeping it private (not viewable to students).
 
 http://wiki.course-builder.googlecode.com/git/images/dashboard-lesson.png
 
@@ -46,7 +41,18 @@ Note: The *Add Lesson* button is unavailable until you create at least one unit.
 
 You edit lessons that already exist in this page as well. Change any details you would like and click *Save*.
 
-In the *Lesson Body* textbox, you create the content for your lesson. For example, you can add an image, !YouTube video, Google Doc, or Google Spreadsheet. You can even add a link to your Group forum as well as an activity. To facilitate the addition of these items, click the *Rich Text* button.
+== Create activities ==
+In the *Lesson Body* textbox, you create the content for your lesson, including activities. Activites are questions that you insert from the Question Bank. You can add the following components as lesson content:
+
+  * Google Doc
+  * Google Group
+  * Google Spreadsheet
+  * Image
+  * Questions (the activities)
+  * Text file uploader (maximum size for uploaded files is 1MB)
+  * !YouTube videos
+  
+Add as many components as you like. You can also directly write text into the textbox. By default, you add content in *Lesson Body* through HTML. Some might find it easier to to select them through the Rich Text editor. Click the *Rich Text* button on the right.
 
 http://wiki.course-builder.googlecode.com/git/images/dashboard-lesson-richtxt.png
 
@@ -54,7 +60,7 @@ Under *Insert Item* in the toolbar, you see three buttons where you can:
 
   * Add a HTML link
   * Add an image
-  * Add various components, like !YouTube videos, your Group forum, and Google Docs. You can also add a component that allows your students to upload text files ({{{Student Text File Upload}}}). The maximum size for uploaded files is 1MB. 
+  * Add the various components (questions, !YouTube videos, etc.) 
     * After you add a component, a placeholder icon shows. When you save and go to the lesson, the component itself shows.
   
 You can add multiple components or mix and match multiple images with multiple components. Here is a video that shows how to add components: [http://www.youtube.com/watch?v=EpQqNkRdcck Add course components (4:48)]
