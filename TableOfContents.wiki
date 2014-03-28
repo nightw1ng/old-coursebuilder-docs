@@ -15,8 +15,6 @@
       * [CreateLessons Create Lessons and Activities]
       * [CreateAssessments Create Assessments]
       * [PeerReview Peer Review]
-      * [RunMultipleCourses Run Multiple Courses]
-      * [VerifyCode Verify Your Code]
       * [DeployAgain Deploy Again]
     * [AdminPage Administrator Page]
       * [CreateNewCourse Create New Courses]
@@ -64,6 +62,7 @@
 	  * [CreateModules Create Modules]
 	  * [CustomJob Create Custom Jobs]
 	  * [ListOfModulesExtensions List of Modules and Extensions]
+	  * [RunMultipleCourses Arrange Courses on Disk]
   * [ReleaseNotes Release Notes]
   * [FAQ FAQ]
 
