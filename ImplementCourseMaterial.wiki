@@ -19,15 +19,11 @@ The pages in this section include:
   
   * [CreateRegistration Modify Registration]<br>How to modify student registration.
 
-  * [CreateLessons Create Lessons]<br>How to create lessons for your units.
-
-  * [CreateActivities Create Activities]<br>How to the activities that go into the course units. You can think of activities as smaller assessments.
+  * [CreateLessons Create Lessons and Activities]<br>How to create lessons for your units.
+  
+  * [CreateAssessments Create Assessments]<br>How to create the graded assessments for your course.
   
   * [PeerReview Peer Review]<br>How to create assignments that involve students grading each other's finished work..
-
-  * [CreateAssessments Create Assessments]<br>How to create the graded assessments for your course.
-
-  * [RunMultipleCourses Run Multiple Courses]<br>How to use the same Google App Engine instance to run multiple Course Builder courses (optional).
 
   * [DeployAgain Deploy Again]<br>How to repeatedly deploy your course to Google App Engine after it is already available to the world.
 
