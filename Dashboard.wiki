@@ -70,7 +70,7 @@ Search will not cover results that are in sections marked "Private". It will als
 <img src="http://wiki.course-builder.googlecode.com/git/images/dashboard-search-indexed.png" height=450 width=600 />
 
 ==Peer Review==
-Peer review is a way for students to grade each other's finished work. You would normally go into this section to see the contents of the peer review assignment and when students have issues about their peer review work.
+Peer review is a way for students to grade each other's finished work. You would normally go into this section to see the contents of the peer review assignment and when students have issues about their peer review work. See [PeerReview Peer Review] for detailed information.
 
   * *Select Assignment.* Here you pick a particular peer review assignment and a particular student. The student is identified by exact email. That is, the email address is case sensitive. If a peer review assignment was submitted by the student and particular peer review assignment you selected, information in the *Assignment* area show.
   * *Assignment.* This section will show the actual contents of the peer review assignment that was submitted by the selected student and any review that was done by a peer. As a course author, you can delete a particluar review with the "Remove This Review" button. You can also assign a specific person to be the reviewer of a particular stuent's work through the "Add New Reviewer" button. For example, you might want to add a Teacher's Assistant or yourself to review the work.
