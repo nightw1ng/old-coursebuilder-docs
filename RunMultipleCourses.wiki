@@ -1,16 +1,13 @@
 #summary Using one GAE instance to host multiple courses.
 
-<h1>Run Multiple Courses</h1>
-
-In CB 1.0, you could only host one course per Google App Engine application instance. That is, in the GAE Launcher, you needed a separate application for each course and running each course started its own copy of the GAE binary. Two courses could not share any of the same code.
-
-CB 1.1 allows you to host multiple courses simultaneously. This is, of course, optional. If you only need to run one course, stop reading now. Otherwise...
+<h1>Arrange Multiple Courses on Disk</h1>
+Course Builder supports multitenancy. You should create and run all your courses through the [CreateNewCourse Admin page]. This page discusses staging your multiple courses on disk before deploying to Google App Engine. This method is for older Course Builder versions (before 1.3.0) or those who are creating their course(s) on disk 
 
 <wiki:toc max_depth=2 />
 
 == 1. Make sure the courses can be run on the same instance. ==
 
-When you host multiple courses in one instance, all of those courses must share most of their code. (See [ExploreCode Explore the Sample Code] for a description of all the files shipped with Course Builder.) 
+When you host multiple courses in one instance, all of those courses must share most of their code. 
 
 Specifically, assume that _*{{{APPPATH}}}*_ is the directory containing Course Builder. Multiple courses that run in one GAE instance must share all files and code except what is in the _*{{{APPPATH}}}*_{{{/assets}}}, _*{{{APPPATH}}}*_{{{/data}}}, and _*{{{APPPATH}}}*_{{{/views}}} directories.
 
