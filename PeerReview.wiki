@@ -27,88 +27,35 @@ Students must request assignments to review. To do so, they should click *Review
 
 http://wiki.course-builder.googlecode.com/git/images/peer-review-review.png
 
-Course authors specify an "expiration time", which is a time horizon in which the student must begin reviewing an assignment after receipt. If the student does not begin the review, that assignment will be available for others to review although it will still be assigned to the original reviewer. When students are ready to submit, they can click *Submit Review*. Only upon submission will students satisfy their review quota. Like submitting assignments, students cannot alter or retract reviews after submission. Students can see the status of their reviews by going to the review dashboard.
+Course authors specify an "expiration time" (Review Window Timeout in Course Builder), which is a time horizon in which the student must begin reviewing an assignment after receipt. If the student does not begin the review, that assignment will be available for others to review although it will still be assigned to the original reviewer. When students are ready to submit, they can click *Submit Review*. Only upon submission will students satisfy their review quota. Like submitting assignments, students cannot alter or retract reviews after submission. Students can see the status of their reviews by going to the review dashboard.
 
 The course author will specify the minimum number of assignments a student must review to receive credit for the assignment. While reviewing an assignment, a student can request to review additional assignments, without submitting current ones under review. However, once the student has requested the minimum number of assignments specified by the course author, he must then submit all assignments before he can request any more. 
 
 Example: The course author specifies that students must review a minimun of five assignments to receive full credit. A student finishes her assignment and submits it. She goes to the review dashboard and requests an assignment to review. She reviews the first assignment and then saves it as a draft. She requests four more assignments. She must now submit, not just put assignments in draft mode, all five assignments before she can request a sixth assignment. 
 
+== Create peer review assignment ==
+You add peer review assignments like you add [CreateAssessments assessments]. To create a new peer review assignment, go to *Dashboard > Outline > Add Assessment*.
+
+http://wiki.course-builder.googlecode.com/git/images/assessment-edit.png
+
+Here are the peer review specific fields you must populate:
+
+  * *Submission Due Date:* This tells when she must submit the assignment.
+  * *Grading:* Select _Peer Review_
+  * *Reviewer Feedback Form:* Add a form in which the reviewer can give feedback on an assignment. You can use the rich text editor instead of inputting HTML.
+  * *Review Due Date:* The date and time that the reviewer must submit her review. You, the course author, must specify this as a time after the Submission Due Date. Otherwise, you will get an error when you try to save the page.
+  * *Review Min Count:* The minimum number of reivews a student must review to get credit for the peer review assignment.
+  * *Review Window Timeout:* The time horizon, in minutes, in which the student must begin reviewing an assignment after receipt. If the student does not begin the review, that assignment will be available for others to review although it will still be assigned to the original reviewer.
+
 == Peer review dashboard ==
-Course authors can see submitted assignments and reviews as well as delete reviews from *Dashboard > Peer Review*.
+Course authors can see submitted assignments and reviews as well as delete reviews from [Dashboard#Peer_Review Dashboard > Peer Review].
+
+http://wiki.course-builder.googlecode.com/git/images/dashboard-peer-review.png
 
  * In the *Assignment Name:* dropdown menu, select the peer review assignment you want to view.
  * Type the specific student's email address in the *Student email address:* field and click *Show Reviews Received*. You now have the particular student's submitted assignment as well as assignments received by her, if any. Students cannot see reviews in draft mode; only authors can see their reviews in draft mode.
 
 ===Assign and delete reviews ===
-The course author may want to manually assign reviews in some cases. For example, an instructor may believe that a  particular assignment merits review directly from one of the teacher's assistants. To manually assign a reviewer, add the reviewer's email in the *Add new reviewer:* field and click the *Add New Reviewer* button. Reviews assigned this way will not be time expired.
+The course author may want to manually assign reviews in some cases. For example, an instructor may believe that a particular assignment merits review directly from one of the teacher's assistants. To manually assign a reviewer, add the reviewer's email in the *Add new reviewer:* field and click the *Add New Reviewer* button. Reviews assigned this way will not be time expired.
 
 The course author may also want to delete a particular review. To do so, click the *Remove This Review* button to the right of the review in question. Note that deletion notifications are not sent to those reviewers whose reviews are deleted.
-
-=== Create new peer review assignment ===
-You add peer review assignments like you add [CreateAssessments assessments]. To create a new peer review assignment, go to *Dashboard > Outline > Add Assessment*. 
-
-For example, here is some sample code for *Assessment Content*:
-{{{
-var assessment = {
-  preamble: 'Solve the problem below by using concepts from at least three Power Search lessons. Record your experience in a Google doc.<br><br><strong>Problem</strong>: Plan a 3-day trip to a destination you have never visited. Where will you go? Why?',
-
-  questionsList: [
-    {questionHTML: 'Please write your response in a Google doc, and paste the link to the doc in the answer box below. You will need to ensure that your doc can be viewed by reviewers.',
-     correctAnswerRegex: /.*/i
-    },
-
-    {questionHTML: 'How many Power Search concepts did you use in your writeup?',
-     choices: ['0 - 2', '3', '4 -- 5', 'More than 5']},
-
-    {questionHTML: 'List the Power Search concepts you used.',
-     multiLine: true,
-     correctAnswerRegex: /.*/i
-    },
-  ],
-
-  assessmentName: 'ReviewAssessmentExample',
-  checkAnswers: false
-}
-}}}
-
-Here is some sample code *Reviewer Feedback Form*:
-{{{
-var assessment = {
- 
-  preamble: 'When you write your review, please check that the student\'s response is relevant to the question asked. If not, answer \'No\' to the first question below.',
-
-  questionsList: [
-    {questionHTML: 'Did the student answer all parts of the question?',
-     choices: ['Yes', 'No']},
-
-    {questionHTML: 'Please provide feedback for the assignment author.',
-     multiLine: true,
-     correctAnswerRegex: /.*/i
-    }
-  ],
-  
-  assessmentName: 'ReviewAssessmentExample',
-  checkAnswers: false
-}
-
-}}}
-
-The one change you will make compared to non-peer graded assessments is in *Assessment Details*. This text box conforms to YAML indentation, so you must be careful of errant spaces. Here are the explanation of the keys and their values:
-
- * *grader*: by default this value is {{{auto}}}, which means Course Builder will grade it according to the course author's pre-populated answers. The other values is {{{human}}}, which means students will grade the reviews. 
- * *matcher*: the only possible value is {{{peer}}}, which means that assignments will automatically be assigned to a pool.
- * *review_due_date*: The UTC (coordinated universal time) date, in yyyy-mm-dd hh:mm format, by which the review must be submitted. Reviews in the "draft" state will not count. 
- * *review_min_count*: The minimum number of reviews a student must complete to receive credit for the assignment and to view the reviews they have received. Students can see any of the reviews they receive as soon as they have submitted the number of reviews specified in *review_min_count*; they do not have to wait for *review_due_date*.
- * *review_window_mins*: If a student requests a review and does not submit or put it in draft mode in this number of minutes, the review will return to the pool so that others can request to review it. The review will remain assigned to the original reviewer, however another student may request to review it before the original author gets to it.
- * *submission_due_date*: The date UTC (coordinated universal time), in yyyy-mm-dd hh:mm format, that the assignment is due. This date must be earlier than the {{{review_due_date}}}.
- 
- Here is an example of *Assessment Details*:
- {{{
-grader: human
-matcher: peer
-review_due_date: 2014-05-21 12:00
-review_min_count: 2
-review_window_mins: 60
-submission_due_date: 2014-05-14 12:00
- }}}
-
