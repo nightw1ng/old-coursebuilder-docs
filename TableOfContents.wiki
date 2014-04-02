@@ -18,6 +18,7 @@
       * [DeployAgain Deploy Again]
     * [AdminPage Administrator Page]
       * [CreateNewCourse Create New Courses]
+      * [AdminMultipleCourses Run Multiple Courses]
       * [URLMap URL Mapping]
       * [Security Security]
     * [AppEngine Develop with Google App Engine]
@@ -61,8 +62,10 @@
 	  * [CreateComponents Create Components]
 	  * [CreateModules Create Modules]
 	  * [CustomJob Create Custom Jobs]
+	  * [AppEngineVersions Create Multiple Versions]
 	  * [ListOfModulesExtensions List of Modules and Extensions]
 	  * [RunMultipleCourses Arrange Courses on Disk]
+	  * [cbx cbX]
   * [ReleaseNotes Release Notes]
   * [FAQ FAQ]
 
