@@ -4,10 +4,8 @@
 
 <wiki:toc />
 
-== Why does my course say Read-only course? ==
-The root course you upload from your local computer to your live App Engine instance will always be read-only. The root course is located at the root  URL (at yourcourse.appspot.com vs. yourcourse.appspot.com/anothercourse). To edit that root course, you would make those edits like you originally did: on your local computer or development server and then push the changes to App Engine. The new courses you make through the browser on App Engine are editable through the browser. By default, those new courses are off root (yourcourse.appspot.com/anothercourse, yourcourse.appspot.com/anothercourse2, etc.). 
-
-== How do I make my root course editable through the browser? ==
+==Course==
+==== How do I make my root course editable through the browser? ====
 Even though you cannot make your root course editable through the browser, you can make a new course and import everything from the root course. Next, you would [URLMap re-route] (switch) your URLs. Here are the steps to clone your root course and route the clone course to the root URL:
 
   # In *Admin > Courses* create a [CreateNewCourse new course].
@@ -39,23 +37,34 @@ Even though you cannot make your root course editable through the browser, you c
     }}}
     # Click *Save*. The page itself shows how to interpret and specify the {{{gcb_courses_config}}} values.
 
-== What is a shell or command prompt? ==
+==== Why does my course say Read-only course? ====
+The root course you upload from your local computer to your live App Engine instance will always be read-only. The root course is located at the root  URL (at yourcourse.appspot.com vs. yourcourse.appspot.com/anothercourse). To edit that root course, you would make those edits like you originally did: on your local computer or development server and then push the changes to App Engine. The new courses you make through the browser on App Engine are editable through the browser. By default, those new courses are off root (yourcourse.appspot.com/anothercourse, yourcourse.appspot.com/anothercourse2, etc.). 
 
-In several places, you're asked to open a "shell or command prompt" and then enter some arcane command.
 
-Every operating system has a utility you can use that lets you type in text-based "commands" for some arbitrary piece of software. Each operating system calls this utility something different.
+== Google App Engine and Goolgle App Engine SDK ==
+==== Cannot connect to upload data ====
+When you enter your credentials, you may get the following error:
 
-  * *Windows* calls it a *Command Prompt*.<br><br>Choose *Start > Command Prompt*. If Command Prompt does not appear on the *Start* menu, then instead choose *Start > All Programs > Accessories > Command Prompt*.
-  
-  http://wiki.course-builder.googlecode.com/git/images/windows_prompt.PNG
+  <font color=green> {{{urllib2.URLError: <urlopen error [Errno 61] Connection refused>}}} </font>
 
-  * *Mac* calls it either a *terminal* or a *shell*.<br><br>Open the *Finder*. Choose *Go > Utilities*. From the window that appears, choose *Terminal.app*.
-  
-  http://wiki.course-builder.googlecode.com/git/images/mac_terminal.png
+If you do, then you have forgotten to start your development server.
 
-  * *Linux* and other *POSIX-compliant systems* call it a *shell*. 
+==== Development server won't start ====
+If you do not see the registration page when you start your development server for the first time, there may be an error somewhere.
 
-== My course does not show up after I deploy ==
+If you start your app from the command line, errors messages appear on the console. If you start your app from the Launcher, error messages appear in the logs. To see the logs, click on *Logs* in the Launcher's task bar.
+
+One common problem is that, even though you downloaded Python 2.7, GAE may not notice. In this case, the log says either that you are not running Python 2.7 or has warnings about using a runtime older that is than the production runtime.
+
+In this situation, you need to manually specify the path for Python 2.7. To do so:
+  # First, find out what that path is:
+    # Open a shell or command prompt.
+    # Run the command {{{which python}}}
+    # Copy the path that appears (for example, {{{/Library/Frameworks/Python.framework/Versions/2.7/bin/python}}})
+  # From the *!GoogleAppEngineLauncher* menu, choose *Preferences*.<br>A dialog box appears.
+  # On the *Python Path* line, enter the path you found above.
+
+==== My course does not show up after I deploy ====
 Make sure your {{{.yaml}}} files are formatted correctly.  [http://yaml.org/ YAML] files are sensitive to spacing since the spacing itself is part of the syntax. For example, although the following examples from {{{app.yaml}}} seem similar, the first example is wrong.
 
 Wrong (extra spaces before first word):
@@ -74,8 +83,9 @@ blurb: |
   information when the stakes are high.
 }}}
 
-== How do CSV files work? ==
 
+== Technical Terminology ==
+==== How do CSV files work? ====
 We suggest you use the [CreateLessons#Create_lesson_content_from_the_browser browser] to create your units and lessons. For the default course, Course Builder gets such information from CSV files. [http://en.wikipedia.org/wiki/Comma-separated_values CSV (comma-separated value)] is a simple format for storing lines of data. If you are going to edit the CSV files, you must use a plain text editor, like vi or Notepad++. Otherwise, the editor may introduce characters that will cause Course Builder to fail.
 
 CSV files can differ. As used by Course Builder:
@@ -87,3 +97,18 @@ CSV files can differ. As used by Course Builder:
   * The  first line in the CSV file is special. It indicates what information is on each line and in what order. For example, the first line of the {{{data/unit.csv}}} file is:<br> {{{id,type,unit_id,title,release_date,now_available}}}<br>This says that each subsequent line has those six pieces of information in the specified order.
 
   * *The tricky part:* If one of the pieces of data on a line contains a comma, that entire piece of data needs to be surrounded by double quotes. For example, if you want to have a unit whose title is *All about cats, dogs, and mice*, then the line in {{{data/unit.csv}}} might look as follows:<br> {{{6,U,3,"All about cats, dogs, and mice",available July 12,True}}} 
+
+==== What is a shell or command prompt? ====
+In several places, you're asked to open a "shell or command prompt" and then enter some arcane command.
+
+Every operating system has a utility you can use that lets you type in text-based "commands" for some arbitrary piece of software. Each operating system calls this utility something different.
+
+  * *Windows* calls it a *Command Prompt*.<br><br>Choose *Start > Command Prompt*. If Command Prompt does not appear on the *Start* menu, then instead choose *Start > All Programs > Accessories > Command Prompt*.
+  
+  http://wiki.course-builder.googlecode.com/git/images/windows_prompt.PNG
+
+  * *Mac* calls it either a *terminal* or a *shell*.<br><br>Open the *Finder*. Choose *Go > Utilities*. From the window that appears, choose *Terminal.app*.
+  
+  http://wiki.course-builder.googlecode.com/git/images/mac_terminal.png
+
+  * *Linux* and other *POSIX-compliant systems* call it a *shell*. 
