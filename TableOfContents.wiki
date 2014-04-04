@@ -65,6 +65,7 @@
 	  * [AppEngineVersions Create Multiple Versions]
 	  * [ListOfModulesExtensions List of Modules and Extensions]
 	  * [RunMultipleCourses Arrange Courses on Disk]
+	  * [cbx cbX]
   * [ReleaseNotes Release Notes]
   * [FAQ FAQ]
 
