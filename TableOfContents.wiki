@@ -12,6 +12,7 @@
       * [I18n Internationalization]
       * [Dashboard Dashboard]
       * [CreateRegistration Modify Registration]
+      * [CreateQuestions Create Questions]
       * [CreateLessons Create Lessons and Activities]
       * [CreateAssessments Create Assessments]
       * [PeerReview Peer Review]
