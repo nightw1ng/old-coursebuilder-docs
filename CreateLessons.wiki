@@ -42,13 +42,14 @@ Note: The *Add Lesson* button is unavailable until you create at least one unit.
 You edit lessons that already exist in this page as well. Change any details you would like and click *Save*.
 
 == Create activities ==
-In the *Lesson Body* textbox, you create the content for your lesson, including activities. Activites are questions that you insert from the Question Bank. You can add the following components as lesson content:
+In the *Lesson Body* textbox, you create the content for your lesson, including activities. Activites are questions that you insert from the [CreateQuestions#Question_Bank_ Question Bank]. You can add the following components as lesson content:
 
   * Google Doc
   * Google Group
   * Google Spreadsheet
   * Image
-  * Questions (the activities)
+  * Question (the activities)
+  * Question Group
   * Text file uploader (maximum size for uploaded files is 1MB)
   * !YouTube videos
   
@@ -62,6 +63,9 @@ Under *Insert Item* in the toolbar, you see three buttons where you can:
   * Add an image
   * Add the various components (questions, !YouTube videos, etc.) 
     * After you add a component, a placeholder icon shows. When you save and go to the lesson, the component itself shows.
+	
+The following image shows a question component being selected.
+http://wiki.course-builder.googlecode.com/git/images/dashboard-toolbox-question.png
   
 You can add multiple components or mix and match multiple images with multiple components. Here is a video that shows how to add components: [http://www.youtube.com/watch?v=EpQqNkRdcck Add course components (4:48)]
 

@@ -19,6 +19,8 @@ The pages in this section include:
   
   * [CreateRegistration Modify Registration]<br>How to modify student registration.
 
+  * [CreateQuestions Create Questions]<br> How to create and manage questions in a central location.
+
   * [CreateLessons Create Lessons and Activities]<br>How to create lessons for your units.
   
   * [CreateAssessments Create Assessments]<br>How to create the graded assessments for your course.
