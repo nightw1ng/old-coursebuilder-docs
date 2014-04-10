@@ -67,6 +67,7 @@
 	  * [ListOfModulesExtensions List of Modules and Extensions]
 	  * [RunMultipleCourses Arrange Courses on Disk]
 	  * [cbx cbX]
+	  * [OSSContrib Open Source Contributions]
   * [ReleaseNotes Release Notes]
   * [FAQ FAQ]
 
