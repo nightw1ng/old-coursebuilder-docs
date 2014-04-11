@@ -10,8 +10,6 @@ Course Builder accomodates certain modules and extensions that extend its capabi
 The module listed below must follow the convention described in [CreateModules Create Custom Modules] and be placed in the {{{modules/}}} directory.
 
   * [https://github.com/psimakov/khan-exercises-coursebuilder Khan Academy Exercises]. This module lets you embed Khan Academy Exercises in your Course Builder course. You have instant access to over 400 existing exercises and can add your own. See [http://www.softwaresecretweapons.com/jspwiki/khan-academy-exercises-in-course-builder Khan Academy Exercises] for more information.
- 
-  * [https://code.google.com/p/oppia/ Oppia]. Oppia is a tool for creating interactive online activities. Many activites usually only let the students know whether they got the question right or wrong.  Perhaps additionaly, the activities may give prepopulated feedback on right and wrong answers.  Oppia instead aims to simulate the one-on-one interaction that a student has with a teacher by capturing and generalizing “interaction dialogues.” See the [https://www.oppia.org/ Oppia website] for more information.
   
   * [https://github.com/google/coursebuilder_xblock_module XBlock Module]. Enables [https://www.edx.org/ edX] [https://github.com/edx/XBlock XBlocks] to create and present course content in Course Builder. This module uses the [https://github.com/google/appengine_xblock_runtime XBlock Runtime] library for Google App Engine.
 
