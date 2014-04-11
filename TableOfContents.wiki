@@ -59,7 +59,7 @@
 	  * [ExploreCode Explore Directories]
 	  * [ModifyTemplate Modify Course Template]
 	  * [ExtendCB Customize Course Builder]
-	  * [ExtendCoursePages Customize Course Pages]
+	  * [ExtendCoursePages Add New Pages]
 	  * [CreateComponents Create Components]
 	  * [CreateModules Create Modules]
 	  * [CustomJob Create Custom Jobs]

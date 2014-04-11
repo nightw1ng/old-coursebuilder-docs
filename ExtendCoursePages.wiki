@@ -1,6 +1,6 @@
 #summary Explains how to customize Course Builder through course pages.
 
-<h1>Customize with Course Pages</h1>
+<h1>Add New Course Pages</h1>
 
 <wiki:toc />
 
