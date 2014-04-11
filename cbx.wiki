@@ -32,12 +32,13 @@ The recommended workflow is to go back and forth between edX Studio and and a de
 Once you are satisfied with your content from Studio, deploy it into a fresh cbX course either in development or production. You can also add Course Builder content (such as [CreateLessons Activities] and [CreateAssessments Assessments]) to your course.
 
 ==Related Projects==
-This project is part of our [ListOfModulesExtensions wider suppor]t of edX and open-source education. The following are other open source educational projects which we encourage others to use and contribute to:
+This project is part of our [ListOfModulesExtensions wider support] of edX and open-source education. The following are other open source educational projects which we encourage others to use and contribute to:
 
   * [https://code.google.com/p/course-builder/ Course Builder]
   * [https://github.com/google/appengine_xblock_runtime App Engine XBlock runtime]
   * [https://github.com/google/instant-hangouts Instant hangouts]
   * [https://code.google.com/p/oppia/ Oppia]
+  * [https://github.com/google/realtime-help Realtime Help Chat Xblock]
 
 *Disclaimer:* This workflow was tested with cbX at the commit point {{{2538bae0343aa04d0c42cb444beab0b072399ad2}}} and edX AMI version {{{ami-dbd0eeb2}}}. Due to the high velocity of both edX and cbX changes, future versions may behave differently. Pay careful attention to the versions that you are using.
 
