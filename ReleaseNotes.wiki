@@ -41,8 +41,6 @@
   
   * *Navigation.* You can now hide the *Previous Page* and *Next Page* navigation buttons at the bottom of lesson and activity pages. See [CourseSettings Customize Course Settings].
   
-  * *Oppia.* Oppia is a tool for creating interactive online activities. You can use Oppia as a Course Builder module. See [ListOfModulesExtensions List of Modules and Extensions].
-  
   * *Video.* !YouTube videos will no longer show related videos at the end of the video. Steve Midgley from the community contributed this feature.
   
   * *Views Directory.* Here are the template files that were changed under the {{{views/}}} directory:
