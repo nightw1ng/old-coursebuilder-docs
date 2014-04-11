@@ -79,12 +79,12 @@ You can convert a JSON file that is outputted by ETL and convert it to a CSV or 
 
 {{{
 python tools/etl/gcbpaths.py run tools.etl.mapreduce.JsonToCsv /<coursename> <appid> <server.appspot.com> \
-    --job_args='<path_to_an_Entity_file> <path_to_output_directory>'
+    --job_args='<full_path_to_an_Entity_file> <full_path_to_output_directory>'
 }}}
 
 The following example converts the {{{Students.json}}} file to CSV and puts it in the directory called {{{movies}}}.
 
 {{{
 python tools/etl/etl.py run tools.etl.mapreduce.JsonToCsv /cinema filmstudies filmstudies.appspot.com \
-    --job_args='./Students.json ~/movies/students.csv'
+    --job_args='/home/willacather/coursebuilder/Students.json /home/willacather/coursebuilder/csv/students.csv'
 }}}
