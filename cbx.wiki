@@ -37,7 +37,6 @@ This project is part of our [ListOfModulesExtensions wider support] of edX and o
   * [https://code.google.com/p/course-builder/ Course Builder]
   * [https://github.com/google/appengine_xblock_runtime App Engine XBlock runtime]
   * [https://github.com/google/instant-hangouts Instant hangouts]
-  * [https://code.google.com/p/oppia/ Oppia]
   * [https://github.com/google/realtime-help Realtime Help Chat Xblock]
 
 *Disclaimer:* This workflow was tested with cbX at the commit point {{{2538bae0343aa04d0c42cb444beab0b072399ad2}}} and edX AMI version {{{ami-dbd0eeb2}}}. Due to the high velocity of both edX and cbX changes, future versions may behave differently. Pay careful attention to the versions that you are using.
