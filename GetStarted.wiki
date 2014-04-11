@@ -3,19 +3,19 @@
 
 = Get Started =
 
-This section is about getting started with the Course Builder code. The pages take you through downloading and installing the necessary software, including the sample course provided with Course Builder.  Later pages get you started running the sample code for the first time and exploring what's in it. The final page contains a small set of Google App Engine information you may find particularly useful when working with Course Builder.
+This section is about getting started with Course Builder. The pages take you through downloading and installing the necessary software, including the sample course provided with Course Builder.  Later pages get you started running the sample code for the first time and exploring what's in it. The final page contains a small set of Google App Engine information you may find particularly useful when working with Course Builder.
 
-  <b>Note for PC users:</b> Do *not* use Notepad to edit Course Builder files. If you do, every Course Builder file appears to be one long line. Please use another text editor, such as !WordPad.
+  <b>Note for PC users:</b> Do *not* use Notepad to edit Course Builder files. If you do, every Course Builder file appears to be one long line. Please use another text editor, such as !WordPad or Notepad++.
 
 The pages in this section include:
 
-  * [Download Download the Software]<br>Describes how to download Python, Google App Engine, and the Course Builder sample application.
+  * [Download Download the Software]<br>Describes how to download Python, Google App Engine, and Course Builder.
 
-  * [GetCode Run the Sample App]<br>Describes how to get the sample application running for the first time.
+  * [GetCode Run Course Builder]<br>Describes how to run Course Builder for the first time.
 
-  * [ExplorePS Explore the Sample App]<br>Walks through the pages students see when they take the course. This is about what the course looks like. Consider reading [WhatsInACourse Parts of a Course Builder Course] at the same time; it goes into more detail about the content.
+  * [ExplorePS Explore Course Builder]<br>Walks through the pages students see when they take the course. This is about what the course looks like. Consider reading [WhatsInACourse Parts of a Course Builder Course] at the same time; it goes into more detail about the content.
 
-  * [ExploreCode Explore the Sample Code]<br>Lists all of the files included with the sample code and notes which ones you must change.
+  * [UploadCode Deploy to Google App Engine]<br>Deploy Course Builder to Google App Engine so you can start building your course.
 
 
 || [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||
