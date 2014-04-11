@@ -1,7 +1,7 @@
 #summary Using one GAE instance to host multiple courses.
 
 <h1>Arrange Multiple Courses on Disk</h1>
-Course Builder supports multitenancy. You should create and run all your courses through the [CreateNewCourse Admin page]. This page discusses staging your multiple courses on disk before deploying to Google App Engine. This method is for older Course Builder versions (before 1.3.0) or those who are creating their course(s) on disk 
+Course Builder supports multitenancy. You should create and run all your courses through the [CreateNewCourse Admin page]. This page discusses staging your multiple courses on disk before deploying to Google App Engine. This method is for older Course Builder versions (before 1.3.0) or those who are creating their course(s) on disk.
 
 <wiki:toc max_depth=2 />
 
