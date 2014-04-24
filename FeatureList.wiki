@@ -21,7 +21,7 @@
  * Breadcrumbs for easy navigation within the Dashboard
 
 == Manage Course Settings ==
- * Edit course settings from the Dashboard
+ * Edit [CourseSettings your course settings] from the Dashboard
  * Directly edit course.yaml file with Advanced Edit from the Dashboard
  * Visual indicator denotes whether settings are Default, Pending, or Overriden
 
