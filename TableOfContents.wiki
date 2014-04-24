@@ -1,5 +1,6 @@
   * [CourseBuilderChecklist Course Builder Checklists]
   * [CBRoles Course Builder Roles]
+  * [FeatureList Course Builder Feature List]
   * Technologists  
     * [GetStarted Get Started]
       * [Download Download the Software]
