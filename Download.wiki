@@ -2,7 +2,7 @@
 
 <h1>Download the Software </h1>
 
-Before you can start working on your own course, you need to download Python and Google App Engine (GAE). You also need to download the Course Builder sample application.
+Before you can start working on your own course, you need to download Python and Google App Engine (GAE). You also need to download Course Builder.
 
 <wiki:toc max_depth="2" />
 
@@ -10,7 +10,7 @@ Before you can start working on your own course, you need to download Python and
 
 Make sure you have Python 2.7 on your system. To find out if you do...
 
-(*Note:* This page refers to a "shell or command prompt". If you're unsure what that means, see [http://code.google.com/p/gcb-x-03141590/wiki/FAQ#What%27s_a_%22shell_or_command_prompt%22? What's a "shell or command prompt"?])
+(*Note:* This page refers to a "shell or command prompt". If you're unsure what that means, see [FAQ#What_is_a_shell_or_command_prompt? What's a "shell or command prompt"?])
 
 ==== Check on Mac, Linux or other POSIX-compliant systems ====
 On Mac, Linux or other POSIX-compliant systems, open a shell and type
@@ -54,6 +54,7 @@ If you are unfamiliar with GAE, but know something about cloud computing, read [
 Choose the appropriate GAE SDK version with the appropriate Course Builder version. The following table illustrates the correct pairings:
 
 || *Course Builder Version* || *Platform* || *Google App Engine SDK Version* ||
+|| 1.6.0 || [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python Windows, Mac, Linux] || Latest ||
 || 1.5.1 || [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python Windows, Mac, Linux] || Latest ||
 || 1.5.0 || [http://code.google.com/p/googleappengine/downloads/detail?name=GoogleAppEngine-1.8.1.msi&can=2&q= Windows] || 1.8.1 ||
 || 1.5.0 || [http://code.google.com/p/googleappengine/downloads/detail?name=GoogleAppEngineLauncher-1.8.1.dmg&can=2&q= Mac] || 1.8.1 ||
@@ -72,7 +73,7 @@ When developing on GAE, you have a choice of performing administrative tasks usi
 *Note:* If you decide to use the command-line tools, consult the official [https://developers.google.com/appengine/docs/python/overview Google App Engine documentation]. 
 
 === Windows 7 === 
-Run the downloaded installer .msi by double clicking. Follow all on-screen instructions. On the screen that asks for the destination folder, be sure that *Add product path to user PATH* is checked. This is required for the command-line tools to work properly.  Once completed, you should find the GAE Launcher icon on your desktop or be able to find it via Start -> Programs.
+Run the downloaded installer .msi by double clicking. Follow all on-screen instructions. On the screen that asks for the destination folder, be sure that *Add product path to user PATH* is checked. This is required for the command-line tools to work properly.  Once completed, you should find the GAE Launcher icon on your desktop or be able to find it via *Start -> Programs*.
 
 === Mac ===
 Open the downloaded .dmg file and drag the GAE icon into the Applications folder. Optionally,  open the Applications folder and drag the GAE icon to your Dock so that you can start the GAE Launcher more conveniently. Putting GAE in the Applications folder also installs the command-line tools.
@@ -83,9 +84,9 @@ After downloading the .zip file, go to the directory where you want to install G
 
 == Download Course Builder ==
 
-To download Course Builder's sample application, you have two choices:
+To download Course Builder, you have two choices:
 
-  * Download the [http://code.google.com/p/course-builder/downloads/list zip file]. Unzip that file into a working directory. This is the simplest route and is suitable for most people.
+  * Download the [DownloadCourseBuilder zip file]. Unzip that file into a working directory. This is the simplest route and is suitable for most people.
 
   * Visit the [https://code.google.com/p/course-builder/source/checkout Source > Checkout] tab for the Course Builder project. From there, follow the instructions to get a local copy of the repository using Git. Use this approach if you have explicitly partnered with Google to make changes to Course Builder itself.
 
