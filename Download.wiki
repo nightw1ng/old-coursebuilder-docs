@@ -86,7 +86,7 @@ After downloading the .zip file, go to the directory where you want to install G
 
 To download Course Builder, you have two choices:
 
-  * Download the [DownloadCourseBuilder zip file]. Unzip that file into a working directory. This is the simplest route and is suitable for most people.
+  * The simplest route is to download the [DownloadCourseBuilder zip file] to your computer. Unzip that file into a working directory. For example, in both Windows and Mac, the zip file might have downloaded to the directory called "Downloads." You can unzip the file there. Remember the directory where you unzipped the file since you will need to locate it later.
 
   * Visit the [https://code.google.com/p/course-builder/source/checkout Source > Checkout] tab for the Course Builder project. From there, follow the instructions to get a local copy of the repository using Git. Use this approach if you have explicitly partnered with Google to make changes to Course Builder itself.
 
