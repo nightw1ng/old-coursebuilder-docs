@@ -61,7 +61,7 @@
     * unenroll_confirmation_check.html
     * unit.html
   
-  * *XBlock Module.* A new module was created that allows the use of Xblocks within Course Builder. See [ListOfModulesExtensions List of Modules and Extensions].
+  * *XBlock Module.* A new module was created that allows the use of XBlocks within Course Builder. See [ListOfModulesExtensions List of Modules and Extensions].
 
 ==Release notes for version 1.5.1==
 
