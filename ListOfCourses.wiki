@@ -2,7 +2,7 @@
 
 = Existing Courses =
 
-On this page, we showcase courses people have created using Course Builder. Courses are in alphabetical order.
+On this page, we showcase courses people have created using Course Builder. The creators of these courses may have their own policies on who can access and use their content. Courses are in alphabetical order.
 
 || *Course* || *Description* || *School/Organization* || *Contact* || *Audience* ||
 || [http://www.powersearchingwithgoogle.com/course/aps Advanced Power Searching] || Hone your searching skills by solving complex search challenges alongside peers from around the world in this online class. It is advised that you take the [http://www.powersearchingwithgoogle.com/course/ps/course.html Power Searching with Google] course before you take this course. || Google || || General population ||
