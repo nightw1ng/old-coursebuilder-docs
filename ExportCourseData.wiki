@@ -84,13 +84,13 @@ We named the script {{{gcbpaths.py}}} and saved it in {{{tools/etl}}}. Now the d
 The steps for Windows is the same as that of [ExportCourseData#Mac_path_settings Mac]. The difference is the paths are different. Follow the steps for Mac but add the paths in your Windows environment. For example, your script may look like this:
 {{{
 import sys
-sys.path.insert(0,'C:\coursebuilder')
-sys.path.insert(0,'C:\coursebuilder\google_appengine')
-sys.path.insert(0,'C:\coursebuilder\google_appengine\lib')
-sys.path.insert(0,'C:\coursebuilder\google_appengine\lib\jinja2-2.6')
-sys.path.insert(0,'C:\coursebuilder\google_appengine\lib\webapp2-2.5.2')
-sys.path.insert(0,'C:\coursebuilder\google_appengine\lib\webob-1.2.3')
-sys.path.insert(0,'C:\coursebuilder\google_appengine\lib\yaml\lib')
+sys.path.insert(0,'C:/coursebuilder')
+sys.path.insert(0,'C:/Program Files (x86)/Google/google_appengine')
+sys.path.insert(0,'C:/Program Files (x86)/Google/google_appengine/lib/fancy_urllib')
+sys.path.insert(0,'C:/Program Files (x86)/Google/google_appengine/lib/jinja2-2.6')
+sys.path.insert(0,'C:/Program Files (x86)/Google/google_appengine/lib/webapp2-2.5.2')
+sys.path.insert(0,'C:/Program Files (x86)/Google/google_appengine/lib/webob-1.2.3')
+sys.path.insert(0,'C:/Program Files (x86)/Google/google_appengine/lib/yaml/lib')
 
 import argparse
 import etl
@@ -98,8 +98,6 @@ if __name__ =='__main__':
     PARSER = argparse.ArgumentParser(add_help=False, parents=[etl.PARSER])
     etl.main(PARSER.parse_args())
 }}}
-
-Notice that the specification for the {{{fancy_urllib}}} library omits the directory name at the end of the path.
 
 === Linux path settings ===
 The steps for Linux is the same as that of [ExportCourseData#Mac_path_settings Mac]. The difference is the paths are different. Follow the steps for Mac but add the paths in your Linux environment. For example, you script may look like this:
