@@ -4,6 +4,10 @@
 
 <wiki:toc />
 
+== Costs ==
+=== How much does running Course Builder cost? ===
+The Course Builder software is free of charge. When you use Course Builder, you create your course as an App Engine application. Currently, each App Engine application can consume a certain level of computing resources for free, controlled by a set of limits. If you need resources above these free limits, you can switch to a paid app to set a daily resource budget. For more information, see [AppEngine Develop with App Engine].
+
 ==Course==
 ==== Can I restrict who takes my course? ====
 There is no feature that allows only certain students (like a "whitelist") to take your course.
