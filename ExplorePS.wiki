@@ -2,7 +2,7 @@
 
 <h1>Explore the Sample Course</h1>
 
-This page step and its steps are optional. They help you understand Course Builder on your local computer and give you a chance to explore Course Builder directly. This is a safe, exploration environment. Any new courses or modifications you make are lost when you turn off your computer. To make your changes permanent, you must [CourseBuilderChecklist#Deploy deploy] and begin your implementation on Google App Engine (as opposed to your local computer with the Google App Engine SDK).
+This page helps you understand Course Builder on your local computer and give you a chance to explore Course Builder directly. This is a safe, exploration environment. Any new courses or modifications you make are lost when you turn off your computer. To make your changes permanent, you must [CourseBuilderChecklist#Deploy deploy] and begin your implementation on Google App Engine (as opposed to your local computer with the Google App Engine SDK).
 
 In [GetCode Run Course Builder], you downloaded the sample application and got it running on your development server. Let's look at the various pages that a student can see.
 
