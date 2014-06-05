@@ -67,6 +67,7 @@
 	  * [AppEngineVersions Create Multiple Versions]
 	  * [ListOfModulesExtensions List of Modules and Extensions]
 	  * [RunMultipleCourses Arrange Courses on Disk]
+	  * [StudentProgress Student Progress]
 	  * [cbx cbX]
 	  * [OSSContrib Open Source Contributions]
   * [ReleaseNotes Release Notes]
