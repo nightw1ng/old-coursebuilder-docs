@@ -10,6 +10,7 @@ Course Builder is an Open Source (Apache 2.0), online education platform. Use it
   * massively scales because it runs on Google infrastructure
   * has a free tier
   * supports multiple courses on the same instance (multitenancy)
+  * support for Google Analytics and Google Tag Manager
   * requires no programming to create or run your course
   * is relatively quick to get up and running
  
