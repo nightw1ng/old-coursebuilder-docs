@@ -4,6 +4,37 @@
 
 <wiki:toc />
 
+== Anticipated release notes for next release==
+  
+  * *Analytics.* New visualizations and a way to cancel or re-run analytics jobs.
+  
+  * *Assessments.* You can now place Assessments within Units at the following locations: at the beginning, end, or both. That is, you can now submerge Assessments within Units as long as they are either at the beginning or end of the Unit. By default Assessments are still at the top level of a course, which is the same level as Units.
+  
+  * *Certificate generation.* Optionally generate certificates for those who complete your course.
+  
+  * *Course tracks.* Use labels to allow your students to take particular tracks or paths through your course as opposed to taking the entire course.
+  
+  * *Dashboard.* The *Dashboard* now has sub-navigation tabs in the *Assets* and *Analytics* tabs so sections can have their own page.
+  
+  * *Design.* Course Builder's design is now adapative down to 7 inch screens.
+  
+  * *HTML Hooks.* Add your HTML customizations through the browser instead of through YAML files or HTML files on disk.
+    
+  * *Navigation.*  Collapsable left navigation within a lesson.
+  
+  * *Notifications.* Send notifications to students registered for your course in Course Builder.
+  
+  * *Pagination in assessments.* You can suppress the "Next" button.
+  
+  * *Schedule name.* Has been changed to Syllabus.
+  
+  * *Settings: specify people.* When you specify people by their email addresses, for example in *Admin > Settings > gcb_admin_user_emails*, you can now delimit by tabs, commas, whitespace, in addition to newlines.
+  
+  * *Testing Course Builder.* New scripts were added to test Course Builder on your local machine.
+  
+  * *Whitelisting.* You can now restrict who can register for your course.
+   
+
 == Release notes for version 1.6.0==
 <font color='red'>Starting from Course Builder 1.6.0, you must download the zip from here:</font> [https://code.google.com/p/course-builder/wiki/DownloadCourseBuilder?tm=2 Course Builder Zip Files]. The browsable source code will be in its usual area in [https://code.google.com/p/course-builder/source/browse/ code.google.com].
 
