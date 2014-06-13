@@ -19,6 +19,8 @@
   * *Design.* Course Builder's design is now adapative down to 7 inch screens.
   
   * *HTML Hooks.* Add your HTML customizations through the browser instead of through YAML files or HTML files on disk.
+  
+  * *LTI.* You can now add Learning Tools Interoperability (LTI) tools into Course Builder. 
     
   * *Navigation.*  Collapsable left navigation within a lesson.
   
