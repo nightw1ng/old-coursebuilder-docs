@@ -15,8 +15,6 @@ There is no feature that allows only certain students (like a "whitelist") to ta
 ==== Do my students need a Google account to register for a course made with Course Builder? ====
 Yes, if students want to register for a course made with Course Builder, they will need a [https://accounts.google.com/SignUp?service=mail Google account]. However, if you turn browsing on for your course through [CourseSettings course settings], students can take your course without ever registering.
 
-You can also customize Course Builder so that it authenticates with any OpenID provider. This way, you are not limited to Google identity. More information on authenticating with OpenID, see the [https://developers.google.com/appengine/docs/python/users/#Python_Authentication_options Google App Engine documention].
-
 ==== How do I make my root course editable through the browser? ====
 Even though you cannot make your root course editable through the browser, you can make a new course and import everything from the root course. Next, you would [URLMap re-route] (switch) your URLs. Here are the steps to clone your root course and route the clone course to the root URL:
 
