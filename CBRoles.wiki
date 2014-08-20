@@ -10,14 +10,14 @@ Course Builder currently differentiates between two main roles -- Course Author 
 This is the person or team who designs and creates the content of the course or the “what is learned” from the students’ points of view. Currently for Course Builder, we aggregate some different names and roles under the term "Course Author." For example, we call the Instructional Designer, Online Educator, Online Teacher, Teacher's Assistant, and so forth, all “Course Authors.” Course Builder's [Dashboard Dashboard] is a special section for Course Authors to view a broad range of information about an individual course.
 
 ==Technologist==
-The Technologist is the person or team who is responsible for setting up and managing Course Builder on Google App Engine. They may also be responsible for duties like Google App Engine billing. The Technologist can be thought of as the webmaster for a particular course or courses. The Technologist is most likely the point of contact for the Course Author for any customizations or problems with a particular course. Course Builder's [AdminPage Administrator Page] is a special section for Technologists to access and manage the Google App Engine instance for a particular course.
+The Technologist is the person or team who is responsible for setting up and managing Course Builder on Google App Engine. They may also be responsible for duties like Google App Engine billing. The Technologist can be thought of as the webmaster for a particular course or courses. The Technologist is most likely the point of contact for the Course Author for problems with a particular course. Course Builder's [AdminPage Administrator Page] is a special section for Technologists to access and manage the Google App Engine instance for a particular course.
 
-We expect the following skills from technologists:
+Although you do not need to know programming to create and run a course with Course Builder, the Technologist may have the following skills:
 
   * HTML
   * !JavaScript, particularly !JavaScript arrays, simple objects, and regular expressions. Of these, regular expressions tend to be the biggest stumbling block. The [https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions Mozilla Developer Network] has an introduction to regular expressions. 
   * [https://developers.google.com/appengine/docs/whatisgoogleappengine Google App Engine]
-  * [http://docs.python.org/2/ Python] familiarity preferred but not required
+  * [http://docs.python.org/2/ Python]
 
 In the technology industry, Technologists like the ones referred to here are sometimes called administrators or just "admins." We will interchange Technologist, Administrator, and Admin throughout this documentation. The Administrator referred to in this documentation has no relation to the administrator term sometimes used in education.
 
