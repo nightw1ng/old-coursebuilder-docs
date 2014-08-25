@@ -14,11 +14,17 @@
   
   * *Course tracks.* Use labels to allow your students to take particular tracks or paths through your course as opposed to taking the entire course.
   
+  * *Course Builder roles.* You can now have a separate Course Author role. This role allows the course author to edit the course but not access the Admin features of Course Builder.
+  
   * *Dashboard.* The *Dashboard* now has sub-navigation tabs in the *Assets* and *Analytics* tabs so sections can have their own page.
   
   * *Design.* Course Builder's design is now adapative down to 7 inch screens.
   
+  * *Documentation: Course Author.* The "Course Author" section was moved from the documentation and has separately become [http://www.google.com/edu/openonline/edukit/index.html Online Course Kit]. 
+  
   * *HTML Hooks.* Add your HTML customizations through the browser instead of through YAML files or HTML files on disk.
+  
+  * *Internationalization.* A translation console, with a new translator role, to allow translators to translate your original course content.
   
   * *LTI.* You can now add Learning Tools Interoperability (LTI) tools into Course Builder. 
     
