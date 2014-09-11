@@ -6,39 +6,79 @@
 
 == Anticipated release notes for next release==
   
-  * *Analytics.* New visualizations and a way to cancel or re-run analytics jobs.
+  * *Activities.* Import old style, version 1.2 and earlier, questions into modern question types with the click of a button.
   
+  * *Analytics.* New visualizations and a way to cancel or re-run individual analytics jobs.
+    
   * *Assessments.* You can now place Assessments within Units at the following locations: at the beginning, end, or both. That is, you can now submerge Assessments within Units as long as they are either at the beginning or end of the Unit. By default Assessments are still at the top level of a course, which is the same level as Units.
   
-  * *Certificate generation.* Optionally generate certificates for those who complete your course.
+  * *Breadcrumb.* If you have multiple courses, you can switch courses by selecting one from the breadcrumb navigation.
+  
+  * *Certificate generation.* Optionally generate certificates based on specified criteria.
   
   * *Course tracks.* Use labels to allow your students to take particular tracks or paths through your course as opposed to taking the entire course.
   
-  * *Course Builder roles.* You can now have a separate Course Author role. This role allows the course author to edit the course but not access the Admin features of Course Builder.
+  * *Course Builder roles.* You can now have a separate Course Author role. This role allows the course author to edit the course and create new courses but not access the Admin features of Course Builder.
   
-  * *Dashboard.* The *Dashboard* now has sub-navigation tabs in the *Assets* and *Analytics* tabs so sections can have their own page.
+  * *Dashboard.* The *Dashboard* now has sub-navigation tabs in the *Analytics*, *Assets*, and *Settings* tabs so sections can have their own page.
   
-  * *Design.* Course Builder's design is now adapative down to 7 inch screens.
+  * *Dasbhoard: Assets.* Reorganized presentation into a five column, sortable table.  Sort the table by clicking on the column headers. Preview questions through the eye icon. Use the pencil icon to edit the question or question group.
   
+  * *Dasbhoard: Assets.* Filter the question and question group through the filter button so you see only the items you want to see.
+  
+  * *Dashboard: Assets.* Preview a question directly from the Dashboard.
+  
+  * *Dashboard: Assets.* When you make changes to the default CSS, !JavaScript, or Templates, a new pencil icon shows next to the name with the text "Overridden."
+  
+  * *Dasbhoard: Outline.* Make units and lessons private or public with a click of a icon.
+    
   * *Documentation: Course Author.* The "Course Author" section was moved from the documentation and has separately become [http://www.google.com/edu/openonline/edukit/index.html Online Course Kit]. 
   
-  * *HTML Hooks.* Add your HTML customizations through the browser instead of through YAML files or HTML files on disk.
+  * *Email specification.* Separate multiple email specification anywhere in Course Builder by tabs, commas, newlines, spaces in Admin Settings and Dashboard > Settings.
   
-  * *Internationalization.* A translation console, with a new translator role, to allow translators to translate your original course content.
+  * *ETL upload.* ETL can upload all the entity types that it can download. 
+
+  * *Google Docs.* Connect to a Google Doc and edit the document locally. Others will not see your edits.
   
-  * *LTI.* You can now add Learning Tools Interoperability (LTI) tools into Course Builder. 
+  * *HTML customizations.* Add your HTML customizations through the browser instead of through YAML files or HTML files on disk.
+  
+  * *Internationalization.* A translation console that allows translators to translate your original course content.
+  
+  * *Internationalization.* If you translate the course into different languages, students can select one of those particular languages in which to take the course.
+  
+  * *Invitations.* Students can send invitations to take the course to other students from Course Builder.
+  
+  * *Lessons.* You can now add unit links on the lesson navigation bar. The navigation bar itself is collapsable (accordion style).
+  
+  * *Lessons.* Added option to disable auto numbering of lessons.
+  
+  * *Lessons.* You can optionally show all lessons in a single unit.
+  
+  * *LTI.* You can now add Learning Tools Interoperability (LTI) tools into Course Builder. This is done by importing the separate LTI module.
+  
+  * *Math component.*  Add math symbols and equations in LaTeX as a custom component.
+  
+  * *Mobile.* Course Builder's design is now adapative down to 7 inch viewports.
     
-  * *Navigation.*  Collapsable left navigation within a lesson.
-  
-  * *Notifications.* Send notifications to students registered for your course in Course Builder.
-  
   * *Pagination in assessments.* You can suppress the "Next" button.
+  
+  * *Question Groups.* Add questions to question groups directly from the dashboard.
+  
+  * *Question Groups.* Create empty question groups.
+  
+  * *Registration notification.* Option to send welcome emails to students upon their registration.
+  
+  * *Roles and permissions.* You can create arbitrary roles and assign them particular permissions.
   
   * *Schedule name.* Has been changed to Syllabus.
   
-  * *Settings: specify people.* When you specify people by their email addresses, for example in *Admin > Settings > gcb_admin_user_emails*, you can now delimit by tabs, commas, whitespace, in addition to newlines.
+  * *Scores.* You can see individual student scores. This setting is off by default.
   
-  * *Testing Course Builder.* New scripts were added to test Course Builder on your local machine.
+  * *Scripts.* There are new scripts to test Course Builder on your local machine, bring in external modules, and use the core version of ETL without creating a custom script.
+  
+  * *Unit Numbering.* Suppress unit numbering.
+  
+  * *Welcome flow.* For new Course Builder users who haven't created a course yet, you will now get a Welcome screen that allows you to create a new course or explore the sample course through a Welcome screen.
   
   * *Whitelisting.* You can now restrict who can register for your course.
    
