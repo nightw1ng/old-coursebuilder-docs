@@ -24,6 +24,9 @@ In the technology industry, Technologists like the ones referred to here are som
 ==Student==
 This person or group are the learners, "consumers", or "users" of the content that was created with Course Builder.
 
+==Translator==
+You can allow translators to translate your course through Course Builder's Translation Console. Translators have special privileges that allow them to access Course Builder to translate content but not allow them to edit, add, or view content or settings beyond their scope as translators.
+
 ==Roles and Actions==
 The picture below represents a general overview of using Course Builder. On the left, the boxes represent actions while the boxes on the right represent which role would typically be responsible for those actions. Of course, the technologist and the course author may be the same person. The Course Author and the Admin (Technologist) have the same access rights. If you want to allow a select group of people to review a course before it is made public, you need to give them Admin rights.
 
