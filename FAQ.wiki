@@ -50,7 +50,6 @@ Even though you cannot make your root course editable through the browser, you c
 ==== Why does my course say Read-only course? ====
 The root course you upload from your local computer to your live App Engine instance will always be read-only. The root course is located at the root  URL (at yourcourse.appspot.com vs. yourcourse.appspot.com/anothercourse). To edit that root course, you would make those edits like you originally did: on your local computer or development server and then push the changes to App Engine. The new courses you make through the browser on App Engine are editable through the browser. By default, those new courses are off root (yourcourse.appspot.com/anothercourse, yourcourse.appspot.com/anothercourse2, etc.). 
 
-
 == Google App Engine and Goolgle App Engine SDK ==
 ==== Cannot connect to upload data ====
 When you enter your credentials, you may get the following error:
@@ -58,6 +57,10 @@ When you enter your credentials, you may get the following error:
   <font color=green> {{{urllib2.URLError: <urlopen error [Errno 61] Connection refused>}}} </font>
 
 If you do, then you have forgotten to start your development server.
+
+==== Custom URL ====
+You don't have to be limited in using the {{{appspot.com}}}.  You can use a custom domain or subdomain that you own.  The instructions are here:
+[https://cloud.google.com/appengine/docs/domain Using a Custom Domain].
 
 ==== Development server won't start ====
 If you do not see the registration page when you start your development server for the first time, there may be an error somewhere.
