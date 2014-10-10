@@ -1,7 +1,7 @@
 #summary Get Course Builder zip files
 
 <h1>Course Builder Zip Files</h1>
-The Course Builder zip fill will work for the following operating systems: Windows 7, Mac OS, and Linux.
+The Course Builder zip fill will work for the following operating systems: Windows 7, Mac OS, and Linux. Go back to the main [http://www.google.com/edu/openonline/tech/index.html Open Online Education] website for more information about Course Builder.
 
 == Download the Latest Version ==
 

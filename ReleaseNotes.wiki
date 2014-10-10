@@ -4,83 +4,85 @@
 
 <wiki:toc />
 
-== Anticipated release notes for next release==
+== Release notes for version 1.7.0==
   
-  * *Activities.* Import old style, version 1.2 and earlier, questions into modern question types with the click of a button.
+  * *Activities.* Import old style (version 1.2 and earlier) questions into modern question types. This is handled automatically when click the *Import* button.
   
-  * *Analytics.* New visualizations and a way to cancel or re-run individual analytics jobs.
+  * *Analytics.* New visualizations and a way to cancel or re-run individual analytics jobs. See [Dashboard#Analytics Analytics].
     
-  * *Assessments.* You can now place Assessments within Units at the following locations: at the beginning, end, or both. That is, you can now submerge Assessments within Units as long as they are either at the beginning or end of the Unit. By default Assessments are still at the top level of a course, which is the same level as Units.
+  * *Assessments.* You can now place assessments within units at the following locations: at the beginning, end, or both. That is, you can now submerge assessments within units as long as they are either at the beginning or end of the unit. See [CreateAssessments Assessments].
   
   * *Breadcrumb.* If you have multiple courses, you can switch courses by selecting one from the breadcrumb navigation.
+
+  * *Certificate generation.* Optionally generate certificates based on specified criteria. See [Dashboard#Settings Settings].
   
-  * *Certificate generation.* Optionally generate certificates based on specified criteria.
+  * *Course tracks.* Use labels to allow your students to take particular tracks or paths through your course as opposed to taking the entire course. See [Dashboard#Assets Assets].
   
-  * *Course tracks.* Use labels to allow your students to take particular tracks or paths through your course as opposed to taking the entire course.
+  * *Course Builder roles.* Create different roles and associate them with particular emails and permissions. Currently, the role is limited to a translator role. See [Dashboard#Roles Roles].
   
-  * *Course Builder roles.* You can now have a separate Course Author role. This role allows the course author to edit the course and create new courses but not access the Admin features of Course Builder.
+  * *Dashboard.* The *Dashboard* now has sub-navigation tabs in the *Analytics*, *Assets*, and *Settings* tabs so sections can have their own page. A new top level navigation tab for *Roles* is also available. See [Dashboard Dashboard].
   
-  * *Dashboard.* The *Dashboard* now has sub-navigation tabs in the *Analytics*, *Assets*, and *Settings* tabs so sections can have their own page.
+  * *Dashboard: Assets.* Reorganized presentation into a five column, sortable table.  Sort the table by clicking on the column headers. Preview questions through the eye icon. Use the pencil icon to edit the question or question group.
   
-  * *Dasbhoard: Assets.* Reorganized presentation into a five column, sortable table.  Sort the table by clicking on the column headers. Preview questions through the eye icon. Use the pencil icon to edit the question or question group.
+  * *Dashboard: Assets.* Filter the question and question group through the filter button so you see only the items you want to see.
   
-  * *Dasbhoard: Assets.* Filter the question and question group through the filter button so you see only the items you want to see.
-  
-  * *Dashboard: Assets.* Preview a question directly from the Dashboard.
+  * *Dashboard: Assets.* Preview a question directly from the Dashboard with the eye icon.
   
   * *Dashboard: Assets.* When you make changes to the default CSS, !JavaScript, or Templates, a new pencil icon shows next to the name with the text "Overridden."
   
-  * *Dasbhoard: Outline.* Make units and lessons private or public with a click of a icon.
+  * *Dashboard: Outline.* Make units and lessons private or public with a click of a icon.
     
   * *Documentation: Course Author.* The "Course Author" section was moved from the documentation and has separately become [http://www.google.com/edu/openonline/edukit/index.html Online Course Kit]. 
   
-  * *Email specification.* Separate multiple email specification anywhere in Course Builder by tabs, commas, newlines, spaces in Admin Settings and Dashboard > Settings.
+  * *Email specification.* Separate multiple email specification anywhere in Course Builder by tabs, commas, newlines, spaces in *Admin > Settings* and *Dashboard > Settings*.
   
-  * *ETL upload.* ETL can upload all the entity types that it can download. 
+  * *ETL.* You no longer need to manually create a custom script that lists all the needed libraries and calls ETL indirectly. Now you can use the {{{etl.py}}} command directly. See [ExportCourseData Download Course Data] and [ImportCourseData Upload Course Data].
+  
+  * *ETL upload.* ETL can upload all the entity types that it can download. See [ImportCourseData Upload Course Data].
+  
+  * *Google Drive.* Integrate Google Docs on Google Drive into Course Builder. See [IntegrateDrive Integrate with Google Drive].
+  
+  * *Gradebook.* See results on individual student scores. The Gradebook is available as a separate sub-navigation tab under *Analytics*. See [Dashboard#Analytics Analytics]
 
-  * *Google Docs.* Connect to a Google Doc and edit the document locally. Others will not see your edits.
+  * *HTML customizations.* Edit your course HTML with custom text, links, and graphics through the browser instead of through YAML files or HTML files. See [Dashboard#Settings Settings].
   
-  * *HTML customizations.* Add your HTML customizations through the browser instead of through YAML files or HTML files on disk.
+  * *Internationalization.* A translation console that allows translators to translate your original course content. See [I18n Internationalization].
   
-  * *Internationalization.* A translation console that allows translators to translate your original course content.
+  * *Internationalization: Locale Picker.* If you translate the course into different languages, students can select one of those particular languages in which to take the course.
   
-  * *Internationalization.* If you translate the course into different languages, students can select one of those particular languages in which to take the course.
+  * *Invitations.* Students can send course invitations to other students from Course Builder. See [Dashboard#Settings Settings].
   
-  * *Invitations.* Students can send invitations to take the course to other students from Course Builder.
+  * *Lessons.* You can now add unit links on the lesson navigation bar. The navigation bar itself is collapsable (accordion style). See [Dashboard#Settings Settings].
   
-  * *Lessons.* You can now add unit links on the lesson navigation bar. The navigation bar itself is collapsable (accordion style).
-  
-  * *Lessons.* Added option to disable auto numbering of lessons.
+  * *Lessons.* Added option to disable auto numbering of lessons. See [Dashboard#Settings Settings].
   
   * *Lessons.* You can optionally show all lessons in a single unit.
   
-  * *LTI.* You can now add Learning Tools Interoperability (LTI) tools into Course Builder. This is done by importing the separate LTI module.
+  * *LTI.* You can now add Learning Tools Interoperability (LTI) tools into Course Builder. The LTI module is a separate module and you can import it by running the {{{scripts/modules.py}}} script.
   
-  * *Math component.*  Add math symbols and equations in LaTeX as a custom component.
+  * *Markdown.* Optionally use Markdown for content in the Lesson Body. See [CreateLessons#Create_activities Create Lessons].
+  
+  * *Math component.*  Add math symbols and equations in LaTeX as a custom component. See [CreateLessons#Create_activities Create Lessons].
   
   * *Mobile.* Course Builder's design is now adapative down to 7 inch viewports.
     
-  * *Pagination in assessments.* You can suppress the "Next" button.
+  * *Pagination in assessments.* You can suppress the "Next" button. See [Dashboard#Settings Settings].
   
-  * *Question Groups.* Add questions to question groups directly from the dashboard.
+  * *Question Groups.* Add questions to question groups directly from the dashboard. See [Dashboard#Assets Assets].
   
   * *Question Groups.* Create empty question groups.
   
-  * *Registration notification.* Option to send welcome emails to students upon their registration.
+  * *Registration notification.* Option to send welcome emails to students upon their registration. See [Dashboard#Settings Settings].
   
-  * *Roles and permissions.* You can create arbitrary roles and assign them particular permissions.
+  * *Roles and permissions.* You can create arbitrary roles and assign them particular permissions. Currently, most permissions relate to translator. See [Dashboard#Roles Roles].
   
-  * *Schedule name.* Has been changed to Syllabus.
+  * *Scripts.* There are new scripts to test Course Builder on your local machine, bring in external modules, and use the core version of ETL without creating a custom script. These are located in the {{{scripts/}}} directory.
   
-  * *Scores.* You can see individual student scores. This setting is off by default.
+  * *Unit Numbering.* You can now suppress unit numbering. See [Dashboard#Settings Settings].
   
-  * *Scripts.* There are new scripts to test Course Builder on your local machine, bring in external modules, and use the core version of ETL without creating a custom script.
+  * *Welcome flow.* If you haven't created a course yet, you will now get a Welcome screen that allows you to create a new course or explore the sample course through a Welcome screen.
   
-  * *Unit Numbering.* Suppress unit numbering.
-  
-  * *Welcome flow.* For new Course Builder users who haven't created a course yet, you will now get a Welcome screen that allows you to create a new course or explore the sample course through a Welcome screen.
-  
-  * *Whitelisting.* You can now restrict who can register for your course.
+  * *Whitelisting.* You can now restrict who can register for your course. See [Dashboard#Settings Settings].
    
 
 == Release notes for version 1.6.0==

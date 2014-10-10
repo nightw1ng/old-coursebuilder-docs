@@ -4,7 +4,22 @@
 
 <wiki:toc />
 
-=Upgrade from any version to the latest version (1.6.0)=
+=Upgrade from any version to the latest version (1.7.0)=
+  # Make a complete copy of your old version of Course Builder and all your data.
+  # Download and unzip the latest version of Course Builder.
+  # Copy the {{{/assets}}} and {{{/data}}} folders from your old version to the latest version. If you encounter visual oddities, check and adjust your .css file in {{{/assets/css}}}. New definitions may have been added or previous definitions changed.
+  # Make the appropriate changes in your {{{course.yaml}}}.
+  # Make the appropriate changes in your {{{course_template.yaml}}}.
+  # Change your course name in {{{app.yaml}}} in the latest version of Course Builder.
+  # Change your {{{version:}}} value in {{{app.yaml}}} in the latest version.
+  # Manually transfer other modifications you made in the individual template files.
+  # Manually transfer any modifications you made to the Python .py files.
+  # In the [FAQ#What_is_a_shell_or_command_prompt? terminal], go to your new Course Builder root directory.
+  # Use the [UploadCode#Upload_(or_deploy)_your_app appcfg.py] command to update your index by typing (do not forget the period at the end): {{{appcfg.py update_indexes .}}}
+  # Type your email and application-specific password. There are no messages from Course Builder if you are successful. 
+  # [UploadCode#Upload_(or_deploy)_your_app Deploy] your new version to Google App Engine.
+
+=Upgrade from any version to 1.6.0=
   # Make a complete copy of your old version of Course Builder and all your data.
   # Download and unzip the latest version of Course Builder.
   # Copy the {{{/assets}}} and {{{/data}}} folders from your old version to the latest version. If you encounter visual oddities, check and adjust your .css file in {{{/assets/css}}}. New definitions may have been added or previous definitions changed.

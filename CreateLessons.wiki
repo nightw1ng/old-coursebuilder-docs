@@ -45,12 +45,17 @@ You edit lessons that already exist in this page as well. Change any details you
 In the *Lesson Body* textbox, you create the content for your lesson, including activities. Activites are questions that you insert from the [CreateQuestions#Question_Bank_ Question Bank]. You can add the following components as lesson content:
 
   * Google Doc
+  * Google Drive
   * Google Group
   * Google Spreadsheet
+  * HTML 5 Video
+  * Iframe
   * Image
-  * Question (the activities)
+  * Include
+  * Markdown (we this this [http://daringfireball.net/projects/markdown/ markdown syntax])
+  * Question
   * Question Group
-  * Text file uploader (maximum size for uploaded files is 1MB)
+  * Text File Uploader (maximum size for uploaded files is 1MB)
   * !YouTube videos
   
 Add as many components as you like. You can also directly write text into the textbox. By default, you add content in *Lesson Body* through HTML. Some might find it easier to to select them through the Rich Text editor. Click the *Rich Text* button on the right.

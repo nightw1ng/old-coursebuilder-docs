@@ -7,7 +7,7 @@
 The Dashboard shows a broad range of information about a particular course. Information in the Dashboard includes the course outline, assets, settings, and student statistics. You must be the course author or have similar privileges (for example, teacher’s assistant) to access the Dashboard.
 
 
-<img src="http://wiki.course-builder.googlecode.com/git/images/dashboard-teacher.png" height=788 width=600 />
+<img src="http://wiki.course-builder.googlecode.com/git/images/dashboard-teacher.png" max-width=100% />
 
 Access the Dashboard from the menu bar. At the very top of every Dashboard page, there are breadcrumbs to aid your navigation. Breadcrumbs are navigational aids that help orient where you are on a site. It shows your current location (at the far right) and a “trail” or path that illustrates the pages you clicked through to arrive where you are now.
 
@@ -27,38 +27,45 @@ This is your default landing page when you enter the Dashboard.  This page shows
 ==Assets==
 This page shows all the elements that are used to construct your course.
 
-<img src="http://wiki.course-builder.googlecode.com/git/images/dashboard-assets.png" height=788 width=600 />
-
- * *Question Bank.* Create questions that you can use both in activities and assessments. 
- * *Question Groups.* Group your questions so you can insert the group into both activities and assessments.
- * *Assessments.* Links to your course assessments.
- * *Activities.* Links to your course activities.
+ * *Questions.* Create questions and question groups that you can use both in activities and assessments. 
+ * *Labels.* Use labels to allow your students to take particular tracks or paths through your course as opposed to taking the entire course.
  * *Images & Documents.* Links to the images and documents that you added to the course. To add images and documents, click the *Upload* button. This saves the file in Google App Engine datastore, which may be more expensive to host compared to statically hosting elsewhere.
- * *Cascading Style Sheets.* Pathname to the inherited CSS. You can make changes here, by clicking *Edit*, and they will propagate to all your courses.
- * *!JavaScript Libraries.* Pathname to the inherited !JavaScript libraries. You can make changes here, by clicking *Edit*, and they will propagate to all your courses.
- * *View Templates.* Pathname to the inherited HTML templates. You can make changes here, by clicking *Edit*, and they will propagate to all your courses.
+ * *CSS.* Pathname to the inherited CSS. You can make changes here, by clicking *Override*, and they will propagate to all your courses.
+ * *!JavaScript.* Pathname to the inherited !JavaScript libraries. You can make changes here, by clicking *Override*, and they will propagate to all your courses.
+ * *Templates.* Pathname to the inherited HTML templates. You can make changes here, by clicking *Edit*, and they will propagate to all your courses.
+ * *HTML.* Pathname to any inherited HTML files.
+ * *Extensions.* List of any custom extensions you added.
 
 ==Settings==
-The Settings section shows how your course is customized in the {{{course.yaml}}} file described in [CourseSettings Customize Course Settings]. If you want to know why certain elements are named the way they are, this section is a good place to start.
+Settings shows how your course is customized in the {{{course.yaml}}} file described in [CourseSettings Customize Course Settings]. Sub-navigation tabs divide the Settings into logical groups.
 
-In the *About the Course* section, you see the location of the {{{course.yaml}}} file from which the customizations are originating.  The Datastore Namespace refers to the particular name assigned to your course in the Google App Engine datastore. This is helpful in those cases when multiple courses are deployed from a single Google App Engine instance.
+ * *Course.* Settings that affect your entire course including making it public or private. You can also set whether to generate certificates for your students by setting percentage correct for any number of assessments you choose. Percentage correct can either by any positive number, for example 90% or 89.9%.
+ * *Homepage.* Control details that affect your course homepage.
+ * *Registration.* Control registration and student invitations.
+ * *Units and Lessons.* Control unit, lesson, and assessment presentation.
+ * *I18N.* Control internationalization settings like the base locale and whether students can change the locale if there is more than one.
+ * *Advanced.* See and edit the contents of the {{{course.yaml}}} file directly. Caution: be careful editing this section. We suggest you use the other Setting pages instead. YAML uses whitespace and line delimiters. Introducing errant spaces can make your entire course unreachable.
+ * *Preferences.* Set whether you want to see hook edit buttons or the Jinja context.  Hooks edits are custom text, links, or graphics you can add to the HTML itself, in defined parts of the page, through the browser. This elminates the need to edit the HTML directly while manually making sure those changes are carried forward on Course Builder upgrades.  
 
-The *Contents of course.yaml file* section is an exact representation of your {{{course.yaml}}} file. As a course author, you may not have access to this file like the administrator. Seeing the contents of this section can help you understand your course settings and communicate with the administrator viewing the same file. To edit {{{course.yaml}}} directly, click the *Edit* or *Advanced Edit* button. The *Advanced Edit* shows a text box with your {{{course.yaml}}} settings. If you edit here, you must be careful with YAML spacing or you will get an error. The *Edit* button is a form based approach to editing your {{{course.yaml}}} settings. 
-
-<img src="http://wiki.course-builder.googlecode.com/git/images/dashboard-course.png" height=788 width=600 />
-
-You do not need to mind the YAML spacing and some keys are conveniently represented as checkboxes you can check or uncheck.
-
-When you create a [CreateNewCourse new course], this section will be mostly empty except for some default text and the new course name. New courses are by default private, which means students cannot view them. To make your course public, change the {{{now_available:}}} assignment to {{{True}}}. That is, in the *Advanced Edit* view the line should look like:
-
-{{{now_available: True}}}
-
-while in the *Edit* view the *Make Course Available* checkbox should be checked.
+==Roles==
+Create, manage, and view different roles for your course. You can associate created roles with particular emails and permissions. Currently, the role is limited to a translator role.
 
 ==Analytics==
-This page shows statistics regarding the students, including enrollment, assessments, progress, and peer review analytics.  In the Assessment section, you can view the number of students who completed a particular assessment and the average score of all those who have done so. In the Student Progress Statistics section, view the number of students who have completed particular sections. Remember that if you want to see progress on activities, you must turn on the activity recording setting in *Admin > Settings*. In the Peer Review section, you can see bar charts showing the number of assignments with a particular number of reviews.
+This page shows statistics regarding the students and the course, including individual questions, assessments, gradebook, notifications, and peer review.  Each section has its own sub-navigation item.
 
-<img src="http://wiki.course-builder.googlecode.com/git/images/dashboard-analytics.png" height=700 width=600 />
+ * *Students.* Shows information about students in aggregate including progress and enrollment.
+ * *Questions.* How students in aggregate interacted with each question in the course.
+ * *Assessments.* How students in aggregate performed on the assessments.
+ * *Gradebook.* How students in aggregate performed on the assessments. The Gradebook only works for questions authored on Course Builder version 1.3.0 or later.  Therefore, it will not work if you import and modify the example Power Searching with Google course, since that course was authored in version 1.0.
+ * *Notifications.* Number of people who have been notified via email by a currently registered student.
+ * *Peer Review.* See bar charts showing the number of assignments with a particular number of reviews.  You can also reassign reviews and delete reviewed assignments.
+
+Remember that if you want to see progress on activities, you must turn on the activity recording setting in *Admin > Settings* by selecting the following items to {{{True}}}:
+ * gcb_can_persist_activity_events
+ * gcb_can_persist_page_events
+ * gcb_can_persist_page_events
+
+<img src="http://wiki.course-builder.googlecode.com/git/images/dashboard-analytics.png" max-width=100% />
 
 The *Update Statistics* button will refresh all statistics on the page. Note that the time it takes to update depends on the number of students you have.
 
@@ -67,7 +74,7 @@ Before you can retrieve results from a search through the Search box, you must i
 
 Search will not cover results that are in sections marked "Private". It will also search over user created captions but not over automatically created captions.
 
-<img src="http://wiki.course-builder.googlecode.com/git/images/dashboard-search-indexed.png" height=450 width=600 />
+<img src="http://wiki.course-builder.googlecode.com/git/images/dashboard-search-indexed.png" max-width=100% />
 
 ==Peer Review==
 Peer review is a way for students to grade each other's finished work. You would normally go into this section to see the contents of the peer review assignment and when students have issues about their peer review work. See [PeerReview Peer Review] for detailed information.
@@ -75,7 +82,7 @@ Peer review is a way for students to grade each other's finished work. You would
   * *Select Assignment.* Here you pick a particular peer review assignment and a particular student. The student is identified by exact email. That is, the email address is case sensitive. If a peer review assignment was submitted by the student and particular peer review assignment you selected, information in the *Assignment* area show.
   * *Assignment.* This section will show the actual contents of the peer review assignment that was submitted by the selected student and any review that was done by a peer. As a course author, you can delete a particluar review with the "Remove This Review" button. You can also assign a specific person to be the reviewer of a particular stuent's work through the "Add New Reviewer" button. For example, you might want to add a Teacher's Assistant or yourself to review the work.
   
-<img src="http://wiki.course-builder.googlecode.com/git/images/dashboard-peer-review.png" height=700 width=600 />
+<img src="http://wiki.course-builder.googlecode.com/git/images/dashboard-peer-review.png" max-width=100% />
 
 ==Admin==
 The Administrator Page contains information regarding Google App Engine deployment and all your courses. See [AdminPage Admin Page] for more information on this page.

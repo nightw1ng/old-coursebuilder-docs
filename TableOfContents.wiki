@@ -15,6 +15,7 @@
     * [CreateQuestions Create Questions]
     * [CreateLessons Create Lessons and Activities]
     * [CreateAssessments Create Assessments]
+    * [IntegrateDrive Integrate Google Drive]
     * [PeerReview Peer Review]
     * [DeployAgain Deploy Again]
   * [AdminPage Administrator Page]

@@ -54,6 +54,7 @@ If you are unfamiliar with GAE, but know something about cloud computing, read [
 Choose the appropriate GAE SDK version with the appropriate Course Builder version. The following table illustrates the correct pairings:
 
 || *Course Builder Version* || *Platform* || *Google App Engine SDK Version* ||
+|| 1.7.0 || [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python Windows, Mac, Linux] || Latest ||
 || 1.6.0 || [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python Windows, Mac, Linux] || Latest ||
 || 1.5.1 || [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python Windows, Mac, Linux] || Latest ||
 || 1.5.0 || [http://code.google.com/p/googleappengine/downloads/detail?name=GoogleAppEngine-1.8.1.msi&can=2&q= Windows] || 1.8.1 ||

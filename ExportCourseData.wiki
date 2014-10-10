@@ -33,90 +33,7 @@ Datatsore data resides in the Google App Engine datastore. Examples include:
 
   * Student
   * !StudentAnswersEntity
-  * !StudentPropertyEntity 
-
-== Path settings ==
-The best way to download and upload data is to create a Python script that calls {{{etl.py}}}. This way, you do not have to touch the source code directly. You must specify correct path settings for the following items. Otherwise, neither download nor upload will not work:
-
-  * The absolute path of your Course Builder installation.
-  * The absolute path of your App Engine SDK.
-  * The absolute paths of third party libraries from the SDK used by Course Builder:
-    * fancy_urllib
-    * jinja2
-    * webapp2
-    * webob
-
-Paths to the various necessary items are different on each platform (Mac, Windows 7, Linux).
-
-=== Mac path settings ===
-Create a Python script that defines all the paths and then calls {{{etl.py}}}. At the end of the steps is an example of what the script would look like.
-
-  # Create a new file in a plain text editor like vi, Text!Wrangler, or the like.
-  # Import the Python {{{sys}}} module by typing this on the first line: {{{import sys}}}
-  # Specify all the paths using Python's {{{sys.path.insert()}}}.
-  # Import the argparse module: {{{import argparse}}}
-  # Import Course Builder's {{{etl.py}}}: {{{import etl}}}
-  # Add code to wrap the command line argument parser of {{{etl.py}}}.
-  # Save the file with the {{{.py}}} extension. You must save this file to {{{/tools/etl}}}.
-
-Here is an example of a completed Python script. The coursebuilder installation is in a directory called {{{/Users/sammich/coursebuilder}}}.
-
-{{{
-import sys
-sys.path.insert(0,'/Users/sammich/coursebuilder')
-sys.path.insert(0,'/Applications/GoogleAppEngineLauncher.app/Contents/Resources/GoogleAppEngine-default.bundle/Contents/Resources/google_appengine')
-sys.path.insert(0,'/Applications/GoogleAppEngineLauncher.app/Contents/Resources/GoogleAppEngine-default.bundle/Contents/Resources/google_appengine/lib/fancy_urllib')
-sys.path.insert(0,'/Applications/GoogleAppEngineLauncher.app/Contents/Resources/GoogleAppEngine-default.bundle/Contents/Resources/google_appengine/lib/jinja2-2.6')
-sys.path.insert(0,'/Applications/GoogleAppEngineLauncher.app/Contents/Resources/GoogleAppEngine-default.bundle/Contents/Resources/google_appengine/lib/webapp2-2.5.2')
-sys.path.insert(0,'/Applications/GoogleAppEngineLauncher.app/Contents/Resources/GoogleAppEngine-default.bundle/Contents/Resources/google_appengine/lib/webob-1.2.3')
-sys.path.insert(0,'/Applications/GoogleAppEngineLauncher.app/Contents/Resources/GoogleAppEngine-default.bundle/Contents/Resources/google_appengine/lib/yaml/lib')
-
-import argparse
-import etl
-if __name__ =='__main__':
-    PARSER = argparse.ArgumentParser(add_help=False, parents=[etl.PARSER])
-    etl.main(PARSER.parse_args())
-}}}
-
-We named the script {{{gcbpaths.py}}} and saved it in {{{tools/etl}}}. Now the directory will have both {{{etl.py}}} and {{{gcbpaths.py}}}.
-    
-=== Windows path settings ===
-The steps for Windows is the same as that of [ExportCourseData#Mac_path_settings Mac]. The difference is the paths are different. Follow the steps for Mac but add the paths in your Windows environment. For example, your script may look like this:
-{{{
-import sys
-sys.path.insert(0,'C:/coursebuilder')
-sys.path.insert(0,'C:/Program Files (x86)/Google/google_appengine')
-sys.path.insert(0,'C:/Program Files (x86)/Google/google_appengine/lib/fancy_urllib')
-sys.path.insert(0,'C:/Program Files (x86)/Google/google_appengine/lib/jinja2-2.6')
-sys.path.insert(0,'C:/Program Files (x86)/Google/google_appengine/lib/webapp2-2.5.2')
-sys.path.insert(0,'C:/Program Files (x86)/Google/google_appengine/lib/webob-1.2.3')
-sys.path.insert(0,'C:/Program Files (x86)/Google/google_appengine/lib/yaml/lib')
-
-import argparse
-import etl
-if __name__ =='__main__':
-    PARSER = argparse.ArgumentParser(add_help=False, parents=[etl.PARSER])
-    etl.main(PARSER.parse_args())
-}}}
-
-=== Linux path settings ===
-The steps for Linux is the same as that of [ExportCourseData#Mac_path_settings Mac]. The difference is the paths are different. Follow the steps for Mac but add the paths in your Linux environment. For example, you script may look like this:
-{{{
-import sys
-sys.path.insert(0,'/usr/local/myorg/home/sammich/coursebuilder')
-sys.path.insert(0,'/usr/local/myorg/home/sammich/google_appengine')
-sys.path.insert(0,'/usr/local/myorg/home/sammich/google_appengine/lib/fancy_urllib')
-sys.path.insert(0,'/usr/local/myorg/home/sammich/google_appengine/lib/jinja2-2.6')
-sys.path.insert(0,'/usr/local/myorg/home/sammich/google_appengine/lib/webapp2-2.5.2')
-sys.path.insert(0,'/usr/local/myorg/home/sammich/google_appengine/lib/webob-1.2.3')
-sys.path.insert(0,'/usr/local/myorg/home/sammich/google_appengine/lib/yaml/lib')
-
-import argparse
-import etl
-if __name__ =='__main__':
-    PARSER = argparse.ArgumentParser(add_help=False, parents=[etl.PARSER])
-    etl.main(PARSER.parse_args())
-}}}
+  * !StudentPropertyEntity
 
 == Download course information ==
 When you download the course information, some files will be in !JavaScript Object Notation ([http://www.json.org/ JSON]), which is a data-interchange format that is human readable.  JSON is computer language independent.
@@ -124,10 +41,10 @@ When you download the course information, some files will be in !JavaScript Obje
 The following command downloads your course data. ETL stands for "Extract, Transform, Load."
 
 {{{
-python tools/etl/<your_script_name>.py download course <course_url_prefix> <app_name> <app_server_name> --archive_path <archive_path>
+python etl.sh download course <course_url_prefix> <app_name> <app_server_name> --archive_path <archive_path>
 }}}
 
-In our example above, we named our script {{{gcbpaths.py}}}, which calls {{{etl.py}}}. Here is the description of the {{{etl.py}}} command.
+Here is the description of the ETL command.
 
 || *Options and Arguments* || *Description* ||
 || -h || Get help on the {{{etl.py}}} command. ||
@@ -147,7 +64,7 @@ In our example above, we named our script {{{gcbpaths.py}}}, which calls {{{etl.
 
 It is best to use this command from the root of your Course Builder installation. In the following example, the Course Builder installation is at {{{/Users/sammich/coursebuilder}}}:
   # {{{cd /Users/sammich/coursebuilder}}}
-  # {{{python tools/etl/gcbpaths.py download course /physics zabaione zabaione.appspot.com --archive_path ./physics.zip}}}
+  # {{{python scripts/etl.sh download course /physics zabaione zabaione.appspot.com --archive_path ./physics.zip}}}
 
 You would see a file called {{{physics.zip}}} in the current directory, {{{/Users/sammich/coursebuilder}}}.
 
@@ -157,16 +74,16 @@ Although you should feel free to view and make copies of data exported from Cour
 The following command exports information, like student data, from the datastore:
 
 {{{
-python tools/etl/gcbpaths.py download datastore <course_url_prefix> <app_name> <app_server_name> --archive_path <archive_path> --datastore_types <model1,model2>
+python etl.sh download datastore <course_url_prefix> <app_name> <app_server_name> --archive_path <archive_path> --datastore_types <model1,model2>
 }}}
 
 It is best to use this command from the root of your Course Builder installation. In the following example, the Course Builder installation is at {{{/Users/sammich/coursebuilder}}} and the command downloads student information:
   # {{{cd /Users/sammich/coursebuilder}}}
-  # {{{python tools/etl/gcbpaths.py download datastore /poetry bbq bbq.appspot.com --archive_path ./poetry.zip --datastore_types Student}}}
+  # {{{python scripts/etl.sh download datastore /poetry bbq bbq.appspot.com --archive_path ./poetry.zip --datastore_types Student}}}
 
 You would see a file called {{{poetry.zip}}} in the current directory, {{{/Users/sammich/coursebuilder}}}. You can also download multiple models:
 
-{{{python tools/etl/gcbpaths.py download datastore /poetry bbq bbq.appspot.com --archive_path ./poetry.zip --datastore_types Student,StudentAnswersEntity}}}
+{{{python scripts/etl.sh download datastore /poetry bbq bbq.appspot.com --archive_path ./poetry.zip --datastore_types Student,StudentAnswersEntity}}}
 
 == Consider time and costs ==
 

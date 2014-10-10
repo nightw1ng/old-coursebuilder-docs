@@ -12,6 +12,7 @@
  * Admins can see all courses within the application and their corresponding links/URLs
 
 == Course Content and Organization ==
+ * Optionally create separate course "tracks" so students take certain paths through your course instead of your entire course.
  * View all Pages, Course Outline, and Data Files from the Dashboard
  * Create, edit, and delete external links, course units, and lessons
  * Switch between plain text HTML or WYSIWYG rich text editors as needed
@@ -21,9 +22,12 @@
  * Breadcrumbs for easy navigation within the Dashboard
 
 == Manage Course Settings ==
+ * Create certificates based on criteria you specify.
  * Edit [CourseSettings your course settings] from the Dashboard
  * Directly edit course.yaml file with Advanced Edit from the Dashboard
  * Visual indicator denotes whether settings are Default, Pending, or Overriden
+ * Allow your students to share your course through email invitations.
+ * Use a whitelist to limit who can register for your course.
 
 == Import Existing Course Data == 
  * Import existing course data to new, empty course using a dropdown menu of all Available Courses
@@ -65,6 +69,9 @@
  * Assessments can be graded or not graded
  * Option to give feedback on Assessments
 
+== Create and Manage Roles ==
+ * Create arbitrary roles and manage the permissions they have.
+
 == Managing Lessons within the Course ==
  * Set private or public access on lessons
  * Grading for questions is optional
@@ -76,6 +83,9 @@
  * Receive verification that students have submitted assignments
  * Show feedback without revealing scores
  * Answer scores can be set to negative numbers to discourage random guessing
+
+== Gradebook ==
+ * Gradebook with detailed information about student performance on each assessment.
 
 == Peer Reviewing for Students ==
  * Allow students to access and review their peers’ work
@@ -109,6 +119,13 @@
 == Analytics and Measurement ==
  * Admins can view course stats for analysis
  * Course Analytics are available from the Dashboard
+ 
+== Internationalization ==
+ * Support for 57 languages.
+ * Translation console that allows translators to translate your original course content in a single environment within Course Builder.
+ 
+== Learning Tools Interoperability ==
+ * Use Course Builder as a LTI provider or consumer.
 
 == System Requirements and Support ==
  * Google !AppEngine

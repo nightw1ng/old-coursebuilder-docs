@@ -1,0 +1,64 @@
+#summary How to insert content from Google Drive
+
+<h1>Integrate with Google Drive</h1>
+
+<wiki:toc max-depth="2" />
+
+You can integrate Google Docs on your Google Drive into Course Builder. After turning on a few settings, you can bring in any Google Doc that is on Google Drive and then begin editing that Google Doc locally in Course Builder. You can then serve that content to your students at scale.  
+
+When you integrate with Google Drive this way, you are downloading the Google Doc into Course Builder. Through the *Revert* button, you will be able to revert any changes you make.  Also, any changes you make locally in Course Builder will not be seen on your Google Drive. Note that this is different from embedding a Google Doc, where no local copy is made.
+
+Currently, Course Builder only supports integrating Google Docs from Google Drive.
+
+== Setup Google Drive ==
+You must first setup settings in Course Builder's Admin page as well as in Google Developer Console.
+
+ # Go to *Admin > Settings*
+ # Click *Override* for the {{{gcb_courses_can_use_google_apis}}} setting.
+ # Click *Value* 
+ # Set *Status* to "Active".
+ # Click *Save*.
+ 
+For security reasons, each course that you want to use the feature with needs to be set up separately. This is required because you could have many courses on one deployment, and each course is isolated from all the others. You don’t want Bob, who’s writing one course, to be able to use the credentials set up by Alice, who’s running a completely different course.
+
+Next, go to the Google Developer Console to get two values from Google: an API Key and Client ID.
+
+ # Go to: https://developers.google.com/console
+ # Click on your Course Builder project.
+ # On the right hand navigation, click *APIs*, which is under the *APIs & auth*.
+ # Turn on the *Drive API* by clicking its *Status* button.  If it is off, clikc the *OFF* button.
+ # Turn on the *Google Picker API* by clicking its *Status* button.  If it is off, click the *OFF* button.
+ # Click *Credentials* on the right hand navigation under the same *APIs & auth*.
+ # Under *OAuth* click *Create new Client ID*.
+ # Select *Web application* under *APPLICATION TYPE*.
+ # In *AUTHORIZED !JAVASCRIPT ORIGINS* type the URL to your Course Builder application.
+ # Delete any URL in *AUTHORIZED REDIRECT URI*. That is, keep that field empty.
+ # Click *Create Client ID*.
+ # Under *Public API access* click *Create new Key*.
+ # Click *Browser key*.
+ # Add the URL you added earlier under *AUTHORIZED !JAVASCRIPT ORIGINS* and click *Create*.
+ # Click *Consent screen* on the right hand navigation under the same *APIs & auth*.
+ # Select your email address under *EMAIL ADDRESS*.
+ # Type in your desired product name under *PRODUCT NAME*. All other fields are optional.
+ # Click *Save*.
+
+Go to Course Builder and type the Client ID and API Key you just created.
+
+ # Go to *Dashboard > Settings > Course* and click "Edit Settings"
+ # Add the API key to the *Google API Key* field.
+ # Add the Client ID to the *Google Client Id* field.
+ # Click *Save*.
+ # for *Component Type*, choose *gcb: Google Drive*.
+
+== Use Google Drive ==
+Add your Google Doc from Google Drive the same way you add the other components. 
+
+ # Go to where you want to integrate the Google Doc.  For example, in the *Assessment Content* ar or *Lesson Body*.
+ # Click *Rich Text*.
+ # Click the red tool box.
+ # Add the ID in *Document ID*.  The ID is in the URL, after the "d/" but before "edit".  Do not type any of the slashes.
+ # Click *Pick*.
+ # Click *Save*.
+
+You will see a Google Drive icon.
+
