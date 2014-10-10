@@ -64,7 +64,7 @@
   
   * *Math component.*  Add math symbols and equations in LaTeX as a custom component. See [CreateLessons#Create_activities Create Lessons].
   
-  * *Mobile.* Course Builder's design is now adapative down to 7 inch viewports.
+  * *Mobile.* Course Builder's design is now adaptive down to 7 inch viewports.
     
   * *Pagination in assessments.* You can suppress the "Next" button. See [Dashboard#Settings Settings].
   
