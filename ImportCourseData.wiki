@@ -13,7 +13,7 @@ You can upload course data and datastore data. See [ExportCourseData#Types_of_da
 Similar to downloading course information, create a script that contains your correct paths and calls the {{{etl.py}}} command. Although you should feel free to view and make copies of data exported from Course Builder, you should not edit them if you want to load them back into Course Builder. If you do, you may receive an immediate upload error or pass uploading and create downstream errors that you must troubleshoot on your own. If you want to upload data back into Course Builder, you must upload exactly what you downloaded.
 
 {{{
-python etl.sh upload course <course_url_prefix> <app_name> <app_server_name> --archive_path <archive_path>
+python scripts/etl.sh upload course <course_url_prefix> <app_name> <app_server_name> --archive_path <archive_path>
 }}}
 
 Here is the description of the ETL command.
