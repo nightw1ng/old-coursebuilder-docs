@@ -25,19 +25,19 @@ Next, go to the Google Developer Console to get two values from Google: an API K
 
  # Go to: https://developers.google.com/console
  # Click on your Course Builder project.
- # On the right hand navigation, click *APIs*, which is under the *APIs & auth*.
+ # On the left-hand navigation, click *APIs*, which is under the *APIs & auth*.
  # Turn on the *Drive API* by clicking its *Status* button.  If it is off, clikc the *OFF* button.
  # Turn on the *Google Picker API* by clicking its *Status* button.  If it is off, click the *OFF* button.
- # Click *Credentials* on the right hand navigation under the same *APIs & auth*.
+ # Click *Credentials* on the left-hand navigation under the same *APIs & auth*.
  # Under *OAuth* click *Create new Client ID*.
  # Select *Web application* under *APPLICATION TYPE*.
- # In *AUTHORIZED !JAVASCRIPT ORIGINS* type the URL to your Course Builder application.
+ # In *AUTHORIZED !Javascript ORIGINS* type the URL to your Course Builder application. For example, if your application URL is https://www.example-sandwich.appspot.com/ then type: https://beepbeep-imajeep.appspot.com
  # Delete any URL in *AUTHORIZED REDIRECT URI*. That is, keep that field empty.
  # Click *Create Client ID*.
  # Under *Public API access* click *Create new Key*.
  # Click *Browser key*.
- # Add the URL you added earlier under *AUTHORIZED !JAVASCRIPT ORIGINS* and click *Create*.
- # Click *Consent screen* on the right hand navigation under the same *APIs & auth*.
+ # Add the URL you added earlier under *AUTHORIZED !Javascript ORIGINS* and click *Create*.
+ # Click *Consent screen* on the left-hand navigation under the same *APIs & auth*.
  # Select your email address under *EMAIL ADDRESS*.
  # Type in your desired product name under *PRODUCT NAME*. All other fields are optional.
  # Click *Save*.
