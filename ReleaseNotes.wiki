@@ -5,6 +5,7 @@
 <wiki:toc />
 
 == Release notes for version 1.7.0==
+*Note*: To run 1.7.0 locally, you must download the [https://groups.google.com/forum/?fromgroups#!searchin/course-builder-forum/Blank$20Course/course-builder-forum/1aSwta8sRU4/ux2r8KjRwrIJ Python pycrypto package]. You do not need to do this if you only want to download and deploy to Google App Engine.
   
   * *Activities.* Import old style (version 1.2 and earlier) questions into modern question types. This is handled automatically when click the *Import* button.
   
