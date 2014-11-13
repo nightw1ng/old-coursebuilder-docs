@@ -13,7 +13,7 @@ You can upload course data and datastore data. See [ExportCourseData#Types_of_da
 Similar to downloading course information, create a script that contains your correct paths and calls the {{{etl.py}}} command. Although you should feel free to view and make copies of data exported from Course Builder, you should not edit them if you want to load them back into Course Builder. If you do, you may receive an immediate upload error or pass uploading and create downstream errors that you must troubleshoot on your own. If you want to upload data back into Course Builder, you must upload exactly what you downloaded.
 
 {{{
-python scripts/etl.sh upload course <course_url_prefix> <app_name> <app_server_name> --archive_path <archive_path>
+sh scripts/etl.sh upload course <course_url_prefix> <app_name> <app_server_name> --archive_path <archive_path>
 }}}
 
 Here is the description of the ETL command.
@@ -36,7 +36,7 @@ Here is the description of the ETL command.
 
 It is best to use this command from the root of your Course Builder installation. In the following example, the Course Builder installation is at {{{/Users/sammich/coursebuilder}}}:
   # {{{cd /Users/sammich/coursebuilder}}}
-  # {{{python scripts/etl.sh upload course /physics zabaione zabaione.appspot.com --archive_path ./physics.zip}}}
+  # {{{sh scripts/etl.sh upload course /physics zabaione zabaione.appspot.com --archive_path ./physics.zip}}}
 
 You would see a file called {{{physics.zip}}} in the current directory, {{{/Users/sammich/coursebuilder}}}.
 
@@ -51,6 +51,6 @@ python scripts/etl.sh upload datastore <course_url_prefix> <app_name> <app_serve
 
 It is best to use this command from the root of your Course Builder installation. In the following example, the Course Builder installation is at {{{/Users/sammich/coursebuilder}}} and the command downloads student information:
   # {{{cd /Users/sammich/coursebuilder}}}
-  # {{{python scripts/etl.sh upload datastore /poetry bbq bbq.appspot.com --archive_path ./poetry.zip --datastore_types Student}}}
+  # {{{sh scripts/etl.sh upload datastore /poetry bbq bbq.appspot.com --archive_path ./poetry.zip --datastore_types Student}}}
 
 || [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/evaluate-course-efficacy Ask questions in the forum] ||

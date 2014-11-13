@@ -41,7 +41,7 @@ When you download the course information, some files will be in !JavaScript Obje
 The following command downloads your course data. ETL stands for "Extract, Transform, Load."
 
 {{{
-python scripts/etl.sh download course <course_url_prefix> <app_name> <app_server_name> --archive_path <archive_path>
+sh scripts/etl.sh download course <course_url_prefix> <app_name> <app_server_name> --archive_path <archive_path>
 }}}
 
 Here is the description of the ETL command.
@@ -64,7 +64,7 @@ Here is the description of the ETL command.
 
 It is best to use this command from the root of your Course Builder installation. In the following example, the Course Builder installation is at {{{/Users/sammich/coursebuilder}}}:
   # {{{cd /Users/sammich/coursebuilder}}}
-  # {{{python scripts/etl.sh download course /physics zabaione zabaione.appspot.com --archive_path ./physics.zip}}}
+  # {{{sh scripts/etl.sh download course /physics zabaione zabaione.appspot.com --archive_path ./physics.zip}}}
 
 You would see a file called {{{physics.zip}}} in the current directory, {{{/Users/sammich/coursebuilder}}}.
 
@@ -79,11 +79,11 @@ python scripts/etl.sh download datastore <course_url_prefix> <app_name> <app_ser
 
 It is best to use this command from the root of your Course Builder installation. In the following example, the Course Builder installation is at {{{/Users/sammich/coursebuilder}}} and the command downloads student information:
   # {{{cd /Users/sammich/coursebuilder}}}
-  # {{{python scripts/etl.sh download datastore /poetry bbq bbq.appspot.com --archive_path ./poetry.zip --datastore_types Student}}}
+  # {{{sh scripts/etl.sh download datastore /poetry bbq bbq.appspot.com --archive_path ./poetry.zip --datastore_types Student}}}
 
 You would see a file called {{{poetry.zip}}} in the current directory, {{{/Users/sammich/coursebuilder}}}. You can also download multiple models:
 
-{{{python scripts/etl.sh download datastore /poetry bbq bbq.appspot.com --archive_path ./poetry.zip --datastore_types Student,StudentAnswersEntity}}}
+{{{sh scripts/etl.sh download datastore /poetry bbq bbq.appspot.com --archive_path ./poetry.zip --datastore_types Student,StudentAnswersEntity}}}
 
 == Consider time and costs ==
 
