@@ -63,7 +63,7 @@ This page shows statistics regarding the students and the course, including indi
 Remember that if you want to see progress on activities, you must turn on the activity recording setting in *Admin > Settings* by selecting the following items to {{{True}}}:
  * gcb_can_persist_activity_events
  * gcb_can_persist_page_events
- * gcb_can_persist_page_events
+ * gcb_can_persist_tag_events
 
 <img src="http://wiki.course-builder.googlecode.com/git/images/dashboard-analytics.png" max-width=100% />
 
