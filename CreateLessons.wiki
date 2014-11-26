@@ -39,7 +39,7 @@ http://wiki.course-builder.googlecode.com/git/images/dashboard-lesson.png
 
 Note: The *Add Lesson* button is unavailable until you create at least one unit.
 
-You edit lessons that already exist in this page as well. Change any details you would like and click *Save*.
+You edit lessons that already exist in this page as well. Change any details you would like and click *Save*. There is a 1 MB limit on the size of the content you can enter. Usually, this is not a problem.  However, if you need to work around this, include links to the bigger resources instead of directly adding them into the lesson.
 
 == Create activities ==
 In the *Lesson Body* textbox, you create the content for your lesson, including activities. Activites are questions that you insert from the [CreateQuestions#Question_Bank_ Question Bank]. You can add the following components as lesson content:
@@ -73,5 +73,7 @@ The following image shows a question component being selected.
 http://wiki.course-builder.googlecode.com/git/images/dashboard-toolbox-question.png
   
 You can add multiple components or mix and match multiple images with multiple components. Here is a video that shows how to add components: [http://www.youtube.com/watch?v=EpQqNkRdcck Add course components (4:48)]
+
+Note that there is a 1 MB limit on the size of the content you can enter. Usually, this is not a problem.  However, if you need to work around this, include links to the bigger resources instead of directly adding them into the lesson.
 
 || [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||
