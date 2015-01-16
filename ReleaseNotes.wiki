@@ -4,6 +4,31 @@
 
 <wiki:toc />
 
+== Anticipated release notes for next release ==
+
+  * *Admin Page.* The Admin section was moved to the Dashboard and can be accessed through its own tab in the Dashboard.
+  
+  * *Analytics: Certificates.* See how many students received certificates.
+  
+  * *Big Query.* There is now a pipeline to Google Big Query within Course Builder.
+  
+  * *Course Homepage.* The course homepage is now titled "Syllabus" instead of "Schedule".
+  
+  * *Dashboard.* The Dashboard visual style was refreshed.
+  
+  * *Feedback Widget.* There is now a feedback widget at the bottom of lesson pages.
+  
+  * *GIFT format.* Write questions and answers in the GIFT format. Received insight on a particular implementation of GIFT from Ostap Kovalisko.
+  
+  * *Google App Engine Launcher on Mac.* Fixed bug on Mac OS where Course Builder launch fails if there is no !PyCrypto library.
+  
+  * *HTML Hooks.* The hooks are now turned off by default.
+  
+  * *Registration emails.* Customize and Internationalize welcome emails. 
+  
+  * *Unit: Custom Units.* You can now add custom units to Course Builder. This feature is available as a separate module.
+  
+
 == Release notes for version 1.7.0==
 *Note*: To run 1.7.0 locally, you must download the [https://groups.google.com/forum/?fromgroups#!searchin/course-builder-forum/Blank$20Course/course-builder-forum/1aSwta8sRU4/ux2r8KjRwrIJ Python pycrypto package]. You do not need to do this if you only want to download and deploy to Google App Engine.
   
