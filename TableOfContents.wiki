@@ -25,11 +25,11 @@
     * [AdminMultipleCourses Run Multiple Courses]
     * [URLMap URL Mapping]
     * [Security Security]
-  * [AppEngine Develop with Google App Engine]
+  * [AppEngine Working with Google App Engine]
     * [ExportCourseData Download Course Data]
     * [ImportCourseData Upload Course Data]
   * [Upgrade Upgrade Course Builder]
-  * Developers
+  * CourseBuilder Developers
     * Getting Started
       * [DeveloperHelloWorld Hello World]
     * Specific Sub-Tasks
