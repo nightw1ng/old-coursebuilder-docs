@@ -29,7 +29,7 @@
     * [ExportCourseData Download Course Data]
     * [ImportCourseData Upload Course Data]
   * [Upgrade Upgrade Course Builder]
-  * CourseBuilder Developers
+  * !CourseBuilder Developers
     * Getting Started
       * [DeveloperHelloWorld Hello World]
     * Specific Sub-Tasks
