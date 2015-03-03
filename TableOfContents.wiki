@@ -3,7 +3,9 @@
   * [FeatureList Course Builder Feature List]
   * [GetStarted Get Started]
     * [Download Download the Software]
-    * [GetCode Run Course Builder]
+    * Run Course Builder
+      * [GetCode On Mac]
+      * [GetCodeUnix On Unix/Linux]
     * [ExplorePS Explore Course Builder]
     * [UploadCode Deploy Course Builder]
   * [ImplementCourseMaterial Implement Course Material]
