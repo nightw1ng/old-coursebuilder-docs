@@ -54,25 +54,10 @@ Before you deploy your app to the production GAE environment and therefore be av
 To start the development server from the Launcher:
   # Single click your app. 
   # When it's highlighted, click the *Run* button to start the server (for that app). <br>Once the *Browse* button is enabled, your personal server is ready to accept requests.
-  # Click on the *Browse* button to visit the app in a web browser.<br>If you are not logged in to the development server, you should see the login page for the server.<br> <img src="http://wiki.course-builder.googlecode.com/git/images/server-login.png" /><br>If you have previously logged in to the development server, you may see the registration page or the home page for the sample course.
-  # If you do not see one of these pages, read [AppEngine#Troubleshooting Troubleshooting].
-  # If you see the login page, you can use any login name you want; this is the login for your development server, it does not have to match any real email address. 
+  # Click on the *Browse* button to visit the app in a web browser.
 
 From the Launcher, you can stop your server by clicking on the *Stop* button. You may want to stop a particular Course Builder instance if you have multiple instances loaded or any instance before you exit the Launcher. For more information, see [AppEngine#Stop_your_server Stop your server].
 
-== 5. Access the Course Builder sample course ==
-
-Once your development server is running, you can run Course Builder and access the sample course through a web browser.
-
-From the Launcher:
-  # Click *Browse*.<br>A new browser window or tab opens and loads the example "Power Searching with Google" course.
-  # Click on the *Login* link on the upper right area of the browser screen.
-  # Accept the test email address.
-  # Check *Sign in as Administrator*.
-  # Click *Login*.
-
-
-You should now see the registration page for the sample app:
 
 <img src="http://wiki.course-builder.googlecode.com/git/images/registration.png" />
 
