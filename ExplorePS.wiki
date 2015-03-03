@@ -23,7 +23,8 @@ After the login page, you will see a welcome page.  Click on
 "Explore Sample Course" to start out with a large example.
 
 <br>
-<img src="http://wiki.course-builder.googlecode.com/git/images/welcome.png"/>
+<img width="325" height="225"
+src="http://wiki.course-builder.googlecode.com/git/images/welcome.png"/>
 <br>
 
 Feel free to modify this course; you can create another full copy at
