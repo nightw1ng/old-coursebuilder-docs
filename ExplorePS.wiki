@@ -4,6 +4,8 @@
 
 This page helps you understand Course Builder on your local computer and give you a chance to explore Course Builder directly. This is a safe, exploration environment. Any new courses or modifications you make are lost when you turn off your computer. To make your changes permanent, you must [CourseBuilderChecklist#Deploy deploy] and begin your implementation on Google App Engine (as opposed to your local computer with the Google App Engine SDK).
 
+<wiki:toc max-depth="2" /> 
+
 == Creating The Sample Course == 
 
 In [GetCode Run Course Builder], you downloaded the sample application and got it running on your development server.  Now, let's create a sample course.  If you are using a launcher, click the *Browse* button.
@@ -24,9 +26,6 @@ any time.  After the course is created, you'll be on a dashboard
 page.  Either click on the first line saying
 "Course - Power Searching with Google", or just navigate your
 browser back to http://localhost:8081 
-
-
-<wiki:toc max-depth="2" /> 
 
 == Course home page ==
 When students first visit your course, Course Builder displays the course home page. By default, the example course allows you to access the course without registering. Students can always click *Course* in the navigation bar to get to the course home page.
