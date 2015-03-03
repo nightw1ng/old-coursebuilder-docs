@@ -29,13 +29,13 @@
     * [ExportCourseData Download Course Data]
     * [ImportCourseData Upload Course Data]
   * [Upgrade Upgrade Course Builder]
-  * !CourseBuilder Developers
+  * For !CourseBuilder Developers
     * Getting Started
+      * [ExtendCB Customize Course Builder]
+      * [ExploreCode Explore Directories]
       * [DeveloperHelloWorld Hello World]
     * Specific Sub-Tasks
-      * [ExploreCode Explore Directories]
       * [ModifyTemplate Modify Course Template]
-      * [ExtendCB Customize Course Builder]
       * [ExtendCoursePages Add New Pages]
       * [CreateComponents Create Components]
       * [CreateModules Create Modules]
