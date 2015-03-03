@@ -20,8 +20,13 @@ You can use any login name you want; this is the login for your development serv
 address. 
 
 After the login page, you will see a welcome page.  Click on 
-"Explore Sample Course" to start out with a large example.  Feel
-free to modify this course; you can create another full copy at
+"Explore Sample Course" to start out with a large example.
+
+<br>
+<img src="http://wiki.course-builder.googlecode.com/git/images/welcome.png"/>
+<br>
+
+Feel free to modify this course; you can create another full copy at
 any time.  After the course is created, you'll be on a dashboard
 page.  Either click on the first line saying
 "Course - Power Searching with Google", or just navigate your
