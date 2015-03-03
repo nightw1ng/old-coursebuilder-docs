@@ -28,6 +28,9 @@
     * [ImportCourseData Upload Course Data]
   * [Upgrade Upgrade Course Builder]
   * Developers
+    * Getting Started
+      * [DeveloperHelloWorld Hello World]
+    * Specific Sub-Tasks
 	  * [ExploreCode Explore Directories]
 	  * [ModifyTemplate Modify Course Template]
 	  * [ExtendCB Customize Course Builder]
