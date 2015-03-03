@@ -58,7 +58,4 @@ To start the development server from the Launcher:
 
 From the Launcher, you can stop your server by clicking on the *Stop* button. You may want to stop a particular Course Builder instance if you have multiple instances loaded or any instance before you exit the Launcher. For more information, see [AppEngine#Stop_your_server Stop your server].
 
-
-<img src="http://wiki.course-builder.googlecode.com/git/images/registration.png" />
-
 || [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||
