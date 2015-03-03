@@ -4,8 +4,8 @@
   * [GetStarted Get Started]
     * [Download Download the Software]
     * Run Course Builder
-      * [GetCode On Mac/Windows]
-      * [GetCodeUnix On Unix/Linux]
+      * [GetCodeUnix Using Command Line]
+      * [GetCode Using a GUI]
     * [ExplorePS Explore Course Builder]
     * [UploadCode Deploy Course Builder]
   * [ImplementCourseMaterial Implement Course Material]
