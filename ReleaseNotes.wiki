@@ -10,6 +10,8 @@
   
   * *Analytics: Certificates.* See how many students received certificates.
   
+  * *Assessments.* Added ungraded assessments. 
+  
   * *Balancer module.* Added an optional module for load balancing and managing external tasks.
   
   * *Big Query.* There is now a pipeline to Google Big Query within Course Builder.
@@ -17,6 +19,8 @@
   * *Course Homepage.* The course homepage is now titled "Syllabus" instead of "Schedule".
   
   * *Dashboard.* The Dashboard visual style was refreshed.
+  
+  * *Email.* You can now customize welcome emails in the different, supported languages.
   
   * *Feedback Widget.* There is now a feedback widget at the bottom of lesson pages.
   
@@ -26,7 +30,13 @@
   
   * *HTML Hooks.* The hooks are now turned off by default.
   
-  * *Registration emails.* Customize and Internationalize welcome emails. 
+  * *Lessons.* Removed the 1MB object size limit when adding an object to a lesson.
+  
+  * *Registration emails.* Customize and Internationalize welcome emails.
+  
+  * *Skill map.* Added ability to create skill labels and map those labels onto lessons. Corresponding analytics were implemented to support this feature.
+  
+  * *Tab: Add arbitrary tabs.* Added ability to add aribtary tabs on the navigation menu bar through the User Interface.
   
   * *Unit: Custom Units.* You can now add custom units to Course Builder. This feature is available as a separate module.
   
