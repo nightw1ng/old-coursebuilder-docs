@@ -33,7 +33,6 @@
     * Getting Started
       * [ExtendCB Customize Course Builder]
       * [ExploreCode Explore Directories]
-      * [DeveloperHelloWorld Hello World]
     * Specific Sub-Tasks
       * [ModifyTemplate Modify Course Template]
       * [ExtendCoursePages Add New Pages]
