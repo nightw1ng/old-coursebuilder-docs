@@ -24,7 +24,7 @@
   
   * *Feedback Widget.* There is now a feedback widget at the bottom of lesson pages.
   
-  * *GIFT format.* Write questions and answers in the GIFT format. Received insight on a particular implementation of GIFT from Ostap Kovalisko.
+  * *GIFT format.* Write questions and answers in the GIFT format.
   
   * *Google App Engine Launcher on Mac.* Fixed bug on Mac OS where Course Builder launch fails if there is no !PyCrypto library.
   
