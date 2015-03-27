@@ -22,15 +22,15 @@
   
   * *Email.* You can now customize welcome emails in the different, supported languages.
   
-  * *Feedback Widget.* There is now a feedback widget at the bottom of lesson pages.
-  
   * *GIFT format.* Write questions and answers in the GIFT format.
   
   * *Google App Engine Launcher on Mac.* Fixed bug on Mac OS where Course Builder launch fails if there is no !PyCrypto library.
   
   * *HTML Hooks.* The hooks are now turned off by default.
   
-  * *Lessons.* Removed the 1MB object size limit when adding an object to a lesson.
+  * *Lessons.* The 1MB lesson size limit was increased to 4MB.
+  
+  * *Lessons: Feedback.* Each lesson page now has a mini form to permit students to give feedback on the lesson.
   
   * *Registration emails.* Customize and Internationalize welcome emails.
   
