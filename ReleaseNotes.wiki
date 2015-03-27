@@ -14,7 +14,7 @@
   
   * *Balancer module.* Added an optional module for load balancing and managing external tasks.
   
-  * *Big Query.* There is now a pipeline to Google Big Query within Course Builder.
+  * *BigQuery.* There is now a pipeline to Google Big Query within Course Builder.
   
   * *Course Homepage.* The course homepage is now titled "Syllabus" instead of "Schedule".
   
