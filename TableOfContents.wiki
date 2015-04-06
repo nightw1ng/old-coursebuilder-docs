@@ -16,6 +16,7 @@
     * [CreateRegistration Modify Registration]
     * [CreateQuestions Create Questions]
     * [CreateLessons Create Lessons and Activities]
+    * [CreateSkillMap Create Skill Maps]
     * [CreateAssessments Create Assessments]
     * [IntegrateDrive Integrate Google Drive]
     * [PeerReview Peer Review]
