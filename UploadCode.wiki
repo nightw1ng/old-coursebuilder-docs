@@ -81,4 +81,9 @@ After you deploy our app but before anyone uses the course, you must change the 
 
 To change the default token, go to *Settings* in the Administrator Page and change the value of *gcb_xsrf_secret*. See [AdminPage#Security Security] for more information.
 
+== Sending Course Builder Deployment Information ==
+When you deploy to Google App Engine for the first time, you will see a welcome screen with a message about Google collecting Course Builder deployment information. Google uses this information to help improve Google's products and services and for research purposes. Google will maintain this data in accordance with the  [http://www.google.com/policies/privacy/ Google Privacy Policy] and will not associate the data it collects with the course or a user. You can turn this off at any time, either at this Welcome window or by going to *Dashboard > Site Admin > Site Settings > gcb_report_usage_permitted* and setting the value to {{{False}}}. 
+
+If you are upgrading Course Builder, you will instead see this message as a persistent bar in the Dashboard. If you have admin rights, you may turn this off at the persistent bar or through the *Dashboard > Site Admin > Site Settings > gcb_report_usage_permitted* setting previously mentioned.
+
 || [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||
