@@ -4,9 +4,7 @@
 
 <wiki:toc />
 
-At certain parts throughout the course, students take assessments to see how they're doing:
-
-<img src="http://wiki.course-builder.googlecode.com/git/images/assessment-zig.png" height=265 width=420 />
+At certain parts throughout the course, students take assessments to see how they're doing.
 
 == What happens on an assessment page ==
 An assessment is a graded test, typically covering material from several units and lessons. You have control over how many graded assessments you provide and how each of those assessments counts in the final scoring for a student’s grade. 
@@ -22,7 +20,7 @@ http://wiki.course-builder.googlecode.com/git/images/assessment-edit.png
 To add a new assessment:
 
  # Go to the Dashboard. The *Outline* tab is the default landing tab.
- # Click the *Add Assessment* button in the *Pages* section.
+ # Click the *Add Assessment* button. 
  # In the *Title* field, type the name of the new assessment.
  # In the *Assessment Content* field, click the *Rich Text* button.
  # Add your question, or any other component, through the component editor. The component editor is the red tool box under *Insert Item*.
@@ -31,11 +29,11 @@ To add a new assessment:
  # Click *Save*.
  
 == Organizing assessments in your course ==
-Assessments are by default placed at the same course level as Units. To move around assesments at the this top level go to *Outline* and click the *Organize* button. 
+Assessments are by default placed at the same course level as Units. To move around assesments at the this top level drag and drop the Assesment to a particular course location.
 
-You may also place assessments at the beginning or the ending of a unit. For example, if you strongly feel that a "pre assessment" belongs at the beginning of a unit or a "post assesment" at the end of a unit or both. To do this, 
- # Go to *Dashboard > Outline* 
- # Click into the its editing screen by clicking the pencil icon. 
- # In *Pre Assessment* or *Post Assessment* chosse your particular assessment. The selected assesments are removed from the top level of the course and placed at the desired position in the unit.
+You may also place assessments at the beginning or the ending of a unit. For example, if you feel that a "pre assessment" belongs at the beginning of a unit or a "post assesment" at the end of a unit or both. To do this, 
+ # Hover over a Unit.
+ # Click on the pencil icon to edit the Unit. 
+ # In *Pre Assessment* or *Post Assessment* chosse your particular assessment. The selected assesments are removed from the top level of the course and placed at the desired position in the unit. You must create your desired assessment(s) beforehand.
  
 || [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||
