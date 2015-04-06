@@ -39,5 +39,7 @@ View a lesson, from the student's perspective, in which you added a skill. At th
 
 http://wiki.course-builder.googlecode.com/git/images/skillmap-student.png
 
+See a video overview on [https://www.youtube.com/watch?v=Dl9tMMLffhw Skill Maps (9:45)].
+
 
 || [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||
