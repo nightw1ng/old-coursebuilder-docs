@@ -33,13 +33,13 @@ This page consists of four areas:
   * The *footer* contains the same two links as for the registration pages. 
 
 == Create lessons ==
-When you create lessons from the browser, the data gets stored in Google App Engine's datastore. Go to *Dashboard > Outline* and click the *Add Lesson* button from the *Pages* section. Fill out the forms on the page and click *Save*. You have the option of creating the lesson but keeping it private (not viewable to students).
+When you create lessons from the browser, the data gets stored in Google App Engine's datastore. Go to *Dashboard > Outline* and click * Add Lesson* on a unit of your choice. Fill out the fields on the page and click *Save*. You have the option of creating the lesson but keeping it private (not viewable to students).
 
 http://wiki.course-builder.googlecode.com/git/images/dashboard-lesson.png
 
 Note: The *Add Lesson* button is unavailable until you create at least one unit.
 
-You edit lessons that already exist in this page as well. Change any details you would like and click *Save*. There is a 1 MB limit on the size of the content you can enter. Usually, this is not a problem.  However, if you need to work around this, include links to the bigger resources instead of directly adding them into the lesson.
+You edit lessons that already exist in this page as well. Change any details you would like and click *Save*. There is a 4 MB limit on the size of the content you can enter. Usually, this is not a problem.  However, if you need to work around this, include links to the bigger resources instead of directly adding them into the lesson.
 
 == Create activities ==
 In the *Lesson Body* textbox, you create the content for your lesson, including activities. Activites are questions that you insert from the [CreateQuestions#Question_Bank_ Question Bank]. You can add the following components as lesson content:
@@ -55,7 +55,7 @@ In the *Lesson Body* textbox, you create the content for your lesson, including 
   * Markdown (we this this [http://daringfireball.net/projects/markdown/ markdown syntax])
   * Question
   * Question Group
-  * Text File Uploader (maximum size for uploaded files is 1MB)
+  * Text File Uploader (maximum size for uploaded files is 4MB)
   * !YouTube videos
   
 Add as many components as you like. You can also directly write text into the textbox. By default, you add content in *Lesson Body* through HTML. Some might find it easier to to select them through the Rich Text editor. Click the *Rich Text* button on the right.
@@ -74,6 +74,6 @@ http://wiki.course-builder.googlecode.com/git/images/dashboard-toolbox-question.
   
 You can add multiple components or mix and match multiple images with multiple components. Here is a video that shows how to add components: [http://www.youtube.com/watch?v=EpQqNkRdcck Add course components (4:48)]
 
-Note that there is a 1 MB limit on the size of the content you can enter. Usually, this is not a problem.  However, if you need to work around this, include links to the bigger resources instead of directly adding them into the lesson.
+Note that there is a 4 MB limit on the size of the content you can enter. Usually, this is not a problem.  However, if you need to work around this, include links to the bigger resources instead of directly adding them into the lesson.
 
 || [https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code Ask questions in the forum] ||
