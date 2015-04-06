@@ -44,8 +44,18 @@ This starts the Python interpreter and indicates the version. If Python is not i
   <font color=green> {{{operable program or batch file.}}} </font>
 
 ==== Installing Python ====
+If you don't have Python at all or you have the wrong version, visit the general Python 2.7 [http://python.org/download download page] to download and install the right version for you. You probably want to simply use the current production version for your platform.
 
-If you don't have Python at all or you have the wrong version, visit the general Python 2.7 [http://python.org/download download page] to download and install the right version for you. You probably want to simply use the current production version for your platform. 
+==== Installing Python lxml Package ====
+We suggest you deploy Course Builder to Google App Engine after downloading all the software. If instead you wish to explore Course Builder on localhost, you may need to download the lxml Python package. 
+
+To download and install the lxml package on Mac, do the following steps:
+  # Open a terminal
+  # Install {{{pip}}} by typing: {{{sudo easy_install pip}}}
+  # Type {{{pip install lxml}}}
+The latest version of lxml should be fine.
+
+For Windows, you can follow the instructions on the [http://lxml.de/installation.html lxml installation page]. However, this involves much more work and we strongly suggest you deploy to Google App Engine instead of exploring on localhost. Not having lxml will not interfere your ability to deploy.
 
 == Download and install Google App Engine ==
 
@@ -54,6 +64,7 @@ If you are unfamiliar with GAE, but know something about cloud computing, read [
 Choose the appropriate GAE SDK version with the appropriate Course Builder version. The following table illustrates the correct pairings:
 
 || *Course Builder Version* || *Platform* || *Google App Engine SDK Version* ||
+|| 1.8.0 || [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python Windows, Mac, Linux] || Latest ||
 || 1.7.0 || [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python Windows, Mac, Linux] || Latest ||
 || 1.6.0 || [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python Windows, Mac, Linux] || Latest ||
 || 1.5.1 || [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python Windows, Mac, Linux] || Latest ||
