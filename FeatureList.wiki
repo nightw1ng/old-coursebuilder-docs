@@ -10,6 +10,9 @@
  * Course Analytics are available from the Dashboard
  * Integrate Google Analytics and Google Tag Manager
 
+== !BigQuery ==
+ * Export data to Google [https://cloud.google.com/bigquery/what-is-bigquery BigQuery]
+ 
 == Course Content and Organization ==
  * Optionally create separate course "tracks" so students take certain paths through your course instead of your entire course.
  * View all Pages, Course Outline, and Data Files from the Dashboard
@@ -44,6 +47,7 @@
  * Unlimited answer choice options
  * Delete existing answer choices from the Dashboard
  * Validation prevents the creation of empty questions, questions without answer choices
+ * Write questions in GIFT format
 
 == Create and Manage Question Groups == 
  * Create and edit reusable Question Groups with multiple choice and short answer questions from the Dashboard 
@@ -87,7 +91,7 @@
  * View, edit, delete, and revert edited CSS, !JavaScript, Views files to earlier versions from the Dashboard
 
 == Manage Course Settings ==
- * Create certificates based on criteria you specify.
+ * Create certificates based on criteria you specify
  * Edit [CourseSettings your course settings] from the Dashboard
  * Directly edit course.yaml file with Advanced Edit from the Dashboard
  * Visual indicator denotes whether settings are Default, Pending, or Overriden
@@ -97,6 +101,7 @@
 == Managing Lessons within the Course ==
  * Set private or public access on lessons
  * Grading for questions is optional
+ * Allow feedback from students on each lesson
 
 == Manage your Courses: Administrators ==
   * Edit application settings
@@ -125,6 +130,9 @@
  * Set private or public access for units and links from the Dashboard
  * HTTPS is on by default
 
+== Skill Map ==
+ * Create skill labels and map those labels onto lessons
+ 
 == Student Uploads ==
  * Students can upload text files when completing Lessons and Assessments
 
