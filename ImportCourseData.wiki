@@ -46,7 +46,7 @@ Although you should feel free to view and make copies of data exported from Cour
 The following command imports information, like student data, to the datastore:
 
 {{{
-python scripts/etl.sh upload datastore <course_url_prefix> <app_name> <app_server_name> --archive_path <archive_path> --datastore_types <model1,model2>
+sh scripts/etl.sh upload datastore <course_url_prefix> <app_name> <app_server_name> --archive_path <archive_path> --datastore_types <model1,model2>
 }}}
 
 It is best to use this command from the root of your Course Builder installation. In the following example, the Course Builder installation is at {{{/Users/sammich/coursebuilder}}} and the command downloads student information:
