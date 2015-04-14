@@ -23,7 +23,6 @@ This page lists some data to collect to evaluate how many people you reach and h
     * Number of concurrent viewers
     * Number of playbacks on !YouTube
     * Number of !YouTube comments
-    * In Moderator, number of votes on number of questions from number of people
     * Number of Google+ comments on post about the Hangout On Air
 
   * *Google+ Course Page* (See [Announcements Announcements and Optional Material])
