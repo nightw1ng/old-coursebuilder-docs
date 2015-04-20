@@ -13,8 +13,8 @@ Currently, Course Builder only supports integrating Google Docs from Google Driv
 == Setup Google Drive ==
 You must first setup settings in Course Builder's Admin page as well as in Google Developer Console.
 
- # Go to *Admin > Settings*
- # Click *Override* for the {{{gcb_courses_can_use_google_apis}}} setting.
+ # Go to *Dashboard > Site Admin > Site Settings*
+ # Click *Override* (or *Edit*) for the {{{gcb_courses_can_use_google_apis}}} setting.
  # Click *Value* 
  # Set *Status* to "Active".
  # Click *Save*.
@@ -26,17 +26,17 @@ Next, go to the Google Developer Console to get two values from Google: an API K
  # Go to: https://developers.google.com/console
  # Click on your Course Builder project.
  # On the left-hand navigation, click *APIs*, which is under the *APIs & auth*.
- # Turn on the *Drive API* by clicking its *Status* button.  If it is off, clikc the *OFF* button.
- # Turn on the *Google Picker API* by clicking its *Status* button.  If it is off, click the *OFF* button.
+ # Click on *Drive API*.
+ # Turn on the *Drive API* by clicking "Enable API".
  # Click *Credentials* on the left-hand navigation under the same *APIs & auth*.
  # Under *OAuth* click *Create new Client ID*.
- # Select *Web application* under *APPLICATION TYPE*.
+ # Select *Web application* under *Application type*.
  # In *AUTHORIZED Javascript ORIGINS* type the URL to your Course Builder application. For example, if your application URL is https://www.example-sandwich.appspot.com/ then type: https://example-sandwich.appspot.com
- # Delete any URL in *AUTHORIZED REDIRECT URI*. That is, keep that field empty.
+ # Delete any URIs in *AUTHORIZED REDIRECT URI*. That is, keep that field empty.
  # Click *Create Client ID*.
  # Under *Public API access* click *Create new Key*.
  # Click *Browser key*.
- # Add the URL you added earlier under *AUTHORIZED Javascript ORIGINS* and click *Create*.
+ # Add the URL pattern you added earlier under *AUTHORIZED Javascript ORIGINS* and click *Create*. For example, if you added https://example-sandwich.appspot.com, type {{{*example-sandwich.appspot.com/*}}}.
  # Click *Consent screen* on the left-hand navigation under the same *APIs & auth*.
  # Select your email address under *EMAIL ADDRESS*.
  # Type in your desired product name under *PRODUCT NAME*. All other fields are optional.
@@ -44,20 +44,20 @@ Next, go to the Google Developer Console to get two values from Google: an API K
 
 Go to Course Builder and type the Client ID and API Key you just created.
 
- # Go to *Dashboard > Settings > Course* and click "Edit Settings"
- # Add the API key to the *Google API Key* field.
- # Add the Client ID to the *Google Client Id* field.
+ # Go to *Dashboard > Settings > Course*
+ # In the *Google API Key* field, add the API key that was generated. The API key can be found under Google App Engine Developer's Console > Credentials > Public API Access.
+ # In the *Google Client Id* field, add the Client ID that was generated. The Client ID can be found under Google App Engine Developer's Console > Credentials > OAuth.
  # Click *Save*.
- # for *Component Type*, choose *gcb: Google Drive*.
 
 == Use Google Drive ==
 Add your Google Doc from Google Drive the same way you add the other components. 
 
- # Go to where you want to integrate the Google Doc.  For example, in the *Assessment Content* ar or *Lesson Body*.
+ # Go to where you want to integrate the Google Doc.  For example, in the *Assessment Content* or *Lesson Body*.
  # Click *Rich Text*.
  # Click the red tool box.
- # Add the ID in *Document ID*.  The ID is in the URL, after the "d/" but before "edit".  Do not type any of the slashes.
+ # Choose *gcb: Google Drive* for *Component Type*.
  # Click *Pick*.
+ # Choose the Google Doc of your choice.
  # Click *Save*.
 
 You will see a Google Drive icon.
