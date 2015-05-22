@@ -10,8 +10,6 @@
   
   * *Analytics: Certificates.* See how many students received certificates. See [Dashboard#Analytics Analytics].
   
-  * *Balancer module.* Added an optional module for load balancing and managing external tasks.
-  
   * *!BigQuery.* There is now a pipeline to Google Big Query within Course Builder. See [Dashboard#Analytics Analytics].
   
   * *Course Homepage.* The course homepage is now titled "Syllabus" instead of "Schedule".
@@ -26,7 +24,7 @@
   
   * *Lessons.* The 1MB lesson size limit was increased to 4MB.
   
-  * *Lessons: Feedback.* Each lesson page now has a mini form to permit students to give feedback on the lesson.
+  * *Lessons: Feedback.* You can optionally turn on a rating widget to permit students to give feedback on each lesson page.
   
   * *Lessons: Questionnaire.* Create questionnaires in lessons. Questionnaires are ungraded.
   
@@ -37,8 +35,6 @@
   * *Skill map.* Added ability to create skill labels and map those labels onto lessons. Corresponding analytics were implemented to support this feature. See [CreateSkillMap Create Skill Maps].
   
   * *Tab: Add arbitrary tabs.* Added ability to add aribtary tabs on the navigation menu bar through the User Interface.
-  
-  * *Unit: Custom Units.* You can now add custom units to Course Builder. This feature is available as a separate module.
   
   * *Usage.* We added the capability to collect information about the Course Builder deployment. Google will maintain this data in accordance with the [http://www.google.com/policies/privacy/ Google Privacy Policy] and will not associate data it collects with the course or a user. See [UploadCode#Sending_Course_Builder_Deployment_Information Sending Course Builder Deployment Information].
   
