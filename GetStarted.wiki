@@ -13,8 +13,6 @@ The pages in this section include:
 
   * [GetCode Run Course Builder]<br>Describes how to run Course Builder for the first time.
 
-  * [ExplorePS Explore Course Builder]<br>Walks through the pages students see when they take the course. This is about what the course looks like. Consider reading [WhatsInACourse Parts of a Course Builder Course] at the same time; it goes into more detail about the content.
-
   * [UploadCode Deploy to Google App Engine]<br>Deploy Course Builder to Google App Engine so you can start building your course.
 
 
