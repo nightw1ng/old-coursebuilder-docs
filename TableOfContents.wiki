@@ -6,7 +6,6 @@
     * Run Course Builder
       * [GetCodeUnix Using Command Line]
       * [GetCode Using a GUI]
-    * [ExplorePS Explore Course Builder]
     * [UploadCode Deploy Course Builder]
   * [ImplementCourseMaterial Implement Course Material]
     * [CourseSettings Customize Course Settings]
@@ -37,7 +36,6 @@
     * Specific Sub-Tasks
       * [ModifyTemplate Modify Course Template]
       * [ExtendCoursePages Add New Pages]
-      * [CreateComponents Create Components]
       * [CreateModules Create Modules]
       * [CustomJob Create Custom Jobs]
       * [AppEngineVersions Create Multiple Versions]
