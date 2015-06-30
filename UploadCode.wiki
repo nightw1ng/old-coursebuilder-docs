@@ -19,9 +19,9 @@ This page talks about deploying your app to production, which is Google App Engi
 == Register your Course Builder with Google ==
 Before you can deploy (or upload) an app like Course Builder to Google, you must register that app with Google by giving it a name.
 
-When you register a name with Google, Google gives your app a domain name that corresponds to that name. Once registered and deployed, your course can be reached from almost anywhere on the Internet. The domain name Google uses is of the form _*{{{APP_ID}}}*_{{{.appspot.com}}}, where _*{{{APP_ID}}}*_ is the name you register. 
+When you register a name with Google, Google gives your app a domain name that corresponds to that name. Once registered and deployed, your course can be reached from almost anywhere on the Internet. The domain name Google uses is of the form _*{{{APP_ID}}}*_{{{.appspot.com}}}, where _*{{{APP_ID}}}*_ is the name you register.
 
-  <b>Note about names:</b> You must choose a name that hasn't already been used by anybody else.  App ID names can only be used once and can never be returned to the pool of available names. Whether your app is running, not running, or deleted, once a name has been chosen, it can no longer be used by any other app. 
+  <b>Note about names:</b> You must choose a name that hasn't already been used by anybody else.  App ID names can only be used once and can never be returned to the pool of available names. Whether your app is running, not running, or deleted, once a name has been chosen, it can no longer be used by any other app.
 
 To register your app:
 
@@ -38,7 +38,7 @@ To register your app:
 
 Here is a video that shows these steps: [http://www.youtube.com/watch?v=_xpnfrqjuKU&feature=share&list=PLbTy14-ZMIDJGS1XLdYj3Nzrhfd6EDWJC Register your app and edit the app.yaml file (1:58)].
 
-More details on creating an app can be found in the [https://developers.google.com/appengine/docs/python/gettingstartedpython27/uploading official docs]. 
+More details on creating an app can be found in the [https://developers.google.com/appengine/docs/python/gettingstartedpython27/uploading official docs].
 
 
 == Set up an app-specific password ==
@@ -51,30 +51,15 @@ Make a note of the password you generate. You'll need to use it several times in
 Once you register your app, the most straightforward way to deploy it is from a [http://code.google.com/p/gcb-x-03141590/wiki/FAQ#What%27s_a_%22shell_or_command_prompt%22? shell or command prompt]. From that window:
 
   {{{cd }}}_*{{{<course builder directory>}}}*_<br>
-  {{{appcfg.py update .}}}<br>
+  {{{appcfg.py --oauth2 -A YOUR_APP_NAME update .}}}<br>
 
-where _*{{{APPPATH}}}*_ is the directory containing your app's code. _Note that the period at the end of the {{{appcfg.py update}}} command is necessary._
+where _*{{{YOUR_APP_NAME}}}*_ is the name you gave your app when during registration in the *Create Application* step previously mentioned. _Note that the period at the end of the {{{appcfg.py update}}} command is necessary._
+
+Your default web browser or a new browser tab may open asking you to authenticate with your Google Account password. Next, you will be asked if you agree to give Google App Engine the listed permissions. If you agree, the authentication flow finishes and the upload commences (you can see the uploading process in your original terminal).
 
 For each {{{appcfg.py}}} command, you are asked to supply your credentials. Supply your username and the app-specific password you created in the [#Set_up_an_app-specific_password previous step].
 
-It can take up to a minute to deploy your app; generally it's less than 30 seconds but usually not more than a minute. Once the deployment completes and confirms, you (and everyone else on the planet not blocked from Google) can visit {{{http://}}}_*{{{APP_ID}}}*_{{{.appspot.com}}} and verify that your app is indeed available to all.
-
-Here is a video that shows this proces, from download to deployment: [http://www.youtube.com/watch?v=OtVd1komyGY&list=PLbTy14-ZMIDJGS1XLdYj3Nzrhfd6EDWJC download, installation, and deployment (4:33).]
-
-== (Alternative) Upload without a password ==
-
-In general, every time you make a change that causes you to redeploy your app to production, you either need to remember the app-specific password created when registering or you need a new app-specific password. In some situations, you may choose to avoid giving a password at all, by giving GAE access to your account. 
-
-Before you choose to do so, please read [https://developers.google.com/appengine/docs/python/tools/uploadinganapp#oauth Passwordless Login with OAuth2], so that you understand the risks involved.
-
-To upload your application without supplying your credentials:
-
-  {{{cd }}}_*{{{<course builder directory>}}}*_<br>
-  {{{appcfg.py --oauth2 update .}}}
-
-where _*{{{APPPATH}}}*_ is the directory containing your app's code. _Note that the period at the end of the second command is necessary._
-
-Note that this works for the {{{upload}}} command. It *does not* work for the {{{upload_data}}} command. For this reason, if you upload changes to either {{{data/lesson.csv}}} or {{{data/unit.csv}}}, you must supply your app-specific password.
+It can take anywhere from a few seconds up to about a minute to deploy your app. This also depends on your Internet connection speed. Once the deployment completes and confirms, you (and everyone else on the planet not blocked from Google) can visit {{{http://}}}_*{{{APP_ID}}}*_{{{.appspot.com}}} and verify that your app is indeed available to all.
 
 == Set Up Security ==
 After you deploy our app but before anyone uses the course, you must change the default security setting. Course Builder implements protection against XSRF using transient user-action specific tokens for all state-modifying HTTP operations supported by the product.
@@ -82,7 +67,7 @@ After you deploy our app but before anyone uses the course, you must change the 
 To change the default token, go to *Settings* in the Administrator Page and change the value of *gcb_xsrf_secret*. See [AdminPage#Security Security] for more information.
 
 == Sending Course Builder Deployment Information ==
-When you deploy to Google App Engine for the first time, you will see a welcome screen with a message about Google collecting Course Builder deployment information. Google uses this information to help improve Google's products and services and for research purposes. Google will maintain this data in accordance with the  [http://www.google.com/policies/privacy/ Google Privacy Policy] and will not associate the data it collects with the course or a user. You can turn this off at any time, either at this Welcome window or by going to *Dashboard > Site Admin > Site Settings > gcb_report_usage_permitted* and setting the value to {{{False}}}. 
+When you deploy to Google App Engine for the first time, you will see a welcome screen with a message about Google collecting Course Builder deployment information. Google uses this information to help improve Google's products and services and for research purposes. Google will maintain this data in accordance with the  [http://www.google.com/policies/privacy/ Google Privacy Policy] and will not associate the data it collects with the course or a user. You can turn this off at any time, either at this Welcome window or by going to *Dashboard > Site Admin > Site Settings > gcb_report_usage_permitted* and setting the value to {{{False}}}.
 
 If you are upgrading Course Builder, you will instead see this message as a persistent bar in the Dashboard. If you have admin rights, you may turn this off at the persistent bar or through the *Dashboard > Site Admin > Site Settings > gcb_report_usage_permitted* setting previously mentioned.
 
