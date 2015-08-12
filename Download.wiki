@@ -47,7 +47,7 @@ This starts the Python interpreter and indicates the version. If Python is not i
 If you don't have Python at all or you have the wrong version, visit the general Python 2.7 [http://python.org/download download page] to download and install the right version for you. You probably want to simply use the current production version for your platform.
 
 ==== Installing Python lxml Package ====
-We suggest you deploy Course Builder to Google App Engine after downloading all the software. If instead you wish to explore Course Builder on localhost, you may need to download the lxml Python package. 
+We suggest you deploy Course Builder to Google App Engine after downloading all the software. If instead you wish to explore Course Builder on localhost, you may need to download the lxml Python package.
 
 To download and install the lxml package on Mac, do the following steps:
   # Open a terminal
@@ -64,6 +64,7 @@ If you are unfamiliar with GAE, but know something about cloud computing, read [
 Choose the appropriate GAE SDK version with the appropriate Course Builder version. The following table illustrates the correct pairings:
 
 || *Course Builder Version* || *Platform* || *Google App Engine SDK Version* ||
+|| 1.9.0 || [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python Windows, Mac, Linux] || Latest ||
 || 1.8.0 || [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python Windows, Mac, Linux] || Latest ||
 || 1.7.0 || [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python Windows, Mac, Linux] || Latest ||
 || 1.6.0 || [https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python Windows, Mac, Linux] || Latest ||
@@ -80,11 +81,11 @@ Choose the appropriate GAE SDK version with the appropriate Course Builder versi
 
 *Note:* In some cases there may be a new release of the GAE SDK in between new releases of Course Builder. Although upgrading incremental versions in most cases would not create problems, we still recommend that you stay at the suggested version.
 
-When developing on GAE, you have a choice of performing administrative tasks using a graphical interface (GUI) or a traditional command-line interface. The GUI, called The Launcher, is available for users of PCs or Macs while command-line tools are available on all systems. The GAE SDK for Python includes both tools. 
+When developing on GAE, you have a choice of performing administrative tasks using a graphical interface (GUI) or a traditional command-line interface. The GUI, called The Launcher, is available for users of PCs or Macs while command-line tools are available on all systems. The GAE SDK for Python includes both tools.
 
-*Note:* If you decide to use the command-line tools, consult the official [https://developers.google.com/appengine/docs/python/overview Google App Engine documentation]. 
+*Note:* If you decide to use the command-line tools, consult the official [https://developers.google.com/appengine/docs/python/overview Google App Engine documentation].
 
-=== Windows 7 === 
+=== Windows 7 ===
 Run the downloaded installer .msi by double clicking. Follow all on-screen instructions. On the screen that asks for the destination folder, be sure that *Add product path to user PATH* is checked. This is required for the command-line tools to work properly.  Once completed, you should find the GAE Launcher icon on your desktop or be able to find it via *Start -> Programs*.
 
 === Mac ===

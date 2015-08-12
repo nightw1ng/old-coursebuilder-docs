@@ -26,12 +26,15 @@ The following list illustrates the types of settings you will find in {{{course.
   * {{{header_text:}}} Header text for the course registration form
   * {{{additional_registration_fields:}}} HTML representing additional fields to include in the course registration form
   * {{{can_register:}}} Turns student registration on or off. The possible values are {{{True}}}, which allows student registration, and {{{False}}}, which disallows it. The default value is {{{True}}}.
+  * {{{whitelist:}}} List of student email addresses who are allowed to register for the course.
 
 *assessment_confirmations*
   * {{{result_text:}}} HTML to be displayed on the test confirmation page
 
 *unit*
   * {{{hide_lesson_navigation_buttons:}}} Specify whether to hide the *Previous Page* and *Next Page* navigation buttons at the bottom of lesson and activity pages.
+  * {{{hide_assessment_navigation_buttons:}}} Whether to hide the 'Previous Page' and 'Next Page' lesson navigation buttons below pre/post assessments within units.
+  * {{show_unit_links_in_leftnav:}}} Whether to show the unit links in the side bar.
 
 == course_template.yaml ==
 You will find the following settings in {{{course_template.yaml}}}. All the courses inherit values from this file during HTML rendering.

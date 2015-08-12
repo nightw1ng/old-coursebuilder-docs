@@ -6,7 +6,7 @@ Course Builder separates the writing of questions with activities and assessment
 <wiki:toc />
 
 == Write Questions in the Dashboard ==
-Under *Dashboard > Assets* there are two sections related to question management: *Question Bank*, where you write your questions and *Question Groups*, where you can optionly group your questions and add them in an activity or assessment in one batch.
+Under *Create > Questions* there are two sections related to question management: *Question Bank*, where you write your questions and *Question Groups*, where you can optionly group your questions and add them in an activity or assessment in one batch.
 
 http://wiki.course-builder.googlecode.com/git/images/dashboard-questions.png
 
@@ -29,7 +29,7 @@ http://wiki.course-builder.googlecode.com/git/images/dashboard-short-answer.png
   * *Grading:* The type of response the correct answer will be: {{{Case insensitive string match}}}, {{{Regular expression}}}, and {{{Numeric}}}.
   * *Response:* Type the correct answer for this question here.
   * *Feedback:* This field is optional. Type any feedback you want associated with the correct answer.
-  
+
 http://wiki.course-builder.googlecode.com/git/images/dashboard-multiple-choice.png
 
 Multiple choice questions ask students to choose a correct answer among a group of answer choices. You can add as many answer choices as you like. Course Builder offers many different ways to control your mulitple choice questions.
