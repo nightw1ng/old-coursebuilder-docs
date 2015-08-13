@@ -42,7 +42,7 @@ http://wiki.course-builder.googlecode.com/git/images/skillmap-student.png
 == Students See Their Own Skills Competency==
 It is important for students to see their own progress on skills. They can do so by going to their *Progress* tab and viewing the *Skills Progress* section. Here they can see the skills taught in the course and how they are proceeding with those skills with the Proficiency level chart. Higher proficiencies are darker colored. Students can also see what skills are recommended next.
 
-http://wiki.course-builder.googlecode.com/git/images/skillmap-student.png
+http://wiki.course-builder.googlecode.com/git/images/skill_competency.png
 
 See a video overview on [https://www.youtube.com/watch?v=Dl9tMMLffhw Skill Maps (9:45)].
 
