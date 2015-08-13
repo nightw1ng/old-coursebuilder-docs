@@ -47,10 +47,10 @@ These pages show Peer review information and statistics regarding the students a
  * *Notifications.* Number of people who have been notified via email by a currently registered student.
  * *Peer Review.* See bar charts showing the number of assignments with a particular number of reviews.  You can also reassign reviews and delete reviewed assignments.
 
-Remember that if you want to see progress on activities, you must turn on the activity recording setting in *Admin > Settings* by selecting the following items to {{{True}}}:
- * gcb_can_persist_activity_events
- * gcb_can_persist_page_events
- * gcb_can_persist_tag_events
+Remember that if you want to see progress on activities, you must turn on the activity recording setting in *Site admin > Site settings* by selecting the following items to {{{True}}}:
+ * Record activities
+ * Record page events
+ * Record tag events
 
 The *Update Statistics* button will refresh all statistics on the page. Note that the time it takes to update depends on the number of students you have.
 
