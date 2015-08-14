@@ -11,13 +11,13 @@ When students click on a unit from the home page, they go to the page for the fi
 This page talks about the mechanics of creating a lesson page and its content, which includes activities. For information on what to put in your lesson, see [TwoDevelop Develop the Content without Technology].
 
 == What happens on a lesson page ==
-A lesson page is where you teach your prepared material and optionally provide an activity to further help students understand the material just presented. Typically, each lesson consists of a short video, text version of the content, and an activity. You embed the video in the lesson page, hosting the video on !YouTube. (See [WorkWithVideo Working with video].) You put the text version in a file at some other URL; for Power Searching, we hosted the text versions as [http://support.google.com/docs/bin/answer.py?hl=en&answer=49008 Google Docs]. 
+A lesson page is where you teach your prepared material and optionally provide an activity to further help students understand the material just presented. Typically, each lesson consists of a short video, text version of the content, and an activity. You embed the video in the lesson page, hosting the video on !YouTube. (See [WorkWithVideo Working with video].) You put the text version in a file at some other URL; for Power Searching, we hosted the text versions as [http://support.google.com/docs/bin/answer.py?hl=en&answer=49008 Google Docs].
 
 Students can watch the video as many times as they like. If they click on *Text version*, a separate browser window appears with that content.
 
 == Page layout ==
 This page consists of four areas:
-  * The *header* contains 
+  * The *header* contains
     * Course icon and name of your course.
     * Horizontal navigation bar, with two tabs on the left (Course and Forum) and an area with the person's address and a Logout link.
     * A breadcrumb indicating where in the course hierarchy this page exists, such as<br>{{{Course > Unit 1 > Lesson 1}}}.
@@ -30,20 +30,19 @@ This page consists of four areas:
     * The lesson video.
     * Activities, if any.
     * *Back* and *Next* buttons to navigate through the unit. (The first lesson of a unit does not include the *Back* button.)
-  * The *footer* contains the same two links as for the registration pages. 
+  * The *footer* contains the same two links as for the registration pages.
 
 == Create lessons ==
-When you create lessons from the browser, the data gets stored in Google App Engine's datastore. Go to *Dashboard > Outline* and click * Add Lesson* on a unit of your choice. Fill out the fields on the page and click *Save*. You have the option of creating the lesson but keeping it private (not viewable to students).
+When you create lessons, the data gets stored in Google App Engine's datastore. Go to *Create > Outline* and click *+Add Lesson* from anywhere in the outline. Fill out the fields on the page and click *Save*. You have the option of creating the lesson but keeping it private (not viewable to students).
 
 http://wiki.course-builder.googlecode.com/git/images/dashboard-lesson.png
 
-Note: The *Add Lesson* button is unavailable until you create at least one unit.
-
 You edit lessons that already exist in this page as well. Change any details you would like and click *Save*. There is a 4 MB limit on the size of the content you can enter. Usually, this is not a problem.  However, if you need to work around this, include links to the bigger resources instead of directly adding them into the lesson.
 
-== Create activities ==
-In the *Lesson Body* textbox, you create the content for your lesson, including activities. Activites are questions that you insert from the [CreateQuestions#Question_Bank_ Question Bank]. You can add the following components as lesson content:
+== Add components ==
+Once you create your questions in the [CreateQuestions#Question_Types_ Question page] add them to the Lesson as components. In addition to questions, you can also add the following components:
 
+  * Embedded Code
   * Google Doc
   * Google Drive
   * Google Group
@@ -52,27 +51,20 @@ In the *Lesson Body* textbox, you create the content for your lesson, including 
   * Iframe
   * Image
   * Include
+  * Link (type link first, then highlight and click the Link icon)
   * Markdown (we this this [http://daringfireball.net/projects/markdown/ markdown syntax])
+  * Mathematical Formula
+  * Questionnaire
   * Question
   * Question Group
   * Text File Uploader (maximum size for uploaded files is 4MB)
   * !YouTube videos
-  
-Add as many components as you like. You can also directly write text into the textbox. By default, you add content in *Lesson Body* through HTML. Some might find it easier to to select them through the Rich Text editor. Click the *Rich Text* button on the right.
 
-http://wiki.course-builder.googlecode.com/git/images/dashboard-lesson-richtxt.png
+Each component will have its own icon. You can add multiple components or mix and match multiple images with multiple components. You can also directly write text into the textbox.
 
-Under *Insert Item* in the toolbar, you see three buttons where you can:
+The Lesson page has its own specific settings. Click the gear icon on the top left to access these settings. Most of the time you do not need to change the defaults on this page or can access them elsewhere when you can see this Lesson in the context of your entire course. The choice is yours when you want to edit them.
 
-  * Add a HTML link
-  * Add an image
-  * Add the various components (questions, !YouTube videos, etc.) 
-    * After you add a component, a placeholder icon shows. When you save and go to the lesson, the component itself shows.
-	
-The following image shows a question component being selected.
-http://wiki.course-builder.googlecode.com/git/images/dashboard-toolbox-question.png
-  
-You can add multiple components or mix and match multiple images with multiple components. Here is a video that shows how to add components: [http://www.youtube.com/watch?v=EpQqNkRdcck Add course components (4:48)]
+http://wiki.course-builder.googlecode.com/git/images/dashboard-lesson-setting.png
 
 Note that there is a 4 MB limit on the size of the content you can enter. Usually, this is not a problem.  However, if you need to work around this, include links to the bigger resources instead of directly adding them into the lesson.
 
