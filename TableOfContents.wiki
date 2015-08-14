@@ -14,7 +14,7 @@
     * [Dashboard Dashboard]
     * [CreateRegistration Modify Registration]
     * [CreateQuestions Create Questions]
-    * [CreateLessons Create Lessons and Activities]
+    * [CreateLessons Create Lessons]
     * [CreateSkillMap Create Skill Maps]
     * [CreateAssessments Create Assessments]
     * [IntegrateDrive Integrate Google Drive]
