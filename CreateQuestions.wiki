@@ -12,12 +12,10 @@ http://wiki.course-builder.googlecode.com/git/images/dashboard-questions.png
 
 Create your questions here first and then import them when you are crafting your assessments and activities.
 
-== Question Bank ==
-The Question Bank lists all the questions you created and are available to import into your assessments and activities. You can add two types of questions: Short Answer and Multiple Choice.
+== Question Types ==
+The Questions page lists all the questions you created and are available to import into your assessments and activities. You can add two types of questions: Short Answer and Multiple Choice.
 
 Short answer questions are those questions in which correct answers require textual input from the student.
-
-http://wiki.course-builder.googlecode.com/git/images/dashboard-short-answer.png
 
   * *Question:* Type your question in this text box.
   * *Description:* Write a description for this question. This is how you will identify your question in the Question Bank and when you import this question in an assessment or activity.
@@ -29,8 +27,6 @@ http://wiki.course-builder.googlecode.com/git/images/dashboard-short-answer.png
   * *Grading:* The type of response the correct answer will be: {{{Case insensitive string match}}}, {{{Regular expression}}}, and {{{Numeric}}}.
   * *Response:* Type the correct answer for this question here.
   * *Feedback:* This field is optional. Type any feedback you want associated with the correct answer.
-
-http://wiki.course-builder.googlecode.com/git/images/dashboard-multiple-choice.png
 
 Multiple choice questions ask students to choose a correct answer among a group of answer choices. You can add as many answer choices as you like. Course Builder offers many different ways to control your mulitple choice questions.
 
@@ -44,8 +40,6 @@ Multiple choice questions ask students to choose a correct answer among a group 
 
 == Question Groups ==
 Question groups allow you to "package" questions together. You may want to do this for organizational purposes or to input similar questions together in an assessment or activity.
-
-http://wiki.course-builder.googlecode.com/git/images/dashboard-question-group.png
 
   * *Description:* Write a description for this Question Group. This is how you will identify your Question Group when you import this question in an assessment or activity.
   * *Introduction:* This field is optional. Write an introduction, leading paragraph, or description that will precede your Question Group.
