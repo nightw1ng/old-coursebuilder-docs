@@ -16,13 +16,13 @@ You cannot download courses that you made with Course Builder versions earlier t
 <wiki:toc max_depth="2" />
 
 == Types of data available ==
-Course Builder stores two types of data: course and datastore. 
+Course Builder stores two types of data: course and datastore.
 
 === Course data ===
 You can find course data on your file system. Examples of course data include:
 
   * Assets — course CSS files, images, activities, assessments, and libraries
-  * !EventEntity — system level events and historical data about each activity or assessment completed. Event recording is off by default and can be enabled in *Admin > Settings*
+  * !EventEntity — system level events and historical data about each activity or assessment completed. Event recording is off by default and can be enabled in *Site admin > Site settings*
   * Lessons — information about each lesson, such as the video's URL and the lesson's title
   * Student — information about students, their enrollment status and assessment scores
   * !StudentAnswersEntity — the most recent detailed answers given by a student for each assessment
