@@ -47,7 +47,7 @@ In *Grading Method* dropdown, click "Peer review" to show the peer review specif
   * *Review Window Timeout:* The time horizon, in minutes, in which the student must begin reviewing an assignment after receipt. If the student does not begin the review, that assignment will be available for others to review although it will still be assigned to the original reviewer.
 
 == Peer review dashboard ==
-Course authors can see submitted assignments and reviews as well as delete reviews from [Dashboard#Peer_Review Dashboard > Peer Review].
+Course authors can see submitted assignments and reviews as well as delete reviews from [Dashboard#Peer_Review Dashboard > Settings > Peer Review].
 
 http://wiki.course-builder.googlecode.com/git/images/dashboard-peer-review.png
 
