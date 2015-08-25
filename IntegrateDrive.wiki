@@ -21,13 +21,15 @@ You must first setup settings in Course Builder's Admin page as well as in Googl
 
 For security reasons, each course that you want to use the feature with needs to be set up separately. This is required because you could have many courses on one deployment, and each course is isolated from all the others. You don’t want Bob, who’s writing one course, to be able to use the credentials set up by Alice, who’s running a completely different course.
 
-Next, go to the Google Developer Console to get two values from Google: an API Key and Client ID.
+Next, go to the Google Developer Console to turn on APIs as well as get two values from Google: an API Key and Client ID.
 
  # Go to: https://developers.google.com/console
  # Click on your Course Builder project.
  # On the left-hand navigation, click *APIs*, which is under the *APIs & auth*.
  # Click on *Drive API*.
  # Turn on the *Drive API* by clicking "Enable API".
+ # Return to the *APIs* section, click on *Google Picker API* or search for it in the search box.
+ # Turn on the *Google Picker API* by clicking "Enable API".
  # Click *Credentials* on the left-hand navigation under the same *APIs & auth*.
  # Under *OAuth* click *Create new Client ID*.
  # Select *Web application* under *Application type*.
