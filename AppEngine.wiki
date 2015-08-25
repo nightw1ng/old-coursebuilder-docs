@@ -21,6 +21,7 @@ It's difficult to predict in advance the costs for your course since it will dep
 Remember that you can begin development and testing of your course at no charge, by using the downloaded development server (from the [https://code.google.com/p/course-builder/wiki/AppEngine#Download_and_install_App_Engine Google App Engine SDK]) and the free quota initially provided by GAE for deployed applications. That free quota is fairly limited and is unlikely to support a sizable course enrollment.
 
 Also note that you can control your cost by setting a [https://developers.google.com/appengine/docs/billing#Setting_a_Daily_Budget maximum daily budget], which will cap your costs (and your quota) per day.  However, doing so may lead to your course becoming unavailable for the remainder of any day that your application exceeds its budget.
+
 == Official GAE documentation ==
 
 There's a lot of [https://developers.google.com/appengine/docs/python/config/appconfig#Required_Elements official documentation] for GAE.
