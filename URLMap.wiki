@@ -11,9 +11,9 @@ If you want to modify the URL of a course, use the *gcb_courses_config* setting 
 
 For example, you have a course with a URL mapping of {{{/alpha}}} and it is accessed at {{{<yourcoursename>.appspot.com/alpha}}}. You want to change the URL mapping so that you access the course at the root URL ({{{<yourcoursename>.appspot.com}}}). In this case, do the following steps:
 
-  # Go to *Admin > Settings > gcb_courses_config* and click *Edit*.
+  # Go to *Site admin > Site settings > Course URLs and namespaces* and click *Edit*.
   # In the final value (course:/:/:)) delete the "{{{/}}}" from the file system location entry. Your new course will get its data from the datastore, not from the file system. You must have the course with the root URL as the last entry in the list.
-  # Add the datastore namespace of your new course. 
+  # Add the datastore namespace of your new course.
   # Map your original course that was at root to another URL. In this example, we mapped the original course to the URL {{{/original}}}:
 {{{
 course:/original:/:
