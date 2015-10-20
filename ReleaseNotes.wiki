@@ -4,6 +4,8 @@
 
 <wiki:toc />
 
+== Release notes for next anticipated release ==
+
 == Release notes for version 1.9.0 ==
 
   * *Admin: Site Settings.* The setting names are changed for clarity.
