@@ -10,7 +10,7 @@ gcloud auth login
 
 Once this is done, ETL will use your OAuth2 credentials automatically.
 
-You can also set up credentials using the [https://pantheon.corp.google.com/project Google Developer Console] if you do not want to install the Google Cloud SDK. Refer to the [https://developers.google.com/identity/protocols/application-default-credentials Application Default Credentials documentation] for more information.
+You can also set up credentials using the [https://console.developers.google.com Google Developer Console] if you do not want to install the Google Cloud SDK. Refer to the [https://developers.google.com/identity/protocols/application-default-credentials Application Default Credentials documentation] for more information.
 
 == I used to sign in with username and password. Can I still do that? ==
 
