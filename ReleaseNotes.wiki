@@ -6,6 +6,40 @@
 
 == Release notes for next anticipated release ==
 
+  * *Certificates.* The Certificate setting now has its own page under Settings in the Dashboard.
+
+  * *Content Availability.* There is a new page in Dashboard > Publish called Availability. This page controls both registration and the visibility of your course content.
+
+  * *Content Editor.* The toolbar of the rich text editor will only show when you click into the content area.
+
+  * *Dashboard > Outline.* To edit content, click on the link instead of the pencil icon, which was removed.
+
+  * *Datepicker.* There is now a datepicker for fields in which you have to enter dates.
+
+  * *Delete Course.* Be able to delete a course completely, not just its contents.
+
+  * *Embeddable Assessments.* You can now embed Assessments into arbitrary web pages.
+
+  * *ETL.* Google App Engine's ClientLogin was deprecated earlier and will soon have its API disabled. ETL will now use OAuth2 for  authentication.
+
+  * *Help Text.* The help text and field labels in Course Builder were improved and updated.
+
+  * *Help Text: Tooltip*. Help text for fields are wrapped in a tooltip icon next to the field. Hover over icon to see the help text.
+
+  * *Localhost/Development Server.* If you decide to run Course Builder on localhost/development server and don't have a C compiler installed, the common.sh script will error and provide you instructions on how to get it.
+
+  * *Navigation Menu.* Items under the Dashboard navigation menu were rearranged.
+
+  * *Navigation Menu: Site admin.* As a part of the Dashboard navigation menu rearrangement, the Site admin menu was placed under Settings as Site Settings.
+
+  * *Performance.* Pages throughout Course Builder now load faster.
+
+  * *Questions.* You can now create new questions from within an Assessment or Lesson itself (without first creating them in the Question Bank).
+
+  * *Skills.* The Skills Table and Skills Graph were placed on one page where you can toggle between the two views.
+
+  * *Skills Graph.* There is now a Reset Graph button to put the graph back to its default view. 
+
 == Release notes for version 1.9.0 ==
 
   * *Admin: Site Settings.* The setting names are changed for clarity.
